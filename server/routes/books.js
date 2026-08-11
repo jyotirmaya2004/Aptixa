@@ -74,6 +74,7 @@ function loadChapterQuestions(chapter) {
         const parsed = JSON.parse(fileContent);
         if (Array.isArray(parsed)) return parsed;
         if (parsed && Array.isArray(parsed.questions)) return parsed.questions;
+        if (parsed && parsed.exercise && Array.isArray(parsed.exercise.questions)) return parsed.exercise.questions;
       } catch (e) {
         console.error(`Error reading chapter file at ${filePath}:`, e);
       }

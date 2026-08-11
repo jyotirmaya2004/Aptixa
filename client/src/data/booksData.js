@@ -215,7 +215,7 @@ export const STATIC_BOOKS = [
         title: "26. Races and Games of Skill",
         question_count: 25,
         description: "Objective questions on head starts, relative speeds in races, multi-runner comparisons, and point handicaps in games of skill.",
-        file: "rs_agrawal/races_and_games_ch26.json"
+        file: "rs_agrawal/races_and_games_of_skill_ch26.json"
       },
       {
         id: "ch-calendar-ch27",

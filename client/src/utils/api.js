@@ -164,7 +164,13 @@ export const fetchBookChapter = async (bookId, chapterId) => {
       const chapterRes = await fetch(`/data/${chapterObj.file}`);
       if (chapterRes.ok) {
         const chapterData = await chapterRes.json();
-        questions = Array.isArray(chapterData) ? chapterData : (chapterData.questions || []);
+        if (Array.isArray(chapterData)) {
+          questions = chapterData;
+        } else if (Array.isArray(chapterData.questions)) {
+          questions = chapterData.questions;
+        } else if (chapterData.exercise && Array.isArray(chapterData.exercise.questions)) {
+          questions = chapterData.exercise.questions;
+        }
       }
     } catch (e) {
       console.warn(`Failed to fetch /data/${chapterObj.file}:`, e);
