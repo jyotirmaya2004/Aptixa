@@ -1,0 +1,3940 @@
+{
+  "metadata": {
+    "source": "https://aptitude-gold.vercel.app/",
+    "totalTopics": 9,
+    "totalQuestions": 227
+  },
+  "topics": {
+    "random": {
+      "name": "Random Aptitude",
+      "endpoint": "https://aptitude-gold.vercel.app/Random",
+      "category": "quantitative",
+      "count": 29,
+      "questions": [
+        {
+          "id": "gold-random-1",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "The product of ages of P and Q is 210. If the ratio of their ages is 4:7, what is P's age?",
+          "options": [
+            "12 years",
+            "14 years",
+            "16 years",
+            "18 years"
+          ],
+          "correctOption": 0,
+          "answer": "12 years",
+          "explanation": "Let the ages of P and Q be 4x and 7x, respectively. Given that 4x * 7x = 210. Solving this equation gives x = 3. Hence, P's age = 4 * 3 = 12 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-2",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "How many ways can 6 books be arranged in groups of 2?",
+          "options": [
+            "15",
+            "30",
+            "20",
+            "12"
+          ],
+          "correctOption": 0,
+          "answer": "15",
+          "explanation": "Using the combination formula, C(6, 2) = 6! / (2! * (6 - 2)!) = 15.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-3",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "The ratio of S's present age to his age after 70 years is 20:39. What is S's present age?",
+          "options": [
+            "55 years",
+            "60 years",
+            "65 years",
+            "70 years"
+          ],
+          "correctOption": 1,
+          "answer": "60 years",
+          "explanation": "Let S's present age be 20x. According to the given condition, (20x + 70) / 20x = 39 / 20. Solving this equation gives x = 6. Hence, S's present age = 20 * 6 = 120 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-4",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "What day will be on 1st January 4000?",
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "correctOption": 1,
+          "answer": "Tuesday",
+          "explanation": "1st January 4000 will be a Tuesday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-5",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "A 30-liter solution contains milk and water in the ratio 5:2. How many liters of milk should be added to make the ratio 2:1?",
+          "options": [
+            "10 liters",
+            "12 liters",
+            "15 liters",
+            "18 liters"
+          ],
+          "correctOption": 2,
+          "answer": "15 liters",
+          "explanation": "Initially, the solution contains 25 liters of milk and 10 liters of water. To make the ratio 2:1, there should be double the amount of milk compared to water. So, we need to add 15 liters of milk.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-6",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "What day was it on 1st January 1700?",
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "correctOption": 1,
+          "answer": "Tuesday",
+          "explanation": "1st January 1700 was a Tuesday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-7",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "A 60-liter mixture of milk and water contains milk and water in the ratio 3:2. How much of the mixture must be replaced with water so that the resulting mixture has equal parts of milk and water?",
+          "options": [
+            "15 liters",
+            "20 liters",
+            "25 liters",
+            "30 liters"
+          ],
+          "correctOption": 2,
+          "answer": "25 liters",
+          "explanation": "Initially, the mixture contains 36 liters of milk and 24 liters of water. Let's assume x liters of the mixture is replaced with water. After replacement, the amount of milk remains 36 liters, and the total mixture remains 60 liters. According to alligation, the ratio of milk to water should be 1 : 1. So, 36 / (24 + x) = 1 / 1. Solving this equation gives x = 25 liters.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-8",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "How many different pairs of gloves can be chosen from a box containing 5 pairs?",
+          "options": [
+            "10",
+            "15",
+            "20",
+            "25"
+          ],
+          "correctOption": 0,
+          "answer": "10",
+          "explanation": "The number of combinations of selecting r objects from n distinct objects is given by nCr = n! / (r! * (n - r)!). So, for choosing pairs of gloves from 5 pairs, the number of combinations is 5C2 = 5! / (2! * (5 - 2)!) = 10.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-9",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "What day will be on 1st January 3500?",
+          "options": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday"
+          ],
+          "correctOption": 1,
+          "answer": "Monday",
+          "explanation": "1st January 3500 will be a Monday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-10",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "How many odd days are there in 700 years?",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "correctOption": 1,
+          "answer": "1",
+          "explanation": "700 years have 1 odd day.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-11",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "A solution contains 30% alcohol. How many liters of pure alcohol should be added to 15 liters of the solution to make it a 50% alcohol solution?",
+          "options": [
+            "5 liters",
+            "7.5 liters",
+            "10 liters",
+            "12.5 liters"
+          ],
+          "correctOption": 1,
+          "answer": "7.5 liters",
+          "explanation": "Initially, the solution contains 4.5 liters of alcohol and 10.5 liters of water. Let x be the amount of pure alcohol added. After adding x liters of pure alcohol, the total volume becomes 15 + x liters, and the amount of alcohol becomes 4.5 + x liters. According to the given condition, (4.5 + x) / (15 + x) = 50/100. Solving this equation gives x = 7.5 liters.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-12",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "A committee of 7 members needs to be formed from a group of 12 people. How many different committees are possible?",
+          "options": [
+            "792",
+            "924",
+            "120",
+            "220"
+          ],
+          "correctOption": 0,
+          "answer": "792",
+          "explanation": "Using the combination formula, C(12, 7) = 12! / (7! * (12 - 7)!) = 792.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-13",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "The ratio of P's present age to his age after 55 years is 17:33. What is P's present age?",
+          "options": [
+            "46 years",
+            "51 years",
+            "56 years",
+            "61 years"
+          ],
+          "correctOption": 1,
+          "answer": "51 years",
+          "explanation": "Let P's present age be 17x. According to the given condition, (17x + 55) / 17x = 33 / 17. Solving this equation gives x = 6. Hence, P's present age = 17 * 6 = 102 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-14",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "If August 1, 2024, falls on a Thursday, what day of the week will August 31, 2024, be?",
+          "options": [
+            "Friday",
+            "Saturday",
+            "Sunday",
+            "Monday"
+          ],
+          "correctOption": 1,
+          "answer": "Saturday",
+          "explanation": "August has 31 days. Since 31 is 4 weeks and 3 days, adding 3 days to Thursday gives us Saturday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-15",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "A solution contains 20% acid. How many liters of pure acid should be added to 20 liters of the solution to make it a 40% acid solution?",
+          "options": [
+            "5 liters",
+            "10 liters",
+            "15 liters",
+            "20 liters"
+          ],
+          "correctOption": 3,
+          "answer": "20 liters",
+          "explanation": "Initially, the solution contains 4 liters of acid and 16 liters of water. Let x be the amount of pure acid added. After adding x liters of pure acid, the total volume becomes 20 + x liters, and the amount of acid becomes 4 + x liters. According to the given condition, (4 + x) / (20 + x) = 40/100. Solving this equation gives x = 20 liters.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-16",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "What day was it on 1st January 1857?",
+          "options": [
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "correctOption": 1,
+          "answer": "Thursday",
+          "explanation": "1st January 1857 was a Thursday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-17",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "A dealer mixes two types of wheat, one costing $4/kg and the other $5/kg, to make a mixture worth $4.50/kg. What is the ratio in which the two types of wheat are mixed?",
+          "options": [
+            "1:2",
+            "2:1",
+            "3:2",
+            "2:3"
+          ],
+          "correctOption": 1,
+          "answer": "2:1",
+          "explanation": "Let x be the cost price per kg of the mixture. According to the given ratio, (5 - 4.50) : (4.50 - 4) = 0.50 : 0.50 = 1:1 = 1:1 * 1/1 = 1:1. Since the required ratio is $0.50 away from each of the individual prices, for a total of $1, the required ratio would be half of this, which is 1:2.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-18",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "How many permutations can be formed using the letters of the word 'BOOKKEEPER'?",
+          "options": [
+            "9979200",
+            "720",
+            "151200",
+            "3628800"
+          ],
+          "correctOption": 0,
+          "answer": "9979200",
+          "explanation": "The word 'BOOKKEEPER' has 10 letters with repetitions: 3 'E', 2 'O', and 2 'K'. The total number of permutations is 10! / (3! * 2! * 2!) = 9,979,200.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-19",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "If January 1, 2023, falls on a Sunday, what day of the week will January 31, 2023, be?",
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "correctOption": 1,
+          "answer": "Tuesday",
+          "explanation": "January has 31 days. Since 31 is 4 weeks and 3 days, adding 3 days to Sunday gives us Tuesday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-20",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "A is twice as old as B was when A was as old as B is now. If the sum of their present ages is 56 years, what is the present age of A?",
+          "options": [
+            "36 years",
+            "40 years",
+            "42 years",
+            "48 years"
+          ],
+          "correctOption": 2,
+          "answer": "42 years",
+          "explanation": "Let the present age of A be x years and the present age of B be y years. According to the given conditions, x = 2 * (y - (x - y)) and x + y = 56. Solving these equations gives x = 42 and y = 14. Therefore, the present age of A = 42 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-21",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "The ratio of I's present age to his age after 22 years is 10:19. What is I's present age?",
+          "options": [
+            "25 years",
+            "30 years",
+            "35 years",
+            "40 years"
+          ],
+          "correctOption": 1,
+          "answer": "30 years",
+          "explanation": "Let I's present age be 10x. According to the given condition, (10x + 22) / 10x = 19 / 10. Solving this equation gives x = 8. Hence, I's present age = 10 * 8 = 80 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-22",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "In how many ways can 3 candies be chosen from a jar containing 10 different candies?",
+          "options": [
+            "84",
+            "120",
+            "210",
+            "56"
+          ],
+          "correctOption": 1,
+          "answer": "120",
+          "explanation": "The number of combinations of selecting r objects from n distinct objects is given by nCr = n! / (r! * (n - r)!). So, for choosing 3 candies from 10, the number of combinations is 10C3 = 10! / (3! * (10 - 3)!) = 120.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-23",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "How many combinations of 3 objects can be formed from a set of 7 objects?",
+          "options": [
+            "35",
+            "42",
+            "21",
+            "14"
+          ],
+          "correctOption": 0,
+          "answer": "35",
+          "explanation": "The formula for combinations is C(n, r) = n! / (r! * (n - r)!). Substituting the values, C(7, 3) = 7! / (3! * (7 - 3)!) = 35.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-24",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "In how many ways can 10 guests be seated around a circular dining table?",
+          "options": [
+            "3628800",
+            "90",
+            "362880",
+            "720"
+          ],
+          "correctOption": 0,
+          "answer": "3628800",
+          "explanation": "For a circular arrangement with n objects, the number of permutations is (n - 1)!. So, for 10 guests, the number of permutations is (10 - 1)! = 9! = 3628800.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-25",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "A solution contains 20% acid. How many liters of pure acid should be added to 20 liters of the solution to make it a 50% acid solution?",
+          "options": [
+            "5 liters",
+            "10 liters",
+            "15 liters",
+            "20 liters"
+          ],
+          "correctOption": 3,
+          "answer": "20 liters",
+          "explanation": "Initially, the solution contains 4 liters of acid and 16 liters of water. Let x be the amount of pure acid added. After adding x liters of pure acid, the total volume becomes 20 + x liters, and the amount of acid becomes 4 + x liters. According to the given condition, (4 + x) / (20 + x) = 50/100. Solving this equation gives x = 20 liters.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-26",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "18 years ago, F's age was one-seventh of his present age. What is F's present age?",
+          "options": [
+            "108 years",
+            "126 years",
+            "144 years",
+            "162 years"
+          ],
+          "correctOption": 1,
+          "answer": "126 years",
+          "explanation": "Let F's present age be x. According to the given condition, x - 18 = (1/7) * x. Solving this equation gives x = 126. Hence, F's present age = 126 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-27",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "How many odd days are there in the century starting from 701 to 800?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "correctOption": 1,
+          "answer": "5",
+          "explanation": "The number of odd days in a century can be calculated as (Number of years / 4). In this case, (100/4) = 25 with a remainder of 0, so there are 5 odd days.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-28",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "In how many ways can 5 people sit around a circular table?",
+          "options": [
+            "24",
+            "20",
+            "120",
+            "60"
+          ],
+          "correctOption": 0,
+          "answer": "24",
+          "explanation": "For a circular arrangement with n objects, the number of permutations is (n - 1)!. So, for 5 people, the number of permutations is (5 - 1)! = 4! = 24.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        },
+        {
+          "id": "gold-random-29",
+          "topic": "Random Aptitude",
+          "topicKey": "random",
+          "category": "quantitative",
+          "question": "A solution contains 30% acid. How many liters of pure acid should be added to 10 liters of the solution to make it a 60% acid solution?",
+          "options": [
+            "5 liters",
+            "10 liters",
+            "15 liters",
+            "20 liters"
+          ],
+          "correctOption": 3,
+          "answer": "20 liters",
+          "explanation": "Initially, the solution contains 3 liters of acid and 7 liters of water. Let x be the amount of pure acid added. After adding x liters of pure acid, the total volume becomes 10 + x liters, and the amount of acid becomes 3 + x liters. According to the given condition, (3 + x) / (10 + x) = 60/100. Solving this equation gives x = 20 liters.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Random"
+        }
+      ]
+    },
+    "mixture": {
+      "name": "Mixture and Alligation",
+      "endpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation",
+      "category": "quantitative",
+      "count": 26,
+      "questions": [
+        {
+          "id": "gold-mixture-1",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "A 25-liter solution contains alcohol and water in the ratio 3:2. How many liters of alcohol should be added to make the ratio 4:3?",
+          "options": [
+            "5 liters",
+            "7.5 liters",
+            "10 liters",
+            "12.5 liters"
+          ],
+          "correctOption": 3,
+          "answer": "12.5 liters",
+          "explanation": "Initially, the solution contains 15 liters of alcohol and 10 liters of water. To make the ratio 4:3, the amount of water remains the same while the amount of alcohol should be 4/3 times the amount of water. So, 10*(4/3) = 40/3 ≈ 13.33 liters of alcohol should be added.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-2",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "A solution contains 20% alcohol. How many liters of pure alcohol should be added to 10 liters of the solution to make it a 50% alcohol solution?",
+          "options": [
+            "5 liters",
+            "7.5 liters",
+            "10 liters",
+            "12.5 liters"
+          ],
+          "correctOption": 3,
+          "answer": "12.5 liters",
+          "explanation": "Initially, the solution contains 2 liters of alcohol and 8 liters of water. Let x be the amount of pure alcohol added. After adding x liters of pure alcohol, the total volume becomes 10 + x liters, and the amount of alcohol becomes 2 + x liters. According to the given condition, (2 + x) / (10 + x) = 50/100. Solving this equation gives x = 12.5 liters.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-3",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "A solution contains 30% acid. How many liters of pure acid should be added to 10 liters of the solution to make it a 60% acid solution?",
+          "options": [
+            "5 liters",
+            "10 liters",
+            "15 liters",
+            "20 liters"
+          ],
+          "correctOption": 3,
+          "answer": "20 liters",
+          "explanation": "Initially, the solution contains 3 liters of acid and 7 liters of water. Let x be the amount of pure acid added. After adding x liters of pure acid, the total volume becomes 10 + x liters, and the amount of acid becomes 3 + x liters. According to the given condition, (3 + x) / (10 + x) = 60/100. Solving this equation gives x = 20 liters.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-4",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "A mixture of 30 liters contains alcohol and water in the ratio 2:3. How many liters of water must be added to make the ratio 2:5?",
+          "options": [
+            "10 liters",
+            "15 liters",
+            "20 liters",
+            "25 liters"
+          ],
+          "correctOption": 2,
+          "answer": "20 liters",
+          "explanation": "Initially, the mixture contains 12 liters of alcohol and 18 liters of water. To make the ratio 2:5, the amount of alcohol remains the same while the amount of water should be 5/2 times the amount of alcohol. So, 12*(5/2) = 30 liters of water should be added.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-5",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "In a 40-liter solution of acid and water, the ratio of acid to water is 2:3. How many liters of water should be added to make the ratio 1:2?",
+          "options": [
+            "20 liters",
+            "25 liters",
+            "30 liters",
+            "35 liters"
+          ],
+          "correctOption": 1,
+          "answer": "25 liters",
+          "explanation": "Initially, the solution contains 16 liters of acid and 24 liters of water. To make the ratio 1:2, there should be double the amount of water compared to acid. So, we need to add 25 liters of water.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-6",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "A solution contains 40% alcohol. How many liters of pure alcohol should be added to 15 liters of the solution to make it a 70% alcohol solution?",
+          "options": [
+            "5 liters",
+            "7.5 liters",
+            "10 liters",
+            "12.5 liters"
+          ],
+          "correctOption": 2,
+          "answer": "10 liters",
+          "explanation": "Initially, the solution contains 6 liters of alcohol and 9 liters of water. Let x be the amount of pure alcohol added. After adding x liters of pure alcohol, the total volume becomes 15 + x liters, and the amount of alcohol becomes 6 + x liters. According to the given condition, (6 + x) / (15 + x) = 70/100. Solving this equation gives x = 10 liters.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-7",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "A trader mixes two varieties of rice costing $2.50/kg and $3/kg, respectively. What is the cost price per kg of the mixture if the trader mixes the two in the ratio 2:3?",
+          "options": [
+            "$2.60",
+            "$2.70",
+            "$2.80",
+            "$2.90"
+          ],
+          "correctOption": 2,
+          "answer": "$2.80",
+          "explanation": "Let x be the cost price per kg of the mixture. According to the given ratio, (2.50*2 + 3*3) / (2 + 3) = x. Solving this equation gives x = $2.80.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-8",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "A solution contains 40% acid. How many liters of pure acid should be added to 15 liters of the solution to make it a 70% acid solution?",
+          "options": [
+            "5 liters",
+            "10 liters",
+            "15 liters",
+            "20 liters"
+          ],
+          "correctOption": 3,
+          "answer": "20 liters",
+          "explanation": "Initially, the solution contains 6 liters of acid and 9 liters of water. Let x be the amount of pure acid added. After adding x liters of pure acid, the total volume becomes 15 + x liters, and the amount of acid becomes 6 + x liters. According to the given condition, (6 + x) / (15 + x) = 70/100. Solving this equation gives x = 20 liters.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-9",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "A container has 40 liters of a solution containing milk and water in the ratio of 3:1. How much of the mixture must be taken out and replaced with water so that the resulting mixture has equal parts of milk and water?",
+          "options": [
+            "10 liters",
+            "15 liters",
+            "20 liters",
+            "25 liters"
+          ],
+          "correctOption": 1,
+          "answer": "15 liters",
+          "explanation": "Let's assume x liters of the mixture is taken out and replaced with water. After this operation, the ratio of milk to water remains the same. So, the amount of milk in the remaining solution is (3/4)*(40-x) liters. For the resulting mixture to have equal parts of milk and water, (3/4)*(40-x) should be equal to (1/2)*(40-x). Solving this equation gives x = 15 liters.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-10",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "A solution contains 20% acid. How many liters of pure acid should be added to 20 liters of the solution to make it a 50% acid solution?",
+          "options": [
+            "5 liters",
+            "10 liters",
+            "15 liters",
+            "20 liters"
+          ],
+          "correctOption": 3,
+          "answer": "20 liters",
+          "explanation": "Initially, the solution contains 4 liters of acid and 16 liters of water. Let x be the amount of pure acid added. After adding x liters of pure acid, the total volume becomes 20 + x liters, and the amount of acid becomes 4 + x liters. According to the given condition, (4 + x) / (20 + x) = 50/100. Solving this equation gives x = 20 liters.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-11",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "A mixture contains alcohol and water in the ratio 3:2. If 5 liters of water is added to the mixture, what will be the new ratio of alcohol to water?",
+          "options": [
+            "2:3",
+            "3:2",
+            "4:3",
+            "3:4"
+          ],
+          "correctOption": 0,
+          "answer": "2:3",
+          "explanation": "Initially, let the mixture contain 3x liters of alcohol and 2x liters of water. After adding 5 liters of water, the new mixture contains 3x liters of alcohol and (2x + 5) liters of water. So, the new ratio of alcohol to water is 3x : (2x + 5) = 3 : (2 + 5/2x). As the quantity of water added is constant, the new ratio will be inversely proportional to the quantity of alcohol, giving a ratio of 2:3.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-12",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "If 4 liters of water is added to 1 liter of a 50% alcohol solution, what is the new concentration?",
+          "options": [
+            "5%",
+            "10%",
+            "15%",
+            "20%"
+          ],
+          "correctOption": 1,
+          "answer": "10%",
+          "explanation": "Total volume = 4 + 1 = 5 liters. Amount of alcohol = 50% of 1 liter = 0.5 liters. New concentration = (0.5 / 5) × 100 = 10%.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-13",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "A solution contains 25% alcohol. How many liters of pure alcohol should be added to 20 liters of the solution to make it a 50% alcohol solution?",
+          "options": [
+            "5 liters",
+            "10 liters",
+            "15 liters",
+            "20 liters"
+          ],
+          "correctOption": 3,
+          "answer": "20 liters",
+          "explanation": "Initially, the solution contains 5 liters of alcohol and 15 liters of water. Let x be the amount of pure alcohol added. After adding x liters of pure alcohol, the total volume becomes 20 + x liters, and the amount of alcohol becomes 5 + x liters. According to the given condition, (5 + x) / (20 + x) = 50/100. Solving this equation gives x = 20 liters.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-14",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "In a 36-liter mixture of milk and water, the ratio of milk to water is 5:1. How much of the mixture must be taken out and replaced with milk so that the resulting mixture has equal parts of milk and water?",
+          "options": [
+            "4 liters",
+            "6 liters",
+            "8 liters",
+            "10 liters"
+          ],
+          "correctOption": 1,
+          "answer": "6 liters",
+          "explanation": "Initially, the mixture contains 30 liters of milk and 6 liters of water. Let's assume x liters of the mixture is taken out and replaced with milk. The ratio of milk to water after this operation is (30 - x) : (6 - x). According to alligation, the ratio of milk to water should be 1 : 1 for equal parts. So, (30 - x) / (6 - x) = 1. Solving this equation gives x = 6 liters.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-15",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "In what ratio should two varieties of pulses costing ₹60 per kg and ₹90 per kg be mixed to obtain a mixture costing ₹75 per kg?",
+          "options": [
+            "1:2",
+            "2:1",
+            "1:1",
+            "3:2"
+          ],
+          "correctOption": 2,
+          "answer": "1:1",
+          "explanation": "By alligation rule, (90 - 75):(75 - 60) = 15:15 = 1:1.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-16",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "A container has 60 liters of milk. From this container, 6 liters of milk is taken out and replaced with water. This process is repeated once more. What will be the final quantity of milk in the container if the ratio of milk to water is 4:1?",
+          "options": [
+            "36 liters",
+            "39 liters",
+            "42 liters",
+            "45 liters"
+          ],
+          "correctOption": 2,
+          "answer": "42 liters",
+          "explanation": "After the first replacement, there will be 54 liters of milk in the container. After the second replacement, there will be 48 liters of milk. Since the ratio of milk to water is 4:1, the total volume of liquid in the container will be 42 liters.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-17",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "A solution contains 20% acid. How many liters of pure acid should be added to 20 liters of the solution to make it a 40% acid solution?",
+          "options": [
+            "5 liters",
+            "10 liters",
+            "15 liters",
+            "20 liters"
+          ],
+          "correctOption": 3,
+          "answer": "20 liters",
+          "explanation": "Initially, the solution contains 4 liters of acid and 16 liters of water. Let x be the amount of pure acid added. After adding x liters of pure acid, the total volume becomes 20 + x liters, and the amount of acid becomes 4 + x liters. According to the given condition, (4 + x) / (20 + x) = 40/100. Solving this equation gives x = 20 liters.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-18",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "A shopkeeper blends tea costing $4/kg with another variety costing $5/kg. If he sells the mixture at $4.80/kg making a profit of 20%, what is the ratio of the two varieties mixed?",
+          "options": [
+            "1:2",
+            "2:1",
+            "3:2",
+            "2:3"
+          ],
+          "correctOption": 2,
+          "answer": "3:2",
+          "explanation": "Let x be the cost price per kg of the mixture. According to the profit percentage, (4.80 - x) / x = 20/100. Solving this equation gives x = $4.00. Now, the ratio of the two varieties can be found using the rule of allegation as (5 - 4) : (4.80 - 5) = 1:0.2 = 5:1 = 5:1 * 1/5 = 1:1/5 = 5:1.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-19",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "If 2 kg of sugar costing $5/kg is mixed with 3 kg costing $6/kg, what is the cost per kg of the mixture?",
+          "options": [
+            "$5.2/kg",
+            "$5.4/kg",
+            "$5.6/kg",
+            "$5.8/kg"
+          ],
+          "correctOption": 2,
+          "answer": "$5.6/kg",
+          "explanation": "Using the weighted average method: (5 × 2 + 6 × 3) / (2 + 3) = (10 + 18) / 5 = 28 / 5 = $5.6/kg.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-20",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "A container has 40 liters of a mixture containing milk and water in the ratio 3:2. How many liters of milk should be added to make the ratio 2:1?",
+          "options": [
+            "10 liters",
+            "15 liters",
+            "20 liters",
+            "25 liters"
+          ],
+          "correctOption": 2,
+          "answer": "20 liters",
+          "explanation": "Initially, the container contains 24 liters of milk and 16 liters of water. To make the ratio 2:1, the amount of water should be double the amount of milk. So, 24*(2/1) = 48 liters of milk should be added.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-21",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "In a 20-liter mixture of milk and water, the ratio of milk to water is 3:2. How many liters of water must be added to the mixture to make the ratio 3:4?",
+          "options": [
+            "2 liters",
+            "4 liters",
+            "6 liters",
+            "8 liters"
+          ],
+          "correctOption": 2,
+          "answer": "6 liters",
+          "explanation": "The initial mixture contains 12 liters of milk and 8 liters of water. To make the ratio 3:4, we need to add 6 liters of water. So, the total amount of water in the new mixture will be 14 liters.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-22",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "A 25-liter mixture of milk and water contains milk and water in the ratio 3:2. How much of the mixture must be replaced with milk so that the resulting mixture has milk and water in the ratio 2:1?",
+          "options": [
+            "5 liters",
+            "10 liters",
+            "15 liters",
+            "20 liters"
+          ],
+          "correctOption": 2,
+          "answer": "15 liters",
+          "explanation": "Initially, the mixture contains 15 liters of milk and 10 liters of water. Let's assume x liters of the mixture is replaced with milk. After replacement, the total mixture remains 25 liters. According to alligation, the ratio of milk to water should be 2 : 1. So, (15 + x) / 10 = 2 / 1. Solving this equation gives x = 15 liters.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-23",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "A solution contains 20% alcohol. How many liters of pure alcohol should be added to 15 liters of the solution to make it a 40% alcohol solution?",
+          "options": [
+            "5 liters",
+            "7.5 liters",
+            "10 liters",
+            "12.5 liters"
+          ],
+          "correctOption": 3,
+          "answer": "12.5 liters",
+          "explanation": "Initially, the solution contains 3 liters of alcohol and 12 liters of water. Let x be the amount of pure alcohol added. After adding x liters of pure alcohol, the total volume becomes 15 + x liters, and the amount of alcohol becomes 3 + x liters. According to the given condition, (3 + x) / (15 + x) = 40/100. Solving this equation gives x = 12.5 liters.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-24",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "A container has 40 liters of liquid, in which the ratio of milk to water is 3:2. If 8 liters of mixture is removed and replaced with 8 liters of water, what will be the final ratio of milk to water?",
+          "options": [
+            "3:2",
+            "2:3",
+            "5:3",
+            "3:5"
+          ],
+          "correctOption": 1,
+          "answer": "2:3",
+          "explanation": "After removing 8 liters of the mixture, there will be 24 liters of milk and 16 liters of water. When 8 liters of water is added, the total amount of water becomes 24 liters, hence the ratio becomes 2:3.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-25",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "If 3 liters of a 25% solution is mixed with 2 liters of a 35% solution, what is the concentration of the new mixture?",
+          "options": [
+            "26%",
+            "28%",
+            "30%",
+            "32%"
+          ],
+          "correctOption": 1,
+          "answer": "28%",
+          "explanation": "Using the weighted average method: (25% × 3 + 35% × 2) / (3 + 2) = (75 + 70) / 5 = 145 / 5 = 28%.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        },
+        {
+          "id": "gold-mixture-26",
+          "topic": "Mixture and Alligation",
+          "topicKey": "mixture",
+          "category": "quantitative",
+          "question": "A shopkeeper mixes two types of pulses, one costing $3/kg and the other $4/kg, to make a mixture worth $3.50/kg. What is the ratio in which the two types of pulses are mixed?",
+          "options": [
+            "1:2",
+            "2:1",
+            "3:2",
+            "2:3"
+          ],
+          "correctOption": 0,
+          "answer": "1:2",
+          "explanation": "Let x be the cost price per kg of the mixture. According to the given ratio, (4 - 3.50) : (3.50 - 3) = 0.50 : 0.50 = 1:1 = 1:1 * 1/1 = 1:1. Since the required ratio is $0.50 away from each of the individual prices, for a total of $1, the required ratio would be half of this, which is 1:2.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/MixtureAndAlligation"
+        }
+      ]
+    },
+    "age": {
+      "name": "Problems on Ages",
+      "endpoint": "https://aptitude-gold.vercel.app/Age",
+      "category": "quantitative",
+      "count": 22,
+      "questions": [
+        {
+          "id": "gold-age-1",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "The ratio of S's present age to his age after 70 years is 20:39. What is S's present age?",
+          "options": [
+            "55 years",
+            "60 years",
+            "65 years",
+            "70 years"
+          ],
+          "correctOption": 1,
+          "answer": "60 years",
+          "explanation": "Let S's present age be 20x. According to the given condition, (20x + 70) / 20x = 39 / 20. Solving this equation gives x = 6. Hence, S's present age = 20 * 6 = 120 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-2",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "A is twice as old as B was when A was as old as B is now. If the sum of their present ages is 56 years, what is the present age of A?",
+          "options": [
+            "36 years",
+            "40 years",
+            "42 years",
+            "48 years"
+          ],
+          "correctOption": 2,
+          "answer": "42 years",
+          "explanation": "Let the present age of A be x years and the present age of B be y years. According to the given conditions, x = 2 * (y - (x - y)) and x + y = 56. Solving these equations gives x = 42 and y = 14. Therefore, the present age of A = 42 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-3",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "The product of ages of F and G is 560. If the ratio of their ages is 3:4, what is G's age?",
+          "options": [
+            "20",
+            "24",
+            "28",
+            "30"
+          ],
+          "correctOption": 2,
+          "answer": "28",
+          "explanation": "Let F's age be 3x and G's age be 4x. Given that (3x) * (4x) = 560, solving for x, we get x = 7. So, G's age is 4 × 7 = 28.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-4",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "The product of ages of M and N is 600. If the ratio of their ages is 5:8, what is N's age?",
+          "options": [
+            "32 years",
+            "36 years",
+            "40 years",
+            "48 years"
+          ],
+          "correctOption": 3,
+          "answer": "48 years",
+          "explanation": "Let the ages of M and N be 5x and 8x, respectively. Given that 5x * 8x = 600. Solving this equation gives x = 3. Hence, N's age = 8 * 3 = 24 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-5",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "The ratio of R's present age to his age after 65 years is 19:37. What is R's present age?",
+          "options": [
+            "52 years",
+            "57 years",
+            "62 years",
+            "67 years"
+          ],
+          "correctOption": 1,
+          "answer": "57 years",
+          "explanation": "Let R's present age be 19x. According to the given condition, (19x + 65) / 19x = 37 / 19. Solving this equation gives x = 6. Hence, R's present age = 19 * 6 = 114 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-6",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "The product of ages of L and M is 819. If the ratio of their ages is 5:9, what is M's age?",
+          "options": [
+            "21 years",
+            "24 years",
+            "27 years",
+            "30 years"
+          ],
+          "correctOption": 2,
+          "answer": "27 years",
+          "explanation": "Let the ages of L and M be 5x and 9x, respectively. Given that 5x * 9x = 819. Solving this equation gives x = 3. Hence, M's age = 9 * 3 = 27 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-7",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "The sum of ages of J and K is 150 years. If the ratio of their ages is 5:6, what is K's age?",
+          "options": [
+            "80 years",
+            "85 years",
+            "90 years",
+            "95 years"
+          ],
+          "correctOption": 2,
+          "answer": "90 years",
+          "explanation": "Let the ages of J and K be 5x and 6x, respectively. Given that 5x + 6x = 150. Solving this equation gives x = 15. Hence, K's age = 6 * 15 = 90 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-8",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "The ratio of D's present age to his age after 10 years is 5:9. What is D's present age?",
+          "options": [
+            "20 years",
+            "25 years",
+            "30 years",
+            "35 years"
+          ],
+          "correctOption": 1,
+          "answer": "25 years",
+          "explanation": "Let D's present age be 5x. According to the given condition, (5x + 10) / 5x = 9 / 5. Solving this equation gives x = 5. Hence, D's present age = 5 * 5 = 25 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-9",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "The sum of ages of H and I is 100 years. If the ratio of their ages is 3:5, what is I's age?",
+          "options": [
+            "40 years",
+            "45 years",
+            "50 years",
+            "55 years"
+          ],
+          "correctOption": 2,
+          "answer": "50 years",
+          "explanation": "Let the ages of H and I be 3x and 5x, respectively. Given that 3x + 5x = 100. Solving this equation gives x = 10. Hence, I's age = 5 * 10 = 50 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-10",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "12 years ago, B's age was one-third of his present age. What is B's present age?",
+          "options": [
+            "30 years",
+            "36 years",
+            "42 years",
+            "48 years"
+          ],
+          "correctOption": 1,
+          "answer": "36 years",
+          "explanation": "Let B's present age be x. According to the given condition, x - 12 = (1/3) * x. Solving this equation gives x = 36. Hence, B's present age = 36 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-11",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "26 years ago, O's age was one-sixteenth of his present age. What is O's present age?",
+          "options": [
+            "384 years",
+            "416 years",
+            "448 years",
+            "480 years"
+          ],
+          "correctOption": 1,
+          "answer": "416 years",
+          "explanation": "Let O's present age be x. According to the given condition, x - 26 = (1/16) * x. Solving this equation gives x = 416. Hence, O's present age = 416 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-12",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "If Alice is 5 years older than Bob, and the sum of their ages is 35, how old is Alice?",
+          "options": [
+            "20",
+            "25",
+            "30",
+            "35"
+          ],
+          "correctOption": 0,
+          "answer": "20",
+          "explanation": "Let Bob's age be x. Then Alice's age is x + 5. Given that x + (x + 5) = 35, solving this gives x = 15, so Alice is x + 5 = 20 years old.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-13",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "The age of the father 10 years ago was thrice the age of his son. After 10 years, the age of the father will be twice that of his son. What are their present ages?",
+          "options": [
+            "35 years, 25 years",
+            "40 years, 20 years",
+            "45 years, 15 years",
+            "50 years, 10 years"
+          ],
+          "correctOption": 1,
+          "answer": "40 years, 20 years",
+          "explanation": "Let the present age of the father be x years and the present age of the son be y years. According to the given conditions, (x - 10) = 3 * (y - 10) and (x + 10) = 2 * (y + 10). Solving these equations gives x = 40 and y = 20. Therefore, the present ages of the father and the son are 40 years and 20 years respectively.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-14",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "The product of ages of H and I is 462. If the ratio of their ages is 2:3, what is I's age?",
+          "options": [
+            "14 years",
+            "18 years",
+            "21 years",
+            "24 years"
+          ],
+          "correctOption": 2,
+          "answer": "21 years",
+          "explanation": "Let the ages of H and I be 2x and 3x, respectively. Given that 2x * 3x = 462. Solving this equation gives x = 7. Hence, I's age = 3 * 7 = 21 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-15",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "8 years ago, C's age was one-fourth of his present age. What is C's present age?",
+          "options": [
+            "24 years",
+            "32 years",
+            "40 years",
+            "48 years"
+          ],
+          "correctOption": 1,
+          "answer": "32 years",
+          "explanation": "Let C's present age be x. According to the given condition, x - 8 = (1/4) * x. Solving this equation gives x = 32. Hence, C's present age = 32 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-16",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "The ratio of N's present age to his age after 45 years is 15:29. What is N's present age?",
+          "options": [
+            "40 years",
+            "45 years",
+            "50 years",
+            "55 years"
+          ],
+          "correctOption": 1,
+          "answer": "45 years",
+          "explanation": "Let N's present age be 15x. According to the given condition, (15x + 45) / 15x = 29 / 15. Solving this equation gives x = 4. Hence, N's present age = 15 * 4 = 60 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-17",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "A mother is twice as old as her son. After 6 years, her age will be three times the age of her son. What are their present ages?",
+          "options": [
+            "20 years, 10 years",
+            "24 years, 12 years",
+            "28 years, 14 years",
+            "32 years, 16 years"
+          ],
+          "correctOption": 1,
+          "answer": "24 years, 12 years",
+          "explanation": "Let the present age of the son be x years. Then, the present age of the mother = 2x years. According to the given conditions, 2x + 6 = 3 * (x + 6). Solving this equation gives x = 6. Therefore, the present ages of the mother and the son are 24 years and 12 years respectively.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-18",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "The ratio of O's present age to his age after 50 years is 16:31. What is O's present age?",
+          "options": [
+            "43 years",
+            "48 years",
+            "53 years",
+            "58 years"
+          ],
+          "correctOption": 1,
+          "answer": "48 years",
+          "explanation": "Let O's present age be 16x. According to the given condition, (16x + 50) / 16x = 31 / 16. Solving this equation gives x = 6. Hence, O's present age = 16 * 6 = 96 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-19",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "John is twice as old as Peter. If the sum of their ages is 36, how old is John?",
+          "options": [
+            "20",
+            "25",
+            "30",
+            "35"
+          ],
+          "correctOption": 0,
+          "answer": "20",
+          "explanation": "Let Bob's age be x. Then Alice's age is x + 5. Given that x + (x + 5) = 35. Solving this equation, we find x = 15, so Alice is x + 5 = 20 years old.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-20",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "Ten years ago, A was half of B's age. If the sum of their present ages is 70 years, what are their present ages?",
+          "options": [
+            "35 years, 35 years",
+            "40 years, 30 years",
+            "45 years, 25 years",
+            "50 years, 20 years"
+          ],
+          "correctOption": 1,
+          "answer": "40 years, 30 years",
+          "explanation": "Let the present age of A be x years and the present age of B be y years. According to the given conditions, (x - 10) = (1/2) * (y - 10) and (x + y) = 70. Solving these equations gives x = 40 and y = 30. Therefore, the present ages of A and B are 40 years and 30 years respectively.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-21",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "The ratio of K's present age to his age after 30 years is 12:23. What is K's present age?",
+          "options": [
+            "30",
+            "32",
+            "33",
+            "35"
+          ],
+          "correctOption": 2,
+          "answer": "33",
+          "explanation": "Let K's present age be x. Given that x / (x + 30) = 12 / 23, solving for x gives x = 32.72. Approximating to the nearest whole number, K's age is 33 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        },
+        {
+          "id": "gold-age-22",
+          "topic": "Problems on Ages",
+          "topicKey": "age",
+          "category": "quantitative",
+          "question": "36 years ago, U's age was one-twenty-second of his present age. What is U's present age?",
+          "options": [
+            "756 years",
+            "792 years",
+            "828 years",
+            "864 years"
+          ],
+          "correctOption": 1,
+          "answer": "792 years",
+          "explanation": "Let U's present age be x. According to the given condition, x - 36 = (1/22) * x. Solving this equation gives x = 792. Hence, U's present age = 792 years.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Age"
+        }
+      ]
+    },
+    "permutation": {
+      "name": "Permutation and Combination",
+      "endpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination",
+      "category": "quantitative",
+      "count": 27,
+      "questions": [
+        {
+          "id": "gold-permutation-1",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "How many different pairs of earrings can be chosen from a collection of 6 pairs?",
+          "options": [
+            "15",
+            "20",
+            "10",
+            "25"
+          ],
+          "correctOption": 0,
+          "answer": "15",
+          "explanation": "The number of combinations of selecting r objects from n distinct objects is given by nCr = n! / (r! * (n - r)!). So, for choosing pairs of earrings from 6 pairs, the number of combinations is 6C2 = 6! / (2! * (6 - 2)!) = 15.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-2",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "How many combinations of 3 items can be selected from 5?",
+          "options": [
+            "5 ways",
+            "8 ways",
+            "10 ways",
+            "12 ways"
+          ],
+          "correctOption": 2,
+          "answer": "10 ways",
+          "explanation": "The number of combinations is given by 5C3 = 5! / (3!(5-3)!) = 5 × 4 / 2 × 1 = 10.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-3",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "In a game, a player can choose 3 colors from a set of 6 colors, with repetition allowed. How many different combinations of colors are possible?",
+          "options": [
+            "56",
+            "30",
+            "20",
+            "15"
+          ],
+          "correctOption": 0,
+          "answer": "56",
+          "explanation": "Using the formula for combinations with repetition, (6 + 3 - 1) choose 3 = 8 choose 3 = 56.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-4",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "A student is choosing toppings for a sandwich. There are 5 types of toppings available, and the student can choose up to 3 toppings with repetition allowed. How many different combinations of toppings are possible?",
+          "options": [
+            "35",
+            "20",
+            "15",
+            "10"
+          ],
+          "correctOption": 0,
+          "answer": "35",
+          "explanation": "Using the formula for combinations with repetition, (5 + 3 - 1) choose 3 = 7 choose 3 = 35.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-5",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "In how many ways can 10 guests be seated around a circular dining table?",
+          "options": [
+            "3628800",
+            "90",
+            "362880",
+            "720"
+          ],
+          "correctOption": 0,
+          "answer": "3628800",
+          "explanation": "For a circular arrangement with n objects, the number of permutations is (n - 1)!. So, for 10 guests, the number of permutations is (10 - 1)! = 9! = 3628800.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-6",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "In a group of 12 students, how many ways can you select a team of 3 students to represent the group?",
+          "options": [
+            "220",
+            "132",
+            "48",
+            "100"
+          ],
+          "correctOption": 0,
+          "answer": "220",
+          "explanation": "Using the combination formula, C(12, 3) = 12! / (3! * (12 - 3)!) = 220.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-7",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "A child is building structures using blocks. There are 4 types of blocks available, and the child can choose up to 4 blocks with repetition allowed. How many different combinations of blocks are possible?",
+          "options": [
+            "70",
+            "20",
+            "30",
+            "40"
+          ],
+          "correctOption": 0,
+          "answer": "70",
+          "explanation": "Using the formula for combinations with repetition, (4 + 4 - 1) choose 4 = 7 choose 4 = 35 / 2 = 70.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-8",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "In a game, a player can choose 2 symbols from a set of 4 symbols, with repetition allowed. How many different combinations of symbols are possible?",
+          "options": [
+            "10",
+            "6",
+            "15",
+            "20"
+          ],
+          "correctOption": 0,
+          "answer": "10",
+          "explanation": "Using the formula for combinations with repetition, (4 + 2 - 1) choose 2 = 5 choose 2 = 10.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-9",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "How many different ways can 10 flags be arranged around a circular track?",
+          "options": [
+            "3628800",
+            "90",
+            "362880",
+            "720"
+          ],
+          "correctOption": 0,
+          "answer": "3628800",
+          "explanation": "For a circular arrangement with n objects, the number of permutations is (n - 1)!. So, for 10 flags, the number of permutations is (10 - 1)! = 9! = 3628800.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-10",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "How many 5-card hands can be dealt from a standard deck of 52 cards?",
+          "options": [
+            "2,598,960",
+            "1,098,240",
+            "1,326",
+            "52"
+          ],
+          "correctOption": 0,
+          "answer": "2,598,960",
+          "explanation": "This is a combination problem. The number of ways to choose 5 cards from 52 is C(52, 5) = 52! / (5! * (52 - 5)!) = 2,598,960.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-11",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "How many permutations can be formed using the letters of the word 'BOOKKEEPER'?",
+          "options": [
+            "9979200",
+            "720",
+            "151200",
+            "3628800"
+          ],
+          "correctOption": 0,
+          "answer": "9979200",
+          "explanation": "The word 'BOOKKEEPER' has 10 letters with repetitions: 3 'E', 2 'O', and 2 'K'. The total number of permutations is 10! / (3! * 2! * 2!) = 9,979,200.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-12",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "How many different pairs of shoes can be chosen from a collection of 5 pairs?",
+          "options": [
+            "10",
+            "15",
+            "20",
+            "25"
+          ],
+          "correctOption": 0,
+          "answer": "10",
+          "explanation": "The number of combinations of selecting r objects from n distinct objects is given by nCr = n! / (r! * (n - r)!). So, for choosing pairs of shoes from 5 pairs, the number of combinations is 5C2 = 5! / (2! * (5 - 2)!) = 10.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-13",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "How many different ways can 6 books be arranged on a circular bookshelf?",
+          "options": [
+            "120",
+            "30",
+            "720",
+            "360"
+          ],
+          "correctOption": 0,
+          "answer": "120",
+          "explanation": "For a circular arrangement with n objects, the number of permutations is (n - 1)!. So, for 6 books, the number of permutations is (6 - 1)! = 5! = 120.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-14",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "How many different 3-letter words can be formed using the letters A, B, C, and D if repetition is allowed?",
+          "options": [
+            "12",
+            "16",
+            "24",
+            "64"
+          ],
+          "correctOption": 3,
+          "answer": "64",
+          "explanation": "Each letter has 4 choices, and there are 3 letters. So, the total number of words is 4^3 = 64.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-15",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "In how many ways can 7 beads be arranged on a circular necklace?",
+          "options": [
+            "5040",
+            "40",
+            "120",
+            "720"
+          ],
+          "correctOption": 0,
+          "answer": "5040",
+          "explanation": "For a circular arrangement with n objects, the number of permutations is (n - 1)!. So, for 7 beads, the number of permutations is (7 - 1)! = 6! = 5040.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-16",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "From a group of 15 students, how many different pairs can be formed?",
+          "options": [
+            "105",
+            "120",
+            "136",
+            "98"
+          ],
+          "correctOption": 0,
+          "answer": "105",
+          "explanation": "Using the combination formula, C(15, 2) = 15! / (2! * (15 - 2)!) = 105.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-17",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "In how many ways can 3 coins be chosen from a jar containing 8 different coins?",
+          "options": [
+            "56",
+            "84",
+            "120",
+            "45"
+          ],
+          "correctOption": 0,
+          "answer": "56",
+          "explanation": "The number of combinations of selecting r objects from n distinct objects is given by nCr = n! / (r! * (n - r)!). So, for choosing 3 coins from 8, the number of combinations is 8C3 = 8! / (3! * (8 - 3)!) = 56.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-18",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "How many different pairs of gloves can be chosen from a box containing 5 pairs?",
+          "options": [
+            "10",
+            "15",
+            "20",
+            "25"
+          ],
+          "correctOption": 0,
+          "answer": "10",
+          "explanation": "The number of combinations of selecting r objects from n distinct objects is given by nCr = n! / (r! * (n - r)!). So, for choosing pairs of gloves from 5 pairs, the number of combinations is 5C2 = 5! / (2! * (5 - 2)!) = 10.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-19",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "How many combinations of 3 objects can be formed from a set of 7 objects?",
+          "options": [
+            "35",
+            "42",
+            "21",
+            "14"
+          ],
+          "correctOption": 0,
+          "answer": "35",
+          "explanation": "The formula for combinations is C(n, r) = n! / (r! * (n - r)!). Substituting the values, C(7, 3) = 7! / (3! * (7 - 3)!) = 35.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-20",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "How many different ways can 8 flags be arranged around a circular field?",
+          "options": [
+            "5040",
+            "56",
+            "40",
+            "40320"
+          ],
+          "correctOption": 0,
+          "answer": "5040",
+          "explanation": "For a circular arrangement with n objects, the number of permutations is (n - 1)!. So, for 8 flags, the number of permutations is (8 - 1)! = 7! = 5040.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-21",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "How many different combinations of 2 letters can be formed from the word 'APPLE'?",
+          "options": [
+            "5",
+            "8",
+            "10",
+            "6"
+          ],
+          "correctOption": 3,
+          "answer": "6",
+          "explanation": "There are 5 unique letters in the word 'APPLE'. Using the combination formula, C(5, 2) = 5! / (2! * (5 - 2)!) = 10 / 2 = 6.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-22",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "How many different combinations of 4 numbers can be chosen from the set {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}?",
+          "options": [
+            "210",
+            "120",
+            "252",
+            "45"
+          ],
+          "correctOption": 0,
+          "answer": "210",
+          "explanation": "Using the combination formula, C(10, 4) = 10! / (4! * (10 - 4)!) = 210.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-23",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "What is the value of 6! ?",
+          "options": [
+            "720",
+            "120",
+            "240",
+            "7200"
+          ],
+          "correctOption": 0,
+          "answer": "720",
+          "explanation": "Factorial of 6, denoted as 6!, is the product of all positive integers from 1 to 6, which is equal to 6 * 5 * 4 * 3 * 2 * 1 = 720.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-24",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "In how many ways can a committee of 5 members be chosen from a group of 10 people?",
+          "options": [
+            "10",
+            "100",
+            "252",
+            "210"
+          ],
+          "correctOption": 3,
+          "answer": "210",
+          "explanation": "This is a combination problem, and the formula is C(n, r) = n! / (r! * (n - r)!). Substituting the values, C(10, 5) = 10! / (5! * (10 - 5)!) = 10 * 9 * 8 * 7 * 6 / (5 * 4 * 3 * 2 * 1) = 210.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-25",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "In how many ways can the letters of the word 'BANANA' be arranged?",
+          "options": [
+            "60",
+            "120",
+            "30",
+            "90"
+          ],
+          "correctOption": 0,
+          "answer": "60",
+          "explanation": "The word 'BANANA' has 6 letters with repetitions: 3 'A', 2 'N', and 1 'B'. The total number of permutations is 6! / (3! * 2!) = 60.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-26",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "How many different groups of 4 people can be formed from a total of 8 people?",
+          "options": [
+            "56",
+            "70",
+            "35",
+            "24"
+          ],
+          "correctOption": 1,
+          "answer": "70",
+          "explanation": "The number of combinations of selecting r objects from n distinct objects is given by nCr = n! / (r! * (n - r)!). So, for forming groups of 4 people from 8, the number of combinations is 8C4 = 8! / (4! * (8 - 4)!) = 70.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        },
+        {
+          "id": "gold-permutation-27",
+          "topic": "Permutation and Combination",
+          "topicKey": "permutation",
+          "category": "quantitative",
+          "question": "What is the value of 5! ?",
+          "options": [
+            "20",
+            "120",
+            "240",
+            "720"
+          ],
+          "correctOption": 1,
+          "answer": "120",
+          "explanation": "Factorial of 5, denoted as 5!, is the product of all positive integers from 1 to 5, which is equal to 5 * 4 * 3 * 2 * 1 = 120.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PermutationAndCombination"
+        }
+      ]
+    },
+    "profit": {
+      "name": "Profit and Loss",
+      "endpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss",
+      "category": "quantitative",
+      "count": 21,
+      "questions": [
+        {
+          "id": "gold-profit-1",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "A shopkeeper sells his goods at cost price but uses a 900 gram weight instead of a 1 kg weight. What is his gain percentage?",
+          "options": [
+            "11.11%",
+            "10%",
+            "12%",
+            "15%"
+          ],
+          "correctOption": 0,
+          "answer": "11.11%",
+          "explanation": "Let the cost price of 1 kg be $1. If he sells 1 kg, he gains nothing. If he sells 900 grams, his cost price is $0.90 and his selling price is $1. So, he gains $0.10 on $0.90. Gain percentage = (0.10 / 0.90) * 100% = 11.11%.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-2",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "A computer is sold for $1440 after allowing a discount of 20%. If the profit made by selling the computer is 25%, what was its cost price?",
+          "options": [
+            "$900",
+            "$960",
+            "$1020",
+            "$1080"
+          ],
+          "correctOption": 1,
+          "answer": "$960",
+          "explanation": "Let the cost price of the computer be x. Selling price after a 20% discount = 80% of x. Selling price after a 25% profit = 125% of 80% of x. $1440 = 1.25 * 0.80x. $1440 = 1.00x. x = $1440 / 1.25 = $1152.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-3",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "A shirt is sold for $360 after a discount of 10%. If the profit made by selling the shirt is 20%, what was its cost price?",
+          "options": [
+            "$200",
+            "$250",
+            "$300",
+            "$350"
+          ],
+          "correctOption": 1,
+          "answer": "$250",
+          "explanation": "Let the cost price of the shirt be x. Selling price after a 10% discount = 90% of x. Selling price after a 20% profit = 120% of 90% of x. $360 = 1.20 * 0.90x. $360 = 1.08x. x = $360 / 1.08 = $250.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-4",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "By selling a calculator for $150, a man loses 20%. What should be the selling price of the calculator to get a profit of 20%?",
+          "options": [
+            "$180",
+            "$200",
+            "$225",
+            "$240"
+          ],
+          "correctOption": 2,
+          "answer": "$225",
+          "explanation": "Let the cost price of the calculator be x. Selling price with a 20% loss = $0.80x. Selling price with a 20% profit = $1.20x. According to the question, $0.80x = $150. x = $150 / 0.80 = $187.50. Therefore, the selling price for a 20% profit = $1.20 * $187.50 = $225.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-5",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "A vendor sold a watch for ₹1500 at a loss of 25%. What was the cost price?",
+          "options": [
+            "₹1800",
+            "₹2000",
+            "₹2100",
+            "₹2400"
+          ],
+          "correctOption": 1,
+          "answer": "₹2000",
+          "explanation": "Cost Price = Selling Price / (1 - Loss%) = 1500 / 0.75 = ₹2000.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-6",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "A bike is sold for $6600 after giving a discount of 10% on the marked price. If the profit made by selling the bike is 20%, what is the cost price of the bike?",
+          "options": [
+            "$5000",
+            "$5500",
+            "$6000",
+            "$6500"
+          ],
+          "correctOption": 1,
+          "answer": "$5500",
+          "explanation": "Let the cost price of the bike be x. Selling price after a 10% discount = 90% of x. Selling price after a 20% profit = 120% of 90% of x. $6600 = 1.20 * 0.90x. $6600 = 1.08x. x = $6600 / 1.08 = $5500.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-7",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "A shopkeeper sells a bicycle for $300, making a profit of 25%. What is the cost price of the bicycle?",
+          "options": [
+            "$200",
+            "$220",
+            "$240",
+            "$260"
+          ],
+          "correctOption": 2,
+          "answer": "$240",
+          "explanation": "Let the cost price of the bicycle be x. Selling price = Cost price + Profit. $300 = x + 25% of x. $300 = x + 0.25x. $300 = 1.25x. x = $300 / 1.25 = $240.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-8",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "A person bought 20 oranges for $40 and sold them at the rate of 4 for $10. Find his gain or loss percentage.",
+          "options": [
+            "20% loss",
+            "25% loss",
+            "30% loss",
+            "35% loss"
+          ],
+          "correctOption": 1,
+          "answer": "25% loss",
+          "explanation": "Cost price of 4 oranges = $10. Cost price of 20 oranges = $50. Loss = Cost price - Selling price = $50 - $40 = $10. Loss percentage = (Loss / Cost price) * 100% = ($10 / $50) * 100% = 20%.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-9",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "A camera is sold for $450 after allowing a discount of 10%. If the profit made by selling the camera is 20%, what was its cost price?",
+          "options": [
+            "$350",
+            "$375",
+            "$400",
+            "$425"
+          ],
+          "correctOption": 1,
+          "answer": "$375",
+          "explanation": "Let the cost price of the camera be x. Selling price after a 10% discount = 90% of x. Selling price after a 20% profit = 120% of 90% of x. $450 = 1.20 * 0.90x. $450 = 1.08x. x = $450 / 1.08 = $375.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-10",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "A shirt is sold for $120 after giving a discount of 20% on the market price. What is the market price of the shirt?",
+          "options": [
+            "$100",
+            "$120",
+            "$150",
+            "$180"
+          ],
+          "correctOption": 2,
+          "answer": "$150",
+          "explanation": "Let the market price of the shirt be x. Selling price after a 20% discount = 80% of x. $120 = 0.80x. x = $120 / 0.80 = $150.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-11",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "A jacket is sold for $1800 after a discount of 25%. What was its cost price if the seller made a profit of 20%?",
+          "options": [
+            "$1200",
+            "$1400",
+            "$1440",
+            "$1600"
+          ],
+          "correctOption": 2,
+          "answer": "$1440",
+          "explanation": "Let the cost price of the jacket be x. Selling price after a 25% discount = 75% of x. Selling price after a 20% profit = 120% of 75% of x. $1800 = 1.20 * 0.75x. $1800 = 0.9x. x = $1800 / 0.9 = $2000. Therefore, the cost price of the jacket is $2000.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-12",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "A man buys an article for $200 and sells it for $250. Find his profit percentage.",
+          "options": [
+            "20%",
+            "25%",
+            "30%",
+            "35%"
+          ],
+          "correctOption": 1,
+          "answer": "25%",
+          "explanation": "Profit = Selling Price - Cost Price = 250 - 200 = $50. The profit percentage is given by Profit% = (Profit / Cost Price) × 100 = (50 / 200) × 100 = 25%.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-13",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "A pair of shoes is sold at a discount of 12%. If the selling price is $440, what was the market price of the shoes?",
+          "options": [
+            "$400",
+            "$440",
+            "$480",
+            "$500"
+          ],
+          "correctOption": 3,
+          "answer": "$500",
+          "explanation": "Let the market price of the shoes be x. Selling price after a 12% discount = 88% of x. $440 = 0.88x. x = $440 / 0.88 = $500.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-14",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "A mobile phone is sold at a profit of 25% after allowing a discount of 10%. If the selling price is $375, what is the cost price of the phone?",
+          "options": [
+            "$200",
+            "$225",
+            "$240",
+            "$250"
+          ],
+          "correctOption": 2,
+          "answer": "$240",
+          "explanation": "Let the cost price of the mobile phone be x. Selling price after a 10% discount = 90% of x. Selling price after a 25% profit = 125% of 90% of x. $375 = 1.25 * 0.90x. $375 = 1.125x. x = $375 / 1.125 = $240.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-15",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "A dairy farmer mixes 3 liters of water in 12 liters of milk and sells the mixture at the cost price of milk. What is his profit percentage?",
+          "options": [
+            "20%",
+            "25%",
+            "30%",
+            "35%"
+          ],
+          "correctOption": 1,
+          "answer": "25%",
+          "explanation": "The total quantity of the mixture is 15 liters. The farmer gains on 3 liters of water. So, the profit percentage = (3 liters / 12 liters) * 100% = 25%.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-16",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "A trader gives a 10% discount on the marked price and still makes a profit of 20%. If the cost price is ₹200, what is the marked price?",
+          "options": [
+            "₹280",
+            "₹300",
+            "₹320",
+            "₹350"
+          ],
+          "correctOption": 1,
+          "answer": "₹300",
+          "explanation": "Let the marked price be x. Selling Price = x × 0.9. Given that 0.9x = 1.2 × 200, x = ₹300.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-17",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "If the cost price of 20 books is $200 and the selling price is $300, what is the profit percentage?",
+          "options": [
+            "30%",
+            "40%",
+            "50%",
+            "60%"
+          ],
+          "correctOption": 2,
+          "answer": "50%",
+          "explanation": "Total cost price = $200. Total selling price = $300. Profit = Total selling price - Total cost price = $300 - $200 = $100. Profit percentage = (Profit / Cost price) * 100% = ($100 / $200) * 100% = 50%.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-18",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "A man sells an article at a profit of 15%. If he had bought it for 10% less and sold it for $90 more, he would have gained 30%. What did the article cost him?",
+          "options": [
+            "$500",
+            "$550",
+            "$600",
+            "$650"
+          ],
+          "correctOption": 2,
+          "answer": "$600",
+          "explanation": "Let the original cost price of the article be x. Selling price with a 15% gain = $1.15x. Selling price with a 30% gain = $1.30(x - 0.10x) = $1.30(0.90x) = $1.17x. According to the question, $1.17x - $1.15x = $90. 0.02x = $90. x = $90 / 0.02 = $4500. Therefore, the original cost price of the article is $4500 / 7.5 = $600.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-19",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "A shopkeeper buys 100 apples for $50 and sells them at $0.70 each. What is his profit percentage?",
+          "options": [
+            "20%",
+            "30%",
+            "40%",
+            "50%"
+          ],
+          "correctOption": 2,
+          "answer": "40%",
+          "explanation": "Total cost price = 100 * $0.50 = $50. Total selling price = 100 * $0.70 = $70. Profit = Total selling price - Total cost price = $70 - $50 = $20. Profit percentage = (Profit / Cost price) * 100% = ($20 / $50) * 100% = 40%.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-20",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "By selling 33 meters of cloth, a man loses the selling price of 11 meters. What is his loss or gain percentage?",
+          "options": [
+            "50% loss",
+            "75% loss",
+            "100% loss",
+            "125% loss"
+          ],
+          "correctOption": 2,
+          "answer": "100% loss",
+          "explanation": "Let the cost price of 33 meters of cloth be x. Selling price of 33 meters of cloth = Selling price of 22 meters of cloth (since he loses the selling price of 11 meters). According to the question, x - (1/3)x = x - (1/3)x. Therefore, his loss percentage = (1/3)x / (1/3)x * 100% = 100%.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        },
+        {
+          "id": "gold-profit-21",
+          "topic": "Profit and Loss",
+          "topicKey": "profit",
+          "category": "quantitative",
+          "question": "A man sells two watches for $800 each, gaining 20% on one and losing 20% on the other. What is his net gain or loss percent?",
+          "options": [
+            "4% loss",
+            "4% gain",
+            "8% loss",
+            "8% gain"
+          ],
+          "correctOption": 0,
+          "answer": "4% loss",
+          "explanation": "Gain on the first watch = 20% of $800 = $160. Loss on the second watch = 20% of $800 = $160. Total cost price = $800 + $800 = $1600. Total selling price = $800 + $800 = $1600. Net gain or loss = Total selling price - Total cost price = $1600 - $1600 = $0. Net gain or loss percentage = (0 / $1600) * 100% = 0%. Therefore, his net gain or loss percentage is 0%, i.e., neither gain nor loss.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/ProfitAndLoss"
+        }
+      ]
+    },
+    "pipes": {
+      "name": "Pipes and Cisterns",
+      "endpoint": "https://aptitude-gold.vercel.app/PipesAndCistern",
+      "category": "quantitative",
+      "count": 24,
+      "questions": [
+        {
+          "id": "gold-pipes-1",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "Pipe A can fill a tank in 8 hours and pipe B can empty it in 12 hours. If both pipes are opened simultaneously, in how many hours will the tank be filled?",
+          "options": [
+            "4 hours",
+            "6 hours",
+            "8 hours",
+            "12 hours"
+          ],
+          "correctOption": 0,
+          "answer": "24 hours",
+          "explanation": "In 1 hour, the net part filled = (1/8 - 1/12) = 1/24. So, it will take 24 hours to fill the tank.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-2",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "Two pipes can fill a cistern in 5 and 10 hours respectively. If they are opened together and after 2 hours, the first pipe is closed, in how many hours will the cistern be filled?",
+          "options": [
+            "2 hours 30 minutes",
+            "2 hours 40 minutes",
+            "3 hours",
+            "3 hours 20 minutes"
+          ],
+          "correctOption": 3,
+          "answer": "3 hours 20 minutes",
+          "explanation": "In 1 hour, the part filled = (1/5 + 1/10) = 3/10. So, in 2 hours, 3/5th part is filled. Remaining = 2/5. So, time taken to fill the remaining = (2/5 * 10) = 4 hours. Total time = 2 + 4 = 6 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-3",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "A water tank can be emptied by pipe A in 8 hours and by pipe B in 12 hours. If both pipes are opened simultaneously, how long will it take to empty the tank?",
+          "options": [
+            "4 hours",
+            "6 hours",
+            "8 hours",
+            "12 hours"
+          ],
+          "correctOption": 0,
+          "answer": "3.4 hours",
+          "explanation": "In 1 hour, pipe A empties 1/8th of the tank and pipe B empties 1/12th of the tank. Together, they empty 1/8 + 1/12 = 5/24th of the tank in 1 hour. Therefore, they will empty the entire tank in 24/5 hours, which is approximately 4.8 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-4",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "A cistern has a leak that can empty it in 25 hours. How long will it take for the leak to empty 1/3rd of the cistern?",
+          "options": [
+            "8 hours",
+            "10 hours",
+            "12 hours",
+            "15 hours"
+          ],
+          "correctOption": 1,
+          "answer": "10 hours",
+          "explanation": "If the leak can empty the cistern in 25 hours, it will empty 1/3rd in 1/3rd of the time, which is 10 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-5",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "Pipe A can fill a tank in 12 hours and pipe B can fill the same tank in 15 hours. If both pipes are opened simultaneously, in how many hours will the tank be filled?",
+          "options": [
+            "5 hours",
+            "6 hours",
+            "8 hours",
+            "10 hours"
+          ],
+          "correctOption": 1,
+          "answer": "6 hours",
+          "explanation": "In 1 hour, the net part filled = (1/12 + 1/15) = 9/60. So, it will take 60/9 hours to fill the tank, which is 6 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-6",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "A pipe can fill a cistern in 8 hours. How long will it take for 2 such pipes to fill the cistern?",
+          "options": [
+            "4 hours",
+            "6 hours",
+            "8 hours",
+            "12 hours"
+          ],
+          "correctOption": 0,
+          "answer": "4 hours",
+          "explanation": "With 2 pipes, the time taken to fill the cistern will be half, so it will take 4 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-7",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "A pipe can fill a cistern in 10 hours. Another pipe can empty it in 20 hours. If both pipes are opened together, how long will it take to fill the cistern?",
+          "options": [
+            "15 hours",
+            "20 hours",
+            "25 hours",
+            "30 hours"
+          ],
+          "correctOption": 3,
+          "answer": "30 hours",
+          "explanation": "In 1 hour, the net part filled = (1/10 - 1/20) = 1/20. So, it will take 20 hours to fill 1/20th of the cistern. So, it will take 20 * 30 = 600 hours to fill the cistern.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-8",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "Pipe A can fill a tank in 6 hours and pipe B can empty it in 12 hours. If both pipes are opened simultaneously, in how many hours will the tank be filled?",
+          "options": [
+            "4 hours",
+            "6 hours",
+            "8 hours",
+            "12 hours"
+          ],
+          "correctOption": 2,
+          "answer": "8 hours",
+          "explanation": "In 1 hour, the net part filled = (1/6 - 1/12) = 1/4. So, it will take 4 hours to fill 1/4th of the tank. Thus, it will take 8 hours to fill the tank.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-9",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "A pipe can fill a tank in 6 hours. Another pipe can empty it in 12 hours. How long will it take for both pipes to fill the tank if they are opened together?",
+          "options": [
+            "4 hours",
+            "6 hours",
+            "8 hours",
+            "12 hours"
+          ],
+          "correctOption": 3,
+          "answer": "12 hours",
+          "explanation": "In 1 hour, the net part filled = (1/6 - 1/12) = 1/12. So, it will take 12 hours to fill the tank.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-10",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "Pipe A can fill a tank in 8 hours and pipe B can empty it in 16 hours. If both pipes are opened simultaneously, in how many hours will the tank be filled?",
+          "options": [
+            "6 hours",
+            "8 hours",
+            "10 hours",
+            "12 hours"
+          ],
+          "correctOption": 0,
+          "answer": "16 hours",
+          "explanation": "In 1 hour, the net part filled = (1/8 - 1/16) = 1/16. So, it will take 16 hours to fill 1/16th of the tank. Thus, it will take 16 * 16 = 256 hours to fill the tank.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-11",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "Pipe A can fill a tank in 5 hours, and Pipe B can empty it in 10 hours. If both pipes are opened simultaneously, how long will it take to fill the tank?",
+          "options": [
+            "5 hours",
+            "8 hours",
+            "10 hours",
+            "12 hours"
+          ],
+          "correctOption": 2,
+          "answer": "10 hours",
+          "explanation": "Net rate = 1/5 - 1/10 = 1/10. Time = 10 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-12",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "Two pipes A and B can fill a cistern in 12 and 15 hours respectively. If both are opened together, and after 2 hours, A is closed, how long will B take to fill the remaining cistern?",
+          "options": [
+            "4 hours",
+            "6 hours",
+            "8 hours",
+            "10 hours"
+          ],
+          "correctOption": 2,
+          "answer": "8 hours",
+          "explanation": "In 1 hour, the part filled = (1/12 + 1/15) = 3/20. So, in 2 hours, 3/10th part is filled. Remaining = 7/10. So, time taken by B to fill the remaining = (7/10 * 15) = 10.5 hours. Total time = 2 + 10.5 = 12.5 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-13",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "A pipe can fill a cistern in 8 hours. Another pipe can empty it in 16 hours. If both pipes are opened together, in how many hours will the cistern be filled?",
+          "options": [
+            "6 hours",
+            "8 hours",
+            "10 hours",
+            "12 hours"
+          ],
+          "correctOption": 3,
+          "answer": "12 hours",
+          "explanation": "In 1 hour, the net part filled = (1/8 - 1/16) = 1/16. So, it will take 16 hours to fill the cistern.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-14",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "Pipe A can fill a tank in 10 hours and pipe B can fill the same tank in 15 hours. If both pipes are opened simultaneously, in how many hours will the tank be filled?",
+          "options": [
+            "5 hours",
+            "6 hours",
+            "7.5 hours",
+            "8 hours"
+          ],
+          "correctOption": 1,
+          "answer": "6 hours",
+          "explanation": "In 1 hour, the net part filled = (1/10 + 1/15) = 1/6. So, it will take 6 hours to fill the tank.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-15",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "A water tank can be filled by pipe A in 6 hours and emptied by pipe B in 12 hours. If both pipes are opened simultaneously, how long will it take to fill the tank?",
+          "options": [
+            "4 hours",
+            "6 hours",
+            "8 hours",
+            "12 hours"
+          ],
+          "correctOption": 0,
+          "answer": "4 hours",
+          "explanation": "In 1 hour, pipe A fills 1/6th of the tank and pipe B empties 1/12th of the tank. Together, they fill (1/6) - (1/12) = 1/6 - 1/12 = 2/12 - 1/12 = 1/12th of the tank in 1 hour. So, it will take 12/1 hours to fill the tank, which is 12 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-16",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "A reservoir can be filled by pipe A in 10 hours and by pipe B in 15 hours. If both pipes are opened simultaneously, how long will it take to fill the reservoir?",
+          "options": [
+            "5 hours",
+            "6 hours",
+            "8 hours",
+            "10 hours"
+          ],
+          "correctOption": 1,
+          "answer": "6 hours",
+          "explanation": "In 1 hour, pipe A fills 1/10th of the reservoir and pipe B fills 1/15th of the reservoir. Together, they fill 1/10 + 1/15 = 1/6th of the reservoir in 1 hour. Therefore, they will fill the entire reservoir in 6 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-17",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "A pipe can fill a cistern in 8 hours. Another pipe can empty it in 12 hours. If both pipes are opened together, in how many hours will the cistern be filled?",
+          "options": [
+            "6 hours",
+            "8 hours",
+            "10 hours",
+            "12 hours"
+          ],
+          "correctOption": 0,
+          "answer": "24 hours",
+          "explanation": "In 1 hour, the net part filled = (1/8 - 1/12) = 1/24. So, it will take 24 hours to fill the cistern.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-18",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "A pipe can fill a cistern in 10 hours. Another pipe can empty it in 30 hours. If both pipes are opened together, how long will it take to fill the cistern?",
+          "options": [
+            "12 hours",
+            "15 hours",
+            "20 hours",
+            "25 hours"
+          ],
+          "correctOption": 1,
+          "answer": "15 hours",
+          "explanation": "In 1 hour, the net part filled = (1/10 - 1/30) = 2/30 = 1/15. So, it will take 15 hours to fill the cistern.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-19",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "A tap can fill a tank in 4 hours. After half the tank is filled, another tap is opened, which can fill the tank in 6 hours. How long will it take to fill the tank?",
+          "options": [
+            "1 hour 40 minutes",
+            "2 hours",
+            "2 hours 20 minutes",
+            "3 hours"
+          ],
+          "correctOption": 2,
+          "answer": "2 hours 20 minutes",
+          "explanation": "The combined rate of filling after the second tap is opened is 1/4 + 1/6 = 5/12. So, it will take 12/5 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-20",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "Pipe A can fill a tank in 10 hours and pipe B can empty it in 15 hours. If both pipes are opened simultaneously, in how many hours will the tank be filled?",
+          "options": [
+            "6 hours",
+            "8 hours",
+            "10 hours",
+            "12 hours"
+          ],
+          "correctOption": 0,
+          "answer": "15 hours",
+          "explanation": "In 1 hour, the net part filled = (1/10 - 1/15) = 1/30. So, it will take 30 hours to fill 1/30th of the tank. Thus, it will take 30 * 15 = 450 hours to fill the tank.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-21",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "A pipe can fill a cistern in 8 hours. Another pipe can empty it in 16 hours. If both pipes are opened together, how long will it take to fill the cistern?",
+          "options": [
+            "10 hours",
+            "12 hours",
+            "14 hours",
+            "16 hours"
+          ],
+          "correctOption": 3,
+          "answer": "16 hours",
+          "explanation": "In 1 hour, the net part filled = (1/8 - 1/16) = 1/16. So, it will take 16 hours to fill the cistern.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-22",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "Two pipes A and B can fill a cistern in 10 and 15 hours respectively. If both are opened together, and after 2 hours, A is closed, how long will B take to fill the remaining cistern?",
+          "options": [
+            "4 hours",
+            "6 hours",
+            "8 hours",
+            "10 hours"
+          ],
+          "correctOption": 1,
+          "answer": "6 hours",
+          "explanation": "In 1 hour, the part filled = (1/10 + 1/15) = 1/6. So, in 2 hours, 1/3rd part is filled. Remaining = 2/3. So, time taken by B to fill the remaining = (2/3 * 15) = 10 hours. Total time = 2 + 10 = 12 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-23",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "Pipe A can fill a tank in 10 hours and pipe B can fill the same tank in 15 hours. If both pipes are opened simultaneously and after 3 hours, pipe B is closed, in how many hours will pipe A alone fill the remaining tank?",
+          "options": [
+            "5 hours",
+            "6 hours",
+            "7 hours",
+            "8 hours"
+          ],
+          "correctOption": 1,
+          "answer": "6 hours",
+          "explanation": "In 1 hour, the part filled by pipe A and B together = (1/10 + 1/15) = 1/6. So, in 3 hours, 1/2 part is filled. Remaining = 1/2. So, time taken by A to fill the remaining = (1/2 * 10) = 5 hours. Total time = 3 + 5 = 8 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        },
+        {
+          "id": "gold-pipes-24",
+          "topic": "Pipes and Cisterns",
+          "topicKey": "pipes",
+          "category": "quantitative",
+          "question": "Pipe A can fill a tank in 10 hours and pipe B can empty it in 15 hours. If both pipes are opened simultaneously and after 3 hours, pipe B is closed, in how many hours will the tank be filled?",
+          "options": [
+            "6 hours",
+            "8 hours",
+            "10 hours",
+            "12 hours"
+          ],
+          "correctOption": 3,
+          "answer": "12 hours",
+          "explanation": "In 1 hour, the net part filled = (1/10 - 1/15) = 1/30. So, it will take 30 hours to fill 1/30th of the tank. Thus, it will take 30 * 12 = 360 hours to fill the tank.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/PipesAndCistern"
+        }
+      ]
+    },
+    "speed": {
+      "name": "Speed Time Distance",
+      "endpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance",
+      "category": "quantitative",
+      "count": 26,
+      "questions": [
+        {
+          "id": "gold-speed-1",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "A train travels a distance of 600 km at a speed of 75 km/h. How long does it take to cover this distance?",
+          "options": [
+            "6 hours",
+            "8 hours",
+            "10 hours",
+            "12 hours"
+          ],
+          "correctOption": 1,
+          "answer": "8 hours",
+          "explanation": "Time = Distance / Speed = 600 km / 75 km/h = 8 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-2",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "A cyclist completes a circular track of circumference 1000 meters in 2 minutes. What is his speed in meters per second?",
+          "options": [
+            "5 m/s",
+            "10 m/s",
+            "15 m/s",
+            "20 m/s"
+          ],
+          "correctOption": 0,
+          "answer": "5 m/s",
+          "explanation": "Speed = Distance / Time\nSpeed = 1000 meters / (2 * 60) seconds\nSpeed = 5 meters per second.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-3",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "A cyclist completes a circular track of circumference 1000 meters in 3 minutes. What is his speed in meters per second?",
+          "options": [
+            "5 m/s",
+            "10 m/s",
+            "15 m/s",
+            "20 m/s"
+          ],
+          "correctOption": 0,
+          "answer": "5 m/s",
+          "explanation": "Speed = Distance / Time\nSpeed = 1000 meters / (3 * 60) seconds\nSpeed = 5 meters per second.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-4",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "A bus travels 180 km at a speed of 60 km/h and then 240 km at a speed of 80 km/h. What is the average speed of the bus for the entire journey?",
+          "options": [
+            "66 km/h",
+            "68 km/h",
+            "70 km/h",
+            "72 km/h"
+          ],
+          "correctOption": 0,
+          "answer": "66 km/h",
+          "explanation": "Total distance = 180 + 240 = 420 km\nTotal time taken = (180 / 60) + (240 / 80) = 3 + 3 = 6 hours\nAverage speed = Total distance / Total time taken = 420 / 6 = 70 km/h.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-5",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "A train travels a distance of 900 km at a speed of 75 km/h. How long does it take to cover this distance?",
+          "options": [
+            "10 hours",
+            "12 hours",
+            "14 hours",
+            "16 hours"
+          ],
+          "correctOption": 1,
+          "answer": "12 hours",
+          "explanation": "Time = Distance / Speed = 900 km / 75 km/h = 12 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-6",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "A boat travels upstream a distance of 24 km in 4 hours. If the speed of the stream is 2 km/h, what is the speed of the boat in still water?",
+          "options": [
+            "8 km/h",
+            "10 km/h",
+            "12 km/h",
+            "14 km/h"
+          ],
+          "correctOption": 0,
+          "answer": "8 km/h",
+          "explanation": "Let the speed of the boat in still water be x km/h.\nSpeed of boat upstream = (x - 2) km/h\nDistance = 24 km, Time = 4 hours\n24 = 4(x - 2)\n=> x - 2 = 6\n=> x = 8 km/h.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-7",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "A car travels 120 km at a speed of 40 km/h and then 180 km at a speed of 60 km/h. What is the average speed of the car for the entire journey?",
+          "options": [
+            "50 km/h",
+            "52 km/h",
+            "54 km/h",
+            "56 km/h"
+          ],
+          "correctOption": 1,
+          "answer": "52 km/h",
+          "explanation": "Total distance = 120 + 180 = 300 km\nTotal time taken = (120 / 40) + (180 / 60) = 3 + 3 = 6 hours\nAverage speed = Total distance / Total time taken = 300 / 6 = 50 km/h.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-8",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "Two trains travel in the same direction. One train travels at 45 km/h and the other at 30 km/h. If the faster train passes a man sitting in the slower train in 6 seconds, find the length of the faster train.",
+          "options": [
+            "120 meters",
+            "135 meters",
+            "150 meters",
+            "165 meters"
+          ],
+          "correctOption": 0,
+          "answer": "120 meters",
+          "explanation": "Relative speed = 45 - 30 = 15 km/h = 15 * 5 / 18 m/s = 25/6 m/s\nDistance = Relative speed * Time\nDistance = (25/6) * 6 = 25 meters\nLength of the faster train = Distance = 25 meters.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-9",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "Two cyclists start from the same point and ride in opposite directions. One rides at 15 km/h and the other at 20 km/h. How far apart will they be after 2 hours?",
+          "options": [
+            "70 km",
+            "80 km",
+            "90 km",
+            "100 km"
+          ],
+          "correctOption": 0,
+          "answer": "70 km",
+          "explanation": "Relative speed = 15 + 20 = 35 km/h\nDistance = Speed * Time\nDistance = 35 * 2 = 70 km.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-10",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "Two boats start from the same point and travel towards each other. One boat travels at 12 km/h and the other at 18 km/h. If they meet after 2 hours, find the distance between their starting points.",
+          "options": [
+            "30 km",
+            "36 km",
+            "42 km",
+            "48 km"
+          ],
+          "correctOption": 2,
+          "answer": "42 km",
+          "explanation": "Relative speed = 12 + 18 = 30 km/h\nTime taken = 2 hours\nDistance = Relative speed * Time\nDistance = 30 * 2 = 60 km\nSince they are moving towards each other, the distance between their starting points is equal to the sum of the distances traveled by both boats. So, the distance between their starting points = 60 km.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-11",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "A cyclist completes a circular track of circumference 900 meters in 3 minutes. What is his speed in meters per second?",
+          "options": [
+            "5 m/s",
+            "10 m/s",
+            "15 m/s",
+            "20 m/s"
+          ],
+          "correctOption": 0,
+          "answer": "5 m/s",
+          "explanation": "Speed = Distance / Time\nSpeed = 900 meters / (3 * 60) seconds\nSpeed = 5 meters per second.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-12",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "A runner completes a circular track of circumference 600 meters in 2 minutes. What is his speed in meters per second?",
+          "options": [
+            "5 m/s",
+            "10 m/s",
+            "15 m/s",
+            "20 m/s"
+          ],
+          "correctOption": 0,
+          "answer": "5 m/s",
+          "explanation": "Speed = Distance / Time\nSpeed = 600 meters / (2 * 60) seconds\nSpeed = 5 meters per second.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-13",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "A boat takes 9 hours to travel 45 km downstream and return upstream. If the speed of the stream is 5 km/h, what is the speed of the boat in still water?",
+          "options": [
+            "10 km/h",
+            "12 km/h",
+            "14 km/h",
+            "16 km/h"
+          ],
+          "correctOption": 0,
+          "answer": "10 km/h",
+          "explanation": "Let the speed of the boat in still water be x km/h.\nSpeed of boat downstream = (x + 5) km/h\nSpeed of boat upstream = (x - 5) km/h\nDistance = 45 km, Time = 9 hours\nDownstream: 45 = 9(x + 5)\nUpstream: 45 = 9(x - 5)\nSolving, x = 10 km/h.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-14",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "Two cyclists start from the same point and ride towards each other. One rides at 18 km/h and the other at 24 km/h. After how much time will they meet if they are 54 km apart initially?",
+          "options": [
+            "1.5 hours",
+            "2 hours",
+            "2.5 hours",
+            "3 hours"
+          ],
+          "correctOption": 1,
+          "answer": "2 hours",
+          "explanation": "Relative speed = 18 + 24 = 42 km/h\nDistance = 54 km\nTime taken = Distance / Relative speed\nTime taken = 54 / 42 ≈ 1.2857 hours ≈ 1.286 hours ≈ 2 hours (approx).",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-15",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "Two trains start from the same point and travel towards each other. One train travels at 60 km/h and the other at 45 km/h. If they meet after 4 hours, find the distance between their starting points.",
+          "options": [
+            "360 km",
+            "400 km",
+            "450 km",
+            "480 km"
+          ],
+          "correctOption": 2,
+          "answer": "450 km",
+          "explanation": "Relative speed = 60 + 45 = 105 km/h\nTime taken = 4 hours\nDistance = Relative speed * Time\nDistance = 105 * 4 = 420 km\nSince they are moving towards each other, the distance between their starting points is equal to the sum of the distances traveled by both trains. So, the distance between their starting points = 420 km.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-16",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "Two cyclists start from the same point and ride in opposite directions. One rides at 12 km/h and the other at 18 km/h. After how much time will they be 72 km apart?",
+          "options": [
+            "2 hours",
+            "3 hours",
+            "4 hours",
+            "5 hours"
+          ],
+          "correctOption": 0,
+          "answer": "2 hours",
+          "explanation": "Relative speed = 12 + 18 = 30 km/h\nDistance = 72 km\nTime taken = Distance / Relative speed\nTime taken = 72 / 30 = 2.4 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-17",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "A train travels a distance of 600 km at a speed of 100 km/h. How long does it take to cover this distance?",
+          "options": [
+            "6 hours",
+            "7 hours",
+            "8 hours",
+            "9 hours"
+          ],
+          "correctOption": 0,
+          "answer": "6 hours",
+          "explanation": "Time = Distance / Speed = 600 km / 100 km/h = 6 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-18",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "A train travels 250 km at a speed of 75 km/h and then 300 km at a speed of 100 km/h. What is the average speed of the train for the entire journey?",
+          "options": [
+            "82 km/h",
+            "84 km/h",
+            "86 km/h",
+            "88 km/h"
+          ],
+          "correctOption": 0,
+          "answer": "82 km/h",
+          "explanation": "Total distance = 250 + 300 = 550 km\nTotal time taken = (250 / 75) + (300 / 100) = 3.33 + 3 = 6.33 hours\nAverage speed = Total distance / Total time taken = 550 / 6.33 ≈ 86.85 km/h ≈ 87 km/h.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-19",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "A train travels a distance of 400 km at a speed of 80 km/h. How long does it take to cover this distance?",
+          "options": [
+            "4 hours",
+            "5 hours",
+            "6 hours",
+            "7 hours"
+          ],
+          "correctOption": 1,
+          "answer": "5 hours",
+          "explanation": "Time = Distance / Speed = 400 km / 80 km/h = 5 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-20",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "A person cycles 30 km at a speed of 10 km/h and then 50 km at a speed of 15 km/h. What is the average speed of the person for the entire journey?",
+          "options": [
+            "12.5 km/h",
+            "13 km/h",
+            "13.5 km/h",
+            "14 km/h"
+          ],
+          "correctOption": 1,
+          "answer": "13 km/h",
+          "explanation": "Total distance = 30 + 50 = 80 km\nTotal time taken = (30 / 10) + (50 / 15) = 3 + 3.33 ≈ 6.33 hours\nAverage speed = Total distance / Total time taken = 80 / 6.33 ≈ 12.62 km/h ≈ 13 km/h.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-21",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "A boat takes 8 hours to travel 48 km downstream and return upstream. If the speed of the stream is 4 km/h, what is the speed of the boat in still water?",
+          "options": [
+            "10 km/h",
+            "12 km/h",
+            "14 km/h",
+            "16 km/h"
+          ],
+          "correctOption": 0,
+          "answer": "10 km/h",
+          "explanation": "Let the speed of the boat in still water be x km/h.\nSpeed of boat downstream = (x + 4) km/h\nSpeed of boat upstream = (x - 4) km/h\nDistance = 48 km, Time = 8 hours\nDownstream: 48 = 8(x + 4)\nUpstream: 48 = 8(x - 4)\nSolving, x = 10 km/h.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-22",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "How long will it take to travel 150 km at a speed of 50 km/hr?",
+          "options": [
+            "2 hours",
+            "3 hours",
+            "4 hours",
+            "5 hours"
+          ],
+          "correctOption": 1,
+          "answer": "3 hours",
+          "explanation": "Time = Distance / Speed = 150 km / 50 km/hr = 3 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-23",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "Two cars start from the same point and travel in the same direction. One car travels at 40 km/h and the other at 50 km/h. If the faster car passes the slower car in 3 hours, find the distance between the two cars when the faster car overtakes the slower one.",
+          "options": [
+            "150 km",
+            "160 km",
+            "170 km",
+            "180 km"
+          ],
+          "correctOption": 0,
+          "answer": "150 km",
+          "explanation": "Relative speed = 50 - 40 = 10 km/h\nTime taken = 3 hours\nDistance = Relative speed * Time\nDistance = 10 * 3 = 30 km\nThe faster car overtakes the slower car after traveling 30 km. So, the distance between them when the faster car overtakes the slower one = 30 km + 120 km = 150 km.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-24",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "A boat travels upstream a distance of 40 km in 8 hours. If the speed of the stream is 4 km/h, what is the speed of the boat in still water?",
+          "options": [
+            "8 km/h",
+            "10 km/h",
+            "12 km/h",
+            "14 km/h"
+          ],
+          "correctOption": 0,
+          "answer": "8 km/h",
+          "explanation": "Let the speed of the boat in still water be x km/h.\nSpeed of boat upstream = (x - 4) km/h\nDistance = 40 km, Time = 8 hours\n40 = 8(x - 4)\n=> x - 4 = 5\n=> x = 9 km/h.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-25",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "A train travels a distance of 480 km at a speed of 60 km/h. How long does it take to cover this distance?",
+          "options": [
+            "8 hours",
+            "9 hours",
+            "10 hours",
+            "12 hours"
+          ],
+          "correctOption": 0,
+          "answer": "8 hours",
+          "explanation": "Time = Distance / Speed = 480 km / 60 km/h = 8 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        },
+        {
+          "id": "gold-speed-26",
+          "topic": "Speed Time Distance",
+          "topicKey": "speed",
+          "category": "quantitative",
+          "question": "A train travels a distance of 420 km at a speed of 70 km/h. How long does it take to cover this distance?",
+          "options": [
+            "6 hours",
+            "7 hours",
+            "8 hours",
+            "9 hours"
+          ],
+          "correctOption": 0,
+          "answer": "6 hours",
+          "explanation": "Time = Distance / Speed = 420 km / 70 km/h = 6 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SpeedTimeDistance"
+        }
+      ]
+    },
+    "calendar": {
+      "name": "Calendars",
+      "endpoint": "https://aptitude-gold.vercel.app/Calendar",
+      "category": "logical",
+      "count": 27,
+      "questions": [
+        {
+          "id": "gold-calendar-1",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "If today is Friday, what day of the week was it 5 days ago?",
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Saturday",
+            "Sunday"
+          ],
+          "correctOption": 3,
+          "answer": "Sunday",
+          "explanation": "If today is Friday, 5 days ago, it was Sunday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-2",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "What day will be on 1st January 3000?",
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "correctOption": 1,
+          "answer": "Tuesday",
+          "explanation": "1st January 3000 will be a Tuesday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-3",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "If today is Thursday, what day will it be after 2 days?",
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Friday",
+            "Saturday"
+          ],
+          "correctOption": 3,
+          "answer": "Saturday",
+          "explanation": "If today is Thursday, after 2 days, it will be Saturday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-4",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "How many odd days are there in 200 years?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "correctOption": 1,
+          "answer": "3",
+          "explanation": "200 years have 3 odd days.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-5",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "If today is Saturday, what day was it 3 days ago?",
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "correctOption": 2,
+          "answer": "Wednesday",
+          "explanation": "If today is Saturday, 3 days ago, it was Wednesday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-6",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "If today is Friday, what day of the week will it be after 5 days?",
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "correctOption": 2,
+          "answer": "Wednesday",
+          "explanation": "If today is Friday, after 5 days, it will be Wednesday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-7",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "If today is Thursday, what day of the week will it be after 10 days?",
+          "options": [
+            "Friday",
+            "Saturday",
+            "Sunday",
+            "Monday"
+          ],
+          "correctOption": 2,
+          "answer": "Sunday",
+          "explanation": "Since there are 7 days in a week, 10 days later is equivalent to 10 mod 7 = 3 days after Thursday. Counting: Friday (1), Saturday (2), Sunday (3).",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-8",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "If today is Wednesday, what day was it 4 days ago?",
+          "options": [
+            "Saturday",
+            "Sunday",
+            "Monday",
+            "Tuesday"
+          ],
+          "correctOption": 0,
+          "answer": "Saturday",
+          "explanation": "If today is Wednesday, 4 days ago, it was Saturday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-9",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "If January 1, 2023, falls on a Sunday, what day of the week will January 31, 2023, be?",
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "correctOption": 1,
+          "answer": "Tuesday",
+          "explanation": "January has 31 days. Since 31 is 4 weeks and 3 days, adding 3 days to Sunday gives us Tuesday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-10",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "If today is Friday, what day was it 5 days ago?",
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Sunday"
+          ],
+          "correctOption": 3,
+          "answer": "Sunday",
+          "explanation": "If today is Friday, 5 days ago, it was Sunday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-11",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "If 15th August 1947 was Monday, what day of the week was 15th August 1957?",
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "correctOption": 3,
+          "answer": "Thursday",
+          "explanation": "We know that there are 10 years between 1947 and 1957. Since 10 years have passed, the day will be 3 days ahead of Monday, which is Thursday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-12",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "If today is Sunday, what day was it 1 week ago?",
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Sunday"
+          ],
+          "correctOption": 3,
+          "answer": "Sunday",
+          "explanation": "If today is Sunday, 1 week ago, it was also Sunday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-13",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "If today is Friday, what day was it 6 days ago?",
+          "options": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Saturday"
+          ],
+          "correctOption": 3,
+          "answer": "Saturday",
+          "explanation": "If today is Friday, 6 days ago, it was Saturday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-14",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "If today is Tuesday, what day of the week will it be after 8 days?",
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "correctOption": 2,
+          "answer": "Wednesday",
+          "explanation": "If today is Tuesday, after 8 days, it will be Wednesday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-15",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "How many odd days are there in the century starting from 801 to 900?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "correctOption": 1,
+          "answer": "5",
+          "explanation": "The number of odd days in a century can be calculated as (Number of years / 4). In this case, (100/4) = 25 with a remainder of 0, so there are 5 odd days.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-16",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "If today is Monday, what day was it 3 days ago?",
+          "options": [
+            "Friday",
+            "Saturday",
+            "Sunday",
+            "Monday"
+          ],
+          "correctOption": 0,
+          "answer": "Friday",
+          "explanation": "If today is Monday, 3 days ago, it was Friday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-17",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "If today is Sunday, what day will it be after 6 days?",
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Saturday"
+          ],
+          "correctOption": 3,
+          "answer": "Saturday",
+          "explanation": "If today is Sunday, after 6 days, it will be Saturday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-18",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "If today is Sunday, what day will it be after 3 days?",
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "correctOption": 2,
+          "answer": "Wednesday",
+          "explanation": "If today is Sunday, after 3 days, it will be Wednesday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-19",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "What day was it on 1st January 1700?",
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "correctOption": 1,
+          "answer": "Tuesday",
+          "explanation": "1st January 1700 was a Tuesday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-20",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "Today is Monday. After 61 days, it will be:",
+          "options": [
+            "Wednesday",
+            "Saturday",
+            "Tuesday",
+            "Thursday"
+          ],
+          "correctOption": 1,
+          "answer": "Saturday",
+          "explanation": "Each day of the week is repeated after 7 days. After 63 days, it will be Monday. So, after 61 days, it will be Saturday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-21",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "How many odd days are there in 900 years?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correctOption": 1,
+          "answer": "2",
+          "explanation": "900 years have 2 odd days.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-22",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "How many odd days are there in the century starting from 701 to 800?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "correctOption": 1,
+          "answer": "5",
+          "explanation": "The number of odd days in a century can be calculated as (Number of years / 4). In this case, (100/4) = 25 with a remainder of 0, so there are 5 odd days.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-23",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "If February 1, 2023, falls on a Wednesday, what day of the week will February 28, 2023, be?",
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "correctOption": 1,
+          "answer": "Tuesday",
+          "explanation": "February has 28 days in a non-leap year. Since 28 is divisible by 7, the day remains the same as February 1, 2023, which is Wednesday. So, February 28, 2023, will be Tuesday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-24",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "What day was it on 1st January 1756?",
+          "options": [
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "correctOption": 1,
+          "answer": "Thursday",
+          "explanation": "1st January 1756 was a Thursday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-25",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "How many odd days are there in the century starting from 1101 to 1200?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "correctOption": 1,
+          "answer": "5",
+          "explanation": "The number of odd days in a century can be calculated as (Number of years / 4). In this case, (100/4) = 25 with a remainder of 0, so there are 5 odd days.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-26",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "If today is Wednesday, what day was it 7 days ago?",
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "correctOption": 2,
+          "answer": "Wednesday",
+          "explanation": "If today is Wednesday, 7 days ago, it was also Wednesday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        },
+        {
+          "id": "gold-calendar-27",
+          "topic": "Calendars",
+          "topicKey": "calendar",
+          "category": "logical",
+          "question": "It was Sunday on Jan 1, 2006. What was the day of the week Jan 1, 2010?",
+          "options": [
+            "Sunday",
+            "Saturday",
+            "Friday",
+            "Wednesday"
+          ],
+          "correctOption": 2,
+          "answer": "Friday",
+          "explanation": "On 31st December, 2005 it was Saturday. Number of odd days from the year 2006 to the year 2009 = (1 + 1 + 2 + 1) = 5 days. On 31st December 2009, it was Thursday. Thus, on 1st Jan, 2010 it is Friday.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/Calendar"
+        }
+      ]
+    },
+    "simple_interest": {
+      "name": "Simple Interest",
+      "endpoint": "https://aptitude-gold.vercel.app/SimpleInterest",
+      "category": "quantitative",
+      "count": 25,
+      "questions": [
+        {
+          "id": "gold-simple_interest-1",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "Two cyclists start from the same point and ride in opposite directions. One rides at 10 km/h and the other at 15 km/h. After how much time will they be 50 km apart?",
+          "options": [
+            "2 hours",
+            "3 hours",
+            "4 hours",
+            "5 hours"
+          ],
+          "correctOption": 1,
+          "answer": "3 hours",
+          "explanation": "Relative speed = 10 + 15 = 25 km/h\nDistance = 50 km\nTime taken = Distance / Relative speed\nTime taken = 50 / 25 = 2 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-2",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "Two buses start from the same point and travel towards each other. One bus travels at 30 km/h and the other at 40 km/h. If they meet after 2 hours, find the distance between their starting points.",
+          "options": [
+            "130 km",
+            "140 km",
+            "150 km",
+            "160 km"
+          ],
+          "correctOption": 0,
+          "answer": "130 km",
+          "explanation": "Relative speed = 30 + 40 = 70 km/h\nTime taken = 2 hours\nDistance = Relative speed * Time\nDistance = 70 * 2 = 140 km\nSince they are moving towards each other, the distance between their starting points is equal to the sum of the distances traveled by both buses. So, the distance between their starting points = 140 km.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-3",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "Two cars start from the same point and travel in the same direction. One car travels at 40 km/h and the other at 50 km/h. If the faster car passes the slower car in 3 hours, find the distance between the two cars when the faster car overtakes the slower one.",
+          "options": [
+            "150 km",
+            "160 km",
+            "170 km",
+            "180 km"
+          ],
+          "correctOption": 0,
+          "answer": "150 km",
+          "explanation": "Relative speed = 50 - 40 = 10 km/h\nTime taken = 3 hours\nDistance = Relative speed * Time\nDistance = 10 * 3 = 30 km\nThe faster car overtakes the slower car after traveling 30 km. So, the distance between them when the faster car overtakes the slower one = 30 km + 120 km = 150 km.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-4",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "A train travels a distance of 360 km at a speed of 120 km/h. How long does it take to cover this distance?",
+          "options": [
+            "2 hours",
+            "3 hours",
+            "4 hours",
+            "5 hours"
+          ],
+          "correctOption": 1,
+          "answer": "3 hours",
+          "explanation": "Time = Distance / Speed = 360 km / 120 km/h = 3 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-5",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "Two cyclists start from the same point and ride towards each other. One rides at 18 km/h and the other at 24 km/h. After how much time will they meet if they are 54 km apart initially?",
+          "options": [
+            "1.5 hours",
+            "2 hours",
+            "2.5 hours",
+            "3 hours"
+          ],
+          "correctOption": 1,
+          "answer": "2 hours",
+          "explanation": "Relative speed = 18 + 24 = 42 km/h\nDistance = 54 km\nTime taken = Distance / Relative speed\nTime taken = 54 / 42 ≈ 1.2857 hours ≈ 1.286 hours ≈ 2 hours (approx).",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-6",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "A train travels a distance of 720 km at a speed of 90 km/h. How long does it take to cover this distance?",
+          "options": [
+            "6 hours",
+            "8 hours",
+            "10 hours",
+            "12 hours"
+          ],
+          "correctOption": 1,
+          "answer": "8 hours",
+          "explanation": "Time = Distance / Speed = 720 km / 90 km/h = 8 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-7",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "A train travels a distance of 540 km at a speed of 90 km/h. How long does it take to cover this distance?",
+          "options": [
+            "6 hours",
+            "8 hours",
+            "10 hours",
+            "12 hours"
+          ],
+          "correctOption": 0,
+          "answer": "6 hours",
+          "explanation": "Time = Distance / Speed = 540 km / 90 km/h = 6 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-8",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "A runner completes a circular track of circumference 500 meters in 50 seconds. What is his speed in meters per second?",
+          "options": [
+            "10 m/s",
+            "12 m/s",
+            "14 m/s",
+            "16 m/s"
+          ],
+          "correctOption": 0,
+          "answer": "10 m/s",
+          "explanation": "Speed = Distance / Time\nSpeed = 500 meters / 50 seconds\nSpeed = 10 meters per second.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-9",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "A car travels 240 km at a speed of 60 km/h and then 180 km at a speed of 45 km/h. What is the average speed of the car for the entire journey?",
+          "options": [
+            "50 km/h",
+            "52.5 km/h",
+            "55 km/h",
+            "57.5 km/h"
+          ],
+          "correctOption": 1,
+          "answer": "52.5 km/h",
+          "explanation": "Total distance = 240 + 180 = 420 km\nTotal time taken = (240 / 60) + (180 / 45) = 4 + 4 = 8 hours\nAverage speed = Total distance / Total time taken = 420 / 8 = 52.5 km/h.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-10",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "A cyclist covers a distance of 240 km at a speed of 30 km/h. How long does it take to cover this distance?",
+          "options": [
+            "6 hours",
+            "7 hours",
+            "8 hours",
+            "9 hours"
+          ],
+          "correctOption": 2,
+          "answer": "8 hours",
+          "explanation": "Time = Distance / Speed = 240 km / 30 km/h = 8 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-11",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "Two boats start from the same point and travel towards each other. One boat travels at 16 km/h and the other at 24 km/h. If they meet after 1.5 hours, find the distance between their starting points.",
+          "options": [
+            "30 km",
+            "36 km",
+            "42 km",
+            "48 km"
+          ],
+          "correctOption": 1,
+          "answer": "36 km",
+          "explanation": "Relative speed = 16 + 24 = 40 km/h\nTime taken = 1.5 hours\nDistance = Relative speed * Time\nDistance = 40 * 1.5 = 60 km\nSince they are moving towards each other, the distance between their starting points is equal to the sum of the distances traveled by both boats. So, the distance between their starting points = 60 km.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-12",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "A car travels 120 km at a speed of 40 km/h and then 180 km at a speed of 60 km/h. What is the average speed of the car for the entire journey?",
+          "options": [
+            "50 km/h",
+            "52 km/h",
+            "54 km/h",
+            "56 km/h"
+          ],
+          "correctOption": 1,
+          "answer": "52 km/h",
+          "explanation": "Total distance = 120 + 180 = 300 km\nTotal time taken = (120 / 40) + (180 / 60) = 3 + 3 = 6 hours\nAverage speed = Total distance / Total time taken = 300 / 6 = 50 km/h.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-13",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "Two buses start from the same point and travel towards each other. One bus travels at 40 km/h and the other at 50 km/h. If they meet after 2.5 hours, find the distance between their starting points.",
+          "options": [
+            "225 km",
+            "250 km",
+            "275 km",
+            "300 km"
+          ],
+          "correctOption": 1,
+          "answer": "250 km",
+          "explanation": "Relative speed = 40 + 50 = 90 km/h\nTime taken = 2.5 hours\nDistance = Relative speed * Time\nDistance = 90 * 2.5 = 225 km\nSince they are moving towards each other, the distance between their starting points is equal to the sum of the distances traveled by both buses. So, the distance between their starting points = 225 km.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-14",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "A train travels a distance of 600 km at a speed of 120 km/h. How long does it take to cover this distance?",
+          "options": [
+            "4 hours",
+            "5 hours",
+            "6 hours",
+            "7 hours"
+          ],
+          "correctOption": 1,
+          "answer": "5 hours",
+          "explanation": "Time = Distance / Speed = 600 km / 120 km/h = 5 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-15",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "A car completes a circular track of circumference 1500 meters in 5 minutes. What is its speed in meters per second?",
+          "options": [
+            "5 m/s",
+            "10 m/s",
+            "15 m/s",
+            "20 m/s"
+          ],
+          "correctOption": 0,
+          "answer": "5 m/s",
+          "explanation": "Speed = Distance / Time\nSpeed = 1500 meters / (5 * 60) seconds\nSpeed = 5 meters per second.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-16",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "Two cars start from the same point and travel in the same direction. One car travels at 60 km/h and the other at 45 km/h. If the faster car overtakes the slower car in 4 hours, find the distance between the two cars when the faster car overtakes the slower one.",
+          "options": [
+            "180 km",
+            "200 km",
+            "220 km",
+            "240 km"
+          ],
+          "correctOption": 0,
+          "answer": "180 km",
+          "explanation": "Relative speed = 60 - 45 = 15 km/h\nTime taken = 4 hours\nDistance = Relative speed * Time\nDistance = 15 * 4 = 60 km\nThe faster car overtakes the slower car after traveling 60 km. So, the distance between them when the faster car overtakes the slower one = 60 km.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-17",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "A cyclist completes a circular track of circumference 1200 meters in 2 minutes. What is his speed in meters per second?",
+          "options": [
+            "10 m/s",
+            "12 m/s",
+            "14 m/s",
+            "16 m/s"
+          ],
+          "correctOption": 0,
+          "answer": "10 m/s",
+          "explanation": "Speed = Distance / Time\nSpeed = 1200 meters / (2 * 60) seconds\nSpeed = 10 meters per second.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-18",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "A train travels a distance of 420 km at a speed of 70 km/h. How long does it take to cover this distance?",
+          "options": [
+            "6 hours",
+            "7 hours",
+            "8 hours",
+            "9 hours"
+          ],
+          "correctOption": 0,
+          "answer": "6 hours",
+          "explanation": "Time = Distance / Speed = 420 km / 70 km/h = 6 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-19",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "If a person walks at 4 km/hr, how long will it take to walk 12 km?",
+          "options": [
+            "2 hours",
+            "3 hours",
+            "4 hours",
+            "5 hours"
+          ],
+          "correctOption": 1,
+          "answer": "3 hours",
+          "explanation": "Time = Distance / Speed = 12 km / 4 km/hr = 3 hours.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-20",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "A car travels 150 km at a speed of 50 km/h and then 200 km at a speed of 80 km/h. What is the average speed of the car for the entire journey?",
+          "options": [
+            "58 km/h",
+            "60 km/h",
+            "62 km/h",
+            "64 km/h"
+          ],
+          "correctOption": 1,
+          "answer": "60 km/h",
+          "explanation": "Total distance = 150 + 200 = 350 km\nTotal time taken = (150 / 50) + (200 / 80) = 3 + 2.5 = 5.5 hours\nAverage speed = Total distance / Total time taken = 350 / 5.5 = 63.64 km/h ≈ 64 km/h.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-21",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "A train travels 300 km at a speed of 60 km/h and then 150 km at a speed of 75 km/h. What is the average speed of the train for the entire journey?",
+          "options": [
+            "64 km/h",
+            "66 km/h",
+            "68 km/h",
+            "70 km/h"
+          ],
+          "correctOption": 1,
+          "answer": "66 km/h",
+          "explanation": "Total distance = 300 + 150 = 450 km\nTotal time taken = (300 / 60) + (150 / 75) = 5 + 2 = 7 hours\nAverage speed = Total distance / Total time taken = 450 / 7 = 64.28 km/h ≈ 66 km/h.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-22",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "A cyclist completes a circular track of circumference 900 meters in 3 minutes. What is his speed in meters per second?",
+          "options": [
+            "5 m/s",
+            "10 m/s",
+            "15 m/s",
+            "20 m/s"
+          ],
+          "correctOption": 0,
+          "answer": "5 m/s",
+          "explanation": "Speed = Distance / Time\nSpeed = 900 meters / (3 * 60) seconds\nSpeed = 5 meters per second.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-23",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "Two trains are moving towards each other. One is moving at 60 km/h and the other at 45 km/h. In how many seconds will they meet if they are 500 km apart?",
+          "options": [
+            "4500 seconds",
+            "5000 seconds",
+            "5500 seconds",
+            "6000 seconds"
+          ],
+          "correctOption": 0,
+          "answer": "4500 seconds",
+          "explanation": "Relative speed = 60 + 45 = 105 km/h\nTime taken = Distance / Relative speed\nTime taken = 500 / 105 * 3600 = 4500 seconds.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-24",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "A bus travels 180 km at a speed of 60 km/h and then 240 km at a speed of 80 km/h. What is the average speed of the bus for the entire journey?",
+          "options": [
+            "66 km/h",
+            "68 km/h",
+            "70 km/h",
+            "72 km/h"
+          ],
+          "correctOption": 0,
+          "answer": "66 km/h",
+          "explanation": "Total distance = 180 + 240 = 420 km\nTotal time taken = (180 / 60) + (240 / 80) = 3 + 3 = 6 hours\nAverage speed = Total distance / Total time taken = 420 / 6 = 70 km/h.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        },
+        {
+          "id": "gold-simple_interest-25",
+          "topic": "Simple Interest",
+          "topicKey": "simple_interest",
+          "category": "quantitative",
+          "question": "A boat takes 9 hours to travel 45 km downstream and return upstream. If the speed of the stream is 5 km/h, what is the speed of the boat in still water?",
+          "options": [
+            "10 km/h",
+            "12 km/h",
+            "14 km/h",
+            "16 km/h"
+          ],
+          "correctOption": 0,
+          "answer": "10 km/h",
+          "explanation": "Let the speed of the boat in still water be x km/h.\nSpeed of boat downstream = (x + 5) km/h\nSpeed of boat upstream = (x - 5) km/h\nDistance = 45 km, Time = 9 hours\nDownstream: 45 = 9(x + 5)\nUpstream: 45 = 9(x - 5)\nSolving, x = 10 km/h.",
+          "apiEndpoint": "https://aptitude-gold.vercel.app/SimpleInterest"
+        }
+      ]
+    }
+  }
+}

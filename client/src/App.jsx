@@ -6,19 +6,18 @@ import QuizResult from './components/QuizResult';
 import PerformanceStats from './components/PerformanceStats';
 import QuizConfigModal from './components/QuizConfigModal';
 import ThemeCustomizerModal from './components/ThemeCustomizerModal';
-import TipsAndFormulas from './components/TipsAndFormulas';
 import BooksSection from './components/BooksSection';
 import InteractiveSandbox from './components/InteractiveSandbox';
 import LeetCode500Section from './components/LeetCode500Section';
-import InterviewPrepSection from './components/InterviewPrepSection';
 
-import { fetchCategories, fetchQuestions, submitQuizAttempt, fetchStats } from './utils/api';
+import { fetchCategories, fetchQuestions, submitQuizAttempt, fetchStats, fetchAptitudeGoldTopicQuestions } from './utils/api';
 import { getStoredAttempts, saveAttempt, computeStatsFromAttempts } from './utils/scoreStorage';
 import { DSA_500_PROBLEMS } from './data/dsa500Data';
 import { SANDBOX_DATABASE } from './data/sandboxData';
+import externalQuestionsPayload from './data/externalAptitudeQuestions.json';
 import {
   Zap, CheckCircle, Clock, ChevronRight, RefreshCw,
-  ShieldOff, Lightbulb, BookOpen, Sparkles, Code2
+  ShieldOff, BookOpen, Sparkles, Code2
 } from 'lucide-react';
 
 // ── Helper: build quiz questions from static client data ──────────────────────
@@ -146,6 +145,78 @@ export default function App() {
       icon: 'Code2',
       topics: ['Arrays', 'Two Pointers', 'Sliding Window', 'Binary Search', 'Linked List', 'Trees', 'DP', 'Graphs'],
     },
+    {
+      id: 'gold-random',
+      title: 'Aptitude Gold (Random)',
+      description: 'Live Random Aptitude Questions sourced from aptitude-gold API with offline JSON storage',
+      questionCount: externalQuestionsPayload.topics?.random?.count || 29,
+      icon: 'Sparkles',
+      topics: ['All Aptitude Topics', 'Random Solvers', 'Live API Engine'],
+    },
+    {
+      id: 'gold-mixture',
+      title: 'Mixture & Alligation',
+      description: 'Live topic questions from aptitude-gold.vercel.app/MixtureAndAlligation',
+      questionCount: externalQuestionsPayload.topics?.mixture?.count || 26,
+      icon: 'Zap',
+      topics: ['Ratio & Proportions', 'Liquid Mixtures', 'Weighted Averages', 'Alligation Rule'],
+    },
+    {
+      id: 'gold-age',
+      title: 'Problems on Ages',
+      description: 'Live topic questions from aptitude-gold.vercel.app/Age',
+      questionCount: externalQuestionsPayload.topics?.age?.count || 22,
+      icon: 'Clock',
+      topics: ['Age Ratios', 'Present & Past Ages', 'Product of Ages'],
+    },
+    {
+      id: 'gold-permutation',
+      title: 'Permutation & Combination',
+      description: 'Live topic questions from aptitude-gold.vercel.app/PermutationAndCombination',
+      questionCount: externalQuestionsPayload.topics?.permutation?.count || 27,
+      icon: 'CheckCircle',
+      topics: ['Selections (nCr)', 'Arrangements (nPr)', 'Probability', 'Factorials'],
+    },
+    {
+      id: 'gold-profit',
+      title: 'Profit & Loss',
+      description: 'Live topic questions from aptitude-gold.vercel.app/ProfitAndLoss',
+      questionCount: externalQuestionsPayload.topics?.profit?.count || 21,
+      icon: 'Zap',
+      topics: ['Cost Price & Selling Price', 'Discount & Marked Price', 'Gain/Loss Percentage'],
+    },
+    {
+      id: 'gold-pipes',
+      title: 'Pipes & Cisterns',
+      description: 'Live topic questions from aptitude-gold.vercel.app/PipesAndCistern',
+      questionCount: externalQuestionsPayload.topics?.pipes?.count || 24,
+      icon: 'Zap',
+      topics: ['Inlet & Outlet Pipes', 'Tank Capacity', 'Simultaneous Flow'],
+    },
+    {
+      id: 'gold-speed',
+      title: 'Speed Time Distance',
+      description: 'Live topic questions from aptitude-gold.vercel.app/SpeedTimeDistance',
+      questionCount: externalQuestionsPayload.topics?.speed?.count || 26,
+      icon: 'Clock',
+      topics: ['Relative Speed', 'Train Problems', 'Boats & Streams', 'Average Speed'],
+    },
+    {
+      id: 'gold-calendar',
+      title: 'Calendars',
+      description: 'Live topic questions from aptitude-gold.vercel.app/Calendar',
+      questionCount: externalQuestionsPayload.topics?.calendar?.count || 27,
+      icon: 'Clock',
+      topics: ['Odd Days', 'Leap Years', 'Day of the Week Calculation'],
+    },
+    {
+      id: 'gold-simple_interest',
+      title: 'Simple Interest',
+      description: 'Live topic questions from aptitude-gold.vercel.app/SimpleInterest',
+      questionCount: externalQuestionsPayload.topics?.simple_interest?.count || 25,
+      icon: 'Zap',
+      topics: ['Principal & Rate', 'Interest Formula (PTR/100)', 'Simple Rates'],
+    },
   ];
 
   // ── Data Loading with Persistent Storage ──────────────────────────────────────
@@ -197,15 +268,20 @@ export default function App() {
       setConfigCategory(null);
 
       let qs = [];
-      try {
-        qs = await fetchQuestions({
-          category: categoryId,
-          limit: config.limit || 10,
-          difficulty: config.difficulty || 'all',
-          shuffle: config.shuffle !== false,
-        });
-      } catch (_) {
-        qs = [];
+      if (categoryId.startsWith('gold-')) {
+        const topicKey = categoryId.replace('gold-', '');
+        qs = await fetchAptitudeGoldTopicQuestions(topicKey, config.limit || 10);
+      } else {
+        try {
+          qs = await fetchQuestions({
+            category: categoryId,
+            limit: config.limit || 10,
+            difficulty: config.difficulty || 'all',
+            shuffle: config.shuffle !== false,
+          });
+        } catch (_) {
+          qs = [];
+        }
       }
 
       if (!qs || !qs.length) {
@@ -352,13 +428,13 @@ export default function App() {
                       fontSize: '0.78rem', fontWeight: '700', color: 'var(--accent-primary)',
                       marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px'
                     }}>
-                      <Sparkles size={13} /> Placement Preparation Engine
+                      <Sparkles size={13} /> Aptitude &amp; Skill Hub
                     </div>
                     <h1 style={{ fontSize: '2.1rem', lineHeight: '1.2', marginBottom: '12px', fontWeight: '800' }}>
                       Master Aptitude &amp; DSA Solvers
                     </h1>
                     <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', lineHeight: '1.6', marginBottom: '24px' }}>
-                      Practice with full-length timed tests, analyze domain accuracy metrics, explore 500+ LeetCode problems with Python solutions, and master formulas with visual diagrams.
+                      Practice with full-length timed tests, analyze domain accuracy metrics, and explore 500+ LeetCode problems with Python solutions.
                     </p>
                     <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
                       <button
@@ -367,13 +443,6 @@ export default function App() {
                         style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
                       >
                         <Code2 size={18} /> Explore DSA 500 Hub
-                      </button>
-                      <button
-                        className="btn btn-outline"
-                        onClick={() => handleSetTab('tips')}
-                        style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
-                      >
-                        <Lightbulb size={18} /> Formula Bank
                       </button>
                     </div>
                   </div>
@@ -414,9 +483,6 @@ export default function App() {
               />
             )}
 
-            {/* Technical & HR Interview Preparation Section */}
-            {currentTab === 'interview' && <InterviewPrepSection />}
-
             {/* Live Interactive Sandbox */}
             {currentTab === 'sandbox' && (
               <InteractiveSandbox
@@ -428,9 +494,6 @@ export default function App() {
 
             {/* Popular Books Section */}
             {currentTab === 'books' && <BooksSection />}
-
-            {/* Tips & Formulas Bank */}
-            {currentTab === 'tips' && <TipsAndFormulas />}
 
             {/* Performance Analytics & Persistent History Scorecard */}
             {currentTab === 'stats' && (

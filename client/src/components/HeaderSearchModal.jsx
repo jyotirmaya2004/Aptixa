@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Search, X, Sparkles, Code2, Grid, BookOpen, ChevronRight, Zap } from 'lucide-react';
 import { SANDBOX_DATABASE } from '../data/sandboxData';
 import { DSA_500_PROBLEMS } from '../data/dsa500Data';
-import { INTERVIEW_QUESTIONS } from '../data/interviewPrepData';
 
 export default function HeaderSearchModal({ isOpen, onClose, onSelectResult }) {
   const [query, setQuery] = useState('');
@@ -18,30 +17,13 @@ export default function HeaderSearchModal({ isOpen, onClose, onSelectResult }) {
 
   if (!isOpen) return null;
 
-  // Search logic across Sandbox Solvers, 500 LeetCode problems, Interview Prep, and Domains
+  // Search logic across Sandbox Solvers, 500 LeetCode problems, and Domains
   const searchResults = [];
 
   if (query.trim().length > 0) {
     const q = query.toLowerCase();
 
-    // 1. Search Interview Questions & HR Guides
-    INTERVIEW_QUESTIONS.forEach(iq => {
-      if (iq.question.toLowerCase().includes(q) || iq.domain.toLowerCase().includes(q) || iq.keyKeywords.some(k => k.toLowerCase().includes(q))) {
-        if (searchResults.length < 15) {
-          searchResults.push({
-            type: 'interview',
-            title: iq.question,
-            sub: `${iq.domain} • Interview Q&A`,
-            icon: Sparkles,
-            color: '#10b981',
-            item: iq,
-            tab: 'interview'
-          });
-        }
-      }
-    });
-
-    // 2. Search 500 LeetCode Problems
+    // 1. Search 500 LeetCode Problems
     DSA_500_PROBLEMS.forEach(dsa => {
       if (dsa.title.toLowerCase().includes(q) || dsa.category.toLowerCase().includes(q) || dsa.lcNumber.toString().includes(q)) {
         if (searchResults.length < 15) {
@@ -108,7 +90,7 @@ export default function HeaderSearchModal({ isOpen, onClose, onSelectResult }) {
           <input
             ref={inputRef}
             type="text"
-            placeholder="Type to search 220+ Solvers, Python DSA, Books, formulas..."
+            placeholder="Type to search 220+ Solvers, Python DSA, Books..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             style={{

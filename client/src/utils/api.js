@@ -222,3 +222,108 @@ export const deleteChapter = async (bookId, chapterId) => {
   if (!res.ok) throw new Error('Failed to delete chapter');
   return res.json();
 };
+
+// ── Aptitude Gold Live API & Offline JSON Database ───────────────────────────
+export const APTITUDE_GOLD_ENDPOINTS = {
+  random: { name: 'Random Aptitude', endpoint: 'https://aptitude-gold.vercel.app/Random', category: 'quantitative' },
+  mixture: { name: 'Mixture & Alligation', endpoint: 'https://aptitude-gold.vercel.app/MixtureAndAlligation', category: 'quantitative' },
+  age: { name: 'Problems on Ages', endpoint: 'https://aptitude-gold.vercel.app/Age', category: 'quantitative' },
+  permutation: { name: 'Permutation & Combination', endpoint: 'https://aptitude-gold.vercel.app/PermutationAndCombination', category: 'quantitative' },
+  profit: { name: 'Profit & Loss', endpoint: 'https://aptitude-gold.vercel.app/ProfitAndLoss', category: 'quantitative' },
+  pipes: { name: 'Pipes & Cisterns', endpoint: 'https://aptitude-gold.vercel.app/PipesAndCistern', category: 'quantitative' },
+  speed: { name: 'Speed Time Distance', endpoint: 'https://aptitude-gold.vercel.app/SpeedTimeDistance', category: 'quantitative' },
+  calendar: { name: 'Calendars', endpoint: 'https://aptitude-gold.vercel.app/Calendar', category: 'logical' },
+  simple_interest: { name: 'Simple Interest', endpoint: 'https://aptitude-gold.vercel.app/SimpleInterest', category: 'quantitative' },
+};
+
+export const fetchAptitudeGoldQuestion = async (topicKey = 'random') => {
+  const config = APTITUDE_GOLD_ENDPOINTS[topicKey] || APTITUDE_GOLD_ENDPOINTS.random;
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 5000);
+    const res = await fetch(config.endpoint, { signal: controller.signal });
+    clearTimeout(timer);
+
+    if (res.ok) {
+      const data = await res.json();
+      if (data && data.question) {
+        const options = Array.isArray(data.options) ? data.options.map(o => String(o).strip ? String(o).strip() : String(o)) : [];
+        const answer = String(data.answer || '').trim();
+        let correctOption = 0;
+        options.forEach((opt, idx) => {
+          if (opt === answer || opt.toLowerCase().includes(answer.toLowerCase()) || answer.toLowerCase().includes(opt.toLowerCase())) {
+            correctOption = idx;
+          }
+        });
+
+        return {
+          id: `gold-live-${Date.now()}-${Math.random().toString(36).substring(2, 6)}`,
+          topic: config.name,
+          category: config.category,
+          question: data.question,
+          options: options.length >= 4 ? options.slice(0, 4) : [...options, 'None of these', 'Cannot be determined'].slice(0, 4),
+          correctOption,
+          answer: data.answer,
+          explanation: data.explanation || '',
+          isLive: true
+        };
+      }
+    }
+  } catch (err) {
+    console.warn(`Aptitude Gold live API fetch failed for ${topicKey}, loading stored JSON fallback:`, err);
+  }
+
+  // Offline / Fallback JSON database
+  try {
+    const jsonRes = await fetch('/data/externalAptitudeQuestions.json');
+    if (jsonRes.ok) {
+      const payload = await jsonRes.json();
+      const topicData = payload.topics?.[topicKey] || payload.topics?.random;
+      if (topicData && topicData.questions?.length) {
+        const randomQ = topicData.questions[Math.floor(Math.random() * topicData.questions.length)];
+        return { ...randomQ, isLive: false };
+      }
+    }
+  } catch (err) {
+    console.warn('Failed to load stored externalAptitudeQuestions.json:', err);
+  }
+
+  const { default: staticPayload } = await import('../data/externalAptitudeQuestions.json');
+  const topicData = staticPayload.topics?.[topicKey] || staticPayload.topics?.random;
+  const questions = topicData?.questions || [];
+  return questions[Math.floor(Math.random() * questions.length)];
+};
+
+export const fetchAptitudeGoldTopicQuestions = async (topicKey = 'random', limit = 10) => {
+  const list = [];
+  const fetchedIds = new Set();
+
+  for (let i = 0; i < limit; i++) {
+    try {
+      const q = await fetchAptitudeGoldQuestion(topicKey);
+      if (q && !fetchedIds.has(q.question)) {
+        fetchedIds.add(q.question);
+        list.push(q);
+      }
+    } catch (_) {}
+  }
+
+  if (list.length < limit) {
+    try {
+      const { default: staticPayload } = await import('../data/externalAptitudeQuestions.json');
+      const topicData = staticPayload.topics?.[topicKey] || staticPayload.topics?.random;
+      const questions = topicData?.questions || [];
+      const shuffled = [...questions].sort(() => 0.5 - Math.random());
+      for (const q of shuffled) {
+        if (list.length >= limit) break;
+        if (!fetchedIds.has(q.question)) {
+          fetchedIds.add(q.question);
+          list.push(q);
+        }
+      }
+    } catch (_) {}
+  }
+
+  return list;
+};
+
