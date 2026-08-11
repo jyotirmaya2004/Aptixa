@@ -763,7 +763,7 @@
       "id": "number-system-048",
       "chapter": "Number System",
       "question_number": 48,
-      "question": "If n is an integer, how many values of n will give an integral value of   + +     2 16 7 6 ? n n n",
+      "question": "If n is an integer, how many values of n will give an integral value of (n² + 6n + 7) / (n + 6)?",
       "options": {
         "a": "2",
         "b": "3",
@@ -2295,10 +2295,10 @@
       "id": "number-system-141",
       "chapter": "Number System",
       "question_number": 141,
-      "question": "If a = 11 and b = 9, then the value of   + +       2 2 3 3 is – a b ab a b (S.S.C., 2010)",
+      "question": "If a = 11 and b = 9, then the value of (a² + b² + ab) / (a³ - b³) is: (S.S.C., 2010)",
       "options": {
-        "a": "1 2",
-        "b": "1 20",
+        "a": "1/2",
+        "b": "1/20",
         "c": "2",
         "d": "20"
       },
@@ -3281,7 +3281,7 @@
       "id": "number-system-202",
       "chapter": "Number System",
       "question_number": 202,
-      "question": "The last digit in the decimal representation of 2000 1 is 5       (Hotel Management, 2009)",
+      "question": "The last non-zero digit in the decimal representation of (1/5)²⁰⁰⁰ is: (Hotel Management, 2009)",
       "options": {
         "a": "2",
         "b": "4",
@@ -5706,7 +5706,7 @@
       "id": "number-system-353",
       "chapter": "Number System",
       "question_number": 353,
-      "question": "If the symbol [x] denotes the greatest integer less than or equal to x, then the value of        + + + + + + +               1 1 1 1 2 1 49 ......... is 4 4 50 4 50 4 50",
+      "question": "If the symbol [x] denotes the greatest integer less than or equal to x, then the value of [1/4] + [1/4 + 1/50] + [1/4 + 2/50] + ... + [1/4 + 49/50] is:",
       "options": {
         "a": "0",
         "b": "9",
@@ -5786,12 +5786,12 @@
       "id": "number-system-358",
       "chapter": "Number System",
       "question_number": 358,
-      "question": "If x = a (b – c), y = b (c – a), z = c (a – b), then the value of 3 3 3 y x z a b c       + +             is [SSC—CHSL (10 + 2) Exam, 2015]",
+      "question": "If x = a(b - c), y = b(c - a), z = c(a - b), then the value of (x/a)³ + (y/b)³ + (z/c)³ is: [SSC—CHSL (10 + 2) Exam, 2015]",
       "options": {
-        "a": "2xyz abc",
-        "b": "xyz abc",
+        "a": "2xyz / abc",
+        "b": "xyz / abc",
         "c": "0",
-        "d": "3xyz abc"
+        "d": "3xyz / abc"
       },
       "correct_option": "d",
       "answer": "3xyz abc",
