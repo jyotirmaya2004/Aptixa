@@ -78,6 +78,14 @@
         "question_count": 109,
         "description": "Laws of indices, definition of surds, order of surds, operations on surds, and exponential equations.",
         "file": "rs_agrawal/surds_and_indices.json"
+      },
+      {
+        "id": "ch-logarithms",
+        "chapter_number": 10,
+        "title": "10. Logarithms",
+        "question_count": 92,
+        "description": "Definition of logarithm, laws of logarithms, base change formula, common logarithms, characteristic and mantissa, logarithmic equations.",
+        "file": "rs_agrawal/logarithms.json"
       }
     ]
   },
