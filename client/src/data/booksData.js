@@ -314,7 +314,7 @@ export const STATIC_BOOKS = [
         file: "rs_agrawal/pie_chart.json"
       },
       {
-        id": "ch-line-graphs",
+        id: "ch-line-graphs",
         chapter_number: 39,
         title: "39. Line Graphs",
         question_count: 28,

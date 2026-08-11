@@ -1,7 +1,4 @@
-import json
-import os
-
-data = {
+{
   "book": "Quantitative Aptitude for Competitive Examinations — R.S. Aggarwal",
   "chapter_number": 35,
   "chapter": "Odd Man Out and Series",
@@ -1261,10 +1258,3 @@ data = {
     "complete_options": "81/81"
   }
 }
-
-out_path = "/home/jyoti/Project/PLACEMENT/server/data/rs_agrawal/odd_man_out_and_series.json"
-os.makedirs(os.path.dirname(out_path), exist_ok=True)
-with open(out_path, "w", encoding="utf-8") as f:
-    json.dump(data, f, indent=2, ensure_ascii=False)
-
-print(f"Successfully generated Odd Man Out and Series (Ch 35) JSON with {len(data['exercise']['questions'])} questions!")

@@ -246,6 +246,78 @@
         "question_count": 48,
         "description": "Factorials, word permutations with repeating letters, vowel grouping conditions, committee selections, and combined selections.",
         "file": "rs_agrawal/permutations_and_combinations.json"
+      },
+      {
+        "id": "ch-probability",
+        "chapter_number": 31,
+        "title": "31. Probability",
+        "question_count": 50,
+        "description": "Basic probability rules, coin tosses, die rolls, card picks, marble draws, truth/lie combinations, and conditional events.",
+        "file": "rs_agrawal/probability.json"
+      },
+      {
+        "id": "ch-true-discount",
+        "chapter_number": 32,
+        "title": "32. True Discount",
+        "question_count": 21,
+        "description": "Present worth calculations, true discount formulas, sum due, SI vs TD relations, and deferred payment offer comparisons.",
+        "file": "rs_agrawal/true_discount.json"
+      },
+      {
+        "id": "ch-bankers-discount",
+        "chapter_number": 33,
+        "title": "33. Banker's Discount",
+        "question_count": 13,
+        "description": "Banker's discount on bill face value, true discount on present worth, banker's gain, discount date, and rate percentage.",
+        "file": "rs_agrawal/bankers_discount.json"
+      },
+      {
+        "id": "ch-heights-and-distances",
+        "chapter_number": 34,
+        "title": "34. Heights and Distances",
+        "question_count": 18,
+        "description": "Trigonometric ratios, angle of elevation, angle of depression, ladder problems, lighthouse observations, and cloud reflections.",
+        "file": "rs_agrawal/heights_and_distances.json"
+      },
+      {
+        "id": "ch-odd-man-out-and-series",
+        "chapter_number": 35,
+        "title": "35. Odd Man Out and Series",
+        "question_count": 81,
+        "description": "Finding odd man out, wrong number in series, missing term in sequence, pattern identification, arithmetic, geometric and prime series.",
+        "file": "rs_agrawal/odd_man_out_and_series.json"
+      },
+      {
+        "id": "ch-tabulation",
+        "chapter_number": 36,
+        "title": "36. Tabulation",
+        "question_count": 25,
+        "description": "Tabular data interpretation, row and column totals, percentages, ratios, growth rates, and multi-table data analysis.",
+        "file": "rs_agrawal/tabulation.json"
+      },
+      {
+        "id": "ch-bar-graphs",
+        "chapter_number": 37,
+        "title": "37. Bar Graphs",
+        "question_count": 31,
+        "description": "Bar diagram data analysis, percentage changes, average calculations, multi-bar comparisons, and production/sales graph evaluation.",
+        "file": "rs_agrawal/bar_graphs.json"
+      },
+      {
+        "id": "ch-pie-chart",
+        "chapter_number": 38,
+        "title": "38. Pie Chart",
+        "question_count": 29,
+        "description": "Pie chart central angles, percentage composition, sector values, dual chart comparisons, and multi-variable data interpretation.",
+        "file": "rs_agrawal/pie_chart.json"
+      },
+      {
+        "id": "ch-line-graphs",
+        "chapter_number": 39,
+        "title": "39. Line Graphs",
+        "question_count": 28,
+        "description": "Line graph trend analysis, plotted values, ratio of series, percentage growth, profit percentage on investment, and multi-line comparisons.",
+        "file": "rs_agrawal/line_graphs.json"
       }
     ]
   },
