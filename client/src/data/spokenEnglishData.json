@@ -99,6 +99,56 @@
       "hint": "Use 'for' when specifying the total duration of time ('three years').",
       "collocations": ["software developer", "for three years"],
       "targetWords": ["as a", "at Google", "for three years"]
+    },
+    {
+      "id": "sen-111",
+      "category": "grammar",
+      "topic": "Active vs Passive Voice",
+      "level": "Intermediate B1",
+      "text": "The bug was identified and resolved by our engineering team within an hour.",
+      "hint": "Passive voice emphasizes the action ('was identified') rather than who performed it.",
+      "collocations": ["identified and resolved", "engineering team"],
+      "targetWords": ["was identified", "resolved by"]
+    },
+    {
+      "id": "sen-112",
+      "category": "speaking",
+      "topic": "HR Question: Career Goals",
+      "level": "Intermediate B2",
+      "text": "My short term goal is to excel as a software engineer and contribute to scalable products.",
+      "hint": "Speak confidently with emphasis on 'excel' and 'scalable products'.",
+      "collocations": ["short term goal", "scalable products"],
+      "targetWords": ["short term goal", "contribute"]
+    },
+    {
+      "id": "sen-113",
+      "category": "vocabulary",
+      "topic": "Agile & Teamwork Terms",
+      "level": "Intermediate B2",
+      "text": "Our cross functional team conducts daily standup meetings to address project blockers.",
+      "hint": "'Cross functional' means members from different technical disciplines.",
+      "collocations": ["cross functional team", "daily standup", "project blockers"],
+      "targetWords": ["cross functional", "blockers"]
+    },
+    {
+      "id": "sen-114",
+      "category": "listening",
+      "topic": "Speed & Phonetic Contrast",
+      "level": "Advanced C1",
+      "text": "Continuous integration ensures seamless code delivery without manual intervention.",
+      "hint": "Listen carefully to the pronunciation of 'continuous integration' and 'seamless'.",
+      "collocations": ["continuous integration", "seamless delivery"],
+      "targetWords": ["continuous integration", "seamless"]
+    },
+    {
+      "id": "sen-115",
+      "category": "speaking",
+      "topic": "Handling Challenging Situations",
+      "level": "Advanced B2",
+      "text": "When faced with ambiguous requirements, I proactively seek clarification from project stakeholders.",
+      "hint": "'Proactively' means taking initiative before problems arise.",
+      "collocations": ["ambiguous requirements", "project stakeholders"],
+      "targetWords": ["proactively", "stakeholders"]
     }
   ]
 }
