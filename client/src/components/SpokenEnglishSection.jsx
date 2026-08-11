@@ -4,8 +4,9 @@ import {
 } from 'lucide-react';
 
 import spokenEnglishPayload from '../data/spokenEnglishData.json';
+import { getGeneratedSentence, TOTAL_GENERATED_SENTENCES } from '../utils/spokenEnglishGenerator';
 
-const SENTENCES = spokenEnglishPayload.sentences || [];
+const CURATED_SENTENCES = spokenEnglishPayload.sentences || [];
 
 export default function SpokenEnglishSection() {
   const [activeTab, setActiveTab] = useState('sentences'); // 'sentences' | 'dictation' | 'saved'
@@ -26,7 +27,11 @@ export default function SpokenEnglishSection() {
   });
 
   const recognitionRef = useRef(null);
-  const currentSentence = SENTENCES[currentIndex % (SENTENCES.length || 1)] || SENTENCES[0];
+
+  // Dynamically resolve sentence: use curated first, then procedural generator for 300,000+ sentences!
+  const currentSentence = currentIndex < CURATED_SENTENCES.length
+    ? CURATED_SENTENCES[currentIndex]
+    : getGeneratedSentence(currentIndex - CURATED_SENTENCES.length);
 
   // ── TTS Audio Speaker ──────────────────────────────────────────────────────
   const speakText = (textToSpeak) => {
@@ -140,14 +145,14 @@ export default function SpokenEnglishSection() {
     setTranscript('');
     setManualText('');
     setEvaluation(null);
-    setCurrentIndex((prev) => (prev + 1) % SENTENCES.length);
+    setCurrentIndex((prev) => (prev + 1) % (CURATED_SENTENCES.length + TOTAL_GENERATED_SENTENCES));
   };
 
   const handleRandomSentence = () => {
     setTranscript('');
     setManualText('');
     setEvaluation(null);
-    const rand = Math.floor(Math.random() * SENTENCES.length);
+    const rand = Math.floor(Math.random() * (CURATED_SENTENCES.length + TOTAL_GENERATED_SENTENCES));
     setCurrentIndex(rand);
   };
 

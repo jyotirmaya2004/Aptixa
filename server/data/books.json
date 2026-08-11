@@ -102,6 +102,38 @@
         "question_count": 319,
         "description": "Cost price, selling price, profit/loss percentages, chain transactions, ratio of CP & SP, equal profit and loss (x²/100), dishonest dealer & false weights, mixed varieties, discounts & marked price, and data sufficiency.",
         "file": "rs_agrawal/profit_and_loss.json"
+      },
+      {
+        "id": "ch-ratio-and-proportion",
+        "chapter_number": 13,
+        "title": "13. Ratio and Proportion",
+        "question_count": 280,
+        "description": "Ratios, proportions, 3rd & 4th proportionals, mean proportional, compounded ratios, division of amounts in ratios, and data sufficiency.",
+        "file": "rs_agrawal/ratio_and_proportion.json"
+      },
+      {
+        "id": "ch-partnership",
+        "chapter_number": 14,
+        "title": "14. Partnership",
+        "question_count": 77,
+        "description": "Simple and compound partnerships, equivalent capital calculation, profit division by investment-time ratio, working partner management fees, and data sufficiency.",
+        "file": "rs_agrawal/partnership.json"
+      },
+      {
+        "id": "ch-chain-rule",
+        "chapter_number": 15,
+        "title": "15. Chain Rule",
+        "question_count": 82,
+        "description": "Direct and indirect proportion, unitary method, composite work-time-manpower formulas (M1 D1 H1 / W1 = M2 D2 H2 / W2), and military garrison ration problems.",
+        "file": "rs_agrawal/chain_rule.json"
+      },
+      {
+        "id": "ch-pipes-and-cisterns",
+        "chapter_number": 16,
+        "title": "16. Pipes and Cisterns",
+        "question_count": 54,
+        "description": "Inlets and outlets filling and emptying rates, leakage delays, alternate-hour operations, clogged pipe flow reductions, and cylinder flow rate calculations.",
+        "file": "rs_agrawal/pipes_and_cisterns.json"
       }
     ]
   },

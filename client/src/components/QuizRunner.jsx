@@ -7,12 +7,14 @@ import QuestionPalette from './QuestionPalette';
 import { formatTime, getTimerColor } from '../utils/timer';
 
 export default function QuizRunner({ 
-  questions, 
-  mode, 
-  categoryTitle, 
+  questions = [], 
+  mode = 'practice', 
+  categoryTitle = 'Quiz', 
   timerPerQuestion = 90,
   onCompleteQuiz, 
-  onExitQuiz 
+  onComplete,
+  onExitQuiz,
+  onCancel
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState({});
@@ -23,9 +25,26 @@ export default function QuizRunner({
   const [showSubmitModal, setShowSubmitModal] = useState(false);
   const [selectedAnimation, setSelectedAnimation] = useState(null);
 
-  const totalExamSeconds = questions.length * timerPerQuestion;
+  const totalExamSeconds = (questions.length || 1) * timerPerQuestion;
   const [secondsRemaining, setSecondsRemaining] = useState(totalExamSeconds);
   const timerRef = useRef(null);
+
+  const handleExit = () => {
+    const exitFn = onExitQuiz || onCancel;
+    if (typeof exitFn === 'function') {
+      exitFn();
+    }
+  };
+
+  const handleSubmit = () => {
+    clearInterval(timerRef.current);
+    setShowSubmitModal(false);
+    const spent = totalExamSeconds - secondsRemaining;
+    const completeFn = onCompleteQuiz || onComplete;
+    if (typeof completeFn === 'function') {
+      completeFn({ userAnswers, timeSpentSeconds: spent, mode });
+    }
+  };
 
   useEffect(() => {
     if (mode !== 'exam') return;
@@ -75,12 +94,6 @@ export default function QuizRunner({
     setOpenSolutions(prev => ({ ...prev, [id]: !prev[id] }));
   };
 
-  const handleSubmit = () => {
-    clearInterval(timerRef.current);
-    const spent = totalExamSeconds - secondsRemaining;
-    onCompleteQuiz({ userAnswers, timeSpentSeconds: spent, mode });
-  };
-
   const diffBadge = (d) => d?.toLowerCase() === 'easy' ? 'badge-easy' : d?.toLowerCase() === 'hard' ? 'badge-hard' : 'badge-medium';
 
   const hasAnswered    = userAnswers[q.id] !== undefined;
@@ -96,7 +109,7 @@ export default function QuizRunner({
       {/* Top Bar */}
       <div className="glass-card quiz-topbar" style={{ padding: '12px 16px', marginBottom: '16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-          <button className="btn btn-outline btn-sm" onClick={onExitQuiz}>
+          <button className="btn btn-outline btn-sm" onClick={handleExit}>
             <ArrowLeft size={15} /> Exit
           </button>
           <div>

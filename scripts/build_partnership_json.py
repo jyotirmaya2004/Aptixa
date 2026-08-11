@@ -1,0 +1,1422 @@
+import json
+import os
+
+user_json = {
+  "book": "Quantitative Aptitude for Competitive Examinations — R.S. Aggarwal",
+  "chapter_number": 14,
+  "chapter": "Partnership",
+  "book_page_range": "476–492",
+  "question_count": 77,
+  "total_questions": 77,
+  "key_concepts": [
+    {
+      "topic": "Partnership Definition",
+      "formula": "When two or more persons run a business jointly, they are called partners and the deal is known as partnership."
+    },
+    {
+      "topic": "Simple Partnership",
+      "formula": "When all partners invest their capitals for the same time period, gain or loss is divided strictly in the ratio of their investments."
+    },
+    {
+      "topic": "Compound Partnership",
+      "formula": "When partners invest capitals for different time periods, equivalent capital = capital × time; gain or loss is divided in the ratio of equivalent capitals (x·p : y·q)."
+    },
+    {
+      "topic": "Working & Sleeping Partners",
+      "formula": "A partner who manages the business is a working partner (often receiving a salary/management share). A partner who only invests capital is a sleeping partner."
+    }
+  ],
+  "exercises": {
+    "exercise_1": {
+      "title": "Objective Type Questions",
+      "question_count": 64,
+      "answer_key_count": 64
+    },
+    "exercise_2": {
+      "title": "Data Sufficiency / Statement Redundancy Type Questions",
+      "question_count": 13,
+      "answer_key_count": 13
+    }
+  }
+}
+
+# 64 Objective Questions
+ex1_questions = [
+  {
+    "id": "partnership-objective-001",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 1,
+    "question": "Rahul, Arun and Sumit started a business. Rahul invested 1/2 part, Arun 1/3 part and rest of the capital was invested by Sumit. The ratio of their profits will be (P.C.S., 2006)",
+    "options": {
+      "a": "2 : 3 : 1",
+      "b": "3 : 2 : 1",
+      "c": "2 : 3 : 6",
+      "d": "3 : 2 : 5"
+    },
+    "correct_option": "b",
+    "answer": "3 : 2 : 1",
+    "book_page": 476,
+    "topic": "Simple Capital Ratios"
+  },
+  {
+    "id": "partnership-objective-002",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 2,
+    "question": "P and Q started a business investing ₹ 85000 and ₹ 15000 respectively. In what ratio the profit earned after 2 years be divided between P and Q respectively?",
+    "options": {
+      "a": "3 : 4",
+      "b": "3 : 5",
+      "c": "15 : 23",
+      "d": "17 : 23",
+      "e": "None of these"
+    },
+    "correct_option": "e",
+    "answer": "None of these",
+    "book_page": 476,
+    "topic": "Simple Capital Ratios"
+  },
+  {
+    "id": "partnership-objective-003",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 3,
+    "question": "Anand and Deepak started a business investing ₹ 22500 and ₹ 35000 respectively. Out of a total profit of ₹ 13800, Deepak’s share is",
+    "options": {
+      "a": "₹ 5400",
+      "b": "₹ 7200",
+      "c": "₹ 8400",
+      "d": "₹ 9600"
+    },
+    "correct_option": "c",
+    "answer": "₹ 8400",
+    "book_page": 476,
+    "topic": "Profit Division"
+  },
+  {
+    "id": "partnership-objective-004",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 4,
+    "question": "Samaira, Mahira and Kiara rented a set of DVDs at a rent of ₹ 578. If they used it for 8 hours, 12 hours and 14 hours respectively, what is Kiara’s share of rent to be paid? (Bank P.O., 2008)",
+    "options": {
+      "a": "₹ 192",
+      "b": "₹ 204",
+      "c": "₹ 215",
+      "d": "₹ 238",
+      "e": "None of these"
+    },
+    "correct_option": "d",
+    "answer": "₹ 238",
+    "book_page": 477,
+    "topic": "Time-based Rent Sharing"
+  },
+  {
+    "id": "partnership-objective-005",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 5,
+    "question": "P, Q and R invested ₹ 45000, ₹ 70000 and ₹ 90000 respectively to start a business. At the end of 2 years, they earned a profit of ₹ 164000. What will be Q’s share in the profit? (Bank P.O., 2009)",
+    "options": {
+      "a": "₹ 36000",
+      "b": "₹ 56000",
+      "c": "₹ 64000",
+      "d": "₹ 72000",
+      "e": "None of these"
+    },
+    "correct_option": "b",
+    "answer": "₹ 56000",
+    "book_page": 477,
+    "topic": "Profit Division"
+  },
+  {
+    "id": "partnership-objective-006",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 6,
+    "question": "Prakash, Sachin and Anil started a business jointly investing ₹ 11 lakh, ₹ 16.5 lakh and ₹ 8.25 lakh respectively. The profit earned by them in the business at the end of 3 years was ₹ 19.5 lakh. What will be 50% of Anil’s share in the profit? (Bank P.O., 2009)",
+    "options": {
+      "a": "₹ 2.25 lakh",
+      "b": "₹ 2.5 lakh",
+      "c": "₹ 3.75 lakh",
+      "d": "₹ 4.5 lakh",
+      "e": "None of these"
+    },
+    "correct_option": "a",
+    "answer": "₹ 2.25 lakh",
+    "book_page": 477,
+    "topic": "Fractional Shares"
+  },
+  {
+    "id": "partnership-objective-007",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 7,
+    "question": "Two friends invested ₹ 1500 and ₹ 2500 in a business. They earned a profit of ₹ 800. One-half of the profit was divided equally between them and the other half was divided in proportion to their capitals. How much did each of them receive? (Campus Recruitment, 2009)",
+    "options": {
+      "a": "₹ 350 and ₹ 450",
+      "b": "₹ 360 and ₹ 440",
+      "c": "₹ 370 and ₹ 430",
+      "d": "₹ 375 and ₹ 425"
+    },
+    "correct_option": "a",
+    "answer": "₹ 350 and ₹ 450",
+    "book_page": 478,
+    "topic": "Mixed Profit Rules"
+  },
+  {
+    "id": "partnership-objective-008",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 8,
+    "question": "Three persons started a placement business with a capital of ₹ 3000. B invests ₹ 600 less than A and C invests ₹ 300 less than B. What is B’s share in a profit of ₹ 886? (Campus Recruitment, 2010)",
+    "options": {
+      "a": "₹ 443",
+      "b": "₹ 354.40",
+      "c": "₹ 265.80",
+      "d": "₹ 177.20"
+    },
+    "correct_option": "c",
+    "answer": "₹ 265.80",
+    "book_page": 478,
+    "topic": "Capital Equations"
+  },
+  {
+    "id": "partnership-objective-009",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 9,
+    "question": "Reena and Shaloo are partners in a business. Reena invests ₹ 35000 for 8 months and Shaloo invests ₹ 42000 for 10 months. Out of a profit of ₹ 31570, Reena’s share is :",
+    "options": {
+      "a": "₹ 9471",
+      "b": "₹ 12,628",
+      "c": "₹ 18,040",
+      "d": "₹ 18942"
+    },
+    "correct_option": "b",
+    "answer": "₹ 12,628",
+    "book_page": 478,
+    "topic": "Compound Partnership"
+  },
+  {
+    "id": "partnership-objective-010",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 10,
+    "question": "Shankar started a business with an investment of ₹ 120,000. After three months, Aniket joined him with an investment of ₹ 190,000. They earned a profit of ₹ 17,50,000 after one year. What is Aniket’s share in the profit? (Bank P.O., 2008)",
+    "options": {
+      "a": "₹ 800000",
+      "b": "₹ 850000",
+      "c": "₹ 900000",
+      "d": "₹ 950000",
+      "e": "None of these"
+    },
+    "correct_option": "d",
+    "answer": "₹ 950000",
+    "book_page": 479,
+    "topic": "Compound Partnership"
+  },
+  {
+    "id": "partnership-objective-011",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 11,
+    "question": "Arun started a business investing ₹ 38000. After 5 months Bakul joined him with a capital of ₹ 55000. At the end of the year the total profit was ₹ 22000. What is the approximate difference between the shares of profits of Arun and Bakul? (Bank P.O., 2007)",
+    "options": {
+      "a": "₹ 1007",
+      "b": "₹ 1192",
+      "c": "₹ 1568",
+      "d": "₹ 1857",
+      "e": "₹ 1928"
+    },
+    "correct_option": "d",
+    "answer": "₹ 1857",
+    "book_page": 479,
+    "topic": "Profit Share Difference"
+  },
+  {
+    "id": "partnership-objective-012",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 12,
+    "question": "Gautam started a business with a sum of ₹ 60000. Jatin joined him 8 months later with a sum of ₹ 35000. At what respective ratio will the two share the profit after two years? (Bank P.O., 2008)",
+    "options": {
+      "a": "2 : 1",
+      "b": "3 : 1",
+      "c": "18 : 7",
+      "d": "37 : 14",
+      "e": "None of these"
+    },
+    "correct_option": "c",
+    "answer": "18 : 7",
+    "book_page": 479,
+    "topic": "Multi-year Partnership"
+  },
+  {
+    "id": "partnership-objective-013",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 13,
+    "question": "Simran started a software business by investing ₹ 50000. After six months, Nanda joined her with a capital of ₹ 80000. After 3 years, they earned a profit of ₹ 24500. What was Simran’s share in the profit? (Bank P.O., 2004)",
+    "options": {
+      "a": "₹ 9423",
+      "b": "₹ 10,250",
+      "c": "₹ 12500",
+      "d": "₹ 14000",
+      "e": "None of these"
+    },
+    "correct_option": "e",
+    "answer": "None of these",
+    "book_page": 480,
+    "topic": "Multi-year Partnership"
+  },
+  {
+    "id": "partnership-objective-014",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 14,
+    "question": "Dilip, Ram and Avtar started a shop by investing ₹ 2700, ₹ 8100 and ₹ 7200 respectively. At the end of one year, the profit earned was distributed. If Ram’s share was ₹ 3600, what was their total profit? (R.R.B., 2006)",
+    "options": {
+      "a": "₹ 8000",
+      "b": "₹ 10800",
+      "c": "₹ 11600",
+      "d": "Data inadequate"
+    },
+    "correct_option": "a",
+    "answer": "₹ 8000",
+    "book_page": 480,
+    "topic": "Total Profit Determination"
+  },
+  {
+    "id": "partnership-objective-015",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 15,
+    "question": "A and B started a business in partnership investing ₹ 20000 and ₹ 15000 respectively. After six months, C joined them with ₹ 20000. What will be B’s share in the total profit of ₹ 25000 earned at the end of 2 years from the starting of the business?",
+    "options": {
+      "a": "₹ 7500",
+      "b": "₹ 9000",
+      "c": "₹ 9500",
+      "d": "₹ 10000",
+      "e": "None of these"
+    },
+    "correct_option": "a",
+    "answer": "₹ 7500",
+    "book_page": 480,
+    "topic": "Compound Partnership"
+  },
+  {
+    "id": "partnership-objective-016",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 16,
+    "question": "Aman started a business investing ₹ 70000. Rakhi joined him after six months with an amount of ₹ 105000 and Sagar joined them with ₹ 1.4 lakhs after another six months. The amount of profit earned should be distributed in what ratio among Aman, Rakhi and Sagar respectively, 3 years after Aman started the business?",
+    "options": {
+      "a": "7 : 6 : 10",
+      "b": "12 : 15 : 16",
+      "c": "42 : 45 : 56",
+      "d": "Cannot be determined",
+      "e": "None of these"
+    },
+    "correct_option": "b",
+    "answer": "12 : 15 : 16",
+    "book_page": 481,
+    "topic": "Compound Partnership"
+  },
+  {
+    "id": "partnership-objective-017",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 17,
+    "question": "Sonia started a business investing ₹ 60000. After 6 months Vivek joined him with an amount of ₹ 140000. After 1 year Kirti also joined them with ₹ 120000. After 2 years the business yielded a total profit of ₹ 450000. What is the share of Vivek in the profit? (Bank P.O., 2005)",
+    "options": {
+      "a": "₹ 140000",
+      "b": "₹ 198500",
+      "c": "₹ 210000",
+      "d": "₹ 215000",
+      "e": "None of these"
+    },
+    "correct_option": "c",
+    "answer": "₹ 210000",
+    "book_page": 481,
+    "topic": "Compound Partnership"
+  },
+  {
+    "id": "partnership-objective-018",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 18,
+    "question": "Arun, Kamal and Vinay invested ₹ 8000, ₹ 4000 and ₹ 8000 respectively in a business. Arun left after six months. If after eight months, there was a gain of ₹ 4005, then what will be the share of Kamal?",
+    "options": {
+      "a": "₹ 890",
+      "b": "₹ 1335",
+      "c": "₹ 1602",
+      "d": "₹ 1780"
+    },
+    "correct_option": "a",
+    "answer": "₹ 890",
+    "book_page": 481,
+    "topic": "Partner Withdrawal"
+  },
+  {
+    "id": "partnership-objective-019",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 19,
+    "question": "P and Q started a business in the ratio of 2 : 3. After 1 year P left the business but Q continues. After 2 years he had the profit of ₹ 26000. What is the profit of Q? (Bank Recruitment, 2007)",
+    "options": {
+      "a": "₹ 10400",
+      "b": "₹ 13000",
+      "c": "₹ 15600",
+      "d": "₹ 18500",
+      "e": "None of these"
+    },
+    "correct_option": "e",
+    "answer": "None of these",
+    "book_page": 482,
+    "topic": "Partner Withdrawal"
+  },
+  {
+    "id": "partnership-objective-020",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 20,
+    "question": "A, B and C enter into a partnership. A invests some money at the beginning, B invests double the amount after six months and C invests thrice the amount after eight months. If the annual profit be ₹ 27000; C’s share (in ₹) is (G.B.O., 2007)",
+    "options": {
+      "a": "₹ 8625",
+      "b": "₹ 9000",
+      "c": "₹ 10800",
+      "d": "₹ 11250"
+    },
+    "correct_option": "b",
+    "answer": "₹ 9000",
+    "book_page": 482,
+    "topic": "Equivalent Capital Ratios"
+  },
+  {
+    "id": "partnership-objective-021",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 21,
+    "question": "A, B and C enter into a partnership. They invest ₹ 40000, ₹ 80000 and ₹ 120000 respectively. At the end of the first year, B withdraws ₹ 40,000, while at the end of the second year, C withdraws ₹ 80000. In what ratio will the profit be shared at the end of 3 years?",
+    "options": {
+      "a": "2 : 3 : 5",
+      "b": "3 : 4 : 7",
+      "c": "4 : 5 : 9",
+      "d": "None of these"
+    },
+    "correct_option": "b",
+    "answer": "3 : 4 : 7",
+    "book_page": 482,
+    "topic": "Capital Withdrawals"
+  },
+  {
+    "id": "partnership-objective-022",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 22,
+    "question": "A, B and C enter into a partnership. A initially invests ₹ 25 lakhs and adds another ₹ 10 lakhs after one year. B initially invests ₹ 35 lakhs and withdraws ₹ 10 lakhs after 2 years and C invests ₹ 30 lakhs. In what ratio should the profits be divided at the end of 3 years?",
+    "options": {
+      "a": "10 : 10 : 9",
+      "b": "20 : 20 : 19",
+      "c": "20 : 19 : 18",
+      "d": "None of these"
+    },
+    "correct_option": "d",
+    "answer": "None of these",
+    "book_page": 483,
+    "topic": "Capital Additions & Withdrawals"
+  },
+  {
+    "id": "partnership-objective-023",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 23,
+    "question": "Subhash starts a business by investing ₹ 25000. 6 months later Aditya joins him by investing ₹ 15000. After another 6 months Aditya invests an additional amount of ₹ 15000. At the end of 3 years they earn a profit of ₹ 247000. What is Aditya’s share in the profit? (Bank P.O., 2006)",
+    "options": {
+      "a": "₹ 105000",
+      "b": "₹ 111500",
+      "c": "₹ 123000",
+      "d": "₹ 130000",
+      "e": "None of these"
+    },
+    "correct_option": "e",
+    "answer": "None of these",
+    "book_page": 483,
+    "topic": "Additional Capital Additions"
+  },
+  {
+    "id": "partnership-objective-024",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 24,
+    "question": "Shekhar started a business investing ₹ 25000 in 2009. In 2010, he invested an additional amount of ₹ 10000 and Rajeev joined him with an amount of ₹ 35000. In 2011, Shekhar invested another additional amount of ₹ 10000 and Jatin joined them with an amount of ₹ 35000. What will be Rajeev’s share in the profit of ₹ 150000 earned at the end of 3 years from the start of the business in 2009?",
+    "options": {
+      "a": "₹ 45000",
+      "b": "₹ 50000",
+      "c": "₹ 70000",
+      "d": "₹ 75000",
+      "e": "None of these"
+    },
+    "correct_option": "b",
+    "answer": "₹ 50000",
+    "book_page": 483,
+    "topic": "Multi-year Incremental Investments"
+  },
+  {
+    "id": "partnership-objective-025",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 25,
+    "question": "A and B entered into a partnership investing ₹ 16000 and ₹ 12000 respectively. After 3 months, A withdrew ₹ 5000 while B invested ₹ 5000 more. After 3 more months, C joins the business with a capital of ₹ 21000. The share of B exceeds that of C, out of a total profit of ₹ 26,400 after one year by",
+    "options": {
+      "a": "₹ 2400",
+      "b": "₹ 3000",
+      "c": "₹ 3600",
+      "d": "₹ 4800"
+    },
+    "correct_option": "c",
+    "answer": "₹ 3600",
+    "book_page": 484,
+    "topic": "Excess Share Calculations"
+  },
+  {
+    "id": "partnership-objective-026",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 26,
+    "question": "A and B start a business with investments of ₹ 5000 and ₹ 4500 respectively. After 4 months, A takes out half of his capital. After two more months, B takes out one-third of his capital while C joins them with a capital of ₹ 7000. At the end of a year, they earn a profit of ₹ 5080. Find the share of each member in the profit. (Bank P.O., 2003)",
+    "options": {
+      "a": "A – ₹ 1400, B – ₹ 1900, C – ₹ 1780",
+      "b": "A – ₹ 1600, B – ₹ 1800, C – ₹ 1680",
+      "c": "A – ₹ 1800, B – ₹ 1500, C – ₹ 1780",
+      "d": "A – ₹ 1680, B – ₹ 1600, C – ₹ 1800",
+      "e": "None of these"
+    },
+    "correct_option": "b",
+    "answer": "A – ₹ 1600, B – ₹ 1800, C – ₹ 1680",
+    "book_page": 484,
+    "topic": "Complex Mid-term Withdrawals"
+  },
+  {
+    "id": "partnership-objective-027",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 27,
+    "question": "A, B, C subscribe ₹ 50000 for a business. A subscribes ₹ 4000 more than B and B ₹ 5000 more than C. Out of a total profit of ₹ 35000, A receives: (M.A.T., 2005)",
+    "options": {
+      "a": "₹ 8400",
+      "b": "₹ 11900",
+      "c": "₹ 13600",
+      "d": "₹ 14700"
+    },
+    "correct_option": "d",
+    "answer": "₹ 14700",
+    "book_page": 484,
+    "topic": "Algebraic Capital Distribution"
+  },
+  {
+    "id": "partnership-objective-028",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 28,
+    "question": "A, B and C are three partners. They altogether invested ₹ 14000 in business. At the end of the year, A got ₹ 337.50, B ₹ 1125 and C ₹ 637.50 as profit. The difference between the investments of B and A was (M.A.T., 2010)",
+    "options": {
+      "a": "₹ 2200",
+      "b": "₹ 3200",
+      "c": "₹ 4200",
+      "d": "₹ 5250"
+    },
+    "correct_option": "d",
+    "answer": "₹ 5250",
+    "book_page": 485,
+    "topic": "Investment Difference from Profits"
+  },
+  {
+    "id": "partnership-objective-029",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 29,
+    "question": "A, B and C started a business investing amounts in the ratio of 5 : 6 : 8 respectively. After one year, C withdrew 50% of the amount and A invested an additional amount of 60% of the original amount invested by him. In what ratio, the profit earned at the end of 2 years should be distributed among A, B and C respectively? (Bank P.O., 2004)",
+    "options": {
+      "a": "2 : 3 : 3",
+      "b": "4 : 3 : 2",
+      "c": "13 : 12 : 12",
+      "d": "Cannot be determined",
+      "e": "None of these"
+    },
+    "correct_option": "c",
+    "answer": "13 : 12 : 12",
+    "book_page": 485,
+    "topic": "Percentage Changes in Capital"
+  },
+  {
+    "id": "partnership-objective-030",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 30,
+    "question": "John, Mona and Gordon, three US based business partners, jointly invested in a business project to supply nuclear fuel to India. As per their share in the investment, Gordon will receive 2/3 of the profits whereas John and Mona divide the remainder equally. It is estimated that the income of John will increase by $ 60 million when the rate of profit rises from 4% to 7%. What is Mona’s capital ? (M.B.A., 2009)",
+    "options": {
+      "a": "$ 2000 million",
+      "b": "$ 3000 million",
+      "c": "$ 5000 million",
+      "d": "$ 8000 million"
+    },
+    "correct_option": "a",
+    "answer": "$ 2000 million",
+    "book_page": 485,
+    "topic": "Profit Rate Variations"
+  },
+  {
+    "id": "partnership-objective-031",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 31,
+    "question": "Anu is a working partner and Bimla is a sleeping partner in a business. Anu puts in ₹ 5000 and Bimla puts in ₹ 6000. Anu receives 12.5% of the profit for managing the business and the rest is divided in proportion to their capitals. What does each get out of a profit of ₹ 880? (M.A.T., 2010)",
+    "options": {
+      "a": "₹ 400, ₹ 480",
+      "b": "₹ 450, ₹ 430",
+      "c": "₹ 460, ₹ 420",
+      "d": "₹ 470, ₹ 410"
+    },
+    "correct_option": "c",
+    "answer": "₹ 460, ₹ 420",
+    "book_page": 486,
+    "topic": "Working Partner Management Fee"
+  },
+  {
+    "id": "partnership-objective-032",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 32,
+    "question": "Two partners invested ₹ 125000 and ₹ 85000 respectively in a business. They distribute 60% of the profit equally and decide to distribute the remaining 40% as the interest on their capitals. If one partner received ₹ 3000 more than the other, the total profit is",
+    "options": {
+      "a": "₹ 42250",
+      "b": "₹ 39375",
+      "c": "₹ 38840",
+      "d": "₹ 36575"
+    },
+    "correct_option": "b",
+    "answer": "₹ 39375",
+    "book_page": 486,
+    "topic": "Capital Interest Distribution"
+  },
+  {
+    "id": "partnership-objective-033",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 33,
+    "question": "Three partners A, B, C start a business. Twice A’s capital is equal to thrice B’s capital and B’s capital is four times C’s capital. Out of a total profit of ₹ 16500 at the end of the year, B’s share is :",
+    "options": {
+      "a": "₹ 4000",
+      "b": "₹ 6000",
+      "c": "₹ 7500",
+      "d": "₹ 6600"
+    },
+    "correct_option": "b",
+    "answer": "₹ 6000",
+    "book_page": 486,
+    "topic": "Ratio of Capitals"
+  },
+  {
+    "id": "partnership-objective-034",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 34,
+    "question": "If 4 (A’s capital) = 6 (B’s capital) = 10 (C’s capital), then out of a profit of ₹ 4650, C will receive",
+    "options": {
+      "a": "₹ 465",
+      "b": "₹ 900",
+      "c": "₹ 1550",
+      "d": "₹ 2250"
+    },
+    "correct_option": "b",
+    "answer": "₹ 900",
+    "book_page": 487,
+    "topic": "Multiple Equations Capital Ratios"
+  },
+  {
+    "id": "partnership-objective-035",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 35,
+    "question": "Ninad, Vikas and Manav enter into a partnership. Ninad invests some amount at the beginning. Vikas invests double the amount after 6 months and Manav invests thrice the amount invested by Ninad after 8 months. They earn a profit of ₹ 45000 at the end of the year. What is Manav’s share in the profit? (S.B.I.P.O., 2008)",
+    "options": {
+      "a": "₹ 9000",
+      "b": "₹ 12000",
+      "c": "₹ 15000",
+      "d": "₹ 25000",
+      "e": "None of these"
+    },
+    "correct_option": "c",
+    "answer": "₹ 15000",
+    "book_page": 487,
+    "topic": "Equivalent Capital Ratios"
+  },
+  {
+    "id": "partnership-objective-036",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 36,
+    "question": "Four milkmen rented a pasture. A grazed 15 cows for 4 months, B grazed 12 cows for 2 months, C grazed 18 cows for 6 months and D grazed 16 cows for 5 months. If A’s share of rent is ₹ 1020, what is C’s share of rent? (Bank P.O., 2008)",
+    "options": {
+      "a": "₹ 816",
+      "b": "₹ 1360",
+      "c": "₹ 1836",
+      "d": "Cannot be determined",
+      "e": "None of these"
+    },
+    "correct_option": "c",
+    "answer": "₹ 1836",
+    "book_page": 487,
+    "topic": "Pasture Rent Sharing"
+  },
+  {
+    "id": "partnership-objective-037",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 37,
+    "question": "A, B and C enter into a partnership by making investments in the ratio 3 : 5 : 7. After a year, C invests another ₹ 337600 while A withdraws ₹ 45600. The ratio of investments then changes to 24 : 59 : 16.7. How much did A invest initially?",
+    "options": {
+      "a": "₹ 45600",
+      "b": "₹ 96000",
+      "c": "₹ 141600",
+      "d": "None of these"
+    },
+    "correct_option": "c",
+    "answer": "₹ 141600",
+    "book_page": 488,
+    "topic": "Initial Capital Determination"
+  },
+  {
+    "id": "partnership-objective-038",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 38,
+    "question": "A, B and C are partners in a business. Their shares are in the proportion of 1/3 : 1/4 : 1/5. A withdraws half of his capital after 15 months and after another 15 months, a profit of ₹ 4340 is divided. The share of C is (M.B.A., 2004)",
+    "options": {
+      "a": "₹ 1240",
+      "b": "₹ 1245",
+      "c": "₹ 1360",
+      "d": "₹ 1550"
+    },
+    "correct_option": "a",
+    "answer": "₹ 1240",
+    "book_page": 488,
+    "topic": "Fractional Initial Capital Ratios"
+  },
+  {
+    "id": "partnership-objective-039",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 39,
+    "question": "A, B, C started a business with their investments in the ratio 1 : 3 : 5. After 4 months, A invested the same amount as before and B as well as C withdrew half of their investments. The ratio of their profits at the end of the year is : (L.I.C.A.A.O., 2007)",
+    "options": {
+      "a": "4 : 3 : 5",
+      "b": "5 : 6 : 10",
+      "c": "6 : 5 : 10",
+      "d": "10 : 5 : 6"
+    },
+    "correct_option": "b",
+    "answer": "5 : 6 : 10",
+    "book_page": 488,
+    "topic": "Mid-term Capital Modifications"
+  },
+  {
+    "id": "partnership-objective-040",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 40,
+    "question": "A and B entered into partnership with capitals in the ratio 4 : 5. After 3 months, A withdrew 1/4 of his capital and B withdrew 1/5 of his capital. The gain at the end of 10 months was ₹ 760. A’s share in this profit is :",
+    "options": {
+      "a": "₹ 330",
+      "b": "₹ 360",
+      "c": "₹ 380",
+      "d": "₹ 430"
+    },
+    "correct_option": "a",
+    "answer": "₹ 330",
+    "book_page": 488,
+    "topic": "Fractional Withdrawals"
+  },
+  {
+    "id": "partnership-objective-041",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 41,
+    "question": "In a partnership, A invests 1/6 of the capital for 1/6 of the time, B invests 1/3 of the capital for 1/3 of the time and C, the rest of the capital for the whole time. Out of a profit of ₹ 4600, B’s share is (M.B.A., 2004)",
+    "options": {
+      "a": "₹ 650",
+      "b": "₹ 800",
+      "c": "₹ 960",
+      "d": "₹ 1000"
+    },
+    "correct_option": "b",
+    "answer": "₹ 800",
+    "book_page": 489,
+    "topic": "Fractional Capitals and Times"
+  },
+  {
+    "id": "partnership-objective-042",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 42,
+    "question": "A, B and C jointly thought of engaging themselves in a business venture. It was agreed that A would invest ₹ 6500 for 6 months, B, ₹ 8400 for 5 months and C, ₹ 10,000 for 3 months. A wants to be the working member for which he was to receive 5% of the profits. The profit earned was ₹ 7400. Calculate the share of B in the profit.",
+    "options": {
+      "a": "₹ 1900",
+      "b": "₹ 2660",
+      "c": "₹ 2800",
+      "d": "₹ 2840"
+    },
+    "correct_option": "b",
+    "answer": "₹ 2660",
+    "book_page": 489,
+    "topic": "Working Partner Commission"
+  },
+  {
+    "id": "partnership-objective-043",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 43,
+    "question": "Manick received ₹ 6000 as his share out of the total profit of ₹ 9000 which he and Raunaq earned at the end of one year. If Manick invested ₹ 20000 for 6 months, whereas Raunaq invested his amount for the whole year, what was the amount invested by Raunaq?",
+    "options": {
+      "a": "₹ 4000",
+      "b": "₹ 5000",
+      "c": "₹ 6000",
+      "d": "₹ 10,000"
+    },
+    "correct_option": "b",
+    "answer": "₹ 5000",
+    "book_page": 489,
+    "topic": "Finding Partner Capital"
+  },
+  {
+    "id": "partnership-objective-044",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 44,
+    "question": "A, B and C entered into a partnership. A invested ₹ 2560 and B invested ₹ 2000. At the end of the year, they gained ₹ 1105, out of which A got ₹ 320. C’s capital was (S.S.C., 2006)",
+    "options": {
+      "a": "₹ 2840",
+      "b": "₹ 4028",
+      "c": "₹ 4280",
+      "d": "₹ 4820"
+    },
+    "correct_option": "c",
+    "answer": "₹ 4280",
+    "book_page": 489,
+    "topic": "Finding Partner Capital"
+  },
+  {
+    "id": "partnership-objective-045",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 45,
+    "question": "A, B and C enter into a partnership. A contributes one-third of the capital while B contributes as much as A and C together contribute. If the profit at the end of the year amounts to ₹ 900, what would C receive? (P.C.S., 2008)",
+    "options": {
+      "a": "₹ 100",
+      "b": "₹ 150",
+      "c": "₹ 200",
+      "d": "₹ 300"
+    },
+    "correct_option": "b",
+    "answer": "₹ 150",
+    "book_page": 490,
+    "topic": "Proportional Capital Relations"
+  },
+  {
+    "id": "partnership-objective-046",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 46,
+    "question": "A and B started a business jointly. A’s investment was thrice the investment of B and the period of his investment was two times the period of investment of B. If B received ₹ 4000 as profit, then their total profit is:",
+    "options": {
+      "a": "₹ 16000",
+      "b": "₹ 20000",
+      "c": "₹ 24000",
+      "d": "₹ 28000"
+    },
+    "correct_option": "d",
+    "answer": "₹ 28000",
+    "book_page": 490,
+    "topic": "Capital and Time Multiples"
+  },
+  {
+    "id": "partnership-objective-047",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 47,
+    "question": "A started a business with ₹ 21000 and is joined afterwards by B with ₹ 36000. After how many months did B join if the profits at the end of the year are divided equally?",
+    "options": {
+      "a": "3",
+      "b": "4",
+      "c": "5",
+      "d": "6"
+    },
+    "correct_option": "c",
+    "answer": "5",
+    "book_page": 490,
+    "topic": "Joining Month Calculation"
+  },
+  {
+    "id": "partnership-objective-048",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 48,
+    "question": "A began a business with ₹ 85000. He was joined afterwards by B with ₹ 42500. For how much period does B join, if the profits at the end of the year are divided in the ratio of 3 : 1? (N.I.F.T., 2003)",
+    "options": {
+      "a": "4 months",
+      "b": "5 months",
+      "c": "6 months",
+      "d": "8 months"
+    },
+    "correct_option": "d",
+    "answer": "8 months",
+    "book_page": 490,
+    "topic": "Investment Duration"
+  },
+  {
+    "id": "partnership-objective-049",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 49,
+    "question": "A starts business with ₹ 3500 and after 5 months, B joins with A as his partner. After a year, the profit is divided in the ratio 2 : 3. What is B’s contribution in the capital?",
+    "options": {
+      "a": "₹ 7500",
+      "b": "₹ 8000",
+      "c": "₹ 8500",
+      "d": "₹ 9000"
+    },
+    "correct_option": "d",
+    "answer": "₹ 9000",
+    "book_page": 491,
+    "topic": "Finding Capital Contribution"
+  },
+  {
+    "id": "partnership-objective-050",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 50,
+    "question": "A and B enter into a partnership with ₹ 50000 and ₹ 60000 respectively. C joins them after x months, contributing ₹ 70000 and B leaves x months before the end of the year. If they share the profit in the ratio of 20 : 18 : 21, then the value of x is (M.A.T., 2008)",
+    "options": {
+      "a": "3",
+      "b": "6",
+      "c": "8",
+      "d": "9"
+    },
+    "correct_option": "a",
+    "answer": "3",
+    "book_page": 491,
+    "topic": "Variable Duration Equations"
+  },
+  {
+    "id": "partnership-objective-051",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 51,
+    "question": "In a business A invests ₹ 600 more than B. The capital of B remained invested for 7.5 months, while the capital of A remained invested for 2 more months. If the total profit be ₹ 620 and B gets ₹ 140 less than what A gets, then A’s capital is",
+    "options": {
+      "a": "₹ 2400",
+      "b": "₹ 2800",
+      "c": "₹ 3000",
+      "d": "₹ 3200"
+    },
+    "correct_option": "c",
+    "answer": "₹ 3000",
+    "book_page": 491,
+    "topic": "Complex Capital Equations"
+  },
+  {
+    "id": "partnership-objective-052",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 52,
+    "question": "A and B start a business jointly. A invests ₹ 16000 for 8 months and B remains in the business for 4 months. Out of the total profit, B claims 2/7 of the profit. How much money was contributed by B?",
+    "options": {
+      "a": "₹ 10500",
+      "b": "₹ 11900",
+      "c": "₹ 12800",
+      "d": "₹ 13600"
+    },
+    "correct_option": "c",
+    "answer": "₹ 12800",
+    "book_page": 491,
+    "topic": "Fractional Profit Claim"
+  },
+  {
+    "id": "partnership-objective-053",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 53,
+    "question": "Two friends P and Q started a business investing in the ratio of 5 : 6. R joined them after six months investing an amount equal to that of Q’s. At the end of the year, 20% profit was earned which was equal to ₹ 98,000. What was the amount invested by R?",
+    "options": {
+      "a": "₹ 105000",
+      "b": "₹ 175000",
+      "c": "₹ 210000",
+      "d": "Data inadequate",
+      "e": "None of these"
+    },
+    "correct_option": "c",
+    "answer": "₹ 210000",
+    "book_page": 492,
+    "topic": "Total Capital Calculation"
+  },
+  {
+    "id": "partnership-objective-054",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 54,
+    "question": "Three partners shared the profit in a business in the ratio 5 : 7 : 8. They had partnered for 14 months, 8 months and 7 months respectively. What was the ratio of their investments?",
+    "options": {
+      "a": "5 : 7 : 8",
+      "b": "28 : 49 : 64",
+      "c": "38 : 28 : 21",
+      "d": "None of these"
+    },
+    "correct_option": "d",
+    "answer": "None of these",
+    "book_page": 492,
+    "topic": "Investment Ratio from Profit and Time"
+  },
+  {
+    "id": "partnership-objective-055",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 55,
+    "question": "A, B and C invested their capitals in the ratio 3 : 4 : 6. However their shares of profit are equal. The durations of their investments must be in the ratio",
+    "options": {
+      "a": "4 : 3 : 2",
+      "b": "6 : 4 : 3",
+      "c": "3 : 4 : 6",
+      "d": "1 : 1 : 1"
+    },
+    "correct_option": "a",
+    "answer": "4 : 3 : 2",
+    "book_page": 492,
+    "topic": "Investment Durations Ratio"
+  },
+  {
+    "id": "partnership-objective-056",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 56,
+    "question": "A and B invest in a business in the ratio 3 : 2. If 5% of the total profit goes to charity and A’s share is ₹ 855, the total profit is",
+    "options": {
+      "a": "₹ 1425",
+      "b": "₹ 1500",
+      "c": "₹ 1537.50",
+      "d": "₹ 1576"
+    },
+    "correct_option": "b",
+    "answer": "₹ 1500",
+    "book_page": 492,
+    "topic": "Charity Deduction from Profit"
+  },
+  {
+    "id": "partnership-objective-057",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 57,
+    "question": "Swati and Rajni enter into a partnership with their capitals in the ratio 5 : 6. At the end of 7 months Swati withdraws her capital. If they receive the profit in the ratio of 5 : 9, find how long was Rajni’s capital used. (I.I.F.T., 2005, R.R.B., 2008)",
+    "options": {
+      "a": "10 months",
+      "b": "12 months",
+      "c": "14 months",
+      "d": "None of these"
+    },
+    "correct_option": "d",
+    "answer": "None of these",
+    "book_page": 492,
+    "topic": "Capital Duration Calculation"
+  },
+  {
+    "id": "partnership-objective-058",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 58,
+    "question": "X and Y are partners in a business. X contributed 1/3 of the capital for 9 months and Y received 2/5 of the profits. For how long was Y’s money used in the business? (M.A.T., 2010)",
+    "options": {
+      "a": "2 months",
+      "b": "3 months",
+      "c": "4 months",
+      "d": "5 months"
+    },
+    "correct_option": "b",
+    "answer": "3 months",
+    "book_page": 492,
+    "topic": "Capital Duration Calculation"
+  },
+  {
+    "id": "partnership-objective-059",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 59,
+    "question": "A and B started a business with initial investments in the respective ratio of 18 : 7. After four months from the start of the business, A invest ₹ 2000 more and B invested ₹ 7000 more. At the end of one year, if the profit was distributed among them in the ratio of 2 : 1 respective, what was the total initial investment with which A and B started the business? [IBPS—RRB Officers Gr.’B’ Exam, 2015]",
+    "options": {
+      "a": "₹ 50000",
+      "b": "₹ 25000",
+      "c": "₹ 150000",
+      "d": "₹ 75000"
+    },
+    "correct_option": "a",
+    "answer": "₹ 50000",
+    "book_page": 492,
+    "topic": "Initial Capital Determination"
+  },
+  {
+    "id": "partnership-objective-060",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 60,
+    "question": "Anil, Kamal and Vini Invested ₹ 8000, ₹ 4000 and ₹ 8000 respectively in a business. Anil left after six months. If after eight months, there was a gain of ₹ 4005, then what will be the share of Kamal? [RBI Gr. ‘B’ (Phase I) Exam, 2015]",
+    "options": {
+      "a": "₹ 800",
+      "b": "₹ 890",
+      "c": "₹ 500",
+      "d": "₹ 900"
+    },
+    "correct_option": "b",
+    "answer": "₹ 890",
+    "book_page": 492,
+    "topic": "Partner Withdrawal Share"
+  },
+  {
+    "id": "partnership-objective-061",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 61,
+    "question": "A starts a business by investing ₹ 28,000. After 2 months, B joins with ₹ 20,000 and after another two months C joins with ₹ 18,000. At the end of 10 months from the start of the business, if B withdraws ₹ 2,000 and C withdrawn ₹ 2,000, in what ratio should the profit be distributed among A, B and C at the end of the year? [IBPS—Bank Spl. Officer (IT) Exam, 2015]",
+    "options": {
+      "a": "12 : 7 : 5",
+      "b": "12 : 9 : 5",
+      "c": "12 : 6 : 3",
+      "d": "14 : 7 : 5"
+    },
+    "correct_option": "a",
+    "answer": "12 : 7 : 5",
+    "book_page": 492,
+    "topic": "Staggered Joining & Withdrawals"
+  },
+  {
+    "id": "partnership-objective-062",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 62,
+    "question": "In a business, B invests half the amount invested by A. After 6 months from the start of the business, C joins the business with an amount equal to twice of B’s investment. After 8 months from the start of the business B withdraws completely from the business. If at the end of the years, C’s share in the profit was ₹ 2460, what was the total profit received that year? [United India Insurance Co. Ltd. (UIICL)—Assistant (Online) Exam 2015]",
+    "options": {
+      "a": "₹ 11200",
+      "b": "₹ 9600",
+      "c": "₹ 9020",
+      "d": "₹ 12000"
+    },
+    "correct_option": "c",
+    "answer": "₹ 9020",
+    "book_page": 492,
+    "topic": "Total Profit from Single Share"
+  },
+  {
+    "id": "partnership-objective-063",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 63,
+    "question": "A, B and C entered in to a partnership by investing ₹ 15,400, ₹ 18,200 and ₹ 12,600 respectively. B left after 6 months. If after 8 months, there was a profit of ₹ 28,790, then what is the share of C in the profit? [NICL—AAO Exam, 2015]",
+    "options": {
+      "a": "₹ 8712",
+      "b": "₹ 9432",
+      "c": "₹ 8352",
+      "d": "₹ 8568"
+    },
+    "correct_option": "a",
+    "answer": "₹ 8712",
+    "book_page": 492,
+    "topic": "Early Profit Distribution"
+  },
+  {
+    "id": "partnership-objective-064",
+    "exercise": 1,
+    "question_type": "objective",
+    "question_number": 64,
+    "question": "A and B started a business by investing ₹ 2400 and ₹ 3600 respectively. At the end of 4th month from the start of the business, C joined with ₹ 'X'. After 8 months from the start of the business. B withdrew ₹ 600. If C’s share is ₹ 8000 in the annual profit of ₹ 22500, what was the amount the C invested in the business? [CET—Maharashtra (MBA) Exam, 2016]",
+    "options": {
+      "a": "₹ 7200",
+      "b": "₹ 5800",
+      "c": "₹ 4000",
+      "d": "₹ 4800"
+    },
+    "correct_option": "d",
+    "answer": "₹ 4800",
+    "book_page": 492,
+    "topic": "Finding Unknown Capital Investment"
+  }
+]
+
+# 13 Data Sufficiency / Statement Redundancy Questions
+ex2_questions = [
+  {
+    "id": "partnership-data-sufficiency-001",
+    "exercise": 2,
+    "question_type": "data_sufficiency",
+    "question_number": 65,
+    "question": "What is Gagan’s share in the profit earned by them? (M.B.A., 2002)",
+    "context": "Statement I: Ravi, Gagan and Nitin invested the amounts in the ratio of 2 : 4 : 7.\nStatement II: Nitin’s share in the profit is ₹ 8750.",
+    "options": {
+      "a": "Statement I alone is sufficient",
+      "b": "Statement II alone is sufficient",
+      "c": "Either statement I or II alone is sufficient",
+      "d": "Neither statement is sufficient",
+      "e": "Both statements I and II together are necessary"
+    },
+    "correct_option": "e",
+    "answer": "The data in both statement I and II together are necessary to answer the question.",
+    "book_page": 492,
+    "topic": "Data Sufficiency in Partnership"
+  },
+  {
+    "id": "partnership-data-sufficiency-002",
+    "exercise": 2,
+    "question_type": "data_sufficiency",
+    "question_number": 66,
+    "question": "A and B start a business jointly. What is A’s share out of an annual profit of ₹ 23,800?",
+    "context": "Statement I: B’s investment is 112 1/2% more than A’s investment.\nStatement II: A’s investment is ₹ 1,20,000.",
+    "options": {
+      "a": "Statement I alone is sufficient",
+      "b": "Statement II alone is sufficient",
+      "c": "Either statement I or II alone is sufficient",
+      "d": "Neither statement is sufficient",
+      "e": "Both statements I and II together are necessary"
+    },
+    "correct_option": "a",
+    "answer": "The data in statement I alone are sufficient to answer the question while the data in statement II alone are not sufficient.",
+    "book_page": 492,
+    "topic": "Data Sufficiency in Partnership"
+  },
+  {
+    "id": "partnership-data-sufficiency-003",
+    "exercise": 2,
+    "question_type": "data_sufficiency",
+    "question_number": 67,
+    "question": "A and B are in a partnership business of one year. At the end of the year, a profit of ₹ 20,000 was earned. What is A’s share?",
+    "context": "Statement I: A invested ₹ 50,000.\nStatement II: B withdrew his capital after 8 months.",
+    "options": {
+      "a": "Statement I alone is sufficient",
+      "b": "Statement II alone is sufficient",
+      "c": "Either statement I or II alone is sufficient",
+      "d": "Neither statement is sufficient",
+      "e": "Both statements I and II together are necessary"
+    },
+    "correct_option": "d",
+    "answer": "The data even in both Statements I and II together are not sufficient to answer the question.",
+    "book_page": 492,
+    "topic": "Data Sufficiency in Partnership"
+  },
+  {
+    "id": "partnership-data-sufficiency-004",
+    "exercise": 2,
+    "question_type": "data_sufficiency",
+    "question_number": 68,
+    "question": "Rahul, Anurag and Vivek started a business together. In what proportion would the annual profit be distributed among them?",
+    "context": "Statement I: Rahul got one-fourth of the profit.\nStatement II: Rahul and Vivek contributed 75% of the total investment.",
+    "options": {
+      "a": "Statement I alone is sufficient",
+      "b": "Statement II alone is sufficient",
+      "c": "Either statement I or II alone is sufficient",
+      "d": "Neither statement is sufficient",
+      "e": "Both statements I and II together are necessary"
+    },
+    "correct_option": "e",
+    "answer": "The data in both statement I and II together are necessary to answer the question.",
+    "book_page": 492,
+    "topic": "Data Sufficiency in Partnership"
+  },
+  {
+    "id": "partnership-data-sufficiency-005",
+    "exercise": 2,
+    "question_type": "data_sufficiency",
+    "question_number": 69,
+    "question": "What is Nikita’s share in the profit of ₹ 50000 earned in the business run by her in partnership with Shalini? (Bank P.O., 2009)",
+    "context": "Statement I: Nikita invested an amount 150% of the amount invested by Shalini.\nStatement II: Amount invested by Shalini is two-thirds of the amount invested by Nikita.",
+    "options": {
+      "a": "Statement I alone is sufficient",
+      "b": "Statement II alone is sufficient",
+      "c": "Either statement I or II alone is sufficient",
+      "d": "Neither statement is sufficient",
+      "e": "Both statements I and II together are necessary"
+    },
+    "correct_option": "c",
+    "answer": "The data either in statement I or in statement II alone are sufficient to answer the question.",
+    "book_page": 492,
+    "topic": "Data Sufficiency in Partnership"
+  },
+  {
+    "id": "partnership-data-sufficiency-006",
+    "exercise": 2,
+    "question_type": "statement_necessity",
+    "question_number": 70,
+    "question": "What is R’s share of profit in a joint venture?",
+    "context": "Statement I: Q started business investing ₹ 80000.\nStatement II: R joined him after 3 months.\nStatement III: P joined after 4 months with a capital of ₹ 120000 and got ₹ 6000 as his share of profit.",
+    "options": {
+      "a": "All I, II and III",
+      "b": "I and III only",
+      "c": "II and III only",
+      "d": "Even with all I, II and III, the answer cannot be arrived at",
+      "e": "None of these"
+    },
+    "correct_option": "d",
+    "answer": "Even with all I, II and III, the answer cannot be arrived at.",
+    "book_page": 492,
+    "topic": "Statement Necessity in Partnership"
+  },
+  {
+    "id": "partnership-data-sufficiency-007",
+    "exercise": 2,
+    "question_type": "statement_necessity",
+    "question_number": 71,
+    "question": "What is the difference in the shares of profit between P and Q in a joint business at the end of one year? (M.B.A., 2007)",
+    "context": "Statement I: P invested ₹ 80000 and withdrew ₹ 20000 after 6 months.\nStatement II: Q joined four months after the start of business.\nStatement III: Q’s amount was 80% of P’s amount during the last six months.",
+    "options": {
+      "a": "I and II only",
+      "b": "II and III only",
+      "c": "All I, II and III",
+      "d": "Even with all I, II and III together, the answer cannot be arrived at.",
+      "e": "None of these"
+    },
+    "correct_option": "d",
+    "answer": "Even with all I, II and III together, the answer cannot be arrived at.",
+    "book_page": 492,
+    "topic": "Statement Necessity in Partnership"
+  },
+  {
+    "id": "partnership-data-sufficiency-008",
+    "exercise": 2,
+    "question_type": "statement_necessity",
+    "question_number": 72,
+    "question": "A, B and C together start a business with a total investment of ₹ 15,000. At the end of the year, the total profit is ₹ 3000. What is A’s share in the profit?",
+    "context": "Statement I: A’s contribution is 3/2 times B’s.\nStatement II: B’s contribution is twice that of C.\nStatement III: A’s contribution is thrice that of C.",
+    "options": {
+      "a": "I and II only",
+      "b": "II and III only",
+      "c": "All I, II and III",
+      "d": "Any two of the three",
+      "e": "None of these"
+    },
+    "correct_option": "d",
+    "answer": "Any two of the three",
+    "book_page": 492,
+    "topic": "Statement Redundancy"
+  },
+  {
+    "id": "partnership-data-sufficiency-009",
+    "exercise": 2,
+    "question_type": "statement_necessity",
+    "question_number": 73,
+    "question": "What will be the share of R in the profit earned by V, R and A together? (M.A.T., 2006)",
+    "context": "Statement I: They together invested an amount of ₹ 54000 for a period of 1 year.\nStatement II: R’s investment was 25% less than V’s and 50% more than A’s.\nStatement III: The profit of V is ₹ 4000 more than that of A.",
+    "options": {
+      "a": "Only I and II together",
+      "b": "Only II",
+      "c": "Only II and III together",
+      "d": "II and either I or III only",
+      "e": "None of these"
+    },
+    "correct_option": "c",
+    "answer": "Only II and III together",
+    "book_page": 492,
+    "topic": "Statement Necessity in Partnership"
+  },
+  {
+    "id": "partnership-data-sufficiency-010",
+    "exercise": 2,
+    "question_type": "statement_necessity",
+    "question_number": 74,
+    "question": "How much did Rohit get as profit at the year-end in the business done by Nitin, Rohit and Kunal?",
+    "context": "Statement I: Kunal invested ₹ 8000 for nine months, his profit was 3/2 times that of Rohit’s and his investment was four times that of Nitin.\nStatement II: Nitin and Rohit invested for one year in the proportion 1 : 2 respectively.\nStatement III: The three together got ₹ 1000 as profit at the year end.",
+    "options": {
+      "a": "Only I and II",
+      "b": "Only I and III",
+      "c": "Question cannot be answered even with all three statements",
+      "d": "All I, II and III",
+      "e": "None of these"
+    },
+    "correct_option": "d",
+    "answer": "All I, II and III",
+    "book_page": 492,
+    "topic": "Statement Necessity in Partnership"
+  },
+  {
+    "id": "partnership-data-sufficiency-011",
+    "exercise": 2,
+    "question_type": "statement_redundancy",
+    "question_number": 75,
+    "question": "Three friends P, Q and R started a partnership business investing money in the ratio of 5 : 4 : 2 respectively for a period of 3 years. What is the amount received by P as his share in the total profit?",
+    "context": "Statement I: Total amount invested in the business is ₹ 22000.\nStatement II: Profit earned at the end of 3 years is 3/8 of the total investment.\nStatement III: The average amount of profit earned per year is ₹ 2750.",
+    "options": {
+      "a": "I or II or III",
+      "b": "Either III only, or I and II together",
+      "c": "Any two of the three",
+      "d": "All I, II and III are required",
+      "e": "None of these"
+    },
+    "correct_option": "b",
+    "answer": "Either III only, or I and II together",
+    "book_page": 492,
+    "topic": "Statement Redundancy"
+  },
+  {
+    "id": "partnership-data-sufficiency-012",
+    "exercise": 2,
+    "question_type": "statement_redundancy",
+    "question_number": 76,
+    "question": "What will be the percentage share of Y in the profit earned by X, Y and Z together?",
+    "context": "Statement I: X, Y and Z invested a total amount of ₹ 25,000 for a period of two years.\nStatement II: The profit earned at the end of 2 years is 30%.\nStatement III: The amount invested by Y is equal to the amount invested by X and Z together.",
+    "options": {
+      "a": "I and II only",
+      "b": "II and III only",
+      "c": "Any two of the three",
+      "d": "All I, II and III are required",
+      "e": "Question cannot be answered even with information in all the three statements."
+    },
+    "correct_option": "a",
+    "answer": "I and II only",
+    "book_page": 492,
+    "topic": "Statement Redundancy"
+  },
+  {
+    "id": "partnership-data-sufficiency-013",
+    "exercise": 2,
+    "question_type": "statement_redundancy",
+    "question_number": 77,
+    "question": "What is Neeta’s share in the profit of ₹ 50000 earned at the end of 2 years in a joint business run by Neeta, Seeta and Geeta?",
+    "context": "Statement I: Neeta invested ₹ 85000 to start the business.\nStatement II: Seeta and Geeta joined Neeta’s business after six months, investing amounts in the ratio of 3 : 5.\nStatement III: Total amount invested by Seeta and Geeta is ₹ 2.5 lakh.",
+    "options": {
+      "a": "Only II",
+      "b": "Only III",
+      "c": "Only either II or III",
+      "d": "Information in all the three statements is required to answer the question",
+      "e": "The question cannot be answered even with the information in all three statements"
+    },
+    "correct_option": "d",
+    "answer": "Information in all the three statements is required to answer the question",
+    "book_page": 492,
+    "topic": "Statement Redundancy"
+  }
+]
+
+# Combine all questions into flat questions array
+all_questions = ex1_questions + ex2_questions
+user_json["questions"] = all_questions
+
+# Write to server and client
+server_path = "/home/jyoti/Project/PLACEMENT/server/data/rs_agrawal/partnership.json"
+client_path = "/home/jyoti/Project/PLACEMENT/client/public/data/rs_agrawal/partnership.json"
+
+os.makedirs(os.path.dirname(server_path), exist_ok=True)
+os.makedirs(os.path.dirname(client_path), exist_ok=True)
+
+with open(server_path, "w", encoding="utf-8") as f:
+    json.dump(user_json, f, indent=2, ensure_ascii=False)
+
+with open(client_path, "w", encoding="utf-8") as f:
+    json.dump(user_json, f, indent=2, ensure_ascii=False)
+
+print(f"Successfully generated Partnership chapter JSON with {len(all_questions)} questions!")

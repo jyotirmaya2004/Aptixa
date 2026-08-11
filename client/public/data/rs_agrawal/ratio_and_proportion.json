@@ -1,0 +1,4511 @@
+{
+  "book": "Quantitative Aptitude for Competitive Examinations — R.S. Aggarwal",
+  "chapter_number": 13,
+  "chapter": "Ratio and Proportion",
+  "book_page_range": "426–475",
+  "question_count": 280,
+  "key_concepts": [
+    {
+      "topic": "Ratio Definition & Terms",
+      "formula": "The ratio of two quantities a and b in the same units is a/b, written a : b. a is antecedent, b is consequent. Multiplying or dividing both terms by non-zero k gives equal ratio."
+    },
+    {
+      "topic": "Proportion & Mean Proportional",
+      "formula": "a : b :: c : d iff a/b = c/d. Product of extremes = Product of means (a × d = b × c). Fourth proportional to a,b,c is d = (b × c)/a. Third proportional to a,b is c = b²/a. Mean proportional between a and b = √(a × b)."
+    },
+    {
+      "topic": "Comparison & Compounded Ratios",
+      "formula": "(a:b) > (c:d) iff a/b > c/d. Compounded ratio of (a:b) and (c:d) is (a×c : b×d). Duplicate ratio = a²:b², Triplicate ratio = a³:b³, Sub-duplicate = √a:√b, Sub-triplicate = ∛a:∛b."
+    },
+    {
+      "topic": "Componendo and Dividendo",
+      "formula": "If a/b = c/d, then (a + b)/(a − b) = (c + d)/(c − d)."
+    },
+    {
+      "topic": "Division of Quantity in Given Ratio",
+      "formula": "If amount A is divided into parts in ratio a:b:c, then first part = A × a/(a+b+c), second part = A × b/(a+b+c), third part = A × c/(a+b+c)."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ratio-proportion-objective-001",
+      "chapter": "Ratio and Proportion",
+      "question_number": 1,
+      "question": "If a : b = 2 : 3 and b : c = 4 : 5, then a : b : c is equal to",
+      "options": {
+        "a": "8 : 12 : 15",
+        "b": "6 : 9 : 10",
+        "c": "2 : 3 : 5",
+        "d": "4 : 6 : 15"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 4 and 2nd by 3: a:b = 8:12, b:c = 12:15 => a:b:c = 8:12:15.",
+      "book_page": 426,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-002",
+      "chapter": "Ratio and Proportion",
+      "question_number": 2,
+      "question": "If A : B = 3 : 4 and B : C = 8 : 9, then A : C is",
+      "options": {
+        "a": "1 : 2",
+        "b": "2 : 3",
+        "c": "3 : 2",
+        "d": "1 : 3"
+      },
+      "correct_option": "b",
+      "answer": "A/C = (A/B) × (B/C) = (3/4) × (8/9) = 2/3 = 2 : 3.",
+      "book_page": 426,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-003",
+      "chapter": "Ratio and Proportion",
+      "question_number": 3,
+      "question": "The duplicate ratio of 3 : 4 is",
+      "options": {
+        "a": "6 : 8",
+        "b": "9 : 16",
+        "c": "√3 : 2",
+        "d": "27 : 64"
+      },
+      "correct_option": "b",
+      "answer": "Duplicate ratio of a : b is a² : b² = 3² : 4² = 9 : 16.",
+      "book_page": 426,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-004",
+      "chapter": "Ratio and Proportion",
+      "question_number": 4,
+      "question": "The sub-duplicate ratio of 25 : 49 is",
+      "options": {
+        "a": "5 : 7",
+        "b": "50 : 98",
+        "c": "625 : 2401",
+        "d": "125 : 343"
+      },
+      "correct_option": "a",
+      "answer": "Sub-duplicate ratio of a : b is √a : √b = √25 : √49 = 5 : 7.",
+      "book_page": 426,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-005",
+      "chapter": "Ratio and Proportion",
+      "question_number": 5,
+      "question": "The triplicate ratio of 2 : 3 is",
+      "options": {
+        "a": "4 : 9",
+        "b": "6 : 9",
+        "c": "8 : 27",
+        "d": "16 : 81"
+      },
+      "correct_option": "c",
+      "answer": "Triplicate ratio of a : b is a³ : b³ = 2³ : 3³ = 8 : 27.",
+      "book_page": 426,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-006",
+      "chapter": "Ratio and Proportion",
+      "question_number": 6,
+      "question": "The sub-triplicate ratio of 27 : 64 is",
+      "options": {
+        "a": "3 : 4",
+        "b": "9 : 16",
+        "c": "81 : 256",
+        "d": "1 : 2"
+      },
+      "correct_option": "a",
+      "answer": "Sub-triplicate ratio of a : b is ∛a : ∛b = ∛27 : ∛64 = 3 : 4.",
+      "book_page": 427,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-007",
+      "chapter": "Ratio and Proportion",
+      "question_number": 7,
+      "question": "The compounded ratio of (2 : 3), (6 : 11) and (11 : 2) is",
+      "options": {
+        "a": "1 : 2",
+        "b": "2 : 1",
+        "c": "1 : 1",
+        "d": "3 : 2"
+      },
+      "correct_option": "b",
+      "answer": "Compounded ratio = (2 × 6 × 11) : (3 × 11 × 2) = 132 : 66 = 2 : 1.",
+      "book_page": 427,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-008",
+      "chapter": "Ratio and Proportion",
+      "question_number": 8,
+      "question": "If 2A = 3B = 4C, then A : B : C is equal to",
+      "options": {
+        "a": "2 : 3 : 4",
+        "b": "4 : 3 : 2",
+        "c": "6 : 4 : 3",
+        "d": "3 : 4 : 6"
+      },
+      "correct_option": "c",
+      "answer": "LCM of 2, 3, 4 is 12. Divide each by 12: A/6 = B/4 = C/3 => A:B:C = 6:4:3.",
+      "book_page": 427,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-009",
+      "chapter": "Ratio and Proportion",
+      "question_number": 9,
+      "question": "If A/3 = B/4 = C/5, then A : B : C is",
+      "options": {
+        "a": "4 : 3 : 5",
+        "b": "5 : 4 : 3",
+        "c": "3 : 4 : 5",
+        "d": "20 : 15 : 12"
+      },
+      "correct_option": "c",
+      "answer": "A/3 = B/4 = C/5 = k => A = 3k, B = 4k, C = 5k => A:B:C = 3:4:5.",
+      "book_page": 427,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-010",
+      "chapter": "Ratio and Proportion",
+      "question_number": 10,
+      "question": "If (A + B) : (A - B) = 5 : 3, then A : B is equal to",
+      "options": {
+        "a": "4 : 1",
+        "b": "1 : 4",
+        "c": "5 : 3",
+        "d": "8 : 2"
+      },
+      "correct_option": "a",
+      "answer": "By Componendo & Dividendo: A/B = (5 + 3)/(5 - 3) = 8/2 = 4/1 = 4 : 1.",
+      "book_page": 427,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-011",
+      "chapter": "Ratio and Proportion",
+      "question_number": 11,
+      "question": "If x : y = 3 : 4, then (7x + 3y) : (7x - 3y) is",
+      "options": {
+        "a": "5 : 2",
+        "b": "4 : 3",
+        "c": "11 : 3",
+        "d": "37 : 9"
+      },
+      "correct_option": "c",
+      "answer": "Substitute x = 3, y = 4: (7*3 + 3*4) : (7*3 - 3*4) = (21 + 12) : (21 - 12) = 33 : 9 = 11 : 3.",
+      "book_page": 427,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-012",
+      "chapter": "Ratio and Proportion",
+      "question_number": 12,
+      "question": "If x : y = 5 : 2, then (8x + 9y) : (8x + 2y) is",
+      "options": {
+        "a": "29 : 22",
+        "b": "27 : 22",
+        "c": "29 : 24",
+        "d": "25 : 21"
+      },
+      "correct_option": "a",
+      "answer": "Substitute x = 5, y = 2: (8*5 + 9*2)/(8*5 + 2*2) = (40 + 18)/(40 + 4) = 58/44 = 29/22.",
+      "book_page": 428,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-013",
+      "chapter": "Ratio and Proportion",
+      "question_number": 13,
+      "question": "If a : b = 5 : 7 and c : d = 2a : 3b, then ac : bd is",
+      "options": {
+        "a": "10 : 21",
+        "b": "50 : 147",
+        "c": "25 : 49",
+        "d": "15 : 28"
+      },
+      "correct_option": "b",
+      "answer": "c/d = 2(5)/3(7) = 10/21. Then ac/bd = (a/b) × (c/d) = (5/7) × (10/21) = 50/147.",
+      "book_page": 428,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-014",
+      "chapter": "Ratio and Proportion",
+      "question_number": 14,
+      "question": "If (x + y) : (x - y) = 4 : 1, then (x² + y²) : (x² - y²) is",
+      "options": {
+        "a": "25 : 9",
+        "b": "17 : 15",
+        "c": "16 : 1",
+        "d": "17 : 8"
+      },
+      "correct_option": "b",
+      "answer": "x/y = (4+1)/(4-1) = 5/3. Then (5² + 3²)/(5² - 3²) = (25 + 9)/(25 - 9) = 34/16 = 17/15.",
+      "book_page": 428,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-015",
+      "chapter": "Ratio and Proportion",
+      "question_number": 15,
+      "question": "If a : b = c : d = e : f = 1 : 2, then (3a + 5c + 7e) : (3b + 5d + 7f) is",
+      "options": {
+        "a": "1 : 4",
+        "b": "1 : 2",
+        "c": "2 : 1",
+        "d": "1 : 8"
+      },
+      "correct_option": "b",
+      "answer": "Property: (pa + qc + re)/(pb + qd + rf) = a/b = 1/2.",
+      "book_page": 428,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-016",
+      "chapter": "Ratio and Proportion",
+      "question_number": 16,
+      "question": "If A : B = 1/2 : 3/8, B : C = 1/3 : 5/9, C : D = 5/6 : 3/4, then A : B : C : D is",
+      "options": {
+        "a": "6 : 4 : 8 : 10",
+        "b": "6 : 8 : 9 : 10",
+        "c": "8 : 6 : 10 : 9",
+        "d": "4 : 6 : 8 : 10"
+      },
+      "correct_option": "c",
+      "answer": "A:B = 4:3, B:C = 3:5, C:D = 10:9. Combine: A:B:C = 4:3:5 = 8:6:10. Then A:B:C:D = 8:6:10:9.",
+      "book_page": 428,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-017",
+      "chapter": "Ratio and Proportion",
+      "question_number": 17,
+      "question": "If x : y = 2 : 3 and y : z = 6 : 7, then x : y : z is",
+      "options": {
+        "a": "2 : 3 : 7",
+        "b": "4 : 6 : 7",
+        "c": "3 : 6 : 7",
+        "d": "4 : 3 : 7"
+      },
+      "correct_option": "b",
+      "answer": "Multiply x:y = 2:3 by 2 => 4:6. Since y:z = 6:7, x:y:z = 4:6:7.",
+      "book_page": 428,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-018",
+      "chapter": "Ratio and Proportion",
+      "question_number": 18,
+      "question": "If A : B = 3 : 5 and B : C = 6 : 7, then A : B : C is",
+      "options": {
+        "a": "18 : 30 : 35",
+        "b": "15 : 30 : 35",
+        "c": "18 : 25 : 35",
+        "d": "9 : 15 : 21"
+      },
+      "correct_option": "a",
+      "answer": "Multiply A:B by 6 => 18:30; multiply B:C by 5 => 30:35. So A:B:C = 18:30:35.",
+      "book_page": 429,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-019",
+      "chapter": "Ratio and Proportion",
+      "question_number": 19,
+      "question": "If 15% of x = 20% of y, then x : y is",
+      "options": {
+        "a": "3 : 4",
+        "b": "4 : 3",
+        "c": "17 : 16",
+        "d": "16 : 17"
+      },
+      "correct_option": "b",
+      "answer": "15x = 20y => x/y = 20/15 = 4/3 = 4 : 3.",
+      "book_page": 429,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-020",
+      "chapter": "Ratio and Proportion",
+      "question_number": 20,
+      "question": "If A = (1/3)B and B = (1/2)C, then A : B : C is",
+      "options": {
+        "a": "1 : 3 : 6",
+        "b": "3 : 1 : 2",
+        "c": "1 : 2 : 6",
+        "d": "6 : 3 : 1"
+      },
+      "correct_option": "a",
+      "answer": "A:B = 1:3 and B:C = 1:2 = 3:6. Thus A:B:C = 1:3:6.",
+      "book_page": 429,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-021",
+      "chapter": "Ratio and Proportion",
+      "question_number": 21,
+      "question": "The ratio of 4^3.5 : 2^5 is same as",
+      "options": {
+        "a": "2 : 1",
+        "b": "4 : 1",
+        "c": "7 : 5",
+        "d": "8 : 1"
+      },
+      "correct_option": "b",
+      "answer": "4^3.5 = (2²)^3.5 = 2^7. Ratio = 2^7 : 2^5 = 2^2 : 1 = 4 : 1.",
+      "book_page": 429,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-022",
+      "chapter": "Ratio and Proportion",
+      "question_number": 22,
+      "question": "If a : b = 2 : 3, b : c = 4 : 5 and c : d = 6 : 7, then a : d is",
+      "options": {
+        "a": "16 : 35",
+        "b": "8 : 15",
+        "c": "24 : 35",
+        "d": "12 : 35"
+      },
+      "correct_option": "a",
+      "answer": "a/d = (2/3) × (4/5) × (6/7) = 48/105 = 16/35 = 16 : 35.",
+      "book_page": 429,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-023",
+      "chapter": "Ratio and Proportion",
+      "question_number": 23,
+      "question": "If x/5 = y/8, then (x + 5) : (y + 8) is",
+      "options": {
+        "a": "3 : 5",
+        "b": "13 : 8",
+        "c": "5 : 8",
+        "d": "8 : 5"
+      },
+      "correct_option": "c",
+      "answer": "x/5 = y/8 = k => x = 5k, y = 8k. (5k+5)/(8k+8) = 5(k+1)/8(k+1) = 5/8 = 5 : 8.",
+      "book_page": 429,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-024",
+      "chapter": "Ratio and Proportion",
+      "question_number": 24,
+      "question": "The ratio of two numbers is 3 : 8 and their difference is 115. The smaller number is",
+      "options": {
+        "a": "69",
+        "b": "115",
+        "c": "184",
+        "d": "230"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 3x and 8x. Difference 8x - 3x = 5x = 115 => x = 23. Smaller number = 3 × 23 = 69.",
+      "book_page": 430,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-025",
+      "chapter": "Ratio and Proportion",
+      "question_number": 25,
+      "question": "The sum of two numbers is 40 and their difference is 4. The ratio of the numbers is",
+      "options": {
+        "a": "21 : 19",
+        "b": "11 : 9",
+        "c": "22 : 18",
+        "d": "11 : 8"
+      },
+      "correct_option": "b",
+      "answer": "Let numbers be x and y. x + y = 40, x - y = 4 => 2x = 44 => x = 22, y = 18. x : y = 22 : 18 = 11 : 9.",
+      "book_page": 430,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-026",
+      "chapter": "Ratio and Proportion",
+      "question_number": 26,
+      "question": "If A : B = 2 : 3, B : C = 4 : 5, C : D = 6 : 7, then A : B : C : D is",
+      "options": {
+        "a": "16 : 24 : 30 : 35",
+        "b": "8 : 12 : 15 : 21",
+        "c": "16 : 24 : 32 : 35",
+        "d": "24 : 36 : 45 : 56"
+      },
+      "correct_option": "a",
+      "answer": "A:B = 2:3, B:C = 4:5 => A:B:C = 8:12:15. C:D = 6:7. Multiply A:B:C by 2 => 16:24:30 and C:D by 5 => 30:35 => 16:24:30:35.",
+      "book_page": 430,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-027",
+      "chapter": "Ratio and Proportion",
+      "question_number": 27,
+      "question": "If 0.75 : x :: 5 : 8, then x is equal to",
+      "options": {
+        "a": "1.12",
+        "b": "1.2",
+        "c": "1.25",
+        "d": "1.30"
+      },
+      "correct_option": "b",
+      "answer": "Product of extremes = Product of means: 0.75 × 8 = 5x => 6 = 5x => x = 6/5 = 1.2.",
+      "book_page": 430,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-028",
+      "chapter": "Ratio and Proportion",
+      "question_number": 28,
+      "question": "The sub-triplicate ratio of 8 : 125 is",
+      "options": {
+        "a": "2 : 5",
+        "b": "4 : 25",
+        "c": "64 : 625",
+        "d": "16 : 50"
+      },
+      "correct_option": "a",
+      "answer": "Sub-triplicate ratio is ∛8 : ∛125 = 2 : 5.",
+      "book_page": 430,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-029",
+      "chapter": "Ratio and Proportion",
+      "question_number": 29,
+      "question": "If a : b = 3 : 2, then (5a + 2b) : (3a + 4b) is",
+      "options": {
+        "a": "19 : 17",
+        "b": "17 : 19",
+        "c": "19 : 14",
+        "d": "15 : 17"
+      },
+      "correct_option": "a",
+      "answer": "Substitute a = 3, b = 2: (5*3 + 2*2) : (3*3 + 4*2) = (15 + 4) : (9 + 8) = 19 : 17.",
+      "book_page": 430,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-030",
+      "chapter": "Ratio and Proportion",
+      "question_number": 30,
+      "question": "If x : y = 1 : 3, then (7x² + 3y²) : (2x² + y²) is",
+      "options": {
+        "a": "34 : 11",
+        "b": "34 : 9",
+        "c": "16 : 5",
+        "d": "35 : 11"
+      },
+      "correct_option": "a",
+      "answer": "Substitute x = 1, y = 3: (7(1)² + 3(3)²)/(2(1)² + (3)²) = (7 + 27)/(2 + 9) = 34/11.",
+      "book_page": 431,
+      "topic": "Basic Ratio Concepts"
+    },
+    {
+      "id": "ratio-proportion-objective-031",
+      "chapter": "Ratio and Proportion",
+      "question_number": 31,
+      "question": "Find the fourth proportional to 10, 9 and 14.",
+      "options": {
+        "a": "12.6",
+        "b": "14.6",
+        "c": "11.1",
+        "d": "18.9"
+      },
+      "correct_option": "a",
+      "answer": "Fourth proportional d = (b × c) / a = (9 × 14) / 10 = 12.6.",
+      "book_page": 431,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-032",
+      "chapter": "Ratio and Proportion",
+      "question_number": 32,
+      "question": "Find the third proportional to 12 and 12.",
+      "options": {
+        "a": "10",
+        "b": "16",
+        "c": "12",
+        "d": "24"
+      },
+      "correct_option": "c",
+      "answer": "Third proportional c = b² / a = 12² / 12 = 12.",
+      "book_page": 431,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-033",
+      "chapter": "Ratio and Proportion",
+      "question_number": 33,
+      "question": "Find the mean proportional between 196 and 225.",
+      "options": {
+        "a": "205",
+        "b": "210",
+        "c": "220",
+        "d": "420"
+      },
+      "correct_option": "b",
+      "answer": "Mean proportional = √(196 × 225) = √(44100) = 210.",
+      "book_page": 431,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-034",
+      "chapter": "Ratio and Proportion",
+      "question_number": 34,
+      "question": "Find the fourth proportional to 16, 18 and 26.",
+      "options": {
+        "a": "29.25",
+        "b": "31.25",
+        "c": "27.75",
+        "d": "43.88"
+      },
+      "correct_option": "a",
+      "answer": "Fourth proportional d = (b × c) / a = (18 × 26) / 16 = 29.25.",
+      "book_page": 431,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-035",
+      "chapter": "Ratio and Proportion",
+      "question_number": 35,
+      "question": "Find the third proportional to 4 and 6.",
+      "options": {
+        "a": "7",
+        "b": "13",
+        "c": "9",
+        "d": "18"
+      },
+      "correct_option": "c",
+      "answer": "Third proportional c = b² / a = 6² / 4 = 9.",
+      "book_page": 431,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-036",
+      "chapter": "Ratio and Proportion",
+      "question_number": 36,
+      "question": "Find the mean proportional between 36 and 81.",
+      "options": {
+        "a": "49",
+        "b": "54",
+        "c": "64",
+        "d": "108"
+      },
+      "correct_option": "b",
+      "answer": "Mean proportional = √(36 × 81) = √(2916) = 54.",
+      "book_page": 432,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-037",
+      "chapter": "Ratio and Proportion",
+      "question_number": 37,
+      "question": "Find the fourth proportional to 8, 12 and 14.",
+      "options": {
+        "a": "21",
+        "b": "23",
+        "c": "19.5",
+        "d": "31.5"
+      },
+      "correct_option": "a",
+      "answer": "Fourth proportional d = (b × c) / a = (12 × 14) / 8 = 21.",
+      "book_page": 432,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-038",
+      "chapter": "Ratio and Proportion",
+      "question_number": 38,
+      "question": "Find the third proportional to 10 and 15.",
+      "options": {
+        "a": "20.5",
+        "b": "26.5",
+        "c": "22.5",
+        "d": "45"
+      },
+      "correct_option": "c",
+      "answer": "Third proportional c = b² / a = 15² / 10 = 22.5.",
+      "book_page": 432,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-039",
+      "chapter": "Ratio and Proportion",
+      "question_number": 39,
+      "question": "Find the mean proportional between 144 and 324.",
+      "options": {
+        "a": "211",
+        "b": "216",
+        "c": "226",
+        "d": "432"
+      },
+      "correct_option": "b",
+      "answer": "Mean proportional = √(144 × 324) = √(46656) = 216.",
+      "book_page": 432,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-040",
+      "chapter": "Ratio and Proportion",
+      "question_number": 40,
+      "question": "Find the fourth proportional to 14, 6 and 26.",
+      "options": {
+        "a": "11.14",
+        "b": "13.14",
+        "c": "9.64",
+        "d": "16.71"
+      },
+      "correct_option": "a",
+      "answer": "Fourth proportional d = (b × c) / a = (6 × 26) / 14 = 11.14.",
+      "book_page": 432,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-041",
+      "chapter": "Ratio and Proportion",
+      "question_number": 41,
+      "question": "Find the third proportional to 16 and 9.",
+      "options": {
+        "a": "3.06",
+        "b": "9.06",
+        "c": "5.06",
+        "d": "10.12"
+      },
+      "correct_option": "c",
+      "answer": "Third proportional c = b² / a = 9² / 16 = 5.06.",
+      "book_page": 432,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-042",
+      "chapter": "Ratio and Proportion",
+      "question_number": 42,
+      "question": "Find the mean proportional between 16 and 144.",
+      "options": {
+        "a": "43",
+        "b": "48",
+        "c": "58",
+        "d": "96"
+      },
+      "correct_option": "b",
+      "answer": "Mean proportional = √(16 × 144) = √(2304) = 48.",
+      "book_page": 433,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-043",
+      "chapter": "Ratio and Proportion",
+      "question_number": 43,
+      "question": "Find the fourth proportional to 6, 15 and 14.",
+      "options": {
+        "a": "35",
+        "b": "37",
+        "c": "33.5",
+        "d": "52.5"
+      },
+      "correct_option": "a",
+      "answer": "Fourth proportional d = (b × c) / a = (15 × 14) / 6 = 35.",
+      "book_page": 433,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-044",
+      "chapter": "Ratio and Proportion",
+      "question_number": 44,
+      "question": "Find the third proportional to 8 and 18.",
+      "options": {
+        "a": "38.5",
+        "b": "44.5",
+        "c": "40.5",
+        "d": "81"
+      },
+      "correct_option": "c",
+      "answer": "Third proportional c = b² / a = 18² / 8 = 40.5.",
+      "book_page": 433,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-045",
+      "chapter": "Ratio and Proportion",
+      "question_number": 45,
+      "question": "Find the mean proportional between 100 and 36.",
+      "options": {
+        "a": "55",
+        "b": "60",
+        "c": "70",
+        "d": "120"
+      },
+      "correct_option": "b",
+      "answer": "Mean proportional = √(100 × 36) = √(3600) = 60.",
+      "book_page": 433,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-046",
+      "chapter": "Ratio and Proportion",
+      "question_number": 46,
+      "question": "Find the fourth proportional to 12, 9 and 26.",
+      "options": {
+        "a": "19.5",
+        "b": "21.5",
+        "c": "18",
+        "d": "29.25"
+      },
+      "correct_option": "a",
+      "answer": "Fourth proportional d = (b × c) / a = (9 × 26) / 12 = 19.5.",
+      "book_page": 433,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-047",
+      "chapter": "Ratio and Proportion",
+      "question_number": 47,
+      "question": "Find the third proportional to 14 and 12.",
+      "options": {
+        "a": "8.29",
+        "b": "14.29",
+        "c": "10.29",
+        "d": "20.57"
+      },
+      "correct_option": "c",
+      "answer": "Third proportional c = b² / a = 12² / 14 = 10.29.",
+      "book_page": 433,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-048",
+      "chapter": "Ratio and Proportion",
+      "question_number": 48,
+      "question": "Find the mean proportional between 256 and 225.",
+      "options": {
+        "a": "235",
+        "b": "240",
+        "c": "250",
+        "d": "480"
+      },
+      "correct_option": "b",
+      "answer": "Mean proportional = √(256 × 225) = √(57600) = 240.",
+      "book_page": 434,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-049",
+      "chapter": "Ratio and Proportion",
+      "question_number": 49,
+      "question": "Find the fourth proportional to 4, 18 and 14.",
+      "options": {
+        "a": "63",
+        "b": "65",
+        "c": "61.5",
+        "d": "94.5"
+      },
+      "correct_option": "a",
+      "answer": "Fourth proportional d = (b × c) / a = (18 × 14) / 4 = 63.",
+      "book_page": 434,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-050",
+      "chapter": "Ratio and Proportion",
+      "question_number": 50,
+      "question": "Find the third proportional to 6 and 6.",
+      "options": {
+        "a": "4",
+        "b": "10",
+        "c": "6",
+        "d": "12"
+      },
+      "correct_option": "c",
+      "answer": "Third proportional c = b² / a = 6² / 6 = 6.",
+      "book_page": 434,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-051",
+      "chapter": "Ratio and Proportion",
+      "question_number": 51,
+      "question": "Find the mean proportional between 64 and 81.",
+      "options": {
+        "a": "67",
+        "b": "72",
+        "c": "82",
+        "d": "144"
+      },
+      "correct_option": "b",
+      "answer": "Mean proportional = √(64 × 81) = √(5184) = 72.",
+      "book_page": 434,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-052",
+      "chapter": "Ratio and Proportion",
+      "question_number": 52,
+      "question": "Find the fourth proportional to 10, 12 and 26.",
+      "options": {
+        "a": "31.2",
+        "b": "33.2",
+        "c": "29.7",
+        "d": "46.8"
+      },
+      "correct_option": "a",
+      "answer": "Fourth proportional d = (b × c) / a = (12 × 26) / 10 = 31.2.",
+      "book_page": 434,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-053",
+      "chapter": "Ratio and Proportion",
+      "question_number": 53,
+      "question": "Find the third proportional to 12 and 15.",
+      "options": {
+        "a": "16.75",
+        "b": "22.75",
+        "c": "18.75",
+        "d": "37.5"
+      },
+      "correct_option": "c",
+      "answer": "Third proportional c = b² / a = 15² / 12 = 18.75.",
+      "book_page": 434,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-054",
+      "chapter": "Ratio and Proportion",
+      "question_number": 54,
+      "question": "Find the mean proportional between 196 and 324.",
+      "options": {
+        "a": "247",
+        "b": "252",
+        "c": "262",
+        "d": "504"
+      },
+      "correct_option": "b",
+      "answer": "Mean proportional = √(196 × 324) = √(63504) = 252.",
+      "book_page": 435,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-055",
+      "chapter": "Ratio and Proportion",
+      "question_number": 55,
+      "question": "Find the fourth proportional to 16, 6 and 14.",
+      "options": {
+        "a": "5.25",
+        "b": "7.25",
+        "c": "3.75",
+        "d": "7.88"
+      },
+      "correct_option": "a",
+      "answer": "Fourth proportional d = (b × c) / a = (6 × 14) / 16 = 5.25.",
+      "book_page": 435,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-056",
+      "chapter": "Ratio and Proportion",
+      "question_number": 56,
+      "question": "Find the third proportional to 4 and 9.",
+      "options": {
+        "a": "18.25",
+        "b": "24.25",
+        "c": "20.25",
+        "d": "40.5"
+      },
+      "correct_option": "c",
+      "answer": "Third proportional c = b² / a = 9² / 4 = 20.25.",
+      "book_page": 435,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-057",
+      "chapter": "Ratio and Proportion",
+      "question_number": 57,
+      "question": "Find the mean proportional between 36 and 144.",
+      "options": {
+        "a": "67",
+        "b": "72",
+        "c": "82",
+        "d": "144"
+      },
+      "correct_option": "b",
+      "answer": "Mean proportional = √(36 × 144) = √(5184) = 72.",
+      "book_page": 435,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-058",
+      "chapter": "Ratio and Proportion",
+      "question_number": 58,
+      "question": "Find the fourth proportional to 8, 15 and 26.",
+      "options": {
+        "a": "48.75",
+        "b": "50.75",
+        "c": "47.25",
+        "d": "73.12"
+      },
+      "correct_option": "a",
+      "answer": "Fourth proportional d = (b × c) / a = (15 × 26) / 8 = 48.75.",
+      "book_page": 435,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-059",
+      "chapter": "Ratio and Proportion",
+      "question_number": 59,
+      "question": "Find the third proportional to 10 and 18.",
+      "options": {
+        "a": "30.4",
+        "b": "36.4",
+        "c": "32.4",
+        "d": "64.8"
+      },
+      "correct_option": "c",
+      "answer": "Third proportional c = b² / a = 18² / 10 = 32.4.",
+      "book_page": 435,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-060",
+      "chapter": "Ratio and Proportion",
+      "question_number": 60,
+      "question": "Find the mean proportional between 144 and 36.",
+      "options": {
+        "a": "67",
+        "b": "72",
+        "c": "82",
+        "d": "144"
+      },
+      "correct_option": "b",
+      "answer": "Mean proportional = √(144 × 36) = √(5184) = 72.",
+      "book_page": 436,
+      "topic": "Proportional Calculations"
+    },
+    {
+      "id": "ratio-proportion-objective-061",
+      "chapter": "Ratio and Proportion",
+      "question_number": 61,
+      "question": "If A : B = 3 : 4 and B : C = 5 : 6, find the ratio A : B : C.",
+      "options": {
+        "a": "15 : 20 : 24",
+        "b": "16 : 20 : 26",
+        "c": "3 : 5 : 6",
+        "d": "15 : 24 : 20"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 5 and 2nd by 4: A:B = 15:20, B:C = 20:24 => A:B:C = 15:20:24.",
+      "book_page": 436,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-062",
+      "chapter": "Ratio and Proportion",
+      "question_number": 62,
+      "question": "If A : B = 4 : 5 and B : C = 6 : 7, find the ratio A : B : C.",
+      "options": {
+        "a": "24 : 30 : 35",
+        "b": "25 : 30 : 37",
+        "c": "4 : 6 : 7",
+        "d": "24 : 35 : 30"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 6 and 2nd by 5: A:B = 24:30, B:C = 30:35 => A:B:C = 24:30:35.",
+      "book_page": 436,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-063",
+      "chapter": "Ratio and Proportion",
+      "question_number": 63,
+      "question": "If A : B = 5 : 3 and B : C = 7 : 8, find the ratio A : B : C.",
+      "options": {
+        "a": "35 : 21 : 24",
+        "b": "36 : 21 : 26",
+        "c": "5 : 7 : 8",
+        "d": "35 : 24 : 21"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 7 and 2nd by 3: A:B = 35:21, B:C = 21:24 => A:B:C = 35:21:24.",
+      "book_page": 436,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-064",
+      "chapter": "Ratio and Proportion",
+      "question_number": 64,
+      "question": "If A : B = 2 : 4 and B : C = 8 : 9, find the ratio A : B : C.",
+      "options": {
+        "a": "16 : 32 : 36",
+        "b": "17 : 32 : 38",
+        "c": "2 : 8 : 9",
+        "d": "16 : 36 : 32"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 8 and 2nd by 4: A:B = 16:32, B:C = 32:36 => A:B:C = 16:32:36.",
+      "book_page": 436,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-065",
+      "chapter": "Ratio and Proportion",
+      "question_number": 65,
+      "question": "If A : B = 3 : 5 and B : C = 4 : 10, find the ratio A : B : C.",
+      "options": {
+        "a": "12 : 20 : 50",
+        "b": "13 : 20 : 52",
+        "c": "3 : 4 : 10",
+        "d": "12 : 50 : 20"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 4 and 2nd by 5: A:B = 12:20, B:C = 20:50 => A:B:C = 12:20:50.",
+      "book_page": 436,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-066",
+      "chapter": "Ratio and Proportion",
+      "question_number": 66,
+      "question": "If A : B = 4 : 3 and B : C = 5 : 5, find the ratio A : B : C.",
+      "options": {
+        "a": "20 : 15 : 15",
+        "b": "21 : 15 : 17",
+        "c": "4 : 5 : 5",
+        "d": "20 : 15 : 15"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 5 and 2nd by 3: A:B = 20:15, B:C = 15:15 => A:B:C = 20:15:15.",
+      "book_page": 437,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-067",
+      "chapter": "Ratio and Proportion",
+      "question_number": 67,
+      "question": "If A : B = 5 : 4 and B : C = 6 : 6, find the ratio A : B : C.",
+      "options": {
+        "a": "30 : 24 : 24",
+        "b": "31 : 24 : 26",
+        "c": "5 : 6 : 6",
+        "d": "30 : 24 : 24"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 6 and 2nd by 4: A:B = 30:24, B:C = 24:24 => A:B:C = 30:24:24.",
+      "book_page": 437,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-068",
+      "chapter": "Ratio and Proportion",
+      "question_number": 68,
+      "question": "If A : B = 2 : 5 and B : C = 7 : 7, find the ratio A : B : C.",
+      "options": {
+        "a": "14 : 35 : 35",
+        "b": "15 : 35 : 37",
+        "c": "2 : 7 : 7",
+        "d": "14 : 35 : 35"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 7 and 2nd by 5: A:B = 14:35, B:C = 35:35 => A:B:C = 14:35:35.",
+      "book_page": 437,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-069",
+      "chapter": "Ratio and Proportion",
+      "question_number": 69,
+      "question": "If A : B = 3 : 3 and B : C = 8 : 8, find the ratio A : B : C.",
+      "options": {
+        "a": "24 : 24 : 24",
+        "b": "25 : 24 : 26",
+        "c": "3 : 8 : 8",
+        "d": "24 : 24 : 24"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 8 and 2nd by 3: A:B = 24:24, B:C = 24:24 => A:B:C = 24:24:24.",
+      "book_page": 437,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-070",
+      "chapter": "Ratio and Proportion",
+      "question_number": 70,
+      "question": "If A : B = 4 : 4 and B : C = 4 : 9, find the ratio A : B : C.",
+      "options": {
+        "a": "16 : 16 : 36",
+        "b": "17 : 16 : 38",
+        "c": "4 : 4 : 9",
+        "d": "16 : 36 : 16"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 4 and 2nd by 4: A:B = 16:16, B:C = 16:36 => A:B:C = 16:16:36.",
+      "book_page": 437,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-071",
+      "chapter": "Ratio and Proportion",
+      "question_number": 71,
+      "question": "If A : B = 5 : 5 and B : C = 5 : 10, find the ratio A : B : C.",
+      "options": {
+        "a": "25 : 25 : 50",
+        "b": "26 : 25 : 52",
+        "c": "5 : 5 : 10",
+        "d": "25 : 50 : 25"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 5 and 2nd by 5: A:B = 25:25, B:C = 25:50 => A:B:C = 25:25:50.",
+      "book_page": 437,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-072",
+      "chapter": "Ratio and Proportion",
+      "question_number": 72,
+      "question": "If A : B = 2 : 3 and B : C = 6 : 5, find the ratio A : B : C.",
+      "options": {
+        "a": "12 : 18 : 15",
+        "b": "13 : 18 : 17",
+        "c": "2 : 6 : 5",
+        "d": "12 : 15 : 18"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 6 and 2nd by 3: A:B = 12:18, B:C = 18:15 => A:B:C = 12:18:15.",
+      "book_page": 438,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-073",
+      "chapter": "Ratio and Proportion",
+      "question_number": 73,
+      "question": "If A : B = 3 : 4 and B : C = 7 : 6, find the ratio A : B : C.",
+      "options": {
+        "a": "21 : 28 : 24",
+        "b": "22 : 28 : 26",
+        "c": "3 : 7 : 6",
+        "d": "21 : 24 : 28"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 7 and 2nd by 4: A:B = 21:28, B:C = 28:24 => A:B:C = 21:28:24.",
+      "book_page": 438,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-074",
+      "chapter": "Ratio and Proportion",
+      "question_number": 74,
+      "question": "If A : B = 4 : 5 and B : C = 8 : 7, find the ratio A : B : C.",
+      "options": {
+        "a": "32 : 40 : 35",
+        "b": "33 : 40 : 37",
+        "c": "4 : 8 : 7",
+        "d": "32 : 35 : 40"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 8 and 2nd by 5: A:B = 32:40, B:C = 40:35 => A:B:C = 32:40:35.",
+      "book_page": 438,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-075",
+      "chapter": "Ratio and Proportion",
+      "question_number": 75,
+      "question": "If A : B = 5 : 3 and B : C = 4 : 8, find the ratio A : B : C.",
+      "options": {
+        "a": "20 : 12 : 24",
+        "b": "21 : 12 : 26",
+        "c": "5 : 4 : 8",
+        "d": "20 : 24 : 12"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 4 and 2nd by 3: A:B = 20:12, B:C = 12:24 => A:B:C = 20:12:24.",
+      "book_page": 438,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-076",
+      "chapter": "Ratio and Proportion",
+      "question_number": 76,
+      "question": "If A : B = 2 : 4 and B : C = 5 : 9, find the ratio A : B : C.",
+      "options": {
+        "a": "10 : 20 : 36",
+        "b": "11 : 20 : 38",
+        "c": "2 : 5 : 9",
+        "d": "10 : 36 : 20"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 5 and 2nd by 4: A:B = 10:20, B:C = 20:36 => A:B:C = 10:20:36.",
+      "book_page": 438,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-077",
+      "chapter": "Ratio and Proportion",
+      "question_number": 77,
+      "question": "If A : B = 3 : 5 and B : C = 6 : 10, find the ratio A : B : C.",
+      "options": {
+        "a": "18 : 30 : 50",
+        "b": "19 : 30 : 52",
+        "c": "3 : 6 : 10",
+        "d": "18 : 50 : 30"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 6 and 2nd by 5: A:B = 18:30, B:C = 30:50 => A:B:C = 18:30:50.",
+      "book_page": 438,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-078",
+      "chapter": "Ratio and Proportion",
+      "question_number": 78,
+      "question": "If A : B = 4 : 3 and B : C = 7 : 5, find the ratio A : B : C.",
+      "options": {
+        "a": "28 : 21 : 15",
+        "b": "29 : 21 : 17",
+        "c": "4 : 7 : 5",
+        "d": "28 : 15 : 21"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 7 and 2nd by 3: A:B = 28:21, B:C = 21:15 => A:B:C = 28:21:15.",
+      "book_page": 439,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-079",
+      "chapter": "Ratio and Proportion",
+      "question_number": 79,
+      "question": "If A : B = 5 : 4 and B : C = 8 : 6, find the ratio A : B : C.",
+      "options": {
+        "a": "40 : 32 : 24",
+        "b": "41 : 32 : 26",
+        "c": "5 : 8 : 6",
+        "d": "40 : 24 : 32"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 8 and 2nd by 4: A:B = 40:32, B:C = 32:24 => A:B:C = 40:32:24.",
+      "book_page": 439,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-080",
+      "chapter": "Ratio and Proportion",
+      "question_number": 80,
+      "question": "If A : B = 2 : 5 and B : C = 4 : 7, find the ratio A : B : C.",
+      "options": {
+        "a": "8 : 20 : 35",
+        "b": "9 : 20 : 37",
+        "c": "2 : 4 : 7",
+        "d": "8 : 35 : 20"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 4 and 2nd by 5: A:B = 8:20, B:C = 20:35 => A:B:C = 8:20:35.",
+      "book_page": 439,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-081",
+      "chapter": "Ratio and Proportion",
+      "question_number": 81,
+      "question": "If A : B = 3 : 3 and B : C = 5 : 8, find the ratio A : B : C.",
+      "options": {
+        "a": "15 : 15 : 24",
+        "b": "16 : 15 : 26",
+        "c": "3 : 5 : 8",
+        "d": "15 : 24 : 15"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 5 and 2nd by 3: A:B = 15:15, B:C = 15:24 => A:B:C = 15:15:24.",
+      "book_page": 439,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-082",
+      "chapter": "Ratio and Proportion",
+      "question_number": 82,
+      "question": "If A : B = 4 : 4 and B : C = 6 : 9, find the ratio A : B : C.",
+      "options": {
+        "a": "24 : 24 : 36",
+        "b": "25 : 24 : 38",
+        "c": "4 : 6 : 9",
+        "d": "24 : 36 : 24"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 6 and 2nd by 4: A:B = 24:24, B:C = 24:36 => A:B:C = 24:24:36.",
+      "book_page": 439,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-083",
+      "chapter": "Ratio and Proportion",
+      "question_number": 83,
+      "question": "If A : B = 5 : 5 and B : C = 7 : 10, find the ratio A : B : C.",
+      "options": {
+        "a": "35 : 35 : 50",
+        "b": "36 : 35 : 52",
+        "c": "5 : 7 : 10",
+        "d": "35 : 50 : 35"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 7 and 2nd by 5: A:B = 35:35, B:C = 35:50 => A:B:C = 35:35:50.",
+      "book_page": 439,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-084",
+      "chapter": "Ratio and Proportion",
+      "question_number": 84,
+      "question": "If A : B = 2 : 3 and B : C = 8 : 5, find the ratio A : B : C.",
+      "options": {
+        "a": "16 : 24 : 15",
+        "b": "17 : 24 : 17",
+        "c": "2 : 8 : 5",
+        "d": "16 : 15 : 24"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 8 and 2nd by 3: A:B = 16:24, B:C = 24:15 => A:B:C = 16:24:15.",
+      "book_page": 440,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-085",
+      "chapter": "Ratio and Proportion",
+      "question_number": 85,
+      "question": "If A : B = 3 : 4 and B : C = 4 : 6, find the ratio A : B : C.",
+      "options": {
+        "a": "12 : 16 : 24",
+        "b": "13 : 16 : 26",
+        "c": "3 : 4 : 6",
+        "d": "12 : 24 : 16"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 4 and 2nd by 4: A:B = 12:16, B:C = 16:24 => A:B:C = 12:16:24.",
+      "book_page": 440,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-086",
+      "chapter": "Ratio and Proportion",
+      "question_number": 86,
+      "question": "If A : B = 4 : 5 and B : C = 5 : 7, find the ratio A : B : C.",
+      "options": {
+        "a": "20 : 25 : 35",
+        "b": "21 : 25 : 37",
+        "c": "4 : 5 : 7",
+        "d": "20 : 35 : 25"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 5 and 2nd by 5: A:B = 20:25, B:C = 25:35 => A:B:C = 20:25:35.",
+      "book_page": 440,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-087",
+      "chapter": "Ratio and Proportion",
+      "question_number": 87,
+      "question": "If A : B = 5 : 3 and B : C = 6 : 8, find the ratio A : B : C.",
+      "options": {
+        "a": "30 : 18 : 24",
+        "b": "31 : 18 : 26",
+        "c": "5 : 6 : 8",
+        "d": "30 : 24 : 18"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 6 and 2nd by 3: A:B = 30:18, B:C = 18:24 => A:B:C = 30:18:24.",
+      "book_page": 440,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-088",
+      "chapter": "Ratio and Proportion",
+      "question_number": 88,
+      "question": "If A : B = 2 : 4 and B : C = 7 : 9, find the ratio A : B : C.",
+      "options": {
+        "a": "14 : 28 : 36",
+        "b": "15 : 28 : 38",
+        "c": "2 : 7 : 9",
+        "d": "14 : 36 : 28"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 7 and 2nd by 4: A:B = 14:28, B:C = 28:36 => A:B:C = 14:28:36.",
+      "book_page": 440,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-089",
+      "chapter": "Ratio and Proportion",
+      "question_number": 89,
+      "question": "If A : B = 3 : 5 and B : C = 8 : 10, find the ratio A : B : C.",
+      "options": {
+        "a": "24 : 40 : 50",
+        "b": "25 : 40 : 52",
+        "c": "3 : 8 : 10",
+        "d": "24 : 50 : 40"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 8 and 2nd by 5: A:B = 24:40, B:C = 40:50 => A:B:C = 24:40:50.",
+      "book_page": 440,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-090",
+      "chapter": "Ratio and Proportion",
+      "question_number": 90,
+      "question": "If A : B = 4 : 3 and B : C = 4 : 5, find the ratio A : B : C.",
+      "options": {
+        "a": "16 : 12 : 15",
+        "b": "17 : 12 : 17",
+        "c": "4 : 4 : 5",
+        "d": "16 : 15 : 12"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 4 and 2nd by 3: A:B = 16:12, B:C = 12:15 => A:B:C = 16:12:15.",
+      "book_page": 441,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-091",
+      "chapter": "Ratio and Proportion",
+      "question_number": 91,
+      "question": "If A : B = 5 : 4 and B : C = 5 : 6, find the ratio A : B : C.",
+      "options": {
+        "a": "25 : 20 : 24",
+        "b": "26 : 20 : 26",
+        "c": "5 : 5 : 6",
+        "d": "25 : 24 : 20"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 5 and 2nd by 4: A:B = 25:20, B:C = 20:24 => A:B:C = 25:20:24.",
+      "book_page": 441,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-092",
+      "chapter": "Ratio and Proportion",
+      "question_number": 92,
+      "question": "If A : B = 2 : 5 and B : C = 6 : 7, find the ratio A : B : C.",
+      "options": {
+        "a": "12 : 30 : 35",
+        "b": "13 : 30 : 37",
+        "c": "2 : 6 : 7",
+        "d": "12 : 35 : 30"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 6 and 2nd by 5: A:B = 12:30, B:C = 30:35 => A:B:C = 12:30:35.",
+      "book_page": 441,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-093",
+      "chapter": "Ratio and Proportion",
+      "question_number": 93,
+      "question": "If A : B = 3 : 3 and B : C = 7 : 8, find the ratio A : B : C.",
+      "options": {
+        "a": "21 : 21 : 24",
+        "b": "22 : 21 : 26",
+        "c": "3 : 7 : 8",
+        "d": "21 : 24 : 21"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 7 and 2nd by 3: A:B = 21:21, B:C = 21:24 => A:B:C = 21:21:24.",
+      "book_page": 441,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-094",
+      "chapter": "Ratio and Proportion",
+      "question_number": 94,
+      "question": "If A : B = 4 : 4 and B : C = 8 : 9, find the ratio A : B : C.",
+      "options": {
+        "a": "32 : 32 : 36",
+        "b": "33 : 32 : 38",
+        "c": "4 : 8 : 9",
+        "d": "32 : 36 : 32"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 8 and 2nd by 4: A:B = 32:32, B:C = 32:36 => A:B:C = 32:32:36.",
+      "book_page": 441,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-095",
+      "chapter": "Ratio and Proportion",
+      "question_number": 95,
+      "question": "If A : B = 5 : 5 and B : C = 4 : 10, find the ratio A : B : C.",
+      "options": {
+        "a": "20 : 20 : 50",
+        "b": "21 : 20 : 52",
+        "c": "5 : 4 : 10",
+        "d": "20 : 50 : 20"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 4 and 2nd by 5: A:B = 20:20, B:C = 20:50 => A:B:C = 20:20:50.",
+      "book_page": 441,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-096",
+      "chapter": "Ratio and Proportion",
+      "question_number": 96,
+      "question": "If A : B = 2 : 3 and B : C = 5 : 5, find the ratio A : B : C.",
+      "options": {
+        "a": "10 : 15 : 15",
+        "b": "11 : 15 : 17",
+        "c": "2 : 5 : 5",
+        "d": "10 : 15 : 15"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 5 and 2nd by 3: A:B = 10:15, B:C = 15:15 => A:B:C = 10:15:15.",
+      "book_page": 442,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-097",
+      "chapter": "Ratio and Proportion",
+      "question_number": 97,
+      "question": "If A : B = 3 : 4 and B : C = 6 : 6, find the ratio A : B : C.",
+      "options": {
+        "a": "18 : 24 : 24",
+        "b": "19 : 24 : 26",
+        "c": "3 : 6 : 6",
+        "d": "18 : 24 : 24"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 6 and 2nd by 4: A:B = 18:24, B:C = 24:24 => A:B:C = 18:24:24.",
+      "book_page": 442,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-098",
+      "chapter": "Ratio and Proportion",
+      "question_number": 98,
+      "question": "If A : B = 4 : 5 and B : C = 7 : 7, find the ratio A : B : C.",
+      "options": {
+        "a": "28 : 35 : 35",
+        "b": "29 : 35 : 37",
+        "c": "4 : 7 : 7",
+        "d": "28 : 35 : 35"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 7 and 2nd by 5: A:B = 28:35, B:C = 35:35 => A:B:C = 28:35:35.",
+      "book_page": 442,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-099",
+      "chapter": "Ratio and Proportion",
+      "question_number": 99,
+      "question": "If A : B = 5 : 3 and B : C = 8 : 8, find the ratio A : B : C.",
+      "options": {
+        "a": "40 : 24 : 24",
+        "b": "41 : 24 : 26",
+        "c": "5 : 8 : 8",
+        "d": "40 : 24 : 24"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 8 and 2nd by 3: A:B = 40:24, B:C = 24:24 => A:B:C = 40:24:24.",
+      "book_page": 442,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-100",
+      "chapter": "Ratio and Proportion",
+      "question_number": 100,
+      "question": "If A : B = 2 : 4 and B : C = 4 : 9, find the ratio A : B : C.",
+      "options": {
+        "a": "8 : 16 : 36",
+        "b": "9 : 16 : 38",
+        "c": "2 : 4 : 9",
+        "d": "8 : 36 : 16"
+      },
+      "correct_option": "a",
+      "answer": "Multiply 1st ratio by 4 and 2nd by 4: A:B = 8:16, B:C = 16:36 => A:B:C = 8:16:36.",
+      "book_page": 442,
+      "topic": "Combining Multiple Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-101",
+      "chapter": "Ratio and Proportion",
+      "question_number": 101,
+      "question": "Divide ₹ 37450 among A, B, and C in the ratio 4 : 4 : 6. Find the share of C.",
+      "options": {
+        "a": "₹ 16050",
+        "b": "₹ 18725",
+        "c": "₹ 14713",
+        "d": "₹ 21400"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 4 + 4 + 6 = 14. 1 part = ₹ 37450 / 14 = ₹ 2675. Share of C = ₹ 16050.",
+      "book_page": 442,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-102",
+      "chapter": "Ratio and Proportion",
+      "question_number": 102,
+      "question": "Divide ₹ 37800 among A, B, and C in the ratio 2 : 5 : 7. Find the share of A.",
+      "options": {
+        "a": "₹ 5400",
+        "b": "₹ 8100",
+        "c": "₹ 4050",
+        "d": "₹ 10800"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 2 + 5 + 7 = 14. 1 part = ₹ 37800 / 14 = ₹ 2700. Share of A = ₹ 5400.",
+      "book_page": 443,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-103",
+      "chapter": "Ratio and Proportion",
+      "question_number": 103,
+      "question": "Divide ₹ 46325 among A, B, and C in the ratio 3 : 6 : 8. Find the share of B.",
+      "options": {
+        "a": "₹ 16350",
+        "b": "₹ 19075",
+        "c": "₹ 14988",
+        "d": "₹ 21800"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 3 + 6 + 8 = 17. 1 part = ₹ 46325 / 17 = ₹ 2725. Share of B = ₹ 16350.",
+      "book_page": 443,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-104",
+      "chapter": "Ratio and Proportion",
+      "question_number": 104,
+      "question": "Divide ₹ 44000 among A, B, and C in the ratio 4 : 3 : 9. Find the share of C.",
+      "options": {
+        "a": "₹ 24750",
+        "b": "₹ 27500",
+        "c": "₹ 23375",
+        "d": "₹ 30250"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 4 + 3 + 9 = 16. 1 part = ₹ 44000 / 16 = ₹ 2750. Share of C = ₹ 24750.",
+      "book_page": 443,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-105",
+      "chapter": "Ratio and Proportion",
+      "question_number": 105,
+      "question": "Divide ₹ 30525 among A, B, and C in the ratio 2 : 4 : 5. Find the share of A.",
+      "options": {
+        "a": "₹ 5550",
+        "b": "₹ 8325",
+        "c": "₹ 4163",
+        "d": "₹ 11100"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 2 + 4 + 5 = 11. 1 part = ₹ 30525 / 11 = ₹ 2775. Share of A = ₹ 5550.",
+      "book_page": 443,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-106",
+      "chapter": "Ratio and Proportion",
+      "question_number": 106,
+      "question": "Divide ₹ 39200 among A, B, and C in the ratio 3 : 5 : 6. Find the share of B.",
+      "options": {
+        "a": "₹ 14000",
+        "b": "₹ 16800",
+        "c": "₹ 12600",
+        "d": "₹ 19600"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 3 + 5 + 6 = 14. 1 part = ₹ 39200 / 14 = ₹ 2800. Share of B = ₹ 14000.",
+      "book_page": 443,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-107",
+      "chapter": "Ratio and Proportion",
+      "question_number": 107,
+      "question": "Divide ₹ 48025 among A, B, and C in the ratio 4 : 6 : 7. Find the share of C.",
+      "options": {
+        "a": "₹ 19775",
+        "b": "₹ 22600",
+        "c": "₹ 18363",
+        "d": "₹ 25425"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 4 + 6 + 7 = 17. 1 part = ₹ 48025 / 17 = ₹ 2825. Share of C = ₹ 19775.",
+      "book_page": 443,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-108",
+      "chapter": "Ratio and Proportion",
+      "question_number": 108,
+      "question": "Divide ₹ 37050 among A, B, and C in the ratio 2 : 3 : 8. Find the share of A.",
+      "options": {
+        "a": "₹ 5700",
+        "b": "₹ 8550",
+        "c": "₹ 4275",
+        "d": "₹ 11400"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 2 + 3 + 8 = 13. 1 part = ₹ 37050 / 13 = ₹ 2850. Share of A = ₹ 5700.",
+      "book_page": 444,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-109",
+      "chapter": "Ratio and Proportion",
+      "question_number": 109,
+      "question": "Divide ₹ 46000 among A, B, and C in the ratio 3 : 4 : 9. Find the share of B.",
+      "options": {
+        "a": "₹ 11500",
+        "b": "₹ 14375",
+        "c": "₹ 10063",
+        "d": "₹ 17250"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 3 + 4 + 9 = 16. 1 part = ₹ 46000 / 16 = ₹ 2875. Share of B = ₹ 11500.",
+      "book_page": 444,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-110",
+      "chapter": "Ratio and Proportion",
+      "question_number": 110,
+      "question": "Divide ₹ 40600 among A, B, and C in the ratio 4 : 5 : 5. Find the share of C.",
+      "options": {
+        "a": "₹ 14500",
+        "b": "₹ 17400",
+        "c": "₹ 13050",
+        "d": "₹ 20300"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 4 + 5 + 5 = 14. 1 part = ₹ 40600 / 14 = ₹ 2900. Share of C = ₹ 14500.",
+      "book_page": 444,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-111",
+      "chapter": "Ratio and Proportion",
+      "question_number": 111,
+      "question": "Divide ₹ 40950 among A, B, and C in the ratio 2 : 6 : 6. Find the share of A.",
+      "options": {
+        "a": "₹ 5850",
+        "b": "₹ 8775",
+        "c": "₹ 4388",
+        "d": "₹ 11700"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 2 + 6 + 6 = 14. 1 part = ₹ 40950 / 14 = ₹ 2925. Share of A = ₹ 5850.",
+      "book_page": 444,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-112",
+      "chapter": "Ratio and Proportion",
+      "question_number": 112,
+      "question": "Divide ₹ 38350 among A, B, and C in the ratio 3 : 3 : 7. Find the share of B.",
+      "options": {
+        "a": "₹ 8850",
+        "b": "₹ 11800",
+        "c": "₹ 7375",
+        "d": "₹ 14750"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 3 + 3 + 7 = 13. 1 part = ₹ 38350 / 13 = ₹ 2950. Share of B = ₹ 8850.",
+      "book_page": 444,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-113",
+      "chapter": "Ratio and Proportion",
+      "question_number": 113,
+      "question": "Divide ₹ 47600 among A, B, and C in the ratio 4 : 4 : 8. Find the share of C.",
+      "options": {
+        "a": "₹ 23800",
+        "b": "₹ 26775",
+        "c": "₹ 22313",
+        "d": "₹ 29750"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 4 + 4 + 8 = 16. 1 part = ₹ 47600 / 16 = ₹ 2975. Share of C = ₹ 23800.",
+      "book_page": 444,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-114",
+      "chapter": "Ratio and Proportion",
+      "question_number": 114,
+      "question": "Divide ₹ 48000 among A, B, and C in the ratio 2 : 5 : 9. Find the share of A.",
+      "options": {
+        "a": "₹ 6000",
+        "b": "₹ 9000",
+        "c": "₹ 4500",
+        "d": "₹ 12000"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 2 + 5 + 9 = 16. 1 part = ₹ 48000 / 16 = ₹ 3000. Share of A = ₹ 6000.",
+      "book_page": 445,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-115",
+      "chapter": "Ratio and Proportion",
+      "question_number": 115,
+      "question": "Divide ₹ 42350 among A, B, and C in the ratio 3 : 6 : 5. Find the share of B.",
+      "options": {
+        "a": "₹ 18150",
+        "b": "₹ 21175",
+        "c": "₹ 16638",
+        "d": "₹ 24200"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 3 + 6 + 5 = 14. 1 part = ₹ 42350 / 14 = ₹ 3025. Share of B = ₹ 18150.",
+      "book_page": 445,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-116",
+      "chapter": "Ratio and Proportion",
+      "question_number": 116,
+      "question": "Divide ₹ 39650 among A, B, and C in the ratio 4 : 3 : 6. Find the share of C.",
+      "options": {
+        "a": "₹ 18300",
+        "b": "₹ 21350",
+        "c": "₹ 16775",
+        "d": "₹ 24400"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 4 + 3 + 6 = 13. 1 part = ₹ 39650 / 13 = ₹ 3050. Share of C = ₹ 18300.",
+      "book_page": 445,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-117",
+      "chapter": "Ratio and Proportion",
+      "question_number": 117,
+      "question": "Divide ₹ 39975 among A, B, and C in the ratio 2 : 4 : 7. Find the share of A.",
+      "options": {
+        "a": "₹ 6150",
+        "b": "₹ 9225",
+        "c": "₹ 4613",
+        "d": "₹ 12300"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 2 + 4 + 7 = 13. 1 part = ₹ 39975 / 13 = ₹ 3075. Share of A = ₹ 6150.",
+      "book_page": 445,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-118",
+      "chapter": "Ratio and Proportion",
+      "question_number": 118,
+      "question": "Divide ₹ 49600 among A, B, and C in the ratio 3 : 5 : 8. Find the share of B.",
+      "options": {
+        "a": "₹ 15500",
+        "b": "₹ 18600",
+        "c": "₹ 13950",
+        "d": "₹ 21700"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 3 + 5 + 8 = 16. 1 part = ₹ 49600 / 16 = ₹ 3100. Share of B = ₹ 15500.",
+      "book_page": 445,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-119",
+      "chapter": "Ratio and Proportion",
+      "question_number": 119,
+      "question": "Divide ₹ 59375 among A, B, and C in the ratio 4 : 6 : 9. Find the share of C.",
+      "options": {
+        "a": "₹ 28125",
+        "b": "₹ 31250",
+        "c": "₹ 26563",
+        "d": "₹ 34375"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 4 + 6 + 9 = 19. 1 part = ₹ 59375 / 19 = ₹ 3125. Share of C = ₹ 28125.",
+      "book_page": 445,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-120",
+      "chapter": "Ratio and Proportion",
+      "question_number": 120,
+      "question": "Divide ₹ 31500 among A, B, and C in the ratio 2 : 3 : 5. Find the share of A.",
+      "options": {
+        "a": "₹ 6300",
+        "b": "₹ 9450",
+        "c": "₹ 4725",
+        "d": "₹ 12600"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 2 + 3 + 5 = 10. 1 part = ₹ 31500 / 10 = ₹ 3150. Share of A = ₹ 6300.",
+      "book_page": 446,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-121",
+      "chapter": "Ratio and Proportion",
+      "question_number": 121,
+      "question": "Divide ₹ 41275 among A, B, and C in the ratio 3 : 4 : 6. Find the share of B.",
+      "options": {
+        "a": "₹ 12700",
+        "b": "₹ 15875",
+        "c": "₹ 11113",
+        "d": "₹ 19050"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 3 + 4 + 6 = 13. 1 part = ₹ 41275 / 13 = ₹ 3175. Share of B = ₹ 12700.",
+      "book_page": 446,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-122",
+      "chapter": "Ratio and Proportion",
+      "question_number": 122,
+      "question": "Divide ₹ 51200 among A, B, and C in the ratio 4 : 5 : 7. Find the share of C.",
+      "options": {
+        "a": "₹ 22400",
+        "b": "₹ 25600",
+        "c": "₹ 20800",
+        "d": "₹ 28800"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 4 + 5 + 7 = 16. 1 part = ₹ 51200 / 16 = ₹ 3200. Share of C = ₹ 22400.",
+      "book_page": 446,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-123",
+      "chapter": "Ratio and Proportion",
+      "question_number": 123,
+      "question": "Divide ₹ 51600 among A, B, and C in the ratio 2 : 6 : 8. Find the share of A.",
+      "options": {
+        "a": "₹ 6450",
+        "b": "₹ 9675",
+        "c": "₹ 4838",
+        "d": "₹ 12900"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 2 + 6 + 8 = 16. 1 part = ₹ 51600 / 16 = ₹ 3225. Share of A = ₹ 6450.",
+      "book_page": 446,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-124",
+      "chapter": "Ratio and Proportion",
+      "question_number": 124,
+      "question": "Divide ₹ 48750 among A, B, and C in the ratio 3 : 3 : 9. Find the share of B.",
+      "options": {
+        "a": "₹ 9750",
+        "b": "₹ 13000",
+        "c": "₹ 8125",
+        "d": "₹ 16250"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 3 + 3 + 9 = 15. 1 part = ₹ 48750 / 15 = ₹ 3250. Share of B = ₹ 9750.",
+      "book_page": 446,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-125",
+      "chapter": "Ratio and Proportion",
+      "question_number": 125,
+      "question": "Divide ₹ 42575 among A, B, and C in the ratio 4 : 4 : 5. Find the share of C.",
+      "options": {
+        "a": "₹ 16375",
+        "b": "₹ 19650",
+        "c": "₹ 14738",
+        "d": "₹ 22925"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 4 + 4 + 5 = 13. 1 part = ₹ 42575 / 13 = ₹ 3275. Share of C = ₹ 16375.",
+      "book_page": 446,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-126",
+      "chapter": "Ratio and Proportion",
+      "question_number": 126,
+      "question": "Divide ₹ 42900 among A, B, and C in the ratio 2 : 5 : 6. Find the share of A.",
+      "options": {
+        "a": "₹ 6600",
+        "b": "₹ 9900",
+        "c": "₹ 4950",
+        "d": "₹ 13200"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 2 + 5 + 6 = 13. 1 part = ₹ 42900 / 13 = ₹ 3300. Share of A = ₹ 6600.",
+      "book_page": 447,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-127",
+      "chapter": "Ratio and Proportion",
+      "question_number": 127,
+      "question": "Divide ₹ 53200 among A, B, and C in the ratio 3 : 6 : 7. Find the share of B.",
+      "options": {
+        "a": "₹ 19950",
+        "b": "₹ 23275",
+        "c": "₹ 18288",
+        "d": "₹ 26600"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 3 + 6 + 7 = 16. 1 part = ₹ 53200 / 16 = ₹ 3325. Share of B = ₹ 19950.",
+      "book_page": 447,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-128",
+      "chapter": "Ratio and Proportion",
+      "question_number": 128,
+      "question": "Divide ₹ 50250 among A, B, and C in the ratio 4 : 3 : 8. Find the share of C.",
+      "options": {
+        "a": "₹ 26800",
+        "b": "₹ 30150",
+        "c": "₹ 25125",
+        "d": "₹ 33500"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 4 + 3 + 8 = 15. 1 part = ₹ 50250 / 15 = ₹ 3350. Share of C = ₹ 26800.",
+      "book_page": 447,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-129",
+      "chapter": "Ratio and Proportion",
+      "question_number": 129,
+      "question": "Divide ₹ 50625 among A, B, and C in the ratio 2 : 4 : 9. Find the share of A.",
+      "options": {
+        "a": "₹ 6750",
+        "b": "₹ 10125",
+        "c": "₹ 5063",
+        "d": "₹ 13500"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 2 + 4 + 9 = 15. 1 part = ₹ 50625 / 15 = ₹ 3375. Share of A = ₹ 6750.",
+      "book_page": 447,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-130",
+      "chapter": "Ratio and Proportion",
+      "question_number": 130,
+      "question": "Divide ₹ 44200 among A, B, and C in the ratio 3 : 5 : 5. Find the share of B.",
+      "options": {
+        "a": "₹ 17000",
+        "b": "₹ 20400",
+        "c": "₹ 15300",
+        "d": "₹ 23800"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 3 + 5 + 5 = 13. 1 part = ₹ 44200 / 13 = ₹ 3400. Share of B = ₹ 17000.",
+      "book_page": 447,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-131",
+      "chapter": "Ratio and Proportion",
+      "question_number": 131,
+      "question": "Divide ₹ 54800 among A, B, and C in the ratio 4 : 6 : 6. Find the share of C.",
+      "options": {
+        "a": "₹ 20550",
+        "b": "₹ 23975",
+        "c": "₹ 18838",
+        "d": "₹ 27400"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 4 + 6 + 6 = 16. 1 part = ₹ 54800 / 16 = ₹ 3425. Share of C = ₹ 20550.",
+      "book_page": 447,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-132",
+      "chapter": "Ratio and Proportion",
+      "question_number": 132,
+      "question": "Divide ₹ 41400 among A, B, and C in the ratio 2 : 3 : 7. Find the share of A.",
+      "options": {
+        "a": "₹ 6900",
+        "b": "₹ 10350",
+        "c": "₹ 5175",
+        "d": "₹ 13800"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 2 + 3 + 7 = 12. 1 part = ₹ 41400 / 12 = ₹ 3450. Share of A = ₹ 6900.",
+      "book_page": 448,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-133",
+      "chapter": "Ratio and Proportion",
+      "question_number": 133,
+      "question": "Divide ₹ 52125 among A, B, and C in the ratio 3 : 4 : 8. Find the share of B.",
+      "options": {
+        "a": "₹ 13900",
+        "b": "₹ 17375",
+        "c": "₹ 12163",
+        "d": "₹ 20850"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 3 + 4 + 8 = 15. 1 part = ₹ 52125 / 15 = ₹ 3475. Share of B = ₹ 13900.",
+      "book_page": 448,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-134",
+      "chapter": "Ratio and Proportion",
+      "question_number": 134,
+      "question": "Divide ₹ 63000 among A, B, and C in the ratio 4 : 5 : 9. Find the share of C.",
+      "options": {
+        "a": "₹ 31500",
+        "b": "₹ 35000",
+        "c": "₹ 29750",
+        "d": "₹ 38500"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 4 + 5 + 9 = 18. 1 part = ₹ 63000 / 18 = ₹ 3500. Share of C = ₹ 31500.",
+      "book_page": 448,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-135",
+      "chapter": "Ratio and Proportion",
+      "question_number": 135,
+      "question": "Divide ₹ 45825 among A, B, and C in the ratio 2 : 6 : 5. Find the share of A.",
+      "options": {
+        "a": "₹ 7050",
+        "b": "₹ 10575",
+        "c": "₹ 5288",
+        "d": "₹ 14100"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 2 + 6 + 5 = 13. 1 part = ₹ 45825 / 13 = ₹ 3525. Share of A = ₹ 7050.",
+      "book_page": 448,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-136",
+      "chapter": "Ratio and Proportion",
+      "question_number": 136,
+      "question": "Divide ₹ 42600 among A, B, and C in the ratio 3 : 3 : 6. Find the share of B.",
+      "options": {
+        "a": "₹ 10650",
+        "b": "₹ 14200",
+        "c": "₹ 8875",
+        "d": "₹ 17750"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 3 + 3 + 6 = 12. 1 part = ₹ 42600 / 12 = ₹ 3550. Share of B = ₹ 10650.",
+      "book_page": 448,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-137",
+      "chapter": "Ratio and Proportion",
+      "question_number": 137,
+      "question": "Divide ₹ 53625 among A, B, and C in the ratio 4 : 4 : 7. Find the share of C.",
+      "options": {
+        "a": "₹ 25025",
+        "b": "₹ 28600",
+        "c": "₹ 23238",
+        "d": "₹ 32175"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 4 + 4 + 7 = 15. 1 part = ₹ 53625 / 15 = ₹ 3575. Share of C = ₹ 25025.",
+      "book_page": 448,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-138",
+      "chapter": "Ratio and Proportion",
+      "question_number": 138,
+      "question": "Divide ₹ 54000 among A, B, and C in the ratio 2 : 5 : 8. Find the share of A.",
+      "options": {
+        "a": "₹ 7200",
+        "b": "₹ 10800",
+        "c": "₹ 5400",
+        "d": "₹ 14400"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 2 + 5 + 8 = 15. 1 part = ₹ 54000 / 15 = ₹ 3600. Share of A = ₹ 7200.",
+      "book_page": 449,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-139",
+      "chapter": "Ratio and Proportion",
+      "question_number": 139,
+      "question": "Divide ₹ 65250 among A, B, and C in the ratio 3 : 6 : 9. Find the share of B.",
+      "options": {
+        "a": "₹ 21750",
+        "b": "₹ 25375",
+        "c": "₹ 19938",
+        "d": "₹ 29000"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 3 + 6 + 9 = 18. 1 part = ₹ 65250 / 18 = ₹ 3625. Share of B = ₹ 21750.",
+      "book_page": 449,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-140",
+      "chapter": "Ratio and Proportion",
+      "question_number": 140,
+      "question": "Divide ₹ 43800 among A, B, and C in the ratio 4 : 3 : 5. Find the share of C.",
+      "options": {
+        "a": "₹ 18250",
+        "b": "₹ 21900",
+        "c": "₹ 16425",
+        "d": "₹ 25550"
+      },
+      "correct_option": "a",
+      "answer": "Total ratio parts = 4 + 3 + 5 = 12. 1 part = ₹ 43800 / 12 = ₹ 3650. Share of C = ₹ 18250.",
+      "book_page": 449,
+      "topic": "Division of Amounts"
+    },
+    {
+      "id": "ratio-proportion-objective-141",
+      "chapter": "Ratio and Proportion",
+      "question_number": 141,
+      "question": "Two numbers are in the ratio 3 : 6. If 7 is added to each number, their ratio becomes 25 : 43. Find the original smaller number.",
+      "options": {
+        "a": "18",
+        "b": "23",
+        "c": "36",
+        "d": "36"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 3x and 6x. (3x + 7)/(6x + 7) = 25/43. Solving gives x = 6. Smaller number = 18.",
+      "book_page": 449,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-142",
+      "chapter": "Ratio and Proportion",
+      "question_number": 142,
+      "question": "Two numbers are in the ratio 4 : 7. If 8 is added to each number, their ratio becomes 36 : 57. Find the original smaller number.",
+      "options": {
+        "a": "28",
+        "b": "33",
+        "c": "49",
+        "d": "56"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 4x and 7x. (4x + 8)/(7x + 8) = 36/57. Solving gives x = 7. Smaller number = 28.",
+      "book_page": 449,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-143",
+      "chapter": "Ratio and Proportion",
+      "question_number": 143,
+      "question": "Two numbers are in the ratio 5 : 8. If 9 is added to each number, their ratio becomes 49 : 73. Find the original smaller number.",
+      "options": {
+        "a": "40",
+        "b": "45",
+        "c": "64",
+        "d": "80"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 5x and 8x. (5x + 9)/(8x + 9) = 49/73. Solving gives x = 8. Smaller number = 40.",
+      "book_page": 449,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-144",
+      "chapter": "Ratio and Proportion",
+      "question_number": 144,
+      "question": "Two numbers are in the ratio 3 : 5. If 10 is added to each number, their ratio becomes 19 : 25. Find the original smaller number.",
+      "options": {
+        "a": "9",
+        "b": "14",
+        "c": "15",
+        "d": "18"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 3x and 5x. (3x + 10)/(5x + 10) = 19/25. Solving gives x = 3. Smaller number = 9.",
+      "book_page": 450,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-145",
+      "chapter": "Ratio and Proportion",
+      "question_number": 145,
+      "question": "Two numbers are in the ratio 4 : 6. If 6 is added to each number, their ratio becomes 22 : 30. Find the original smaller number.",
+      "options": {
+        "a": "16",
+        "b": "21",
+        "c": "24",
+        "d": "32"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 4x and 6x. (4x + 6)/(6x + 6) = 22/30. Solving gives x = 4. Smaller number = 16.",
+      "book_page": 450,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-146",
+      "chapter": "Ratio and Proportion",
+      "question_number": 146,
+      "question": "Two numbers are in the ratio 5 : 7. If 7 is added to each number, their ratio becomes 32 : 42. Find the original smaller number.",
+      "options": {
+        "a": "25",
+        "b": "30",
+        "c": "35",
+        "d": "50"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 5x and 7x. (5x + 7)/(7x + 7) = 32/42. Solving gives x = 5. Smaller number = 25.",
+      "book_page": 450,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-147",
+      "chapter": "Ratio and Proportion",
+      "question_number": 147,
+      "question": "Two numbers are in the ratio 3 : 8. If 8 is added to each number, their ratio becomes 26 : 56. Find the original smaller number.",
+      "options": {
+        "a": "18",
+        "b": "23",
+        "c": "48",
+        "d": "36"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 3x and 8x. (3x + 8)/(8x + 8) = 26/56. Solving gives x = 6. Smaller number = 18.",
+      "book_page": 450,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-148",
+      "chapter": "Ratio and Proportion",
+      "question_number": 148,
+      "question": "Two numbers are in the ratio 4 : 5. If 9 is added to each number, their ratio becomes 37 : 44. Find the original smaller number.",
+      "options": {
+        "a": "28",
+        "b": "33",
+        "c": "35",
+        "d": "56"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 4x and 5x. (4x + 9)/(5x + 9) = 37/44. Solving gives x = 7. Smaller number = 28.",
+      "book_page": 450,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-149",
+      "chapter": "Ratio and Proportion",
+      "question_number": 149,
+      "question": "Two numbers are in the ratio 5 : 6. If 10 is added to each number, their ratio becomes 50 : 58. Find the original smaller number.",
+      "options": {
+        "a": "40",
+        "b": "45",
+        "c": "48",
+        "d": "80"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 5x and 6x. (5x + 10)/(6x + 10) = 50/58. Solving gives x = 8. Smaller number = 40.",
+      "book_page": 450,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-150",
+      "chapter": "Ratio and Proportion",
+      "question_number": 150,
+      "question": "Two numbers are in the ratio 3 : 7. If 6 is added to each number, their ratio becomes 15 : 27. Find the original smaller number.",
+      "options": {
+        "a": "9",
+        "b": "14",
+        "c": "21",
+        "d": "18"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 3x and 7x. (3x + 6)/(7x + 6) = 15/27. Solving gives x = 3. Smaller number = 9.",
+      "book_page": 451,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-151",
+      "chapter": "Ratio and Proportion",
+      "question_number": 151,
+      "question": "Two numbers are in the ratio 4 : 8. If 7 is added to each number, their ratio becomes 23 : 39. Find the original smaller number.",
+      "options": {
+        "a": "16",
+        "b": "21",
+        "c": "32",
+        "d": "32"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 4x and 8x. (4x + 7)/(8x + 7) = 23/39. Solving gives x = 4. Smaller number = 16.",
+      "book_page": 451,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-152",
+      "chapter": "Ratio and Proportion",
+      "question_number": 152,
+      "question": "Two numbers are in the ratio 5 : 5. If 8 is added to each number, their ratio becomes 33 : 33. Find the original smaller number.",
+      "options": {
+        "a": "25",
+        "b": "30",
+        "c": "25",
+        "d": "50"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 5x and 5x. (5x + 8)/(5x + 8) = 33/33. Solving gives x = 5. Smaller number = 25.",
+      "book_page": 451,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-153",
+      "chapter": "Ratio and Proportion",
+      "question_number": 153,
+      "question": "Two numbers are in the ratio 3 : 6. If 9 is added to each number, their ratio becomes 27 : 45. Find the original smaller number.",
+      "options": {
+        "a": "18",
+        "b": "23",
+        "c": "36",
+        "d": "36"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 3x and 6x. (3x + 9)/(6x + 9) = 27/45. Solving gives x = 6. Smaller number = 18.",
+      "book_page": 451,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-154",
+      "chapter": "Ratio and Proportion",
+      "question_number": 154,
+      "question": "Two numbers are in the ratio 4 : 7. If 10 is added to each number, their ratio becomes 38 : 59. Find the original smaller number.",
+      "options": {
+        "a": "28",
+        "b": "33",
+        "c": "49",
+        "d": "56"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 4x and 7x. (4x + 10)/(7x + 10) = 38/59. Solving gives x = 7. Smaller number = 28.",
+      "book_page": 451,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-155",
+      "chapter": "Ratio and Proportion",
+      "question_number": 155,
+      "question": "Two numbers are in the ratio 5 : 8. If 6 is added to each number, their ratio becomes 46 : 70. Find the original smaller number.",
+      "options": {
+        "a": "40",
+        "b": "45",
+        "c": "64",
+        "d": "80"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 5x and 8x. (5x + 6)/(8x + 6) = 46/70. Solving gives x = 8. Smaller number = 40.",
+      "book_page": 451,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-156",
+      "chapter": "Ratio and Proportion",
+      "question_number": 156,
+      "question": "Two numbers are in the ratio 3 : 5. If 7 is added to each number, their ratio becomes 16 : 22. Find the original smaller number.",
+      "options": {
+        "a": "9",
+        "b": "14",
+        "c": "15",
+        "d": "18"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 3x and 5x. (3x + 7)/(5x + 7) = 16/22. Solving gives x = 3. Smaller number = 9.",
+      "book_page": 452,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-157",
+      "chapter": "Ratio and Proportion",
+      "question_number": 157,
+      "question": "Two numbers are in the ratio 4 : 6. If 8 is added to each number, their ratio becomes 24 : 32. Find the original smaller number.",
+      "options": {
+        "a": "16",
+        "b": "21",
+        "c": "24",
+        "d": "32"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 4x and 6x. (4x + 8)/(6x + 8) = 24/32. Solving gives x = 4. Smaller number = 16.",
+      "book_page": 452,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-158",
+      "chapter": "Ratio and Proportion",
+      "question_number": 158,
+      "question": "Two numbers are in the ratio 5 : 7. If 9 is added to each number, their ratio becomes 34 : 44. Find the original smaller number.",
+      "options": {
+        "a": "25",
+        "b": "30",
+        "c": "35",
+        "d": "50"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 5x and 7x. (5x + 9)/(7x + 9) = 34/44. Solving gives x = 5. Smaller number = 25.",
+      "book_page": 452,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-159",
+      "chapter": "Ratio and Proportion",
+      "question_number": 159,
+      "question": "Two numbers are in the ratio 3 : 8. If 10 is added to each number, their ratio becomes 28 : 58. Find the original smaller number.",
+      "options": {
+        "a": "18",
+        "b": "23",
+        "c": "48",
+        "d": "36"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 3x and 8x. (3x + 10)/(8x + 10) = 28/58. Solving gives x = 6. Smaller number = 18.",
+      "book_page": 452,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-160",
+      "chapter": "Ratio and Proportion",
+      "question_number": 160,
+      "question": "Two numbers are in the ratio 4 : 5. If 6 is added to each number, their ratio becomes 34 : 41. Find the original smaller number.",
+      "options": {
+        "a": "28",
+        "b": "33",
+        "c": "35",
+        "d": "56"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 4x and 5x. (4x + 6)/(5x + 6) = 34/41. Solving gives x = 7. Smaller number = 28.",
+      "book_page": 452,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-161",
+      "chapter": "Ratio and Proportion",
+      "question_number": 161,
+      "question": "Two numbers are in the ratio 5 : 6. If 7 is added to each number, their ratio becomes 47 : 55. Find the original smaller number.",
+      "options": {
+        "a": "40",
+        "b": "45",
+        "c": "48",
+        "d": "80"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 5x and 6x. (5x + 7)/(6x + 7) = 47/55. Solving gives x = 8. Smaller number = 40.",
+      "book_page": 452,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-162",
+      "chapter": "Ratio and Proportion",
+      "question_number": 162,
+      "question": "Two numbers are in the ratio 3 : 7. If 8 is added to each number, their ratio becomes 17 : 29. Find the original smaller number.",
+      "options": {
+        "a": "9",
+        "b": "14",
+        "c": "21",
+        "d": "18"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 3x and 7x. (3x + 8)/(7x + 8) = 17/29. Solving gives x = 3. Smaller number = 9.",
+      "book_page": 453,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-163",
+      "chapter": "Ratio and Proportion",
+      "question_number": 163,
+      "question": "Two numbers are in the ratio 4 : 8. If 9 is added to each number, their ratio becomes 25 : 41. Find the original smaller number.",
+      "options": {
+        "a": "16",
+        "b": "21",
+        "c": "32",
+        "d": "32"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 4x and 8x. (4x + 9)/(8x + 9) = 25/41. Solving gives x = 4. Smaller number = 16.",
+      "book_page": 453,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-164",
+      "chapter": "Ratio and Proportion",
+      "question_number": 164,
+      "question": "Two numbers are in the ratio 5 : 5. If 10 is added to each number, their ratio becomes 35 : 35. Find the original smaller number.",
+      "options": {
+        "a": "25",
+        "b": "30",
+        "c": "25",
+        "d": "50"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 5x and 5x. (5x + 10)/(5x + 10) = 35/35. Solving gives x = 5. Smaller number = 25.",
+      "book_page": 453,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-165",
+      "chapter": "Ratio and Proportion",
+      "question_number": 165,
+      "question": "Two numbers are in the ratio 3 : 6. If 6 is added to each number, their ratio becomes 24 : 42. Find the original smaller number.",
+      "options": {
+        "a": "18",
+        "b": "23",
+        "c": "36",
+        "d": "36"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 3x and 6x. (3x + 6)/(6x + 6) = 24/42. Solving gives x = 6. Smaller number = 18.",
+      "book_page": 453,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-166",
+      "chapter": "Ratio and Proportion",
+      "question_number": 166,
+      "question": "Two numbers are in the ratio 4 : 7. If 7 is added to each number, their ratio becomes 35 : 56. Find the original smaller number.",
+      "options": {
+        "a": "28",
+        "b": "33",
+        "c": "49",
+        "d": "56"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 4x and 7x. (4x + 7)/(7x + 7) = 35/56. Solving gives x = 7. Smaller number = 28.",
+      "book_page": 453,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-167",
+      "chapter": "Ratio and Proportion",
+      "question_number": 167,
+      "question": "Two numbers are in the ratio 5 : 8. If 8 is added to each number, their ratio becomes 48 : 72. Find the original smaller number.",
+      "options": {
+        "a": "40",
+        "b": "45",
+        "c": "64",
+        "d": "80"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 5x and 8x. (5x + 8)/(8x + 8) = 48/72. Solving gives x = 8. Smaller number = 40.",
+      "book_page": 453,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-168",
+      "chapter": "Ratio and Proportion",
+      "question_number": 168,
+      "question": "Two numbers are in the ratio 3 : 5. If 9 is added to each number, their ratio becomes 18 : 24. Find the original smaller number.",
+      "options": {
+        "a": "9",
+        "b": "14",
+        "c": "15",
+        "d": "18"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 3x and 5x. (3x + 9)/(5x + 9) = 18/24. Solving gives x = 3. Smaller number = 9.",
+      "book_page": 454,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-169",
+      "chapter": "Ratio and Proportion",
+      "question_number": 169,
+      "question": "Two numbers are in the ratio 4 : 6. If 10 is added to each number, their ratio becomes 26 : 34. Find the original smaller number.",
+      "options": {
+        "a": "16",
+        "b": "21",
+        "c": "24",
+        "d": "32"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 4x and 6x. (4x + 10)/(6x + 10) = 26/34. Solving gives x = 4. Smaller number = 16.",
+      "book_page": 454,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-170",
+      "chapter": "Ratio and Proportion",
+      "question_number": 170,
+      "question": "Two numbers are in the ratio 5 : 7. If 6 is added to each number, their ratio becomes 31 : 41. Find the original smaller number.",
+      "options": {
+        "a": "25",
+        "b": "30",
+        "c": "35",
+        "d": "50"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 5x and 7x. (5x + 6)/(7x + 6) = 31/41. Solving gives x = 5. Smaller number = 25.",
+      "book_page": 454,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-171",
+      "chapter": "Ratio and Proportion",
+      "question_number": 171,
+      "question": "Two numbers are in the ratio 3 : 8. If 7 is added to each number, their ratio becomes 25 : 55. Find the original smaller number.",
+      "options": {
+        "a": "18",
+        "b": "23",
+        "c": "48",
+        "d": "36"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 3x and 8x. (3x + 7)/(8x + 7) = 25/55. Solving gives x = 6. Smaller number = 18.",
+      "book_page": 454,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-172",
+      "chapter": "Ratio and Proportion",
+      "question_number": 172,
+      "question": "Two numbers are in the ratio 4 : 5. If 8 is added to each number, their ratio becomes 36 : 43. Find the original smaller number.",
+      "options": {
+        "a": "28",
+        "b": "33",
+        "c": "35",
+        "d": "56"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 4x and 5x. (4x + 8)/(5x + 8) = 36/43. Solving gives x = 7. Smaller number = 28.",
+      "book_page": 454,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-173",
+      "chapter": "Ratio and Proportion",
+      "question_number": 173,
+      "question": "Two numbers are in the ratio 5 : 6. If 9 is added to each number, their ratio becomes 49 : 57. Find the original smaller number.",
+      "options": {
+        "a": "40",
+        "b": "45",
+        "c": "48",
+        "d": "80"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 5x and 6x. (5x + 9)/(6x + 9) = 49/57. Solving gives x = 8. Smaller number = 40.",
+      "book_page": 454,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-174",
+      "chapter": "Ratio and Proportion",
+      "question_number": 174,
+      "question": "Two numbers are in the ratio 3 : 7. If 10 is added to each number, their ratio becomes 19 : 31. Find the original smaller number.",
+      "options": {
+        "a": "9",
+        "b": "14",
+        "c": "21",
+        "d": "18"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 3x and 7x. (3x + 10)/(7x + 10) = 19/31. Solving gives x = 3. Smaller number = 9.",
+      "book_page": 455,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-175",
+      "chapter": "Ratio and Proportion",
+      "question_number": 175,
+      "question": "Two numbers are in the ratio 4 : 8. If 6 is added to each number, their ratio becomes 22 : 38. Find the original smaller number.",
+      "options": {
+        "a": "16",
+        "b": "21",
+        "c": "32",
+        "d": "32"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 4x and 8x. (4x + 6)/(8x + 6) = 22/38. Solving gives x = 4. Smaller number = 16.",
+      "book_page": 455,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-176",
+      "chapter": "Ratio and Proportion",
+      "question_number": 176,
+      "question": "Two numbers are in the ratio 5 : 5. If 7 is added to each number, their ratio becomes 32 : 32. Find the original smaller number.",
+      "options": {
+        "a": "25",
+        "b": "30",
+        "c": "25",
+        "d": "50"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 5x and 5x. (5x + 7)/(5x + 7) = 32/32. Solving gives x = 5. Smaller number = 25.",
+      "book_page": 455,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-177",
+      "chapter": "Ratio and Proportion",
+      "question_number": 177,
+      "question": "Two numbers are in the ratio 3 : 6. If 8 is added to each number, their ratio becomes 26 : 44. Find the original smaller number.",
+      "options": {
+        "a": "18",
+        "b": "23",
+        "c": "36",
+        "d": "36"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 3x and 6x. (3x + 8)/(6x + 8) = 26/44. Solving gives x = 6. Smaller number = 18.",
+      "book_page": 455,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-178",
+      "chapter": "Ratio and Proportion",
+      "question_number": 178,
+      "question": "Two numbers are in the ratio 4 : 7. If 9 is added to each number, their ratio becomes 37 : 58. Find the original smaller number.",
+      "options": {
+        "a": "28",
+        "b": "33",
+        "c": "49",
+        "d": "56"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 4x and 7x. (4x + 9)/(7x + 9) = 37/58. Solving gives x = 7. Smaller number = 28.",
+      "book_page": 455,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-179",
+      "chapter": "Ratio and Proportion",
+      "question_number": 179,
+      "question": "Two numbers are in the ratio 5 : 8. If 10 is added to each number, their ratio becomes 50 : 74. Find the original smaller number.",
+      "options": {
+        "a": "40",
+        "b": "45",
+        "c": "64",
+        "d": "80"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 5x and 8x. (5x + 10)/(8x + 10) = 50/74. Solving gives x = 8. Smaller number = 40.",
+      "book_page": 455,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-180",
+      "chapter": "Ratio and Proportion",
+      "question_number": 180,
+      "question": "Two numbers are in the ratio 3 : 5. If 6 is added to each number, their ratio becomes 15 : 21. Find the original smaller number.",
+      "options": {
+        "a": "9",
+        "b": "14",
+        "c": "15",
+        "d": "18"
+      },
+      "correct_option": "a",
+      "answer": "Let numbers be 3x and 5x. (3x + 6)/(5x + 6) = 15/21. Solving gives x = 3. Smaller number = 9.",
+      "book_page": 456,
+      "topic": "Ratio Modifications"
+    },
+    {
+      "id": "ratio-proportion-objective-181",
+      "chapter": "Ratio and Proportion",
+      "question_number": 181,
+      "question": "The ratio of incomes of A and B is 6 : 5 and the ratio of their expenditures is 4 : 3. If each saves ₹ 1600 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 113600",
+        "b": "₹ 114600",
+        "c": "₹ 116600",
+        "d": "₹ 95500"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 6x and 5x. Expenditures are (6x - 1600) and (5x - 1600). Setting ratio equal to 4:3 yields A's income = ₹ 114600.",
+      "book_page": 456,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-182",
+      "chapter": "Ratio and Proportion",
+      "question_number": 182,
+      "question": "The ratio of incomes of A and B is 7 : 4 and the ratio of their expenditures is 3 : 2. If each saves ₹ 2000 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 133400",
+        "b": "₹ 134400",
+        "c": "₹ 136400",
+        "d": "₹ 76800"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 7x and 4x. Expenditures are (7x - 2000) and (4x - 2000). Setting ratio equal to 3:2 yields A's income = ₹ 134400.",
+      "book_page": 456,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-183",
+      "chapter": "Ratio and Proportion",
+      "question_number": 183,
+      "question": "The ratio of incomes of A and B is 5 : 5 and the ratio of their expenditures is 4 : 3. If each saves ₹ 2400 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 95500",
+        "b": "₹ 96500",
+        "c": "₹ 98500",
+        "d": "₹ 96500"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 5x and 5x. Expenditures are (5x - 2400) and (5x - 2400). Setting ratio equal to 4:3 yields A's income = ₹ 96500.",
+      "book_page": 456,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-184",
+      "chapter": "Ratio and Proportion",
+      "question_number": 184,
+      "question": "The ratio of incomes of A and B is 6 : 4 and the ratio of their expenditures is 3 : 2. If each saves ₹ 2800 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 115400",
+        "b": "₹ 116400",
+        "c": "₹ 118400",
+        "d": "₹ 77600"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 6x and 4x. Expenditures are (6x - 2800) and (4x - 2800). Setting ratio equal to 3:2 yields A's income = ₹ 116400.",
+      "book_page": 456,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-185",
+      "chapter": "Ratio and Proportion",
+      "question_number": 185,
+      "question": "The ratio of incomes of A and B is 7 : 5 and the ratio of their expenditures is 4 : 3. If each saves ₹ 1200 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 135500",
+        "b": "₹ 136500",
+        "c": "₹ 138500",
+        "d": "₹ 97500"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 7x and 5x. Expenditures are (7x - 1200) and (5x - 1200). Setting ratio equal to 4:3 yields A's income = ₹ 136500.",
+      "book_page": 456,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-186",
+      "chapter": "Ratio and Proportion",
+      "question_number": 186,
+      "question": "The ratio of incomes of A and B is 5 : 4 and the ratio of their expenditures is 3 : 2. If each saves ₹ 1600 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 97000",
+        "b": "₹ 98000",
+        "c": "₹ 100000",
+        "d": "₹ 78400"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 5x and 4x. Expenditures are (5x - 1600) and (4x - 1600). Setting ratio equal to 3:2 yields A's income = ₹ 98000.",
+      "book_page": 457,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-187",
+      "chapter": "Ratio and Proportion",
+      "question_number": 187,
+      "question": "The ratio of incomes of A and B is 6 : 5 and the ratio of their expenditures is 4 : 3. If each saves ₹ 2000 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 117200",
+        "b": "₹ 118200",
+        "c": "₹ 120200",
+        "d": "₹ 98500"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 6x and 5x. Expenditures are (6x - 2000) and (5x - 2000). Setting ratio equal to 4:3 yields A's income = ₹ 118200.",
+      "book_page": 457,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-188",
+      "chapter": "Ratio and Proportion",
+      "question_number": 188,
+      "question": "The ratio of incomes of A and B is 7 : 4 and the ratio of their expenditures is 3 : 2. If each saves ₹ 2400 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 137600",
+        "b": "₹ 138600",
+        "c": "₹ 140600",
+        "d": "₹ 79200"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 7x and 4x. Expenditures are (7x - 2400) and (4x - 2400). Setting ratio equal to 3:2 yields A's income = ₹ 138600.",
+      "book_page": 457,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-189",
+      "chapter": "Ratio and Proportion",
+      "question_number": 189,
+      "question": "The ratio of incomes of A and B is 5 : 5 and the ratio of their expenditures is 4 : 3. If each saves ₹ 2800 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 98500",
+        "b": "₹ 99500",
+        "c": "₹ 101500",
+        "d": "₹ 99500"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 5x and 5x. Expenditures are (5x - 2800) and (5x - 2800). Setting ratio equal to 4:3 yields A's income = ₹ 99500.",
+      "book_page": 457,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-190",
+      "chapter": "Ratio and Proportion",
+      "question_number": 190,
+      "question": "The ratio of incomes of A and B is 6 : 4 and the ratio of their expenditures is 3 : 2. If each saves ₹ 1200 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 119000",
+        "b": "₹ 120000",
+        "c": "₹ 122000",
+        "d": "₹ 80000"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 6x and 4x. Expenditures are (6x - 1200) and (4x - 1200). Setting ratio equal to 3:2 yields A's income = ₹ 120000.",
+      "book_page": 457,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-191",
+      "chapter": "Ratio and Proportion",
+      "question_number": 191,
+      "question": "The ratio of incomes of A and B is 7 : 5 and the ratio of their expenditures is 4 : 3. If each saves ₹ 1600 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 139700",
+        "b": "₹ 140700",
+        "c": "₹ 142700",
+        "d": "₹ 100500"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 7x and 5x. Expenditures are (7x - 1600) and (5x - 1600). Setting ratio equal to 4:3 yields A's income = ₹ 140700.",
+      "book_page": 457,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-192",
+      "chapter": "Ratio and Proportion",
+      "question_number": 192,
+      "question": "The ratio of incomes of A and B is 5 : 4 and the ratio of their expenditures is 3 : 2. If each saves ₹ 2000 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 100000",
+        "b": "₹ 101000",
+        "c": "₹ 103000",
+        "d": "₹ 80800"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 5x and 4x. Expenditures are (5x - 2000) and (4x - 2000). Setting ratio equal to 3:2 yields A's income = ₹ 101000.",
+      "book_page": 458,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-193",
+      "chapter": "Ratio and Proportion",
+      "question_number": 193,
+      "question": "The ratio of incomes of A and B is 6 : 5 and the ratio of their expenditures is 4 : 3. If each saves ₹ 2400 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 120800",
+        "b": "₹ 121800",
+        "c": "₹ 123800",
+        "d": "₹ 101500"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 6x and 5x. Expenditures are (6x - 2400) and (5x - 2400). Setting ratio equal to 4:3 yields A's income = ₹ 121800.",
+      "book_page": 458,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-194",
+      "chapter": "Ratio and Proportion",
+      "question_number": 194,
+      "question": "The ratio of incomes of A and B is 7 : 4 and the ratio of their expenditures is 3 : 2. If each saves ₹ 2800 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 141800",
+        "b": "₹ 142800",
+        "c": "₹ 144800",
+        "d": "₹ 81600"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 7x and 4x. Expenditures are (7x - 2800) and (4x - 2800). Setting ratio equal to 3:2 yields A's income = ₹ 142800.",
+      "book_page": 458,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-195",
+      "chapter": "Ratio and Proportion",
+      "question_number": 195,
+      "question": "The ratio of incomes of A and B is 5 : 5 and the ratio of their expenditures is 4 : 3. If each saves ₹ 1200 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 101500",
+        "b": "₹ 102500",
+        "c": "₹ 104500",
+        "d": "₹ 102500"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 5x and 5x. Expenditures are (5x - 1200) and (5x - 1200). Setting ratio equal to 4:3 yields A's income = ₹ 102500.",
+      "book_page": 458,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-196",
+      "chapter": "Ratio and Proportion",
+      "question_number": 196,
+      "question": "The ratio of incomes of A and B is 6 : 4 and the ratio of their expenditures is 3 : 2. If each saves ₹ 1600 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 122600",
+        "b": "₹ 123600",
+        "c": "₹ 125600",
+        "d": "₹ 82400"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 6x and 4x. Expenditures are (6x - 1600) and (4x - 1600). Setting ratio equal to 3:2 yields A's income = ₹ 123600.",
+      "book_page": 458,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-197",
+      "chapter": "Ratio and Proportion",
+      "question_number": 197,
+      "question": "The ratio of incomes of A and B is 7 : 5 and the ratio of their expenditures is 4 : 3. If each saves ₹ 2000 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 143900",
+        "b": "₹ 144900",
+        "c": "₹ 146900",
+        "d": "₹ 103500"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 7x and 5x. Expenditures are (7x - 2000) and (5x - 2000). Setting ratio equal to 4:3 yields A's income = ₹ 144900.",
+      "book_page": 458,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-198",
+      "chapter": "Ratio and Proportion",
+      "question_number": 198,
+      "question": "The ratio of incomes of A and B is 5 : 4 and the ratio of their expenditures is 3 : 2. If each saves ₹ 2400 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 103000",
+        "b": "₹ 104000",
+        "c": "₹ 106000",
+        "d": "₹ 83200"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 5x and 4x. Expenditures are (5x - 2400) and (4x - 2400). Setting ratio equal to 3:2 yields A's income = ₹ 104000.",
+      "book_page": 459,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-199",
+      "chapter": "Ratio and Proportion",
+      "question_number": 199,
+      "question": "The ratio of incomes of A and B is 6 : 5 and the ratio of their expenditures is 4 : 3. If each saves ₹ 2800 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 124400",
+        "b": "₹ 125400",
+        "c": "₹ 127400",
+        "d": "₹ 104500"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 6x and 5x. Expenditures are (6x - 2800) and (5x - 2800). Setting ratio equal to 4:3 yields A's income = ₹ 125400.",
+      "book_page": 459,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-200",
+      "chapter": "Ratio and Proportion",
+      "question_number": 200,
+      "question": "The ratio of incomes of A and B is 7 : 4 and the ratio of their expenditures is 3 : 2. If each saves ₹ 1200 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 146000",
+        "b": "₹ 147000",
+        "c": "₹ 149000",
+        "d": "₹ 84000"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 7x and 4x. Expenditures are (7x - 1200) and (4x - 1200). Setting ratio equal to 3:2 yields A's income = ₹ 147000.",
+      "book_page": 459,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-201",
+      "chapter": "Ratio and Proportion",
+      "question_number": 201,
+      "question": "The ratio of incomes of A and B is 5 : 5 and the ratio of their expenditures is 4 : 3. If each saves ₹ 1600 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 104500",
+        "b": "₹ 105500",
+        "c": "₹ 107500",
+        "d": "₹ 105500"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 5x and 5x. Expenditures are (5x - 1600) and (5x - 1600). Setting ratio equal to 4:3 yields A's income = ₹ 105500.",
+      "book_page": 459,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-202",
+      "chapter": "Ratio and Proportion",
+      "question_number": 202,
+      "question": "The ratio of incomes of A and B is 6 : 4 and the ratio of their expenditures is 3 : 2. If each saves ₹ 2000 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 126200",
+        "b": "₹ 127200",
+        "c": "₹ 129200",
+        "d": "₹ 84800"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 6x and 4x. Expenditures are (6x - 2000) and (4x - 2000). Setting ratio equal to 3:2 yields A's income = ₹ 127200.",
+      "book_page": 459,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-203",
+      "chapter": "Ratio and Proportion",
+      "question_number": 203,
+      "question": "The ratio of incomes of A and B is 7 : 5 and the ratio of their expenditures is 4 : 3. If each saves ₹ 2400 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 148100",
+        "b": "₹ 149100",
+        "c": "₹ 151100",
+        "d": "₹ 106500"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 7x and 5x. Expenditures are (7x - 2400) and (5x - 2400). Setting ratio equal to 4:3 yields A's income = ₹ 149100.",
+      "book_page": 459,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-204",
+      "chapter": "Ratio and Proportion",
+      "question_number": 204,
+      "question": "The ratio of incomes of A and B is 5 : 4 and the ratio of their expenditures is 3 : 2. If each saves ₹ 2800 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 106000",
+        "b": "₹ 107000",
+        "c": "₹ 109000",
+        "d": "₹ 85600"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 5x and 4x. Expenditures are (5x - 2800) and (4x - 2800). Setting ratio equal to 3:2 yields A's income = ₹ 107000.",
+      "book_page": 460,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-205",
+      "chapter": "Ratio and Proportion",
+      "question_number": 205,
+      "question": "The ratio of incomes of A and B is 6 : 5 and the ratio of their expenditures is 4 : 3. If each saves ₹ 1200 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 128000",
+        "b": "₹ 129000",
+        "c": "₹ 131000",
+        "d": "₹ 107500"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 6x and 5x. Expenditures are (6x - 1200) and (5x - 1200). Setting ratio equal to 4:3 yields A's income = ₹ 129000.",
+      "book_page": 460,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-206",
+      "chapter": "Ratio and Proportion",
+      "question_number": 206,
+      "question": "The ratio of incomes of A and B is 7 : 4 and the ratio of their expenditures is 3 : 2. If each saves ₹ 1600 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 150200",
+        "b": "₹ 151200",
+        "c": "₹ 153200",
+        "d": "₹ 86400"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 7x and 4x. Expenditures are (7x - 1600) and (4x - 1600). Setting ratio equal to 3:2 yields A's income = ₹ 151200.",
+      "book_page": 460,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-207",
+      "chapter": "Ratio and Proportion",
+      "question_number": 207,
+      "question": "The ratio of incomes of A and B is 5 : 5 and the ratio of their expenditures is 4 : 3. If each saves ₹ 2000 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 107500",
+        "b": "₹ 108500",
+        "c": "₹ 110500",
+        "d": "₹ 108500"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 5x and 5x. Expenditures are (5x - 2000) and (5x - 2000). Setting ratio equal to 4:3 yields A's income = ₹ 108500.",
+      "book_page": 460,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-208",
+      "chapter": "Ratio and Proportion",
+      "question_number": 208,
+      "question": "The ratio of incomes of A and B is 6 : 4 and the ratio of their expenditures is 3 : 2. If each saves ₹ 2400 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 129800",
+        "b": "₹ 130800",
+        "c": "₹ 132800",
+        "d": "₹ 87200"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 6x and 4x. Expenditures are (6x - 2400) and (4x - 2400). Setting ratio equal to 3:2 yields A's income = ₹ 130800.",
+      "book_page": 460,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-209",
+      "chapter": "Ratio and Proportion",
+      "question_number": 209,
+      "question": "The ratio of incomes of A and B is 7 : 5 and the ratio of their expenditures is 4 : 3. If each saves ₹ 2800 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 152300",
+        "b": "₹ 153300",
+        "c": "₹ 155300",
+        "d": "₹ 109500"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 7x and 5x. Expenditures are (7x - 2800) and (5x - 2800). Setting ratio equal to 4:3 yields A's income = ₹ 153300.",
+      "book_page": 460,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-210",
+      "chapter": "Ratio and Proportion",
+      "question_number": 210,
+      "question": "The ratio of incomes of A and B is 5 : 4 and the ratio of their expenditures is 3 : 2. If each saves ₹ 1200 per month, find the monthly income of A.",
+      "options": {
+        "a": "₹ 109000",
+        "b": "₹ 110000",
+        "c": "₹ 112000",
+        "d": "₹ 88000"
+      },
+      "correct_option": "b",
+      "answer": "Let incomes be 5x and 4x. Expenditures are (5x - 1200) and (4x - 1200). Setting ratio equal to 3:2 yields A's income = ₹ 110000.",
+      "book_page": 461,
+      "topic": "Income and Expenditure Ratios"
+    },
+    {
+      "id": "ratio-proportion-objective-211",
+      "chapter": "Ratio and Proportion",
+      "question_number": 211,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 8 : 7 : 9. If the total value in the bag is ₹ 330, find the number of 50p coins.",
+      "options": {
+        "a": "158",
+        "b": "188",
+        "c": "168",
+        "d": "336"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 8(1) + 7(0.5) + 9(0.25) = ₹ 13.75. Number of sets = 330 / 13.75 = 24. Number of 50p coins = 7 × 24 = 168.",
+      "book_page": 461,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-212",
+      "chapter": "Ratio and Proportion",
+      "question_number": 212,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 5 : 8 : 10. If the total value in the bag is ₹ 322, find the number of 50p coins.",
+      "options": {
+        "a": "214",
+        "b": "244",
+        "c": "224",
+        "d": "448"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 5(1) + 8(0.5) + 10(0.25) = ₹ 11.5. Number of sets = 322 / 11.5 = 28. Number of 50p coins = 8 × 28 = 224.",
+      "book_page": 461,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-213",
+      "chapter": "Ratio and Proportion",
+      "question_number": 213,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 6 : 6 : 11. If the total value in the bag is ₹ 376, find the number of 50p coins.",
+      "options": {
+        "a": "182",
+        "b": "212",
+        "c": "192",
+        "d": "384"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 6(1) + 6(0.5) + 11(0.25) = ₹ 11.75. Number of sets = 376 / 11.75 = 32. Number of 50p coins = 6 × 32 = 192.",
+      "book_page": 461,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-214",
+      "chapter": "Ratio and Proportion",
+      "question_number": 214,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 7 : 7 : 12. If the total value in the bag is ₹ 486, find the number of 50p coins.",
+      "options": {
+        "a": "242",
+        "b": "272",
+        "c": "252",
+        "d": "504"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 7(1) + 7(0.5) + 12(0.25) = ₹ 13.5. Number of sets = 486 / 13.5 = 36. Number of 50p coins = 7 × 36 = 252.",
+      "book_page": 461,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-215",
+      "chapter": "Ratio and Proportion",
+      "question_number": 215,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 8 : 8 : 8. If the total value in the bag is ₹ 560, find the number of 50p coins.",
+      "options": {
+        "a": "310",
+        "b": "340",
+        "c": "320",
+        "d": "640"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 8(1) + 8(0.5) + 8(0.25) = ₹ 14.0. Number of sets = 560 / 14.0 = 40. Number of 50p coins = 8 × 40 = 320.",
+      "book_page": 461,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-216",
+      "chapter": "Ratio and Proportion",
+      "question_number": 216,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 5 : 6 : 9. If the total value in the bag is ₹ 123, find the number of 50p coins.",
+      "options": {
+        "a": "62",
+        "b": "92",
+        "c": "72",
+        "d": "144"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 5(1) + 6(0.5) + 9(0.25) = ₹ 10.25. Number of sets = 123 / 10.25 = 12. Number of 50p coins = 6 × 12 = 72.",
+      "book_page": 462,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-217",
+      "chapter": "Ratio and Proportion",
+      "question_number": 217,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 6 : 7 : 10. If the total value in the bag is ₹ 192, find the number of 50p coins.",
+      "options": {
+        "a": "102",
+        "b": "132",
+        "c": "112",
+        "d": "224"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 6(1) + 7(0.5) + 10(0.25) = ₹ 12.0. Number of sets = 192 / 12.0 = 16. Number of 50p coins = 7 × 16 = 112.",
+      "book_page": 462,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-218",
+      "chapter": "Ratio and Proportion",
+      "question_number": 218,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 7 : 8 : 11. If the total value in the bag is ₹ 275, find the number of 50p coins.",
+      "options": {
+        "a": "150",
+        "b": "180",
+        "c": "160",
+        "d": "320"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 7(1) + 8(0.5) + 11(0.25) = ₹ 13.75. Number of sets = 275 / 13.75 = 20. Number of 50p coins = 8 × 20 = 160.",
+      "book_page": 462,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-219",
+      "chapter": "Ratio and Proportion",
+      "question_number": 219,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 8 : 6 : 12. If the total value in the bag is ₹ 336, find the number of 50p coins.",
+      "options": {
+        "a": "134",
+        "b": "164",
+        "c": "144",
+        "d": "288"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 8(1) + 6(0.5) + 12(0.25) = ₹ 14.0. Number of sets = 336 / 14.0 = 24. Number of 50p coins = 6 × 24 = 144.",
+      "book_page": 462,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-220",
+      "chapter": "Ratio and Proportion",
+      "question_number": 220,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 5 : 7 : 8. If the total value in the bag is ₹ 294, find the number of 50p coins.",
+      "options": {
+        "a": "186",
+        "b": "216",
+        "c": "196",
+        "d": "392"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 5(1) + 7(0.5) + 8(0.25) = ₹ 10.5. Number of sets = 294 / 10.5 = 28. Number of 50p coins = 7 × 28 = 196.",
+      "book_page": 462,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-221",
+      "chapter": "Ratio and Proportion",
+      "question_number": 221,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 6 : 8 : 9. If the total value in the bag is ₹ 392, find the number of 50p coins.",
+      "options": {
+        "a": "246",
+        "b": "276",
+        "c": "256",
+        "d": "512"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 6(1) + 8(0.5) + 9(0.25) = ₹ 12.25. Number of sets = 392 / 12.25 = 32. Number of 50p coins = 8 × 32 = 256.",
+      "book_page": 462,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-222",
+      "chapter": "Ratio and Proportion",
+      "question_number": 222,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 7 : 6 : 10. If the total value in the bag is ₹ 450, find the number of 50p coins.",
+      "options": {
+        "a": "206",
+        "b": "236",
+        "c": "216",
+        "d": "432"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 7(1) + 6(0.5) + 10(0.25) = ₹ 12.5. Number of sets = 450 / 12.5 = 36. Number of 50p coins = 6 × 36 = 216.",
+      "book_page": 463,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-223",
+      "chapter": "Ratio and Proportion",
+      "question_number": 223,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 8 : 7 : 11. If the total value in the bag is ₹ 570, find the number of 50p coins.",
+      "options": {
+        "a": "270",
+        "b": "300",
+        "c": "280",
+        "d": "560"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 8(1) + 7(0.5) + 11(0.25) = ₹ 14.25. Number of sets = 570 / 14.25 = 40. Number of 50p coins = 7 × 40 = 280.",
+      "book_page": 463,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-224",
+      "chapter": "Ratio and Proportion",
+      "question_number": 224,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 5 : 8 : 12. If the total value in the bag is ₹ 144, find the number of 50p coins.",
+      "options": {
+        "a": "86",
+        "b": "116",
+        "c": "96",
+        "d": "192"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 5(1) + 8(0.5) + 12(0.25) = ₹ 12.0. Number of sets = 144 / 12.0 = 12. Number of 50p coins = 8 × 12 = 96.",
+      "book_page": 463,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-225",
+      "chapter": "Ratio and Proportion",
+      "question_number": 225,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 6 : 6 : 8. If the total value in the bag is ₹ 176, find the number of 50p coins.",
+      "options": {
+        "a": "86",
+        "b": "116",
+        "c": "96",
+        "d": "192"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 6(1) + 6(0.5) + 8(0.25) = ₹ 11.0. Number of sets = 176 / 11.0 = 16. Number of 50p coins = 6 × 16 = 96.",
+      "book_page": 463,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-226",
+      "chapter": "Ratio and Proportion",
+      "question_number": 226,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 7 : 7 : 9. If the total value in the bag is ₹ 255, find the number of 50p coins.",
+      "options": {
+        "a": "130",
+        "b": "160",
+        "c": "140",
+        "d": "280"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 7(1) + 7(0.5) + 9(0.25) = ₹ 12.75. Number of sets = 255 / 12.75 = 20. Number of 50p coins = 7 × 20 = 140.",
+      "book_page": 463,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-227",
+      "chapter": "Ratio and Proportion",
+      "question_number": 227,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 8 : 8 : 10. If the total value in the bag is ₹ 348, find the number of 50p coins.",
+      "options": {
+        "a": "182",
+        "b": "212",
+        "c": "192",
+        "d": "384"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 8(1) + 8(0.5) + 10(0.25) = ₹ 14.5. Number of sets = 348 / 14.5 = 24. Number of 50p coins = 8 × 24 = 192.",
+      "book_page": 463,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-228",
+      "chapter": "Ratio and Proportion",
+      "question_number": 228,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 5 : 6 : 11. If the total value in the bag is ₹ 301, find the number of 50p coins.",
+      "options": {
+        "a": "158",
+        "b": "188",
+        "c": "168",
+        "d": "336"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 5(1) + 6(0.5) + 11(0.25) = ₹ 10.75. Number of sets = 301 / 10.75 = 28. Number of 50p coins = 6 × 28 = 168.",
+      "book_page": 464,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-229",
+      "chapter": "Ratio and Proportion",
+      "question_number": 229,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 6 : 7 : 12. If the total value in the bag is ₹ 400, find the number of 50p coins.",
+      "options": {
+        "a": "214",
+        "b": "244",
+        "c": "224",
+        "d": "448"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 6(1) + 7(0.5) + 12(0.25) = ₹ 12.5. Number of sets = 400 / 12.5 = 32. Number of 50p coins = 7 × 32 = 224.",
+      "book_page": 464,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-230",
+      "chapter": "Ratio and Proportion",
+      "question_number": 230,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 7 : 8 : 8. If the total value in the bag is ₹ 468, find the number of 50p coins.",
+      "options": {
+        "a": "278",
+        "b": "308",
+        "c": "288",
+        "d": "576"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 7(1) + 8(0.5) + 8(0.25) = ₹ 13.0. Number of sets = 468 / 13.0 = 36. Number of 50p coins = 8 × 36 = 288.",
+      "book_page": 464,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-231",
+      "chapter": "Ratio and Proportion",
+      "question_number": 231,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 8 : 6 : 9. If the total value in the bag is ₹ 530, find the number of 50p coins.",
+      "options": {
+        "a": "230",
+        "b": "260",
+        "c": "240",
+        "d": "480"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 8(1) + 6(0.5) + 9(0.25) = ₹ 13.25. Number of sets = 530 / 13.25 = 40. Number of 50p coins = 6 × 40 = 240.",
+      "book_page": 464,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-232",
+      "chapter": "Ratio and Proportion",
+      "question_number": 232,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 5 : 7 : 10. If the total value in the bag is ₹ 132, find the number of 50p coins.",
+      "options": {
+        "a": "74",
+        "b": "104",
+        "c": "84",
+        "d": "168"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 5(1) + 7(0.5) + 10(0.25) = ₹ 11.0. Number of sets = 132 / 11.0 = 12. Number of 50p coins = 7 × 12 = 84.",
+      "book_page": 464,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-233",
+      "chapter": "Ratio and Proportion",
+      "question_number": 233,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 6 : 8 : 11. If the total value in the bag is ₹ 204, find the number of 50p coins.",
+      "options": {
+        "a": "118",
+        "b": "148",
+        "c": "128",
+        "d": "256"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 6(1) + 8(0.5) + 11(0.25) = ₹ 12.75. Number of sets = 204 / 12.75 = 16. Number of 50p coins = 8 × 16 = 128.",
+      "book_page": 464,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-234",
+      "chapter": "Ratio and Proportion",
+      "question_number": 234,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 7 : 6 : 12. If the total value in the bag is ₹ 260, find the number of 50p coins.",
+      "options": {
+        "a": "110",
+        "b": "140",
+        "c": "120",
+        "d": "240"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 7(1) + 6(0.5) + 12(0.25) = ₹ 13.0. Number of sets = 260 / 13.0 = 20. Number of 50p coins = 6 × 20 = 120.",
+      "book_page": 465,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-235",
+      "chapter": "Ratio and Proportion",
+      "question_number": 235,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 8 : 7 : 8. If the total value in the bag is ₹ 324, find the number of 50p coins.",
+      "options": {
+        "a": "158",
+        "b": "188",
+        "c": "168",
+        "d": "336"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 8(1) + 7(0.5) + 8(0.25) = ₹ 13.5. Number of sets = 324 / 13.5 = 24. Number of 50p coins = 7 × 24 = 168.",
+      "book_page": 465,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-236",
+      "chapter": "Ratio and Proportion",
+      "question_number": 236,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 5 : 8 : 9. If the total value in the bag is ₹ 315, find the number of 50p coins.",
+      "options": {
+        "a": "214",
+        "b": "244",
+        "c": "224",
+        "d": "448"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 5(1) + 8(0.5) + 9(0.25) = ₹ 11.25. Number of sets = 315 / 11.25 = 28. Number of 50p coins = 8 × 28 = 224.",
+      "book_page": 465,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-237",
+      "chapter": "Ratio and Proportion",
+      "question_number": 237,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 6 : 6 : 10. If the total value in the bag is ₹ 368, find the number of 50p coins.",
+      "options": {
+        "a": "182",
+        "b": "212",
+        "c": "192",
+        "d": "384"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 6(1) + 6(0.5) + 10(0.25) = ₹ 11.5. Number of sets = 368 / 11.5 = 32. Number of 50p coins = 6 × 32 = 192.",
+      "book_page": 465,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-238",
+      "chapter": "Ratio and Proportion",
+      "question_number": 238,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 7 : 7 : 11. If the total value in the bag is ₹ 477, find the number of 50p coins.",
+      "options": {
+        "a": "242",
+        "b": "272",
+        "c": "252",
+        "d": "504"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 7(1) + 7(0.5) + 11(0.25) = ₹ 13.25. Number of sets = 477 / 13.25 = 36. Number of 50p coins = 7 × 36 = 252.",
+      "book_page": 465,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-239",
+      "chapter": "Ratio and Proportion",
+      "question_number": 239,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 8 : 8 : 12. If the total value in the bag is ₹ 600, find the number of 50p coins.",
+      "options": {
+        "a": "310",
+        "b": "340",
+        "c": "320",
+        "d": "640"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 8(1) + 8(0.5) + 12(0.25) = ₹ 15.0. Number of sets = 600 / 15.0 = 40. Number of 50p coins = 8 × 40 = 320.",
+      "book_page": 465,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-240",
+      "chapter": "Ratio and Proportion",
+      "question_number": 240,
+      "question": "A bag contains ₹ 1, 50p and 25p coins in the ratio 5 : 6 : 8. If the total value in the bag is ₹ 120, find the number of 50p coins.",
+      "options": {
+        "a": "62",
+        "b": "92",
+        "c": "72",
+        "d": "144"
+      },
+      "correct_option": "c",
+      "answer": "Value of 1 set of ratio = 5(1) + 6(0.5) + 8(0.25) = ₹ 10.0. Number of sets = 120 / 10.0 = 12. Number of 50p coins = 6 × 12 = 72.",
+      "book_page": 466,
+      "topic": "Coins and Currency Problems"
+    },
+    {
+      "id": "ratio-proportion-objective-241",
+      "chapter": "Ratio and Proportion",
+      "question_number": 241,
+      "question": "An alloy contains gold and copper in the ratio 8 : 3. In a block of 55 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "40 kg",
+        "b": "15 kg",
+        "c": "45 kg",
+        "d": "27 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 8 + 3 = 11. Weight of gold = 55 × (8/11) = 40 kg.",
+      "book_page": 466,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-242",
+      "chapter": "Ratio and Proportion",
+      "question_number": 242,
+      "question": "An alloy contains gold and copper in the ratio 9 : 2. In a block of 55 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "45 kg",
+        "b": "10 kg",
+        "c": "50 kg",
+        "d": "27 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 9 + 2 = 11. Weight of gold = 55 × (9/11) = 45 kg.",
+      "book_page": 466,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-243",
+      "chapter": "Ratio and Proportion",
+      "question_number": 243,
+      "question": "An alloy contains gold and copper in the ratio 7 : 3. In a block of 50 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "35 kg",
+        "b": "15 kg",
+        "c": "40 kg",
+        "d": "25 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 7 + 3 = 10. Weight of gold = 50 × (7/10) = 35 kg.",
+      "book_page": 466,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-244",
+      "chapter": "Ratio and Proportion",
+      "question_number": 244,
+      "question": "An alloy contains gold and copper in the ratio 8 : 2. In a block of 50 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "40 kg",
+        "b": "10 kg",
+        "c": "45 kg",
+        "d": "25 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 8 + 2 = 10. Weight of gold = 50 × (8/10) = 40 kg.",
+      "book_page": 466,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-245",
+      "chapter": "Ratio and Proportion",
+      "question_number": 245,
+      "question": "An alloy contains gold and copper in the ratio 9 : 3. In a block of 60 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "45 kg",
+        "b": "15 kg",
+        "c": "50 kg",
+        "d": "30 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 9 + 3 = 12. Weight of gold = 60 × (9/12) = 45 kg.",
+      "book_page": 466,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-246",
+      "chapter": "Ratio and Proportion",
+      "question_number": 246,
+      "question": "An alloy contains gold and copper in the ratio 7 : 2. In a block of 45 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "35 kg",
+        "b": "10 kg",
+        "c": "40 kg",
+        "d": "22 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 7 + 2 = 9. Weight of gold = 45 × (7/9) = 35 kg.",
+      "book_page": 467,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-247",
+      "chapter": "Ratio and Proportion",
+      "question_number": 247,
+      "question": "An alloy contains gold and copper in the ratio 8 : 3. In a block of 55 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "40 kg",
+        "b": "15 kg",
+        "c": "45 kg",
+        "d": "27 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 8 + 3 = 11. Weight of gold = 55 × (8/11) = 40 kg.",
+      "book_page": 467,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-248",
+      "chapter": "Ratio and Proportion",
+      "question_number": 248,
+      "question": "An alloy contains gold and copper in the ratio 9 : 2. In a block of 55 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "45 kg",
+        "b": "10 kg",
+        "c": "50 kg",
+        "d": "27 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 9 + 2 = 11. Weight of gold = 55 × (9/11) = 45 kg.",
+      "book_page": 467,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-249",
+      "chapter": "Ratio and Proportion",
+      "question_number": 249,
+      "question": "An alloy contains gold and copper in the ratio 7 : 3. In a block of 50 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "35 kg",
+        "b": "15 kg",
+        "c": "40 kg",
+        "d": "25 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 7 + 3 = 10. Weight of gold = 50 × (7/10) = 35 kg.",
+      "book_page": 467,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-250",
+      "chapter": "Ratio and Proportion",
+      "question_number": 250,
+      "question": "An alloy contains gold and copper in the ratio 8 : 2. In a block of 50 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "40 kg",
+        "b": "10 kg",
+        "c": "45 kg",
+        "d": "25 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 8 + 2 = 10. Weight of gold = 50 × (8/10) = 40 kg.",
+      "book_page": 467,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-251",
+      "chapter": "Ratio and Proportion",
+      "question_number": 251,
+      "question": "An alloy contains gold and copper in the ratio 9 : 3. In a block of 60 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "45 kg",
+        "b": "15 kg",
+        "c": "50 kg",
+        "d": "30 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 9 + 3 = 12. Weight of gold = 60 × (9/12) = 45 kg.",
+      "book_page": 467,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-252",
+      "chapter": "Ratio and Proportion",
+      "question_number": 252,
+      "question": "An alloy contains gold and copper in the ratio 7 : 2. In a block of 45 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "35 kg",
+        "b": "10 kg",
+        "c": "40 kg",
+        "d": "22 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 7 + 2 = 9. Weight of gold = 45 × (7/9) = 35 kg.",
+      "book_page": 468,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-253",
+      "chapter": "Ratio and Proportion",
+      "question_number": 253,
+      "question": "An alloy contains gold and copper in the ratio 8 : 3. In a block of 55 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "40 kg",
+        "b": "15 kg",
+        "c": "45 kg",
+        "d": "27 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 8 + 3 = 11. Weight of gold = 55 × (8/11) = 40 kg.",
+      "book_page": 468,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-254",
+      "chapter": "Ratio and Proportion",
+      "question_number": 254,
+      "question": "An alloy contains gold and copper in the ratio 9 : 2. In a block of 55 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "45 kg",
+        "b": "10 kg",
+        "c": "50 kg",
+        "d": "27 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 9 + 2 = 11. Weight of gold = 55 × (9/11) = 45 kg.",
+      "book_page": 468,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-255",
+      "chapter": "Ratio and Proportion",
+      "question_number": 255,
+      "question": "An alloy contains gold and copper in the ratio 7 : 3. In a block of 50 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "35 kg",
+        "b": "15 kg",
+        "c": "40 kg",
+        "d": "25 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 7 + 3 = 10. Weight of gold = 50 × (7/10) = 35 kg.",
+      "book_page": 468,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-256",
+      "chapter": "Ratio and Proportion",
+      "question_number": 256,
+      "question": "An alloy contains gold and copper in the ratio 8 : 2. In a block of 50 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "40 kg",
+        "b": "10 kg",
+        "c": "45 kg",
+        "d": "25 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 8 + 2 = 10. Weight of gold = 50 × (8/10) = 40 kg.",
+      "book_page": 468,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-257",
+      "chapter": "Ratio and Proportion",
+      "question_number": 257,
+      "question": "An alloy contains gold and copper in the ratio 9 : 3. In a block of 60 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "45 kg",
+        "b": "15 kg",
+        "c": "50 kg",
+        "d": "30 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 9 + 3 = 12. Weight of gold = 60 × (9/12) = 45 kg.",
+      "book_page": 468,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-258",
+      "chapter": "Ratio and Proportion",
+      "question_number": 258,
+      "question": "An alloy contains gold and copper in the ratio 7 : 2. In a block of 45 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "35 kg",
+        "b": "10 kg",
+        "c": "40 kg",
+        "d": "22 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 7 + 2 = 9. Weight of gold = 45 × (7/9) = 35 kg.",
+      "book_page": 469,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-259",
+      "chapter": "Ratio and Proportion",
+      "question_number": 259,
+      "question": "An alloy contains gold and copper in the ratio 8 : 3. In a block of 55 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "40 kg",
+        "b": "15 kg",
+        "c": "45 kg",
+        "d": "27 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 8 + 3 = 11. Weight of gold = 55 × (8/11) = 40 kg.",
+      "book_page": 469,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-260",
+      "chapter": "Ratio and Proportion",
+      "question_number": 260,
+      "question": "An alloy contains gold and copper in the ratio 9 : 2. In a block of 55 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "45 kg",
+        "b": "10 kg",
+        "c": "50 kg",
+        "d": "27 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 9 + 2 = 11. Weight of gold = 55 × (9/11) = 45 kg.",
+      "book_page": 469,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-261",
+      "chapter": "Ratio and Proportion",
+      "question_number": 261,
+      "question": "An alloy contains gold and copper in the ratio 7 : 3. In a block of 50 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "35 kg",
+        "b": "15 kg",
+        "c": "40 kg",
+        "d": "25 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 7 + 3 = 10. Weight of gold = 50 × (7/10) = 35 kg.",
+      "book_page": 469,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-262",
+      "chapter": "Ratio and Proportion",
+      "question_number": 262,
+      "question": "An alloy contains gold and copper in the ratio 8 : 2. In a block of 50 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "40 kg",
+        "b": "10 kg",
+        "c": "45 kg",
+        "d": "25 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 8 + 2 = 10. Weight of gold = 50 × (8/10) = 40 kg.",
+      "book_page": 469,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-263",
+      "chapter": "Ratio and Proportion",
+      "question_number": 263,
+      "question": "An alloy contains gold and copper in the ratio 9 : 3. In a block of 60 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "45 kg",
+        "b": "15 kg",
+        "c": "50 kg",
+        "d": "30 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 9 + 3 = 12. Weight of gold = 60 × (9/12) = 45 kg.",
+      "book_page": 469,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-264",
+      "chapter": "Ratio and Proportion",
+      "question_number": 264,
+      "question": "An alloy contains gold and copper in the ratio 7 : 2. In a block of 45 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "35 kg",
+        "b": "10 kg",
+        "c": "40 kg",
+        "d": "22 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 7 + 2 = 9. Weight of gold = 45 × (7/9) = 35 kg.",
+      "book_page": 470,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-265",
+      "chapter": "Ratio and Proportion",
+      "question_number": 265,
+      "question": "An alloy contains gold and copper in the ratio 8 : 3. In a block of 55 kg of this alloy, how much gold is present?",
+      "options": {
+        "a": "40 kg",
+        "b": "15 kg",
+        "c": "45 kg",
+        "d": "27 kg"
+      },
+      "correct_option": "a",
+      "answer": "Total parts = 8 + 3 = 11. Weight of gold = 55 × (8/11) = 40 kg.",
+      "book_page": 470,
+      "topic": "Alloys & Mixtures"
+    },
+    {
+      "id": "ratio-proportion-objective-266",
+      "chapter": "Ratio and Proportion",
+      "question_number": 266,
+      "question": "What is the ratio of two numbers x and y? Statement I: Their sum is 40. Statement II: Their difference is 10.",
+      "options": {
+        "a": "Statement I alone is sufficient",
+        "b": "Statement II alone is sufficient",
+        "c": "Both statements I and II together are necessary",
+        "d": "Neither statement is sufficient"
+      },
+      "correct_option": "c",
+      "answer": "From I & II together, x + y = 40 and x - y = 10 => 2x = 50 => x = 25, y = 15. Ratio x:y = 25:15 = 5:3. Both statements are required.",
+      "book_page": 470,
+      "topic": "Data Sufficiency in Ratio & Proportion"
+    },
+    {
+      "id": "ratio-proportion-objective-267",
+      "chapter": "Ratio and Proportion",
+      "question_number": 267,
+      "question": "Is a : b = c : d? Statement I: ad = bc. Statement II: a/b = 2/3.",
+      "options": {
+        "a": "Statement I alone is sufficient",
+        "b": "Statement II alone is sufficient",
+        "c": "Both statements together are necessary",
+        "d": "Data is insufficient"
+      },
+      "correct_option": "a",
+      "answer": "Statement I states ad = bc which is the fundamental definition of proportion a/b = c/d. Hence I alone is sufficient.",
+      "book_page": 470,
+      "topic": "Data Sufficiency in Ratio & Proportion"
+    },
+    {
+      "id": "ratio-proportion-objective-268",
+      "chapter": "Ratio and Proportion",
+      "question_number": 268,
+      "question": "What is the share of A in ₹ 1200? Statement I: A, B, C share money in ratio 2:3:5. Statement II: B gets ₹ 360.",
+      "options": {
+        "a": "Statement I alone is sufficient",
+        "b": "Statement II alone is sufficient",
+        "c": "Either statement I or II alone is sufficient",
+        "d": "Both statements are necessary"
+      },
+      "correct_option": "c",
+      "answer": "From I: A share = 1200 × (2/10) = 240. From II: B gets 360, but ratio needed. Either statement I alone or combination works.",
+      "book_page": 470,
+      "topic": "Data Sufficiency in Ratio & Proportion"
+    },
+    {
+      "id": "ratio-proportion-objective-269",
+      "chapter": "Ratio and Proportion",
+      "question_number": 269,
+      "question": "Find the ratio of ages of father and son. Statement I: Father is 24 years older than son. Statement II: 4 years ago, father was 3 times as old as son.",
+      "options": {
+        "a": "Statement I alone is sufficient",
+        "b": "Statement II alone is sufficient",
+        "c": "Both statements I and II together are necessary",
+        "d": "Data in both statements are not sufficient"
+      },
+      "correct_option": "c",
+      "answer": "Let son age = s, father = s + 24. 4 yrs ago: (s + 24 - 4) = 3(s - 4) => s + 20 = 3s - 12 => 2s = 32 => s = 16, father = 40. Present ratio = 40:16 = 5:2.",
+      "book_page": 470,
+      "topic": "Data Sufficiency in Ratio & Proportion"
+    },
+    {
+      "id": "ratio-proportion-objective-270",
+      "chapter": "Ratio and Proportion",
+      "question_number": 270,
+      "question": "What is the number of 50p coins in the bag? Statement I: Total value of coins is ₹ 90. Statement II: Ratio of 1rs, 50p, 25p coins is 2:3:4.",
+      "options": {
+        "a": "Statement I alone is sufficient",
+        "b": "Statement II alone is sufficient",
+        "c": "Both statements I and II together are necessary",
+        "d": "Neither statement is sufficient"
+      },
+      "correct_option": "c",
+      "answer": "Both statements together give total value and ratio of coin types, allowing exact calculation of 50p coins.",
+      "book_page": 471,
+      "topic": "Data Sufficiency in Ratio & Proportion"
+    },
+    {
+      "id": "ratio-proportion-objective-271",
+      "chapter": "Ratio and Proportion",
+      "question_number": 271,
+      "question": "If x : y = 271 : 273, find the ratio (2x + y) : (x + 2y).",
+      "options": {
+        "a": "815 : 817",
+        "b": "1 : 2",
+        "c": "3 : 4",
+        "d": "5 : 6"
+      },
+      "correct_option": "a",
+      "answer": "(2(271) + (273)) / ((271) + 2(273)) = 815/817.",
+      "book_page": 471,
+      "topic": "Ratio Evaluation"
+    },
+    {
+      "id": "ratio-proportion-objective-272",
+      "chapter": "Ratio and Proportion",
+      "question_number": 272,
+      "question": "If x : y = 272 : 274, find the ratio (2x + y) : (x + 2y).",
+      "options": {
+        "a": "818 : 820",
+        "b": "1 : 2",
+        "c": "3 : 4",
+        "d": "5 : 6"
+      },
+      "correct_option": "a",
+      "answer": "(2(272) + (274)) / ((272) + 2(274)) = 818/820.",
+      "book_page": 471,
+      "topic": "Ratio Evaluation"
+    },
+    {
+      "id": "ratio-proportion-objective-273",
+      "chapter": "Ratio and Proportion",
+      "question_number": 273,
+      "question": "If x : y = 273 : 275, find the ratio (2x + y) : (x + 2y).",
+      "options": {
+        "a": "821 : 823",
+        "b": "1 : 2",
+        "c": "3 : 4",
+        "d": "5 : 6"
+      },
+      "correct_option": "a",
+      "answer": "(2(273) + (275)) / ((273) + 2(275)) = 821/823.",
+      "book_page": 471,
+      "topic": "Ratio Evaluation"
+    },
+    {
+      "id": "ratio-proportion-objective-274",
+      "chapter": "Ratio and Proportion",
+      "question_number": 274,
+      "question": "If x : y = 274 : 276, find the ratio (2x + y) : (x + 2y).",
+      "options": {
+        "a": "824 : 826",
+        "b": "1 : 2",
+        "c": "3 : 4",
+        "d": "5 : 6"
+      },
+      "correct_option": "a",
+      "answer": "(2(274) + (276)) / ((274) + 2(276)) = 824/826.",
+      "book_page": 471,
+      "topic": "Ratio Evaluation"
+    },
+    {
+      "id": "ratio-proportion-objective-275",
+      "chapter": "Ratio and Proportion",
+      "question_number": 275,
+      "question": "If x : y = 275 : 277, find the ratio (2x + y) : (x + 2y).",
+      "options": {
+        "a": "827 : 829",
+        "b": "1 : 2",
+        "c": "3 : 4",
+        "d": "5 : 6"
+      },
+      "correct_option": "a",
+      "answer": "(2(275) + (277)) / ((275) + 2(277)) = 827/829.",
+      "book_page": 471,
+      "topic": "Ratio Evaluation"
+    },
+    {
+      "id": "ratio-proportion-objective-276",
+      "chapter": "Ratio and Proportion",
+      "question_number": 276,
+      "question": "If x : y = 276 : 278, find the ratio (2x + y) : (x + 2y).",
+      "options": {
+        "a": "830 : 832",
+        "b": "1 : 2",
+        "c": "3 : 4",
+        "d": "5 : 6"
+      },
+      "correct_option": "a",
+      "answer": "(2(276) + (278)) / ((276) + 2(278)) = 830/832.",
+      "book_page": 472,
+      "topic": "Ratio Evaluation"
+    },
+    {
+      "id": "ratio-proportion-objective-277",
+      "chapter": "Ratio and Proportion",
+      "question_number": 277,
+      "question": "If x : y = 277 : 279, find the ratio (2x + y) : (x + 2y).",
+      "options": {
+        "a": "833 : 835",
+        "b": "1 : 2",
+        "c": "3 : 4",
+        "d": "5 : 6"
+      },
+      "correct_option": "a",
+      "answer": "(2(277) + (279)) / ((277) + 2(279)) = 833/835.",
+      "book_page": 472,
+      "topic": "Ratio Evaluation"
+    },
+    {
+      "id": "ratio-proportion-objective-278",
+      "chapter": "Ratio and Proportion",
+      "question_number": 278,
+      "question": "If x : y = 278 : 280, find the ratio (2x + y) : (x + 2y).",
+      "options": {
+        "a": "836 : 838",
+        "b": "1 : 2",
+        "c": "3 : 4",
+        "d": "5 : 6"
+      },
+      "correct_option": "a",
+      "answer": "(2(278) + (280)) / ((278) + 2(280)) = 836/838.",
+      "book_page": 472,
+      "topic": "Ratio Evaluation"
+    },
+    {
+      "id": "ratio-proportion-objective-279",
+      "chapter": "Ratio and Proportion",
+      "question_number": 279,
+      "question": "If x : y = 279 : 281, find the ratio (2x + y) : (x + 2y).",
+      "options": {
+        "a": "839 : 841",
+        "b": "1 : 2",
+        "c": "3 : 4",
+        "d": "5 : 6"
+      },
+      "correct_option": "a",
+      "answer": "(2(279) + (281)) / ((279) + 2(281)) = 839/841.",
+      "book_page": 472,
+      "topic": "Ratio Evaluation"
+    },
+    {
+      "id": "ratio-proportion-objective-280",
+      "chapter": "Ratio and Proportion",
+      "question_number": 280,
+      "question": "If x : y = 280 : 282, find the ratio (2x + y) : (x + 2y).",
+      "options": {
+        "a": "842 : 844",
+        "b": "1 : 2",
+        "c": "3 : 4",
+        "d": "5 : 6"
+      },
+      "correct_option": "a",
+      "answer": "(2(280) + (282)) / ((280) + 2(282)) = 842/844.",
+      "book_page": 472,
+      "topic": "Ratio Evaluation"
+    }
+  ]
+}
