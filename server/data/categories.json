@@ -1,0 +1,47 @@
+[
+  {
+    "id": "quantitative",
+    "title": "Quantitative Aptitude",
+    "description": "Numbers, Percentages, Profit & Loss, Time & Work, Speed & Distance, Probability, P&C.",
+    "icon": "Calculator",
+    "color": "#3b82f6",
+    "bgGradient": "linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(37, 99, 235, 0.05))",
+    "topics": ["Time & Work", "Speed & Distance", "Profit & Loss", "Percentages", "Probability", "Permutations & Combinations", "Ratio & Proportion", "Averages"]
+  },
+  {
+    "id": "logical",
+    "title": "Logical Reasoning",
+    "description": "Syllogisms, Blood Relations, Coding-Decoding, Seating Arrangement, Clocks & Calendars.",
+    "icon": "Brain",
+    "color": "#8b5cf6",
+    "bgGradient": "linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(124, 58, 237, 0.05))",
+    "topics": ["Syllogism", "Blood Relations", "Coding-Decoding", "Seating Arrangement", "Direction Sense", "Series & Sequences", "Clocks & Calendars"]
+  },
+  {
+    "id": "verbal",
+    "title": "Verbal Ability",
+    "description": "Reading Comprehension, Synonyms, Antonyms, Sentence Correction, Error Spotting, Idioms.",
+    "icon": "BookOpen",
+    "color": "#ec4899",
+    "bgGradient": "linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(219, 39, 119, 0.05))",
+    "topics": ["Sentence Correction", "Synonyms & Antonyms", "Reading Comprehension", "Para Jumbles", "Idioms & Phrases", "Vocabulary"]
+  },
+  {
+    "id": "di",
+    "title": "Data Interpretation",
+    "description": "Bar Charts, Pie Charts, Line Graphs, Tables, and Caselet Problems for Competitive Exams.",
+    "icon": "PieChart",
+    "color": "#10b981",
+    "bgGradient": "linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.05))",
+    "topics": ["Bar Chart Analysis", "Pie Chart Percentages", "Table Data", "Line Graphs", "Data Sufficiency"]
+  },
+  {
+    "id": "technical",
+    "title": "CS & Tech Aptitude",
+    "description": "Data Structures, Algorithms, OS, DBMS, Computer Networks, and Coding Output Snippets.",
+    "icon": "Code2",
+    "color": "#f59e0b",
+    "bgGradient": "linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.05))",
+    "topics": ["Data Structures", "Algorithms & Time Complexity", "Database Management (DBMS)", "Operating Systems", "Networking & C/C++/Java Basics"]
+  }
+]
