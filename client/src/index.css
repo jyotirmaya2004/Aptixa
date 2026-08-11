@@ -424,6 +424,361 @@ html, body {
   box-sizing: inherit;
 }
 
+/* ── Modal Overlay: always centered, padded, never overflows ── */
+.modal-overlay {
+  align-items: flex-end !important; /* bottom-sheet feel on mobile */
+}
+@media (min-width: 600px) {
+  .modal-overlay {
+    align-items: center !important;
+  }
+}
+.modal-content {
+  width: 100% !important;
+  max-width: 540px;
+  max-height: 92vh;
+  overflow-y: auto;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0 !important;
+}
+@media (min-width: 600px) {
+  .modal-content {
+    border-radius: var(--radius-lg) !important;
+  }
+}
+
+/* ── Quiz Config Modal: 2-col grids become 1-col on mobile ── */
+.quiz-config-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 520px) {
+  .quiz-config-grid-2 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ── Header Nav ── */
+.mobile-hamburger-btn { display: none !important; }
+
+@media (max-width: 1080px) {
+  .desktop-header-nav { display: none !important; }
+  .desktop-stats-badge { display: none !important; }
+  .mobile-hamburger-btn { display: inline-flex !important; }
+  .header-search-btn { max-width: 160px !important; }
+}
+
+@media (max-width: 768px) {
+  .header-search-btn { max-width: 130px !important; font-size: 0.76rem !important; }
+  .header-search-btn span:nth-child(2) { display: none !important; }
+
+  /* Quiz runner palette sidebar stacks below */
+  .quiz-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Hero section compact on tablet */
+  .hero-container {
+    padding: 20px 14px !important;
+  }
+
+  /* Modal padding tighter */
+  .modal-content {
+    padding: 20px 16px !important;
+  }
+
+  /* Option buttons slightly smaller */
+  .option-btn {
+    padding: 11px 14px !important;
+    font-size: 0.88rem !important;
+  }
+
+  /* Tables scroll horizontally */
+  .formal-table {
+    font-size: 0.78rem !important;
+    display: block !important;
+    overflow-x: auto !important;
+  }
+  .formal-table th, .formal-table td {
+    padding: 8px 10px !important;
+  }
+
+  /* QuizResult: metric chips wrap & resize */
+  .quiz-result-metrics {
+    gap: 8px !important;
+  }
+  .quiz-result-metrics > div {
+    padding: 10px 14px !important;
+    min-width: 80px !important;
+  }
+
+  /* Quiz runner top bar stacks */
+  .quiz-topbar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+  }
+  .quiz-topbar-right {
+    width: 100% !important;
+    justify-content: space-between !important;
+  }
+
+  /* QuizResult review cards */
+  .quiz-review-options-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-search-btn {
+    max-width: 38px !important;
+    padding: 6px !important;
+    justify-content: center !important;
+  }
+  .header-search-btn span { display: none !important; }
+
+  .nav-tab {
+    padding: 6px 8px !important;
+    font-size: 0.75rem !important;
+  }
+
+  .stat-number {
+    font-size: 1.3rem !important;
+  }
+
+  /* Cards compact on small screens */
+  .glass-card {
+    padding: 12px 10px !important;
+  }
+
+  /* Domain category cards: single col */
+  .domain-card {
+    padding: 18px 14px !important;
+  }
+
+  /* Modal: full-screen bottom sheet */
+  .modal-content {
+    max-height: 95vh !important;
+    padding: 18px 14px !important;
+    border-radius: 16px 16px 0 0 !important;
+  }
+
+  /* Quiz config mode buttons: stacked full width */
+  .quiz-mode-btn-group {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Question count chips smaller */
+  .question-count-chip {
+    padding: 5px 8px !important;
+    font-size: 0.78rem !important;
+  }
+
+  /* Quiz runner question card */
+  .quiz-question-card {
+    padding: 18px 14px !important;
+  }
+
+  /* Result scorecard: single column */
+  .quiz-result-metrics {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
+
+/* ── DSA / LeetCode 500 Workspace ── */
+.mobile-dsa-list-bar {
+  display: none;
+}
+
+.dsa-workspace-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 20px;
+  align-items: start;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .mobile-dsa-list-bar {
+    display: block !important;
+    width: 100%;
+  }
+  .dsa-problem-sidebar {
+    display: none;
+  }
+  .dsa-problem-sidebar.mobile-open {
+    display: block !important;
+    margin-bottom: 16px;
+  }
+  .dsa-workspace-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+  .dsa-problem-sidebar-list {
+    max-height: 320px !important;
+  }
+  .leetcode-500-container {
+    padding: 10px 8px !important;
+  }
+  .dsa-main-card {
+    padding: 18px 14px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .leetcode-500-container {
+    padding: 6px 4px !important;
+  }
+  .dsa-main-card {
+    padding: 14px 10px !important;
+    word-break: break-word !important;
+  }
+  .dsa-problem-header-bar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+  }
+  .dsa-problem-header-bar h3 {
+    font-size: 1.1rem !important;
+    word-break: break-word !important;
+    line-height: 1.3 !important;
+  }
+  /* Next/Prev/Copy buttons full-width row on mobile */
+  .dsa-problem-header-bar > div:last-child {
+    width: 100% !important;
+    display: flex !important;
+    gap: 6px !important;
+  }
+  .dsa-problem-header-bar > div:last-child > button {
+    flex: 1 !important;
+    justify-content: center !important;
+    font-size: 0.75rem !important;
+    padding: 6px 8px !important;
+  }
+  .dsa-problem-meta-row {
+    flex-direction: column !important;
+    gap: 3px !important;
+    font-size: 0.78rem !important;
+  }
+  .dsa-code-header-bar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+  }
+  .dsa-code-viewport {
+    padding: 10px 8px !important;
+    font-size: 0.74rem !important;
+    white-space: pre-wrap !important;
+    word-break: break-all !important;
+    overflow-x: auto !important;
+  }
+  /* Category filter chips: horizontal scroll */
+  .dsa-category-scroll {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    padding-bottom: 4px !important;
+  }
+  .dsa-category-scroll::-webkit-scrollbar { display: none !important; }
+}
+
+/* ── Interactive Sandbox responsive ── */
+@media (max-width: 768px) {
+  .sandbox-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .sandbox-filter-row {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+  .sandbox-filter-row > * {
+    width: 100% !important;
+  }
+}
+
+/* ── Books Section responsive ── */
+@media (max-width: 640px) {
+  .books-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .chapter-header-bar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+  }
+}
+
+/* ── Performance Stats responsive ── */
+@media (max-width: 640px) {
+  .stats-kpi-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+@media (max-width: 380px) {
+  .stats-kpi-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ── Tips & Formulas responsive ── */
+@media (max-width: 640px) {
+  .tips-tab-bar {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    flex-wrap: nowrap !important;
+  }
+  .tips-tab-bar::-webkit-scrollbar { display: none !important; }
+}
+
+/* ── QuizRunner: question palette palette grid on mobile ── */
+@media (max-width: 768px) {
+  .question-palette-grid {
+    grid-template-columns: repeat(auto-fill, minmax(34px, 1fr)) !important;
+    max-height: 160px !important;
+  }
+  .quiz-nav-controls {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+}
+
+/* ── High Contrast Theme Classes for DSA Examples & Constraints ── */
+.dsa-example-input {
+  color: #d97706;
+  font-weight: 700;
+}
+.dsa-example-output {
+  color: #16a34a;
+  font-weight: 700;
+}
+.dsa-constraint-pill {
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  font-size: 0.76rem;
+  color: #0284c7;
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+
+[data-theme="dark"] .dsa-example-input, body.dark .dsa-example-input {
+  color: #f1fa8c !important;
+}
+[data-theme="dark"] .dsa-example-output, body.dark .dsa-example-output {
+  color: #50fa7b !important;
+}
+[data-theme="dark"] .dsa-constraint-pill, body.dark .dsa-constraint-pill {
+  color: #8be9fd !important;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* Responsive Header Navigation Elements */
 .mobile-hamburger-btn { display: none !important; }
 

@@ -43,7 +43,7 @@ export default function QuizResult({ result, questions, onRetake, onBackHome }) 
         </p>
 
         {/* Metric Chips */}
-        <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '28px' }}>
+        <div className="quiz-result-metrics" style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '28px' }}>
           {[
             { label: 'Correct',   value: result.score,                         color: 'var(--success)' },
             { label: 'Incorrect', value: result.totalQuestions - result.score, color: 'var(--danger)'  },
@@ -99,7 +99,7 @@ export default function QuizResult({ result, questions, onRetake, onBackHome }) 
 
               {isOpen && (
                 <div style={{ marginTop: '16px', paddingTop: '16px', borderTop: '1px solid var(--border-color)' }}>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginBottom: '14px' }}>
+                  <div className="quiz-review-options-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginBottom: '14px' }}>
                     {q.options.map((opt, oIdx) => {
                       const isCorr = q.correctOption === oIdx;
                       const isUser = userOpt === oIdx;

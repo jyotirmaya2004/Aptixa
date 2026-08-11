@@ -91,10 +91,10 @@ export default function QuizRunner({
   const timerPct   = (secondsRemaining / totalExamSeconds) * 100;
 
   return (
-    <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '24px 16px' }}>
+    <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '16px 12px' }}>
 
       {/* Top Bar */}
-      <div className="glass-card" style={{ padding: '14px 20px', marginBottom: '20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '14px' }}>
+      <div className="glass-card quiz-topbar" style={{ padding: '12px 16px', marginBottom: '16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
           <button className="btn btn-outline btn-sm" onClick={onExitQuiz}>
             <ArrowLeft size={15} /> Exit
@@ -112,7 +112,7 @@ export default function QuizRunner({
           </div>
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+        <div className="quiz-topbar-right" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
           {mode === 'exam' ? (
             <div style={{
               display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '4px',
@@ -143,10 +143,10 @@ export default function QuizRunner({
       </div>
 
       {/* Main Grid: Responsive layout */}
-      <div className="quiz-layout" style={{ display: 'grid', gridTemplateColumns: mode === 'exam' ? '1fr 280px' : '1fr', gap: '20px' }}>
+      <div className="quiz-layout" style={{ display: 'grid', gridTemplateColumns: mode === 'exam' ? '1fr 280px' : '1fr', gap: '16px' }}>
 
         {/* Question Card */}
-        <div className="glass-card" style={{ padding: '28px' }}>
+        <div className="glass-card quiz-question-card" style={{ padding: '24px 20px' }}>
           
           {/* Meta row */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '18px', paddingBottom: '14px', borderBottom: '1px solid var(--border-color)' }}>
@@ -269,7 +269,7 @@ export default function QuizRunner({
           )}
 
           {/* Navigation Controls */}
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '22px' }}>
+          <div className="quiz-nav-controls" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '20px' }}>
             <button
               className="btn btn-outline"
               disabled={currentIndex === 0}
