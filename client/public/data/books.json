@@ -286,38 +286,6 @@
         "question_count": 81,
         "description": "Finding odd man out, wrong number in series, missing term in sequence, pattern identification, arithmetic, geometric and prime series.",
         "file": "rs_agrawal/odd_man_out_and_series.json"
-      },
-      {
-        "id": "ch-tabulation",
-        "chapter_number": 36,
-        "title": "36. Tabulation",
-        "question_count": 25,
-        "description": "Tabular data interpretation, row and column totals, percentages, ratios, growth rates, and multi-table data analysis.",
-        "file": "rs_agrawal/tabulation.json"
-      },
-      {
-        "id": "ch-bar-graphs",
-        "chapter_number": 37,
-        "title": "37. Bar Graphs",
-        "question_count": 31,
-        "description": "Bar diagram data analysis, percentage changes, average calculations, multi-bar comparisons, and production/sales graph evaluation.",
-        "file": "rs_agrawal/bar_graphs.json"
-      },
-      {
-        "id": "ch-pie-chart",
-        "chapter_number": 38,
-        "title": "38. Pie Chart",
-        "question_count": 29,
-        "description": "Pie chart central angles, percentage composition, sector values, dual chart comparisons, and multi-variable data interpretation.",
-        "file": "rs_agrawal/pie_chart.json"
-      },
-      {
-        "id": "ch-line-graphs",
-        "chapter_number": 39,
-        "title": "39. Line Graphs",
-        "question_count": 28,
-        "description": "Line graph trend analysis, plotted values, ratio of series, percentage growth, profit percentage on investment, and multi-line comparisons.",
-        "file": "rs_agrawal/line_graphs.json"
       }
     ]
   },
