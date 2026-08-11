@@ -3,8 +3,9 @@ import { Calculator, Brain, BookOpen, PieChart, Code2, Play, BookCheck } from 'l
 
 const iconMap = { Calculator, Brain, BookOpen, PieChart, Code2 };
 
-export default function CategoryCard({ category, onOpenConfig }) {
+export default function CategoryCard({ category, onOpenConfig, onStartQuiz }) {
   const Icon = iconMap[category.icon] || BookOpen;
+  const handleAction = onOpenConfig || onStartQuiz;
 
   const accent = {
     quantitative: '#2563eb',
@@ -21,7 +22,7 @@ export default function CategoryCard({ category, onOpenConfig }) {
       <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: accent, borderRadius: 'var(--radius-md) var(--radius-md) 0 0' }} />
 
       <div>
-        {/* Icon + Count */}
+        {/* Icon Header */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '18px' }}>
           <div style={{
             width: '44px', height: '44px',
@@ -33,10 +34,6 @@ export default function CategoryCard({ category, onOpenConfig }) {
           }}>
             <Icon size={22} />
           </div>
-
-          <span className="badge badge-info" style={{ color: accent, background: `${accent}15`, borderColor: `${accent}30` }}>
-            {category.questionCount} Q's Available
-          </span>
         </div>
 
         <h3 style={{ fontSize: '1.1rem', marginBottom: '7px', fontWeight: '700' }}>{category.title}</h3>
@@ -69,14 +66,14 @@ export default function CategoryCard({ category, onOpenConfig }) {
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
         <button
           className="btn btn-primary btn-sm"
-          onClick={() => onOpenConfig(category, 'exam')}
+          onClick={() => handleAction && handleAction(category, 'exam')}
           style={{ width: '100%', justifyContent: 'center' }}
         >
           <Play size={13} fill="currentColor" /> Timed Exam
         </button>
         <button
           className="btn btn-secondary btn-sm"
-          onClick={() => onOpenConfig(category, 'practice')}
+          onClick={() => handleAction && handleAction(category, 'practice')}
           style={{ width: '100%', justifyContent: 'center' }}
         >
           <BookCheck size={13} /> Practice

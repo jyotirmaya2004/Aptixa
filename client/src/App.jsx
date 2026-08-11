@@ -485,22 +485,52 @@ export default function App() {
                   </div>
                 </div>
 
-                {/* Categories Grid */}
-                <h2 style={{ fontSize: '1.25rem', marginBottom: '20px', fontWeight: '700' }}>
-                  Select Assessment Domain
-                </h2>
-                <div style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
-                  gap: '20px'
-                }}>
-                  {categories.map(cat => (
-                    <CategoryCard
-                      key={cat.id}
-                      category={cat}
-                      onStartQuiz={handleOpenQuizConfig}
-                    />
-                  ))}
+                {/* Section 1: Core Assessment Domains */}
+                <div style={{ marginBottom: '40px' }}>
+                  <h2 style={{ fontSize: '1.25rem', marginBottom: '8px', fontWeight: '700', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <BookOpen size={20} color="var(--accent-primary)" /> Core Placement Assessment Domains
+                  </h2>
+                  <p style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginBottom: '18px' }}>
+                    Primary aptitude and technical evaluation modules for placement preparation.
+                  </p>
+                  <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+                    gap: '20px'
+                  }}>
+                    {categories.filter(c => !c.id.startsWith('gold-')).map(cat => (
+                      <CategoryCard
+                        key={cat.id}
+                        category={cat}
+                        onOpenConfig={handleOpenQuizConfig}
+                        onStartQuiz={handleOpenQuizConfig}
+                      />
+                    ))}
+                  </div>
+                </div>
+
+                {/* Section 2: Aptitude Gold API Topics */}
+                <div>
+                  <h2 style={{ fontSize: '1.25rem', marginBottom: '8px', fontWeight: '700', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <Sparkles size={20} color="#f59e0b" /> Aptitude Gold API Topics (Live &amp; Offline Cached)
+                  </h2>
+                  <p style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginBottom: '18px' }}>
+                    Topic-wise aptitude questions sourced dynamically from the Aptitude Gold API engine.
+                  </p>
+                  <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+                    gap: '20px'
+                  }}>
+                    {categories.filter(c => c.id.startsWith('gold-')).map(cat => (
+                      <CategoryCard
+                        key={cat.id}
+                        category={cat}
+                        onOpenConfig={handleOpenQuizConfig}
+                        onStartQuiz={handleOpenQuizConfig}
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
             )}
