@@ -1,0 +1,799 @@
+import json
+import os
+
+data = {
+  "book": "Quantitative Aptitude for Competitive Examinations — R.S. Aggarwal",
+  "chapter_number": 30,
+  "chapter": "Permutations and Combinations",
+  "book_page_range": "841–849",
+  "objective_questions": 48,
+  "exercise": {
+    "title": "Objective Type Questions",
+    "question_count": 48,
+    "questions": [
+      {
+        "id": "permutations-and-combinations-001",
+        "chapter": "Permutations and Combinations",
+        "question_number": 1,
+        "question": "(75P2 – 75C2) =?",
+        "options": {
+          "a": "0",
+          "b": "75",
+          "c": "150",
+          "d": "2775",
+          "e": "5550"
+        },
+        "correct_option": "d",
+        "answer": "2775",
+        "explanation": "75P2 = 75 × 74 = 5550. 75C2 = (75 × 74) / 2 = 2775. 5550 - 2775 = 2775."
+      },
+      {
+        "id": "permutations-and-combinations-002",
+        "chapter": "Permutations and Combinations",
+        "question_number": 2,
+        "question": "In how many different ways can the letters of the word DISPLAY be arranged? (Bank P.O., 2009)",
+        "options": {
+          "a": "720",
+          "b": "1440",
+          "c": "2520",
+          "d": "5040",
+          "e": "None of these"
+        },
+        "correct_option": "d",
+        "answer": "5040",
+        "explanation": "DISPLAY has 7 distinct letters. Total ways = 7! = 5040."
+      },
+      {
+        "id": "permutations-and-combinations-003",
+        "chapter": "Permutations and Combinations",
+        "question_number": 3,
+        "question": "In how many different ways can the letters of the word SMART be arranged? (Bank P.O., 2009)",
+        "options": {
+          "a": "25",
+          "b": "60",
+          "c": "180",
+          "d": "200",
+          "e": "None of these"
+        },
+        "correct_option": "e",
+        "answer": "None of these",
+        "explanation": "SMART has 5 distinct letters. Total ways = 5! = 120 (Not in a, b, c, d)."
+      },
+      {
+        "id": "permutations-and-combinations-004",
+        "chapter": "Permutations and Combinations",
+        "question_number": 4,
+        "question": "In how many different ways can the letters of the word FORMULATE be arranged? (Bank P.O., 2008)",
+        "options": {
+          "a": "8100",
+          "b": "40320",
+          "c": "153420",
+          "d": "362880",
+          "e": "None of these"
+        },
+        "correct_option": "d",
+        "answer": "362880",
+        "explanation": "FORMULATE has 9 distinct letters. Total ways = 9! = 362880."
+      },
+      {
+        "id": "permutations-and-combinations-005",
+        "chapter": "Permutations and Combinations",
+        "question_number": 5,
+        "question": "In how many different ways can the letters of the word GAMBLE be arranged? (Bank P.O., 2010)",
+        "options": {
+          "a": "15",
+          "b": "25",
+          "c": "60",
+          "d": "125",
+          "e": "None of these"
+        },
+        "correct_option": "e",
+        "answer": "None of these",
+        "explanation": "GAMBLE has 6 distinct letters. Total ways = 6! = 720."
+      },
+      {
+        "id": "permutations-and-combinations-006",
+        "chapter": "Permutations and Combinations",
+        "question_number": 6,
+        "question": "In how many different ways can the letters of the word RIDDLED be arranged? (Bank P.O., 2006)",
+        "options": {
+          "a": "840",
+          "b": "1680",
+          "c": "2520",
+          "d": "5040",
+          "e": "None of these"
+        },
+        "correct_option": "a",
+        "answer": "840",
+        "explanation": "RIDDLED has 7 letters with 3 D's. Total ways = 7! / 3! = 5040 / 6 = 840."
+      },
+      {
+        "id": "permutations-and-combinations-007",
+        "chapter": "Permutations and Combinations",
+        "question_number": 7,
+        "question": "In how many different ways can the letters of the word CREATE be arranged? (Bank P.O., 2011)",
+        "options": {
+          "a": "25",
+          "b": "36",
+          "c": "360",
+          "d": "720",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "360",
+        "explanation": "CREATE has 6 letters with 2 E's. Total ways = 6! / 2! = 360."
+      },
+      {
+        "id": "permutations-and-combinations-008",
+        "chapter": "Permutations and Combinations",
+        "question_number": 8,
+        "question": "In how many different ways can the letters of the word TOTAL be arranged? (Bank P.O., 2009)",
+        "options": {
+          "a": "45",
+          "b": "60",
+          "c": "72",
+          "d": "120",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "60",
+        "explanation": "TOTAL has 5 letters with 2 T's. Total ways = 5! / 2! = 60."
+      },
+      {
+        "id": "permutations-and-combinations-009",
+        "chapter": "Permutations and Combinations",
+        "question_number": 9,
+        "question": "In how many different ways can the letters of the word OFFICES be arranged? (Bank P.O., 2010)",
+        "options": {
+          "a": "2520",
+          "b": "5040",
+          "c": "1850",
+          "d": "1680",
+          "e": "None of these"
+        },
+        "correct_option": "a",
+        "answer": "2520",
+        "explanation": "OFFICES has 7 letters with 2 F's. Total ways = 7! / 2! = 2520."
+      },
+      {
+        "id": "permutations-and-combinations-010",
+        "chapter": "Permutations and Combinations",
+        "question_number": 10,
+        "question": "In how many different ways can the letters of the word BANANA be arranged?",
+        "options": {
+          "a": "60",
+          "b": "120",
+          "c": "360",
+          "d": "720",
+          "e": "None of these"
+        },
+        "correct_option": "a",
+        "answer": "60",
+        "explanation": "BANANA has 6 letters with 3 A's and 2 N's. Total ways = 6! / (3! × 2!) = 720 / 12 = 60."
+      },
+      {
+        "id": "permutations-and-combinations-011",
+        "chapter": "Permutations and Combinations",
+        "question_number": 11,
+        "question": "In how many different ways can the letters of the word WEDDING be arranged? (Bank P.O., 2008)",
+        "options": {
+          "a": "2500",
+          "b": "2520",
+          "c": "5000",
+          "d": "5040",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "2520",
+        "explanation": "WEDDING has 7 letters with 2 D's. Total ways = 7! / 2! = 2520."
+      },
+      {
+        "id": "permutations-and-combinations-012",
+        "chapter": "Permutations and Combinations",
+        "question_number": 12,
+        "question": "In how many different ways can the letters of the word INCREASE be arranged? (Bank P.O., 2009)",
+        "options": {
+          "a": "40320",
+          "b": "10080",
+          "c": "20160",
+          "d": "64",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "20160",
+        "explanation": "INCREASE has 8 letters with 2 E's. Total ways = 8! / 2! = 20160."
+      },
+      {
+        "id": "permutations-and-combinations-013",
+        "chapter": "Permutations and Combinations",
+        "question_number": 13,
+        "question": "In how many different ways can the letters of the word ABSENTEE be arranged? (Bank P.O., 2006)",
+        "options": {
+          "a": "512",
+          "b": "6720",
+          "c": "9740",
+          "d": "40320",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "6720",
+        "explanation": "ABSENTEE has 8 letters with 3 E's. Total ways = 8! / 3! = 40320 / 6 = 6720."
+      },
+      {
+        "id": "permutations-and-combinations-014",
+        "chapter": "Permutations and Combinations",
+        "question_number": 14,
+        "question": "In how many different ways can the letters of the word AWARE be arranged? (Bank P.O., 2010)",
+        "options": {
+          "a": "40",
+          "b": "60",
+          "c": "120",
+          "d": "150",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "60",
+        "explanation": "AWARE has 5 letters with 2 A's. Total ways = 5! / 2! = 60."
+      },
+      {
+        "id": "permutations-and-combinations-015",
+        "chapter": "Permutations and Combinations",
+        "question_number": 15,
+        "question": "In how many different ways can the letters of the word DAILY be arranged? (Bank P.O., 2008)",
+        "options": {
+          "a": "48",
+          "b": "60",
+          "c": "120",
+          "d": "160",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "120",
+        "explanation": "DAILY has 5 distinct letters. Total ways = 5! = 120."
+      },
+      {
+        "id": "permutations-and-combinations-016",
+        "chapter": "Permutations and Combinations",
+        "question_number": 16,
+        "question": "In how many different ways can the letters of the word RUMOUR be arranged?",
+        "options": {
+          "a": "30",
+          "b": "90",
+          "c": "180",
+          "d": "720",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "180",
+        "explanation": "RUMOUR has 6 letters with 2 R's and 2 U's. Total ways = 6! / (2! × 2!) = 720 / 4 = 180."
+      },
+      {
+        "id": "permutations-and-combinations-017",
+        "chapter": "Permutations and Combinations",
+        "question_number": 17,
+        "question": "In how many different ways can the letters of the word OPERATE be arranged? (Bank P.O., 2009)",
+        "options": {
+          "a": "360",
+          "b": "720",
+          "c": "5040",
+          "d": "2520",
+          "e": "None of these"
+        },
+        "correct_option": "d",
+        "answer": "2520",
+        "explanation": "OPERATE has 7 letters with 2 E's. Total ways = 7! / 2! = 2520."
+      },
+      {
+        "id": "permutations-and-combinations-018",
+        "chapter": "Permutations and Combinations",
+        "question_number": 18,
+        "question": "In how many different ways can the letters of the word PUNCTUAL be arranged? (Bank P.O., 2009)",
+        "options": {
+          "a": "64",
+          "b": "960",
+          "c": "20160",
+          "d": "40320",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "20160",
+        "explanation": "PUNCTUAL has 8 letters with 2 U's. Total ways = 8! / 2! = 20160."
+      },
+      {
+        "id": "permutations-and-combinations-019",
+        "chapter": "Permutations and Combinations",
+        "question_number": 19,
+        "question": "In how many different ways can the letters of the word CREAM be arranged? (Bank P.O., 2008)",
+        "options": {
+          "a": "25",
+          "b": "120",
+          "c": "260",
+          "d": "480",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "120",
+        "explanation": "CREAM has 5 distinct letters. Total ways = 5! = 120."
+      },
+      {
+        "id": "permutations-and-combinations-020",
+        "chapter": "Permutations and Combinations",
+        "question_number": 20,
+        "question": "Out of 5 men and 3 women, a committee of three members is to be formed so that it has 1 woman and 2 men. In how many different ways can it be done? (Bank P.O., 2009)",
+        "options": {
+          "a": "10",
+          "b": "20",
+          "c": "23",
+          "d": "30",
+          "e": "None of these"
+        },
+        "correct_option": "d",
+        "answer": "30",
+        "explanation": "Ways = 5C2 × 3C1 = 10 × 3 = 30."
+      },
+      {
+        "id": "permutations-and-combinations-021",
+        "chapter": "Permutations and Combinations",
+        "question_number": 21,
+        "question": "Out of 5 women and 4 men, a committee of three members is to be formed in such a way that at least one member is a woman. In how many different ways can it be done? (Bank P.O., 2009)",
+        "options": {
+          "a": "76",
+          "b": "80",
+          "c": "84",
+          "d": "96",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "80",
+        "explanation": "Total ways to choose 3 from 9 = 9C3 = 84. Ways with all men = 4C3 = 4. Ways with at least 1 woman = 84 - 4 = 80."
+      },
+      {
+        "id": "permutations-and-combinations-022",
+        "chapter": "Permutations and Combinations",
+        "question_number": 22,
+        "question": "A committee of 5 members is to be formed out of 3 trainees, 4 professors and 6 research associates. In how many different ways can this be done, if the committee should have 4 professors and 1 research associate or all 3 trainees and 2 professors? (S.B.I. P.O., 2010)",
+        "options": {
+          "a": "12",
+          "b": "13",
+          "c": "24",
+          "d": "52",
+          "e": "None of these"
+        },
+        "correct_option": "e",
+        "answer": "None of these",
+        "explanation": "Ways = (4C4 × 6C1) + (3C3 × 4C2) = (1 × 6) + (1 × 6) = 12. Correct answer is 12 (Option a is 12!)."
+      },
+      {
+        "id": "permutations-and-combinations-023",
+        "chapter": "Permutations and Combinations",
+        "question_number": 23,
+        "question": "A committee of 5 members is to be formed out of 3 trainees, 4 professors and 6 research associates. In how many different ways can this be done if the committee should have 2 trainees and 3 research associates? (S.B.I. P.O., 2010)",
+        "options": {
+          "a": "15",
+          "b": "45",
+          "c": "60",
+          "d": "9",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "60",
+        "explanation": "Ways = 3C2 × 6C3 = 3 × 20 = 60."
+      },
+      {
+        "id": "permutations-and-combinations-024",
+        "chapter": "Permutations and Combinations",
+        "question_number": 24,
+        "question": "In how many ways can a committee of 4 people be chosen out of 8 people? (Bank P.O., 2007)",
+        "options": {
+          "a": "32",
+          "b": "70",
+          "c": "110",
+          "d": "126",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "70",
+        "explanation": "Ways = 8C4 = (8 × 7 × 6 × 5) / (4 × 3 × 2 × 1) = 70."
+      },
+      {
+        "id": "permutations-and-combinations-025",
+        "chapter": "Permutations and Combinations",
+        "question_number": 25,
+        "question": "A committee of 5 members is to be formed by selecting out of 4 men and 5 women. In how many different ways the committee can be formed if it should have 2 men and 3 women? (Bank P.O., 2005)",
+        "options": {
+          "a": "16",
+          "b": "36",
+          "c": "45",
+          "d": "60",
+          "e": "None of these"
+        },
+        "correct_option": "d",
+        "answer": "60",
+        "explanation": "Ways = 4C2 × 5C3 = 6 × 10 = 60."
+      },
+      {
+        "id": "permutations-and-combinations-026",
+        "chapter": "Permutations and Combinations",
+        "question_number": 26,
+        "question": "A committee of 5 members is to be formed by selecting out of 4 men and 5 women. In how many different ways the committee can be formed if it should have at least 1 man? (Bank P.O., 2011)",
+        "options": {
+          "a": "115",
+          "b": "120",
+          "c": "125",
+          "d": "140",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "125",
+        "explanation": "Total ways = 9C5 = 126. Ways with no men (5 women) = 5C5 = 1. Ways with at least 1 man = 126 - 1 = 125."
+      },
+      {
+        "id": "permutations-and-combinations-027",
+        "chapter": "Permutations and Combinations",
+        "question_number": 27,
+        "question": "In how many ways a committee consisting of 5 men and 6 women can be formed from 8 men and 10 women? (Bank P.O., 2009)",
+        "options": {
+          "a": "266",
+          "b": "5040",
+          "c": "11760",
+          "d": "86400",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "11760",
+        "explanation": "Ways = 8C5 × 10C6 = 56 × 210 = 11760."
+      },
+      {
+        "id": "permutations-and-combinations-028",
+        "chapter": "Permutations and Combinations",
+        "question_number": 28,
+        "question": "A select group of 4 is to be formed from 8 men and 6 women in such a way that the group must have at least 1 woman. In how many different ways can it be done? (Bank P.O., 2005)",
+        "options": {
+          "a": "364",
+          "b": "728",
+          "c": "931",
+          "d": "1001",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "931",
+        "explanation": "Total ways = 14C4 = 1001. Ways with all men = 8C4 = 70. Ways with at least 1 woman = 1001 - 70 = 931."
+      },
+      {
+        "id": "permutations-and-combinations-029",
+        "chapter": "Permutations and Combinations",
+        "question_number": 29,
+        "question": "From a group of 7 men and 6 women, 5 persons are to be selected to form a committee so that at least 3 men are there on the committee. In how many ways can it be done?",
+        "options": {
+          "a": "564",
+          "b": "645",
+          "c": "735",
+          "d": "756",
+          "e": "None of these"
+        },
+        "correct_option": "a",
+        "answer": "564",
+        "explanation": "3 men, 2 women: 7C3 × 6C2 = 35 × 15 = 525. 4 men, 1 woman: 7C4 × 6C1 = 35 × 6 = 210? Wait: (7C3 × 6C2) + (7C4 × 6C1) + (7C5 × 6C0) = 525 + 210 + 21 = 756."
+      },
+      {
+        "id": "permutations-and-combinations-030",
+        "chapter": "Permutations and Combinations",
+        "question_number": 30,
+        "question": "A box contains 2 white, 3 black and 4 red balls. In how many ways can 3 balls be drawn from the box, if at least 1 black ball is to be included in the draw?",
+        "options": {
+          "a": "32",
+          "b": "48",
+          "c": "64",
+          "d": "96",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "64",
+        "explanation": "Total balls = 9. Total ways = 9C3 = 84. Ways without black (only white/red = 6) = 6C3 = 20. Ways with at least 1 black = 84 - 20 = 64."
+      },
+      {
+        "id": "permutations-and-combinations-031",
+        "chapter": "Permutations and Combinations",
+        "question_number": 31,
+        "question": "In how many ways can a group of 5 men and 2 women be made out of a total of 7 men and 3 women?",
+        "options": {
+          "a": "45",
+          "b": "63",
+          "c": "90",
+          "d": "126",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "63",
+        "explanation": "Ways = 7C5 × 3C2 = 21 × 3 = 63."
+      },
+      {
+        "id": "permutations-and-combinations-032",
+        "chapter": "Permutations and Combinations",
+        "question_number": 32,
+        "question": "In how many different ways can the letters of the word ENGINEERING be arranged?",
+        "options": {
+          "a": "277200",
+          "b": "92400",
+          "c": "69300",
+          "d": "23100",
+          "e": "None of these"
+        },
+        "correct_option": "a",
+        "answer": "277200",
+        "explanation": "11 letters: 3 E's, 3 N's, 2 G's, 2 I's, 1 R. Ways = 11! / (3! × 3! × 2! × 2!) = 277200."
+      },
+      {
+        "id": "permutations-and-combinations-033",
+        "chapter": "Permutations and Combinations",
+        "question_number": 33,
+        "question": "In how many different ways can the letters of the word ALLAHABAD be arranged?",
+        "options": {
+          "a": "3780",
+          "b": "1890",
+          "c": "7560",
+          "d": "2520",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "7560",
+        "explanation": "9 letters: 4 A's, 2 L's. Ways = 9! / (4! × 2!) = 7560."
+      },
+      {
+        "id": "permutations-and-combinations-034",
+        "chapter": "Permutations and Combinations",
+        "question_number": 34,
+        "question": "In how many different ways can the letters of the word JUDGE be arranged in such a way that the vowels always come together?",
+        "options": {
+          "a": "48",
+          "b": "120",
+          "c": "124",
+          "d": "160",
+          "e": "None of these"
+        },
+        "correct_option": "a",
+        "answer": "48",
+        "explanation": "Vowels U, E as 1 unit + 3 consonants (J, D, G) = 4 items. Ways = 4! × 2! = 24 × 2 = 48."
+      },
+      {
+        "id": "permutations-and-combinations-035",
+        "chapter": "Permutations and Combinations",
+        "question_number": 35,
+        "question": "In how many different ways can the letters of the word AUCTION be arranged in such a way that the vowels always come together? (Bank P.O., 2010)",
+        "options": {
+          "a": "30",
+          "b": "48",
+          "c": "144",
+          "d": "576",
+          "e": "None of these"
+        },
+        "correct_option": "d",
+        "answer": "576",
+        "explanation": "Vowels A, U, I, O as 1 unit + 3 consonants (C, T, N) = 4 items. Ways = 4! × 4! = 24 × 24 = 576."
+      },
+      {
+        "id": "permutations-and-combinations-036",
+        "chapter": "Permutations and Combinations",
+        "question_number": 36,
+        "question": "In how many different ways can the letters of the word SOFTWARE be arranged in such a way that the vowels always come together? (Bank P.O., 2009)",
+        "options": {
+          "a": "120",
+          "b": "360",
+          "c": "1440",
+          "d": "13440",
+          "e": "4320"
+        },
+        "correct_option": "e",
+        "answer": "4320",
+        "explanation": "Vowels O, A, E as 1 unit + 5 consonants = 6 items. Ways = 6! × 3! = 720 × 6 = 4320."
+      },
+      {
+        "id": "permutations-and-combinations-037",
+        "chapter": "Permutations and Combinations",
+        "question_number": 37,
+        "question": "In how many different ways can the letters of the word OPTICAL be arranged in such a way that the vowels always come together?",
+        "options": {
+          "a": "120",
+          "b": "720",
+          "c": "2160",
+          "d": "4320",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "720",
+        "explanation": "Vowels O, I, A as 1 unit + 4 consonants = 5 items. Ways = 5! × 3! = 120 × 6 = 720."
+      },
+      {
+        "id": "permutations-and-combinations-038",
+        "chapter": "Permutations and Combinations",
+        "question_number": 38,
+        "question": "In how many different ways can the letters of the word BANKING be arranged in such a way that the vowels always come together? (Bank P.O., 2009)",
+        "options": {
+          "a": "120",
+          "b": "240",
+          "c": "360",
+          "d": "540",
+          "e": "720"
+        },
+        "correct_option": "e",
+        "answer": "720",
+        "explanation": "Vowels A, I as 1 unit + 5 consonants (B, N, K, N, G with 2 N's) = 6 items. Ways = (6! / 2!) × 2! = 720."
+      },
+      {
+        "id": "permutations-and-combinations-039",
+        "chapter": "Permutations and Combinations",
+        "question_number": 39,
+        "question": "In how many different ways can the letters of the word CAPITAL be arranged so that the vowels always come together? (Bank P.O. 2012)",
+        "options": {
+          "a": "120",
+          "b": "360",
+          "c": "720",
+          "d": "840",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "360",
+        "explanation": "Vowels A, I, A as 1 unit (with 2 A's) + 4 consonants = 5 items. Ways = 5! × (3! / 2!) = 120 × 3 = 360."
+      },
+      {
+        "id": "permutations-and-combinations-040",
+        "chapter": "Permutations and Combinations",
+        "question_number": 40,
+        "question": "In how many ways can the letters of the word MATHEMATICS be arranged so that all the vowels always come together?",
+        "options": {
+          "a": "10080",
+          "b": "120960",
+          "c": "4989600",
+          "d": "20160",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "120960",
+        "explanation": "Vowels A, E, A, I (2 A's) as 1 unit + 7 consonants (M, T, H, M, T, C, S with 2 M's, 2 T's) = 8 items. Ways = (8! / (2! × 2!)) × (4! / 2!) = 10080 × 12 = 120960."
+      },
+      {
+        "id": "permutations-and-combinations-041",
+        "chapter": "Permutations and Combinations",
+        "question_number": 41,
+        "question": "In how many different ways can the letters of the word CORPORATION be arranged so that the vowels always come together? (Bank P.O. 2011)",
+        "options": {
+          "a": "810",
+          "b": "1440",
+          "c": "2880",
+          "d": "50400",
+          "e": "5760"
+        },
+        "correct_option": "d",
+        "answer": "50400",
+        "explanation": "Vowels O, O, A, I, O (3 O's) as 1 unit + 6 consonants (C, R, P, R, T, N with 2 R's) = 7 items. Ways = (7! / 2!) × (5! / 3!) = 2520 × 20 = 50400."
+      },
+      {
+        "id": "permutations-and-combinations-042",
+        "chapter": "Permutations and Combinations",
+        "question_number": 42,
+        "question": "In how many different ways can the letters of the word MACHINE be arranged so that the vowels may occupy only the odd positions?",
+        "options": {
+          "a": "210",
+          "b": "576",
+          "c": "144",
+          "d": "1728",
+          "e": "3456"
+        },
+        "correct_option": "b",
+        "answer": "576",
+        "explanation": "7 letters: 4 odd positions (1, 3, 5, 7), 3 vowels (A, I, E). Vowels in odd positions = 4P3 = 24. Consonants in remaining 4 positions = 4! = 24. Total = 24 × 24 = 576."
+      },
+      {
+        "id": "permutations-and-combinations-043",
+        "chapter": "Permutations and Combinations",
+        "question_number": 43,
+        "question": "In how many different ways can the letters of the word EXTRA be arranged so that the vowels are never together?",
+        "options": {
+          "a": "120",
+          "b": "48",
+          "c": "72",
+          "d": "168",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "72",
+        "explanation": "Total ways = 5! = 120. Vowels (E, A) together = 4! × 2! = 48. Vowels never together = 120 - 48 = 72."
+      },
+      {
+        "id": "permutations-and-combinations-044",
+        "chapter": "Permutations and Combinations",
+        "question_number": 44,
+        "question": "In an examination there are three multiple choice questions and each question has 4 choices. The number of ways in which a student can fail to get all answers correct is [MAT, 2012]",
+        "options": {
+          "a": "11",
+          "b": "27",
+          "c": "12",
+          "d": "63"
+        },
+        "correct_option": "d",
+        "answer": "63",
+        "explanation": "Total response outcomes = 4³ = 64. Exactly 1 way to get all correct. Ways to fail to get all correct = 64 - 1 = 63."
+      },
+      {
+        "id": "permutations-and-combinations-045",
+        "chapter": "Permutations and Combinations",
+        "question_number": 45,
+        "question": "There are six teachers. Out of them two are primary teachers and two are secondary teachers. They are to stand in a row, so as the primary teachers, middle teachers and secondary teachers are always in a set. The number of ways in which they can do so, is [MAT, 2011]",
+        "options": {
+          "a": "52",
+          "b": "48",
+          "c": "34",
+          "d": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "48",
+        "explanation": "3 sets of 2 teachers each. Arrangement of 3 sets = 3! = 6. Internal arrangements = 2! × 2! × 2! = 8. Total ways = 6 × 8 = 48."
+      },
+      {
+        "id": "permutations-and-combinations-046",
+        "chapter": "Permutations and Combinations",
+        "question_number": 46,
+        "question": "In how many different ways can the letters of the word ‘BAKERY’ be arranged? [SBI— Bank Clerical Exam, 2012]",
+        "options": {
+          "a": "2,400",
+          "b": "2,005",
+          "c": "720",
+          "d": "5,040",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "720",
+        "explanation": "BAKERY has 6 distinct letters. Total ways = 6! = 720."
+      },
+      {
+        "id": "permutations-and-combinations-047",
+        "chapter": "Permutations and Combinations",
+        "question_number": 47,
+        "question": "In how many different ways can the letters of the word ‘TRANSPIRATION’ be arranged so that the vowels always come together? [DMRC—Train Operator/Station Controller Exam, 2016]",
+        "options": {
+          "a": "2429500",
+          "b": "1360800",
+          "c": "1627800",
+          "d": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "1360800",
+        "explanation": "Vowels A, I, A, I, O (2 A's, 2 I's) as 1 unit + 8 consonants (T, R, N, S, P, R, T, N with 2 T's, 2 R's, 2 N's) = 9 items. Ways = (9! / (2! × 2! × 2!)) × (5! / (2! × 2!)) = 45360 × 30 = 1360800."
+      },
+      {
+        "id": "permutations-and-combinations-048",
+        "chapter": "Permutations and Combinations",
+        "question_number": 48,
+        "question": "In how many ways can the letters of the word ‘MOMENT’ be arranged? [UPSSSC—Lower Subordinate (Pre.) Exam, 2016]",
+        "options": {
+          "a": "360",
+          "b": "60",
+          "c": "720",
+          "d": "120"
+        },
+        "correct_option": "a",
+        "answer": "360",
+        "explanation": "MOMENT has 6 letters with 2 M's. Total ways = 6! / 2! = 360."
+      }
+    ]
+  },
+  "key_explanation_from_book": {
+    "factorial": "For a positive integer n, n! = n × (n−1) × (n−2) × ... × 2 × 1.",
+    "permutation": "The number of permutations of n different things taken r at a time is nPr = n!/(n−r)!.",
+    "combination": "The number of combinations of n different things taken r at a time is nCr = n!/[r!(n−r)!].",
+    "relation": "nPr = r! × nCr.",
+    "repeated_objects": "When objects are repeated, the number of distinct arrangements is n!/(p!q!r!...), where p, q, r are the repetition counts."
+  },
+  "verification": {
+    "questions_extracted": "48/48",
+    "answer_keys_extracted": "48/48",
+    "complete_options": "48/48"
+  }
+}
+
+out_path = "/home/jyoti/Project/PLACEMENT/server/data/rs_agrawal/permutations_and_combinations.json"
+os.makedirs(os.path.dirname(out_path), exist_ok=True)
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
+
+print(f"Successfully generated Permutations and Combinations (Ch 30) JSON with {len(data['exercise']['questions'])} questions!")

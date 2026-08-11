@@ -1,0 +1,2749 @@
+import json
+import os
+
+data = {
+  "book": "Quantitative Aptitude for Competitive Examinations — R.S. Aggarwal",
+  "chapter_number": 18,
+  "chapter": "Time and Distance",
+  "book_page_range": "562–599",
+  "objective_questions": 191,
+  "key_explanation_from_book": {
+    "core_formulas": [
+      "Distance = Speed × Time.",
+      "Speed = Distance / Time.",
+      "Time = Distance / Speed.",
+      "To convert km/hr to m/sec, multiply by 5/18.",
+      "To convert m/sec to km/hr, multiply by 18/5.",
+      "If the ratio of speeds of A and B is a:b, then for the same distance their time ratio is b:a.",
+      "For equal distances travelled at speeds x and y, average speed = 2xy/(x+y)."
+    ],
+    "relative_speed": [
+      "For two persons moving in the same direction at u m/s and v m/s, where u > v, relative speed = u − v.",
+      "For two persons moving in opposite directions at u m/s and v m/s, relative speed = u + v.",
+      "If two persons start simultaneously from two points in opposite directions and, after crossing, complete their journeys in a and b hours respectively, their speed ratio is b:a."
+    ],
+    "source_note": "These formulas and relationships are taken from the chapter's IMPORTANT FACTS AND FORMULAE section."
+  },
+  "exercise": {
+    "title": "Objective Type Questions",
+    "question_count": 191,
+    "questions": [
+      {
+        "id": "time-and-distance-001",
+        "chapter": "Time and Distance",
+        "question_number": 1,
+        "question": "A speed of 30.6 km/hr is the same as (R.R.B., 2008)",
+        "options": {
+          "a": "5.1 m/sec",
+          "b": "8.5 m/sec",
+          "c": "110.16 m/sec",
+          "d": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "8.5 m/sec"
+      },
+      {
+        "id": "time-and-distance-002",
+        "chapter": "Time and Distance",
+        "question_number": 2,
+        "question": "A man riding his bicycle covers 150 metres in 25 seconds. What is his speed in km per hour? (S.S.C., 2005)",
+        "options": {
+          "a": "20",
+          "b": "21.6",
+          "c": "23",
+          "d": "25"
+        },
+        "correct_option": "b",
+        "answer": "21.6"
+      },
+      {
+        "id": "time-and-distance-003",
+        "chapter": "Time and Distance",
+        "question_number": 3,
+        "question": "A bus covers a distance of 2924 km in 43 hours. What is the speed of the bus? (Bank Recruitment, 2008)",
+        "options": {
+          "a": "60 km/hr",
+          "b": "68 km/hr",
+          "c": "72 km/hr",
+          "d": "Cannot be determined",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "68 km/hr"
+      },
+      {
+        "id": "time-and-distance-004",
+        "chapter": "Time and Distance",
+        "question_number": 4,
+        "question": "A is travelling at 72 km per hour on a highway while B is travelling at a speed of 25 metres per second. What is the difference in their speeds in metres per second? (Campus Recruitment, 2010)",
+        "options": {
+          "a": "1 1/2 m/sec",
+          "b": "2 m/sec",
+          "c": "3 m/sec",
+          "d": "5 m/sec"
+        },
+        "correct_option": "d",
+        "answer": "5 m/sec"
+      },
+      {
+        "id": "time-and-distance-005",
+        "chapter": "Time and Distance",
+        "question_number": 5,
+        "question": "A motorist travelled between two towns, which are 65 km apart, in 2 hours and 10 minutes. Find the speed in metres per minute. (R.R.B., 2006)",
+        "options": {
+          "a": "200",
+          "b": "500",
+          "c": "600",
+          "d": "700"
+        },
+        "correct_option": "b",
+        "answer": "500"
+      },
+      {
+        "id": "time-and-distance-006",
+        "chapter": "Time and Distance",
+        "question_number": 6,
+        "question": "In track meets both 100 yards and 100 metres are used as distances. By how many metres is 100 metres longer than 100 yards?",
+        "options": {
+          "a": "0.0856 m",
+          "b": "0.856 m",
+          "c": "1 m",
+          "d": "8.56 m"
+        },
+        "correct_option": "d",
+        "answer": "8.56 m"
+      },
+      {
+        "id": "time-and-distance-007",
+        "chapter": "Time and Distance",
+        "question_number": 7,
+        "question": "Which of the following trains is the fastest?",
+        "options": {
+          "a": "25 m/sec",
+          "b": "1500 m/min",
+          "c": "90 km/hr",
+          "d": "None of these"
+        },
+        "correct_option": "d",
+        "answer": "None of these"
+      },
+      {
+        "id": "time-and-distance-008",
+        "chapter": "Time and Distance",
+        "question_number": 8,
+        "question": "A person crosses a 600 m long street in 5 minutes. What is his speed in km per hour?",
+        "options": {
+          "a": "3.6",
+          "b": "7.2",
+          "c": "8.4",
+          "d": "10"
+        },
+        "correct_option": "b",
+        "answer": "7.2"
+      },
+      {
+        "id": "time-and-distance-009",
+        "chapter": "Time and Distance",
+        "question_number": 9,
+        "question": "A car covers a distance of 432 km at the speed of 48 km/hr. In how many hours will the car cover this distance? (Bank Recruitment, 2009)",
+        "options": {
+          "a": "6 hours",
+          "b": "7 hours",
+          "c": "9 hours",
+          "d": "12 hours",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "9 hours"
+      },
+      {
+        "id": "time-and-distance-010",
+        "chapter": "Time and Distance",
+        "question_number": 10,
+        "question": "A man covered a distance of 180 km in 4 hours on a bike. How much distance will be cover on a bicycle in 8 hours if he rides the bicycle at one-sixth the speed of the bike? (Bank Recruitment, 2010)",
+        "options": {
+          "a": "54 km",
+          "b": "60 km",
+          "c": "72 km",
+          "d": "84 km",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "60 km"
+      },
+      {
+        "id": "time-and-distance-011",
+        "chapter": "Time and Distance",
+        "question_number": 11,
+        "question": "The ratio of the speeds of a car, a train and a bus is 5 : 9 : 4. The average speed of the car, the bus and the train is 72 km/hr. What is the average speed of the car and the train together? (Bank P.O., 2010)",
+        "options": {
+          "a": "78 km/hr",
+          "b": "82 km/hr",
+          "c": "84 km/hr",
+          "d": "Cannot be determined",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "84 km/hr"
+      },
+      {
+        "id": "time-and-distance-012",
+        "chapter": "Time and Distance",
+        "question_number": 12,
+        "question": "Car A travels at the speed of 65 km/hr and reaches its destination in 8 hours. Car B travels at the speed of 70 km/hr and reaches its destination in 4 hours. What is the ratio of the distance covered by car A and car B respectively? (Bank P.O., 2010)",
+        "options": {
+          "a": "7 : 11",
+          "b": "13 : 7",
+          "c": "7 : 13",
+          "d": "11 : 7",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "13 : 7"
+      },
+      {
+        "id": "time-and-distance-013",
+        "chapter": "Time and Distance",
+        "question_number": 13,
+        "question": "The average speed of a bus is one-third of the speed of a train. The train covers 1125 km in 15 hours. How much distance will the bus cover in 36 minutes? (Bank Recruitment, 2010)",
+        "options": {
+          "a": "12 km",
+          "b": "18 km",
+          "c": "21 km",
+          "d": "75 km",
+          "e": "None of these"
+        },
+        "correct_option": "e",
+        "answer": "None of these"
+      },
+      {
+        "id": "time-and-distance-014",
+        "chapter": "Time and Distance",
+        "question_number": 14,
+        "question": "The mileage of a motorbike A and a motorbike B is 42 km per litre and 52 km per litre respectively. Motorbike A covered 294 km and motorbike B covered 208 km. If the cost of 1 litre of petrol is ₹ 48, how much amount would be spent on petrol to cover the total distance by both the motor bikes together? (Bank P.O., 2010)",
+        "options": {
+          "a": "₹ 480",
+          "b": "₹ 528",
+          "c": "₹ 576",
+          "d": "Cannot be determined",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "₹ 528"
+      },
+      {
+        "id": "time-and-distance-015",
+        "chapter": "Time and Distance",
+        "question_number": 15,
+        "question": "A train leaves Delhi at 4.10 P.M. and reaches Aligarh at 7.25 P.M. The average speed of the train is 40 km/hr. What is the distance from Delhi to Aligarh? (R.R.B., 2006)",
+        "options": {
+          "a": "120 km",
+          "b": "130 km",
+          "c": "135 km",
+          "d": "140 km"
+        },
+        "correct_option": "b",
+        "answer": "130 km"
+      },
+      {
+        "id": "time-and-distance-016",
+        "chapter": "Time and Distance",
+        "question_number": 16,
+        "question": "A is 10 miles west of B. C is 30 miles north of B. D is 20 miles east of C. What is the distance from A to D? (M.B.A., 2006)",
+        "options": {
+          "a": "10 miles",
+          "b": "30 miles",
+          "c": "10√10 miles",
+          "d": "10√13 miles",
+          "e": "30√2 miles"
+        },
+        "correct_option": "e",
+        "answer": "30√2 miles"
+      },
+      {
+        "id": "time-and-distance-017",
+        "chapter": "Time and Distance",
+        "question_number": 17,
+        "question": "A plane flying north at 500 mph passes over a city at 12 noon. A plane flying east at the same altitude passes over the same city at 12 : 30 P.M. The plane is flying east at 400 mph. To the nearest hundred miles, how far apart are the two planes at 2 P.M.?",
+        "options": {
+          "a": "600 miles",
+          "b": "1000 miles",
+          "c": "1100 miles",
+          "d": "1200 miles",
+          "e": "1300 miles"
+        },
+        "correct_option": "d",
+        "answer": "1200 miles"
+      },
+      {
+        "id": "time-and-distance-018",
+        "chapter": "Time and Distance",
+        "question_number": 18,
+        "question": "A train travels at the speed of 65 km/hr and halts at 8 junctions for a certain time. It covers a distance of 1300 km in 1 day (24 hours). How long does the train stop at each junction, if it halts for the same period of time at all the junctions? (Bank P.O., 2006)",
+        "options": {
+          "a": "20 minutes",
+          "b": "30 minutes",
+          "c": "40 minutes",
+          "d": "60 minutes",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "30 minutes"
+      },
+      {
+        "id": "time-and-distance-019",
+        "chapter": "Time and Distance",
+        "question_number": 19,
+        "question": "Jane travelled 4/7 as many miles on foot as by water and 2/5 as many miles on horseback as by water. If she covered a total of 3036 miles, how many miles did she travel on foot? (SNAP, 2005)",
+        "options": {
+          "a": "1540",
+          "b": "880",
+          "c": "756",
+          "d": "616"
+        },
+        "correct_option": "b",
+        "answer": "880"
+      },
+      {
+        "id": "time-and-distance-020",
+        "chapter": "Time and Distance",
+        "question_number": 20,
+        "question": "A star is 8.1 × 10^13 km away from the earth. Suppose light travels at the speed of 3.0 × 10^5 km per second. How long will it take the light from the star to reach the earth? (R.R.B., 2005)",
+        "options": {
+          "a": "7.5 × 10^3 hours",
+          "b": "7.5 × 10^4 hours",
+          "c": "2.7 × 10^10 seconds",
+          "d": "2.7 × 10^11 seconds"
+        },
+        "correct_option": "b",
+        "answer": "7.5 × 10^4 hours"
+      },
+      {
+        "id": "time-and-distance-021",
+        "chapter": "Time and Distance",
+        "question_number": 21,
+        "question": "Akash leaves home for school which is 12 km from his house. After the school, he goes to his club which is 7 km from his school. If his house, school and club all fall in a line, then what is the minimum distance he has to travel to get back home?",
+        "options": {
+          "a": "5 km",
+          "b": "7 km",
+          "c": "12 km",
+          "d": "17 km",
+          "e": "19 km"
+        },
+        "correct_option": "a",
+        "answer": "5 km"
+      },
+      {
+        "id": "time-and-distance-022",
+        "chapter": "Time and Distance",
+        "question_number": 22,
+        "question": "A train covers a distance of 193 1/3 km in 4 1/4 hours with one stoppage of 10 minutes, two of 5 minutes and one of 3 minutes on the way. The average speed of the train is",
+        "options": {
+          "a": "48 km/hr",
+          "b": "50 km/hr",
+          "c": "55 km/hr",
+          "d": "60 km/hr"
+        },
+        "correct_option": "b",
+        "answer": "50 km/hr"
+      },
+      {
+        "id": "time-and-distance-023",
+        "chapter": "Time and Distance",
+        "question_number": 23,
+        "question": "Deepa rides her bike at an average speed of 30 km/hr and reaches her destination in 6 hours. Hema covers the same distance in 4 hours. If Deepa increases her average speed by 10 km/hr and Hema increases her average speed by 5 km/hr, what would be the difference in their time taken to reach the destination?",
+        "options": {
+          "a": "40 minutes",
+          "b": "45 minutes",
+          "c": "54 minutes",
+          "d": "1 hour",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "54 minutes"
+      },
+      {
+        "id": "time-and-distance-024",
+        "chapter": "Time and Distance",
+        "question_number": 24,
+        "question": "A monkey climbing up a pole ascends 6 metres and slips 3 metres in alternate minutes. If the pole is 60 metres high, how long will it take the monkey to reach the top? (Campus Recruitment, 2010)",
+        "options": {
+          "a": "31 min",
+          "b": "33 min",
+          "c": "35 min",
+          "d": "37 min"
+        },
+        "correct_option": "d",
+        "answer": "37 min"
+      },
+      {
+        "id": "time-and-distance-025",
+        "chapter": "Time and Distance",
+        "question_number": 25,
+        "question": "An aeroplane flies twice as fast as a train which covers 60 miles in 80 minutes. What distance will the aeroplane cover in 20 minutes? (E.S.I.C., 2006)",
+        "options": {
+          "a": "30 miles",
+          "b": "35 miles",
+          "c": "40 miles",
+          "d": "50 miles"
+        },
+        "correct_option": "a",
+        "answer": "30 miles"
+      },
+      {
+        "id": "time-and-distance-026",
+        "chapter": "Time and Distance",
+        "question_number": 26,
+        "question": "A boy is running at a speed of p kmph to cover a distance of 1 km. But, due to the slippery ground, his speed is reduced by q kmph (p > q). If he takes r hours to cover the distance, then (M.B.A., 2006)",
+        "options": {
+          "a": "1/r = p - q",
+          "b": "r = p - q",
+          "c": "1/r = p + q",
+          "d": "r = p + q"
+        },
+        "correct_option": "a",
+        "answer": "1/r = p - q"
+      },
+      {
+        "id": "time-and-distance-027",
+        "chapter": "Time and Distance",
+        "question_number": 27,
+        "question": "Ravi can walk a certain distance in 40 days when he rests 9 hours a day. How long will he take to walk twice the distance, twice as fast and rest twice as long each day? (A.A.O. Exam, 2010)",
+        "options": {
+          "a": "40 days",
+          "b": "50 days",
+          "c": "80 days",
+          "d": "100 days"
+        },
+        "correct_option": "c",
+        "answer": "80 days"
+      },
+      {
+        "id": "time-and-distance-028",
+        "chapter": "Time and Distance",
+        "question_number": 28,
+        "question": "A car is driven at the speed of 100 km/hr and stops for 10 minutes at the end of every 150 km. To cover a distance of 1000 km, it will take",
+        "options": {
+          "a": "9 hours",
+          "b": "10 hours",
+          "c": "11 hours",
+          "d": "12 hours"
+        },
+        "correct_option": "c",
+        "answer": "11 hours"
+      },
+      {
+        "id": "time-and-distance-029",
+        "chapter": "Time and Distance",
+        "question_number": 29,
+        "question": "A man takes 50 minutes to cover a certain distance at a speed of 6 km/hr. If he walks with a speed of 10 km/hr, he covers the same distance in",
+        "options": {
+          "a": "10 minutes",
+          "b": "20 minutes",
+          "c": "30 minutes",
+          "d": "40 minutes"
+        },
+        "correct_option": "c",
+        "answer": "30 minutes"
+      },
+      {
+        "id": "time-and-distance-030",
+        "chapter": "Time and Distance",
+        "question_number": 30,
+        "question": "A truck covers a distance of 550 metres in 1 minute whereas a bus covers a distance of 33 kms in 45 minutes. The ratio of their speeds is",
+        "options": {
+          "a": "3 : 4",
+          "b": "4 : 3",
+          "c": "3 : 5",
+          "d": "50 : 3"
+        },
+        "correct_option": "a",
+        "answer": "3 : 4"
+      },
+      {
+        "id": "time-and-distance-031",
+        "chapter": "Time and Distance",
+        "question_number": 31,
+        "question": "The ratio between the speeds of two trains is 7 : 8. If the second train runs 400 kms in 4 hours, then the speed of the first train is",
+        "options": {
+          "a": "70 km/hr",
+          "b": "75 km/hr",
+          "c": "84 km/hr",
+          "d": "87.5 km/hr"
+        },
+        "correct_option": "d",
+        "answer": "87.5 km/hr"
+      },
+      {
+        "id": "time-and-distance-032",
+        "chapter": "Time and Distance",
+        "question_number": 32,
+        "question": "A train travels at an average of 50 miles per hour for 2 1/2 hours and then travels at a speed of 70 miles per hour for 1 1/2 hours. How far did the train travel in the entire 4 hours?",
+        "options": {
+          "a": "120 miles",
+          "b": "150 miles",
+          "c": "200 miles",
+          "d": "230 miles"
+        },
+        "correct_option": "d",
+        "answer": "230 miles"
+      },
+      {
+        "id": "time-and-distance-033",
+        "chapter": "Time and Distance",
+        "question_number": 33,
+        "question": "A man in a train notices that he can count 21 telephone posts in one minute. If they are known to be 50 metres apart, then at what speed is the train travelling?",
+        "options": {
+          "a": "55 km/hr",
+          "b": "57 km/hr",
+          "c": "60 km/hr",
+          "d": "63 km/hr"
+        },
+        "correct_option": "c",
+        "answer": "60 km/hr"
+      },
+      {
+        "id": "time-and-distance-034",
+        "chapter": "Time and Distance",
+        "question_number": 34,
+        "question": "Sound is said to travel in air at about 1100 feet per second. A man hears the axe striking the tree, 2 1/5 seconds after he sees it strike the tree. How far is the man from the wood chopper? (M.B.A., 2002)",
+        "options": {
+          "a": "2197 ft",
+          "b": "2420 ft",
+          "c": "2500 ft",
+          "d": "2629 ft"
+        },
+        "correct_option": "b",
+        "answer": "2420 ft"
+      },
+      {
+        "id": "time-and-distance-035",
+        "chapter": "Time and Distance",
+        "question_number": 35,
+        "question": "An express train travelled at an average speed of 100 km/hr, stopping for 3 minutes after every 75 km. How long did it take to reach its destination 600 km from the starting point? (M.A.T., 2003)",
+        "options": {
+          "a": "6 hrs 21 min",
+          "b": "6 hrs 24 min",
+          "c": "6 hrs 27 min",
+          "d": "6 hrs 30 min"
+        },
+        "correct_option": "a",
+        "answer": "6 hrs 21 min"
+      },
+      {
+        "id": "time-and-distance-036",
+        "chapter": "Time and Distance",
+        "question_number": 36,
+        "question": "A certain distance is covered by a cyclist at a certain speed. If a jogger covers half the distance in double the time, the ratio of the speed of the jogger to that of the cyclist is :",
+        "options": {
+          "a": "1 : 2",
+          "b": "2 : 1",
+          "c": "1 : 4",
+          "d": "4 : 1"
+        },
+        "correct_option": "c",
+        "answer": "1 : 4"
+      },
+      {
+        "id": "time-and-distance-037",
+        "chapter": "Time and Distance",
+        "question_number": 37,
+        "question": "A motor car starts with the speed of 70 km/hr with its speed increasing every two hours by 10 kmph. In how many hours will it cover 345 kms?",
+        "options": {
+          "a": "4 1/4 hrs",
+          "b": "4 hrs 5 min",
+          "c": "4 1/2 hrs",
+          "d": "Cannot be determined",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "4 1/2 hrs"
+      },
+      {
+        "id": "time-and-distance-038",
+        "chapter": "Time and Distance",
+        "question_number": 38,
+        "question": "A bus moving at a speed of 24 m/s begins to slow at a rate of 3 m/s each second. How far does it go before stopping? (N.D.A., 2007)",
+        "options": {
+          "a": "48 m",
+          "b": "60 m",
+          "c": "72 m",
+          "d": "96 m"
+        },
+        "correct_option": "d",
+        "answer": "96 m"
+      },
+      {
+        "id": "time-and-distance-039",
+        "chapter": "Time and Distance",
+        "question_number": 39,
+        "question": "A boy goes three equal distances, each of length x km, with a speed of y km/hr, 3/5 y km/hr and 2/5 y km/hr respectively. If the total time taken is 1 hour, then x : y is equal to",
+        "options": {
+          "a": "6 : 13",
+          "b": "6 : 23",
+          "c": "6 : 31",
+          "d": "6 : 37"
+        },
+        "correct_option": "c",
+        "answer": "6 : 31"
+      },
+      {
+        "id": "time-and-distance-040",
+        "chapter": "Time and Distance",
+        "question_number": 40,
+        "question": "A long distance runner runs 9 laps of a 400 metres track everyday. His timings (in min) for four consecutive days are 88, 96, 89 and 87 respectively. On an average, how many metres/minute does the runner cover? (M.A.T., 2008)",
+        "options": {
+          "a": "17.78",
+          "b": "40",
+          "c": "90",
+          "d": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "40"
+      },
+      {
+        "id": "time-and-distance-041",
+        "chapter": "Time and Distance",
+        "question_number": 41,
+        "question": "An express train travelled at an average speed of 100 kmph, stopping for 3 minutes after 75 km. A local train travelled at a speed of 50 kmph, stopping for 1 minute after every 25 km. If the trains began travelling at the same time, how many kilometres did the local train travel in the time it took the express train to travel 600 km? (M.A.T., 2005)",
+        "options": {
+          "a": "287.5 km",
+          "b": "307.5 km",
+          "c": "325 km",
+          "d": "396 km"
+        },
+        "correct_option": "b",
+        "answer": "307.5 km"
+      },
+      {
+        "id": "time-and-distance-042",
+        "chapter": "Time and Distance",
+        "question_number": 42,
+        "question": "A car starts running with the initial speed of 40 kmph, with its speed increasing every hour by 5 kmph. How many hours will it take to cover a distance of 385 km? (M.A.T., 2007)",
+        "options": {
+          "a": "7 hours",
+          "b": "8 1/2 hours",
+          "c": "9 hours",
+          "d": "9 1/2 hours"
+        },
+        "correct_option": "a",
+        "answer": "7 hours"
+      },
+      {
+        "id": "time-and-distance-043",
+        "chapter": "Time and Distance",
+        "question_number": 43,
+        "question": "The speed of a car increases by 2 kms after every one hour. If the distance travelled in the first one hour was 35 kms, what was the total distance travelled in 12 hours?",
+        "options": {
+          "a": "456 kms",
+          "b": "482 kms",
+          "c": "552 kms",
+          "d": "556 kms",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "552 kms"
+      },
+      {
+        "id": "time-and-distance-044",
+        "chapter": "Time and Distance",
+        "question_number": 44,
+        "question": "A bus started its journey from Ramgarh and reached Devgarh in 44 minutes at its average speed of 50 km/hr. If the average speed of the bus is increased by 5 km/hr, how much time will it take to cover the same distance? (Bank P.O., 2009)",
+        "options": {
+          "a": "31 min",
+          "b": "36 min",
+          "c": "38 min",
+          "d": "40 min",
+          "e": "49 min"
+        },
+        "correct_option": "d",
+        "answer": "40 min"
+      },
+      {
+        "id": "time-and-distance-045",
+        "chapter": "Time and Distance",
+        "question_number": 45,
+        "question": "The speeds of three cars are in the ratio 2 : 3 : 4. The ratio of the times taken by these cars to travel the same distance is (S.S.C., 2005)",
+        "options": {
+          "a": "2 : 3 : 4",
+          "b": "4 : 3 : 2",
+          "c": "4 : 3 : 6",
+          "d": "6 : 4 : 3"
+        },
+        "correct_option": "d",
+        "answer": "6 : 4 : 3"
+      },
+      {
+        "id": "time-and-distance-046",
+        "chapter": "Time and Distance",
+        "question_number": 46,
+        "question": "The speeds of A and B are in the ratio 3 : 4. A takes 20 minutes more than B to reach a destination. In what time does A reach the destination? (S.S.C. , 2007)",
+        "options": {
+          "a": "1 1/3 hours",
+          "b": "2 1/3 hours",
+          "c": "2 hours",
+          "d": "2 2/3 hours"
+        },
+        "correct_option": "a",
+        "answer": "1 1/3 hours"
+      },
+      {
+        "id": "time-and-distance-047",
+        "chapter": "Time and Distance",
+        "question_number": 47,
+        "question": "The speed of electric train is 25% more than that of steam engine train. What is the time taken by an electric train to cover a distance which a steam engine takes 4 hours 25 minutes to cover? (P.C.S., 2004)",
+        "options": {
+          "a": "3 1/10 hr",
+          "b": "3 8/15 hr",
+          "c": "3 4/15 hr",
+          "d": "3 8/15 hr"
+        },
+        "correct_option": "d",
+        "answer": "3 8/15 hr"
+      },
+      {
+        "id": "time-and-distance-048",
+        "chapter": "Time and Distance",
+        "question_number": 48,
+        "question": "A takes 2 hours more than B to walk d km, but if A doubles his speed, then he can make it in 1 hour less than B. How much time does B require for walking d km? (R.R.B., 2005)",
+        "options": {
+          "a": "d/2 hours",
+          "b": "3 hours",
+          "c": "4 hours",
+          "d": "2d/3 hours"
+        },
+        "correct_option": "c",
+        "answer": "4 hours"
+      },
+      {
+        "id": "time-and-distance-049",
+        "chapter": "Time and Distance",
+        "question_number": 49,
+        "question": "A train covers a distance of 10 km in 12 minutes. If its speed is decreased by 5 km/hr, the time taken by it to cover the same distance will be",
+        "options": {
+          "a": "10 min",
+          "b": "11 min 20 sec",
+          "c": "13 min",
+          "d": "13 min 20 sec"
+        },
+        "correct_option": "d",
+        "answer": "13 min 20 sec"
+      },
+      {
+        "id": "time-and-distance-050",
+        "chapter": "Time and Distance",
+        "question_number": 50,
+        "question": "Anna left for city A from city B at 5.20 a.m. She travelled at the speed of 80 km/hr for 2 hours 15 minutes. After that the speed was reduced to 60 km/hr. If the distance between two cities is 350 kms, at what time did Anna reach city A?",
+        "options": {
+          "a": "9.20 a.m.",
+          "b": "9.25 a.m.",
+          "c": "9.35 a.m.",
+          "d": "10.05 a.m.",
+          "e": "None of these"
+        },
+        "correct_option": "e",
+        "answer": "None of these"
+      },
+      {
+        "id": "time-and-distance-051",
+        "chapter": "Time and Distance",
+        "question_number": 51,
+        "question": "An aeroplane covers a certain distance at a speed of 240 kmph in 5 hours. To cover the same distance in 1 2/3 hours, it must travel at a speed of",
+        "options": {
+          "a": "300 kmph",
+          "b": "360 kmph",
+          "c": "600 kmph",
+          "d": "720 kmph"
+        },
+        "correct_option": "d",
+        "answer": "720 kmph"
+      },
+      {
+        "id": "time-and-distance-052",
+        "chapter": "Time and Distance",
+        "question_number": 52,
+        "question": "A salesman travels a distance of 50 km in 2 hours and 30 minutes. How much faster, in kilometres per hour, on an average, must he travel to make such a trip in 5/6 hour less time? (Hotel Management, 2002)",
+        "options": {
+          "a": "10",
+          "b": "20",
+          "c": "30",
+          "d": "None of these"
+        },
+        "correct_option": "a",
+        "answer": "10"
+      },
+      {
+        "id": "time-and-distance-053",
+        "chapter": "Time and Distance",
+        "question_number": 53,
+        "question": "A person has to cover a distance of 6 km in 45 minutes. If he covers one-half of the distance in two-thirds of the total time; to cover the remaining distance in the remaining time, his speed (in km/hr) must be",
+        "options": {
+          "a": "6",
+          "b": "8",
+          "c": "12",
+          "d": "15"
+        },
+        "correct_option": "c",
+        "answer": "12"
+      },
+      {
+        "id": "time-and-distance-054",
+        "chapter": "Time and Distance",
+        "question_number": 54,
+        "question": "A man performs 3/5 of the total journey by rail, 7/20 by bus and the remaining 6.5 km on foot. His total journey is",
+        "options": {
+          "a": "65 km",
+          "b": "100 km",
+          "c": "120 km",
+          "d": "130 km"
+        },
+        "correct_option": "d",
+        "answer": "130 km"
+      },
+      {
+        "id": "time-and-distance-055",
+        "chapter": "Time and Distance",
+        "question_number": 55,
+        "question": "A person wishes to reach his destination 90 km away in 3 hours but for the first half of the journey his speed was 20 km/hr. His average speed for the rest of the journey should be (P.C.S., 2008)",
+        "options": {
+          "a": "40 km/hr",
+          "b": "0.75 km/min",
+          "c": "1 km/min",
+          "d": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "1 km/min"
+      },
+      {
+        "id": "time-and-distance-056",
+        "chapter": "Time and Distance",
+        "question_number": 56,
+        "question": "A train is scheduled to cover the distance between two stations 46 km apart in one hour. If it travels 25 km at a speed of 40 km/hr, find the speed for the remaining journey to complete it in the scheduled time. (M.A.T., 2009)",
+        "options": {
+          "a": "36 km/hr",
+          "b": "46 km/hr",
+          "c": "56 km/hr",
+          "d": "66 km/hr"
+        },
+        "correct_option": "c",
+        "answer": "56 km/hr"
+      },
+      {
+        "id": "time-and-distance-057",
+        "chapter": "Time and Distance",
+        "question_number": 57,
+        "question": "How long must a driver take to drive the final 70 miles of a trip if he wants to average 50 miles an hour for the entire trip and during the first part of the trip he drove 50 miles in 1 1/2 hours? (M.B.A., 2006)",
+        "options": {
+          "a": "54 min",
+          "b": "1 hour",
+          "c": "66 min",
+          "d": "70 min"
+        },
+        "correct_option": "a",
+        "answer": "54 min"
+      },
+      {
+        "id": "time-and-distance-058",
+        "chapter": "Time and Distance",
+        "question_number": 58,
+        "question": "A can complete a journey in 10 hours. He travels first half of the journey at the rate of 21 km/hr and second half at the rate of 24 km/hr. Find the total journey in km.",
+        "options": {
+          "a": "220 km",
+          "b": "224 km",
+          "c": "230 km",
+          "d": "234 km"
+        },
+        "correct_option": "b",
+        "answer": "224 km"
+      },
+      {
+        "id": "time-and-distance-059",
+        "chapter": "Time and Distance",
+        "question_number": 59,
+        "question": "A motorcyclist completes a certain journey in 5 hours. He covers one-third distance at 60 km/hr and the rest at 80 km/hr. The length of the journey is",
+        "options": {
+          "a": "180 km",
+          "b": "240 km",
+          "c": "300 km",
+          "d": "360 km"
+        },
+        "correct_option": "d",
+        "answer": "360 km"
+      },
+      {
+        "id": "time-and-distance-060",
+        "chapter": "Time and Distance",
+        "question_number": 60,
+        "question": "A person travels equal distances with speeds of 3 km/hr, 4 km/hr and 5 km/hr and takes a total time of 47 minutes. The total distance (in km) is",
+        "options": {
+          "a": "2",
+          "b": "3",
+          "c": "4",
+          "d": "5"
+        },
+        "correct_option": "b",
+        "answer": "3"
+      },
+      {
+        "id": "time-and-distance-061",
+        "chapter": "Time and Distance",
+        "question_number": 61,
+        "question": "A person travels 285 km in 6 hours in two stages. In the first part of the journey, he travels by bus at the speed of 40 km per hour. In the second part of the journey, he travels by train at the speed of 55 km per hour. How much distance did he travel by train? (M.A.T., 2007)",
+        "options": {
+          "a": "145 km",
+          "b": "165 km",
+          "c": "185 km",
+          "d": "205 km"
+        },
+        "correct_option": "b",
+        "answer": "165 km"
+      },
+      {
+        "id": "time-and-distance-062",
+        "chapter": "Time and Distance",
+        "question_number": 62,
+        "question": "A is faster than B. A and B each walk 24 km. The sum of their speeds is 7 km/hr and the sum of times taken by them is 14 hours. Then, A’s speed is equal to",
+        "options": {
+          "a": "3 km/hr",
+          "b": "4 km/hr",
+          "c": "5 km/hr",
+          "d": "7 km/hr"
+        },
+        "correct_option": "b",
+        "answer": "4 km/hr"
+      },
+      {
+        "id": "time-and-distance-063",
+        "chapter": "Time and Distance",
+        "question_number": 63,
+        "question": "A person travels from P to Q at a speed of 40 kmph and returns by increasing his speed by 50%. What is his average speed for both the trips? (M.B.A., 2003)",
+        "options": {
+          "a": "36 kmph",
+          "b": "45 kmph",
+          "c": "48 kmph",
+          "d": "50 kmph"
+        },
+        "correct_option": "c",
+        "answer": "48 kmph"
+      },
+      {
+        "id": "time-and-distance-064",
+        "chapter": "Time and Distance",
+        "question_number": 64,
+        "question": "An aeroplane flies from place A to place B at the speed of 500 km/hr. On the return journey, its speed is 700 km/hr. The average speed of the aeroplane for the entire journey is (P.C.S. 2009)",
+        "options": {
+          "a": "566 2/3 km/hr",
+          "b": "583 1/3 km/hr",
+          "c": "583 2/3 km/hr",
+          "d": "600 km/hr"
+        },
+        "correct_option": "b",
+        "answer": "583 1/3 km/hr"
+      },
+      {
+        "id": "time-and-distance-065",
+        "chapter": "Time and Distance",
+        "question_number": 65,
+        "question": "A car covers a distance from Town I to Town II at the speed of 56 km/hr and from Town II to Town I at the speed of 53 km/hr. What is the average speed of the car? (Bank Recruitment, 2007)",
+        "options": {
+          "a": "53.5 km/hr",
+          "b": "54 km/hr",
+          "c": "55 km/hr",
+          "d": "55.5 km/hr",
+          "e": "None of these"
+        },
+        "correct_option": "e",
+        "answer": "None of these"
+      },
+      {
+        "id": "time-and-distance-066",
+        "chapter": "Time and Distance",
+        "question_number": 66,
+        "question": "A man can walk uphill at the rate of 2 1/2 km/hr and downhill at the rate of 3 1/4 km/hr. If the total time required to walk a certain distance up the hill and return to the starting point was 4 hr 36 min, then what was the distance walked up the hill by the man? (C.D.S., 2005)",
+        "options": {
+          "a": "4 km",
+          "b": "4 1/2 km",
+          "c": "5 1/2 km",
+          "d": "6 1/2 km"
+        },
+        "correct_option": "d",
+        "answer": "6 1/2 km"
+      },
+      {
+        "id": "time-and-distance-067",
+        "chapter": "Time and Distance",
+        "question_number": 67,
+        "question": "A man drives 150 km to the seashore in 3 hours 20 min. He returns from the shore to the starting point in 4 hours 10 min. Let r be the average rate for the entire trip. Then the average rate for the trip going exceeds r, in kilometres per hour, by (M.B.A., 2010)",
+        "options": {
+          "a": "2",
+          "b": "4",
+          "c": "4 1/2",
+          "d": "5"
+        },
+        "correct_option": "d",
+        "answer": "5"
+      },
+      {
+        "id": "time-and-distance-068",
+        "chapter": "Time and Distance",
+        "question_number": 68,
+        "question": "The average speed of a train in the onward journey is 25% more than that in the return journey. The train halts for one hour on reaching the destination. The total time taken for the complete to and fro journey is 17 hours, covering a distance of 800 km. The speed of the train in the onward journey is",
+        "options": {
+          "a": "45 km/hr",
+          "b": "47.5 km/hr",
+          "c": "52 km/hr",
+          "d": "56.25 km/hr"
+        },
+        "correct_option": "d",
+        "answer": "56.25 km/hr"
+      },
+      {
+        "id": "time-and-distance-069",
+        "chapter": "Time and Distance",
+        "question_number": 69,
+        "question": "I started on my bicycle at 7 a.m. to reach a certain place. After going a certain distance, my bicycle went out of order. Consequently, I rested for 35 minutes and came back to my house walking all the way. I reached my house at 1 p.m. If my cycling speed is 10 kmph and my walking speed is 1 kmph, then on my bicycle I covered a distance of",
+        "options": {
+          "a": "4 41/66 km",
+          "b": "4 9/13 km",
+          "c": "3 8/14 km",
+          "d": "10 15/21 km"
+        },
+        "correct_option": "a",
+        "answer": "4 41/66 km"
+      },
+      {
+        "id": "time-and-distance-070",
+        "chapter": "Time and Distance",
+        "question_number": 70,
+        "question": "A, B and C are on a trip by a car. A drives during the first hour at an average speed of 50 km/hr. B drives during the next 2 hours at an average speed of 48 km/hr. C drives for the next 3 hours at an average speed of 52 km/hr. They reached their destination after exactly 6 hours. Their mean speed was :",
+        "options": {
+          "a": "50 km/hr",
+          "b": "50 1/3 km/hr",
+          "c": "51 1/3 km/hr",
+          "d": "52 km/hr"
+        },
+        "correct_option": "b",
+        "answer": "50 1/3 km/hr"
+      },
+      {
+        "id": "time-and-distance-071",
+        "chapter": "Time and Distance",
+        "question_number": 71,
+        "question": "A car covers the first 39 kms of its journey in 45 minutes and covers the remaining 25 km in 35 minutes. What is the average speed of the car? (Bank P.O., 2007)",
+        "options": {
+          "a": "40 km/hr",
+          "b": "48 km/hr",
+          "c": "49 km/hr",
+          "d": "64 km/hr",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "48 km/hr"
+      },
+      {
+        "id": "time-and-distance-072",
+        "chapter": "Time and Distance",
+        "question_number": 72,
+        "question": "A train travels at a speed of 30 km/hr for 12 minutes and at a speed of 45 km/hr for the next 8 minutes. The average speed of the train for this journey is (S.S.C., 2005)",
+        "options": {
+          "a": "30 km/hr",
+          "b": "36 km/hr",
+          "c": "37.5 km/hr",
+          "d": "48 km/hr"
+        },
+        "correct_option": "b",
+        "answer": "36 km/hr"
+      },
+      {
+        "id": "time-and-distance-073",
+        "chapter": "Time and Distance",
+        "question_number": 73,
+        "question": "A man on tour travels 160 km by car at 64 km/hr and another 160 km by bus at 80 km/hr. The average speed for the whole journey is (L.I.C.A.D.O., 2008)",
+        "options": {
+          "a": "35.55 km/hr",
+          "b": "36 km/hr",
+          "c": "71.11 km/hr",
+          "d": "71 km/hr"
+        },
+        "correct_option": "c",
+        "answer": "71.11 km/hr"
+      },
+      {
+        "id": "time-and-distance-074",
+        "chapter": "Time and Distance",
+        "question_number": 74,
+        "question": "A boy rides his bicycle 10 km at an average speed of 12 km/hr and again travels 12 km at an average speed of 10 km/hr. His average speed for the entire trip is approximately (M.B.A., 2008)",
+        "options": {
+          "a": "10.4 km/hr",
+          "b": "10.8 km/hr",
+          "c": "11 km/hr",
+          "d": "12.2 km/hr"
+        },
+        "correct_option": "b",
+        "answer": "10.8 km/hr"
+      },
+      {
+        "id": "time-and-distance-075",
+        "chapter": "Time and Distance",
+        "question_number": 75,
+        "question": "A man travels 600 km by train at 80 km/hr, 800 km by ship at 40 km/hr, 500 km by aeroplane at 400 km/hr and 100 km by car at 50 km/hr. What is the average speed for the entire distance? (Teachers’ Exam., 2009)",
+        "options": {
+          "a": "60 km/hr",
+          "b": "60 5/123 km/hr",
+          "c": "62 km/hr",
+          "d": "65 5/123 km/hr"
+        },
+        "correct_option": "d",
+        "answer": "65 5/123 km/hr"
+      },
+      {
+        "id": "time-and-distance-076",
+        "chapter": "Time and Distance",
+        "question_number": 76,
+        "question": "A cyclist rides 24 km at 16 kmph and further 36 km at 15 kmph. Find his average speed for the journey. (R.R.B., 2008)",
+        "options": {
+          "a": "15.38 kmph",
+          "b": "15.5 kmph",
+          "c": "16 kmph",
+          "d": "None of these"
+        },
+        "correct_option": "a",
+        "answer": "15.38 kmph"
+      },
+      {
+        "id": "time-and-distance-077",
+        "chapter": "Time and Distance",
+        "question_number": 77,
+        "question": "A person travels three equal distances at a speed of x km/hr, y km/hr and z km/hr respectively. What is the average speed for the whole journey? (S.C.C., 2007)",
+        "options": {
+          "a": "3xyz / (xy + yz + zx)",
+          "b": "xyz / (xy + yz + zx)",
+          "c": "(xy + yz + zx) / xyz",
+          "d": "3xyz / (xy + yz + zx)"
+        },
+        "correct_option": "d",
+        "answer": "3xyz / (xy + yz + zx)"
+      },
+      {
+        "id": "time-and-distance-078",
+        "chapter": "Time and Distance",
+        "question_number": 78,
+        "question": "A car travels the first one-third of a certain distance with a speed of 10 km/hr, the next one-third distance with a speed of 20 km/hr, and the last one-third distance with a speed of 60 km/hr. The average speed of the car for the whole journey is",
+        "options": {
+          "a": "18 km/hr",
+          "b": "24 km/hr",
+          "c": "30 km/hr",
+          "d": "36 km/hr"
+        },
+        "correct_option": "a",
+        "answer": "18 km/hr"
+      },
+      {
+        "id": "time-and-distance-079",
+        "chapter": "Time and Distance",
+        "question_number": 79,
+        "question": "A motorist covers a distance of 39 km in 45 minutes by moving at a speed of x kmph for the first 15 minutes, then moving at double the speed for the next 20 minutes and then again moving at his original speed for the rest of the journey. Then, x is equal to :",
+        "options": {
+          "a": "31.2",
+          "b": "36",
+          "c": "40",
+          "d": "52"
+        },
+        "correct_option": "b",
+        "answer": "36"
+      },
+      {
+        "id": "time-and-distance-080",
+        "chapter": "Time and Distance",
+        "question_number": 80,
+        "question": "Mary jogs 9 km at a speed of 6 km per hour. At what speed would she need to jog during the next 1.5 hours to have an average of 9 km per hour for the entire jogging session?",
+        "options": {
+          "a": "9 kmph",
+          "b": "10 kmph",
+          "c": "12 kmph",
+          "d": "14 kmph"
+        },
+        "correct_option": "c",
+        "answer": "12 kmph"
+      },
+      {
+        "id": "time-and-distance-081",
+        "chapter": "Time and Distance",
+        "question_number": 81,
+        "question": "A family, planning a weekend trip, decides to spend not more than a total of 8 hours driving. By leaving early in the morning, they can average 40 miles per hour on the way to their destination. Due to the heavy Sunday traffic, they average only 30 miles per hour on the return trip. What is the farthest distance from home they can plan to go? (Campus Recruitment, 2010)",
+        "options": {
+          "a": "120 miles or less",
+          "b": "Between 120 and 140 miles",
+          "c": "140 miles",
+          "d": "Between 140 and 160 miles",
+          "e": "160 miles or more"
+        },
+        "correct_option": "b",
+        "answer": "Between 120 and 140 miles"
+      },
+      {
+        "id": "time-and-distance-082",
+        "chapter": "Time and Distance",
+        "question_number": 82,
+        "question": "A car travelling with 5/7 of its actual speed covers 42 km in 1 hr 40 min 48 sec. Find the actual speed of the car. (S.S.C., 2005)",
+        "options": {
+          "a": "17 6/7 km/hr",
+          "b": "25 km/hr",
+          "c": "30 km/hr",
+          "d": "35 km/hr"
+        },
+        "correct_option": "d",
+        "answer": "35 km/hr"
+      },
+      {
+        "id": "time-and-distance-083",
+        "chapter": "Time and Distance",
+        "question_number": 83,
+        "question": "A train running at 7/11 of its own speed reached a place in 22 hours. How much time could be saved if the train would have run at its own speed?",
+        "options": {
+          "a": "7 hours",
+          "b": "8 hours",
+          "c": "14 hours",
+          "d": "16 hours"
+        },
+        "correct_option": "b",
+        "answer": "8 hours"
+      },
+      {
+        "id": "time-and-distance-084",
+        "chapter": "Time and Distance",
+        "question_number": 84,
+        "question": "A man can reach a certain place in 30 hours. If he reduces his speed by 1/15 th, he goes 10 km less in that time. Find his speed. (S.S.C., 2002)",
+        "options": {
+          "a": "4 km/hr",
+          "b": "5 km/hr",
+          "c": "5 1/2 km/hr",
+          "d": "6 km/hr"
+        },
+        "correct_option": "b",
+        "answer": "5 km/hr"
+      },
+      {
+        "id": "time-and-distance-085",
+        "chapter": "Time and Distance",
+        "question_number": 85,
+        "question": "Walking 6/7 th of his usual speed, a man is 12 minutes too late. The usual time taken by him to cover that distance is",
+        "options": {
+          "a": "1 hour",
+          "b": "1 hr 12 min",
+          "c": "1 hr 15 min",
+          "d": "1 hr 20 min"
+        },
+        "correct_option": "b",
+        "answer": "1 hr 12 min"
+      },
+      {
+        "id": "time-and-distance-086",
+        "chapter": "Time and Distance",
+        "question_number": 86,
+        "question": "The average speed of a train is 20% less on the return journey than on the onward journey. The train halts for half an hour at the destination station before starting on the return journey. If the total time taken for the to and fro journey is 23 hours, covering a distance of 1000 km, the speed of the train on the return journey is (M.A.T., 2010)",
+        "options": {
+          "a": "40 km/hr",
+          "b": "50 km/hr",
+          "c": "55 km/hr",
+          "d": "60 km/hr"
+        },
+        "correct_option": "a",
+        "answer": "40 km/hr"
+      },
+      {
+        "id": "time-and-distance-087",
+        "chapter": "Time and Distance",
+        "question_number": 87,
+        "question": "A train increases its normal speed by 12.5% and reaches its destination 20 minutes earlier. What is the actual time taken by the train in the journey? (P.C.S., 2008)",
+        "options": {
+          "a": "145 min",
+          "b": "160 min",
+          "c": "180 min",
+          "d": "220 min"
+        },
+        "correct_option": "c",
+        "answer": "180 min"
+      },
+      {
+        "id": "time-and-distance-088",
+        "chapter": "Time and Distance",
+        "question_number": 88,
+        "question": "A student walks from his house at a speed of 2 1/2 km per hour and reaches his school 6 minutes late. The next day he increases his speed by 1 km per hour and reaches 6 minutes before school time. How far is the school from his house? (S.S.C., 2007)",
+        "options": {
+          "a": "1 1/4 km",
+          "b": "1 3/4 km",
+          "c": "2 1/4 km",
+          "d": "2 3/4 km"
+        },
+        "correct_option": "b",
+        "answer": "1 3/4 km"
+      },
+      {
+        "id": "time-and-distance-089",
+        "chapter": "Time and Distance",
+        "question_number": 89,
+        "question": "With an average speed of 50 km/hr, a train reaches its destination in time. If it goes with an average speed of 40 km/hr, it is late by 24 minutes. The total journey is (N.M.A.T., 2008)",
+        "options": {
+          "a": "30 km",
+          "b": "40 km",
+          "c": "70 km",
+          "d": "80 km"
+        },
+        "correct_option": "d",
+        "answer": "80 km"
+      },
+      {
+        "id": "time-and-distance-090",
+        "chapter": "Time and Distance",
+        "question_number": 90,
+        "question": "If a train runs at 40 kmph, it reaches its destination late by 11 minutes but if it runs at 50 kmph, it is late by 5 minutes only. The correct time for the train to complete its journey is",
+        "options": {
+          "a": "13 min",
+          "b": "15 min",
+          "c": "19 min",
+          "d": "21 min"
+        },
+        "correct_option": "c",
+        "answer": "19 min"
+      },
+      {
+        "id": "time-and-distance-091",
+        "chapter": "Time and Distance",
+        "question_number": 91,
+        "question": "Robert is travelling on his cycle and has calculated to reach point A at 2 P.M. if he travels at 10 kmph; he will reach there at 12 noon if he travels at 15 kmph. At what speed must he travel to reach A at 1 P.M.? (D.M.R.C., 2003)",
+        "options": {
+          "a": "8 kmph",
+          "b": "11 kmph",
+          "c": "12 kmph",
+          "d": "14 kmph"
+        },
+        "correct_option": "c",
+        "answer": "12 kmph"
+      },
+      {
+        "id": "time-and-distance-092",
+        "chapter": "Time and Distance",
+        "question_number": 92,
+        "question": "Ravi walks to and fro to a shopping mall. He spends 30 minutes shopping. If he walks at a speed of 10 km an hour, he returns home at 19.00 hours. If he walks at 15 km an hour, he returns home at 18.30 hours. How far must he walk in order to return home at 18.15 hours? (M.B.A., 2009)",
+        "options": {
+          "a": "17 km/hr",
+          "b": "17.5 km/hr",
+          "c": "18 km/hr",
+          "d": "19 km/hr",
+          "e": "None of these"
+        },
+        "correct_option": "e",
+        "answer": "None of these"
+      },
+      {
+        "id": "time-and-distance-093",
+        "chapter": "Time and Distance",
+        "question_number": 93,
+        "question": "A person travels 285 km in 6 hours in two stages. In the first part of the journey, he travels by bus at the speed of 40 km/hr. In the second part of the journey, he travels by train at the speed of 55 km/hr. How much distance does he travel by train? (M.A.T., 2007)",
+        "options": {
+          "a": "145 km",
+          "b": "165 km",
+          "c": "185 km",
+          "d": "205 km"
+        },
+        "correct_option": "b",
+        "answer": "165 km"
+      },
+      {
+        "id": "time-and-distance-094",
+        "chapter": "Time and Distance",
+        "question_number": 94,
+        "question": "A man covered a certain distance at some speed. Had he moved 3 kmph faster, he would have taken 40 minutes less. If he had moved 2 kmph slower, he would have taken 40 minutes more. The distance (in km) is",
+        "options": {
+          "a": "35",
+          "b": "36 2/3",
+          "c": "37 1/2",
+          "d": "40"
+        },
+        "correct_option": "d",
+        "answer": "40"
+      },
+      {
+        "id": "time-and-distance-095",
+        "chapter": "Time and Distance",
+        "question_number": 95,
+        "question": "A train covered a certain distance at a uniform speed. If the train had been 6 km/hr faster, then it would have taken 4 hours less than the scheduled time. And, if the train were slower by 6 km/hr, then the train would have taken 6 hours more than the scheduled time. The length of the journey is (M.A.T., 2006)",
+        "options": {
+          "a": "700 km",
+          "b": "720 km",
+          "c": "740 km",
+          "d": "760 km"
+        },
+        "correct_option": "b",
+        "answer": "720 km"
+      },
+      {
+        "id": "time-and-distance-096",
+        "chapter": "Time and Distance",
+        "question_number": 96,
+        "question": "A car travels from P to Q at a constant speed. If its speed were increased by 10 km/hr, it would have taken one hour lesser to cover the distance. It would have taken further 45 minutes lesser if the speed was further increased by 10 km/hr. What is the distance between the two cities?",
+        "options": {
+          "a": "420 km",
+          "b": "540 km",
+          "c": "600 km",
+          "d": "650 km"
+        },
+        "correct_option": "a",
+        "answer": "420 km"
+      },
+      {
+        "id": "time-and-distance-097",
+        "chapter": "Time and Distance",
+        "question_number": 97,
+        "question": "A train can travel 50% faster than a car. Both start from point A at the same time and reach point B 75 kms away from A at the same time. On the way, however, the train lost about 12.5 minutes while stopping at the stations. The speed of the car is (M.A.T., 2003)",
+        "options": {
+          "a": "100 kmph",
+          "b": "110 kmph",
+          "c": "120 kmph",
+          "d": "130 kmph"
+        },
+        "correct_option": "c",
+        "answer": "120 kmph"
+      },
+      {
+        "id": "time-and-distance-098",
+        "chapter": "Time and Distance",
+        "question_number": 98,
+        "question": "Excluding stoppages, the speed of a bus is 54 kmph and including stoppages, it is 45 kmph. For how many minutes does the bus stop per hour?",
+        "options": {
+          "a": "9",
+          "b": "10",
+          "c": "12",
+          "d": "20"
+        },
+        "correct_option": "b",
+        "answer": "10"
+      },
+      {
+        "id": "time-and-distance-099",
+        "chapter": "Time and Distance",
+        "question_number": 99,
+        "question": "A flight of Jet Airways from Delhi to Mumbai has an average speed of 700 km/hr without any stoppage, whereas a flight of Kingfisher from Delhi to Mumbai has an average speed of 560 km/hr with stoppage at Baroda. What is the average stoppage time per hour of Kingfisher flight if both the planes fly at the same speed? (M.B.A., 2009)",
+        "options": {
+          "a": "8 min",
+          "b": "12 min",
+          "c": "16 min",
+          "d": "24 min"
+        },
+        "correct_option": "b",
+        "answer": "12 min"
+      },
+      {
+        "id": "time-and-distance-100",
+        "chapter": "Time and Distance",
+        "question_number": 100,
+        "question": "A bus covered a certain distance from village A to village B at the speed of 60 km/hr. However on its return journey it got stuck in traffic and covered the same distance at the speed of 40 km/hr and took 2 hours more to reach its destination. What is the distance covered between villages A and B? (Bank P.O., 2010)",
+        "options": {
+          "a": "200 km",
+          "b": "240 km",
+          "c": "260 km",
+          "d": "Cannot be determined",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "240 km"
+      },
+      {
+        "id": "time-and-distance-101",
+        "chapter": "Time and Distance",
+        "question_number": 101,
+        "question": "A train covers a distance between two stations A and B in 45 minutes. If the speed of the train is reduced by 5 km/hr, then it covers the distance in 48 minutes. The distance between the stations A and B is (P.C.S., 2009)",
+        "options": {
+          "a": "55 km",
+          "b": "60 km",
+          "c": "64 km",
+          "d": "80 km"
+        },
+        "correct_option": "b",
+        "answer": "60 km"
+      },
+      {
+        "id": "time-and-distance-102",
+        "chapter": "Time and Distance",
+        "question_number": 102,
+        "question": "A train travels a distance of 600 km at a constant speed. If the speed of the train is increased by 5 km/hr, the journey would take 4 hours less. Find the speed of the train. (M.A.T., 2010)",
+        "options": {
+          "a": "25 km/hr",
+          "b": "50 km/hr",
+          "c": "100 km/hr",
+          "d": "None of these"
+        },
+        "correct_option": "a",
+        "answer": "25 km/hr"
+      },
+      {
+        "id": "time-and-distance-103",
+        "chapter": "Time and Distance",
+        "question_number": 103,
+        "question": "A car takes 15 minutes less to cover a distance of 75 km, if it increases its speed by 10 km/hr from its usual speed. How much time would it take to cover a distance of 300 km using this speed? (M.A.T., 2010)",
+        "options": {
+          "a": "5 hours",
+          "b": "5 1/2 hours",
+          "c": "6 hours",
+          "d": "6 1/2 hours"
+        },
+        "correct_option": "a",
+        "answer": "5 hours"
+      },
+      {
+        "id": "time-and-distance-104",
+        "chapter": "Time and Distance",
+        "question_number": 104,
+        "question": "With a uniform speed a car covers the distance in 8 hours. Had the speed been increased by 4 km/hr, the same distance could have been covered in 7 1/2 hours. What is the distance covered?",
+        "options": {
+          "a": "420 km",
+          "b": "480 km",
+          "c": "640 km",
+          "d": "Cannot be determined",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "480 km"
+      },
+      {
+        "id": "time-and-distance-105",
+        "chapter": "Time and Distance",
+        "question_number": 105,
+        "question": "Two men start together to walk to a certain destination, one at 3 kmph and another at 3.75 kmph. The latter arrives half an hour before the former. The distance is",
+        "options": {
+          "a": "6 km",
+          "b": "7.5 km",
+          "c": "8 km",
+          "d": "9.5 km"
+        },
+        "correct_option": "b",
+        "answer": "7.5 km"
+      },
+      {
+        "id": "time-and-distance-106",
+        "chapter": "Time and Distance",
+        "question_number": 106,
+        "question": "If a person walks at 14 km/hr instead of 10 km/hr, he would have walked 20 km more. The actual distance travelled by him is",
+        "options": {
+          "a": "50 km",
+          "b": "56 km",
+          "c": "70 km",
+          "d": "80 km"
+        },
+        "correct_option": "a",
+        "answer": "50 km"
+      },
+      {
+        "id": "time-and-distance-107",
+        "chapter": "Time and Distance",
+        "question_number": 107,
+        "question": "In covering a certain distance, the speeds of A and B are in the ratio of 3 : 4. A takes 30 minutes more than B to reach the destination. The time taken by A to reach the destination is",
+        "options": {
+          "a": "1 hour",
+          "b": "1 1/2 hours",
+          "c": "2 hours",
+          "d": "2 1/2 hours"
+        },
+        "correct_option": "c",
+        "answer": "2 hours"
+      },
+      {
+        "id": "time-and-distance-108",
+        "chapter": "Time and Distance",
+        "question_number": 108,
+        "question": "In covering a distance of 30 km, Abhay takes 2 hours more than Sameer. If Abhay doubles his speed, then he would take 1 hour less than Sameer. Abhay’s speed is",
+        "options": {
+          "a": "5 kmph",
+          "b": "6 kmph",
+          "c": "6.25 kmph",
+          "d": "7.5 kmph"
+        },
+        "correct_option": "a",
+        "answer": "5 kmph"
+      },
+      {
+        "id": "time-and-distance-109",
+        "chapter": "Time and Distance",
+        "question_number": 109,
+        "question": "Three persons are walking from a place A to another place B. Their speeds are in the ratio of 4 : 3 : 5. The time ratio to reach B by these persons will be",
+        "options": {
+          "a": "4 : 3 : 5",
+          "b": "5 : 3 : 4",
+          "c": "15 : 9 : 20",
+          "d": "15 : 20 : 12"
+        },
+        "correct_option": "d",
+        "answer": "15 : 20 : 12"
+      },
+      {
+        "id": "time-and-distance-110",
+        "chapter": "Time and Distance",
+        "question_number": 110,
+        "question": "A journey of 192 km between two cities takes 2 hours less by a fast train than by a slow train. If the average speed of the slow train is 16 km/hr less than that of the fast train, then the average speed of the fast train is",
+        "options": {
+          "a": "32 km/hr",
+          "b": "36 km/hr",
+          "c": "48 km/hr",
+          "d": "64 km/hr"
+        },
+        "correct_option": "c",
+        "answer": "48 km/hr"
+      },
+      {
+        "id": "time-and-distance-111",
+        "chapter": "Time and Distance",
+        "question_number": 111,
+        "question": "In a flight of 6000 km, an aircraft was slowed down due to bad weather. The average speed for the trip was reduced by 400 kmph and the time of flight increased by 30 minutes. The original planned duration of the flight was (M.A.T., 2006)",
+        "options": {
+          "a": "2 1/2 hours",
+          "b": "3 1/3 hours",
+          "c": "4 1/3 hours",
+          "d": "5 1/3 hours"
+        },
+        "correct_option": "a",
+        "answer": "2 1/2 hours"
+      },
+      {
+        "id": "time-and-distance-112",
+        "chapter": "Time and Distance",
+        "question_number": 112,
+        "question": "An aeroplane first flew with a speed of 440 kmph and covered a certain distance. It still had to cover 770 km less than what it had already covered, but it flew with a speed of 660 kmph. The average speed for the entire flight was 500 kmph. Find the total distance covered. (M.A.T., 2005)",
+        "options": {
+          "a": "1375 km",
+          "b": "2750 km",
+          "c": "3250 km",
+          "d": "4400 km"
+        },
+        "correct_option": "b",
+        "answer": "2750 km"
+      },
+      {
+        "id": "time-and-distance-113",
+        "chapter": "Time and Distance",
+        "question_number": 113,
+        "question": "Two boys A and B start at the same time to ride from Delhi to Meerut, 60 km away. A travels 4 km an hour slower than B, B reaches Meerut and at once turns back meeting A, 12 km from Meerut. A’s rate was (M.B.A., 2011)",
+        "options": {
+          "a": "4 km/hr",
+          "b": "8 km/hr",
+          "c": "12 km/hr",
+          "d": "16 km/hr"
+        },
+        "correct_option": "b",
+        "answer": "8 km/hr"
+      },
+      {
+        "id": "time-and-distance-114",
+        "chapter": "Time and Distance",
+        "question_number": 114,
+        "question": "A cyclist drove one kilometre, with the wind in his back, in 3 minutes and drove the same way back, against the wind, in 4 minutes. If we assume that the cyclist always puts constant force on the pedals, how much time would it take him to drive 1 km without wind? (SNAP, 2008)",
+        "options": {
+          "a": "2 1/3 min",
+          "b": "2 3/7 min",
+          "c": "3 3/7 min",
+          "d": "3 7/12 min"
+        },
+        "correct_option": "c",
+        "answer": "3 3/7 min"
+      },
+      {
+        "id": "time-and-distance-115",
+        "chapter": "Time and Distance",
+        "question_number": 115,
+        "question": "Ramesh travels 760 km to his home, partly by train and partly by car. He takes 8 hours, if he travels 160 km by train and the rest by car. He takes 12 minutes more, if he travels 240 km by train and the rest by car. What are the speeds of the car and the train respectively? (M.A.T., 2006)",
+        "options": {
+          "a": "90 km/hr, 60 km/hr",
+          "b": "100 km/hr, 80 km/hr",
+          "c": "80 km/hr, 70 km/hr",
+          "d": "100 km/hr, 90 km/hr"
+        },
+        "correct_option": "b",
+        "answer": "100 km/hr, 80 km/hr"
+      },
+      {
+        "id": "time-and-distance-116",
+        "chapter": "Time and Distance",
+        "question_number": 116,
+        "question": "Two sea trawlers left a sea port simultaneously in two mutually perpendicular directions. Half an hour later, the shortest distance between them was 17 km, and another 15 minutes later, one sea trawler was 10.5 km farther from the origin than the other. Find the speed of each sea trawler. (SNAP, 2008)",
+        "options": {
+          "a": "16 km/hr, 30 km/hr",
+          "b": "18 km/hr, 24 km/hr",
+          "c": "20 km/hr, 22 km/hr",
+          "d": "18 km/hr, 36 km/hr"
+        },
+        "correct_option": "a",
+        "answer": "16 km/hr, 30 km/hr"
+      },
+      {
+        "id": "time-and-distance-117",
+        "chapter": "Time and Distance",
+        "question_number": 117,
+        "question": "A runs twice as fast as B and B runs thrice as fast as C. The distance covered by C in 72 minutes, will be covered by A in (C.P.O., 2007; R.R.B., 2006)",
+        "options": {
+          "a": "12 minutes",
+          "b": "16 minutes",
+          "c": "18 minutes",
+          "d": "24 minutes"
+        },
+        "correct_option": "a",
+        "answer": "12 minutes"
+      },
+      {
+        "id": "time-and-distance-118",
+        "chapter": "Time and Distance",
+        "question_number": 118,
+        "question": "A ship, 40 kilometres from the shore, springs a leak which admits 3 3/4 tonnes of water in 12 minutes. 60 tonnes would suffice to sink her, but the ship’s pumps can throw out 12 tonnes of water in one hour. Find the average rate of sailing, so that she may reach the shore just as she begins to sink. (M.A.T. 2006, 2008)",
+        "options": {
+          "a": "1 1/2 km per hour",
+          "b": "2 1/2 km per hour",
+          "c": "3 1/2 km per hour",
+          "d": "4 1/2 km per hour"
+        },
+        "correct_option": "d",
+        "answer": "4 1/2 km per hour"
+      },
+      {
+        "id": "time-and-distance-119",
+        "chapter": "Time and Distance",
+        "question_number": 119,
+        "question": "Amit travelled back to home in a car, after visiting his friend in a distant village. When he started at his friend’s house the car had exactly 18 litres of petrol in it. He travelled along at a steady 40 kilometres per hour and managed a 10 kilometres per litre of petrol. As the car was old, the fuel tank lost fuel at the rate of half a litre per hour. Amit was lucky as his car stopped just in front of his home because it had run out of fuel and he only just made it. How far was it from his friend’s home to Amit’s home? (I.I.F.T., 2005)",
+        "options": {
+          "a": "150 km",
+          "b": "170 km",
+          "c": "180 km",
+          "d": "None of these"
+        },
+        "correct_option": "d",
+        "answer": "None of these"
+      },
+      {
+        "id": "time-and-distance-120",
+        "chapter": "Time and Distance",
+        "question_number": 120,
+        "question": "Two men starting from the same place walk at the rate of 5 kmph and 5.5 kmph respectively. What time will they take to be 8.5 km apart, if they walk in the same direction?",
+        "options": {
+          "a": "4 hrs 15 min",
+          "b": "8 hrs 30 min",
+          "c": "16 hrs",
+          "d": "17 hrs"
+        },
+        "correct_option": "d",
+        "answer": "17 hrs"
+      },
+      {
+        "id": "time-and-distance-121",
+        "chapter": "Time and Distance",
+        "question_number": 121,
+        "question": "A walks around a circular field at the rate of one round per hour while B runs around it at the rate of six rounds per hour. They start in the same direction from the same point at 7.30 a.m. They shall first cross each other at :",
+        "options": {
+          "a": "7.42 a.m.",
+          "b": "7.48 a.m.",
+          "c": "8.10 a.m.",
+          "d": "8.30 a.m."
+        },
+        "correct_option": "a",
+        "answer": "7.42 a.m."
+      },
+      {
+        "id": "time-and-distance-122",
+        "chapter": "Time and Distance",
+        "question_number": 122,
+        "question": "A and B start from the same point and in the same direction at 7 a.m. to walk around a rectangular field 400 m × 300 m. A and B walk at the rate of 3 km/hr and 2.5 km/hr respectively. How many times shall they cross each other if they continue to walk till 12 : 30 p.m.? (Civil Services, 2004)",
+        "options": {
+          "a": "Not even once",
+          "b": "Once",
+          "c": "Twice",
+          "d": "Thrice"
+        },
+        "correct_option": "b",
+        "answer": "Once"
+      },
+      {
+        "id": "time-and-distance-123",
+        "chapter": "Time and Distance",
+        "question_number": 123,
+        "question": "There are 8 equidistant points A, B, C, D, E, F, G and H in the clockwise direction on the periphery of a circle. In a time interval t, a person reaches from A to C with uniform motion while another person reaches the point E from the point B during the same time interval with uniform motion. Both the persons move in the same direction along the circumference of the circle and start at the same instant. How much time after the start, will the two persons meet each other? (Civil Services, 2006)",
+        "options": {
+          "a": "4t",
+          "b": "7t",
+          "c": "9t",
+          "d": "Never"
+        },
+        "correct_option": "b",
+        "answer": "7t"
+      },
+      {
+        "id": "time-and-distance-124",
+        "chapter": "Time and Distance",
+        "question_number": 124,
+        "question": "A walks at 4 kmph and 4 hours after his start, B cycles after him at 10 kmph. How far from the start does B catch up with A?",
+        "options": {
+          "a": "16.7 km",
+          "b": "18.6 km",
+          "c": "21.5 km",
+          "d": "26.7 km"
+        },
+        "correct_option": "d",
+        "answer": "26.7 km"
+      },
+      {
+        "id": "time-and-distance-125",
+        "chapter": "Time and Distance",
+        "question_number": 125,
+        "question": "Paschim Express left Delhi for Mumbai at 14.30 hrs travelling at a speed of 60 kmph and August Kranti Express left Delhi for Mumbai on the same day at 16.30 hrs travelling at a speed of 80 kmph. How far away from Delhi will the two trains meet (excluding stoppages)? (M.B.A., 2004)",
+        "options": {
+          "a": "120 km",
+          "b": "360 km",
+          "c": "480 km",
+          "d": "500 km"
+        },
+        "correct_option": "c",
+        "answer": "480 km"
+      },
+      {
+        "id": "time-and-distance-126",
+        "chapter": "Time and Distance",
+        "question_number": 126,
+        "question": "A thief is noticed by a policeman from a distance of 200 m. The thief starts running and the policeman chases him. The thief and the policeman run at the rate of 10 km and 11 km per hour respectively. What is the distance between them after 6 minutes?",
+        "options": {
+          "a": "100 m",
+          "b": "150 m",
+          "c": "190 m",
+          "d": "200 m"
+        },
+        "correct_option": "a",
+        "answer": "100 m"
+      },
+      {
+        "id": "time-and-distance-127",
+        "chapter": "Time and Distance",
+        "question_number": 127,
+        "question": "A bus is moving with a speed of 30 km/hr ahead of a car with a speed of 50 km/hr. How many kilometres apart are they if it takes 15 minutes for the car to catch up with the bus?",
+        "options": {
+          "a": "5 km",
+          "b": "7.5 km",
+          "c": "12.5 km",
+          "d": "15 km"
+        },
+        "correct_option": "a",
+        "answer": "5 km"
+      },
+      {
+        "id": "time-and-distance-128",
+        "chapter": "Time and Distance",
+        "question_number": 128,
+        "question": "A thief running at 8 km/hr is chased by a policeman whose speed is 10 km/hr. If the thief is 100 metres ahead of the policeman, then the time required for the policeman to catch the thief will be",
+        "options": {
+          "a": "2 minutes",
+          "b": "3 minutes",
+          "c": "6 minutes",
+          "d": "10 minutes"
+        },
+        "correct_option": "b",
+        "answer": "3 minutes"
+      },
+      {
+        "id": "time-and-distance-129",
+        "chapter": "Time and Distance",
+        "question_number": 129,
+        "question": "A thief steals a car at 2.30 p.m. and drives it at 60 kmph. The theft is discovered at 3 p.m. and the owner sets off in another car at 75 kmph. When will he overtake the thief?",
+        "options": {
+          "a": "4.30 p.m.",
+          "b": "4.45 p.m.",
+          "c": "5 p.m.",
+          "d": "5.15 p.m."
+        },
+        "correct_option": "c",
+        "answer": "5 p.m."
+      },
+      {
+        "id": "time-and-distance-130",
+        "chapter": "Time and Distance",
+        "question_number": 130,
+        "question": "Aryan runs at a speed of 40 metres/minute. Rahul follows him after an interval of 5 minutes and runs at a speed of 50 metres/minute. Rahul’s dog runs at a speed of 60 metres/minute and starts along with Rahul. The dog reaches Aryan and then comes back to Rahul, and continues to do so till Rahul reaches Aryan. What is the total distance covered by the dog? (Civil Services, 2005)",
+        "options": {
+          "a": "600 m",
+          "b": "750 m",
+          "c": "980 m",
+          "d": "1200 m"
+        },
+        "correct_option": "d",
+        "answer": "1200 m"
+      },
+      {
+        "id": "time-and-distance-131",
+        "chapter": "Time and Distance",
+        "question_number": 131,
+        "question": "A thief, pursued by a policeman, was 100 m ahead at the start. If the ratio of the speed of the policeman to that of the thief was 5 : 4, then how far could the thief go before he was caught by the policeman? (S.S.C., 2005)",
+        "options": {
+          "a": "80 m",
+          "b": "200 m",
+          "c": "400 m",
+          "d": "600 m"
+        },
+        "correct_option": "c",
+        "answer": "400 m"
+      },
+      {
+        "id": "time-and-distance-132",
+        "chapter": "Time and Distance",
+        "question_number": 132,
+        "question": "A walks at a uniform rate of 4 km an hour; and 4 hours after his start, B bicycles after him at the uniform rate of 10 km an hour. How far from the starting point will B catch A? (C.P.O., 2005)",
+        "options": {
+          "a": "16.7 km",
+          "b": "18.6 km",
+          "c": "21.5 km",
+          "d": "26.7 km"
+        },
+        "correct_option": "d",
+        "answer": "26.7 km"
+      },
+      {
+        "id": "time-and-distance-133",
+        "chapter": "Time and Distance",
+        "question_number": 133,
+        "question": "A passenger train runs at the rate of 80 kmph. It starts from the station, 6 hours after a goods train leaves the station. The passenger train overtakes the goods train after 4 hours. The speed of goods train is (R.R.B., 2008)",
+        "options": {
+          "a": "32 km/hr",
+          "b": "45 km/hr",
+          "c": "50 km/hr",
+          "d": "64 km/hr"
+        },
+        "correct_option": "a",
+        "answer": "32 km/hr"
+      },
+      {
+        "id": "time-and-distance-134",
+        "chapter": "Time and Distance",
+        "question_number": 134,
+        "question": "An athlete claimed that his timing for a 100 m dash should be corrected because the starting signal was given by a gun fired from a point 10 m away from him and the timekeeper was standing close to the gun. The error due to this could be (in seconds) [Given: speed of sound = 300 m/s]",
+        "options": {
+          "a": "0.03",
+          "b": "0.1",
+          "c": "0.5",
+          "d": "0.7"
+        },
+        "correct_option": "a",
+        "answer": "0.03"
+      },
+      {
+        "id": "time-and-distance-135",
+        "chapter": "Time and Distance",
+        "question_number": 135,
+        "question": "Sound waves travel at 300 m/s. Sound produced at a point is heard by a person after 5 seconds while the same sound is heard by another person after 6 seconds. What could be the maximum and minimum distance between the two persons?",
+        "options": {
+          "a": "1.8 km, 0.15 km",
+          "b": "2.2 km, 0.20 km",
+          "c": "2.8 km, 0.25 km",
+          "d": "3.3 km, 0.3 km"
+        },
+        "correct_option": "d",
+        "answer": "3.3 km, 0.3 km"
+      },
+      {
+        "id": "time-and-distance-136",
+        "chapter": "Time and Distance",
+        "question_number": 136,
+        "question": "Two guns were fired from the same place at an interval of 8 minutes, A person approaching the place observes that 5 minutes 52 seconds have elapsed between the hearing of the sound of the two guns. If the velocity of the sound is 330 m/sec, the man was approaching the place at what speed (in km/hr)? (S.S.C., 2007)",
+        "options": {
+          "a": "24",
+          "b": "27",
+          "c": "30",
+          "d": "36"
+        },
+        "correct_option": "b",
+        "answer": "27"
+      },
+      {
+        "id": "time-and-distance-137",
+        "chapter": "Time and Distance",
+        "question_number": 137,
+        "question": "Two cyclists start from the same place in opposite directions. One goes towards north at 18 kmph and the other goes towards south at 20 kmph. What time will they take to be 47.5 km apart?",
+        "options": {
+          "a": "1 1/4 hrs",
+          "b": "1 1/2 hrs",
+          "c": "2 hrs. 23 min.",
+          "d": "2 1/2 hrs"
+        },
+        "correct_option": "a",
+        "answer": "1 1/4 hrs"
+      },
+      {
+        "id": "time-and-distance-138",
+        "chapter": "Time and Distance",
+        "question_number": 138,
+        "question": "A and B are two stations 10 km apart. A man, P starts from A and travels towards B at the rate of 3 km/hr, whereas another man Q starts from B and travels towards A at the rate of 2 km/hr. When and where do they meet? (P.C.S., 2008)",
+        "options": {
+          "a": "After 2 hours, 6 km from A",
+          "b": "After 3 hours, 9 km from A",
+          "c": "After 2 1/2 hours, 7.5 km from A",
+          "d": "After 2 hours, 4 km from A"
+        },
+        "correct_option": "a",
+        "answer": "After 2 hours, 6 km from A"
+      },
+      {
+        "id": "time-and-distance-139",
+        "chapter": "Time and Distance",
+        "question_number": 139,
+        "question": "Two cars X and Y start from places A and B respectively which are 700 km apart at 9 a.m. Both the cars run at an average speed of 60 km/hr. Car X stops at 10 a.m. and again starts at 11 a.m. while the other car continues to run without stopping. The two cars cross each other at (P.C.S., 2009)",
+        "options": {
+          "a": "2 : 40 p.m",
+          "b": "3 : 20 p.m",
+          "c": "4 : 10 p.m",
+          "d": "4 : 20 p.m"
+        },
+        "correct_option": "b",
+        "answer": "3 : 20 p.m"
+      },
+      {
+        "id": "time-and-distance-140",
+        "chapter": "Time and Distance",
+        "question_number": 140,
+        "question": "A train started from station A and proceeded towards station B at a speed of 48 km/hr. Forty-five minutes later another train started from station B and proceeded towards station A at 50 km/hr. If the distance between the two stations is 232 km, at what distance from station A will the trains meet? (M.A.T., 2009)",
+        "options": {
+          "a": "108 km",
+          "b": "132 km",
+          "c": "144 km",
+          "d": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "132 km"
+      },
+      {
+        "id": "time-and-distance-141",
+        "chapter": "Time and Distance",
+        "question_number": 141,
+        "question": "The jogging track in a sports complex is 726 metres in circumference. Deepak and his wife start from the same point and walk in opposite directions at 4.5 km/hr and 3.75 km/hr respectively. They will meet for the first time in",
+        "options": {
+          "a": "4.9 min",
+          "b": "5.28 min",
+          "c": "5.5 min",
+          "d": "6 min"
+        },
+        "correct_option": "b",
+        "answer": "5.28 min"
+      },
+      {
+        "id": "time-and-distance-142",
+        "chapter": "Time and Distance",
+        "question_number": 142,
+        "question": "A and B walk around a circular track. They start at 8 a.m. from the same point in the opposite directions. A and B walk at a speed of 2 rounds per hour and 3 rounds per hour respectively. How many times shall they cross each other before 9.30 a.m.?",
+        "options": {
+          "a": "5",
+          "b": "6",
+          "c": "7",
+          "d": "8"
+        },
+        "correct_option": "c",
+        "answer": "7"
+      },
+      {
+        "id": "time-and-distance-143",
+        "chapter": "Time and Distance",
+        "question_number": 143,
+        "question": "Two cyclists start on a circular track from a given point but in opposite directions with speeds of 7 m/sec and 8 m/sec respectively. If the circumference of the circle is 300 metres, after what time will they meet at the starting point? (M.A.T., 2007)",
+        "options": {
+          "a": "20 sec",
+          "b": "100 sec",
+          "c": "200 sec",
+          "d": "300 sec"
+        },
+        "correct_option": "d",
+        "answer": "300 sec"
+      },
+      {
+        "id": "time-and-distance-144",
+        "chapter": "Time and Distance",
+        "question_number": 144,
+        "question": "A distance of 425 km separates two trains moving towards each other at a speed of 200 km/hr each. What will be the distance between them after 1 hr 30 min, if they reduce their speed by half, every half an hour?",
+        "options": {
+          "a": "75 km",
+          "b": "120 km",
+          "c": "150 km",
+          "d": "200 km"
+        },
+        "correct_option": "a",
+        "answer": "75 km"
+      },
+      {
+        "id": "time-and-distance-145",
+        "chapter": "Time and Distance",
+        "question_number": 145,
+        "question": "P and Q are 120 km apart. A starts from P towards Q at 6 a.m. B starts from Q towards P at 11 a.m. on the same day. A is 50% faster than B. They cross each other at 8 p.m. At what time will A reach his destination?",
+        "options": {
+          "a": "Midnight",
+          "b": "2 a.m. the next day",
+          "c": "11 p.m.",
+          "d": "11 a.m. the next day"
+        },
+        "correct_option": "b",
+        "answer": "2 a.m. the next day"
+      },
+      {
+        "id": "time-and-distance-146",
+        "chapter": "Time and Distance",
+        "question_number": 146,
+        "question": "In reaching his destination, how many more hours than A, will B take?",
+        "options": {
+          "a": "8",
+          "b": "9",
+          "c": "10",
+          "d": "12"
+        },
+        "correct_option": "c",
+        "answer": "10"
+      },
+      {
+        "id": "time-and-distance-147",
+        "chapter": "Time and Distance",
+        "question_number": 147,
+        "question": "A’s speed (in km/hr) is",
+        "options": {
+          "a": "4",
+          "b": "4.5",
+          "c": "5",
+          "d": "6"
+        },
+        "correct_option": "d",
+        "answer": "6"
+      },
+      {
+        "id": "time-and-distance-148",
+        "chapter": "Time and Distance",
+        "question_number": 148,
+        "question": "Train X leaves New York at 1 A.M. and travels east at a constant speed of x mph. If train Z leaves New York at 2 A.M. and travels east, at what constant rate of speed will train Z have to travel in order to catch train X at exactly 5 : 30 A.M.? (M.B.A., 2006)",
+        "options": {
+          "a": "5/6 x",
+          "b": "9/8 x",
+          "c": "6/5 x",
+          "d": "9/7 x",
+          "e": "3/2 x"
+        },
+        "correct_option": "d",
+        "answer": "9/7 x"
+      },
+      {
+        "id": "time-and-distance-149",
+        "chapter": "Time and Distance",
+        "question_number": 149,
+        "question": "Two ladies simultaneously leave cities A and B connected by a straight road and travel towards each other. The first lady travels 2 km/hr faster than the second lady and reaches B one hour before the second lady reaches A. The two cities A and B are 24 km apart. How many kilometres does each lady travel in one hour?",
+        "options": {
+          "a": "5 km, 3 km",
+          "b": "7 km, 5 km",
+          "c": "8 km, 6 km",
+          "d": "6 km, 14 km"
+        },
+        "correct_option": "c",
+        "answer": "8 km, 6 km"
+      },
+      {
+        "id": "time-and-distance-150",
+        "chapter": "Time and Distance",
+        "question_number": 150,
+        "question": "Buses start from a bus terminal with a speed of 20 km/hr at intervals of 10 minutes. What is the speed of a man coming from the opposite direction towards the bus terminal if he meets the buses at intervals of 8 minutes? (S.S.C., 2010)",
+        "options": {
+          "a": "3 km/hr",
+          "b": "4 km/hr",
+          "c": "5 km/hr",
+          "d": "7 km/hr"
+        },
+        "correct_option": "c",
+        "answer": "5 km/hr"
+      },
+      {
+        "id": "time-and-distance-151",
+        "chapter": "Time and Distance",
+        "question_number": 151,
+        "question": "Two men at points R and S, 76 km apart, set out at the same time to walk towards each other. The man at R walks uniformly at the rate of 4 1/2 km/hr ; the man at S walks at the constant rate of 3 1/4 km/hr for the first hour, at 3 3/4 km/hr for the second hour, and so on, in arithmetic progression. If the men meet x km nearer R than S in an integral number of hours, then x is (M.B.A., 2010)",
+        "options": {
+          "a": "4",
+          "b": "6",
+          "c": "8",
+          "d": "10"
+        },
+        "correct_option": "a",
+        "answer": "4"
+      },
+      {
+        "id": "time-and-distance-152",
+        "chapter": "Time and Distance",
+        "question_number": 152,
+        "question": "Two planes move along a circle of circumference 1.2 kms with constant speeds. When they move in different directions, they meet every 15 seconds and when they move in the same direction one plane overtakes the other every 60 seconds. The speed of the slower plane is (M.B.A., 2004)",
+        "options": {
+          "a": "0.02 km/s",
+          "b": "0.03 km/s",
+          "c": "0.04 km/s",
+          "d": "0.05 km/s"
+        },
+        "correct_option": "b",
+        "answer": "0.03 km/s"
+      },
+      {
+        "id": "time-and-distance-153",
+        "chapter": "Time and Distance",
+        "question_number": 153,
+        "question": "Two cyclists, k kilometres apart, and starting at the same time, would be together in r hours if they travelled in the same direction, but would pass each other in t hours if they travelled in opposite directions. The ratio of the speed of the faster cyclist to that of the slower is (M.B.A., 2011)",
+        "options": {
+          "a": "(r + t) / (r - t)",
+          "b": "(r - t) / (r + t)",
+          "c": "(r + t) / r",
+          "d": "r / t"
+        },
+        "correct_option": "a",
+        "answer": "(r + t) / (r - t)"
+      },
+      {
+        "id": "time-and-distance-154",
+        "chapter": "Time and Distance",
+        "question_number": 154,
+        "question": "A bus left X for point Y. Two hours later a car left point X for Y and arrived at Y at the same time as the bus. If the car and the bus left simultaneously from the opposite ends X and Y towards each other, they would meet 1 1/3 hours after the start. How much time did it take the bus to travel from X to Y?",
+        "options": {
+          "a": "2 hours",
+          "b": "4 hours",
+          "c": "6 hours",
+          "d": "8 hours"
+        },
+        "correct_option": "b",
+        "answer": "4 hours"
+      },
+      {
+        "id": "time-and-distance-155",
+        "chapter": "Time and Distance",
+        "question_number": 155,
+        "question": "Two trains starting at the same time from two stations 200 km apart and going in opposite directions cross each other at a distance of 110 km from one of the stations. What is the ratio of their speeds?",
+        "options": {
+          "a": "9 : 20",
+          "b": "11 : 9",
+          "c": "11 : 20",
+          "d": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "11 : 9"
+      },
+      {
+        "id": "time-and-distance-156",
+        "chapter": "Time and Distance",
+        "question_number": 156,
+        "question": "Two trains start from stations A and B and travel towards each other at a speed of 50 kmph and 60 kmph respectively. At the time of their meeting, the second train had travelled 120 km more than the first. The distance between A and B is (R.R.B. 2006 ; C.P.O. 2005 ; M.A.T. 2009 ; Bank P.O. 2008)",
+        "options": {
+          "a": "600 km",
+          "b": "1320 km",
+          "c": "1440 km",
+          "d": "1660 km"
+        },
+        "correct_option": "b",
+        "answer": "1320 km"
+      },
+      {
+        "id": "time-and-distance-157",
+        "chapter": "Time and Distance",
+        "question_number": 157,
+        "question": "Train A leaves Ludhiana for Delhi at 11 a.m, running at the speed of 60 km/hr. Train B leaves Ludhiana for Delhi by the same route at 2 p.m. on the same day, running at the speed of 72 km/hr. At what time will the two trains meet each other? (M.A.T., 2008)",
+        "options": {
+          "a": "2 a.m. on the next day",
+          "b": "5 a.m. on the next day",
+          "c": "5 p.m. on the next day",
+          "d": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "5 a.m. on the next day"
+      },
+      {
+        "id": "time-and-distance-158",
+        "chapter": "Time and Distance",
+        "question_number": 158,
+        "question": "A train M leaves station X at 5 a.m and reaches station Y at 9 a.m. Another train N leaves station Y at 7 a.m. and reaches station X at 10.30 a.m. At what time do the two trains cross each other? (M.A.T., 2006)",
+        "options": {
+          "a": "7.36 a.m",
+          "b": "7.56 a.m",
+          "c": "8.36 a.m",
+          "d": "8.56 a.m"
+        },
+        "correct_option": "b",
+        "answer": "7.56 a.m"
+      },
+      {
+        "id": "time-and-distance-159",
+        "chapter": "Time and Distance",
+        "question_number": 159,
+        "question": "Train A travelling at 60 km/hr leaves Mumbai for Delhi at 6 p.m. Train B travelling at 90 km/hr also leaves Mumbai for Delhi at 9 p.m. Train C leaves Delhi for Mumbai at 9 p.m. If all the three trains meet at the same time between Mumbai and Delhi, then what is the speed of train C if the distance between Delhi and Mumbai is 1260 km?",
+        "options": {
+          "a": "60 km/hr",
+          "b": "90 km/hr",
+          "c": "120 km/hr",
+          "d": "135 km/hr"
+        },
+        "correct_option": "c",
+        "answer": "120 km/hr"
+      },
+      {
+        "id": "time-and-distance-160",
+        "chapter": "Time and Distance",
+        "question_number": 160,
+        "question": "Amit starts from a point A and walks to another point B and then returns from B to A by his car and thus takes a total time of 6 hours and 45 minutes. If he had driven both ways in his car, he would have taken 2 hours less. How long would it take for him to walk both ways? (Civil Services, 2007)",
+        "options": {
+          "a": "7 hours 45 minutes",
+          "b": "8 hours 15 minutes",
+          "c": "8 hours 30 minutes",
+          "d": "8 hours 45 minutes"
+        },
+        "correct_option": "d",
+        "answer": "8 hours 45 minutes"
+      },
+      {
+        "id": "time-and-distance-161",
+        "chapter": "Time and Distance",
+        "question_number": 161,
+        "question": "Reena leaves office at 6.00 p.m. and catches a 6.30 p.m. local train that arrives in her town at 7.00 p.m. Her father leaves home to pick her up at 7.00 p.m. from the station as she gets off the train. Yesterday, Reena left her office early and took a 6.00 p.m. train and arrived at 6.30 p.m. As her father was not there to pick her up, she started walking towards home. Her father left home at the usual time, saw her daughter walking, turned around, picked her up and drove home, arriving there 10 minutes earlier than the usual. For how long did Reena walk before her father picked her up?",
+        "options": {
+          "a": "10 min",
+          "b": "15 min",
+          "c": "20 min",
+          "d": "25 min"
+        },
+        "correct_option": "d",
+        "answer": "25 min"
+      },
+      {
+        "id": "time-and-distance-162",
+        "chapter": "Time and Distance",
+        "question_number": 162,
+        "question": "On return from a business trip, Mr X was to be picked up from the railway station by his coachman. However, his meeting having finished before schedule, he left his destination earlier by catching an earlier train as a result of which he arrived 2 hours early. Immediately on arrival he rang up home for the coach and was told that it had just left in order to be exactly in time for the train by which he was scheduled to come. To save time he started walking homeward at 4 mph. On the way he met the coachman who brought him home an hour before schedule. How far is Mr X’s house from the railway station?",
+        "options": {
+          "a": "12 miles",
+          "b": "16 miles",
+          "c": "18 miles",
+          "d": "24 miles"
+        },
+        "correct_option": "d",
+        "answer": "24 miles"
+      },
+      {
+        "id": "time-and-distance-163",
+        "chapter": "Time and Distance",
+        "question_number": 163,
+        "question": "A train approaches a tunnel AB. Inside the tunnel is a cat located at a point that is 3/8 of the distance AB measured from the entrance A. When the train whistles, that cat runs. If the cat moves to the entrance A of the tunnel, the train catches the cat exactly at the entrance. If the cat moves to the exit B, the train catches the cat at exactly the exit. The ratio of the speed of the train to that of the cat is of the order",
+        "options": {
+          "a": "3 : 1",
+          "b": "4 : 1",
+          "c": "5 : 1",
+          "d": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "4 : 1"
+      },
+      {
+        "id": "time-and-distance-164",
+        "chapter": "Time and Distance",
+        "question_number": 164,
+        "question": "The speed of a railway engine is 42 km/hr when no compartment is attached and the reduction in speed is directly proportional to the square root of the number of compartments attached. If the speed of the train carried by this engine is 24 km/hr with 9 compartments attached, the maximum number of compartments that the engine can pull is",
+        "options": {
+          "a": "35",
+          "b": "41",
+          "c": "48",
+          "d": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "48"
+      },
+      {
+        "id": "time-and-distance-165",
+        "chapter": "Time and Distance",
+        "question_number": 165,
+        "question": "Ram and Shyam run a race between points A and B, 5 km apart. Ram starts at 9 a.m. from A at a speed of 5 km/hr, reaches B and returns to A at the same speed. Shyam starts at 9 : 45 a.m. from A at a speed of 10 km/hr, reaches B and comes back to A at the same speed. At what time do Ram and Shyam meet each other?",
+        "options": {
+          "a": "10 a.m.",
+          "b": "10 : 10 a.m.",
+          "c": "10 : 20 a.m.",
+          "d": "10 : 30 a.m."
+        },
+        "correct_option": "b",
+        "answer": "10 : 10 a.m."
+      },
+      {
+        "id": "time-and-distance-166",
+        "chapter": "Time and Distance",
+        "question_number": 166,
+        "question": "Ram and Shyam run a race between points A and B, 5 km apart. Ram starts at 9 a.m. from A at a speed of 5 km/hr, reaches B and returns to A at the same speed. Shyam starts at 9 : 45 a.m. from A at a speed of 10 km/hr, reaches B and comes back to A at the same speed. At what time does Shyam overtake Ram?",
+        "options": {
+          "a": "10 : 20 a.m.",
+          "b": "10 : 30 a.m.",
+          "c": "10 : 40 a.m.",
+          "d": "10 : 50 a.m."
+        },
+        "correct_option": "b",
+        "answer": "10 : 30 a.m."
+      },
+      {
+        "id": "time-and-distance-167",
+        "chapter": "Time and Distance",
+        "question_number": 167,
+        "question": "A man can walk up a ‘moving-up’ escalator in 30 seconds. The same man can walk down this ‘moving-up’ escalator in 90 seconds. Assume that his walking speed is same upwards and downwards. How much time will he take to walk up the escalator, when it is not moving?",
+        "options": {
+          "a": "30 sec",
+          "b": "45 sec",
+          "c": "60 sec",
+          "d": "90 sec"
+        },
+        "correct_option": "b",
+        "answer": "45 sec"
+      },
+      {
+        "id": "time-and-distance-168",
+        "chapter": "Time and Distance",
+        "question_number": 168,
+        "question": "A hare pursued by a hound is 60 of her own leaps before him. When the hare takes 4 leaps, the hound takes 3. In one leap, the hare goes 3 1/4 metres and the hound 3 2/4 metres. In how many leaps will the hound overtake the hare?",
+        "options": {
+          "a": "84",
+          "b": "188",
+          "c": "252",
+          "d": "356"
+        },
+        "correct_option": "c",
+        "answer": "252"
+      },
+      {
+        "id": "time-and-distance-169",
+        "chapter": "Time and Distance",
+        "question_number": 169,
+        "question": "Arun had ridden one-third the total distance of his trip when his scooter got punctured. He finished the journey on foot, spending twenty times as long walking as he had spent riding. What was the ratio of his riding speed to his walking speed?",
+        "options": {
+          "a": "4 : 1",
+          "b": "5 : 1",
+          "c": "10 : 1",
+          "d": "20 : 1"
+        },
+        "correct_option": "c",
+        "answer": "10 : 1"
+      },
+      {
+        "id": "time-and-distance-170",
+        "chapter": "Time and Distance",
+        "question_number": 170,
+        "question": "A car overtakes a bus travelling from Delhi to Jaipur at 4 : 30 p.m. The car reaches Jaipur at 6 : 00 p.m. After stopping there for 1 hour, it starts back towards Delhi and meets the same bus at 7 : 30 p.m. which was moving towards Jaipur at that time. If both the bus and the car were travelling with uniform speeds on the same route, at what time would the bus reach Jaipur?",
+        "options": {
+          "a": "8 : 30 p.m.",
+          "b": "9 : 00 p.m.",
+          "c": "9 : 15 p.m.",
+          "d": "9 : 30 p.m."
+        },
+        "correct_option": "b",
+        "answer": "9 : 00 p.m."
+      },
+      {
+        "id": "time-and-distance-171",
+        "chapter": "Time and Distance",
+        "question_number": 171,
+        "question": "If Karan travels at a speed of 60 kmph and covers a distance in 9 hrs., then how much time will he take to travel the same distance at a speed of 90 kmph? [Indian Railway Gr. ‘D’ Exam, 2014]",
+        "options": {
+          "a": "8 hrs",
+          "b": "6 hrs",
+          "c": "12 hrs",
+          "d": "9 hrs"
+        },
+        "correct_option": "b",
+        "answer": "6 hrs"
+      },
+      {
+        "id": "time-and-distance-172",
+        "chapter": "Time and Distance",
+        "question_number": 172,
+        "question": "The speed of a bus is 72 kmph. The distance covered by the bus in 5 sec is [Indian Railway Gr. ‘D’ Exam, 2014]",
+        "options": {
+          "a": "50 m",
+          "b": "74.5 m",
+          "c": "100 m",
+          "d": "60 m"
+        },
+        "correct_option": "c",
+        "answer": "100 m"
+      },
+      {
+        "id": "time-and-distance-173",
+        "chapter": "Time and Distance",
+        "question_number": 173,
+        "question": "A man travels for 5 hours 15 minutes. If he covers the first half of the journey at 60km/h and rest at 45km/h. Find the total distance travelled by him. [SSC—CHSL (10 + 2) Exam, 2015]",
+        "options": {
+          "a": "1028 6/7 km",
+          "b": "189 km",
+          "c": "378 km",
+          "d": "270 km"
+        },
+        "correct_option": "d",
+        "answer": "270 km"
+      },
+      {
+        "id": "time-and-distance-174",
+        "chapter": "Time and Distance",
+        "question_number": 174,
+        "question": "Ashok left from place A for place B at 8 a.m. and Rahul left place B for place A at 10.00 a.m. the distance between place A and B is 637 km. If Ashok and Rahul are travelling at a uniform speed of 39kmph and 47 kmph respectively, at what time will they meet? [IBPS—Bank Spl. Officers (IT) Exam, 2015]",
+        "options": {
+          "a": "5 : 30 pm",
+          "b": "4 : 30 pm",
+          "c": "5 pm",
+          "d": "4 pm"
+        },
+        "correct_option": "b",
+        "answer": "4 : 30 pm"
+      },
+      {
+        "id": "time-and-distance-175",
+        "chapter": "Time and Distance",
+        "question_number": 175,
+        "question": "A car goes 20 metres in a second. Find its speed in km/hr [SSC—CHSL (10+2) Exam, 2015]",
+        "options": {
+          "a": "18",
+          "b": "72",
+          "c": "36",
+          "d": "20"
+        },
+        "correct_option": "b",
+        "answer": "72"
+      },
+      {
+        "id": "time-and-distance-176",
+        "chapter": "Time and Distance",
+        "question_number": 176,
+        "question": "Two men P and Q start a journey form same place at a speed of 3 km/hr and 3 1/2 km/hr respectively. If they move in the same direction then what is the distance between them after 4 hours? [IDBI—Executive Officer’s Exam, 2015]",
+        "options": {
+          "a": "3 km",
+          "b": "2 1/2 km",
+          "c": "2 km",
+          "d": "1/2 km"
+        },
+        "correct_option": "c",
+        "answer": "2 km"
+      },
+      {
+        "id": "time-and-distance-177",
+        "chapter": "Time and Distance",
+        "question_number": 177,
+        "question": "Rohan covers 2/3 rd of a certain distance in 2 hours 30 minutes at the rate of x kmph. He covers the remaining distance at the rate of (x + 2) kmph in 50 minutes. What is the total distance? [RBI Officer’s Gr. ‘B’ (Phase I) Exam, 2015]",
+        "options": {
+          "a": "21 km",
+          "b": "18 km",
+          "c": "16 km",
+          "d": "15 km"
+        },
+        "correct_option": "d",
+        "answer": "15 km"
+      },
+      {
+        "id": "time-and-distance-178",
+        "chapter": "Time and Distance",
+        "question_number": 178,
+        "question": "To reach point B from point A. At 4pm, Sara will have to travel at an average speed of 18 kmph. She will reach point B at 3 pm if she travels at an average speed of 24 kmph. At what average speed should Sara travel to reach point B at 2pm? [IBPS—Bank PO/MT (Pre.) Exam, 2015]",
+        "options": {
+          "a": "36 kmph",
+          "b": "28 kmph",
+          "c": "25 kmph",
+          "d": "30 kmph"
+        },
+        "correct_option": "a",
+        "answer": "36 kmph"
+      },
+      {
+        "id": "time-and-distance-179",
+        "chapter": "Time and Distance",
+        "question_number": 179,
+        "question": "A student goes to school at the rate of 2 1/2 km/h and reaches 6 min late. If he travels at the speed of 3km/h he is 10 min early. What is the distance to the school ? [SSC—CHSL (10+2) Exam, 2015]",
+        "options": {
+          "a": "4 km",
+          "b": "3 1/4 km",
+          "c": "1 km",
+          "d": "3 1/2 km"
+        },
+        "correct_option": "a",
+        "answer": "4 km"
+      },
+      {
+        "id": "time-and-distance-180",
+        "chapter": "Time and Distance",
+        "question_number": 180,
+        "question": "Kim and Om are travelling from point A to B, which are 400 km apart, travelling at a certain speed. Kim takes one hour more than Om to reach point B. If Kim doubles her speed she will take 1 hour 30 mins less than Om to reach point B. At what speed was Kim driving from point A to B? (In kmph) [IBPS—Bank PO (Pre.) Exam, 2015]",
+        "options": {
+          "a": "90 kmph",
+          "b": "70 kmph",
+          "c": "160 kmph",
+          "d": "80 kmph"
+        },
+        "correct_option": "d",
+        "answer": "80 kmph"
+      },
+      {
+        "id": "time-and-distance-181",
+        "chapter": "Time and Distance",
+        "question_number": 181,
+        "question": "A car covers 650 km in 12 hours and other 850 km in 18 hours. Find the average speed of the car. [ESIC—UDC Exam, 2016]",
+        "options": {
+          "a": "47 kmph",
+          "b": "50 kmph",
+          "c": "48 kmph",
+          "d": "52 kmph"
+        },
+        "correct_option": "b",
+        "answer": "50 kmph"
+      },
+      {
+        "id": "time-and-distance-182",
+        "chapter": "Time and Distance",
+        "question_number": 182,
+        "question": "A vehicle travels at the rate of 80 kmph. What distance will it travel in 15 minutes? [ESIC—UDC Exam, 2016]",
+        "options": {
+          "a": "20000 metre",
+          "b": "25000 metre",
+          "c": "24000 metre",
+          "d": "22000 metre"
+        },
+        "correct_option": "a",
+        "answer": "20000 metre"
+      },
+      {
+        "id": "time-and-distance-183",
+        "chapter": "Time and Distance",
+        "question_number": 183,
+        "question": "Aryan covers a certain distance in 1 hour 30 minutes. He covers two thirds of it at the rate of 4 kmph and remaining distance at the rate of 5 kmph. Find the total distance. [ESIC—UDC Exam, 2016]",
+        "options": {
+          "a": "6.5 km",
+          "b": "6.6 km",
+          "c": "6.3 km",
+          "d": "6.4 km"
+        },
+        "correct_option": "d",
+        "answer": "6.4 km"
+      },
+      {
+        "id": "time-and-distance-184",
+        "chapter": "Time and Distance",
+        "question_number": 184,
+        "question": "Rani goes to school from her house in 30 minutes. Raja takes 45 minutes in covering the same distance. Find the ratio between time taken by Rani and Raja. [ESIC—UDC Exam, 2016]",
+        "options": {
+          "a": "2 : 3",
+          "b": "4 : 3",
+          "c": "3 : 2",
+          "d": "1 : 3"
+        },
+        "correct_option": "a",
+        "answer": "2 : 3"
+      },
+      {
+        "id": "time-and-distance-185",
+        "chapter": "Time and Distance",
+        "question_number": 185,
+        "question": "The speeds of John and Max are 30 km/h and 40 km/h. Initially Max is at a place L and John is at a place M. The distance between L and M is 650 km. John started his journey 3 hours earlier than Max to meet each other. If they meet each other at a place P somewhere between L and M, then the distance between P and M is: [SBI—Jr. Associates (Pre.) Exam, 2016]",
+        "options": {
+          "a": "220 km",
+          "b": "250 km",
+          "c": "330 km",
+          "d": "320 km"
+        },
+        "correct_option": "c",
+        "answer": "330 km"
+      },
+      {
+        "id": "time-and-distance-186",
+        "chapter": "Time and Distance",
+        "question_number": 186,
+        "question": "A car travels the first one third of a certain distance with a speed of 10 km/hr, the next one third distance with a speed of 20 km/hr and the last one third distance with a speed of 60 km/hr. The average speed of the car for the whole journey is [CDS, 2016]",
+        "options": {
+          "a": "18 km/hr",
+          "b": "24 km/hr",
+          "c": "30 km/hr",
+          "d": "36 km/hr"
+        },
+        "correct_option": "a",
+        "answer": "18 km/hr"
+      },
+      {
+        "id": "time-and-distance-187",
+        "chapter": "Time and Distance",
+        "question_number": 187,
+        "question": "With a uniform speed, a car covers a distance in 8 hours. Had the speed been increased by 4 km/hr, the same distance could have been covered in 7 hours and 30 minutes. What is the distance covered? [CDS, 2016]",
+        "options": {
+          "a": "420 km",
+          "b": "480 km",
+          "c": "520 km",
+          "d": "640 km"
+        },
+        "correct_option": "b",
+        "answer": "480 km"
+      },
+      {
+        "id": "time-and-distance-188",
+        "chapter": "Time and Distance",
+        "question_number": 188,
+        "question": "A thief is noticed by a policeman from a distance of 200 m. The thief starts running and the policeman chases him. The thief and the policeman run at the speed of 10 km/hr and 11 km/hr respectively. What is the distance between them after 6 minutes? [CDS, 2016]",
+        "options": {
+          "a": "100m",
+          "b": "120m",
+          "c": "150m",
+          "d": "160m"
+        },
+        "correct_option": "a",
+        "answer": "100m"
+      },
+      {
+        "id": "time-and-distance-189",
+        "chapter": "Time and Distance",
+        "question_number": 189,
+        "question": "A man performs 2/15 of the total journey by rail, 9/20 by bus and the remaining 10 km, on the cycle. His total journey is [UPSSSC—Lower Subordinate (Pre.) Exam, 2016]",
+        "options": {
+          "a": "31.2 km",
+          "b": "38.4 km",
+          "c": "32.8 km",
+          "d": "24 km"
+        },
+        "correct_option": "d",
+        "answer": "24 km"
+      },
+      {
+        "id": "time-and-distance-190",
+        "chapter": "Time and Distance",
+        "question_number": 190,
+        "question": "Ramesh is walking at a speed of 10 kilometres per hour. After every kilometer he takes rest for 5 minutes. The time taken to cover a distance of 5 kilometres by Ramesh is [DMRC—Customer Relationship Assistant (CRA) Exam, 2016]",
+        "options": {
+          "a": "30 minutes",
+          "b": "35 minutes",
+          "c": "50 minutes",
+          "d": "55 minutes"
+        },
+        "correct_option": "c",
+        "answer": "50 minutes"
+      },
+      {
+        "id": "time-and-distance-191",
+        "chapter": "Time and Distance",
+        "question_number": 191,
+        "question": "If a runner takes as much time in running 20 metres as the car takes in covering 50 metres. The distance covered by the runner during the time the car covers 1 km is [DMRC—Jr. Engineer (Electrical) Exam, 2016]",
+        "options": {
+          "a": "400 metres",
+          "b": "40 metres",
+          "c": "440 metres",
+          "d": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "440 metres"
+      }
+    ]
+  },
+  "verification": {
+    "questions_extracted": "191/191",
+    "answer_keys_extracted": "191/191",
+    "missing_questions": [],
+    "duplicate_question_numbers": [],
+    "missing_answer_keys": [],
+    "answer_option_mismatches": [],
+    "empty_questions": [],
+    "empty_correct_answers": [],
+    "note": "The chapter also contains a separate Data Sufficiency exercise after the objective-question solutions. This JSON contains the 191 Objective Type Questions and their answer key, consistent with the previous chapter files.",
+    "source_format_note": "PDF text-layer ordering and fraction formatting were normalized. Q188–Q191 were reconstructed from the source page text where the PDF text layer split the question block across columns."
+  }
+}
+
+out_path = "/home/jyoti/Project/PLACEMENT/server/data/rs_agrawal/time_and_distance.json"
+os.makedirs(os.path.dirname(out_path), exist_ok=True)
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
+
+print(f"Successfully generated Time and Distance chapter JSON with {len(data['exercise']['questions'])} questions!")

@@ -1,0 +1,701 @@
+import json
+import os
+
+data = {
+  "book": "Quantitative Aptitude for Competitive Examinations — R.S. Aggarwal",
+  "chapter_number": 24,
+  "chapter": "Area",
+  "book_page_range": "688–765",
+  "objective_questions": 41,
+  "exercise": {
+    "title": "Data-Sufficiency-Type Questions",
+    "question_count": 41,
+    "questions": [
+      {
+        "id": "area-001",
+        "chapter": "Area",
+        "question_number": 1,
+        "question": "What is the area of the rectangular plot ? (Bank P.O., 2009) I. The length of the plot is 375 metres. II. The length of the plot is thrice its breadth.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "e",
+        "answer": "Statements I and II together are necessary.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-002",
+        "chapter": "Area",
+        "question_number": 2,
+        "question": "Is the perimeter of a certain rectangular park greater than 50 metres ? I. The two shorter sides of the park are each 15 metres long. II. The length of the park is 5 metres greater than the width of the park. (N.I.F.T., 2007)",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "a",
+        "answer": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-003",
+        "chapter": "Area",
+        "question_number": 3,
+        "question": "What is the area of the square ? (Bank P.O., 2008) I. One side of the square is 21 cm. II. The perimeter of the square is 84 cm.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "c",
+        "answer": "Either Statement I alone or Statement II alone is sufficient.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-004",
+        "chapter": "Area",
+        "question_number": 4,
+        "question": "What is the area of the plot ? I. The perimeter of the plot is 208 metres. II. The length is more than the breadth by 4 metres.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "e",
+        "answer": "Statements I and II together are necessary.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-005",
+        "chapter": "Area",
+        "question_number": 5,
+        "question": "The area of a playground is 1600 m2. What is its perimeter ? I. It is a perfect square playground. II. It costs ₹ 3200 to put a fence around the playground at the rate of ₹ 20 per metre.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "c",
+        "answer": "Either Statement I alone or Statement II alone is sufficient.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-006",
+        "chapter": "Area",
+        "question_number": 6,
+        "question": "What is the area of the rectangle ? I. The ratio of the length and the breadth is 3 : 2. II. The area of the rectangle is 3.6 times its perimeter.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "e",
+        "answer": "Statements I and II together are necessary.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-007",
+        "chapter": "Area",
+        "question_number": 7,
+        "question": "The area of a playground is 15400 square metres. What is its perimeter? I. It is a circular playground. II. It costs ₹ 30800 to clean the playground @ ₹ 2 per sq. ft. (Bank P.O., 2007)",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "a",
+        "answer": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-008",
+        "chapter": "Area",
+        "question_number": 8,
+        "question": "What is the area of the circle ? (Bank P.O., 2009) I. Perimeter of the circle is 88 cm. II. Diameter of the circle is equal to the side of the square having area 484 sq. cm.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "c",
+        "answer": "Either Statement I alone or Statement II alone is sufficient.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-009",
+        "chapter": "Area",
+        "question_number": 9,
+        "question": "A rectangular field is 40 yards long. Find the area of the field. (M.B.A., 2006) I. A fence around the outside of the field is 140 yards long. II. The distance from one corner of the field to the opposite corner is 50 yards.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "c",
+        "answer": "Either Statement I alone or Statement II alone is sufficient.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-010",
+        "chapter": "Area",
+        "question_number": 10,
+        "question": "Area of a square is equal to the area of a circle. What is the circumference of the circle ? I. The diagonal of the square is x inches. II. The side of the square is y inches.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "c",
+        "answer": "Either Statement I alone or Statement II alone is sufficient.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-011",
+        "chapter": "Area",
+        "question_number": 11,
+        "question": "The area of a rectangle is equal to the area of a right-angled triangle. What is the length of the rectangle? I. The base of the triangle is 40 cm. II. The height of the triangle is 50 cm.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "d",
+        "answer": "Even Statements I and II together are not sufficient.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-012",
+        "chapter": "Area",
+        "question_number": 12,
+        "question": "What will be the cost of gardening a strip of land inside around a circular field, at the rate of ₹ 85 per sq. metre ? I. The area of the field is 1386 sq. metres. II. Breadth and length of the field are in the ratio of 3 : 5 respectively.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "e",
+        "answer": "Statements I and II together are necessary.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-013",
+        "chapter": "Area",
+        "question_number": 13,
+        "question": "What is the area of the right-angled triangle? (Bank Recruitment, 2009) I. Height of the triangle is three-fourths of the base. II. Hypotenuse of the triangle is 5 metres.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "e",
+        "answer": "Statements I and II together are necessary.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-014",
+        "chapter": "Area",
+        "question_number": 14,
+        "question": "What is the length of the line SQ which is the diagonal of a square as well as the diameter of a circle? I. All the four vertices of the square lie on the circumference of the circle. II. The numerical value of the area of the circle is twice the length of SQ.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "b",
+        "answer": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-015",
+        "chapter": "Area",
+        "question_number": 15,
+        "question": "What is the area of the rectangle ? I. The difference between the sides is 5 cm. II. The measure of its diagonal is 10 cm.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "e",
+        "answer": "Statements I and II together are necessary.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-016",
+        "chapter": "Area",
+        "question_number": 16,
+        "question": "What is the area of the circle ? I. An arc of length 4 cm subtends an angle of 60° at the centre. II. A chord of length 5 cm subtends an angle of 90° at the centre.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "c",
+        "answer": "Either Statement I alone or Statement II alone is sufficient.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-017",
+        "chapter": "Area",
+        "question_number": 17,
+        "question": "What is the perimeter of a semi-circle? (Bank P.O., 2010) I. The radius of the semi-circle is equal to half the side of a square. II. The area of the square is 196 sq. cm.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "e",
+        "answer": "Statements I and II together are necessary.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-018",
+        "chapter": "Area",
+        "question_number": 18,
+        "question": "What is the perimeter of the rectangle ABCD? I. Area of the circle is 38.5 sq. cm. II. AB = 10 cm.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "e",
+        "answer": "Statements I and II together are necessary.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-019",
+        "chapter": "Area",
+        "question_number": 19,
+        "question": "The area of a rectangle is equal to the area of a circle. What is the length of the rectangle ? I. The radius of the circle is equal to the breadth of the rectangle. II. The perimeter of the rectangle is 14 cm more than that of the circle.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "e",
+        "answer": "Statements I and II together are necessary.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-020",
+        "chapter": "Area",
+        "question_number": 20,
+        "question": "Determine the perimeter of the square. I. A circle is inscribed in the square. II. The area of the circle is 36π.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "e",
+        "answer": "Statements I and II together are necessary.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-021",
+        "chapter": "Area",
+        "question_number": 21,
+        "question": "What is the height of a right-angled triangle? (M.A.T., 2005) I. The area of the right-angled triangle is equal to the area of a rectangle whose breadth is 12 cm. II. The length of the rectangle is 18 cm.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "d",
+        "answer": "Even Statements I and II together are not sufficient.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-022",
+        "chapter": "Area",
+        "question_number": 22,
+        "question": "Is the area of circular region X greater than the area of circular region Y ? I. The circumference of X is greater than the circumference of circle Z and the circumference of Z is less than the circumference of Y. II. The radius of X is greater than the radius of Y. (N.I.F.T., 2007)",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "b",
+        "answer": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-023",
+        "chapter": "Area",
+        "question_number": 23,
+        "question": "What is the height of the triangle ? I. The area of the triangle is 20 times its base. II. The perimeter of the triangle is equal to the perimeter of a square of side 10 cm.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "a",
+        "answer": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-024",
+        "chapter": "Area",
+        "question_number": 24,
+        "question": "What will be the cost of painting the inner walls of a room if the rate of painting is ₹ 20 per square foot ? I. Circumference of the floor is 44 feet. II. The height of the wall of the room is 12 feet.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "e",
+        "answer": "Statements I and II together are necessary.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-025",
+        "chapter": "Area",
+        "question_number": 25,
+        "question": "The diameter of the rear wheel of a vehicle is 1.2 m. What is the diameter of the front wheel? I. Front wheel makes 240 revolutions while rear wheel makes 80. II. In 240 revolutions, the front wheel covers a distance of 503.17 m.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "c",
+        "answer": "Either Statement I alone or Statement II alone is sufficient.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-026",
+        "chapter": "Area",
+        "question_number": 26,
+        "question": "There are two concentric circles C1 and C2 with radii r1 and r2. The circles are such that C2 fully encloses C1. Then, what is the radius of C1 ? I. The difference of their circumferences is k cm. II. The difference of their areas is m sq. cm.",
+        "options": {
+          "a": "Statement I alone is sufficient; Statement II alone is not sufficient.",
+          "b": "Statement II alone is sufficient; Statement I alone is not sufficient.",
+          "c": "Either Statement I alone or Statement II alone is sufficient.",
+          "d": "Even Statements I and II together are not sufficient.",
+          "e": "Statements I and II together are necessary."
+        },
+        "correct_option": "e",
+        "answer": "Statements I and II together are necessary.",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-027",
+        "chapter": "Area",
+        "question_number": 27,
+        "question": "What is the area of rectangular field ? I. The perimeter of the field is 110 metres. II. The length is 5 metres more than the width. III. The ratio between length and width is 6 : 5 respectively.",
+        "options": {
+          "a": "I and II only",
+          "b": "Any two of the three",
+          "c": "All I, II and III",
+          "d": "I, and either II or III only",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "Any two of the three",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-028",
+        "chapter": "Area",
+        "question_number": 28,
+        "question": "What is the area of the hall ? I. Material cost of flooring per square metre is ₹ 2.50. II. Labour cost of flooring the hall is ₹ 3500. III. Total cost of flooring the hall is ₹ 14,500.",
+        "options": {
+          "a": "I and II only",
+          "b": "II and III only",
+          "c": "All I, II and III",
+          "d": "Any two of the three",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "All I, II and III",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-029",
+        "chapter": "Area",
+        "question_number": 29,
+        "question": "What is the area of the square? (Bank P.O., 2006) I. Measure of diagonal of the square is given. II. Measure of one side of the square is given. III. Perimeter of the square is given.",
+        "options": {
+          "a": "Only II",
+          "b": "Only III",
+          "c": "Only I and III",
+          "d": "Only II and III",
+          "e": "Any one of the three"
+        },
+        "correct_option": "e",
+        "answer": "Any one of the three",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-030",
+        "chapter": "Area",
+        "question_number": 30,
+        "question": "What is the area of the right-angled triangle ? (Bank P.O., 2009) I. Base of the triangle is X cm. II. Height of the triangle is Y cm. III. Hypotenuse of the triangle is Z cm.",
+        "options": {
+          "a": "Only I and II",
+          "b": "Only II",
+          "c": "Only III",
+          "d": "Any two of the three",
+          "e": "All I, II and III"
+        },
+        "correct_option": "d",
+        "answer": "Any two of the three",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-031",
+        "chapter": "Area",
+        "question_number": 31,
+        "question": "What is the length of the diagonal of the given rectangle? I. The perimeter of the rectangle is 34 cm. II. The difference between the length and breadth is 7 cm. III. The length is 140% more than the breadth.",
+        "options": {
+          "a": "Any two of the three",
+          "b": "All I, II and III",
+          "c": "I, and either II or III",
+          "d": "I and II only",
+          "e": "II and III only"
+        },
+        "correct_option": "a",
+        "answer": "Any two of the three",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-032",
+        "chapter": "Area",
+        "question_number": 32,
+        "question": "What is the cost of flooring the rectangular hall ? (M.A.T. 2006, R.B.I., 2002) I. Length and breadth of the hall are in the respective ratio of 3 : 2. II. Length of the hall is 48 m and cost of flooring is ₹ 85 per sq. m. III. Perimeter of the hall is 160 m and cost of flooring is ₹ 85 per sq. m.",
+        "options": {
+          "a": "I and II only",
+          "b": "II and III only",
+          "c": "III only",
+          "d": "I, and either II or III only",
+          "e": "Any two of the three"
+        },
+        "correct_option": "e",
+        "answer": "Any two of the three",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-033",
+        "chapter": "Area",
+        "question_number": 33,
+        "question": "What is the area of a right-angled triangle ? (M.A.T., 2007) I. The perimeter of the triangle is 30 cm. II. The ratio between the base and the height of the triangle is 5 : 12. III. The area of the triangle is equal to the area of a rectangle of length 10 cm.",
+        "options": {
+          "a": "I and II only",
+          "b": "II and III only",
+          "c": "I and III only",
+          "d": "III, and either I or II only",
+          "e": "None of these"
+        },
+        "correct_option": "a",
+        "answer": "I and II only",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-034",
+        "chapter": "Area",
+        "question_number": 34,
+        "question": "A path runs around a rectangular lawn. What is the width of the path ? I. The length and breadth of the lawn are in the ratio of 3 : 1 respectively. II. The width of the path is ten times the length of the lawn. III. The cost of gravelling the path @ ₹ 50 per m2 is ₹ 8832.",
+        "options": {
+          "a": "All I, II and III",
+          "b": "III, and either I or II",
+          "c": "I and III only",
+          "d": "II and III only",
+          "e": "None of these"
+        },
+        "correct_option": "a",
+        "answer": "All I, II and III",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-035",
+        "chapter": "Area",
+        "question_number": 35,
+        "question": "What is the area of the equilateral triangle ? I. Length of the perpendicular from one of the vertices to the opposite side is x cm. II. Length of each side of the triangle is y cm. III. Perimeter of the triangle is z cm.",
+        "options": {
+          "a": "Any one of the three",
+          "b": "Any two of the three",
+          "c": "I and either II and III",
+          "d": "All I, II and III",
+          "e": "Question cannot be answered even with information in all three statements"
+        },
+        "correct_option": "a",
+        "answer": "Any one of the three",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-036",
+        "chapter": "Area",
+        "question_number": 36,
+        "question": "What is the area of the isosceles triangle ? I. Perimeter of the isosceles triangle is 18 metres. II. Base of the triangle is 8 metres. III. Height of the triangle is 3 metres.",
+        "options": {
+          "a": "I and II only",
+          "b": "II and III only",
+          "c": "I and III only",
+          "d": "II, and either I or III only",
+          "e": "Any two of the three"
+        },
+        "correct_option": "d",
+        "answer": "II, and either I or III only",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-037",
+        "chapter": "Area",
+        "question_number": 37,
+        "question": "What will be the cost of painting the four walls of a room with length, width and height 5 metres, 3 metres and 8 metres respectively? The room has one door and one window. I. Cost of painting per square metre is ₹ 25. II. Area of window is 2.25 sq. metres which is half of the area of the door. III. Area of the room is 15 sq. metres.",
+        "options": {
+          "a": "I only",
+          "b": "II only",
+          "c": "III only",
+          "d": "II or III",
+          "e": "All are required to answer the question"
+        },
+        "correct_option": "c",
+        "answer": "III only",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-038",
+        "chapter": "Area",
+        "question_number": 38,
+        "question": "What is the cost of painting the two adjacent walls of a hall at ₹ 5 per m2 which has no windows or doors ? I. The area of the hall is 24 sq. m. II. The breadth, length and height of the hall are in the ratio of 4 : 6 : 5 respectively. III. Area of one wall is 30 sq. m.",
+        "options": {
+          "a": "I only",
+          "b": "II only",
+          "c": "III only",
+          "d": "Either I or III",
+          "e": "All I, II and III are required"
+        },
+        "correct_option": "c",
+        "answer": "III only",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-039",
+        "chapter": "Area",
+        "question_number": 39,
+        "question": "What is the area of the given rectangle ? I. Perimeter of the rectangle is 60 cm. II. Breadth of the rectangle is 12 cm. III. Sum of two adjacent sides is 30 cm.",
+        "options": {
+          "a": "I only",
+          "b": "II only",
+          "c": "III only",
+          "d": "I and II only",
+          "e": "I or III only"
+        },
+        "correct_option": "e",
+        "answer": "I or III only",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-040",
+        "chapter": "Area",
+        "question_number": 40,
+        "question": "What is the area of the given right-angled triangle? I. Length of the hypotenuse is 5 cm. II. Perimeter of the triangle is four times its base. III. One of the angles of the triangle is 60°.",
+        "options": {
+          "a": "II only",
+          "b": "III only",
+          "c": "II or III only",
+          "d": "II and III both",
+          "e": "Information given in all the three statements together is not sufficient to answer the question."
+        },
+        "correct_option": "c",
+        "answer": "II or III only",
+        "extraction_status": "complete"
+      },
+      {
+        "id": "area-041",
+        "chapter": "Area",
+        "question_number": 41,
+        "question": "What is the height of the triangle whose area is equal to the area of a rectangle? I. The ratio between the length and breadth of the rectangle is 3 : 2. II. The base of the triangle is 16 cm. III. The perimeter of the rectangle is 80 cm.",
+        "options": {
+          "a": "Only I",
+          "b": "Only I or II",
+          "c": "Only III",
+          "d": "All I, II and III together are required",
+          "e": "None of these"
+        },
+        "correct_option": "d",
+        "answer": "All I, II and III together are required",
+        "extraction_status": "complete"
+      }
+    ]
+  },
+  "key_explanation_from_book": {
+    "area_of_rectangle": "Area = length × breadth.",
+    "area_of_square": "Area = side².",
+    "area_of_triangle": "Area = 1/2 × base × height.",
+    "area_of_circle": "Area = πr².",
+    "circumference": "Circumference of a circle = 2πr.",
+    "area_of_trapezium": "Area = 1/2 × (sum of parallel sides) × perpendicular distance.",
+    "parallelogram": "Area = base × corresponding height.",
+    "sector": "The chapter applies the proportional relationship between a sector's angle and the full 360° circle when calculating sector areas.",
+    "composite_figures": "For regions made from multiple shapes, add component areas and subtract excluded/inner areas as required.",
+    "data_sufficiency": "For the objective section, the task is to determine whether Statement I, Statement II, both together, or neither provides enough information to answer the question."
+  },
+  "verification": {
+    "questions_extracted": "41/41",
+    "answer_keys_extracted": "41/41",
+    "complete_options": "41/41",
+    "missing_questions": [],
+    "duplicate_question_numbers": [],
+    "missing_answer_keys": [],
+    "answer_option_mismatches": [],
+    "source_format_note": "Mathematical notation, currency symbols, fractions and PDF line breaks were normalized for JSON readability."
+  }
+}
+
+out_path = "/home/jyoti/Project/PLACEMENT/server/data/rs_agrawal/area.json"
+os.makedirs(os.path.dirname(out_path), exist_ok=True)
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
+
+print(f"Successfully generated Area chapter JSON with {len(data['exercise']['questions'])} questions!")

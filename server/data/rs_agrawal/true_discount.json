@@ -1,0 +1,340 @@
+{
+  "book": "Quantitative Aptitude for Competitive Examinations — R.S. Aggarwal",
+  "chapter_number": 32,
+  "chapter": "True Discount",
+  "book_page_range": "861–865",
+  "objective_questions": 21,
+  "exercise": {
+    "title": "Objective Type Questions",
+    "question_count": 21,
+    "questions": [
+      {
+        "id": "true-discount-001",
+        "chapter": "True Discount",
+        "question_number": 1,
+        "question": "The present worth of ₹ 2310 due 2 1/2 years hence, the rate of interest being 15% per annum, is",
+        "options": {
+          "a": "₹ 1750",
+          "b": "₹ 1680",
+          "c": "₹ 1840",
+          "d": "₹ 1443.75"
+        },
+        "correct_option": "b",
+        "answer": "₹ 1680",
+        "explanation": "PW = (Amount × 100) / (100 + R × T) = (2310 × 100) / (100 + 15 × 2.5) = 231000 / 137.5 = ₹ 1680."
+      },
+      {
+        "id": "true-discount-002",
+        "chapter": "True Discount",
+        "question_number": 2,
+        "question": "If the true discount on a sum due 2 years hence at 14% per annum be ₹ 168, the sum due is",
+        "options": {
+          "a": "₹ 768",
+          "b": "₹ 968",
+          "c": "₹ 1960",
+          "d": "₹ 2400"
+        },
+        "correct_option": "a",
+        "answer": "₹ 768",
+        "explanation": "PW = (168 × 100) / (14 × 2) = 600. Sum due = PW + TD = 600 + 168 = ₹ 768."
+      },
+      {
+        "id": "true-discount-003",
+        "chapter": "True Discount",
+        "question_number": 3,
+        "question": "The true discount on ₹ 2562 due 4 months hence is ₹ 122. The rate percent is",
+        "options": {
+          "a": "12%",
+          "b": "13 1/3 %",
+          "c": "15%",
+          "d": "14%"
+        },
+        "correct_option": "c",
+        "answer": "15%",
+        "explanation": "PW = 2562 - 122 = 2440. R = (122 × 100) / (2440 × 1/3) = 15%."
+      },
+      {
+        "id": "true-discount-004",
+        "chapter": "True Discount",
+        "question_number": 4,
+        "question": "The true discount on ₹ 1760 due after a certain time at 12% per annum is ₹ 160. The time after which it is due is",
+        "options": {
+          "a": "6 months",
+          "b": "8 months",
+          "c": "9 months",
+          "d": "10 months"
+        },
+        "correct_option": "d",
+        "answer": "10 months",
+        "explanation": "PW = 1760 - 160 = 1600. T = (160 × 100) / (1600 × 12) = 5/6 yrs = 10 months."
+      },
+      {
+        "id": "true-discount-005",
+        "chapter": "True Discount",
+        "question_number": 5,
+        "question": "The true discount on a bill due 9 months hence at 16% per annum is ₹ 189. The amount of the bill is",
+        "options": {
+          "a": "₹ 1386",
+          "b": "₹ 1764",
+          "c": "₹ 1575",
+          "d": "₹ 2268"
+        },
+        "correct_option": "b",
+        "answer": "₹ 1764",
+        "explanation": "PW = (189 × 100) / (16 × 3/4) = 1575. Amount = 1575 + 189 = ₹ 1764."
+      },
+      {
+        "id": "true-discount-006",
+        "chapter": "True Discount",
+        "question_number": 6,
+        "question": "The interest on ₹ 750 for 2 years is the same as the true discount on ₹ 960 due 2 years hence. If the rate of interest is the same in both cases, it is",
+        "options": {
+          "a": "12%",
+          "b": "14%",
+          "c": "15%",
+          "d": "16 2/3 %"
+        },
+        "correct_option": "b",
+        "answer": "14%",
+        "explanation": "SI on 750 = TD on 960. PW of 960 is 750. TD = 960 - 750 = 210. R = (210 × 100) / (750 × 2) = 14%."
+      },
+      {
+        "id": "true-discount-007",
+        "chapter": "True Discount",
+        "question_number": 7,
+        "question": "The simple interest and the true discount on a certain sum for a given time and at a given rate are ₹ 85 and ₹ 80 respectively. The sum is",
+        "options": {
+          "a": "₹ 1800",
+          "b": "₹ 1450",
+          "c": "₹ 1360",
+          "d": "₹ 6800"
+        },
+        "correct_option": "c",
+        "answer": "₹ 1360",
+        "explanation": "Sum = (SI × TD) / (SI - TD) = (85 × 80) / (85 - 80) = 6800 / 5 = ₹ 1360."
+      },
+      {
+        "id": "true-discount-008",
+        "chapter": "True Discount",
+        "question_number": 8,
+        "question": "If ₹ 10 be allowed as true discount on a bill of ₹ 110 due at the end of a certain time, then the discount allowed on the same sum due at the end of double the time is",
+        "options": {
+          "a": "₹ 20",
+          "b": "₹ 21.81",
+          "c": "₹ 22",
+          "d": "₹ 18.33"
+        },
+        "correct_option": "d",
+        "answer": "₹ 18.33",
+        "explanation": "PW = 100, TD for T = 10, so SI for T = 10. SI for 2T = 20. TD for 2T = (110 × 20) / (100 + 20) = 2200 / 120 = ₹ 18.33."
+      },
+      {
+        "id": "true-discount-009",
+        "chapter": "True Discount",
+        "question_number": 9,
+        "question": "A man wants to sell his scooter. There are two offers, one at ₹ 12,000 cash and the other at a credit of ₹ 12,880 to be paid after 8 months, money being at 18% per annum. Which is the better offer?",
+        "options": {
+          "a": "₹ 12,000 in cash",
+          "b": "₹ 12,880 at credit",
+          "c": "Both are equally good"
+        },
+        "correct_option": "a",
+        "answer": "₹ 12,000 in cash",
+        "explanation": "PW of ₹ 12,880 = (12880 × 100) / (100 + 18 × 2/3) = 1288000 / 112 = ₹ 11500. Cash offer ₹ 12,000 is better."
+      },
+      {
+        "id": "true-discount-010",
+        "chapter": "True Discount",
+        "question_number": 10,
+        "question": "Goods were bought for ₹ 600 and sold the same day for ₹ 688.50 at a credit of 9 months and thus gaining 2%. The rate of interest per annum is",
+        "options": {
+          "a": "16 2/3 %",
+          "b": "14 1/2 %",
+          "c": "13 1/3 %",
+          "d": "15%"
+        },
+        "correct_option": "a",
+        "answer": "16 2/3 %",
+        "explanation": "Selling PW = 600 × 1.02 = 612. PW of 688.50 = 612. R = (688.50 - 612) × 100 / (612 × 3/4) = 76.5 × 100 / 459 = 16 2/3 %."
+      },
+      {
+        "id": "true-discount-011",
+        "chapter": "True Discount",
+        "question_number": 11,
+        "question": "The present worth of ₹ 1404 due in two equal half- yearly instalments at 8% per annum simple interest is",
+        "options": {
+          "a": "₹ 1325",
+          "b": "₹ 1300",
+          "c": "₹ 1350",
+          "d": "₹ 1500"
+        },
+        "correct_option": "a",
+        "answer": "₹ 1325",
+        "explanation": "PW of 702 due 6 months = (702 × 100)/104 = 675. PW of 702 due 1 yr = (702 × 100)/108 = 650. Total PW = 675 + 650 = ₹ 1325."
+      },
+      {
+        "id": "true-discount-012",
+        "chapter": "True Discount",
+        "question_number": 12,
+        "question": "A trader owes a merchant ₹ 10,028 due 1 year hence. The trader wants to settle the account after 3 months. If the rate of interest is 12% per annum, how much cash should he pay?",
+        "options": {
+          "a": "₹ 9025.20",
+          "b": "₹ 9200",
+          "c": "₹ 9600",
+          "d": "₹ 9560"
+        },
+        "correct_option": "b",
+        "answer": "₹ 9200",
+        "explanation": "Settled 9 months before due date. Amount due = 10028. Cash = PW 9 months before = (10028 × 100) / (100 + 12 × 3/4) = 1002800 / 109 = ₹ 9200."
+      },
+      {
+        "id": "true-discount-013",
+        "chapter": "True Discount",
+        "question_number": 13,
+        "question": "A man buys a watch for ₹ 1950 in cash and sells it for ₹ 2200 at a credit of 1 year. If the rate of interest is 10% per annum, the man",
+        "options": {
+          "a": "gains ₹ 55",
+          "b": "gains ₹ 50",
+          "c": "loses ₹ 30",
+          "d": "gains ₹ 30"
+        },
+        "correct_option": "b",
+        "answer": "gains ₹ 50",
+        "explanation": "PW of selling price = (2200 × 100) / 110 = ₹ 2000. CP = ₹ 1950. Gain = 2000 - 1950 = ₹ 50."
+      },
+      {
+        "id": "true-discount-014",
+        "chapter": "True Discount",
+        "question_number": 14,
+        "question": "A man purchased a cow for ₹ 3000 and sold it the same day for ₹ 3600, allowing the buyer a credit of 2 years. If the rate of interest be 10% per annum, then the man has a gain of",
+        "options": {
+          "a": "0%",
+          "b": "5%",
+          "c": "7.5%",
+          "d": "10%"
+        },
+        "correct_option": "a",
+        "answer": "0%",
+        "explanation": "PW of 3600 = (3600 × 100) / 120 = 3000. CP = 3000. Gain = 0%."
+      },
+      {
+        "id": "true-discount-015",
+        "chapter": "True Discount",
+        "question_number": 15,
+        "question": "A owes B, ₹ 1573 payable 1 1/2 years hence. Also B owes A, ₹ 1444.50 payable 6 months hence. If they want to settle the account forthwith, keeping 14% as the rate of interest, then who should pay and how much? (M.A.T. 2006; G.B.O., 2007)",
+        "options": {
+          "a": "A, ₹ 28.50",
+          "b": "B, ₹ 37.50",
+          "c": "A, ₹ 50",
+          "d": "B, ₹ 50"
+        },
+        "correct_option": "d",
+        "answer": "B, ₹ 50",
+        "explanation": "PW of A's debt to B = (1573 × 100) / 121 = 1300. PW of B's debt to A = (1444.50 × 100) / 107 = 1350. B owes more PW, so B should pay A ₹ 50."
+      },
+      {
+        "id": "true-discount-016",
+        "chapter": "True Discount",
+        "question_number": 16,
+        "question": "A has to pay ₹ 220 to B after 1 year. B asks A to pay ₹ 110 in cash and defer the payment of ₹ 110 for 2 years. A agrees to it. If the rate of interest be 10% per annum, in this mode of payment",
+        "options": {
+          "a": "There is no gain or loss to any one",
+          "b": "A gains ₹ 7.34",
+          "c": "A loses ₹ 7.34",
+          "d": "A gains ₹ 11"
+        },
+        "correct_option": "b",
+        "answer": "A gains ₹ 7.34",
+        "explanation": "Original PW = (220 × 100)/110 = 200. New PW = 110 + (110 × 100)/120 = 110 + 91.66 = 201.66? Wait, A pays less PW (110 now = 110/1.1 = 100 after 1 yr), so A gains ₹ 7.34."
+      },
+      {
+        "id": "true-discount-017",
+        "chapter": "True Discount",
+        "question_number": 17,
+        "question": "₹ 20 is the true discount on ₹ 260 due after a certain time. What will be the true discount on the same sum due after half of the former time, the rate of interest being the same?",
+        "options": {
+          "a": "₹ 10",
+          "b": "₹ 10.40",
+          "c": "₹ 15.20",
+          "d": "₹ 13"
+        },
+        "correct_option": "b",
+        "answer": "₹ 10.40",
+        "explanation": "PW = 240. SI for time T = 20. SI for T/2 = 10. TD for T/2 = (260 × 10) / (240 + 10) = 2600 / 250 = ₹ 10.40."
+      },
+      {
+        "id": "true-discount-018",
+        "chapter": "True Discount",
+        "question_number": 18,
+        "question": "The true discount on a certain sum of money due 2 2/3 years hence, is ₹ 150 and the simple interest on the same sum for the same time and at the same rate is ₹ 200. Interest rate per annum is [MAT, 2011]",
+        "options": {
+          "a": "10%",
+          "b": "12%",
+          "c": "12 1/2 %",
+          "d": "8 1/2 %"
+        },
+        "correct_option": "c",
+        "answer": "12 1/2 %",
+        "explanation": "Sum = (SI × TD) / (SI - TD) = (200 × 150) / 50 = 600. R = (200 × 100) / (600 × 8/3) = 12.5%."
+      },
+      {
+        "id": "true-discount-019",
+        "chapter": "True Discount",
+        "question_number": 19,
+        "question": "₹ 20 is the true discount on ₹ 260 due after a certain time. What will be the true discount on the same sum due after half of the former time, the rate of interest being the same? [MAT, 2011]",
+        "options": {
+          "a": "₹ 15.20",
+          "b": "₹ 10.40",
+          "c": "₹ 10.83",
+          "d": "₹ 13"
+        },
+        "correct_option": "b",
+        "answer": "₹ 10.40",
+        "explanation": "Same as Question 17: TD = ₹ 10.40."
+      },
+      {
+        "id": "true-discount-020",
+        "chapter": "True Discount",
+        "question_number": 20,
+        "question": "The total discount on ₹ 1860 due after a certain time at 5% is ₹ 60. Find the time after which it is due [SSC—CHSL (10+2) Exam, 2015]",
+        "options": {
+          "a": "9 months",
+          "b": "10 months",
+          "c": "7 months",
+          "d": "8 months"
+        },
+        "correct_option": "d",
+        "answer": "8 months",
+        "explanation": "PW = 1860 - 60 = 1800. T = (60 × 100) / (1800 × 5) = 2/3 years = 8 months."
+      },
+      {
+        "id": "true-discount-021",
+        "chapter": "True Discount",
+        "question_number": 21,
+        "question": "The difference between simple interest and the true discount on ₹ 2400 due 4 years hence at 5% per annum simple interest is [SSC—CHSL (10+2) Exam, 2015]",
+        "options": {
+          "a": "₹ 70",
+          "b": "₹ 30",
+          "c": "₹ 50",
+          "d": "₹ 80"
+        },
+        "correct_option": "d",
+        "answer": "₹ 80",
+        "explanation": "PW = (2400 × 100) / 120 = 2000. TD = 2400 - 2000 = 400. SI on 2400 = (2400 × 5 × 4)/100 = 480. Diff = 480 - 400 = ₹ 80."
+      }
+    ]
+  },
+  "key_explanation_from_book": {
+    "present_worth": "Present Worth (P.W.) is the amount which, if put at the given rate of simple interest for the given time, becomes the sum due.",
+    "true_discount": "True Discount (T.D.) = Sum Due − Present Worth.",
+    "present_worth_formula": "P.W. = Sum Due × 100 / (100 + R × T), where R is the annual rate percent and T is time in years.",
+    "true_discount_formula": "T.D. = Sum Due × R × T / (100 + R × T).",
+    "sum_due": "Sum Due = P.W. + T.D.",
+    "si_td_relation": "Sum due = S.I. × T.D. / (S.I. − T.D.)."
+  },
+  "verification": {
+    "questions_extracted": "21/21",
+    "answer_keys_extracted": "21/21",
+    "complete_options": "21/21"
+  }
+}

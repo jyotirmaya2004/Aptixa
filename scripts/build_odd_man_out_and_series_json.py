@@ -1,0 +1,1270 @@
+import json
+import os
+
+data = {
+  "book": "Quantitative Aptitude for Competitive Examinations — R.S. Aggarwal",
+  "chapter_number": 35,
+  "chapter": "Odd Man Out and Series",
+  "book_page_range": "876–880",
+  "objective_questions": 81,
+  "exercise": {
+    "title": "Objective Type Questions",
+    "question_count": 81,
+    "questions": [
+      {
+        "id": "odd-man-out-and-series-001",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 1,
+        "question": "3, 5, 7, 12, 17, 19",
+        "options": {
+          "a": "19",
+          "b": "17",
+          "c": "13",
+          "d": "12"
+        },
+        "correct_option": "d",
+        "answer": "12",
+        "explanation": "Each of the numbers except 12 is a prime number."
+      },
+      {
+        "id": "odd-man-out-and-series-002",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 2,
+        "question": "10, 14, 16, 18, 21, 24, 26",
+        "options": {
+          "a": "26",
+          "b": "24",
+          "c": "21",
+          "d": "18"
+        },
+        "correct_option": "c",
+        "answer": "21",
+        "explanation": "Each of the numbers except 21 is an even number."
+      },
+      {
+        "id": "odd-man-out-and-series-003",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 3,
+        "question": "3, 5, 9, 11, 14, 17, 21",
+        "options": {
+          "a": "21",
+          "b": "17",
+          "c": "14",
+          "d": "9"
+        },
+        "correct_option": "c",
+        "answer": "14",
+        "explanation": "Each of the numbers except 14 is an odd number."
+      },
+      {
+        "id": "odd-man-out-and-series-004",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 4,
+        "question": "1, 4, 9, 16, 23, 25, 36",
+        "options": {
+          "a": "9",
+          "b": "23",
+          "c": "25",
+          "d": "36"
+        },
+        "correct_option": "b",
+        "answer": "23",
+        "explanation": "Each of the numbers except 23 is a perfect square."
+      },
+      {
+        "id": "odd-man-out-and-series-005",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 5,
+        "question": "6, 9, 15, 21, 24, 28, 30",
+        "options": {
+          "a": "28",
+          "b": "21",
+          "c": "24",
+          "d": "30"
+        },
+        "correct_option": "a",
+        "answer": "28",
+        "explanation": "Each of the numbers except 28 is a multiple of 3."
+      },
+      {
+        "id": "odd-man-out-and-series-006",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 6,
+        "question": "41, 43, 47, 53, 61, 71, 73, 81",
+        "options": {
+          "a": "61",
+          "b": "71",
+          "c": "73",
+          "d": "81"
+        },
+        "correct_option": "d",
+        "answer": "81",
+        "explanation": "Each of the numbers except 81 is a prime number."
+      },
+      {
+        "id": "odd-man-out-and-series-007",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 7,
+        "question": "16, 25, 36, 72, 144, 196, 225",
+        "options": {
+          "a": "36",
+          "b": "72",
+          "c": "196",
+          "d": "225"
+        },
+        "correct_option": "b",
+        "answer": "72",
+        "explanation": "Each of the numbers except 72 is a perfect square."
+      },
+      {
+        "id": "odd-man-out-and-series-008",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 8,
+        "question": "10, 25, 45, 54, 60, 75, 80",
+        "options": {
+          "a": "10",
+          "b": "45",
+          "c": "54",
+          "d": "75"
+        },
+        "correct_option": "c",
+        "answer": "54",
+        "explanation": "Each of the numbers except 54 is a multiple of 5."
+      },
+      {
+        "id": "odd-man-out-and-series-009",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 9,
+        "question": "1, 4, 9, 16, 20, 36, 49",
+        "options": {
+          "a": "1",
+          "b": "9",
+          "c": "20",
+          "d": "49"
+        },
+        "correct_option": "c",
+        "answer": "20",
+        "explanation": "Each of the numbers except 20 is a perfect square."
+      },
+      {
+        "id": "odd-man-out-and-series-010",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 10,
+        "question": "8, 27, 64, 100, 125, 216, 343",
+        "options": {
+          "a": "27",
+          "b": "100",
+          "c": "125",
+          "d": "343"
+        },
+        "correct_option": "b",
+        "answer": "100",
+        "explanation": "Each of the numbers except 100 is a perfect cube."
+      },
+      {
+        "id": "odd-man-out-and-series-011",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 11,
+        "question": "1, 5, 14, 30, 50, 55, 91",
+        "options": {
+          "a": "5",
+          "b": "50",
+          "c": "55",
+          "d": "91"
+        },
+        "correct_option": "b",
+        "answer": "50",
+        "explanation": "Pattern: +1^2, +2^2, +3^2, +4^2, +5^2, +6^2. 30 + 25 = 55. So 50 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-012",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 12,
+        "question": "385, 462, 572, 396, 427, 671, 264",
+        "options": {
+          "a": "385",
+          "b": "427",
+          "c": "671",
+          "d": "264"
+        },
+        "correct_option": "b",
+        "answer": "427",
+        "explanation": "In each number except 427, the middle digit is the sum of the first and third digits."
+      },
+      {
+        "id": "odd-man-out-and-series-013",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 13,
+        "question": "835, 734, 642, 751, 853, 981, 532",
+        "options": {
+          "a": "751",
+          "b": "853",
+          "c": "981",
+          "d": "532"
+        },
+        "correct_option": "a",
+        "answer": "751",
+        "explanation": "In each number except 751, the difference between first and last digit is the middle digit."
+      },
+      {
+        "id": "odd-man-out-and-series-014",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 14,
+        "question": "331, 482, 551, 263, 383, 242, 111",
+        "options": {
+          "a": "263",
+          "b": "383",
+          "c": "242",
+          "d": "111"
+        },
+        "correct_option": "b",
+        "answer": "383",
+        "explanation": "In each number except 383, the middle digit is the product of first and last digits."
+      },
+      {
+        "id": "odd-man-out-and-series-015",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 15,
+        "question": "2, 5, 10, 17, 26, 37, 50, 64",
+        "options": {
+          "a": "50",
+          "b": "26",
+          "c": "37",
+          "d": "64"
+        },
+        "correct_option": "d",
+        "answer": "64",
+        "explanation": "Pattern is n^2 + 1: 1+1, 4+1, 9+1, 16+1, 25+1, 36+1, 49+1, 64+1 = 65. So 64 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-016",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 16,
+        "question": "19, 28, 39, 52, 67, 84, 102",
+        "options": {
+          "a": "52",
+          "b": "102",
+          "c": "84",
+          "d": "67"
+        },
+        "correct_option": "b",
+        "answer": "102",
+        "explanation": "Differences are 9, 11, 13, 15, 17, 19. 84 + 19 = 103, so 102 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-017",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 17,
+        "question": "253, 136, 352, 460, 324, 631, 244",
+        "options": {
+          "a": "136",
+          "b": "324",
+          "c": "352",
+          "d": "631"
+        },
+        "correct_option": "b",
+        "answer": "324",
+        "explanation": "In each number except 324, the sum of first and third digits equals the middle digit."
+      },
+      {
+        "id": "odd-man-out-and-series-018",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 18,
+        "question": "2, 5, 10, 50, 500, 5000",
+        "options": {
+          "a": "0",
+          "b": "5",
+          "c": "10",
+          "d": "5000"
+        },
+        "correct_option": "d",
+        "answer": "5000",
+        "explanation": "Each term is the product of the preceding two terms. 50 × 500 = 25000. So 5000 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-019",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 19,
+        "question": "4, 5, 7, 10, 14, 18, 25, 32",
+        "options": {
+          "a": "7",
+          "b": "14",
+          "c": "18",
+          "d": "33"
+        },
+        "correct_option": "c",
+        "answer": "18",
+        "explanation": "Differences are +1, +2, +3, +4, +5, +6, +7. 14 + 5 = 19. So 18 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-020",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 20,
+        "question": "22, 33, 66, 99, 121, 279, 594",
+        "options": {
+          "a": "33",
+          "b": "121",
+          "c": "279",
+          "d": "594"
+        },
+        "correct_option": "c",
+        "answer": "279",
+        "explanation": "Each number except 279 is divisible by 11."
+      },
+      {
+        "id": "odd-man-out-and-series-021",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 21,
+        "question": "36, 54, 18, 27, 9, 18.5, 4.5",
+        "options": {
+          "a": "4.5",
+          "b": "18.5",
+          "c": "54",
+          "d": "18"
+        },
+        "correct_option": "b",
+        "answer": "18.5",
+        "explanation": "Operations are ×1.5, ÷3, ×1.5, ÷3... 9 × 1.5 = 13.5 (or ÷2 pattern). 18.5 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-022",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 22,
+        "question": "582, 605, 588, 611, 634, 617, 600",
+        "options": {
+          "a": "634",
+          "b": "611",
+          "c": "605",
+          "d": "600"
+        },
+        "correct_option": "a",
+        "answer": "634",
+        "explanation": "Alternating series: 582, 588, 594 (so 634 is wrong in alternate series)."
+      },
+      {
+        "id": "odd-man-out-and-series-023",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 23,
+        "question": "46080, 3840, 384, 48, 24, 2, 1",
+        "options": {
+          "a": "1",
+          "b": "2",
+          "c": "24",
+          "d": "384"
+        },
+        "correct_option": "c",
+        "answer": "24",
+        "explanation": "Dividing by 12, 10, 8, 6, 4, 2: 48 / 6 = 8. So 24 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-024",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 24,
+        "question": "1, 8, 27, 64, 124, 216, 343",
+        "options": {
+          "a": "8",
+          "b": "27",
+          "c": "64",
+          "d": "124"
+        },
+        "correct_option": "d",
+        "answer": "124",
+        "explanation": "Cubes of 1, 2, 3, 4, 5, 6, 7. 5^3 = 125. So 124 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-025",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 25,
+        "question": "5, 16, 6, 16, 7, 16, 9",
+        "options": {
+          "a": "9",
+          "b": "7",
+          "c": "6",
+          "d": "None of these"
+        },
+        "correct_option": "a",
+        "answer": "9",
+        "explanation": "Alternate terms are 5, 6, 7, 8. So 9 should be 8."
+      },
+      {
+        "id": "odd-man-out-and-series-026",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 26,
+        "question": "6, 13, 18, 25, 30, 37, 40",
+        "options": {
+          "a": "25",
+          "b": "30",
+          "c": "37",
+          "d": "40"
+        },
+        "correct_option": "d",
+        "answer": "40",
+        "explanation": "Differences are +7, +5, +7, +5, +7, +5. 37 + 5 = 42. So 40 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-027",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 27,
+        "question": "56, 72, 90, 110, 132, 150",
+        "options": {
+          "a": "72",
+          "b": "110",
+          "c": "132",
+          "d": "150"
+        },
+        "correct_option": "d",
+        "answer": "150",
+        "explanation": "7×8, 8×9, 9×10, 10×11, 11×12, 12×13 = 156. So 150 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-028",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 28,
+        "question": "8, 13, 21, 32, 47, 63, 83",
+        "options": {
+          "a": "47",
+          "b": "63",
+          "c": "32",
+          "d": "83"
+        },
+        "correct_option": "a",
+        "answer": "47",
+        "explanation": "Differences are +5, +8, +11, +14, +17, +20. 32 + 14 = 46. So 47 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-029",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 29,
+        "question": "25, 36, 49, 81, 121, 169, 225",
+        "options": {
+          "a": "36",
+          "b": "49",
+          "c": "121",
+          "d": "169"
+        },
+        "correct_option": "a",
+        "answer": "36",
+        "explanation": "Cubes/squares of odd numbers: 5^2, 7^2, 9^2, 11^2, 13^2, 15^2. 36 (6^2) is even."
+      },
+      {
+        "id": "odd-man-out-and-series-030",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 30,
+        "question": "1, 2, 6, 15, 31, 56, 91",
+        "options": {
+          "a": "31",
+          "b": "91",
+          "c": "56",
+          "d": "15"
+        },
+        "correct_option": "b",
+        "answer": "91",
+        "explanation": "Differences are 1^2, 2^2, 3^2, 4^2, 5^2, 6^2. 56 + 36 = 92. So 91 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-031",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 31,
+        "question": "52, 51, 48, 43, 34, 27, 16",
+        "options": {
+          "a": "27",
+          "b": "34",
+          "c": "43",
+          "d": "48"
+        },
+        "correct_option": "b",
+        "answer": "34",
+        "explanation": "Differences are -1, -3, -5, -7, -9, -11. 43 - 7 = 36. So 34 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-032",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 32,
+        "question": "105, 85, 60, 30, 0, – 45, – 90",
+        "options": {
+          "a": "0",
+          "b": "85",
+          "c": "– 45",
+          "d": "60"
+        },
+        "correct_option": "a",
+        "answer": "0",
+        "explanation": "Differences are -20, -25, -30, -35, -40, -45. 30 - 35 = -5. So 0 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-033",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 33,
+        "question": "4, 6, 8, 9, 10, 11, 12",
+        "options": {
+          "a": "10",
+          "b": "11",
+          "c": "12",
+          "d": "9"
+        },
+        "correct_option": "b",
+        "answer": "11",
+        "explanation": "Each number except 11 is a composite number."
+      },
+      {
+        "id": "odd-man-out-and-series-034",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 34,
+        "question": "125, 127, 130, 135, 142, 153, 165",
+        "options": {
+          "a": "130",
+          "b": "142",
+          "c": "153",
+          "d": "165"
+        },
+        "correct_option": "d",
+        "answer": "165",
+        "explanation": "Differences are prime numbers +2, +3, +5, +7, +11, +13. 153 + 13 = 166. So 165 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-035",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 35,
+        "question": "16, 36, 64, 81, 100, 144, 190",
+        "options": {
+          "a": "81",
+          "b": "100",
+          "c": "190",
+          "d": "36"
+        },
+        "correct_option": "c",
+        "answer": "190",
+        "explanation": "Squares of 4, 6, 8, 9? Wait, all except 190 are perfect squares."
+      },
+      {
+        "id": "odd-man-out-and-series-036",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 36,
+        "question": "125, 123, 120, 115, 108, 100, 84",
+        "options": {
+          "a": "123",
+          "b": "115",
+          "c": "100",
+          "d": "84"
+        },
+        "correct_option": "c",
+        "answer": "100",
+        "explanation": "Differences are -2, -3, -5, -7, -11, -13. 108 - 11 = 97. So 100 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-037",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 37,
+        "question": "3, 10, 21, 36, 55, 70, 105",
+        "options": {
+          "a": "105",
+          "b": "70",
+          "c": "36",
+          "d": "55"
+        },
+        "correct_option": "b",
+        "answer": "70",
+        "explanation": "Pattern n(2n+1): 1×3, 2×5, 3×7, 4×9, 5×11, 6×13=78. So 70 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-038",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 38,
+        "question": "4, 9, 19, 39, 79, 160, 319",
+        "options": {
+          "a": "319",
+          "b": "160",
+          "c": "79",
+          "d": "39"
+        },
+        "correct_option": "b",
+        "answer": "160",
+        "explanation": "Pattern ×2 + 1: 4×2+1=9, 9×2+1=19, 19×2+1=39, 39×2+1=79, 79×2+1=159. So 160 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-039",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 39,
+        "question": "10, 14, 28, 32, 64, 68, 132",
+        "options": {
+          "a": "32",
+          "b": "68",
+          "c": "132",
+          "d": "28"
+        },
+        "correct_option": "c",
+        "answer": "132",
+        "explanation": "Pattern: +4, ×2, +4, ×2, +4, ×2. 68 × 2 = 136. So 132 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-040",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 40,
+        "question": "8, 27, 125, 343, 1331",
+        "options": {
+          "a": "1331",
+          "b": "343",
+          "c": "125",
+          "d": "None of these"
+        },
+        "correct_option": "d",
+        "answer": "None of these",
+        "explanation": "Cubes of prime numbers 2, 3, 5, 7, 11. All are correct, so None of these."
+      },
+      {
+        "id": "odd-man-out-and-series-041",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 41,
+        "question": "4, – 8, 16, – 32, 64, (.....)",
+        "options": {
+          "a": "128",
+          "b": "– 128",
+          "c": "192",
+          "d": "– 192"
+        },
+        "correct_option": "b",
+        "answer": "– 128",
+        "explanation": "Multiply by -2 each time: 64 × (-2) = -128."
+      },
+      {
+        "id": "odd-man-out-and-series-042",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 42,
+        "question": "5, 10, 13, 26, 29, 58, 61, (.....)",
+        "options": {
+          "a": "122",
+          "b": "64",
+          "c": "125",
+          "d": "128"
+        },
+        "correct_option": "a",
+        "answer": "122",
+        "explanation": "Pattern: ×2, +3, ×2, +3, ×2, +3, ×2. Next term = 61 × 2 = 122."
+      },
+      {
+        "id": "odd-man-out-and-series-043",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 43,
+        "question": "1, 4, 9, 16, 25, 36, 49, (.....)",
+        "options": {
+          "a": "54",
+          "b": "56",
+          "c": "64",
+          "d": "81"
+        },
+        "correct_option": "c",
+        "answer": "64",
+        "explanation": "Squares of 1, 2, 3, 4, 5, 6, 7, 8. 8^2 = 64."
+      },
+      {
+        "id": "odd-man-out-and-series-044",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 44,
+        "question": "1, 8, 27, 64, 125, 216, (.....)",
+        "options": {
+          "a": "354",
+          "b": "343",
+          "c": "392",
+          "d": "245"
+        },
+        "correct_option": "b",
+        "answer": "343",
+        "explanation": "Cubes of 1, 2, 3, 4, 5, 6, 7. 7^3 = 343."
+      },
+      {
+        "id": "odd-man-out-and-series-045",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 45,
+        "question": "11, 13, 17, 19, 23, 29, 31, 37, 41, (.....)",
+        "options": {
+          "a": "43",
+          "b": "47",
+          "c": "53",
+          "d": "51"
+        },
+        "correct_option": "a",
+        "answer": "43",
+        "explanation": "Consecutive prime numbers. Next prime after 41 is 43."
+      },
+      {
+        "id": "odd-man-out-and-series-046",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 46,
+        "question": "16, 33, 65, 131, 261, (.....)",
+        "options": {
+          "a": "523",
+          "b": "521",
+          "c": "613",
+          "d": "721"
+        },
+        "correct_option": "a",
+        "answer": "523",
+        "explanation": "Pattern: ×2+1, ×2-1, ×2+1, ×2-1, ×2+1. 261 × 2 + 1 = 523."
+      },
+      {
+        "id": "odd-man-out-and-series-047",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 47,
+        "question": "3, 7, 6, 5, 9, 3, 12, 1, 15, (.....)",
+        "options": {
+          "a": "18",
+          "b": "13",
+          "c": "– 1",
+          "d": "3"
+        },
+        "correct_option": "c",
+        "answer": "– 1",
+        "explanation": "Two alternating series: 3,6,9,12,15 (+3) and 7,5,3,1 (-2). Next in 2nd series is 1 - 2 = -1."
+      },
+      {
+        "id": "odd-man-out-and-series-048",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 48,
+        "question": "15, 31, 63, 127, 255, (.....)",
+        "options": {
+          "a": "513",
+          "b": "511",
+          "c": "517",
+          "d": "523"
+        },
+        "correct_option": "b",
+        "answer": "511",
+        "explanation": "Pattern: 2^n - 1. 255 × 2 + 1 = 511."
+      },
+      {
+        "id": "odd-man-out-and-series-049",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 49,
+        "question": "2, 6, 12, 20, 30, 42, 56, (.....)",
+        "options": {
+          "a": "60",
+          "b": "64",
+          "c": "72",
+          "d": "70"
+        },
+        "correct_option": "c",
+        "answer": "72",
+        "explanation": "Pattern n(n+1): 1×2, 2×3, 3×4, 4×5, 5×6, 6×7, 7×8, 8×9 = 72."
+      },
+      {
+        "id": "odd-man-out-and-series-050",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 50,
+        "question": "8, 24, 12, 36, 18, 54, (.....)",
+        "options": {
+          "a": "27",
+          "b": "108",
+          "c": "68",
+          "d": "72"
+        },
+        "correct_option": "a",
+        "answer": "27",
+        "explanation": "Pattern: ×3, ÷2, ×3, ÷2, ×3, ÷2. Next = 54 / 2 = 27."
+      },
+      {
+        "id": "odd-man-out-and-series-051",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 51,
+        "question": "165, 195, 255, 285, 345, (.....)",
+        "options": {
+          "a": "375",
+          "b": "420",
+          "c": "435",
+          "d": "390"
+        },
+        "correct_option": "c",
+        "answer": "435",
+        "explanation": "Pattern 15 × prime numbers: 15×11, 15×13, 15×17, 15×19, 15×23, 15×29 = 435."
+      },
+      {
+        "id": "odd-man-out-and-series-052",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 52,
+        "question": "7, 26, 63, 124, 215, 342, (.....)",
+        "options": {
+          "a": "481",
+          "b": "511",
+          "c": "391",
+          "d": "421"
+        },
+        "correct_option": "b",
+        "answer": "511",
+        "explanation": "Pattern n^3 - 1: 2^3-1, 3^3-1, 4^3-1, 5^3-1, 6^3-1, 7^3-1, 8^3-1 = 511."
+      },
+      {
+        "id": "odd-man-out-and-series-053",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 53,
+        "question": "2, 4, 12, 48, 240, (.....)",
+        "options": {
+          "a": "960",
+          "b": "1440",
+          "c": "1080",
+          "d": "1920"
+        },
+        "correct_option": "b",
+        "answer": "1440",
+        "explanation": "Pattern: ×2, ×3, ×4, ×5, ×6. Next = 240 × 6 = 1440."
+      },
+      {
+        "id": "odd-man-out-and-series-054",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 54,
+        "question": "8, 7, 11, 12, 14, 17, 17, 22, (.....)",
+        "options": {
+          "a": "27",
+          "b": "20",
+          "c": "22",
+          "d": "24"
+        },
+        "correct_option": "b",
+        "answer": "20",
+        "explanation": "Two series: 8, 11, 14, 17, 20 (+3) and 7, 12, 17, 22 (+5). Next term is 17 + 3 = 20."
+      },
+      {
+        "id": "odd-man-out-and-series-055",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 55,
+        "question": "10, 5, 13, 10, 16, 20, 19, (.....)",
+        "options": {
+          "a": "22",
+          "b": "40",
+          "c": "38",
+          "d": "23"
+        },
+        "correct_option": "b",
+        "answer": "40",
+        "explanation": "Two series: 10, 13, 16, 19 (+3) and 5, 10, 20, 40 (×2). Next is 20 × 2 = 40."
+      },
+      {
+        "id": "odd-man-out-and-series-056",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 56,
+        "question": "1, 2, 4, 8, 16, 32, 64, (.....), 256",
+        "options": {
+          "a": "148",
+          "b": "128",
+          "c": "154",
+          "d": "164"
+        },
+        "correct_option": "b",
+        "answer": "128",
+        "explanation": "Powers of 2: 2^6 = 64, 2^7 = 128."
+      },
+      {
+        "id": "odd-man-out-and-series-057",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 57,
+        "question": "71, 76, 69, 74, 67, 72, (.....)",
+        "options": {
+          "a": "77",
+          "b": "65",
+          "c": "80",
+          "d": "76"
+        },
+        "correct_option": "b",
+        "answer": "65",
+        "explanation": "Pattern: +5, -7, +5, -7, +5, -7. Next = 72 - 7 = 65."
+      },
+      {
+        "id": "odd-man-out-and-series-058",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 58,
+        "question": "9, 12, 11, 14, 13, (.....), 15",
+        "options": {
+          "a": "12",
+          "b": "16",
+          "c": "10",
+          "d": "17"
+        },
+        "correct_option": "b",
+        "answer": "16",
+        "explanation": "Pattern: +3, -1, +3, -1, +3, -1. Next = 13 + 3 = 16."
+      },
+      {
+        "id": "odd-man-out-and-series-059",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 59,
+        "question": "Complete the series : 2, 5, 9, 19, 37, .....",
+        "options": {
+          "a": "76",
+          "b": "74",
+          "c": "75",
+          "d": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "75",
+        "explanation": "Pattern: ×2+1, ×2-1, ×2+1, ×2-1, ×2+1. 37 × 2 + 1 = 75."
+      },
+      {
+        "id": "odd-man-out-and-series-060",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 60,
+        "question": "3, 8, 15, 24, 34, 48, 63",
+        "options": {
+          "a": "15",
+          "b": "24",
+          "c": "34",
+          "d": "48",
+          "e": "63"
+        },
+        "correct_option": "c",
+        "answer": "34",
+        "explanation": "Pattern n^2 - 1: 2^2-1, 3^2-1, 4^2-1, 5^2-1, 6^2-1=35. So 34 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-061",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 61,
+        "question": "2, 9, 28, 65, 126, 216, 344",
+        "options": {
+          "a": "2",
+          "b": "28",
+          "c": "65",
+          "d": "126",
+          "e": "216"
+        },
+        "correct_option": "e",
+        "answer": "216",
+        "explanation": "Pattern n^3 + 1: 1+1, 8+1, 27+1, 64+1, 125+1, 216+1=217. So 216 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-062",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 62,
+        "question": "5, 15, 30, 135, 405, 1215, 3645",
+        "options": {
+          "a": "3645",
+          "b": "1215",
+          "c": "405",
+          "d": "30",
+          "e": "15"
+        },
+        "correct_option": "d",
+        "answer": "30",
+        "explanation": "Multiply by 3 each step: 5 × 3 = 15, 15 × 3 = 45. So 30 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-063",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 63,
+        "question": "125, 106, 88, 76, 65, 58, 53",
+        "options": {
+          "a": "125",
+          "b": "106",
+          "c": "88",
+          "d": "76",
+          "e": "65"
+        },
+        "correct_option": "c",
+        "answer": "88",
+        "explanation": "Differences are -19, -17, -13, -11, -7, -5. 106 - 17 = 89. So 88 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-064",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 64,
+        "question": "190, 166, 145, 128, 112, 100, 91",
+        "options": {
+          "a": "100",
+          "b": "166",
+          "c": "145",
+          "d": "128",
+          "e": "112"
+        },
+        "correct_option": "d",
+        "answer": "128",
+        "explanation": "Differences are -24, -21, -18, -15, -12, -9. 145 - 18 = 127. So 128 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-065",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 65,
+        "question": "1, 1, 2, 6, 24, 96, 720",
+        "options": {
+          "a": "720",
+          "b": "96",
+          "c": "24",
+          "d": "6",
+          "e": "2"
+        },
+        "correct_option": "b",
+        "answer": "96",
+        "explanation": "Factorials: 1, 1, 2, 6, 24, 120, 720. So 96 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-066",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 66,
+        "question": "40960, 10240, 2560, 640, 200, 40, 10",
+        "options": {
+          "a": "640",
+          "b": "40",
+          "c": "200",
+          "d": "2560",
+          "e": "10240"
+        },
+        "correct_option": "c",
+        "answer": "200",
+        "explanation": "Divide by 4 at each step: 640 / 4 = 160. So 200 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-067",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 67,
+        "question": "64, 71, 80, 91, 104, 119, 135, 155",
+        "options": {
+          "a": "71",
+          "b": "80",
+          "c": "104",
+          "d": "119",
+          "e": "135"
+        },
+        "correct_option": "e",
+        "answer": "135",
+        "explanation": "Differences are +7, +9, +11, +13, +15, +17, +19. 119 + 17 = 136. So 135 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-068",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 68,
+        "question": "7, 8, 18, 57, 228, 1165, 6996",
+        "options": {
+          "a": "8",
+          "b": "18",
+          "c": "57",
+          "d": "228",
+          "e": "1165"
+        },
+        "correct_option": "d",
+        "answer": "228",
+        "explanation": "Pattern: ×1+1, ×2+2, ×3+3, ×4+4 = 232. So 228 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-069",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 69,
+        "question": "3, 7, 15, 27, 63, 127, 255",
+        "options": {
+          "a": "7",
+          "b": "15",
+          "c": "27",
+          "d": "63",
+          "e": "127"
+        },
+        "correct_option": "c",
+        "answer": "27",
+        "explanation": "Pattern ×2+1: 15 × 2 + 1 = 31. So 27 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-070",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 70,
+        "question": "19, 26, 33, 46, 59, 74, 91",
+        "options": {
+          "a": "26",
+          "b": "33",
+          "c": "46",
+          "d": "59",
+          "e": "74"
+        },
+        "correct_option": "b",
+        "answer": "33",
+        "explanation": "Differences are prime numbers +7, +11, +13, +15? 19+7=26, 26+9=35. 33 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-071",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 71,
+        "question": "2880, 480, 92, 24, 8, 4, 4",
+        "options": {
+          "a": "480",
+          "b": "92",
+          "c": "24",
+          "d": "8",
+          "e": "4"
+        },
+        "correct_option": "b",
+        "answer": "92",
+        "explanation": "Divide by 6, 5, 4, 3, 2, 1: 480 / 5 = 96. So 92 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-072",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 72,
+        "question": "445, 221, 109, 46, 25, 11, 4",
+        "options": {
+          "a": "221",
+          "b": "109",
+          "c": "46",
+          "d": "25",
+          "e": "11"
+        },
+        "correct_option": "c",
+        "answer": "46",
+        "explanation": "Pattern: (Previous - 3) / 2. (109 - 3) / 2 = 53. So 46 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-073",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 73,
+        "question": "3, 7, 15, 39, 63, 127, 255, 511",
+        "options": {
+          "a": "7",
+          "b": "15",
+          "c": "39",
+          "d": "63",
+          "e": "127"
+        },
+        "correct_option": "c",
+        "answer": "39",
+        "explanation": "Pattern 2^n - 1: 15 × 2 + 1 = 31. So 39 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-074",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 74,
+        "question": "1, 3, 10, 21, 64, 129, 356, 777",
+        "options": {
+          "a": "10",
+          "b": "21",
+          "c": "64",
+          "d": "129",
+          "e": "356"
+        },
+        "correct_option": "e",
+        "answer": "356",
+        "explanation": "Pattern: ×2+1, ×3+1, ×2+1, ×3+1... 129 × 3 + 1 = 388. So 356 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-075",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 75,
+        "question": "196, 169, 144, 121, 100, 80, 64",
+        "options": {
+          "a": "169",
+          "b": "144",
+          "c": "121",
+          "d": "100",
+          "e": "80"
+        },
+        "correct_option": "e",
+        "answer": "80",
+        "explanation": "Squares of 14, 13, 12, 11, 10, 9 (81), 8. So 80 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-076",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 76,
+        "question": "6, 12, 48, 100, 384, 768, 3072",
+        "options": {
+          "a": "768",
+          "b": "384",
+          "c": "100",
+          "d": "48",
+          "e": "12"
+        },
+        "correct_option": "c",
+        "answer": "100",
+        "explanation": "Pattern: ×2, ×4, ×2, ×4... 48 × 2 = 96. So 100 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-077",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 77,
+        "question": "10, 26, 74, 218, 654, 1946, 5834",
+        "options": {
+          "a": "26",
+          "b": "74",
+          "c": "218",
+          "d": "654",
+          "e": "1946"
+        },
+        "correct_option": "d",
+        "answer": "654",
+        "explanation": "Pattern: ×3 - 4. 218 × 3 - 4 = 650. So 654 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-078",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 78,
+        "question": "15, 16, 34, 105, 424, 2124, 12576",
+        "options": {
+          "a": "16",
+          "b": "34",
+          "c": "105",
+          "d": "424",
+          "e": "2124"
+        },
+        "correct_option": "e",
+        "answer": "2124",
+        "explanation": "Pattern: ×1+1, ×2+2, ×3+3, ×4+4, ×5+5 = 2125. So 2124 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-079",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 79,
+        "question": "2807, 1400, 697, 347, 171, 84, 41, 20",
+        "options": {
+          "a": "697",
+          "b": "347",
+          "c": "171",
+          "d": "84",
+          "e": "41"
+        },
+        "correct_option": "b",
+        "answer": "347",
+        "explanation": "Pattern: (Previous - 7) / 2. (697 - 7) / 2 = 345. So 347 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-080",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 80,
+        "question": "32, 36, 41, 61, 86, 122, 171, 235",
+        "options": {
+          "a": "41",
+          "b": "61",
+          "c": "86",
+          "d": "122",
+          "e": "171"
+        },
+        "correct_option": "a",
+        "answer": "41",
+        "explanation": "Differences are squares 2^2, 3^2, 4^2, 5^2... 36 + 9 = 45. So 41 is wrong."
+      },
+      {
+        "id": "odd-man-out-and-series-081",
+        "chapter": "Odd Man Out and Series",
+        "question_number": 81,
+        "question": "3, 4, 9, 22.5, 67.5, 202.5, 810",
+        "options": {
+          "a": "4",
+          "b": "9",
+          "c": "22.5",
+          "d": "67.5",
+          "e": "202.5"
+        },
+        "correct_option": "a",
+        "answer": "4",
+        "explanation": "Multiply by 1.5, 2.5, 2.5... 3 × 1.5 = 4.5. So 4 is wrong."
+      }
+    ]
+  },
+  "key_explanation_from_book": {
+    "odd_man_out": "Find the one number that does not follow the common property or pattern shared by the remaining numbers.",
+    "wrong_number_series": "For a wrong-number series, identify the intended mathematical pattern and locate the term that violates it.",
+    "missing_number_series": "For a missing-number series, determine the governing relation between consecutive terms and calculate the missing term."
+  },
+  "verification": {
+    "questions_extracted": "81/81",
+    "answer_keys_extracted": "81/81",
+    "complete_options": "81/81"
+  }
+}
+
+out_path = "/home/jyoti/Project/PLACEMENT/server/data/rs_agrawal/odd_man_out_and_series.json"
+os.makedirs(os.path.dirname(out_path), exist_ok=True)
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
+
+print(f"Successfully generated Odd Man Out and Series (Ch 35) JSON with {len(data['exercise']['questions'])} questions!")

@@ -1,0 +1,1098 @@
+import json
+import os
+
+data = {
+  "book": "Quantitative Aptitude for Competitive Examinations — R.S. Aggarwal",
+  "chapter_number": 20,
+  "chapter": "Problems on Trains",
+  "book_page_range": "612–632",
+  "objective_questions": 74,
+  "key_explanation_from_book": {
+    "conversions": [
+      "To convert km/hr to m/sec, multiply by 5/18.",
+      "To convert m/sec to km/hr, multiply by 18/5."
+    ],
+    "train_passing": [
+      "A train of length l metres passing a pole, standing man or signal post covers l metres.",
+      "A train of length l metres passing a stationary object of length b metres covers l + b metres."
+    ],
+    "relative_speed": [
+      "For two trains moving in the same direction at u and v m/sec, where u > v, relative speed = u − v.",
+      "For two trains moving in opposite directions at u and v m/sec, relative speed = u + v."
+    ],
+    "two_trains": [
+      "For trains of lengths a and b moving in opposite directions, crossing time = (a+b)/(u+v) seconds.",
+      "For trains of lengths a and b moving in the same direction, crossing time = (a+b)/(u−v) seconds, where u is the faster speed."
+    ],
+    "post_crossing_relation": "If two trains start simultaneously from A and B towards each other and, after crossing, take a and b seconds respectively to reach B and A, then A's speed : B's speed = b : a."
+  },
+  "exercise": {
+    "title": "Objective Type Questions",
+    "question_count": 74,
+    "questions": [
+      {
+        "id": "problems-on-trains-001",
+        "chapter": "Problems on Trains",
+        "question_number": 1,
+        "question": "A train moves with a speed of 108 kmph. Its speed in metres per second is",
+        "options": {
+          "a": "10.8 m/sec.",
+          "b": "18 m/sec.",
+          "c": "30 m/sec.",
+          "d": "38.8 m/sec."
+        },
+        "correct_option": "c",
+        "answer": "30 m/sec."
+      },
+      {
+        "id": "problems-on-trains-002",
+        "chapter": "Problems on Trains",
+        "question_number": 2,
+        "question": "A speed of 14 metres per second is the same as",
+        "options": {
+          "a": "28 km / hr",
+          "b": "46.6 km / hr",
+          "c": "50.4 km / hr",
+          "d": "70 km / hr"
+        },
+        "correct_option": "c",
+        "answer": "50.4 km / hr"
+      },
+      {
+        "id": "problems-on-trains-003",
+        "chapter": "Problems on Trains",
+        "question_number": 3,
+        "question": "A man sitting in a train is counting the pillars of electricity. The distance between two pillars is 60 metres, and the speed of the train is 42 km/hr. In 5 hours, how many pillars will he count? (R.R.B., 2009)",
+        "options": {
+          "a": "3501",
+          "b": "3600",
+          "c": "3800",
+          "d": "None of these"
+        },
+        "correct_option": "a",
+        "answer": "3501"
+      },
+      {
+        "id": "problems-on-trains-004",
+        "chapter": "Problems on Trains",
+        "question_number": 4,
+        "question": "In what time will a train 100 metres long cross an electric pole, if its speed be 144 km / hr?",
+        "options": {
+          "a": "2.5 seconds",
+          "b": "4.25 seconds",
+          "c": "5 seconds",
+          "d": "12.5 seconds"
+        },
+        "correct_option": "a",
+        "answer": "2.5 seconds"
+      },
+      {
+        "id": "problems-on-trains-005",
+        "chapter": "Problems on Trains",
+        "question_number": 5,
+        "question": "A train 280 m long, running with a speed of 63 km / hr will pass a tree in:",
+        "options": {
+          "a": "15 sec",
+          "b": "16 sec",
+          "c": "18 sec",
+          "d": "20 sec"
+        },
+        "correct_option": "b",
+        "answer": "16 sec"
+      },
+      {
+        "id": "problems-on-trains-006",
+        "chapter": "Problems on Trains",
+        "question_number": 6,
+        "question": "A 100 m long train is going at a speed of 60 km/hr. It will cross a 140 m long railway bridge in (G.I.C., 2009)",
+        "options": {
+          "a": "3.6 sec",
+          "b": "7.2 sec",
+          "c": "14.4 sec",
+          "d": "21.6 sec"
+        },
+        "correct_option": "c",
+        "answer": "14.4 sec"
+      },
+      {
+        "id": "problems-on-trains-007",
+        "chapter": "Problems on Trains",
+        "question_number": 7,
+        "question": "A 120 metre long train is running at a speed of 90 km/ hr. It will cross a railway platform 230 m long in (S.S.C., 2005)",
+        "options": {
+          "a": "4 4/5 seconds",
+          "b": "7 seconds",
+          "c": "9 1/5 seconds",
+          "d": "14 seconds"
+        },
+        "correct_option": "d",
+        "answer": "14 seconds"
+      },
+      {
+        "id": "problems-on-trains-008",
+        "chapter": "Problems on Trains",
+        "question_number": 8,
+        "question": "A train travelling at a speed of 75 mph enters a tunnel 3 1/2 miles long. The train is 1/4 mile long. How long does it take for the train to pass through the tunnel from the moment the front enters to the moment the rear emerges ?",
+        "options": {
+          "a": "2.5 min",
+          "b": "3 min",
+          "c": "3.2 min",
+          "d": "3.5 min"
+        },
+        "correct_option": "b",
+        "answer": "3 min"
+      },
+      {
+        "id": "problems-on-trains-009",
+        "chapter": "Problems on Trains",
+        "question_number": 9,
+        "question": "A train running at the speed of 60 km / hr crosses a pole in 9 seconds. What is the length of the train?",
+        "options": {
+          "a": "120 metres",
+          "b": "180 metres",
+          "c": "324 metres",
+          "d": "Cannot be determined",
+          "e": "None of these"
+        },
+        "correct_option": "e",
+        "answer": "None of these"
+      },
+      {
+        "id": "problems-on-trains-010",
+        "chapter": "Problems on Trains",
+        "question_number": 10,
+        "question": "A train 132 m long passes a telegraph pole in 6 seconds. Find the speed of the train.",
+        "options": {
+          "a": "70 km / hr",
+          "b": "72 km / hr",
+          "c": "79.2 km / hr",
+          "d": "80 km / hr"
+        },
+        "correct_option": "c",
+        "answer": "79.2 km / hr"
+      },
+      {
+        "id": "problems-on-trains-011",
+        "chapter": "Problems on Trains",
+        "question_number": 11,
+        "question": "A train covers a distance of 12 km in 10 minutes. If it takes 6 seconds to pass a telegraph post, then the length of the train is",
+        "options": {
+          "a": "90 m",
+          "b": "100 m",
+          "c": "120 m",
+          "d": "140 m"
+        },
+        "correct_option": "c",
+        "answer": "120 m"
+      },
+      {
+        "id": "problems-on-trains-012",
+        "chapter": "Problems on Trains",
+        "question_number": 12,
+        "question": "A train 240 m long passed a pole in 24 seconds. How long will it take to pass a platform 650 m long?",
+        "options": {
+          "a": "65 sec",
+          "b": "89 sec",
+          "c": "100 sec",
+          "d": "150 sec"
+        },
+        "correct_option": "b",
+        "answer": "89 sec"
+      },
+      {
+        "id": "problems-on-trains-013",
+        "chapter": "Problems on Trains",
+        "question_number": 13,
+        "question": "A 50-metre long train passes over a bridge at the speed of 30 km per hour. If it takes 36 seconds to cross the brige, what is the length of the bridge? (P.C.S., 2009)",
+        "options": {
+          "a": "200 metres",
+          "b": "250 metres",
+          "c": "300 metres",
+          "d": "350 metres"
+        },
+        "correct_option": "b",
+        "answer": "250 metres"
+      },
+      {
+        "id": "problems-on-trains-014",
+        "chapter": "Problems on Trains",
+        "question_number": 14,
+        "question": "A train takes 5 minutes to cross a telegraphic post. Then the time taken by another train whose length is just double of the first train and moving with same speed to cross a platform of its own length is (Hotel Management, 2007)",
+        "options": {
+          "a": "10 minutes",
+          "b": "15 minutes",
+          "c": "20 minutes",
+          "d": "Data inadequate"
+        },
+        "correct_option": "c",
+        "answer": "20 minutes"
+      },
+      {
+        "id": "problems-on-trains-015",
+        "chapter": "Problems on Trains",
+        "question_number": 15,
+        "question": "The length of the bridge, which a train 130 metres long and travelling at 45 km / hr can cross in 30 seconds, is",
+        "options": {
+          "a": "200 m",
+          "b": "225 m",
+          "c": "245 m",
+          "d": "250 m"
+        },
+        "correct_option": "c",
+        "answer": "245 m"
+      },
+      {
+        "id": "problems-on-trains-016",
+        "chapter": "Problems on Trains",
+        "question_number": 16,
+        "question": "A train 800 metres long is running at a speed of 78 km/hr. If it crosses a tunnel in 1 minute, then the length of the tunnel (in metres) is :",
+        "options": {
+          "a": "130",
+          "b": "360",
+          "c": "500",
+          "d": "540"
+        },
+        "correct_option": "c",
+        "answer": "500"
+      },
+      {
+        "id": "problems-on-trains-017",
+        "chapter": "Problems on Trains",
+        "question_number": 17,
+        "question": "A train running at the speed of 60 kmph crosses a 200 m long platform in 27 seconds. What is the length of the train? (Bank Recruitment, 2009)",
+        "options": {
+          "a": "200 metres",
+          "b": "240 metres",
+          "c": "250 metres",
+          "d": "450 metres",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "250 metres"
+      },
+      {
+        "id": "problems-on-trains-018",
+        "chapter": "Problems on Trains",
+        "question_number": 18,
+        "question": "A train running at a speed of 90 km/hr crosses a platform double its length in 36 seconds. What is the length of the platform in metres? (Bank Recruitment, 2007)",
+        "options": {
+          "a": "200",
+          "b": "300",
+          "c": "450",
+          "d": "Cannot be determined",
+          "e": "None of these"
+        },
+        "correct_option": "e",
+        "answer": "None of these"
+      },
+      {
+        "id": "problems-on-trains-019",
+        "chapter": "Problems on Trains",
+        "question_number": 19,
+        "question": "A train of length 150 metres takes 40.5 seconds to cross a tunnel of length 300 metres. What is the speed of the train in km/hr?",
+        "options": {
+          "a": "13.33",
+          "b": "26.67",
+          "c": "40",
+          "d": "66.67"
+        },
+        "correct_option": "c",
+        "answer": "40"
+      },
+      {
+        "id": "problems-on-trains-020",
+        "chapter": "Problems on Trains",
+        "question_number": 20,
+        "question": "A 280-metre long train crosses a platform thrice its length in 50 seconds. What is the speed of the train in km/hr? (M.B.A.–C.E.T., 2008)",
+        "options": {
+          "a": "60.48",
+          "b": "64.86",
+          "c": "80.64",
+          "d": "82.38",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "80.64"
+      },
+      {
+        "id": "problems-on-trains-021",
+        "chapter": "Problems on Trains",
+        "question_number": 21,
+        "question": "A train passes a station platform in 36 seconds and a man standing on the platform in 20 seconds. If the speed of the train is 54 km / hr, what is the length of the platform ? (M.A.T., 2008)",
+        "options": {
+          "a": "225 m",
+          "b": "240 m",
+          "c": "230 m",
+          "d": "235 m"
+        },
+        "correct_option": "b",
+        "answer": "240 m"
+      },
+      {
+        "id": "problems-on-trains-022",
+        "chapter": "Problems on Trains",
+        "question_number": 22,
+        "question": "Train A crosses a stationary train B in 50 seconds and a pole in 20 seconds with the same speed. The length of the train A is 240 metres. What is the length of the stationary train B? (Bank. P.O., 2010)",
+        "options": {
+          "a": "260 metres",
+          "b": "300 metres",
+          "c": "360 metres",
+          "d": "Cannot be determined",
+          "e": "None of these"
+        },
+        "correct_option": "c",
+        "answer": "360 metres"
+      },
+      {
+        "id": "problems-on-trains-023",
+        "chapter": "Problems on Trains",
+        "question_number": 23,
+        "question": "A train speeds past a pole in 20 seconds and speeds past a platform 100 metres in length in 30 seconds. What is the length of the train? (Bank P.O., 2010)",
+        "options": {
+          "a": "100 m",
+          "b": "150 m",
+          "c": "180 m",
+          "d": "200 m",
+          "e": "None of these"
+        },
+        "correct_option": "d",
+        "answer": "200 m"
+      },
+      {
+        "id": "problems-on-trains-024",
+        "chapter": "Problems on Trains",
+        "question_number": 24,
+        "question": "A train crosses a platform 100 m long in 60 seconds at a speed of 45 km/hr. The time taken by the train to cross an electric pole is:",
+        "options": {
+          "a": "8 sec",
+          "b": "52 sec",
+          "c": "1 minute",
+          "d": "Data inadequate"
+        },
+        "correct_option": "b",
+        "answer": "52 sec"
+      },
+      {
+        "id": "problems-on-trains-025",
+        "chapter": "Problems on Trains",
+        "question_number": 25,
+        "question": "A train, 150 m long, takes 30 seconds to cross a bridge 500 m long. How much time will the train take to cross a platform 370 m long? (S.S.C., 2007)",
+        "options": {
+          "a": "18 sec",
+          "b": "24 sec",
+          "c": "30 sec",
+          "d": "36 sec"
+        },
+        "correct_option": "b",
+        "answer": "24 sec"
+      },
+      {
+        "id": "problems-on-trains-026",
+        "chapter": "Problems on Trains",
+        "question_number": 26,
+        "question": "A train passes a platform 90 m long in 30 seconds and a man standing on the platform in 15 seconds. The speed of the train is (C.P.O., 2007)",
+        "options": {
+          "a": "12.4 km/hr",
+          "b": "14.6 km/hr",
+          "c": "18.4 km/hr",
+          "d": "21.6 km/hr"
+        },
+        "correct_option": "d",
+        "answer": "21.6 km/hr"
+      },
+      {
+        "id": "problems-on-trains-027",
+        "chapter": "Problems on Trains",
+        "question_number": 27,
+        "question": "A train running at a certain speed takes 20 seconds to cross a signal post and 50 seconds to cross a bridge. Which of the following statements is correct about the length of the bridge?",
+        "options": {
+          "a": "1.5 times the length of the train",
+          "b": "2.5 times the length of the train",
+          "c": "30 metres more than the length of the train",
+          "d": "Cannot be determined"
+        },
+        "correct_option": "a",
+        "answer": "1.5 times the length of the train"
+      },
+      {
+        "id": "problems-on-trains-028",
+        "chapter": "Problems on Trains",
+        "question_number": 28,
+        "question": "A train travelling with a constant speed crosses a 96-metre long platform in 12 seconds and another 141-metre long platform in 15 seconds. The length of the train and its speed are (R.R.B., 2006)",
+        "options": {
+          "a": "84 metres and 54 km/hr",
+          "b": "64 metres and 44 km/hr",
+          "c": "64 metres and 54 km/hr",
+          "d": "84 metres and 60 km/hr"
+        },
+        "correct_option": "a",
+        "answer": "84 metres and 54 km/hr"
+      },
+      {
+        "id": "problems-on-trains-029",
+        "chapter": "Problems on Trains",
+        "question_number": 29,
+        "question": "The time taken by a train 180 m long, travelling at 42 kmph, in passing a person walking in the same direction at 6 kmph, will be (S.S.C., 2005)",
+        "options": {
+          "a": "18 sec",
+          "b": "21 sec",
+          "c": "24 sec",
+          "d": "25 sec"
+        },
+        "correct_option": "a",
+        "answer": "18 sec"
+      },
+      {
+        "id": "problems-on-trains-030",
+        "chapter": "Problems on Trains",
+        "question_number": 30,
+        "question": "A train with 90 km/hr crosses a bridge in 36 seconds. Another train 100 metres shorter crosses the same bridge at 45 km/hr. What is the time taken by the second train to cross the bridge? (M.A.T., 2006)",
+        "options": {
+          "a": "61 seconds",
+          "b": "62 seconds",
+          "c": "63 seconds",
+          "d": "64 seconds"
+        },
+        "correct_option": "d",
+        "answer": "64 seconds"
+      },
+      {
+        "id": "problems-on-trains-031",
+        "chapter": "Problems on Trains",
+        "question_number": 31,
+        "question": "A jogger running at 9 kmph alongside a railway track is 240 metres ahead of the engine of a 120 metre long train running at 45 kmph in the same direction. In how much time will the train pass the jogger?",
+        "options": {
+          "a": "3.6 sec",
+          "b": "18 sec",
+          "c": "36 sec",
+          "d": "72 sec"
+        },
+        "correct_option": "c",
+        "answer": "36 sec"
+      },
+      {
+        "id": "problems-on-trains-032",
+        "chapter": "Problems on Trains",
+        "question_number": 32,
+        "question": "A train 110 metres long is running with a speed of 60 kmph. In what time will it pass a man who is running at 6 kmph in the direction opposite to that in which the train is going? (M.A.T., 2002)",
+        "options": {
+          "a": "5 sec",
+          "b": "6 sec",
+          "c": "7 sec",
+          "d": "10 sec"
+        },
+        "correct_option": "b",
+        "answer": "6 sec"
+      },
+      {
+        "id": "problems-on-trains-033",
+        "chapter": "Problems on Trains",
+        "question_number": 33,
+        "question": "Two trains 200 metres and 150 metres long are running on parallel rails in the same direction at speeds of 40 km/hr and 45 km/hr respectively. Time taken by the faster train to cross the slowed train will be (P.C.S., 2009)",
+        "options": {
+          "a": "72 seconds",
+          "b": "132 seconds",
+          "c": "192 seconds",
+          "d": "252 seconds"
+        },
+        "correct_option": "d",
+        "answer": "252 seconds"
+      },
+      {
+        "id": "problems-on-trains-034",
+        "chapter": "Problems on Trains",
+        "question_number": 34,
+        "question": "Two trains A and B start running together from the same point in the same direction, at the speeds of 60 kmph and 72 kmph respectively. If the length of each of the trains is 240 metres, how long will it take for train B to cross train A? (Bank P.O., 2005)",
+        "options": {
+          "a": "1 min 12 secs",
+          "b": "1 min 24 secs",
+          "c": "2 min 12 secs",
+          "d": "2 min 24 secs"
+        },
+        "correct_option": "d",
+        "answer": "2 min 24 secs"
+      },
+      {
+        "id": "problems-on-trains-035",
+        "chapter": "Problems on Trains",
+        "question_number": 35,
+        "question": "Two trains are moving in opposite directions @ 60 km / hr and 90 km / hr. Their lengths are 1.10 km and 0.9 km respectively. The time taken by the slower train to cross the faster train in seconds is (M.B.A., 2002)",
+        "options": {
+          "a": "36",
+          "b": "45",
+          "c": "48",
+          "d": "49"
+        },
+        "correct_option": "c",
+        "answer": "48"
+      },
+      {
+        "id": "problems-on-trains-036",
+        "chapter": "Problems on Trains",
+        "question_number": 36,
+        "question": "Two trains of lengths 120 m and 90 m are running with speeds of 80 km/hr and 55 km/hr respectively towards each other on parallel lines. If they are 90 m apart, after how many seconds they will cross each other? (Hotel Management, 2010)",
+        "options": {
+          "a": "5.6 sec.",
+          "b": "7.2 sec.",
+          "c": "8 sec.",
+          "d": "9 sec."
+        },
+        "correct_option": "c",
+        "answer": "8 sec."
+      },
+      {
+        "id": "problems-on-trains-037",
+        "chapter": "Problems on Trains",
+        "question_number": 37,
+        "question": "Two trains are coming from opposite directions with speeds of 75 km/hr and 100 km/hr on two parallel tracks. At some moment the distance between them is 100 km. After T hours, distance between them is again 100 km. T is equal to (I.A.M., 2007)",
+        "options": {
+          "a": "1 hr",
+          "b": "1 1/7 hr",
+          "c": "1 1/2 hr",
+          "d": "2 hrs"
+        },
+        "correct_option": "b",
+        "answer": "1 1/7 hr"
+      },
+      {
+        "id": "problems-on-trains-038",
+        "chapter": "Problems on Trains",
+        "question_number": 38,
+        "question": "A train 125 m long passes a man, running at 5 kmph in the same direction in which the train is going, in 10 seconds. The speed of the train is: (A.A.O. Exam., 2003)",
+        "options": {
+          "a": "45 km / hr",
+          "b": "50 km / hr",
+          "c": "54 km / hr",
+          "d": "55 km / hr"
+        },
+        "correct_option": "b",
+        "answer": "50 km / hr"
+      },
+      {
+        "id": "problems-on-trains-039",
+        "chapter": "Problems on Trains",
+        "question_number": 39,
+        "question": "A train 400 m long overtook a man walking along the line in the same direction as the train, at the rate of 5 kmph and passed him in 40 seconds. The train reached the station in 20 minutes after passing the man. In what time did the man reach the station?",
+        "options": {
+          "a": "2 hr 24 min",
+          "b": "2 hr 30 min 40 sec",
+          "c": "2 hr 36 min 48 sec",
+          "d": "2 hr 48 min 48 sec"
+        },
+        "correct_option": "d",
+        "answer": "2 hr 48 min 48 sec"
+      },
+      {
+        "id": "problems-on-trains-040",
+        "chapter": "Problems on Trains",
+        "question_number": 40,
+        "question": "A train, 240 m long, crosses a man walking along the line in opposite direction at the rate of 3 kmph in 10 seconds. The speed of the train is (S.S.C., 2010)",
+        "options": {
+          "a": "63 kmph",
+          "b": "75 kmph",
+          "c": "83.4 kmph",
+          "d": "86.4 kmph"
+        },
+        "correct_option": "c",
+        "answer": "83.4 kmph"
+      },
+      {
+        "id": "problems-on-trains-041",
+        "chapter": "Problems on Trains",
+        "question_number": 41,
+        "question": "A train 75 m long overtook a person who was walking at the rate of 6 km/hr in the same direction and passed him in 7 1/2 seconds. Subsequently, it overtook a second person and passed him in 6 3/4 seconds. At what rate was the second person travelling? (M.A.T., 2008)",
+        "options": {
+          "a": "1 km/hr",
+          "b": "2 km/hr",
+          "c": "4 km/hr",
+          "d": "5 km/hr"
+        },
+        "correct_option": "b",
+        "answer": "2 km/hr"
+      },
+      {
+        "id": "problems-on-trains-042",
+        "chapter": "Problems on Trains",
+        "question_number": 42,
+        "question": "If a train takes 1.75 sec to cross a telegraphic post and 1.5 sec to overtake a cyclist racing along a road parallel to the track @ 10 metres per second, then the length of the train is",
+        "options": {
+          "a": "105 m",
+          "b": "115 m",
+          "c": "125 m",
+          "d": "135 m"
+        },
+        "correct_option": "a",
+        "answer": "105 m"
+      },
+      {
+        "id": "problems-on-trains-043",
+        "chapter": "Problems on Trains",
+        "question_number": 43,
+        "question": "Two trains of equal length are running on parallel lines in the same direction at 46 km / hr and 36 km / hr. The faster train passes the slower train in 36 seconds. The length of each train is (M.A.T., 2003)",
+        "options": {
+          "a": "50 m",
+          "b": "72 m",
+          "c": "80 m",
+          "d": "82 m"
+        },
+        "correct_option": "a",
+        "answer": "50 m"
+      },
+      {
+        "id": "problems-on-trains-044",
+        "chapter": "Problems on Trains",
+        "question_number": 44,
+        "question": "A 270 m long train running at the speed of 120 kmph crosses another train running in opposite direction at the speed of 80 kmph in 9 seconds. What is the length of the other train?",
+        "options": {
+          "a": "230 m",
+          "b": "240 m",
+          "c": "260 m",
+          "d": "320 m",
+          "e": "None of these"
+        },
+        "correct_option": "a",
+        "answer": "230 m"
+      },
+      {
+        "id": "problems-on-trains-045",
+        "chapter": "Problems on Trains",
+        "question_number": 45,
+        "question": "Two trains are running in opposite directions with the same speed. If the length of each train is 120 metres and they cross each other in 12 seconds, then the speed of each train (in km / hr) is (S.S.C., 2003)",
+        "options": {
+          "a": "10",
+          "b": "18",
+          "c": "36",
+          "d": "72"
+        },
+        "correct_option": "c",
+        "answer": "36"
+      },
+      {
+        "id": "problems-on-trains-046",
+        "chapter": "Problems on Trains",
+        "question_number": 46,
+        "question": "A 180-metre long train crosses another 270-metre long train running in the opposite direction in 10.8 seconds. If the speed of the first train is 60 kmph, what is the speed of the second train in kmph? (Bank P.O., 2010)",
+        "options": {
+          "a": "80",
+          "b": "90",
+          "c": "150",
+          "d": "Cannot be determined",
+          "e": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "90"
+      },
+      {
+        "id": "problems-on-trains-047",
+        "chapter": "Problems on Trains",
+        "question_number": 47,
+        "question": "Two trains of equal lengths take 10 seconds and 15 seconds respectively to cross a telegraph post. If the length of each train be 120 metres, in what time (in seconds) will they cross each other travelling in opposite direction? (S.S.C., 2004)",
+        "options": {
+          "a": "10",
+          "b": "12",
+          "c": "15",
+          "d": "20"
+        },
+        "correct_option": "b",
+        "answer": "12"
+      },
+      {
+        "id": "problems-on-trains-048",
+        "chapter": "Problems on Trains",
+        "question_number": 48,
+        "question": "A train 108 m long moving at a speed of 50 km / hr crosses a train 112 m long coming from opposite direction in 6 seconds. The speed of the second train is (M.A.T., 2005, SNAP, 2010)",
+        "options": {
+          "a": "48 km/hr",
+          "b": "54 km/hr",
+          "c": "66 km/hr",
+          "d": "82 km/hr"
+        },
+        "correct_option": "d",
+        "answer": "82 km/hr"
+      },
+      {
+        "id": "problems-on-trains-049",
+        "chapter": "Problems on Trains",
+        "question_number": 49,
+        "question": "A train B speeding with 120 kmph crosses another train C running in the same direction, in 2 minutes. If the lengths of the trains B and C be 100 m and 200 m respectively, what is the speed (in kmph) of the train C? (L.I.C.A.A.O., 2007)",
+        "options": {
+          "a": "111 km",
+          "b": "123 km",
+          "c": "127 km",
+          "d": "129 km"
+        },
+        "correct_option": "d",
+        "answer": "129 km"
+      },
+      {
+        "id": "problems-on-trains-050",
+        "chapter": "Problems on Trains",
+        "question_number": 50,
+        "question": "One local and another express train were proceeding in the same direction on parallel tracks at 29 km/ hr and 65 km/hr respectively. The driver of the farmer noticed that it took exactly 16 seconds for the faster train to pass by him. What is the length of the faster train?",
+        "options": {
+          "a": "60 m",
+          "b": "120 m",
+          "c": "160 m",
+          "d": "240 m"
+        },
+        "correct_option": "c",
+        "answer": "160 m"
+      },
+      {
+        "id": "problems-on-trains-051",
+        "chapter": "Problems on Trains",
+        "question_number": 51,
+        "question": "Two trains travel in opposite directions at 36 kmph and 45 kmph and a man sitting in slower train passes the faster train in 8 seconds. The length of the faster train is :",
+        "options": {
+          "a": "80 m",
+          "b": "100 m",
+          "c": "120 m",
+          "d": "180 m"
+        },
+        "correct_option": "d",
+        "answer": "180 m"
+      },
+      {
+        "id": "problems-on-trains-052",
+        "chapter": "Problems on Trains",
+        "question_number": 52,
+        "question": "A train overtakes two persons who are walking in the same direction in which the train is going, at the rate of 2 kmph and 4 kmph and passes them completely in 9 and 10 seconds respectively. The length of the train is :",
+        "options": {
+          "a": "45 m",
+          "b": "50 m",
+          "c": "54 m",
+          "d": "72 m"
+        },
+        "correct_option": "b",
+        "answer": "50 m"
+      },
+      {
+        "id": "problems-on-trains-053",
+        "chapter": "Problems on Trains",
+        "question_number": 53,
+        "question": "A train overtakes two persons walking along a railway track. The first one walks at 4.5 km / hr. The other one walks at 5.4 km / hr. The train needs 8.4 and 8.5 seconds respectively to overtake them. What is the speed of the train if both the persons are walking in the same direction as the train?",
+        "options": {
+          "a": "66 km / hr",
+          "b": "72 km / hr",
+          "c": "78 km / hr",
+          "d": "81 km / hr"
+        },
+        "correct_option": "d",
+        "answer": "81 km / hr"
+      },
+      {
+        "id": "problems-on-trains-054",
+        "chapter": "Problems on Trains",
+        "question_number": 54,
+        "question": "Two men are running in the same direction with speeds of 6 km per hour and 7 1/2 km per hour respectively. A train running in the same direction crosses them in 5 sec and 5 1/2 sec respectively. The length and the speed of the train are respectively.",
+        "options": {
+          "a": "22.92 m (approximately) and 22 km per hour",
+          "b": "22 m (approximately) and 22.5 km per hour",
+          "c": "22.90 m (approximately) and 20.5 km per hour",
+          "d": "22.92 m (approximately) and 22.5 km per hour"
+        },
+        "correct_option": "d",
+        "answer": "22.92 m (approximately) and 22.5 km per hour"
+      },
+      {
+        "id": "problems-on-trains-055",
+        "chapter": "Problems on Trains",
+        "question_number": 55,
+        "question": "What is the speed of a train if it overtakes two persons who are walking in the same direction at the rate of a m/s and (a + 1) m/s and passes them completely in b seconds and (b + 1) seconds respectively? (C.D.S., 2004)",
+        "options": {
+          "a": "(a + b) m/s",
+          "b": "(a + b + 1) m/s",
+          "c": "(2a + 1) m/s",
+          "d": "(2a + 1)/2 m/s"
+        },
+        "correct_option": "b",
+        "answer": "(a + b + 1) m/s"
+      },
+      {
+        "id": "problems-on-trains-056",
+        "chapter": "Problems on Trains",
+        "question_number": 56,
+        "question": "Two trains, each 100 m long, moving in opposite directions, cross each other in 8 seconds. If one is moving twice as fast the other, then the speed of the faster train is :",
+        "options": {
+          "a": "30 km / hr",
+          "b": "45 km / hr",
+          "c": "60 km / hr",
+          "d": "75 km / hr"
+        },
+        "correct_option": "c",
+        "answer": "60 km / hr"
+      },
+      {
+        "id": "problems-on-trains-057",
+        "chapter": "Problems on Trains",
+        "question_number": 57,
+        "question": "A 150 m long train crosses a milestone in 15 seconds and a train of same length coming from the opposite direction in 12 seconds. The speed of the other train is (R.R.B., 2006)",
+        "options": {
+          "a": "36 kmph",
+          "b": "45 kmph",
+          "c": "50 kmph",
+          "d": "54 kmph"
+        },
+        "correct_option": "d",
+        "answer": "54 kmph"
+      },
+      {
+        "id": "problems-on-trains-058",
+        "chapter": "Problems on Trains",
+        "question_number": 58,
+        "question": "A train moving at 15 m/sec takes 20 seconds to pass a cyclist moving in the same direction as that of the train. How much time will the train need to pass the cyclist, if the cyclist moves in a direction opposite to that of the train and if the speed of the cyclist is 5 m/ sec and the length of the cycle is 1 m?",
+        "options": {
+          "a": "9.95 sec",
+          "b": "10 sec",
+          "c": "10.05 sec",
+          "d": "12 sec"
+        },
+        "correct_option": "b",
+        "answer": "10 sec"
+      },
+      {
+        "id": "problems-on-trains-059",
+        "chapter": "Problems on Trains",
+        "question_number": 59,
+        "question": "A man standing on a platform finds that a train takes 3 seconds to pass him and another train of the same length moving in the opposite direction takes 4 seconds. The time taken by the trains to pass each other will be (C.P.O., 2006)",
+        "options": {
+          "a": "3 2/7 seconds",
+          "b": "3 3/7 seconds",
+          "c": "3 4/7 seconds",
+          "d": "3 5/7 seconds"
+        },
+        "correct_option": "b",
+        "answer": "3 3/7 seconds"
+      },
+      {
+        "id": "problems-on-trains-060",
+        "chapter": "Problems on Trains",
+        "question_number": 60,
+        "question": "A train travelling at 48 kmph completely crosses another train having half its length and travelling in opposite direction at 42 kmph, in 12 seconds. It also passes a railway platform in 45 seconds. The length of the platform is",
+        "options": {
+          "a": "400 m",
+          "b": "450 m",
+          "c": "560 m",
+          "d": "600 m"
+        },
+        "correct_option": "a",
+        "answer": "400 m"
+      },
+      {
+        "id": "problems-on-trains-061",
+        "chapter": "Problems on Trains",
+        "question_number": 61,
+        "question": "Two trains running in opposite directions cross a man standing on the platform in 27 seconds and 17 seconds respectively and they cross each other in 23 seconds. The ratio of their speeds is :",
+        "options": {
+          "a": "1 : 3",
+          "b": "3 : 2",
+          "c": "3 : 4",
+          "d": "None of these"
+        },
+        "correct_option": "b",
+        "answer": "3 : 2"
+      },
+      {
+        "id": "problems-on-trains-062",
+        "chapter": "Problems on Trains",
+        "question_number": 62,
+        "question": "Two trains, 130 and 110 metres long, are going in the same direction. The faster train takes one minute to pass the other completely. If they are moving in opposite directions, they pass each other completely in 3 seconds. Find the speed of the faster train. (M.A.T., 2008)",
+        "options": {
+          "a": "38 m/sec",
+          "b": "42 m/sec",
+          "c": "46 m/sec",
+          "d": "50 m/sec"
+        },
+        "correct_option": "b",
+        "answer": "42 m/sec"
+      },
+      {
+        "id": "problems-on-trains-063",
+        "chapter": "Problems on Trains",
+        "question_number": 63,
+        "question": "Two identical trains A and B running in opposite directions at same speed take 2 minutes to cross each other completely. The number of bogies of A are increased from 12 to 16. How much more time would they now require to cross each other? (SNAP, 2007)",
+        "options": {
+          "a": "20 sec",
+          "b": "40 sec",
+          "c": "50 sec",
+          "d": "60 sec"
+        },
+        "correct_option": "a",
+        "answer": "20 sec"
+      },
+      {
+        "id": "problems-on-trains-064",
+        "chapter": "Problems on Trains",
+        "question_number": 64,
+        "question": "Two stations A and B are 110 km apart on a straight line. One train starts from A at 7 a.m. and travels towards B at 20 kmph. Another train starts from B at 8 a.m. and travels towards A at a speed of 25 kmph. At what time will they meet?",
+        "options": {
+          "a": "9 a.m.",
+          "b": "10 a.m.",
+          "c": "10.30 a.m.",
+          "d": "11 a.m."
+        },
+        "correct_option": "b",
+        "answer": "10 a.m."
+      },
+      {
+        "id": "problems-on-trains-065",
+        "chapter": "Problems on Trains",
+        "question_number": 65,
+        "question": "A train X starts from Meerut at 4 p.m. and reaches Ghaziabad at 5 p.m. while another train Y starts from Ghaziabad at 4 p.m. and reaches Meerut at 5.30 p.m. The two trains will cross each other at",
+        "options": {
+          "a": "4.36 p.m.",
+          "b": "4.42 p.m.",
+          "c": "4.48 p.m.",
+          "d": "4.50 p.m."
+        },
+        "correct_option": "a",
+        "answer": "4.36 p.m."
+      },
+      {
+        "id": "problems-on-trains-066",
+        "chapter": "Problems on Trains",
+        "question_number": 66,
+        "question": "The Ghaziabad-Hapur-Meerut EMU and the Meerut- Hapur-Ghaziabad EMU start at the same time from Ghaziabad and Meerut and proceed towards each other at 16 km/hr and 21 km/hr respectively. When they meet, it is found that one train has travelled 60 km more than the other. The distance between two stations is (I.I.F.T., 2007)",
+        "options": {
+          "a": "440 km",
+          "b": "444 km",
+          "c": "445 km",
+          "d": "450 km"
+        },
+        "correct_option": "b",
+        "answer": "444 km"
+      },
+      {
+        "id": "problems-on-trains-067",
+        "chapter": "Problems on Trains",
+        "question_number": 67,
+        "question": "Two trains, one from Howrah to Patna and the other from Patna to Howrah, start simultaneously. After they meet, the trains reach their destinations after 9 hours and 16 hours respectively. The ratio of their speeds is :",
+        "options": {
+          "a": "2 : 3",
+          "b": "4 : 3",
+          "c": "6 : 7",
+          "d": "9 : 16"
+        },
+        "correct_option": "b",
+        "answer": "4 : 3"
+      },
+      {
+        "id": "problems-on-trains-068",
+        "chapter": "Problems on Trains",
+        "question_number": 68,
+        "question": "Two trains start simultaneously (with uniform speeds) from two stations 270 km apart, each to the opposite station; they reach their destinations in 6 1/4 hours and 4 hours after they meet. The rate at which the slower train travels is (ATMA, 2005)",
+        "options": {
+          "a": "16 km/hr.",
+          "b": "24 km/hr.",
+          "c": "25 km/hr.",
+          "d": "30 km/hr."
+        },
+        "correct_option": "b",
+        "answer": "24 km/hr."
+      },
+      {
+        "id": "problems-on-trains-069",
+        "chapter": "Problems on Trains",
+        "question_number": 69,
+        "question": "A train which is moving at an average speed of 40km/h reaches its destination on time. When its average speed reduces to 35 km/h, then it reaches its destination 15 minutes late. The distance travelled by the train, is [CLAT Exam, 2016]",
+        "options": {
+          "a": "70km",
+          "b": "80km",
+          "c": "40km",
+          "d": "30km"
+        },
+        "correct_option": "a",
+        "answer": "70km"
+      },
+      {
+        "id": "problems-on-trains-070",
+        "chapter": "Problems on Trains",
+        "question_number": 70,
+        "question": "A train takes 9 sec to cross a pole: If the speed of the train is 48 kmph, then length of the train is [Indian Railway Group ‘D’ Exam, 2014]",
+        "options": {
+          "a": "150 m",
+          "b": "120 m",
+          "c": "90 m",
+          "d": "80 m"
+        },
+        "correct_option": "b",
+        "answer": "120 m"
+      },
+      {
+        "id": "problems-on-trains-071",
+        "chapter": "Problems on Trains",
+        "question_number": 71,
+        "question": "Two trains start at the same time form A and B and proceed toward each other at the speed of 75 km/hr and 50 km/hr respectively. when both meet at a point in between, one train was found to have travelled 175 km more than the other. Find the distance between A and B. [SSC—CHSL (10+2) Exam, 2015]",
+        "options": {
+          "a": "875 km",
+          "b": "785 km",
+          "c": "758 km",
+          "d": "857 km"
+        },
+        "correct_option": "a",
+        "answer": "875 km"
+      },
+      {
+        "id": "problems-on-trains-072",
+        "chapter": "Problems on Trains",
+        "question_number": 72,
+        "question": "A train passes two bridges of lengths 500 m and 250 m in 100 seconds and 60 seconds respectively. The length of the train is [SSC—CHSL (10+2) Exam, 2015]",
+        "options": {
+          "a": "152 m",
+          "b": "125 m",
+          "c": "250 m",
+          "d": "120 m"
+        },
+        "correct_option": "b",
+        "answer": "125 m"
+      },
+      {
+        "id": "problems-on-trains-073",
+        "chapter": "Problems on Trains",
+        "question_number": 73,
+        "question": "Train A passes a lamp post in 9 seconds and 700 meter long platform in 30 seconds. How much time will the same train take to cross a platform which is 800 meters long? (in seconds) [United India Insurance Co. Ltd. (UIICL) Assistant (Online) Exam, 2015]",
+        "options": {
+          "a": "32",
+          "b": "31",
+          "c": "33",
+          "d": "30"
+        },
+        "correct_option": "c",
+        "answer": "33"
+      },
+      {
+        "id": "problems-on-trains-074",
+        "chapter": "Problems on Trains",
+        "question_number": 74,
+        "question": "Train A travelling at 63 kmph can cross a platform 199.5 m long in 21 seconds. How much time would train A take to completely cross (from the moment they meet) train B, 157m long and travelling at 54 kmph in opposite direction which train A is travelling? (in seconds) [IBPS—RRB Office Assistant (Online) Exam, 2015]",
+        "options": {
+          "a": "16",
+          "b": "18",
+          "c": "12",
+          "d": "10"
+        },
+        "correct_option": "d",
+        "answer": "10"
+      }
+    ]
+  },
+  "verification": {
+    "questions_extracted": "74/74",
+    "answer_keys_extracted": "74/74",
+    "missing_questions": [],
+    "duplicate_question_numbers": [],
+    "missing_answer_keys": [],
+    "answer_option_mismatches": [],
+    "empty_questions": [],
+    "empty_correct_answers": [],
+    "note": "Chapter 20 also contains a separate Data Sufficiency exercise after the objective-question solutions. This JSON contains the 74 Objective Type Questions, matching the format used for the previous chapters.",
+    "source_format_note": "PDF text spacing and fraction formatting were normalized without changing the source question structure."
+  }
+}
+
+out_path = "/home/jyoti/Project/PLACEMENT/server/data/rs_agrawal/problems_on_trains.json"
+os.makedirs(os.path.dirname(out_path), exist_ok=True)
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
+
+print(f"Successfully generated Problems on Trains chapter JSON with {len(data['exercise']['questions'])} questions!")
