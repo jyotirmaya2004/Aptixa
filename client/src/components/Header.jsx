@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { 
   Sun, Moon, BarChart3, Grid, ShieldCheck, Zap, Palette, Lightbulb, 
   BookOpen, Menu, X, ChevronRight, Sparkles, Code2, Search, Command, Flame,
-  Download
+  Download, UserCheck
 } from 'lucide-react';
 import HeaderSearchModal from './HeaderSearchModal';
 import HeaderStatsPopover from './HeaderStatsPopover';
@@ -24,6 +24,7 @@ export default function Header({
   const tabs = [
     { id: 'categories',  label: 'Assessment Domains', icon: Grid },
     { id: 'leetcode500', label: 'DSA',                 icon: Code2 },
+    { id: 'interview',   label: 'Interview Prep',      icon: UserCheck },
     { id: 'sandbox',     label: 'Live Sandbox',        icon: Sparkles },
     { id: 'books',       label: 'Popular Books',       icon: BookOpen },
     { id: 'tips',        label: 'Tips & Formulas',     icon: Lightbulb },

@@ -10,6 +10,7 @@ import TipsAndFormulas from './components/TipsAndFormulas';
 import BooksSection from './components/BooksSection';
 import InteractiveSandbox from './components/InteractiveSandbox';
 import LeetCode500Section from './components/LeetCode500Section';
+import InterviewPrepSection from './components/InterviewPrepSection';
 
 import { fetchCategories, fetchQuestions, submitQuizAttempt, fetchStats } from './utils/api';
 import { getStoredAttempts, saveAttempt, computeStatsFromAttempts } from './utils/scoreStorage';
@@ -412,6 +413,9 @@ export default function App() {
                 }}
               />
             )}
+
+            {/* Technical & HR Interview Preparation Section */}
+            {currentTab === 'interview' && <InterviewPrepSection />}
 
             {/* Live Interactive Sandbox */}
             {currentTab === 'sandbox' && (
