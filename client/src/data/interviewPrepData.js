@@ -105,7 +105,7 @@ HAVING COUNT(*) > 5;          -- Filters aggregated department groups`
 2. **Hold and Wait**: A process is holding at least one resource and waiting to acquire additional resources held by other processes.
 3. **No Preemption**: Resources cannot be forcibly taken away from a process; they can only be released voluntarily.
 4. **Circular Wait**: A closed chain of processes exists, where each process holds resources needed by the next process in the chain.`,
-    keyKeywords: ['Mutual Exclusion', 'Hold and Wait', 'No Preemption', 'Circular Wait', 'Banker’s Algorithm']
+    keyKeywords: ['Mutual Exclusion', 'Hold and Wait', 'No Preemption', 'Circular Wait', "Banker's Algorithm"]
   },
   {
     id: 'tech-005',
@@ -294,7 +294,7 @@ Because network partitions (P) are inevitable in real-world distributed networks
   {
     id: 'tech-016', category: 'technical', domain: 'DSA', difficulty: 'Hard',
     question: 'Explain Time Complexity. What is Big O notation?',
-    summaryAnswer: 'Big O describes the upper bound of an algorithm's growth rate as input size increases.',
+    summaryAnswer: "Big O describes the upper bound of an algorithm's growth rate as input size increases.",
     fullAnswer: `* **O(1)**: Constant — array index access, hash map lookup\n* **O(log N)**: Logarithmic — binary search\n* **O(N)**: Linear — single loop traversal\n* **O(N log N)**: Linearithmic — merge sort, quicksort average\n* **O(N²)**: Quadratic — nested loops, bubble sort\n* **O(2^N)**: Exponential — recursive subsets\n* **O(N!)**: Factorial — permutations\n\n**Key**: Big O measures worst-case scalability, not actual runtime. Always aim for the lowest possible complexity.`,
     keyKeywords: ['Big O', 'O(1)', 'O(N)', 'O(N log N)', 'O(N²)', 'Worst Case', 'Space Complexity']
   },
