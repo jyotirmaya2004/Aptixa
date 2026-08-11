@@ -54,6 +54,7 @@ export default function Header({
   }, []);
 
   const handleInstallApp = async () => {
+    setMobileMenuOpen(false);
     if (deferredPrompt) {
       deferredPrompt.prompt();
       const choiceResult = await deferredPrompt.userChoice;
@@ -61,7 +62,7 @@ export default function Header({
         setDeferredPrompt(null);
       }
     } else {
-      alert('To install APTIXA as an app:\n\n1. Open Google Chrome menu (⋮)\n2. Tap "Add to Home screen" or "Install App"');
+      alert('To add APTIXA to your Home Screen:\n\n1. Tap the Chrome menu (⋮) at top-right\n2. Select "Add to Home screen" or "Install app"');
     }
   };
 
@@ -177,24 +178,6 @@ export default function Header({
         {/* Right Header Actions */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
           
-          {/* Chrome Mobile / Desktop Install Shortcut Button */}
-          <button
-            className="btn btn-primary btn-sm"
-            onClick={handleInstallApp}
-            title="Install APTIXA App & Shortcut"
-            style={{
-              padding: '6px 10px',
-              fontSize: '0.78rem',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '5px',
-              fontWeight: '700'
-            }}
-          >
-            <Download size={13} />
-            <span className="desktop-only">Install App</span>
-          </button>
-
           {/* Interactive Stats Dropdown Pill */}
           {stats && (
             <button
@@ -290,7 +273,7 @@ export default function Header({
               </button>
             ))}
 
-            {/* Mobile Install App Button */}
+            {/* Mobile-Only Install App & Add Shortcut Option in Hamburger List */}
             <button
               onClick={handleInstallApp}
               style={{
@@ -299,12 +282,12 @@ export default function Header({
                 background: 'var(--info-bg)', color: 'var(--info)',
                 border: '1px solid rgba(59,130,246,0.3)',
                 fontWeight: '700', fontSize: '0.92rem',
-                cursor: 'pointer', textAlign: 'left', marginTop: '4px'
+                cursor: 'pointer', textAlign: 'left', marginTop: '6px'
               }}
             >
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                 <Download size={18} />
-                <span>Install APTIXA Android Shortcut</span>
+                <span>Install App &amp; Shortcut</span>
               </div>
               <ChevronRight size={16} opacity={0.6} />
             </button>
