@@ -87,7 +87,7 @@ export default function InterviewPrepSection() {
           <div style={{ display: 'flex', gap: '18px', flexWrap: 'wrap', alignItems: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-primary)', fontWeight: '600' }}>
               <CheckCircle2 size={16} color="var(--success)" />
-              <span>15+ Core Technical Q&amp;A</span>
+              <span>30+ Core Technical Q&amp;A</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-primary)', fontWeight: '600' }}>
               <Star size={16} color="#f59e0b" />
