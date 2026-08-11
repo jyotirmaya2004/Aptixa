@@ -5,7 +5,8 @@
   "scripts": {
     "postinstall": "npm --prefix client install",
     "dev": "npm --prefix client run dev",
-    "build": "npm --prefix client run build",
+    "sync": "node scripts/sync-data.js",
+    "build": "node scripts/sync-data.js && npm --prefix client run build",
     "preview": "npm --prefix client run preview"
   }
 }

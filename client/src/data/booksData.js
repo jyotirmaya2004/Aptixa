@@ -20,15 +20,15 @@ export const STATIC_BOOKS = [
         id: "ch-hcf-lcm",
         chapter_number: 2,
         title: "2. H.C.F. and L.C.M. of Numbers",
-        question_count: 75,
-        description: "Factors, multiples, prime factorization, remainder theorems and standard application problems."
+        question_count: 130,
+        description: "Standard objective problems on Prime Factorization, Highest Common Factor, and Lowest Common Multiple."
       },
       {
         id: "ch-decimal-fractions",
         chapter_number: 3,
         title: "3. Decimal Fractions",
-        question_count: 110,
-        description: "Recurring decimals, conversions, simplifying complex fractions and place value operations."
+        question_count: 206,
+        description: "Objective problems on Decimal Fractions."
       }
     ]
   }

@@ -12,7 +12,7 @@
         "chapter_number": 1,
         "title": "1. Number System",
         "question_count": 380,
-        "description": "Extracted objective-type questions, options, and answer key from the first chapter.",
+        "description": "Extracted objective-type questions, options, and answer key from Chapter 1.",
         "file": "rs_agrawal/numbersystem.json"
       },
       {
@@ -26,9 +26,9 @@
       {
         "id": "ch-decimal-fraction",
         "chapter_number": 3,
-        "title": "3. decimal fraction questions",
-        "question_count": 1,
-        "description": "Standard objective problems on Prime Factorization, Highest Common Factor, and Lowest Common Multiple.",
+        "title": "3. Decimal Fractions",
+        "question_count": 206,
+        "description": "Objective problems on recurring decimals, simplification, and fractional operations.",
         "file": "rs_agrawal/decimal_fraction.json"
       }
     ]

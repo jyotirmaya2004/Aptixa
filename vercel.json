@@ -1,7 +1,12 @@
 {
   "installCommand": "npm --prefix client install",
-  "buildCommand": "npm --prefix client run build",
+  "buildCommand": "node scripts/sync-data.js && npm --prefix client run build",
   "outputDirectory": "client/dist",
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "server/data/**"
+    }
+  },
   "rewrites": [
     {
       "source": "/api/(.*)",
