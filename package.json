@@ -8,5 +8,9 @@
     "sync": "node scripts/sync-data.js",
     "build": "node scripts/sync-data.js && npm --prefix client run build",
     "preview": "npm --prefix client run preview"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
   }
 }
