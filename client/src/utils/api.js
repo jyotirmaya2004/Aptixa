@@ -327,3 +327,127 @@ export const fetchAptitudeGoldTopicQuestions = async (topicKey = 'random', limit
   return list;
 };
 
+// ── Daily Current Affairs (NewsAPI.org & Daily Auto-Clearing Cache) ────────────
+export const NEWS_API_KEY = '4a899ebba16a4252a3c9164d2e170157';
+
+export const fetchDailyCurrentAffairs = async (forceRefresh = false) => {
+  const todayStr = new Date().toISOString().split('T')[0];
+  const CACHE_KEY = 'aptixa-daily-current-affairs';
+
+  // 1. Check browser localStorage cache
+  if (!forceRefresh) {
+    try {
+      const stored = localStorage.getItem(CACHE_KEY);
+      if (stored) {
+        const parsed = JSON.parse(stored);
+        if (parsed && parsed.lastFetchedDate === todayStr && parsed.articles && parsed.articles.length > 0) {
+          return { ...parsed, source: 'localStorageCache', isSameDayCache: true };
+        }
+      }
+    } catch (e) {
+      console.warn('Failed reading localStorage current affairs cache:', e);
+    }
+
+    // 2. Check static CDN / JSON file cache
+    try {
+      const res = await fetch('/data/dailyCurrentAffairs.json');
+      if (res.ok) {
+        const jsonPayload = await res.json();
+        if (jsonPayload && jsonPayload.lastFetchedDate === todayStr && jsonPayload.articles && jsonPayload.articles.length > 0) {
+          localStorage.setItem(CACHE_KEY, JSON.stringify(jsonPayload));
+          return { ...jsonPayload, source: 'fileCache', isSameDayCache: true };
+        }
+      }
+    } catch (e) {
+      console.warn('Failed reading /data/dailyCurrentAffairs.json:', e);
+    }
+  }
+
+  // 3. Date changed or force refresh requested: Clear old data and fetch fresh from NewsAPI.org
+  try {
+    const urlOdisha = `https://newsapi.org/v2/everything?q=odisha+OR+bhubaneswar+OR+cuttack+OR+puri+OR+rourkela+OR+sambalpur&sortBy=publishedAt&language=en&pageSize=30&apiKey=${NEWS_API_KEY}`;
+    const urlIndia = `https://newsapi.org/v2/everything?q=india+OR+%22indian+economy%22+OR+ISRO+OR+RBI+OR+%22government+of+india%22&sortBy=publishedAt&language=en&pageSize=30&apiKey=${NEWS_API_KEY}`;
+
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 8000);
+
+    const [resOdisha, resIndia] = await Promise.all([
+      fetch(urlOdisha, { signal: controller.signal }).catch(() => null),
+      fetch(urlIndia, { signal: controller.signal }).catch(() => null)
+    ]);
+    clearTimeout(timer);
+
+    const rawArticles = [];
+    if (resOdisha && resOdisha.ok) {
+      const d = await resOdisha.json();
+      rawArticles.push(...(d.articles || []));
+    }
+    if (resIndia && resIndia.ok) {
+      const d = await resIndia.json();
+      rawArticles.push(...(d.articles || []));
+    }
+
+    const seenTitles = new Set();
+    const cleaned = [];
+
+    rawArticles.forEach((a) => {
+      if (!a.title || a.title.includes('[Removed]') || seenTitles.has(a.title)) return;
+      seenTitles.add(a.title);
+
+      const titleLower = a.title.toLowerCase();
+      const descLower = (a.description || '').toLowerCase();
+
+      let category = 'National India';
+      if (['odisha', 'bhubaneswar', 'cuttack', 'puri', 'rourkela', 'sambalpur'].some(k => titleLower.includes(k) || descLower.includes(k))) {
+        category = 'Odisha State';
+      } else if (['market', 'bank', 'economy', 'trade', 'rupee', 'gdp', 'sensex', 'gst', 'business'].some(k => titleLower.includes(k) || descLower.includes(k))) {
+        category = 'Economy';
+      } else if (['tech', 'ai', 'isro', 'space', 'digital', 'software'].some(k => titleLower.includes(k) || descLower.includes(k))) {
+        category = 'Tech & Science';
+      }
+
+      cleaned.push({
+        id: `news-live-${cleaned.length + 1}`,
+        title: a.title,
+        description: a.description || 'No summary available.',
+        content: a.content || a.description || '',
+        url: a.url,
+        urlToImage: a.urlToImage,
+        publishedAt: a.publishedAt,
+        source: a.source?.name || 'News Engine',
+        category
+      });
+    });
+
+    if (cleaned.length > 0) {
+      const freshPayload = {
+        lastFetchedDate: todayStr,
+        lastFetchedTimestamp: new Date().toISOString(),
+        totalArticles: cleaned.length,
+        articles: cleaned
+      };
+
+      // Clear previous day's stored cache and write new payload
+      localStorage.setItem(CACHE_KEY, JSON.stringify(freshPayload));
+      return { ...freshPayload, source: 'liveNewsApi', isSameDayCache: false };
+    }
+  } catch (err) {
+    console.warn('NewsAPI.org live fetch failed or CORS restricted, serving static fallback:', err);
+  }
+
+  // 4. Import static payload fallback if network fails
+  try {
+    const { default: staticPayload } = await import('../data/dailyCurrentAffairs.json');
+    return { ...staticPayload, source: 'staticImportFallback', isSameDayCache: true };
+  } catch (err) {
+    return {
+      lastFetchedDate: todayStr,
+      lastFetchedTimestamp: new Date().toISOString(),
+      totalArticles: 0,
+      articles: [],
+      source: 'emptyFallback'
+    };
+  }
+};
+
+

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { 
   Sun, Moon, BarChart3, Grid, ShieldCheck, Zap, Palette, 
   BookOpen, Menu, X, ChevronRight, Sparkles, Code2, Search, Command, Flame,
-  Download
+  Download, Newspaper
 } from 'lucide-react';
 import HeaderSearchModal from './HeaderSearchModal';
 import HeaderStatsPopover from './HeaderStatsPopover';
@@ -23,6 +23,7 @@ export default function Header({
 
   const tabs = [
     { id: 'categories',  label: 'Assessment Domains', icon: Grid },
+    { id: 'current_affairs', label: 'Current Affairs', icon: Newspaper },
     { id: 'leetcode500', label: 'DSA',                 icon: Code2 },
     { id: 'sandbox',     label: 'Live Sandbox',        icon: Sparkles },
     { id: 'books',       label: 'Popular Books',       icon: BookOpen },
