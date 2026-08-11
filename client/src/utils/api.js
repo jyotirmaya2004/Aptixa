@@ -73,17 +73,95 @@ export const deleteQuestion = async (questionId) => {
 
 // Books API
 export const fetchBooks = async () => {
-  if (!API_BASE) throw new Error('No API server configured for production host');
-  const res = await fetch(`${API_BASE}/books`);
-  if (!res.ok) throw new Error('Failed to fetch books');
-  return res.json();
+  if (API_BASE) {
+    try {
+      const res = await fetch(`${API_BASE}/books`);
+      if (res.ok) return await res.json();
+    } catch (e) {
+      console.warn('Backend API failed, falling back to static CDN data:', e.message);
+    }
+  }
+
+  // Static Fallback for Vercel / Production static host:
+  const res = await fetch('/data/books.json');
+  if (!res.ok) throw new Error('Failed to fetch books catalog');
+  const books = await res.json();
+
+  return books.map(b => {
+    const totalQs = (b.chapters || []).reduce((sum, ch) => sum + (ch.question_count || 0), 0);
+    return {
+      id: b.id,
+      title: b.title,
+      author: b.author,
+      category: b.category || 'quantitative',
+      coverColor: b.coverColor || '#2563eb',
+      description: b.description || '',
+      chapterCount: b.chapters?.length || 0,
+      totalQuestions: totalQs,
+      chapters: (b.chapters || []).map(ch => ({
+        id: ch.id,
+        chapter_number: ch.chapter_number,
+        title: ch.title,
+        question_count: ch.question_count || 0,
+        description: ch.description || '',
+        file: ch.file || null
+      }))
+    };
+  });
 };
 
 export const fetchBookChapter = async (bookId, chapterId) => {
-  if (!API_BASE) throw new Error('No API server configured for production host');
-  const res = await fetch(`${API_BASE}/books/${bookId}/chapters/${chapterId}`);
-  if (!res.ok) throw new Error('Failed to fetch chapter');
-  return res.json();
+  if (API_BASE) {
+    try {
+      const res = await fetch(`${API_BASE}/books/${bookId}/chapters/${chapterId}`);
+      if (res.ok) return await res.json();
+    } catch (e) {
+      console.warn('Backend API failed, falling back to static CDN chapter file:', e.message);
+    }
+  }
+
+  // Static Fallback for Vercel / Production static host:
+  const booksRes = await fetch('/data/books.json');
+  if (!booksRes.ok) throw new Error('Failed to load books catalog');
+  const books = await booksRes.json();
+  const book = books.find(b => b.id === bookId);
+  if (!book) throw new Error('Book not found');
+
+  const normParam = (chapterId || '').toLowerCase().replace(/^[0-9]+\.\s*/, '').replace(/[^a-z0-9]+/g, ' ').trim();
+  const chapterObj = (book.chapters || []).find(c => 
+    c.id === chapterId || 
+    c.chapter_number === parseInt(chapterId) ||
+    (c.title || '').toLowerCase().replace(/^[0-9]+\.\s*/, '').replace(/[^a-z0-9]+/g, ' ').trim() === normParam ||
+    (c.id && c.id.includes(chapterId))
+  );
+
+  if (!chapterObj) throw new Error(`Chapter "${chapterId}" not found in ${book.title}`);
+
+  let questions = [];
+  if (chapterObj.file) {
+    const chapterRes = await fetch(`/data/${chapterObj.file}`);
+    if (chapterRes.ok) {
+      const chapterData = await chapterRes.json();
+      questions = Array.isArray(chapterData) ? chapterData : (chapterData.questions || []);
+    }
+  } else if (chapterObj.questions) {
+    questions = chapterObj.questions;
+  }
+
+  return {
+    bookId: book.id,
+    bookTitle: book.title,
+    author: book.author,
+    chapter: {
+      id: chapterObj.id,
+      chapter_number: chapterObj.chapter_number,
+      title: chapterObj.title,
+      question_count: chapterObj.question_count || questions.length,
+      description: chapterObj.description || '',
+      file: chapterObj.file || null,
+      questions
+    }
+  };
 };
 
 export const uploadBookChapterJSON = async (jsonData) => {

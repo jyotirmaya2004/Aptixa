@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const BOOKS_FILE = path.join(__dirname, '../data/books.json');
+const DATA_DIR = path.join(__dirname, '../data');
 
 // Helper to normalize chapter titles (removes leading "1. ", punctuation, extra spaces)
 function normalizeTitle(str) {
@@ -51,6 +52,37 @@ function saveBooks(books) {
   fs.writeFileSync(BOOKS_FILE, JSON.stringify(books, null, 2), 'utf8');
 }
 
+// Helper to resolve and load questions for a chapter from its referenced JSON file
+function loadChapterQuestions(chapter) {
+  if (Array.isArray(chapter.questions) && chapter.questions.length > 0) {
+    return chapter.questions;
+  }
+
+  const relFile = chapter.file || chapter.json_file || chapter.reference;
+  if (!relFile) return [];
+
+  const possiblePaths = [
+    path.join(DATA_DIR, relFile),
+    path.join(DATA_DIR, 'rs_agrawal', path.basename(relFile)),
+    path.join(DATA_DIR, 'arun_sharma', path.basename(relFile))
+  ];
+
+  for (const filePath of possiblePaths) {
+    if (fs.existsSync(filePath)) {
+      try {
+        const fileContent = fs.readFileSync(filePath, 'utf8');
+        const parsed = JSON.parse(fileContent);
+        if (Array.isArray(parsed)) return parsed;
+        if (parsed && Array.isArray(parsed.questions)) return parsed.questions;
+      } catch (e) {
+        console.error(`Error reading chapter file at ${filePath}:`, e);
+      }
+    }
+  }
+
+  return [];
+}
+
 // 1. GET /api/books - Get list of all books
 router.get('/', (req, res) => {
   try {
@@ -70,8 +102,9 @@ router.get('/', (req, res) => {
           id: ch.id,
           chapter_number: ch.chapter_number,
           title: ch.title,
-          question_count: ch.question_count || ch.questions?.length || 0,
-          description: ch.description || ''
+          question_count: ch.question_count || 0,
+          description: ch.description || '',
+          file: ch.file || null
         }))
       };
     });
@@ -90,20 +123,32 @@ router.get('/:bookId/chapters/:chapterId', (req, res) => {
     if (!book) return res.status(404).json({ error: 'Book not found' });
 
     const normParam = normalizeTitle(chapterId);
-    const chapter = (book.chapters || []).find(c => 
+    const chapterObj = (book.chapters || []).find(c => 
       c.id === chapterId || 
       c.chapter_number === parseInt(chapterId) ||
       normalizeTitle(c.title) === normParam ||
       (c.id && c.id.includes(chapterId)) ||
       (chapterId && chapterId.includes(c.id))
     );
-    if (!chapter) return res.status(404).json({ error: `Chapter "${chapterId}" not found in ${book.title}` });
+    if (!chapterObj) return res.status(404).json({ error: `Chapter "${chapterId}" not found in ${book.title}` });
+
+    const questions = loadChapterQuestions(chapterObj);
+
+    const chapterWithQuestions = {
+      id: chapterObj.id,
+      chapter_number: chapterObj.chapter_number,
+      title: chapterObj.title,
+      question_count: chapterObj.question_count || questions.length,
+      description: chapterObj.description || '',
+      file: chapterObj.file || null,
+      questions
+    };
 
     res.json({
       bookId: book.id,
       bookTitle: book.title,
       author: book.author,
-      chapter
+      chapter: chapterWithQuestions
     });
   } catch (err) {
     res.status(500).json({ error: 'Failed to fetch chapter: ' + err.message });
@@ -157,13 +202,38 @@ router.post('/upload', (req, res) => {
     const chapterNum = parseInt(rawChapterTitle) || (targetBook.chapters.length + 1);
     const chapterId = 'ch-' + (normTitle ? normTitle.replace(/\s+/g, '-') : `chapter-${chapterNum}`);
 
-    const newChapter = {
+    // Determine subfolder and file name
+    const bookFolder = bookId.includes('rs-aggarwal') ? 'rs_agrawal' : (bookId.includes('arun-sharma') ? 'arun_sharma' : 'chapters');
+    const folderPath = path.join(DATA_DIR, bookFolder);
+    if (!fs.existsSync(folderPath)) {
+      fs.mkdirSync(folderPath, { recursive: true });
+    }
+
+    const fileName = `${normTitle ? normTitle.replace(/\s+/g, '_') : chapterId}.json`;
+    const relFilePath = `${bookFolder}/${fileName}`;
+    const fullFilePath = path.join(folderPath, fileName);
+
+    // Save individual chapter JSON file
+    const chapterFileData = {
       id: chapterId,
+      book_id: targetBook.id,
       chapter_number: chapterNum,
       title: rawChapterTitle,
       question_count: payload.question_count || payload.questions.length,
       description: payload.description || `Extracted questions for ${rawChapterTitle}`,
       questions: payload.questions
+    };
+
+    fs.writeFileSync(fullFilePath, JSON.stringify(chapterFileData, null, 2), 'utf8');
+
+    // Create chapter reference entry for books.json
+    const newChapterMeta = {
+      id: chapterId,
+      chapter_number: chapterNum,
+      title: rawChapterTitle,
+      question_count: payload.question_count || payload.questions.length,
+      description: payload.description || `Extracted questions for ${rawChapterTitle}`,
+      file: relFilePath
     };
 
     // Find existing chapter by ID, Chapter Number, or Normalized Title
@@ -175,9 +245,9 @@ router.post('/upload', (req, res) => {
     });
 
     if (existingIndex >= 0) {
-      targetBook.chapters[existingIndex] = newChapter;
+      targetBook.chapters[existingIndex] = newChapterMeta;
     } else {
-      targetBook.chapters.push(newChapter);
+      targetBook.chapters.push(newChapterMeta);
     }
 
     saveBooks(books);
@@ -185,7 +255,8 @@ router.post('/upload', (req, res) => {
     res.json({
       message: `Successfully uploaded ${payload.questions.length} questions to "${rawChapterTitle}" under "${bookTitle}"!`,
       bookId: targetBook.id,
-      chapterId: newChapter.id,
+      chapterId: newChapterMeta.id,
+      file: relFilePath,
       totalQuestionsUploaded: payload.questions.length
     });
   } catch (err) {
@@ -198,12 +269,22 @@ router.delete('/:bookId', (req, res) => {
   try {
     const { bookId } = req.params;
     let books = getBooks();
-    const initialLen = books.length;
-    books = books.filter(b => b.id !== bookId);
-    if (books.length === initialLen) return res.status(404).json({ error: 'Book not found' });
+    const targetBook = books.find(b => b.id === bookId);
+    if (!targetBook) return res.status(404).json({ error: 'Book not found' });
 
+    // Optionally delete chapter files
+    (targetBook.chapters || []).forEach(ch => {
+      if (ch.file) {
+        const filePath = path.join(DATA_DIR, ch.file);
+        if (fs.existsSync(filePath)) {
+          fs.unlinkSync(filePath);
+        }
+      }
+    });
+
+    books = books.filter(b => b.id !== bookId);
     saveBooks(books);
-    res.json({ message: 'Book deleted successfully' });
+    res.json({ message: 'Book and chapter files deleted successfully' });
   } catch (err) {
     res.status(500).json({ error: 'Failed to delete book: ' + err.message });
   }
@@ -217,11 +298,17 @@ router.delete('/:bookId/chapters/:chapterId', (req, res) => {
     const book = books.find(b => b.id === bookId);
     if (!book) return res.status(404).json({ error: 'Book not found' });
 
-    const initialLen = (book.chapters || []).length;
+    const targetChapter = (book.chapters || []).find(c => c.id === chapterId);
+    if (!targetChapter) return res.status(404).json({ error: 'Chapter not found' });
+
+    if (targetChapter.file) {
+      const filePath = path.join(DATA_DIR, targetChapter.file);
+      if (fs.existsSync(filePath)) {
+        fs.unlinkSync(filePath);
+      }
+    }
+
     book.chapters = (book.chapters || []).filter(c => c.id !== chapterId);
-
-    if (book.chapters.length === initialLen) return res.status(404).json({ error: 'Chapter not found' });
-
     saveBooks(books);
     res.json({ message: 'Chapter deleted successfully' });
   } catch (err) {
@@ -230,3 +317,4 @@ router.delete('/:bookId/chapters/:chapterId', (req, res) => {
 });
 
 module.exports = router;
+

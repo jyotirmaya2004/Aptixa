@@ -1,0 +1,1092 @@
+[
+  {
+    "id": "q1",
+    "category": "quantitative",
+    "topic": "Time & Work",
+    "difficulty": "Medium",
+    "question": "A can complete a piece of work in 12 days, and B can complete the same work in 18 days. If they work together for 4 days, what fraction of the work is left unfinished?",
+    "options": [
+      "4/9",
+      "5/9",
+      "2/3",
+      "1/3"
+    ],
+    "correctOption": 1,
+    "hint": "Calculate 1 day work of A (1/12) and B (1/18) together, then multiply by 4 and subtract from 1.",
+    "explanation": "Step 1: 1 day work of A = 1/12.\nStep 2: 1 day work of B = 1/18.\nStep 3: Work done by (A + B) in 1 day = 1/12 + 1/18 = (3 + 2)/36 = 5/36.\nStep 4: Work done in 4 days = 4 * (5/36) = 20/36 = 5/9.\nStep 5: Remaining work = 1 - 5/9 = 4/9... wait, 1 - 5/9 = 4/9, so 4/9 is left unfinished."
+  },
+  {
+    "id": "q2",
+    "category": "quantitative",
+    "topic": "Speed & Distance",
+    "difficulty": "Hard",
+    "question": "A train 150 meters long passes a telegraph post in 12 seconds. How long will it take to cross a bridge 250 meters long at the same speed?",
+    "options": [
+      "20 seconds",
+      "32 seconds",
+      "28 seconds",
+      "36 seconds"
+    ],
+    "correctOption": 1,
+    "hint": "First calculate speed = Train Length / Time. Then Total Distance to cross bridge = Train Length + Bridge Length.",
+    "explanation": "Step 1: Speed of train = Length of train / Time = 150m / 12s = 12.5 m/s.\nStep 2: Total distance to cross bridge = Train length + Bridge length = 150m + 250m = 400m.\nStep 3: Time taken = Total Distance / Speed = 400m / 12.5 m/s = 32 seconds."
+  },
+  {
+    "id": "q3",
+    "category": "quantitative",
+    "topic": "Profit & Loss",
+    "difficulty": "Easy",
+    "question": "A merchant buys a item for $800 and sells it for $1,000. What is his percentage profit?",
+    "options": [
+      "20%",
+      "25%",
+      "15%",
+      "30%"
+    ],
+    "correctOption": 1,
+    "hint": "Profit = Selling Price - Cost Price. Profit % = (Profit / Cost Price) * 100.",
+    "explanation": "Cost Price (CP) = $800, Selling Price (SP) = $1,000.\nProfit = $1,000 - $800 = $200.\nProfit % = (200 / 800) * 100 = 1/4 * 100 = 25%."
+  },
+  {
+    "id": "q4",
+    "category": "quantitative",
+    "topic": "Probability",
+    "difficulty": "Medium",
+    "question": "Two unbiased dice are thrown simultaneously. What is the probability of obtaining a total score of 8?",
+    "options": [
+      "5/36",
+      "1/6",
+      "7/36",
+      "1/9"
+    ],
+    "correctOption": 0,
+    "hint": "Total possible outcomes when 2 dice are rolled = 36. Find pairs (x,y) such that x + y = 8.",
+    "explanation": "Total outcomes = 6 * 6 = 36.\nFavorable outcomes for sum = 8 are: (2,6), (3,5), (4,4), (5,3), (6,2).\nNumber of favorable outcomes = 5.\nProbability = 5 / 36."
+  },
+  {
+    "id": "q5",
+    "category": "quantitative",
+    "topic": "Permutations & Combinations",
+    "difficulty": "Hard",
+    "question": "In how many different ways can the letters of the word 'LEADER' be arranged?",
+    "options": [
+      "720",
+      "360",
+      "120",
+      "180"
+    ],
+    "correctOption": 1,
+    "hint": "Total letters = 6. Letter 'E' repeats twice. Formula: n! / (r1! * r2!).",
+    "explanation": "The word 'LEADER' contains 6 letters in total: L=1, E=2, A=1, D=1, R=1.\nTotal permutations = 6! / 2! = (720) / 2 = 360 ways."
+  },
+  {
+    "id": "q6",
+    "category": "quantitative",
+    "topic": "Percentages",
+    "difficulty": "Easy",
+    "question": "If 40% of a number is equal to two-thirds of another number, what is the ratio of the first number to the second number?",
+    "options": [
+      "2:5",
+      "3:5",
+      "5:3",
+      "5:2"
+    ],
+    "correctOption": 2,
+    "hint": "Write the equation 0.40 * X = (2/3) * Y and solve for X/Y.",
+    "explanation": "Let the numbers be X and Y.\n0.40 * X = (2/3) * Y => (40/100) * X = (2/3) * Y => (2/5) * X = (2/3) * Y.\nDividing both sides by 2: (1/5) * X = (1/3) * Y => X / Y = 5 / 3.\nTherefore, X : Y = 5 : 3."
+  },
+  {
+    "id": "q7",
+    "category": "logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If in a certain code language, 'COMPUTER' is written as 'RFUVQNPC', how will 'MEDICINE' be written in that code?",
+    "options": [
+      "EOJDJEFM",
+      "EOJDEJFM",
+      "MFEJDJOE",
+      "MFEDJJOE"
+    ],
+    "correctOption": 0,
+    "hint": "Reverse the word order first, then add +1 to each inner letter while keeping ends modified.",
+    "explanation": "Pattern analysis for 'COMPUTER':\n1. Reverse the string: RETUPMOC.\n2. Add +1 letter shift: R->R (ends remain position shifted), E+1=F, T+1=U, U+1=V, P+1=Q, M+1=N, O+1=P, C->C... giving RFUVQNPC.\nFor 'MEDICINE':\n1. Reverse: ENICIDEM.\n2. Shift intermediate letters by +1: E, N+1=O, I+1=J, C+1=D, I+1=J, D+1=E, E+1=F, M. Result: EOJDJEFM."
+  },
+  {
+    "id": "q8",
+    "category": "logical",
+    "topic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "Pointing to a photograph of a man, Rahul said, 'His mother is the only daughter of my mother-in-law.' How is Rahul related to the man in the photograph?",
+    "options": [
+      "Uncle",
+      "Father",
+      "Brother",
+      "Grandfather"
+    ],
+    "correctOption": 1,
+    "hint": "'Only daughter of my mother-in-law' means Rahul's wife.",
+    "explanation": "1. 'My mother-in-law's only daughter' = Rahul's wife.\n2. 'His mother' = Rahul's wife.\n3. Therefore, Rahul's wife is the mother of the man in the photograph.\n4. Hence, Rahul is the Father of the man."
+  },
+  {
+    "id": "q9",
+    "category": "logical",
+    "topic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements: All cats are dogs. All dogs are birds. Conclusions: I. All cats are birds. II. All birds are cats.",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correctOption": 0,
+    "hint": "Cats \u2282 Dogs \u2282 Birds. Is Cats \u2282 Birds true? Is Birds \u2282 Cats true?",
+    "explanation": "Since Cats are subset of Dogs, and Dogs are subset of Birds, Cats are entirely inside Birds. Hence 'All cats are birds' (I) is TRUE. However, Birds are a larger set, so 'All birds are cats' (II) is NOT necessarily true."
+  },
+  {
+    "id": "q10",
+    "category": "logical",
+    "topic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A person walks 10 km North, turns Right and walks 6 km, then turns Right and walks 10 km. How far and in which direction is he from the starting point?",
+    "options": [
+      "6 km East",
+      "6 km West",
+      "10 km North",
+      "16 km East"
+    ],
+    "correctOption": 0,
+    "hint": "Track (x, y) coordinates starting at (0,0). North=+y, East=+x, South=-y, West=-x.",
+    "explanation": "Start at (0,0).\n1. Walk 10 km North: (0, 10).\n2. Turn Right (East) & walk 6 km: (6, 10).\n3. Turn Right (South) & walk 10 km: (6, 0).\nFinal position is (6,0), which is exactly 6 km East of origin."
+  },
+  {
+    "id": "q11",
+    "category": "logical",
+    "topic": "Clocks & Calendars",
+    "difficulty": "Hard",
+    "question": "At what angle are the hands of a clock inclined at 15 minutes past 3 o'clock?",
+    "options": [
+      "0 degrees",
+      "7.5 degrees",
+      "12.5 degrees",
+      "15 degrees"
+    ],
+    "correctOption": 1,
+    "hint": "Use Formula: Angle = |30*H - 5.5*M| where H=3 and M=15.",
+    "explanation": "Angle formula: |30 * H - (11/2) * M|\nH = 3, M = 15.\nAngle = |30(3) - 5.5(15)| = |90 - 82.5| = 7.5 degrees."
+  },
+  {
+    "id": "q12",
+    "category": "verbal",
+    "topic": "Synonyms & Antonyms",
+    "difficulty": "Easy",
+    "question": "Choose the word which is most nearly SYNONYMOUS to 'EPHEMERAL':",
+    "options": [
+      "Permanent",
+      "Transient",
+      "Eternal",
+      "Substantial"
+    ],
+    "correctOption": 1,
+    "hint": "'Ephemeral' refers to something lasting for a very short time.",
+    "explanation": "'Ephemeral' means lasting for a very short time (fleeting, short-lived). 'Transient' means lasting only for a short time, which is an exact synonym. 'Permanent' and 'Eternal' are antonyms."
+  },
+  {
+    "id": "q13",
+    "category": "verbal",
+    "topic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Identify the error in the sentence: 'Neither of the two candidates have submitted their resume on time.'",
+    "options": [
+      "Neither of the",
+      "two candidates have",
+      "submitted their",
+      "No error"
+    ],
+    "correctOption": 1,
+    "hint": "'Neither' takes a singular verb (has, not have).",
+    "explanation": "'Neither' is a singular indefinite pronoun when referring to two individuals. Therefore, it requires the singular verb 'has' instead of 'have'. The correct phrase should be 'two candidates HAS'."
+  },
+  {
+    "id": "q14",
+    "category": "verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "Hard",
+    "question": "Passage: 'Artificial Intelligence is revolutionizing decision-making paradigms. However, reliance on algorithmic black-boxes without human oversight poses ethical challenges.' Which statement best reflects the central theme?",
+    "options": [
+      "AI should replace human decision-making entirely.",
+      "AI offers transformative utility but necessitates ethical human oversight.",
+      "Algorithmic decision-making has no practical benefits.",
+      "Human oversight is no longer required in modern tech."
+    ],
+    "correctOption": 1,
+    "hint": "Look for the sentence combining both the transformative benefit and the ethical caveat.",
+    "explanation": "The passage highlights two facets: AI is revolutionizing decision-making (utility), but black-box reliance poses ethical challenges (necessitating oversight). Option 2 accurately synthesizes both key points."
+  },
+  {
+    "id": "q15",
+    "category": "di",
+    "topic": "Bar Chart Analysis",
+    "difficulty": "Medium",
+    "question": "In a company, sales in 2021 were $40 Million, 2022 were $50 Million, 2023 were $65 Million, and 2024 were $80 Million. What was the compound growth percentage from 2021 to 2024?",
+    "options": [
+      "50%",
+      "100%",
+      "75%",
+      "120%"
+    ],
+    "correctOption": 1,
+    "hint": "Growth % = ((Final Sales - Initial Sales) / Initial Sales) * 100.",
+    "explanation": "Initial Sales (2021) = $40 Million.\nFinal Sales (2024) = $80 Million.\nTotal Growth = $80M - $40M = $40 Million.\nGrowth % = (40 / 40) * 100 = 100%."
+  },
+  {
+    "id": "q16",
+    "category": "di",
+    "topic": "Pie Chart Percentages",
+    "difficulty": "Easy",
+    "question": "A household monthly budget pie chart shows: Rent 30%, Food 25%, Savings 20%, Utilities 15%, Entertainment 10%. If total monthly income is $4,000, how much is saved?",
+    "options": [
+      "$600",
+      "$800",
+      "$1,000",
+      "$1,200"
+    ],
+    "correctOption": 1,
+    "hint": "Savings Amount = Savings Percentage * Total Monthly Income.",
+    "explanation": "Savings Percentage = 20%.\nSavings Amount = 20% of $4,000 = (20/100) * 4,000 = $800."
+  },
+  {
+    "id": "q17",
+    "category": "technical",
+    "topic": "Data Structures",
+    "difficulty": "Easy",
+    "question": "Which data structure operates on a Last-In, First-Out (LIFO) principle?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Array",
+      "Linked List"
+    ],
+    "correctOption": 1,
+    "hint": "Think of a stack of plates where the top plate put on last is removed first.",
+    "explanation": "A Stack uses LIFO (Last In First Out) ordering where elements are pushed and popped from the top. A Queue uses FIFO (First In First Out)."
+  },
+  {
+    "id": "q18",
+    "category": "technical",
+    "topic": "Algorithms & Time Complexity",
+    "difficulty": "Medium",
+    "question": "What is the worst-case time complexity of QuickSort algorithm?",
+    "options": [
+      "O(N log N)",
+      "O(N)",
+      "O(N^2)",
+      "O(log N)"
+    ],
+    "correctOption": 2,
+    "hint": "Worst case occurs when pivot selection results in unbalanced partitions (e.g., already sorted array with poor pivot choice).",
+    "explanation": "While QuickSort has an average-case complexity of O(N log N), its worst-case time complexity is O(N^2) when the pivot divides the array into unbalanced subproblems of size 0 and N-1."
+  },
+  {
+    "id": "q19",
+    "category": "technical",
+    "topic": "Database Management (DBMS)",
+    "difficulty": "Medium",
+    "question": "Which SQL clause is used to filter groups created by the 'GROUP BY' clause?",
+    "options": [
+      "WHERE",
+      "HAVING",
+      "ORDER BY",
+      "FILTER"
+    ],
+    "correctOption": 1,
+    "hint": "WHERE filters individual rows before grouping; which keyword filters aggregated group results?",
+    "explanation": "The HAVING clause was added to SQL because the WHERE keyword could not be used with aggregate functions. HAVING filters summary groups created by GROUP BY."
+  },
+  {
+    "id": "q20",
+    "category": "technical",
+    "topic": "Networking & C/C++/Java Basics",
+    "difficulty": "Hard",
+    "question": "What will be the output of the C snippet: `int a=5; printf(\"%d %d %d\", a++, ++a, a);`?",
+    "options": [
+      "5 7 7",
+      "6 7 7",
+      "Undefined Behavior",
+      "5 6 7"
+    ],
+    "correctOption": 2,
+    "hint": "Modifying a variable multiple times without a sequence point leads to standard specification ambiguity.",
+    "explanation": "In C/C++, modifying a variable more than once between sequence points (in a single statement/printf call) results in Undefined Behavior according to the ISO C standard."
+  },
+  {
+    "id": "q_1786375845717",
+    "category": "quantitative",
+    "topic": "Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If CP is $100 and SP is $120, what is the profit percentage?",
+    "options": [
+      "10%",
+      "20%",
+      "25%",
+      "15%"
+    ],
+    "correctOption": 1,
+    "hint": "Profit = SP - CP",
+    "explanation": "Profit = 120 - 100 = 20. Profit % = (20/100)*100 = 20%."
+  },
+  {
+    "id": "number-system-001",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "What is the place value of 5 in 3254710? (CLAT, 2010)",
+    "options": [
+      "5",
+      "10000",
+      "50000",
+      "54710"
+    ],
+    "correctOption": 2,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 50000.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q1) Solution:\nPlace value of 5 in 3254710 = (5 \u00d7 10000) = 50000."
+  },
+  {
+    "id": "number-system-002",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "The face value of 8 in the number 458926 is (R.R.B., 2006)",
+    "options": [
+      "8",
+      "1000",
+      "8000",
+      "8926"
+    ],
+    "correctOption": 0,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 8.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q2) Solution:\nThe face value of 8 in the given numeral 458926 is 8."
+  },
+  {
+    "id": "number-system-003",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "The sum of the place values of 3 in the number 503535 is (M.B.A., 2005)",
+    "options": [
+      "6",
+      "60",
+      "3030",
+      "3300"
+    ],
+    "correctOption": 2,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 3030.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q3) Solution:\nSum of the place values of 3 in 503535 = (3000 + 30) = 3030."
+  },
+  {
+    "id": "number-system-004",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "The difference between the place values of 7 and 3 in the number 527435 is",
+    "options": [
+      "4",
+      "5",
+      "45",
+      "6970"
+    ],
+    "correctOption": 3,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 6970.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q4) Solution:\nDifference between the place values of 7 and 3 in 527435 = (7000 \u2013 30) = 6970."
+  },
+  {
+    "id": "number-system-005",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "The difference between the local value and the face value of 7 in the numeral 32675149 is",
+    "options": [
+      "5149",
+      "64851",
+      "69993",
+      "75142",
+      "None of these"
+    ],
+    "correctOption": 2,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 69993.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q5) Solution:\nDifference between the local value and face value of 7 in 32675149 = (70000 \u2013 7) = 69993."
+  },
+  {
+    "id": "number-system-006",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "The sum of the greatest and smallest number of five digits is (M.C.A., 2005)",
+    "options": [
+      "11,110",
+      "10,999",
+      "109,999",
+      "111,110"
+    ],
+    "correctOption": 2,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 109,999.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q6) Solution:\nRequired sum of greatest and smallest 5-digit numbers = (99999 + 10000) = 109999."
+  },
+  {
+    "id": "number-system-007",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "If the largest three-digit number is subtracted from the smallest five-digit number, then the remainder is",
+    "options": [
+      "1",
+      "9000",
+      "9001",
+      "90001"
+    ],
+    "correctOption": 2,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 9001.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q7) Solution:\nRequired difference = (10000 \u2013 999) = 9001."
+  },
+  {
+    "id": "number-system-008",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "The smallest number of 5 digits beginning with 3 and ending with 5 will be (R.R.B., 2006)",
+    "options": [
+      "31005",
+      "30015",
+      "30005",
+      "30025"
+    ],
+    "correctOption": 2,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 30005.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q8) Solution:\nRequired smallest 5-digit number beginning with 3 and ending with 5 = 30005."
+  },
+  {
+    "id": "number-system-009",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "What is the minimum number of four digits formed by using the digits 2, 4, 0, 7 ? (P.C.S., 2007)",
+    "options": [
+      "2047",
+      "2247",
+      "2407",
+      "2470"
+    ],
+    "correctOption": 0,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 2047.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q9) Solution:\nMinimum 4-digit number formed using 2, 4, 0, 7 is 2047."
+  },
+  {
+    "id": "number-system-010",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "All natural numbers and 0 are called the ......... numbers. (R.R.B., 2006)",
+    "options": [
+      "rational",
+      "integer",
+      "whole",
+      "prime"
+    ],
+    "correctOption": 2,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is whole.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q10) Solution:\nAll natural numbers together with 0 are called whole numbers."
+  },
+  {
+    "id": "number-system-011",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "Consider the following statements about natural numbers: (1) There exists a smallest natural number. (2) There exists a largest natural number. (3) Between two natural numbers, there is always a natural number. Which of the above statements is/are correct?",
+    "options": [
+      "None",
+      "Only 1",
+      "1 and 2",
+      "2 and 3"
+    ],
+    "correctOption": 1,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is Only 1.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q11) Solution:\n1 is the smallest natural number (True). The set of natural numbers is infinite (no largest). There is no natural number between consecutive integers."
+  },
+  {
+    "id": "number-system-012",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "Every rational number is also",
+    "options": [
+      "an integer",
+      "a real number",
+      "a natural number",
+      "a whole number"
+    ],
+    "correctOption": 1,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is a real number.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q12) Solution:\nEvery rational number is a real number."
+  },
+  {
+    "id": "number-system-013",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "The number p is (R.R.B., 2005)",
+    "options": [
+      "a fraction",
+      "a recurring decimal",
+      "a rational number",
+      "an irrational number"
+    ],
+    "correctOption": 3,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is an irrational number.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q13) Solution:\n\u03c0 is an irrational number."
+  },
+  {
+    "id": "number-system-014",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "2 is a/an",
+    "options": [
+      "rational number",
+      "natural number",
+      "irrational number",
+      "integer"
+    ],
+    "correctOption": 2,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is irrational number.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q14) Solution:\n\u221a2 is a non-terminating and non-repeating decimal, hence an irrational number."
+  },
+  {
+    "id": "number-system-015",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "The number 3 is",
+    "options": [
+      "a finite decimal",
+      "an infinite recurring decimal",
+      "equal to 1.732",
+      "an infinite non-recurring decimal"
+    ],
+    "correctOption": 3,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is an infinite non-recurring decimal.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q15) Solution:\n\u221a3 is an infinite non-recurring decimal."
+  },
+  {
+    "id": "number-system-016",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "There are just two ways in which 5 may be expressed as the sum of two different positive (non-zero) integers, namely 5 = 4 + 1 = 3 + 2. In how many ways, 9 can be expressed as the sum of two different positive (non-zero) integers?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctOption": 1,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 4.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q16) Solution:\n9 = 1+8 = 2+7 = 3+6 = 4+5. Thus, 9 can be expressed as sum of two positive integers in 4 ways."
+  },
+  {
+    "id": "number-system-017",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "P and Q are two positive integers such that PQ = 64. Which of the following cannot be the value of P + Q?",
+    "options": [
+      "16",
+      "20",
+      "35",
+      "65"
+    ],
+    "correctOption": 2,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 35.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q17) Solution:\nPossible factor pairs of 64: (64,1), (32,2), (16,4), (8,8). In no case is P+Q equal to 35."
+  },
+  {
+    "id": "number-system-018",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "If x + y + z = 9 and both y and z are positive integers greater than zero, then the maximum value x can take is (Campus Recruitment, 2006)",
+    "options": [
+      "3",
+      "7",
+      "8",
+      "Data insufficient"
+    ],
+    "correctOption": 1,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 7.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q18) Solution:\nMinimum positive integer values for y and z are y=1, z=1. Thus max value of x = 9 - (1+1) = 7."
+  },
+  {
+    "id": "number-system-019",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "What is the sum of the squares of the digits from 1 to 9?",
+    "options": [
+      "105",
+      "260",
+      "285",
+      "385"
+    ],
+    "correctOption": 2,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 285.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q19) Solution:\nSum of squares = n(n+1)(2n+1)/6 for n=9: (9 \u00d7 10 \u00d7 19) / 6 = 285."
+  },
+  {
+    "id": "number-system-020",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "If n is an integer between 20 and 80, then any of the following could be n + 7 except",
+    "options": [
+      "47",
+      "58",
+      "84",
+      "88"
+    ],
+    "correctOption": 3,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 88.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q20) Solution:\n(n + 7) = 88 \u21d2 n = 81, which is outside 20 < n < 80. So n+7 cannot be 88."
+  },
+  {
+    "id": "number-system-021",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "Which one of the following is the correct sequence in respect of the Roman numerals: C, D, L and M? (Civil Services, 2008)",
+    "options": [
+      "C > D > L > M",
+      "M > L > D > C",
+      "M > D > C > L",
+      "L > C > D > M"
+    ],
+    "correctOption": 2,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is M > D > C > L.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q21) Solution:\nRoman values: M = 1000, D = 500, C = 100, L = 50. Correct sequence: M > D > C > L."
+  },
+  {
+    "id": "number-system-022",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "If the numbers from 1 to 24, which are divisible by 2 are arranged in descending order, which number will be at the 8th place from the bottom? (CLAT, 2010)",
+    "options": [
+      "10",
+      "12",
+      "16",
+      "18"
+    ],
+    "correctOption": 2,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 16.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q22) Solution:\nEven numbers 1 to 24 ascending: 2, 4, 6, 8, 10, 12, 14, 16. The 8th number from bottom is 16."
+  },
+  {
+    "id": "number-system-023",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "2 \u2013 2 + 2 \u2013 2 + .......... 101 terms =? (P.C.S., 2008)",
+    "options": [
+      "\u2013 2",
+      "0",
+      "2",
+      "None of these"
+    ],
+    "correctOption": 2,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 2.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q23) Solution:\nFirst 100 terms cancel out to 0 (50 pairs of 2 - 2). The 101st term is 2."
+  },
+  {
+    "id": "number-system-024",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "98th term of the infinite series 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, ........ is (M.C.A., 2005)",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctOption": 1,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 2.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q24) Solution:\nPattern repeats every 4 terms (1, 2, 3, 4). 96th term is 4. 97th is 1, and 98th term is 2."
+  },
+  {
+    "id": "number-system-025",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "If x, y, z be the digits of a number beginning from the left, the number is",
+    "options": [
+      "xyz",
+      "x + 10y + 100z",
+      "10x + y + 100z",
+      "100x + 10y + z"
+    ],
+    "correctOption": 3,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 100x + 10y + z.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q25) Solution:\nFor digits x, y, z from left: number = 100x + 10y + z."
+  },
+  {
+    "id": "number-system-026",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "If x, y, z and w be the digits of a number beginning from the left, the number is",
+    "options": [
+      "xyzw",
+      "wzyx",
+      "x + 10y + 100z + 1000w",
+      "103x + 102y + 10z + w"
+    ],
+    "correctOption": 3,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 103x + 102y + 10z + w.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q26) Solution:\nFor digits x, y, z, w from left: number = 1000x + 100y + 10z + w = 10\u00b3x + 10\u00b2y + 10z + w."
+  },
+  {
+    "id": "number-system-027",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "If n and p are both odd numbers, which of the following is an even number?",
+    "options": [
+      "n + p",
+      "n + p + 1",
+      "np + 2",
+      "np"
+    ],
+    "correctOption": 0,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is n + p.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q27) Solution:\nSum of two odd numbers is always even. (n + p) is even."
+  },
+  {
+    "id": "number-system-028",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "For the integer n, if n3 is odd, then which of the following statements are true? I. n is odd. II. n2 is odd. III. n2 is even.",
+    "options": [
+      "I only",
+      "II only",
+      "I and II only",
+      "I and III only"
+    ],
+    "correctOption": 2,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is I and II only.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q28) Solution:\nIf n\u00b3 is odd, n is odd, so n\u00b2 is also odd. Statements I and II are true."
+  },
+  {
+    "id": "number-system-029",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "If (n \u2013 1) is an odd number, what are the two other odd numbers nearest to it?",
+    "options": [
+      "n, n \u2013 1",
+      "n, n \u2013 2",
+      "n \u2013 3, n + 1",
+      "n \u2013 3, n + 5"
+    ],
+    "correctOption": 2,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is n \u2013 3, n + 1.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q29) Solution:\nConsecutive odd numbers differ by 2. If (n - 1) is odd, nearest odds are (n - 1) - 2 = n - 3 and (n - 1) + 2 = n + 1."
+  },
+  {
+    "id": "number-system-030",
+    "category": "quantitative",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "Which of the following is always odd?",
+    "options": [
+      "Sum of two odd numbers",
+      "Difference of two odd numbers",
+      "Product of two odd numbers",
+      "None of these"
+    ],
+    "correctOption": 2,
+    "hint": "Apply fundamental properties of Number System to solve. Answer is Product of two odd numbers.",
+    "explanation": "R.S. Aggarwal Chapter 1 (Q30) Solution:\nProduct of two odd numbers is always odd."
+  },
+  {
+    "id": "number-system-031",
+    "question": "If x is an odd integer, then which of the following is true?",
+    "options": [
+      "5x \u2013 2 is even",
+      "5x\u00b2 + 2 is odd",
+      "5x\u00b2 + 3 is odd",
+      "None of these"
+    ],
+    "correctOption": 1,
+    "hint": "For x odd: x\u00b2 is odd, 5x\u00b2 is odd, 5x\u00b2 + 2 (odd + even) = odd.",
+    "explanation": "x odd => 5x\u00b2 is odd => 5x\u00b2 + 2 is odd."
+  },
+  {
+    "id": "number-system-032",
+    "question": "If a and b are two numbers such that ab = 0, then (R.R.B., 2006)",
+    "options": [
+      "a = 0 and b = 0",
+      "a = 0 or b = 0 or both",
+      "a = 0 and b \u2260 0",
+      "b = 0 and a \u2260 0"
+    ],
+    "correctOption": 1,
+    "hint": "Zero product property: if ab = 0, at least one factor must be 0.",
+    "explanation": "ab = 0 implies either a = 0, b = 0, or both are 0."
+  },
+  {
+    "id": "number-system-033",
+    "question": "If A, B, C, D are numbers in increasing order and D, B, E are numbers in decreasing order, then which one of the following sequences need neither be in a decreasing nor in an increasing order?",
+    "options": [
+      "E, C, D",
+      "E, B, C",
+      "D, B, A",
+      "A, E, C"
+    ],
+    "correctOption": 3,
+    "hint": "Increasing: A < B < C < D. Decreasing: D > B > E => E < B.",
+    "explanation": "Since E < B and A < B, the relative order of A and E is unknown. So A, E, C need not be ordered."
+  },
+  {
+    "id": "number-system-034",
+    "question": "If m, n, o, p and q are integers, then m (n + o) (p \u2013 q) must be even when which of the following is even?",
+    "options": [
+      "m",
+      "p",
+      "m + n",
+      "n + p"
+    ],
+    "correctOption": 0,
+    "hint": "If m is even, the product of m with any integers is automatically even.",
+    "explanation": "An even number multiplied by any integer yields an even product. If m is even, the whole expression is even."
+  },
+  {
+    "id": "number-system-035",
+    "question": "If n is a negative number, then which of the following is the least?",
+    "options": [
+      "0",
+      "\u2013 n",
+      "2n",
+      "n\u00b2"
+    ],
+    "correctOption": 2,
+    "hint": "For n negative: -n is positive, n\u00b2 is positive, 0 is zero, 2n is negative and smaller than n.",
+    "explanation": "If n = -2: 0=0, -n=2, 2n=-4, n\u00b2=4. Least value is 2n (-4)."
+  },
+  {
+    "id": "number-system-036",
+    "question": "If x \u2013 y = 8, then which of the following must be true? I. Both x and y are positive. II. If x is positive, y must be positive. III. If x is negative, y must be negative.",
+    "options": [
+      "I only",
+      "II only",
+      "I and II",
+      "III only"
+    ],
+    "correctOption": 3,
+    "hint": "y = x - 8. If x is negative (e.g. -2), y = -2 - 8 = -10 (also negative).",
+    "explanation": "If x < 0, then y = x - 8 < -8 < 0. Thus if x is negative, y MUST be negative."
+  },
+  {
+    "id": "number-system-037",
+    "question": "If x and y are negative, then which of the following statements is/are always true? I. x + y is positive. II. xy is positive. III. x \u2013 y is positive.",
+    "options": [
+      "I only",
+      "II only",
+      "III only",
+      "I and III only"
+    ],
+    "correctOption": 1,
+    "hint": "Negative \u00d7 Negative = Positive.",
+    "explanation": "x, y negative => x + y is negative, xy is positive. Statement II is always true."
+  },
+  {
+    "id": "number-system-038",
+    "question": "If n = 1 + x, where x is the product of four consecutive positive integers, then which of the following is/are true? I. n is odd. II. n is prime. III. n is a perfect square.",
+    "options": [
+      "I only",
+      "I and II only",
+      "I and III only",
+      "None of these"
+    ],
+    "correctOption": 2,
+    "hint": "Product of 4 consecutive integers + 1 is always a perfect square and odd. E.g., 1*2*3*4 + 1 = 25 = 5\u00b2.",
+    "explanation": "k(k+1)(k+2)(k+3) + 1 = (k\u00b2 + 3k + 1)\u00b2, which is always an odd perfect square."
+  },
+  {
+    "id": "number-system-040",
+    "question": "If x is a rational number and y is an irrational number, then",
+    "options": [
+      "both x + y and xy are necessarily rational",
+      "both x + y and xy are necessarily irrational",
+      "xy is necessarily irrational, but x + y can be either rational or irrational",
+      "x + y is necessarily irrational, but xy can be either rational or irrational"
+    ],
+    "correctOption": 3,
+    "hint": "Sum of rational and irrational is always irrational. If x = 0, xy = 0 (rational).",
+    "explanation": "x + y is always irrational. If x = 0, xy = 0 (rational), otherwise xy is irrational."
+  },
+  {
+    "id": "number-system-041",
+    "question": "The difference between the square of any two consecutive integers is equal to",
+    "options": [
+      "sum of two numbers",
+      "difference of two numbers",
+      "an even number",
+      "product of two numbers"
+    ],
+    "correctOption": 0,
+    "hint": "(n + 1)\u00b2 - n\u00b2 = n\u00b2 + 2n + 1 - n\u00b2 = 2n + 1 = (n + 1) + n.",
+    "explanation": "Difference of squares = (n+1)\u00b2 - n\u00b2 = (n+1+n)(n+1-n) = (n+1) + n."
+  },
+  {
+    "id": "number-system-058",
+    "question": "The least prime number is",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctOption": 2,
+    "hint": "Prime numbers start at 2 (1 is neither prime nor composite).",
+    "explanation": "2 is the smallest prime number and the only even prime number."
+  },
+  {
+    "id": "number-system-060",
+    "question": "The number of prime numbers between 0 and 50 is",
+    "options": [
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "correctOption": 1,
+    "hint": "Primes < 50: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47.",
+    "explanation": "Count of prime numbers between 0 and 50 is exactly 15."
+  },
+  {
+    "id": "number-system-062",
+    "question": "The sum of the first four primes is",
+    "options": [
+      "10",
+      "11",
+      "16",
+      "17"
+    ],
+    "correctOption": 3,
+    "hint": "First 4 primes: 2, 3, 5, 7. Sum = 2 + 3 + 5 + 7.",
+    "explanation": "2 + 3 + 5 + 7 = 17."
+  },
+  {
+    "id": "number-system-063",
+    "question": "The sum of all the prime numbers from 1 to 20 is",
+    "options": [
+      "75",
+      "76",
+      "77",
+      "78"
+    ],
+    "correctOption": 2,
+    "hint": "Primes up to 20: 2, 3, 5, 7, 11, 13, 17, 19.",
+    "explanation": "2 + 3 + 5 + 7 + 11 + 13 + 17 + 19 = 77."
+  },
+  {
+    "id": "number-system-066",
+    "question": "Which of the following is not a prime number? (CLAT, 2010)",
+    "options": [
+      "21",
+      "23",
+      "29",
+      "43"
+    ],
+    "correctOption": 0,
+    "hint": "21 = 3 \u00d7 7 (composite).",
+    "explanation": "21 is divisible by 3 and 7, so it is composite."
+  },
+  {
+    "id": "number-system-071",
+    "question": "The smallest three-digit prime number is",
+    "options": [
+      "101",
+      "103",
+      "107",
+      "None of these"
+    ],
+    "correctOption": 0,
+    "hint": "Check 100 (even), 101 (prime).",
+    "explanation": "101 is not divisible by 2, 3, 5, 7. It is the smallest 3-digit prime."
+  },
+  {
+    "id": "number-system-189",
+    "question": "The unit's digit of 13\u00b2\u2070\u2070\u00b3 is (A.A.O. Exam, 2010)",
+    "options": [
+      "1",
+      "3",
+      "7",
+      "9"
+    ],
+    "correctOption": 2,
+    "hint": "Cyclicity of 3 is 4: 3\u00b9=3, 3\u00b2=9, 3\u00b3=27(7), 3\u2074=81(1). Find 2003 mod 4 = 3.",
+    "explanation": "2003 mod 4 = 3. Unit digit of 3\u00b3 is 7."
+  },
+  {
+    "id": "number-system-211",
+    "question": "A number is divisible by 11 if the difference between the sums of the digits in odd and even places respectively is",
+    "options": [
+      "a multiple of 3",
+      "a multiple of 5",
+      "zero or a multiple of 7",
+      "zero or a multiple of 11"
+    ],
+    "correctOption": 3,
+    "hint": "Standard divisibility rule for 11.",
+    "explanation": "Divisibility rule of 11 requires (Sum of odd-position digits - Sum of even-position digits) to be 0 or a multiple of 11."
+  },
+  {
+    "id": "number-system-240",
+    "question": "If n be any natural number then by which largest number (n\u00b3 \u2013 n) is always divisible? (S.S.C., 2010)",
+    "options": [
+      "3",
+      "6",
+      "12",
+      "18"
+    ],
+    "correctOption": 1,
+    "hint": "n\u00b3 - n = (n-1)n(n+1), product of 3 consecutive integers.",
+    "explanation": "Product of 3 consecutive integers is always divisible by 3! = 6."
+  },
+  {
+    "id": "number-system-256",
+    "question": "A 4\u2013digit number is formed by repeating a 2\u2013digit number such as 2525, 3232 etc. Any number of this form is exactly divisible by (S.S.C., 2005, 2010)",
+    "options": [
+      "7",
+      "11",
+      "13",
+      "Smallest 3\u2013digit prime number"
+    ],
+    "correctOption": 3,
+    "hint": "xyxy = 101 \u00d7 xy. 101 is the smallest 3-digit prime number.",
+    "explanation": "A number abab = 100a + 10b + a + b = 101(10a + b) = 101 \u00d7 ab. 101 is the smallest 3-digit prime."
+  },
+  {
+    "id": "number-system-257",
+    "question": "A 6-digit number is formed by repeating a 3-digit number; for example, 256256 or 678678 etc. Any number of this form is always exactly divisible by",
+    "options": [
+      "7 only",
+      "11 only",
+      "13 only",
+      "1001"
+    ],
+    "correctOption": 3,
+    "hint": "abcabc = 1001 \u00d7 abc. Note that 1001 = 7 \u00d7 11 \u00d7 13.",
+    "explanation": "abcabc = 100000a + 10000b + 1000c + 100a + 10b + c = 1001(100a + 10b + c) = 1001 \u00d7 abc."
+  }
+]

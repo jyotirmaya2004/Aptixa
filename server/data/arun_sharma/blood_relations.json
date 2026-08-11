@@ -1,0 +1,26 @@
+{
+  "id": "ch-blood-relations",
+  "book_id": "arun-sharma-lr",
+  "chapter_number": 1,
+  "title": "1. Blood Relations & Family Trees",
+  "question_count": 1,
+  "description": "Coded blood relation puzzles, family tree diagrams, and relational reasoning.",
+  "questions": [
+    {
+      "id": "blood-rel-001",
+      "chapter": "Blood Relations",
+      "question_number": 1,
+      "question": "Pointing to a photograph, a man said, 'I have no brother or sister but that man's father is my father's son.' Whose photograph was it?",
+      "options": {
+        "a": "His own",
+        "b": "His son's",
+        "c": "His father's",
+        "d": "His nephew's"
+      },
+      "correct_option": "b",
+      "answer": "His son's",
+      "book_page": 82,
+      "pdf_page": 96
+    }
+  ]
+}

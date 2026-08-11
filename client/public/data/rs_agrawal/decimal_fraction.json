@@ -1,0 +1,26 @@
+{
+  "id": "ch-decimal-fraction",
+  "book_id": "rs-aggarwal-quant",
+  "chapter_number": 3,
+  "title": "3. decimal fraction questions",
+  "question_count": 1,
+  "description": "Standard objective problems on Prime Factorization, Highest Common Factor, and Lowest Common Multiple.",
+  "questions": [
+    {
+      "id": "decimal-fraction-001",
+      "chapter": "H.C.F. and L.C.M.",
+      "question_number": 1,
+      "question": "Find the H.C.F. of 204, 1190 and 1445.",
+      "options": {
+        "a": "17",
+        "b": "19",
+        "c": "23",
+        "d": "29"
+      },
+      "correct_option": "a",
+      "answer": "17",
+      "book_page": 35,
+      "pdf_page": 44
+    }
+  ]
+}
