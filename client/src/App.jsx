@@ -12,6 +12,7 @@ import InteractiveSandbox from './components/InteractiveSandbox';
 import LeetCode500Section from './components/LeetCode500Section';
 
 import { fetchCategories, fetchQuestions, submitQuizAttempt, fetchStats } from './utils/api';
+import { getStoredAttempts, saveAttempt, computeStatsFromAttempts } from './utils/scoreStorage';
 import { DSA_500_PROBLEMS } from './data/dsa500Data';
 import { SANDBOX_DATABASE } from './data/sandboxData';
 import {
@@ -20,8 +21,6 @@ import {
 } from 'lucide-react';
 
 // ── Helper: build quiz questions from static client data ──────────────────────
-// QuizRunner expects: { id, question, options: string[], correctOption: number,
-//                       topic, difficulty, explanation, hint? }
 function buildStaticQuestions(categoryId, config) {
   let list = [];
 
@@ -81,8 +80,6 @@ function buildStaticQuestions(categoryId, config) {
 
   return list.slice(0, config?.limit || 10);
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
 
 export default function App() {
   // Appearance & Customization State — persisted in localStorage
@@ -150,19 +147,35 @@ export default function App() {
     },
   ];
 
-  // ── Data Loading ─────────────────────────────────────────────────────────────
+  // ── Data Loading with Persistent Storage ──────────────────────────────────────
   const loadData = async () => {
     try {
       setLoading(true);
       setError('');
-      const [cats, st] = await Promise.all([fetchCategories(), fetchStats()]);
+
+      const localAttempts = getStoredAttempts();
+      const localStats = computeStatsFromAttempts(localAttempts);
+
+      let cats = DEFAULT_CATEGORIES;
+      let st = localStats;
+
+      try {
+        const [fetchedCats, fetchedSt] = await Promise.all([fetchCategories(), fetchStats()]);
+        if (fetchedCats && fetchedCats.length) cats = fetchedCats;
+        if (fetchedSt && fetchedSt.totalAttempts > 0) {
+          st = fetchedSt;
+        }
+      } catch (_) {
+        // Backend offline — rely on persistent local storage & cookies
+      }
+
       setCategories(cats);
       setStats(st);
     } catch (err) {
-      console.warn('Backend offline/unconfigured — running in standalone client mode.');
+      console.warn('Backend offline — loading persistent local scorecard & accuracy history.');
+      const localAttempts = getStoredAttempts();
       setCategories(DEFAULT_CATEGORIES);
-      setStats({ totalAttempts: 0, averageScore: 0, recentAttempts: [] });
-      setError('');
+      setStats(computeStatsFromAttempts(localAttempts));
     } finally {
       setLoading(false);
     }
@@ -191,11 +204,9 @@ export default function App() {
           shuffle: config.shuffle !== false,
         });
       } catch (_) {
-        // backend unavailable — use local data
         qs = [];
       }
 
-      // If backend returned nothing or failed, use static client data
       if (!qs || !qs.length) {
         qs = buildStaticQuestions(categoryId, config);
       }
@@ -214,7 +225,7 @@ export default function App() {
     }
   };
 
-  // ── Complete Quiz & Score ─────────────────────────────────────────────────────
+  // ── Complete Quiz & Persist Scorecard ──────────────────────────────────────────
   const handleCompleteQuiz = async ({ userAnswers, timeSpentSeconds, mode }) => {
     if (!activeQuiz) return;
     setLoading(true);
@@ -229,7 +240,6 @@ export default function App() {
           timeSpentSeconds,
         });
       } catch (_) {
-        // Score locally
         let score = 0;
         const breakdown = activeQuiz.questions.map(q => {
           const selectedOpt = userAnswers[q.id];
@@ -246,6 +256,19 @@ export default function App() {
           breakdown,
         };
       }
+
+      // Persist attempt to localStorage + Cookie fallback
+      const updatedStats = saveAttempt({
+        category: activeQuiz.categoryId,
+        mode,
+        score: res.score,
+        totalQuestions: res.totalQuestions,
+        timeSpentSeconds,
+        date: new Date().toISOString()
+      });
+
+      // Update state for real-time header accuracy & analytics view
+      setStats(updatedStats);
 
       setQuizResult({ result: res, questions: activeQuiz.questions });
       setCurrentTab('result');
@@ -298,122 +321,152 @@ export default function App() {
         )}
 
         {/* Error Banner */}
-        {!loading && error && (
+        {error && (
           <div style={{
-            maxWidth: '680px', margin: '48px auto 0', padding: '24px',
-            background: 'var(--danger-bg)', border: '1px solid var(--danger-border)',
-            borderRadius: 'var(--radius-md)', textAlign: 'center'
+            background: 'var(--danger-bg)', borderBottom: '1px solid var(--danger-border)',
+            color: 'var(--danger)', padding: '12px 16px', fontSize: '0.86rem',
+            textAlign: 'center', fontWeight: '600'
           }}>
-            <ShieldOff size={30} color="var(--danger)" style={{ marginBottom: '10px' }} />
-            <p style={{ color: 'var(--danger)', fontWeight: '600', marginBottom: '14px' }}>{error}</p>
-            <button className="btn btn-outline" onClick={loadData}>
-              <RefreshCw size={15} /> Retry
-            </button>
+            {error}
           </div>
         )}
 
-        {/* ── Home: Assessment Domains ── */}
-        {!loading && !error && currentTab === 'categories' && (
-          <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '24px 16px' }}>
-
-            {/* Hero */}
-            <div className="glass-card hero-container"
-              style={{ padding: '32px 24px', marginBottom: '28px' }}>
-              <div style={{ maxWidth: '760px' }}>
-                <div style={{
-                  display: 'inline-flex', alignItems: 'center', gap: '6px',
-                  padding: '3px 10px', borderRadius: 'var(--radius-xs)',
-                  background: 'var(--info-bg)', border: '1px solid rgba(59,130,246,0.25)',
-                  fontSize: '0.75rem', fontWeight: '700', color: 'var(--info)',
-                  marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px'
+        {!loading && (
+          <>
+            {/* Assessment Domains / Home Tab */}
+            {currentTab === 'categories' && (
+              <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '32px 16px' }}>
+                
+                {/* Hero Banner */}
+                <div className="glass-card" style={{
+                  padding: '36px 32px', marginBottom: '36px',
+                  background: 'linear-gradient(135deg, rgba(37,99,235,0.12) 0%, rgba(124,58,237,0.08) 100%)',
+                  border: '1px solid var(--border-color)', position: 'relative', overflow: 'hidden'
                 }}>
-                  <img src="/logo.png" alt="APTIXA" style={{ width: '20px', height: '20px', objectFit: 'contain' }} /> APTIXA Assessment Engine
+                  <div style={{ maxWidth: '720px' }}>
+                    <div style={{
+                      display: 'inline-flex', alignItems: 'center', gap: '6px',
+                      padding: '4px 12px', borderRadius: 'var(--radius-xs)',
+                      background: 'var(--accent-bg)', border: '1px solid var(--accent-border)',
+                      fontSize: '0.78rem', fontWeight: '700', color: 'var(--accent-primary)',
+                      marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px'
+                    }}>
+                      <Sparkles size={13} /> Placement Preparation Engine
+                    </div>
+                    <h1 style={{ fontSize: '2.1rem', lineHeight: '1.2', marginBottom: '12px', fontWeight: '800' }}>
+                      Master Aptitude &amp; DSA Solvers
+                    </h1>
+                    <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', lineHeight: '1.6', marginBottom: '24px' }}>
+                      Practice with full-length timed tests, analyze domain accuracy metrics, explore 500+ LeetCode problems with Python solutions, and master formulas with visual diagrams.
+                    </p>
+                    <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+                      <button
+                        className="btn btn-primary"
+                        onClick={() => handleSetTab('leetcode500')}
+                        style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
+                      >
+                        <Code2 size={18} /> Explore DSA 500 Hub
+                      </button>
+                      <button
+                        className="btn btn-outline"
+                        onClick={() => handleSetTab('tips')}
+                        style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
+                      >
+                        <Lightbulb size={18} /> Formula Bank
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                <h2 style={{ fontSize: 'clamp(1.4rem, 4vw, 2rem)', marginBottom: '10px', fontWeight: '800', letterSpacing: '-0.5px' }}>
-                  Master Placement &amp; Competitive Exams
+
+                {/* Categories Grid */}
+                <h2 style={{ fontSize: '1.25rem', marginBottom: '20px', fontWeight: '700' }}>
+                  Select Assessment Domain
                 </h2>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: '1.65', marginBottom: '20px' }}>
-                  Standardized assessment portal covering Quantitative Aptitude, Logical Reasoning,
-                  Verbal Ability and DSA. Practice from top reference books or take customised mock exams.
-                </p>
-                <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', alignItems: 'center' }}>
-                  <button className="btn btn-primary" onClick={() => setCurrentTab('sandbox')}>
-                    <Sparkles size={15} /> Live Solvers
-                  </button>
-                  <button className="btn btn-outline" onClick={() => setCurrentTab('leetcode500')}>
-                    <Code2 size={15} /> DSA Hub
-                  </button>
-                  <button className="btn btn-outline" onClick={() => setCurrentTab('books')}>
-                    <BookOpen size={15} /> Books
-                  </button>
-                  <button className="btn btn-outline" onClick={() => setCurrentTab('tips')}>
-                    <Lightbulb size={15} /> Formulas
-                  </button>
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+                  gap: '20px'
+                }}>
+                  {categories.map(cat => (
+                    <CategoryCard
+                      key={cat.id}
+                      category={cat}
+                      onStartQuiz={handleOpenQuizConfig}
+                    />
+                  ))}
                 </div>
               </div>
-            </div>
+            )}
 
-            {/* Domain Cards Grid */}
-            <h3 style={{
-              fontSize: '0.95rem', fontWeight: '700', color: 'var(--text-secondary)',
-              textTransform: 'uppercase', letterSpacing: '0.6px',
-              marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px'
-            }}>
-              Select Exam Domain <ChevronRight size={15} color="var(--text-muted)" />
-            </h3>
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(min(280px, 100%), 1fr))',
-              gap: '16px'
-            }}>
-              {categories.map(cat => (
-                <CategoryCard key={cat.id} category={cat} onOpenConfig={handleOpenQuizConfig} />
-              ))}
-            </div>
-          </div>
+            {/* DSA 500 Questions Hub */}
+            {currentTab === 'leetcode500' && (
+              <LeetCode500Section
+                onStartPractice={(problem) => {
+                  setActiveQuiz({
+                    categoryId: 'dsa',
+                    mode: 'practice',
+                    timerPerQuestion: 120,
+                    questions: buildStaticQuestions('dsa', { limit: 5 }),
+                  });
+                  setCurrentTab('quiz');
+                }}
+              />
+            )}
+
+            {/* Live Interactive Sandbox */}
+            {currentTab === 'sandbox' && (
+              <InteractiveSandbox
+                onLaunchTopicQuiz={(catId) => {
+                  handleOpenQuizConfig(categories.find(c => c.id === catId) || DEFAULT_CATEGORIES[0]);
+                }}
+              />
+            )}
+
+            {/* Popular Books Section */}
+            {currentTab === 'books' && <BooksSection />}
+
+            {/* Tips & Formulas Bank */}
+            {currentTab === 'tips' && <TipsAndFormulas />}
+
+            {/* Performance Analytics & Persistent History Scorecard */}
+            {currentTab === 'stats' && (
+              <PerformanceStats stats={stats} />
+            )}
+
+            {/* Active Quiz Runner */}
+            {currentTab === 'quiz' && activeQuiz && (
+              <QuizRunner
+                categoryId={activeQuiz.categoryId}
+                categoryTitle={getCategoryTitle(activeQuiz.categoryId)}
+                mode={activeQuiz.mode}
+                timerPerQuestion={activeQuiz.timerPerQuestion}
+                questions={activeQuiz.questions}
+                onComplete={handleCompleteQuiz}
+                onCancel={() => handleSetTab('categories')}
+              />
+            )}
+
+            {/* Quiz Result View */}
+            {currentTab === 'result' && quizResult && (
+              <QuizResult
+                result={quizResult.result}
+                questions={quizResult.questions}
+                categoryTitle={getCategoryTitle(activeQuiz?.categoryId)}
+                onRetake={() => {
+                  if (activeQuiz) {
+                    handleStartQuiz(activeQuiz.categoryId, {
+                      mode: activeQuiz.mode,
+                      limit: activeQuiz.questions.length,
+                    });
+                  } else {
+                    handleSetTab('categories');
+                  }
+                }}
+                onHome={() => handleSetTab('categories')}
+              />
+            )}
+          </>
         )}
-
-        {/* ── DSA Hub ── */}
-        {!loading && currentTab === 'leetcode500' && <LeetCode500Section />}
-
-        {/* ── Interactive Sandbox ── */}
-        {!loading && currentTab === 'sandbox' && <InteractiveSandbox />}
-
-        {/* ── Books Repository ── */}
-        {!loading && currentTab === 'books' && <BooksSection />}
-
-        {/* ── Tips & Formulas ── */}
-        {!loading && currentTab === 'tips' && <TipsAndFormulas />}
-
-        {/* ── Performance Stats ── */}
-        {!loading && currentTab === 'stats' && <PerformanceStats stats={stats} />}
-
-        {/* ── Quiz Runner ── */}
-        {!loading && currentTab === 'quiz' && activeQuiz && (
-          <QuizRunner
-            questions={activeQuiz.questions}
-            mode={activeQuiz.mode}
-            timerPerQuestion={activeQuiz.timerPerQuestion}
-            categoryTitle={getCategoryTitle(activeQuiz.categoryId)}
-            onCompleteQuiz={handleCompleteQuiz}
-            onExitQuiz={() => setCurrentTab('categories')}
-          />
-        )}
-
-        {/* ── Quiz Result Scorecard ── */}
-        {!loading && currentTab === 'result' && quizResult && (
-          <QuizResult
-            result={quizResult.result}
-            questions={quizResult.questions}
-            onRetake={() => handleStartQuiz(activeQuiz.categoryId, {
-              mode: activeQuiz.mode,
-              limit: activeQuiz.questions.length,
-              timerPerQuestion: activeQuiz.timerPerQuestion,
-            })}
-            onBackHome={() => setCurrentTab('categories')}
-          />
-        )}
-
       </main>
 
       {/* Quiz Config Modal */}
@@ -426,15 +479,19 @@ export default function App() {
         />
       )}
 
-      {/* Theme Customizer Modal */}
+      {/* Theme & Customization Modal */}
       {showPreferences && (
         <ThemeCustomizerModal
-          theme={theme}      setTheme={setTheme}
-          accent={accent}    setAccent={setAccent}
-          fontSize={fontSize} setFontSize={setFontSize}
+          theme={theme}
+          setTheme={setTheme}
+          accent={accent}
+          setAccent={setAccent}
+          fontSize={fontSize}
+          setFontSize={setFontSize}
           onClose={() => setShowPreferences(false)}
         />
       )}
+
     </div>
   );
 }
