@@ -70,6 +70,14 @@
         "question_count": 57,
         "description": "Age ratios, present, past and future ages, age differences, average age, and age-based algebraic equations.",
         "file": "rs_agrawal/problems_on_ages.json"
+      },
+      {
+        "id": "ch-surds-and-indices",
+        "chapter_number": 9,
+        "title": "9. Surds and Indices",
+        "question_count": 109,
+        "description": "Laws of indices, definition of surds, order of surds, operations on surds, and exponential equations.",
+        "file": "rs_agrawal/surds_and_indices.json"
       }
     ]
   },

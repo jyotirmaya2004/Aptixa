@@ -5,8 +5,8 @@ export const STATIC_BOOKS = [
     author: "R.S. Aggarwal",
     category: "quantitative",
     coverColor: "#2563eb",
-    chapterCount: 8,
-    totalQuestions: 1571,
+    chapterCount: 9,
+    totalQuestions: 1680,
     description: "The gold standard textbook for Quantitative Aptitude in Bank PO, SSC, CAT, GATE, Placement & Railway exams.",
     chapters: [
       {
@@ -64,6 +64,13 @@ export const STATIC_BOOKS = [
         title: "8. Problems on Ages",
         question_count: 57,
         description: "Age ratios, present, past and future ages, age differences, average age, and age-based algebraic equations."
+      },
+      {
+        id: "ch-surds-and-indices",
+        chapter_number: 9,
+        title: "9. Surds and Indices",
+        question_count: 109,
+        description: "Laws of indices, definition of surds, order of surds, operations on surds, and exponential equations."
       }
     ]
   }
