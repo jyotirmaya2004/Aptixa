@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { 
   Sun, Moon, BarChart3, Grid, ShieldCheck, Zap, Palette, 
   BookOpen, Menu, X, ChevronRight, Sparkles, Code2, Search, Command, Flame,
-  Download, Newspaper
+  Download, Newspaper, Mic
 } from 'lucide-react';
 import HeaderSearchModal from './HeaderSearchModal';
 import HeaderStatsPopover from './HeaderStatsPopover';
@@ -22,12 +22,13 @@ export default function Header({
   const [deferredPrompt, setDeferredPrompt] = useState(null);
 
   const tabs = [
-    { id: 'categories',  label: 'Assessment Domains', icon: Grid },
-    { id: 'current_affairs', label: 'Current Affairs', icon: Newspaper },
-    { id: 'leetcode500', label: 'DSA',                 icon: Code2 },
-    { id: 'sandbox',     label: 'Live Sandbox',        icon: Sparkles },
-    { id: 'books',       label: 'Popular Books',       icon: BookOpen },
-    { id: 'stats',       label: 'Analytics',           icon: BarChart3 },
+    { id: 'categories',     label: 'Assessment Domains', icon: Grid },
+    { id: 'spoken_english', label: 'Spoken English',     icon: Mic },
+    { id: 'current_affairs',label: 'Current Affairs',    icon: Newspaper },
+    { id: 'leetcode500',    label: 'DSA',                icon: Code2 },
+    { id: 'sandbox',        label: 'Live Sandbox',       icon: Sparkles },
+    { id: 'books',          label: 'Popular Books',      icon: BookOpen },
+    { id: 'stats',          label: 'Analytics',          icon: BarChart3 },
   ];
 
   // Hotkey listener & PWA beforeinstallprompt listener
@@ -82,16 +83,18 @@ export default function Header({
 
   return (
     <header style={{
-      background: 'var(--bg-card)',
+      background: 'rgba(var(--bg-card-rgb, 15, 23, 42), 0.85)',
+      backdropFilter: 'blur(16px)',
+      WebkitBackdropFilter: 'blur(16px)',
       borderBottom: '1px solid var(--border-color)',
       position: 'sticky', top: 0, zIndex: 1000,
-      padding: '0 16px',
-      boxShadow: 'var(--shadow-sm)',
+      padding: '0 20px',
+      boxShadow: '0 4px 20px rgba(0, 0, 0, 0.06)'
     }}>
       <div className="header-content" style={{
-        maxWidth: '1280px', margin: '0 auto',
+        maxWidth: '1300px', margin: '0 auto',
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-        height: '58px', gap: '12px'
+        height: '62px', gap: '16px'
       }}>
 
         {/* Brand Logo & Name */}
@@ -99,26 +102,31 @@ export default function Header({
           onClick={() => handleTabClick('categories')}
           style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer', flexShrink: 0 }}
         >
-          <img
-            src="/logo.png"
-            alt="APTIXA Logo"
-            style={{
-              width: '46px', height: '46px',
-              objectFit: 'contain',
-              filter: 'drop-shadow(0 2px 8px rgba(37,99,235,0.4))'
-            }}
-          />
+          <div style={{
+            width: '40px', height: '40px', borderRadius: '10px',
+            background: 'linear-gradient(135deg, #2563eb, #7c3aed)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            boxShadow: '0 4px 12px rgba(37,99,235,0.35)'
+          }}>
+            <img
+              src="/logo.png"
+              alt="APTIXA"
+              onError={(e) => { e.target.style.display = 'none'; }}
+              style={{ width: '28px', height: '28px', objectFit: 'contain' }}
+            />
+          </div>
           <div>
             <span style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: '1.35rem', fontWeight: '800',
+              fontSize: '1.3rem', fontWeight: '800',
               letterSpacing: '-0.5px',
-              lineHeight: 1
+              lineHeight: 1,
+              display: 'block'
             }}>
               <span className="gradient-text">APTIXA</span>
             </span>
-            <div style={{ fontSize: '0.66rem', color: 'var(--text-muted)', fontWeight: '600', letterSpacing: '0.3px', marginTop: '2px' }}>
-              Placement &amp; Skill Hub
+            <div style={{ fontSize: '0.65rem', color: 'var(--text-muted)', fontWeight: '700', letterSpacing: '0.4px', marginTop: '1px', textTransform: 'uppercase' }}>
+              Skill &amp; Learning Hub
             </div>
           </div>
         </div>
@@ -129,18 +137,18 @@ export default function Header({
           className="header-search-btn"
           style={{
             display: 'flex', alignItems: 'center', gap: '10px',
-            padding: '6px 14px', background: 'var(--bg-secondary)',
-            border: '1px solid var(--border-color)', borderRadius: 'var(--radius-sm)',
+            padding: '7px 14px', background: 'var(--bg-secondary)',
+            border: '1px solid var(--border-color)', borderRadius: '20px',
             color: 'var(--text-secondary)', cursor: 'pointer', fontSize: '0.82rem',
-            transition: 'all 0.15s ease', maxWidth: '240px', flex: 1
+            transition: 'all 0.2s ease', maxWidth: '220px', flex: 1
           }}
         >
           <Search size={14} color="var(--accent-primary)" />
-          <span style={{ flex: 1, textAlign: 'left', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>Search solvers &amp; DSA...</span>
+          <span style={{ flex: 1, textAlign: 'left', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>Search topic or question...</span>
           <span style={{
-            display: 'inline-flex', alignItems: 'center', gap: '2px', padding: '2px 5px',
-            borderRadius: '3px', background: 'var(--bg-card)', border: '1px solid var(--border-color)',
-            fontSize: '0.68rem', fontWeight: '700', color: 'var(--text-muted)'
+            display: 'inline-flex', alignItems: 'center', gap: '2px', padding: '2px 6px',
+            borderRadius: '10px', background: 'var(--bg-card)', border: '1px solid var(--border-color)',
+            fontSize: '0.65rem', fontWeight: '800', color: 'var(--text-muted)'
           }}>
             <Command size={10} /> K
           </span>
@@ -148,31 +156,36 @@ export default function Header({
 
         {/* Desktop Navigation Tabs */}
         <nav className="desktop-header-nav" style={{
-          display: 'flex', alignItems: 'center', gap: '2px',
+          display: 'flex', alignItems: 'center', gap: '4px',
           background: 'var(--bg-secondary)',
-          padding: '3px',
-          borderRadius: 'var(--radius-sm)',
+          padding: '4px',
+          borderRadius: '24px',
           border: '1px solid var(--border-color)',
         }}>
-          {tabs.map(({ id, label, icon: Icon }) => (
-            <button
-              key={id}
-              className={`nav-tab ${currentTab === id ? 'active' : ''}`}
-              onClick={() => handleTabClick(id)}
-              style={{
-                display: 'flex', alignItems: 'center', gap: '6px',
-                padding: '6px 12px', borderRadius: 'var(--radius-xs)',
-                fontSize: '0.82rem', fontWeight: '600', cursor: 'pointer',
-                border: 'none', background: currentTab === id ? 'var(--bg-card)' : 'transparent',
-                color: currentTab === id ? 'var(--accent-primary)' : 'var(--text-secondary)',
-                boxShadow: currentTab === id ? 'var(--shadow-sm)' : 'none',
-                transition: 'all 0.15s ease'
-              }}
-            >
-              <Icon size={14} color={currentTab === id ? 'var(--accent-primary)' : 'var(--text-muted)'} />
-              <span>{label}</span>
-            </button>
-          ))}
+          {tabs.map(({ id, label, icon: Icon }) => {
+            const isActive = currentTab === id;
+            return (
+              <button
+                key={id}
+                className={`nav-tab ${isActive ? 'active' : ''}`}
+                onClick={() => handleTabClick(id)}
+                style={{
+                  display: 'flex', alignItems: 'center', gap: '6px',
+                  padding: '6px 14px', borderRadius: '18px',
+                  fontSize: '0.82rem', fontWeight: '700', cursor: 'pointer',
+                  border: 'none',
+                  background: isActive ? 'var(--accent-primary)' : 'transparent',
+                  color: isActive ? '#ffffff' : 'var(--text-secondary)',
+                  boxShadow: isActive ? '0 3px 10px rgba(37,99,235,0.3)' : 'none',
+                  transition: 'all 0.2s ease',
+                  whiteSpace: 'nowrap'
+                }}
+              >
+                <Icon size={15} color={isActive ? '#ffffff' : 'var(--text-muted)'} />
+                <span>{label}</span>
+              </button>
+            );
+          })}
         </nav>
 
         {/* Right Header Actions */}
@@ -185,19 +198,19 @@ export default function Header({
               className="desktop-stats-badge"
               style={{
                 display: 'flex', alignItems: 'center', gap: '8px',
-                padding: '5px 12px',
+                padding: '6px 12px',
                 background: 'var(--bg-secondary)',
                 border: '1px solid var(--border-color)',
-                borderRadius: 'var(--radius-sm)',
+                borderRadius: '20px',
                 fontSize: '0.78rem', color: 'var(--text-secondary)',
                 cursor: 'pointer', transition: 'all 0.15s ease'
               }}
             >
-              <span style={{ color: 'var(--warning)', fontWeight: '800', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                <Flame size={13} color="#f59e0b" /> {stats.overallAccuracy ?? 0}%
+              <span style={{ color: '#f59e0b', fontWeight: '800', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                <Flame size={14} fill="#f59e0b" color="#f59e0b" /> {stats.overallAccuracy ?? 0}%
               </span>
               <span style={{ color: 'var(--border-color)' }}>│</span>
-              <span>{stats.totalQuestionsAnswered ?? 0} Solved</span>
+              <span style={{ fontWeight: 600 }}>{stats.totalQuestionsAnswered ?? 0} Solved</span>
             </button>
           )}
 
@@ -206,9 +219,9 @@ export default function Header({
             className="btn btn-outline btn-sm"
             onClick={onOpenPreferences}
             title="Customization Preferences"
-            style={{ padding: '6px' }}
+            style={{ padding: '7px', borderRadius: '50%' }}
           >
-            <Palette size={15} color="var(--accent-primary)" />
+            <Palette size={16} color="var(--accent-primary)" />
           </button>
 
           {/* Theme Quick Toggle */}
@@ -216,11 +229,11 @@ export default function Header({
             className="btn btn-outline btn-sm"
             onClick={toggleTheme}
             title="Toggle Light/Dark Theme"
-            style={{ padding: '6px', gap: '4px' }}
+            style={{ padding: '7px', borderRadius: '50%' }}
           >
             {theme === 'dark'
-              ? <Sun size={15} color="#f59e0b" />
-              : <Moon size={15} color="#1e40af" />
+              ? <Sun size={16} color="#f59e0b" />
+              : <Moon size={16} color="#1e40af" />
             }
           </button>
 
@@ -229,9 +242,9 @@ export default function Header({
             className="mobile-hamburger-btn btn btn-outline btn-sm"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle Navigation Menu"
-            style={{ padding: '6px' }}
+            style={{ padding: '7px', borderRadius: '8px' }}
           >
-            {mobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
+            {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
 

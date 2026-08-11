@@ -10,6 +10,7 @@ import BooksSection from './components/BooksSection';
 import InteractiveSandbox from './components/InteractiveSandbox';
 import LeetCode500Section from './components/LeetCode500Section';
 import DailyCurrentAffairs from './components/DailyCurrentAffairs';
+import SpokenEnglishSection from './components/SpokenEnglishSection';
 
 import { fetchCategories, fetchQuestions, submitQuizAttempt, fetchStats, fetchAptitudeGoldTopicQuestions } from './utils/api';
 import { getStoredAttempts, saveAttempt, computeStatsFromAttempts } from './utils/scoreStorage';
@@ -533,6 +534,11 @@ export default function App() {
                   </div>
                 </div>
               </div>
+            )}
+
+            {/* Spoken English Learning & Practice Hub */}
+            {currentTab === 'spoken_english' && (
+              <SpokenEnglishSection />
             )}
 
             {/* Daily Current Affairs Page */}

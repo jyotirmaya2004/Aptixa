@@ -1,0 +1,104 @@
+{
+  "sentences": [
+    {
+      "id": "sen-101",
+      "category": "grammar",
+      "topic": "Present Perfect Continuous Tense",
+      "level": "Intermediate B1",
+      "text": "I have been working on this software project since last morning.",
+      "hint": "Use 'have been' with '-ing' verb for actions starting in past and continuing now.",
+      "collocations": ["working on", "software project", "since last morning"],
+      "targetWords": ["have been working", "since"]
+    },
+    {
+      "id": "sen-102",
+      "category": "grammar",
+      "topic": "Subject-Verb Agreement",
+      "level": "Beginner A2",
+      "text": "Neither the manager nor the employees were present at the meeting.",
+      "hint": "When using 'neither...nor', the verb agrees with the closer subject ('employees').",
+      "collocations": ["present at", "at the meeting"],
+      "targetWords": ["were present"]
+    },
+    {
+      "id": "sen-103",
+      "category": "vocabulary",
+      "topic": "Placement Interview Vocabulary",
+      "level": "Advanced B2",
+      "text": "I am adept at solving complex algorithmic problems under tight deadlines.",
+      "hint": "'Adept at' means highly skilled or proficient.",
+      "collocations": ["adept at", "algorithmic problems", "tight deadlines"],
+      "targetWords": ["adept at", "tight deadlines"]
+    },
+    {
+      "id": "sen-104",
+      "category": "speaking",
+      "topic": "Self Introduction in HR Interview",
+      "level": "Intermediate B1",
+      "text": "I possess a strong foundation in computer science and data structures.",
+      "hint": "Speak clearly with steady pacing and natural pause after 'science'.",
+      "collocations": ["possess a foundation", "data structures"],
+      "targetWords": ["possess", "foundation"]
+    },
+    {
+      "id": "sen-105",
+      "category": "listening",
+      "topic": "Auditory Dictation & Speed",
+      "level": "Advanced C1",
+      "text": "The candidate demonstrated remarkable resilience despite encountering unexpected technical bottlenecks.",
+      "hint": "Focus on pronouncing 'remarkable resilience' and 'bottlenecks' distinctly.",
+      "collocations": ["remarkable resilience", "technical bottlenecks"],
+      "targetWords": ["resilience", "bottlenecks"]
+    },
+    {
+      "id": "sen-106",
+      "category": "vocabulary",
+      "topic": "Corporate Communication",
+      "level": "Advanced C2",
+      "text": "We must streamline our deployment pipeline to mitigate potential security vulnerabilities.",
+      "hint": "'Streamline' means make more efficient; 'mitigate' means lessen severity.",
+      "collocations": ["streamline pipeline", "mitigate vulnerabilities"],
+      "targetWords": ["streamline", "mitigate"]
+    },
+    {
+      "id": "sen-107",
+      "category": "grammar",
+      "topic": "Conditional Sentences (Type 3)",
+      "level": "Advanced B2",
+      "text": "If I had known about the campus drive earlier, I would have applied immediately.",
+      "hint": "Use 'had + past participle' in if-clause and 'would have + past participle' in result.",
+      "collocations": ["campus drive", "applied immediately"],
+      "targetWords": ["had known", "would have applied"]
+    },
+    {
+      "id": "sen-108",
+      "category": "speaking",
+      "topic": "Technical Explanation",
+      "level": "Intermediate B2",
+      "text": "Object-oriented programming optimizes code reusability through inheritance and encapsulation.",
+      "hint": "Emphasize technical terms 'inheritance' and 'encapsulation' with clear pauses.",
+      "collocations": ["code reusability", "inheritance and encapsulation"],
+      "targetWords": ["reusability", "encapsulation"]
+    },
+    {
+      "id": "sen-109",
+      "category": "vocabulary",
+      "topic": "Group Discussion Transitions",
+      "level": "Intermediate B1",
+      "text": "I would like to add a complementary perspective to what my peer just highlighted.",
+      "hint": "'Complementary perspective' politely introduces a new supporting argument in GD.",
+      "collocations": ["complementary perspective", "peer highlighted"],
+      "targetWords": ["complementary", "perspective"]
+    },
+    {
+      "id": "sen-110",
+      "category": "listening",
+      "topic": "Preposition Accuracy",
+      "level": "Beginner A2",
+      "text": "She has been working as a software developer at Google for three years.",
+      "hint": "Use 'for' when specifying the total duration of time ('three years').",
+      "collocations": ["software developer", "for three years"],
+      "targetWords": ["as a", "at Google", "for three years"]
+    }
+  ]
+}
