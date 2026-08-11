@@ -5,6 +5,7 @@ import {
   HelpCircle, Eye, Zap, AlertCircle, Award, BarChart3, CheckSquare, Send, RotateCcw, ListFilter
 } from 'lucide-react';
 import { fetchBooks, fetchBookChapter } from '../utils/api';
+import { STATIC_BOOKS } from '../data/booksData';
 
 export default function BooksSection({ onOpenQuizWithQuestions }) {
   const [books, setBooks] = useState([]);
@@ -31,7 +32,8 @@ export default function BooksSection({ onOpenQuizWithQuestions }) {
       setBooks(data);
       setLoading(false);
     } catch (err) {
-      console.error(err);
+      console.warn('Using static books fallback for Vercel deployment');
+      setBooks(STATIC_BOOKS);
       setLoading(false);
     }
   };
