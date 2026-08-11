@@ -22,13 +22,13 @@ export default function Header({
   const [deferredPrompt, setDeferredPrompt] = useState(null);
 
   const tabs = [
-    { id: 'categories',     label: 'Assessment Domains', icon: Grid },
-    { id: 'spoken_english', label: 'Spoken English',     icon: Mic },
-    { id: 'current_affairs',label: 'Current Affairs',    icon: Newspaper },
-    { id: 'leetcode500',    label: 'DSA',                icon: Code2 },
-    { id: 'sandbox',        label: 'Live Sandbox',       icon: Sparkles },
-    { id: 'books',          label: 'Popular Books',      icon: BookOpen },
-    { id: 'stats',          label: 'Analytics',          icon: BarChart3 },
+    { id: 'categories',     label: 'Domains',        icon: Grid },
+    { id: 'spoken_english', label: 'Spoken English', icon: Mic },
+    { id: 'current_affairs',label: 'News & GK',      icon: Newspaper },
+    { id: 'leetcode500',    label: 'DSA 500',        icon: Code2 },
+    { id: 'sandbox',        label: 'Sandbox',        icon: Sparkles },
+    { id: 'books',          label: 'Books',          icon: BookOpen },
+    { id: 'stats',          label: 'Analytics',      icon: BarChart3 },
   ];
 
   // Hotkey listener & PWA beforeinstallprompt listener
@@ -156,10 +156,10 @@ export default function Header({
 
         {/* Desktop Navigation Tabs */}
         <nav className="desktop-header-nav" style={{
-          display: 'flex', alignItems: 'center', gap: '4px',
+          display: 'flex', alignItems: 'center', gap: '3px',
           background: 'var(--bg-secondary)',
-          padding: '4px',
-          borderRadius: '24px',
+          padding: '3px',
+          borderRadius: '20px',
           border: '1px solid var(--border-color)',
         }}>
           {tabs.map(({ id, label, icon: Icon }) => {
@@ -170,18 +170,18 @@ export default function Header({
                 className={`nav-tab ${isActive ? 'active' : ''}`}
                 onClick={() => handleTabClick(id)}
                 style={{
-                  display: 'flex', alignItems: 'center', gap: '6px',
-                  padding: '6px 14px', borderRadius: '18px',
-                  fontSize: '0.82rem', fontWeight: '700', cursor: 'pointer',
+                  display: 'flex', alignItems: 'center', gap: '5px',
+                  padding: '5px 10px', borderRadius: '15px',
+                  fontSize: '0.78rem', fontWeight: '700', cursor: 'pointer',
                   border: 'none',
                   background: isActive ? 'var(--accent-primary)' : 'transparent',
                   color: isActive ? '#ffffff' : 'var(--text-secondary)',
-                  boxShadow: isActive ? '0 3px 10px rgba(37,99,235,0.3)' : 'none',
-                  transition: 'all 0.2s ease',
+                  boxShadow: isActive ? '0 2px 8px rgba(37,99,235,0.25)' : 'none',
+                  transition: 'all 0.15s ease',
                   whiteSpace: 'nowrap'
                 }}
               >
-                <Icon size={15} color={isActive ? '#ffffff' : 'var(--text-muted)'} />
+                <Icon size={14} color={isActive ? '#ffffff' : 'var(--text-muted)'} />
                 <span>{label}</span>
               </button>
             );
@@ -197,17 +197,17 @@ export default function Header({
               onClick={() => setStatsPopoverOpen(prev => !prev)}
               className="desktop-stats-badge"
               style={{
-                display: 'flex', alignItems: 'center', gap: '8px',
-                padding: '6px 12px',
+                display: 'flex', alignItems: 'center', gap: '6px',
+                padding: '5px 10px',
                 background: 'var(--bg-secondary)',
                 border: '1px solid var(--border-color)',
-                borderRadius: '20px',
-                fontSize: '0.78rem', color: 'var(--text-secondary)',
+                borderRadius: '18px',
+                fontSize: '0.76rem', color: 'var(--text-secondary)',
                 cursor: 'pointer', transition: 'all 0.15s ease'
               }}
             >
               <span style={{ color: '#f59e0b', fontWeight: '800', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                <Flame size={14} fill="#f59e0b" color="#f59e0b" /> {stats.overallAccuracy ?? 0}%
+                <Flame size={13} fill="#f59e0b" color="#f59e0b" /> {stats.overallAccuracy ?? 0}%
               </span>
               <span style={{ color: 'var(--border-color)' }}>│</span>
               <span style={{ fontWeight: 600 }}>{stats.totalQuestionsAnswered ?? 0} Solved</span>
@@ -219,22 +219,9 @@ export default function Header({
             className="btn btn-outline btn-sm"
             onClick={onOpenPreferences}
             title="Customization Preferences"
-            style={{ padding: '7px', borderRadius: '50%' }}
+            style={{ padding: '6px', borderRadius: '50%' }}
           >
             <Palette size={16} color="var(--accent-primary)" />
-          </button>
-
-          {/* Theme Quick Toggle */}
-          <button
-            className="btn btn-outline btn-sm"
-            onClick={toggleTheme}
-            title="Toggle Light/Dark Theme"
-            style={{ padding: '7px', borderRadius: '50%' }}
-          >
-            {theme === 'dark'
-              ? <Sun size={16} color="#f59e0b" />
-              : <Moon size={16} color="#1e40af" />
-            }
           </button>
 
           {/* Mobile Hamburger Toggle */}
