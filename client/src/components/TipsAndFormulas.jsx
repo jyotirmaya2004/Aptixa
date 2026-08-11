@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { 
   Lightbulb, Calculator, Sparkles, Search, BookOpen, Clock, 
-  Check, Copy, Filter 
+  Check, Copy, Filter, Info 
 } from 'lucide-react';
 import { MATHEMATICAL_FORMULAS } from '../data/mathematicalFormulas';
 import FormulaSvgDiagram from './FormulaSvgDiagram';
@@ -39,7 +39,7 @@ export default function TipsAndFormulas() {
             Mathematical Formulas &amp; Visual Shortcuts
           </h2>
           <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: '1.6', marginBottom: '0' }}>
-            Comprehensive reference of mathematical formulas, geometric equations, algebraic identities, probability theorems, and competitive shortcuts with visual SVG representations.
+            Comprehensive reference of mathematical formulas, geometric equations, algebraic identities, probability theorems, and competitive shortcuts with detailed variable breakdowns and visual geometric diagrams.
           </p>
         </div>
       </div>
@@ -97,10 +97,12 @@ export default function TipsAndFormulas() {
 
               <h4 style={{ fontSize: '1.02rem', fontWeight: '700', marginBottom: '10px' }}>{item.title}</h4>
 
-              {/* Visual SVG Diagram for the Formula */}
-              <div style={{ marginBottom: '12px' }}>
-                <FormulaSvgDiagram type={item.svg} title={item.title} />
-              </div>
+              {/* Visual SVG Diagram ONLY for genuine geometric/visual formulas */}
+              {item.svg && item.svg !== 'none' && (
+                <div style={{ marginBottom: '12px' }}>
+                  <FormulaSvgDiagram type={item.svg} title={item.title} />
+                </div>
+              )}
 
               {/* Highlighted Formula Block */}
               <div style={{
@@ -118,6 +120,24 @@ export default function TipsAndFormulas() {
               }}>
                 {item.formula}
               </div>
+
+              {/* Explicit Variable Breakdown (Where) */}
+              {item.where && (
+                <div style={{ 
+                  padding: '8px 12px', 
+                  background: 'var(--bg-glass)', 
+                  borderLeft: '3px solid var(--accent-primary)', 
+                  borderRadius: '0 var(--radius-xs) var(--radius-xs) 0', 
+                  fontSize: '0.8rem', 
+                  color: 'var(--text-secondary)', 
+                  marginBottom: '12px',
+                  lineHeight: '1.45'
+                }}>
+                  <strong style={{ color: 'var(--accent-primary)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                    <Info size={12} /> Where:
+                  </strong> {item.where}
+                </div>
+              )}
 
               <p style={{ fontSize: '0.84rem', color: 'var(--text-secondary)', lineHeight: '1.5', marginBottom: '12px' }}>
                 {item.description}
