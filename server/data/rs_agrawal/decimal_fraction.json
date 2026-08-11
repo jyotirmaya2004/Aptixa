@@ -7,20 +7,2951 @@
   "description": "Standard objective problems on Prime Factorization, Highest Common Factor, and Lowest Common Multiple.",
   "questions": [
     {
-      "id": "decimal-fraction-001",
-      "chapter": "H.C.F. and L.C.M.",
+      "id": "decimal-fractions-001",
+      "chapter": "Decimal Fractions",
       "question_number": 1,
-      "question": "Find the H.C.F. of 204, 1190 and 1445.",
+      "question": "The value of 42 10000 in decimal fraction is (L.I.C.A.D.O., 2008)",
       "options": {
-        "a": "17",
-        "b": "19",
-        "c": "23",
-        "d": "29"
+        "a": ".0042",
+        "b": ".00042",
+        "c": ".0420",
+        "d": "42000"
       },
       "correct_option": "a",
-      "answer": "17",
-      "book_page": 35,
-      "pdf_page": 44
+      "answer": ".0042"
+    },
+    {
+      "id": "decimal-fractions-002",
+      "chapter": "Decimal Fractions",
+      "question_number": 2,
+      "question": "The fraction 101 27 100000 in decimal form is",
+      "options": {
+        "a": ".01027",
+        "b": ".10127",
+        "c": "101.00027",
+        "d": "101.000027"
+      },
+      "correct_option": "c",
+      "answer": "101.00027"
+    },
+    {
+      "id": "decimal-fractions-003",
+      "chapter": "Decimal Fractions",
+      "question_number": 3,
+      "question": "875.65 divided by 83 Their correct sequence in decreasing order is:",
+      "options": {
+        "a": "1, 3, 2",
+        "b": "2, 1, 3",
+        "c": "2, 3, 1",
+        "d": "3, 1, 2"
+      },
+      "correct_option": "b",
+      "answer": "2, 1, 3"
+    },
+    {
+      "id": "decimal-fractions-004",
+      "chapter": "Decimal Fractions",
+      "question_number": 4,
+      "question": "The place value of 9 in 0.06945 is (L.I.C.A.D.O., 2008)",
+      "options": {
+        "a": "9",
+        "b": "9 10",
+        "c": "9 100",
+        "d": "9 1000"
+      },
+      "correct_option": "d",
+      "answer": "9 1000"
+    },
+    {
+      "id": "decimal-fractions-005",
+      "chapter": "Decimal Fractions",
+      "question_number": 5,
+      "question": "What decimal of an hour is a second?",
+      "options": {
+        "a": ".0025",
+        "b": ".0256",
+        "c": ".00027",
+        "d": ".000126"
+      },
+      "correct_option": "c",
+      "answer": ".00027"
+    },
+    {
+      "id": "decimal-fractions-006",
+      "chapter": "Decimal Fractions",
+      "question_number": 6,
+      "question": "7 5 If 47.2506 = 4A + 2C 6E, B D + + + then the value of 5A + 3B + 6C + D + 3E is",
+      "options": {
+        "a": "53.6003",
+        "b": "53.6031",
+        "c": "153.6003",
+        "d": "213.0003"
+      },
+      "correct_option": "c",
+      "answer": "153.6003"
+    },
+    {
+      "id": "decimal-fractions-007",
+      "chapter": "Decimal Fractions",
+      "question_number": 7,
+      "question": "Express 1999 2111 in decimal. (R.R.B., 2006)",
+      "options": {
+        "a": "0.893",
+        "b": "0.904",
+        "c": "0.946",
+        "d": "0.986"
+      },
+      "correct_option": "c",
+      "answer": "0.946"
+    },
+    {
+      "id": "decimal-fractions-008",
+      "chapter": "Decimal Fractions",
+      "question_number": 8,
+      "question": "How many times is 0.1 greater than 0.01?",
+      "options": {
+        "a": "1 time",
+        "b": "10 times",
+        "c": "100 times",
+        "d": "1000 times"
+      },
+      "correct_option": "b",
+      "answer": "10 times"
+    },
+    {
+      "id": "decimal-fractions-009",
+      "chapter": "Decimal Fractions",
+      "question_number": 9,
+      "question": "Out of the fractions 3 4 5 6 7 , , , , , 7 11 9 13 12 which is the second largest? (Bank Recruitment, 2010)",
+      "options": {
+        "a": "3 7",
+        "b": "4 11",
+        "c": "5 9",
+        "d": "6 13",
+        "e": "7 12"
+      },
+      "correct_option": "c",
+      "answer": "5 9"
+    },
+    {
+      "id": "decimal-fractions-010",
+      "chapter": "Decimal Fractions",
+      "question_number": 10,
+      "question": "Which of the following has fractions in ascending order?",
+      "options": {
+        "a": "2 3 7 9 8 , , , , 3 5 9 11 9",
+        "b": "3 2 9 7 8 , , , , 5 3 11 9 9",
+        "c": "3 2 7 9 8 , , , , 5 3 9 11 9",
+        "d": "8 9 7 2 3 , , , , 9 11 9 3 5",
+        "e": "8 9 7 3 2 , , , , 9 11 9 5 3"
+      },
+      "correct_option": "c",
+      "answer": "3 2 7 9 8 , , , , 5 3 9 11 9"
+    },
+    {
+      "id": "decimal-fractions-011",
+      "chapter": "Decimal Fractions",
+      "question_number": 11,
+      "question": "Which of the following are in descending order of their values?",
+      "options": {
+        "a": "5 7 8 11 , , , 9 11 15 17",
+        "b": "5 8 11 7 , , , 9 15 17 11",
+        "c": "11 7 8 5 , , , 17 11 15 9",
+        "d": "11 7 5 8 , , , 17 11 9 15"
+      },
+      "correct_option": "d",
+      "answer": "11 7 5 8 , , , 17 11 9 15"
+    },
+    {
+      "id": "decimal-fractions-012",
+      "chapter": "Decimal Fractions",
+      "question_number": 12,
+      "question": "What is the difference between the biggest and the smallest fraction among 2 3 , , 3 4 4 5 and ? 5 6 (S.S.C., 2006)",
+      "options": {
+        "a": "1 6",
+        "b": "1 12",
+        "c": "1 20",
+        "d": "1 30"
+      },
+      "correct_option": "a",
+      "answer": "1 6"
+    },
+    {
+      "id": "decimal-fractions-013",
+      "chapter": "Decimal Fractions",
+      "question_number": 13,
+      "question": "The least among the following fractions is (S.S.C., 2010)",
+      "options": {
+        "a": "15 16",
+        "b": "19 20",
+        "c": "24 25",
+        "d": "34 35"
+      },
+      "correct_option": "a",
+      "answer": "15 16"
+    },
+    {
+      "id": "decimal-fractions-014",
+      "chapter": "Decimal Fractions",
+      "question_number": 14,
+      "question": "Out of the fractions 9 3 6 4 7 , , , and , 31 17 23 11 25 which is the largest? (Bank Recruitment, 2010)",
+      "options": {
+        "a": "9 31",
+        "b": "3 17",
+        "c": "6 23",
+        "d": "4 11",
+        "e": "None of these"
+      },
+      "correct_option": "d",
+      "answer": "4 11"
+    },
+    {
+      "id": "decimal-fractions-015",
+      "chapter": "Decimal Fractions",
+      "question_number": 15,
+      "question": "If the fractions 2 3 4 5 6 , , , and 5 8 9 13 11 are arranged in ascending order of their values, which one will be the fourth? (S.B.I.P.O., 2008)",
+      "options": {
+        "a": "2 5",
+        "b": "3 8",
+        "c": "4 9",
+        "d": "5 13",
+        "e": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "4 9"
+    },
+    {
+      "id": "decimal-fractions-016",
+      "chapter": "Decimal Fractions",
+      "question_number": 16,
+      "question": "Which part contains the fractions in ascending order?",
+      "options": {
+        "a": "11 16 19 , , 14 19 21",
+        "b": "16 11 19 , , 19 14 21",
+        "c": "16 19 11 , , 19 21 14",
+        "d": "19 11 16 , , 21 14 19"
+      },
+      "correct_option": "a",
+      "answer": "11 16 19 , , 14 19 21"
+    },
+    {
+      "id": "decimal-fractions-017",
+      "chapter": "Decimal Fractions",
+      "question_number": 17,
+      "question": "Which of the following fractions is the smallest?",
+      "options": {
+        "a": "13 16",
+        "b": "15 19",
+        "c": "17 21",
+        "d": "7 8"
+      },
+      "correct_option": "b",
+      "answer": "15 19"
+    },
+    {
+      "id": "decimal-fractions-018",
+      "chapter": "Decimal Fractions",
+      "question_number": 18,
+      "question": "Which of the following fractions is greater than 3 4 and less than 5 6 ?",
+      "options": {
+        "a": "1 2",
+        "b": "2 3",
+        "c": "4 5",
+        "d": "9 10"
+      },
+      "correct_option": "c",
+      "answer": "4 5"
+    },
+    {
+      "id": "decimal-fractions-019",
+      "chapter": "Decimal Fractions",
+      "question_number": 19,
+      "question": "Which of the following fractions is less than 7 8 and greater than 1 3 ?",
+      "options": {
+        "a": "1 4",
+        "b": "23 24",
+        "c": "11 12",
+        "d": "17 24"
+      },
+      "correct_option": "d",
+      "answer": "17 24"
+    },
+    {
+      "id": "decimal-fractions-020",
+      "chapter": "Decimal Fractions",
+      "question_number": 20,
+      "question": "Which of the following numbers does not lie between 4 7 and ? 5 13",
+      "options": {
+        "a": "1 2",
+        "b": "2 3",
+        "c": "3 4",
+        "d": "5 7"
+      },
+      "correct_option": "a",
+      "answer": "1 2"
+    },
+    {
+      "id": "decimal-fractions-021",
+      "chapter": "Decimal Fractions",
+      "question_number": 21,
+      "question": "The arrangement of rational numbers 7 5 2 , , 10 8 3 − − − in ascending order is",
+      "options": {
+        "a": "7 2 5 , , 3 8 10 − − −",
+        "b": "7 5 2 , , 8 10 3 − − −",
+        "c": "7 5 2 , , 10 8 3 − − −",
+        "d": "7 2 5 , , 10 3 8 − − −"
+      },
+      "correct_option": "d",
+      "answer": "7 2 5 , , 10 3 8 − − −"
+    },
+    {
+      "id": "decimal-fractions-022",
+      "chapter": "Decimal Fractions",
+      "question_number": 22,
+      "question": "Which of the following fractions lies between 2 3 and ? 3 5 (C.P.O., 2006)",
+      "options": {
+        "a": "2 5",
+        "b": "1 3",
+        "c": "1 15",
+        "d": "31 50"
+      },
+      "correct_option": "d",
+      "answer": "31 50"
+    },
+    {
+      "id": "decimal-fractions-023",
+      "chapter": "Decimal Fractions",
+      "question_number": 23,
+      "question": "Which of the following fractions is less than 1 ? 5 (R.R.B., 2006)",
+      "options": {
+        "a": "8 35",
+        "b": "8 37",
+        "c": "8 39",
+        "d": "2 11"
+      },
+      "correct_option": "d",
+      "answer": "2 11"
+    },
+    {
+      "id": "decimal-fractions-024",
+      "chapter": "Decimal Fractions",
+      "question_number": 24,
+      "question": "Which of the following fractions is nearest to 2 ? 5 (R.R.B., 2006)",
+      "options": {
+        "a": "4 5",
+        "b": "21 50",
+        "c": "20001 50000",
+        "d": "200001 500000"
+      },
+      "correct_option": "d",
+      "answer": "200001 500000"
+    },
+    {
+      "id": "decimal-fractions-025",
+      "chapter": "Decimal Fractions",
+      "question_number": 25,
+      "question": "The rational numbers lying between 1 3 and 3 4 are",
+      "options": {
+        "a": "117 287 , 300 400",
+        "b": "95 301 , 300 400",
+        "c": "99 301 , 300 400",
+        "d": "97 299 , 300 500"
+      },
+      "correct_option": "a",
+      "answer": "117 287 , 300 400"
+    },
+    {
+      "id": "decimal-fractions-026",
+      "chapter": "Decimal Fractions",
+      "question_number": 26,
+      "question": "Three rational numbers between 1 5 and 1 6 are",
+      "options": {
+        "a": "4 9 17 , , 25 50 100",
+        "b": "4 17 167 , , 25 100 1000",
+        "c": "4 9 167 , , 25 50 1000",
+        "d": "9 17 167 , , 50 100 1000"
+      },
+      "correct_option": "d",
+      "answer": "9 17 167 , , 50 100 1000"
+    },
+    {
+      "id": "decimal-fractions-027",
+      "chapter": "Decimal Fractions",
+      "question_number": 27,
+      "question": "0.3 + 3 + 3.33 + 3.3 + 3.03 + 333 =? (NABARD, 2009)",
+      "options": {
+        "a": "345.99",
+        "b": "355.96",
+        "c": "375.66",
+        "d": "375.93",
+        "e": "None of these"
+      },
+      "correct_option": "e",
+      "answer": "None of these"
+    },
+    {
+      "id": "decimal-fractions-028",
+      "chapter": "Decimal Fractions",
+      "question_number": 28,
+      "question": "636.66 + 366.36 + 363.33 =? (Bank Recruitment, 2009)",
+      "options": {
+        "a": "1336.35",
+        "b": "1363.25",
+        "c": "1366.25",
+        "d": "1636.25",
+        "e": "None of these"
+      },
+      "correct_option": "e",
+      "answer": "None of these"
+    },
+    {
+      "id": "decimal-fractions-029",
+      "chapter": "Decimal Fractions",
+      "question_number": 29,
+      "question": "24.424 + 5.656 + 1.131 + 0.089 =? (Bank P.O., 2009)",
+      "options": {
+        "a": "31.003",
+        "b": "31.3",
+        "c": "31.0003",
+        "d": "31.03",
+        "e": "None of these"
+      },
+      "correct_option": "b",
+      "answer": "31.3"
+    },
+    {
+      "id": "decimal-fractions-030",
+      "chapter": "Decimal Fractions",
+      "question_number": 30,
+      "question": "555.05 + 55.5 + 5.55 + 5 + 0.55 =? (S.B.I.P.O., 2008)",
+      "options": {
+        "a": "621.65",
+        "b": "634.85",
+        "c": "647.35",
+        "d": "655.75",
+        "e": "None of these"
+      },
+      "correct_option": "a",
+      "answer": "621.65"
+    },
+    {
+      "id": "decimal-fractions-031",
+      "chapter": "Decimal Fractions",
+      "question_number": 31,
+      "question": "4 + 4.44 + 0.4 + 44.04 + 444 =? (Bank P.O., 2008)",
+      "options": {
+        "a": "469.88",
+        "b": "487.66",
+        "c": "496.88",
+        "d": "497.24",
+        "e": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "496.88"
+    },
+    {
+      "id": "decimal-fractions-032",
+      "chapter": "Decimal Fractions",
+      "question_number": 32,
+      "question": "999.99 + 99.99 + 9.99 =? (Bank Recruitment, 2008)",
+      "options": {
+        "a": "1019.89",
+        "b": "1099.88",
+        "c": "1108.99",
+        "d": "1109.99",
+        "e": "None of these"
+      },
+      "correct_option": "e",
+      "answer": "None of these"
+    },
+    {
+      "id": "decimal-fractions-033",
+      "chapter": "Decimal Fractions",
+      "question_number": 33,
+      "question": "10.0001 + 9.9999 – 8.9995 =? (E.P.F.O.S.S.A., 2004)",
+      "options": {
+        "a": "9.0005",
+        "b": "10.9995",
+        "c": "11.0001",
+        "d": "11.0005",
+        "e": "None of these"
+      },
+      "correct_option": "d",
+      "answer": "11.0005"
+    },
+    {
+      "id": "decimal-fractions-034",
+      "chapter": "Decimal Fractions",
+      "question_number": 34,
+      "question": "48.95 – 32.006 =?",
+      "options": {
+        "a": "16.089",
+        "b": "16.35",
+        "c": "16.89",
+        "d": "16.944"
+      },
+      "correct_option": "d",
+      "answer": "16.944"
+    },
+    {
+      "id": "decimal-fractions-035",
+      "chapter": "Decimal Fractions",
+      "question_number": 35,
+      "question": "58.621 – 13.829 – 7.302 – 1.214 =? (Bank P.O., 2009)",
+      "options": {
+        "a": "31.254",
+        "b": "35.272",
+        "c": "36.276",
+        "d": "37.281",
+        "e": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "36.276"
+    },
+    {
+      "id": "decimal-fractions-036",
+      "chapter": "Decimal Fractions",
+      "question_number": 36,
+      "question": "341.42 – 53.74 =? – 62.86 (Bank Recruitment, 2010)",
+      "options": {
+        "a": "260.44",
+        "b": "340.44",
+        "c": "350.54",
+        "d": "450.54",
+        "e": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "350.54"
+    },
+    {
+      "id": "decimal-fractions-037",
+      "chapter": "Decimal Fractions",
+      "question_number": 37,
+      "question": "534.596 + 61.472 – 496.708 =? + 27.271 (Bank P.O., 2010)",
+      "options": {
+        "a": "62.069",
+        "b": "72.089",
+        "c": "126.631",
+        "d": "132.788",
+        "e": "None of these"
+      },
+      "correct_option": "b",
+      "answer": "72.089"
+    },
+    {
+      "id": "decimal-fractions-038",
+      "chapter": "Decimal Fractions",
+      "question_number": 38,
+      "question": "11.71 – 0.86 + 1.78 – 9.20 =? (Bank Recruitment, 2010)",
+      "options": {
+        "a": "2.43",
+        "b": "3.13",
+        "c": "3.43",
+        "d": "4.13",
+        "e": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "3.43"
+    },
+    {
+      "id": "decimal-fractions-039",
+      "chapter": "Decimal Fractions",
+      "question_number": 39,
+      "question": "726.34 + 888.12 –? = 1001.88 (Bank P.O., 2009)",
+      "options": {
+        "a": "602.64",
+        "b": "618.78",
+        "c": "621.58",
+        "d": "654.54",
+        "e": "None of these"
+      },
+      "correct_option": "e",
+      "answer": "None of these"
+    },
+    {
+      "id": "decimal-fractions-040",
+      "chapter": "Decimal Fractions",
+      "question_number": 40,
+      "question": "832.58 – 242.31 = 779.84 –?",
+      "options": {
+        "a": "179.57",
+        "b": "199.57",
+        "c": "295.05",
+        "d": "None of these"
+      },
+      "correct_option": "d",
+      "answer": "None of these"
+    },
+    {
+      "id": "decimal-fractions-041",
+      "chapter": "Decimal Fractions",
+      "question_number": 41,
+      "question": "Which one of the following is wrong?",
+      "options": {
+        "a": "9 4 + 1.75 = 4",
+        "b": "9 2.2 4 5 + =",
+        "c": "6 2.8 4 5 + =",
+        "d": "3 1.5 4 2 + ="
+      },
+      "correct_option": "d",
+      "answer": "3 1.5 4 2 + ="
+    },
+    {
+      "id": "decimal-fractions-042",
+      "chapter": "Decimal Fractions",
+      "question_number": 42,
+      "question": "If x = 10 and y = 0.1, which of the following is the greatest?",
+      "options": {
+        "a": "x2 + y2",
+        "b": "x2 – y2 2 2 x",
+        "c": "x2 y2",
+        "d": "y"
+      },
+      "correct_option": "d",
+      "answer": "y"
+    },
+    {
+      "id": "decimal-fractions-043",
+      "chapter": "Decimal Fractions",
+      "question_number": 43,
+      "question": "Which of the following is closest to zero? (M.C.A., 2005)",
+      "options": {
+        "a": "(0.09)2",
+        "b": "0.09",
+        "c": "(1 – 0.9)2",
+        "d": "1 – (0.9)2"
+      },
+      "correct_option": "a",
+      "answer": "(0.09)2"
+    },
+    {
+      "id": "decimal-fractions-044",
+      "chapter": "Decimal Fractions",
+      "question_number": 44,
+      "question": "One hundredth of centimetre when written in fractions of kilometres, is equal to (M.C.A., 2005)",
+      "options": {
+        "a": "0.0000001",
+        "b": "0.000001",
+        "c": "0.0001",
+        "d": "0.001"
+      },
+      "correct_option": "a",
+      "answer": "0.0000001"
+    },
+    {
+      "id": "decimal-fractions-045",
+      "chapter": "Decimal Fractions",
+      "question_number": 45,
+      "question": "What will come in place of question mark in the following equation? 54.(?)3 + 543 + 5.43 = 603.26",
+      "options": {
+        "a": "5",
+        "b": "6",
+        "c": "8",
+        "d": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "8"
+    },
+    {
+      "id": "decimal-fractions-046",
+      "chapter": "Decimal Fractions",
+      "question_number": 46,
+      "question": "Which of the following is equal to 3.14 × 106? (Hotel Management, 2003)",
+      "options": {
+        "a": "314",
+        "b": "3140",
+        "c": "3140000",
+        "d": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "3140000"
+    },
+    {
+      "id": "decimal-fractions-047",
+      "chapter": "Decimal Fractions",
+      "question_number": 47,
+      "question": "The number 518,000,000 when expressed in scientific notation, equals",
+      "options": {
+        "a": "51.8 × 106",
+        "b": "51.8 × 107",
+        "c": "5.18 × 108",
+        "d": "5.18 × 109"
+      },
+      "correct_option": "c",
+      "answer": "5.18 × 108"
+    },
+    {
+      "id": "decimal-fractions-048",
+      "chapter": "Decimal Fractions",
+      "question_number": 48,
+      "question": "0.000006723 when expressed in scientific notation, is",
+      "options": {
+        "a": "6723 × 10–5",
+        "b": "67.23 × 10–7",
+        "c": "6.723 × 10–6",
+        "d": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "6.723 × 10–6"
+    },
+    {
+      "id": "decimal-fractions-049",
+      "chapter": "Decimal Fractions",
+      "question_number": 49,
+      "question": "If 1.125 × 10k = 0.001125, then the value of k is:",
+      "options": {
+        "a": "– 4",
+        "b": "– 3",
+        "c": "– 2",
+        "d": "– 1"
+      },
+      "correct_option": "b",
+      "answer": "– 3"
+    },
+    {
+      "id": "decimal-fractions-050",
+      "chapter": "Decimal Fractions",
+      "question_number": 50,
+      "question": "(0.1 × 0.01 × 0.001 × 107) is equal to (S.S.C., 2010)",
+      "options": {
+        "a": "1 10",
+        "b": "1 100",
+        "c": "10",
+        "d": "100"
+      },
+      "correct_option": "c",
+      "answer": "10"
+    },
+    {
+      "id": "decimal-fractions-051",
+      "chapter": "Decimal Fractions",
+      "question_number": 51,
+      "question": "383 × 38 × 3.8 =? (Bank P.O., 2008)",
+      "options": {
+        "a": "55305.2",
+        "b": "56305.4",
+        "c": "57305.6",
+        "d": "58305.8",
+        "e": "None of these"
+      },
+      "correct_option": "a",
+      "answer": "55305.2"
+    },
+    {
+      "id": "decimal-fractions-052",
+      "chapter": "Decimal Fractions",
+      "question_number": 52,
+      "question": "The product of 0.09 and 0.007 is (L.I.C.A.D.O., 2008)",
+      "options": {
+        "a": "0.6300",
+        "b": "0.00063",
+        "c": "0.00630",
+        "d": "0.000063"
+      },
+      "correct_option": "b",
+      "answer": "0.00063"
+    },
+    {
+      "id": "decimal-fractions-053",
+      "chapter": "Decimal Fractions",
+      "question_number": 53,
+      "question": "0.1 × 0.01 × 0.001 =? (M.C.A., 2005)",
+      "options": {
+        "a": "0.0001",
+        "b": "0.00001",
+        "c": "0.000001",
+        "d": "0.0000001"
+      },
+      "correct_option": "c",
+      "answer": "0.000001"
+    },
+    {
+      "id": "decimal-fractions-054",
+      "chapter": "Decimal Fractions",
+      "question_number": 54,
+      "question": "3 × 0.3 × 0.03 × 0.003 × 30 =?",
+      "options": {
+        "a": "0.0000243",
+        "b": "0.000243",
+        "c": "0.00243",
+        "d": "0.0243"
+      },
+      "correct_option": "c",
+      "answer": "0.00243"
+    },
+    {
+      "id": "decimal-fractions-055",
+      "chapter": "Decimal Fractions",
+      "question_number": 55,
+      "question": "14.4 × 16.5 × 8 =? (Bank P.O., 2009)",
+      "options": {
+        "a": "1908.0",
+        "b": "1900.8",
+        "c": "1912.4",
+        "d": "1924.8"
+      },
+      "correct_option": "b",
+      "answer": "1900.8"
+    },
+    {
+      "id": "decimal-fractions-056",
+      "chapter": "Decimal Fractions",
+      "question_number": 56,
+      "question": "47.7 × 12.4 × 8.6 =? (Bank Recruitment, 2009)",
+      "options": {
+        "a": "5086.728",
+        "b": "5218.668",
+        "c": "5708.428",
+        "d": "6180.656",
+        "e": "None of these"
+      },
+      "correct_option": "a",
+      "answer": "5086.728"
+    },
+    {
+      "id": "decimal-fractions-057",
+      "chapter": "Decimal Fractions",
+      "question_number": 57,
+      "question": "32.4 × 11.5 × 8.5 =? (Bank Recruitment, 2009)",
+      "options": {
+        "a": "3149.5",
+        "b": "3129.1",
+        "c": "3167.1",
+        "d": "3162.5",
+        "e": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "3167.1"
+    },
+    {
+      "id": "decimal-fractions-058",
+      "chapter": "Decimal Fractions",
+      "question_number": 58,
+      "question": "0.04 × 0.0162 is equal to",
+      "options": {
+        "a": "6.48 × 10–3",
+        "b": "6.48 × 10–4",
+        "c": "6.48 × 10–5",
+        "d": "6.48 × 10–6"
+      },
+      "correct_option": "b",
+      "answer": "6.48 × 10–4"
+    },
+    {
+      "id": "decimal-fractions-059",
+      "chapter": "Decimal Fractions",
+      "question_number": 59,
+      "question": "How many digits will be there to the right of the decimal point in the product of 95.75 and .02554?",
+      "options": {
+        "a": "5",
+        "b": "6",
+        "c": "7",
+        "d": "None of these 23 .00625 of 5 when expressed as a vulgar fraction,"
+      },
+      "correct_option": "b",
+      "answer": "6"
+    },
+    {
+      "id": "decimal-fractions-060",
+      "chapter": "Decimal Fractions",
+      "question_number": 60,
+      "question": "      equals",
+      "options": {
+        "a": "23 80",
+        "b": "23 800",
+        "c": "23 8000",
+        "d": "125 23"
+      },
+      "correct_option": "b",
+      "answer": "23 800"
+    },
+    {
+      "id": "decimal-fractions-061",
+      "chapter": "Decimal Fractions",
+      "question_number": 61,
+      "question": "Which is the closest approximation to the following product? 0.3333 × 0.25 × 0.499 × 0.125 × 24",
+      "options": {
+        "a": "1 8",
+        "b": "3 4",
+        "c": "3 8",
+        "d": "2 5"
+      },
+      "correct_option": "a",
+      "answer": "1 8"
+    },
+    {
+      "id": "decimal-fractions-062",
+      "chapter": "Decimal Fractions",
+      "question_number": 62,
+      "question": "The number 0.0561 correct to two places of decimals is",
+      "options": {
+        "a": "0.1",
+        "b": "0.06",
+        "c": "0.05",
+        "d": "0.056"
+      },
+      "correct_option": "b",
+      "answer": "0.06"
+    },
+    {
+      "id": "decimal-fractions-063",
+      "chapter": "Decimal Fractions",
+      "question_number": 63,
+      "question": "(0.05 × 5 – 0.005 × 5) equals (S.S.C., 2005)",
+      "options": {
+        "a": "0.0225",
+        "b": "0.225",
+        "c": "0.250",
+        "d": "0.275"
+      },
+      "correct_option": "b",
+      "answer": "0.225"
+    },
+    {
+      "id": "decimal-fractions-064",
+      "chapter": "Decimal Fractions",
+      "question_number": 64,
+      "question": "19.99 × 9.9 + 99.9 =? (NABARD, 2008)",
+      "options": {
+        "a": "129.79",
+        "b": "297.801",
+        "c": "1009",
+        "d": "296.910",
+        "e": "None of these"
+      },
+      "correct_option": "b",
+      "answer": "297.801"
+    },
+    {
+      "id": "decimal-fractions-065",
+      "chapter": "Decimal Fractions",
+      "question_number": 65,
+      "question": "345 + 25 × 0.80 – 111 =? (Bank P.O., 2008)",
+      "options": {
+        "a": "254",
+        "b": "324",
+        "c": "666",
+        "d": "600",
+        "e": "None of these"
+      },
+      "correct_option": "a",
+      "answer": "254"
+    },
+    {
+      "id": "decimal-fractions-066",
+      "chapter": "Decimal Fractions",
+      "question_number": 66,
+      "question": "29.92 × 2.4 + 21.28 × 4.5 =? (Bank P.O., 2009)",
+      "options": {
+        "a": "167.568",
+        "b": "167.658",
+        "c": "176.568",
+        "d": "176.658",
+        "e": "None of these"
+      },
+      "correct_option": "a",
+      "answer": "167.568"
+    },
+    {
+      "id": "decimal-fractions-067",
+      "chapter": "Decimal Fractions",
+      "question_number": 67,
+      "question": "4.4 × 5.8 × 11.5 – 141.27 =? (Bank Recruitment, 2009)",
+      "options": {
+        "a": "121.17",
+        "b": "147.51",
+        "c": "152.21",
+        "d": "187.95",
+        "e": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "152.21"
+    },
+    {
+      "id": "decimal-fractions-068",
+      "chapter": "Decimal Fractions",
+      "question_number": 68,
+      "question": "Consider the following quotients: 1. 368.39 divided by 17; 2. 170.50 divided by 62; 3. 875.65 divided by 83. Their correct sequence in decreasing order is:",
+      "options": {
+        "a": "1, 3, 2",
+        "b": "2, 1, 3",
+        "c": "2, 3, 1",
+        "d": "3, 1, 2"
+      },
+      "correct_option": "a",
+      "answer": "1, 3, 2"
+    },
+    {
+      "id": "decimal-fractions-069",
+      "chapter": "Decimal Fractions",
+      "question_number": 69,
+      "question": "0.213 ÷ 0.00213 =?",
+      "options": {
+        "a": "1",
+        "b": "10",
+        "c": "100",
+        "d": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "100"
+    },
+    {
+      "id": "decimal-fractions-070",
+      "chapter": "Decimal Fractions",
+      "question_number": 70,
+      "question": "25.025 0.025 is equal to (R.R.B., 2004)",
+      "options": {
+        "a": "1.01",
+        "b": "10.1",
+        "c": "101",
+        "d": "1001"
+      },
+      "correct_option": "d",
+      "answer": "1001"
+    },
+    {
+      "id": "decimal-fractions-071",
+      "chapter": "Decimal Fractions",
+      "question_number": 71,
+      "question": "4.036 divided by 0.04 gives (Hotel Management, 2003)",
+      "options": {
+        "a": "1.009",
+        "b": "10.09",
+        "c": "100.9",
+        "d": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "100.9"
+    },
+    {
+      "id": "decimal-fractions-072",
+      "chapter": "Decimal Fractions",
+      "question_number": 72,
+      "question": "1 0.04 is equal to",
+      "options": {
+        "a": "1 40",
+        "b": "2 5",
+        "c": "2.5",
+        "d": "25"
+      },
+      "correct_option": "d",
+      "answer": "25"
+    },
+    {
+      "id": "decimal-fractions-073",
+      "chapter": "Decimal Fractions",
+      "question_number": 73,
+      "question": "(833.25 – 384.45) ÷ 24 =? (Bank P.O., 2010)",
+      "options": {
+        "a": "1.87",
+        "b": "2.01",
+        "c": "18.7",
+        "d": "20.1",
+        "e": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "18.7"
+    },
+    {
+      "id": "decimal-fractions-074",
+      "chapter": "Decimal Fractions",
+      "question_number": 74,
+      "question": "6425 ÷ 125 × 8 =? (Bank Recruitment, 2009)",
+      "options": {
+        "a": "41.12",
+        "b": "64.25",
+        "c": "411.2",
+        "d": "421.25",
+        "e": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "411.2"
+    },
+    {
+      "id": "decimal-fractions-075",
+      "chapter": "Decimal Fractions",
+      "question_number": 75,
+      "question": "7777 ÷ 77 ÷ 5 =? (Bank Recruitment, 2009)",
+      "options": {
+        "a": "15.2",
+        "b": "18.5",
+        "c": "22.4",
+        "d": "50.5",
+        "e": "None of these"
+      },
+      "correct_option": "e",
+      "answer": "None of these"
+    },
+    {
+      "id": "decimal-fractions-076",
+      "chapter": "Decimal Fractions",
+      "question_number": 76,
+      "question": "(0.75 × 4.4 × 2.4) ÷ 0.6 =? (Bank Recruitment, 2009)",
+      "options": {
+        "a": "4.752",
+        "b": "12",
+        "c": "13.2",
+        "d": "15.84",
+        "e": "None of these 3 0.05 0.25 ? 0.25 0.05   + =    "
+      },
+      "correct_option": "c",
+      "answer": "13.2"
+    },
+    {
+      "id": "decimal-fractions-077",
+      "chapter": "Decimal Fractions",
+      "question_number": 77,
+      "question": "",
+      "options": {
+        "a": "139.4",
+        "b": "140",
+        "c": "140.6",
+        "d": "143.9"
+      },
+      "correct_option": "c",
+      "answer": "140.6"
+    },
+    {
+      "id": "decimal-fractions-078",
+      "chapter": "Decimal Fractions",
+      "question_number": 78,
+      "question": "The value of 0.0396 ÷ 2.51 correct to 2 significant figures is",
+      "options": {
+        "a": "0.015",
+        "b": "0.0157",
+        "c": "0.016",
+        "d": "0.017"
+      },
+      "correct_option": "c",
+      "answer": "0.016"
+    },
+    {
+      "id": "decimal-fractions-079",
+      "chapter": "Decimal Fractions",
+      "question_number": 79,
+      "question": "3927 + 5526 ÷ 12.5 =? (L.I.C.A.D.O., 2007)",
+      "options": {
+        "a": "750.24",
+        "b": "756.24",
+        "c": "4369.08",
+        "d": "4369.24",
+        "e": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "4369.08"
+    },
+    {
+      "id": "decimal-fractions-080",
+      "chapter": "Decimal Fractions",
+      "question_number": 80,
+      "question": "(11.6 ÷ 0.8) (13.5 ÷ 2) =? (R.R.B., 2008)",
+      "options": {
+        "a": "98",
+        "b": "99",
+        "c": "100",
+        "d": "None of these"
+      },
+      "correct_option": "d",
+      "answer": "None of these"
+    },
+    {
+      "id": "decimal-fractions-081",
+      "chapter": "Decimal Fractions",
+      "question_number": 81,
+      "question": "(0.05 × 6.25) ÷ 2.5 =? (Bank P.O., 2008)",
+      "options": {
+        "a": "0.95",
+        "b": "0.105",
+        "c": "0.115",
+        "d": "1.25",
+        "e": "None of these"
+      },
+      "correct_option": "e",
+      "answer": "None of these"
+    },
+    {
+      "id": "decimal-fractions-082",
+      "chapter": "Decimal Fractions",
+      "question_number": 82,
+      "question": "0.5 × 0.5 + 0.5 ÷ 5 is equal to (L.I.C.A.D.O., 2008)",
+      "options": {
+        "a": "0.15",
+        "b": "0.25",
+        "c": "0.35",
+        "d": "0.45"
+      },
+      "correct_option": "c",
+      "answer": "0.35"
+    },
+    {
+      "id": "decimal-fractions-083",
+      "chapter": "Decimal Fractions",
+      "question_number": 83,
+      "question": "400 ÷ 0.1 × 0.2 =?",
+      "options": {
+        "a": "0.8",
+        "b": "8",
+        "c": "80",
+        "d": "8000",
+        "e": "None of these"
+      },
+      "correct_option": "e",
+      "answer": "None of these"
+    },
+    {
+      "id": "decimal-fractions-084",
+      "chapter": "Decimal Fractions",
+      "question_number": 84,
+      "question": "5.5 – [6.5 – {3.5 ÷ (6.5 – 5.5 – 2.5)}] is equal to",
+      "options": {
+        "a": "– 1",
+        "b": "0",
+        "c": "0.1",
+        "d": "1"
+      },
+      "correct_option": "b",
+      "answer": "0"
+    },
+    {
+      "id": "decimal-fractions-085",
+      "chapter": "Decimal Fractions",
+      "question_number": 85,
+      "question": ".04 ×? = .000016",
+      "options": {
+        "a": "0.0004",
+        "b": "0.04",
+        "c": "4",
+        "d": "None of these"
+      },
+      "correct_option": "a",
+      "answer": "0.0004"
+    },
+    {
+      "id": "decimal-fractions-086",
+      "chapter": "Decimal Fractions",
+      "question_number": 86,
+      "question": ".009 ? = .01",
+      "options": {
+        "a": ".0009",
+        "b": ".09",
+        "c": ".9",
+        "d": "9"
+      },
+      "correct_option": "c",
+      "answer": ".9"
+    },
+    {
+      "id": "decimal-fractions-087",
+      "chapter": "Decimal Fractions",
+      "question_number": 87,
+      "question": "If = 144 14.4 , 0.144 x then the value of x is",
+      "options": {
+        "a": "0.0144",
+        "b": "1.44",
+        "c": "14.4",
+        "d": "144"
+      },
+      "correct_option": "a",
+      "answer": "0.0144"
+    },
+    {
+      "id": "decimal-fractions-088",
+      "chapter": "Decimal Fractions",
+      "question_number": 88,
+      "question": "40.04 ÷ 0.4 =? × 0.05",
+      "options": {
+        "a": "20.02",
+        "b": "20.2",
+        "c": "200.2",
+        "d": "2002"
+      },
+      "correct_option": "d",
+      "answer": "2002"
+    },
+    {
+      "id": "decimal-fractions-089",
+      "chapter": "Decimal Fractions",
+      "question_number": 89,
+      "question": "48 ÷ 75 × 84.5 ÷ 20 =? (Bank P.O., 2006)",
+      "options": {
+        "a": "1.527",
+        "b": "1.834",
+        "c": "2.704",
+        "d": "2.914",
+        "e": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "2.704"
+    },
+    {
+      "id": "decimal-fractions-090",
+      "chapter": "Decimal Fractions",
+      "question_number": 90,
+      "question": "(5420 + 3312 +?) ÷ 600 = 25.93 (Bank Recruitment, 2009)",
+      "options": {
+        "a": "6286",
+        "b": "6584",
+        "c": "6826",
+        "d": "6830",
+        "e": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "6826"
+    },
+    {
+      "id": "decimal-fractions-091",
+      "chapter": "Decimal Fractions",
+      "question_number": 91,
+      "question": "[(?)2 + (18)2] ÷ 125 = 3.56 (Bank Recruitment, 2009)",
+      "options": {
+        "a": "11",
+        "b": "12",
+        "c": "14",
+        "d": "15",
+        "e": "None of these"
+      },
+      "correct_option": "a",
+      "answer": "11"
+    },
+    {
+      "id": "decimal-fractions-092",
+      "chapter": "Decimal Fractions",
+      "question_number": 92,
+      "question": "786 ÷ 24 ×? = 6.55",
+      "options": {
+        "a": "0.2",
+        "b": "0.4",
+        "c": "4",
+        "d": "5",
+        "e": "None of these"
+      },
+      "correct_option": "a",
+      "answer": "0.2"
+    },
+    {
+      "id": "decimal-fractions-093",
+      "chapter": "Decimal Fractions",
+      "question_number": 93,
+      "question": "A maximum of how many pieces of 12.6 cm can be cut from a 857 cm long rod?",
+      "options": {
+        "a": "58",
+        "b": "62",
+        "c": "64",
+        "d": "68"
+      },
+      "correct_option": "d",
+      "answer": "68"
+    },
+    {
+      "id": "decimal-fractions-094",
+      "chapter": "Decimal Fractions",
+      "question_number": 94,
+      "question": "Vishal donates blood thrice in 2 years – each time 350 ml. How many litres of blood will he donate in 6 years? (Bank Recruitment, 2010)",
+      "options": {
+        "a": "1.2",
+        "b": "3.15",
+        "c": "4.5",
+        "d": "6.3",
+        "e": "None of these"
+      },
+      "correct_option": "b",
+      "answer": "3.15"
+    },
+    {
+      "id": "decimal-fractions-095",
+      "chapter": "Decimal Fractions",
+      "question_number": 95,
+      "question": "Terry consumes 1600 ml of milk everyday. How many litres of milk will she consume in 4 weeks? (Bank Recruitment, 2010)",
+      "options": {
+        "a": "41.6",
+        "b": "42.6",
+        "c": "43.4",
+        "d": "44.8",
+        "e": "None of these"
+      },
+      "correct_option": "d",
+      "answer": "44.8"
+    },
+    {
+      "id": "decimal-fractions-096",
+      "chapter": "Decimal Fractions",
+      "question_number": 96,
+      "question": "A tailor has 37.5 metres of cloth and he has to make 8 pieces out of a metre of cloth. How many pieces can be make out of this cloth?",
+      "options": {
+        "a": "320",
+        "b": "360",
+        "c": "400",
+        "d": "None of these"
+      },
+      "correct_option": "d",
+      "answer": "None of these"
+    },
+    {
+      "id": "decimal-fractions-097",
+      "chapter": "Decimal Fractions",
+      "question_number": 97,
+      "question": "The price of commodity X increases by 40 paise every year, while the price of commodity Y increases by 15 paise every year. If in 2004, the price of commodity X was ` 4.20 and that of Y was ` 6.30, in which year commodity X will cost 40 paise more than the commodity Y?",
+      "options": {
+        "a": "2013",
+        "b": "2014",
+        "c": "2015",
+        "d": "2016"
+      },
+      "correct_option": "b",
+      "answer": "2014"
+    },
+    {
+      "id": "decimal-fractions-098",
+      "chapter": "Decimal Fractions",
+      "question_number": 98,
+      "question": "A sum of ` 6.25 is made up of 80 coins which are either 10P or 5P. How many are there of each kind? (A.T.M.A., 2006)",
+      "options": {
+        "a": "45, 35",
+        "b": "40, 40",
+        "c": "35, 45",
+        "d": "25, 55"
+      },
+      "correct_option": "a",
+      "answer": "45, 35"
+    },
+    {
+      "id": "decimal-fractions-099",
+      "chapter": "Decimal Fractions",
+      "question_number": 99,
+      "question": "The number 0.121212 …… in the form p q is equal to (S.S.C., 2010)",
+      "options": {
+        "a": "2 11",
+        "b": "4 11",
+        "c": "2 33",
+        "d": "4 33"
+      },
+      "correct_option": "d",
+      "answer": "4 33"
+    },
+    {
+      "id": "decimal-fractions-100",
+      "chapter": "Decimal Fractions",
+      "question_number": 100,
+      "question": "The rational number for the recurring decimal 0.125125 ….. is",
+      "options": {
+        "a": "63 487",
+        "b": "119 993",
+        "c": "125 999",
+        "d": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "125 999"
+    },
+    {
+      "id": "decimal-fractions-101",
+      "chapter": "Decimal Fractions",
+      "question_number": 101,
+      "question": "When 0.47 is converted into a fraction, the result is (Section Officers’, 2003)",
+      "options": {
+        "a": "46 90",
+        "b": "46 99",
+        "c": "47 90",
+        "d": "47 99"
+      },
+      "correct_option": "d",
+      "answer": "47 99"
+    },
+    {
+      "id": "decimal-fractions-102",
+      "chapter": "Decimal Fractions",
+      "question_number": 102,
+      "question": "0.36 expressed in the form p q equals",
+      "options": {
+        "a": "4 11",
+        "b": "4 13",
+        "c": "35 90",
+        "d": "35 99"
+      },
+      "correct_option": "a",
+      "answer": "4 11"
+    },
+    {
+      "id": "decimal-fractions-103",
+      "chapter": "Decimal Fractions",
+      "question_number": 103,
+      "question": "The least among the following is",
+      "options": {
+        "a": "0.2",
+        "b": "1 ÷ 0.2",
+        "c": "0.2",
+        "d": "(0.2)2"
+      },
+      "correct_option": "d",
+      "answer": "(0.2)2"
+    },
+    {
+      "id": "decimal-fractions-104",
+      "chapter": "Decimal Fractions",
+      "question_number": 104,
+      "question": "1.27 in the form p q is equal to (S.S.C., 2010)",
+      "options": {
+        "a": "127 100",
+        "b": "14 11",
+        "c": "73 100",
+        "d": "11 14"
+      },
+      "correct_option": "b",
+      "answer": "14 11"
+    },
+    {
+      "id": "decimal-fractions-105",
+      "chapter": "Decimal Fractions",
+      "question_number": 105,
+      "question": "0.423 is equivalent to the fraction (C.P.O., 2005)",
+      "options": {
+        "a": "94 99",
+        "b": "49 99",
+        "c": "491 990",
+        "d": "419 990"
+      },
+      "correct_option": "d",
+      "answer": "419 990"
+    },
+    {
+      "id": "decimal-fractions-106",
+      "chapter": "Decimal Fractions",
+      "question_number": 106,
+      "question": "Express 0.2956 in the form p q (vulgar fraction) (R.R.B., 2005)",
+      "options": {
+        "a": "2956 1000",
+        "b": "2956 10000",
+        "c": "2927 9900",
+        "d": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "2927 9900"
+    },
+    {
+      "id": "decimal-fractions-107",
+      "chapter": "Decimal Fractions",
+      "question_number": 107,
+      "question": "Let F = 0.84181. When F is written as a fraction in lowest terms, the denominator exceeds the numerator by",
+      "options": {
+        "a": "13",
+        "b": "14",
+        "c": "29",
+        "d": "87"
+      },
+      "correct_option": "d",
+      "answer": "87"
+    },
+    {
+      "id": "decimal-fractions-108",
+      "chapter": "Decimal Fractions",
+      "question_number": 108,
+      "question": "The value of 4.12 is",
+      "options": {
+        "a": "11 4 90",
+        "b": "11 4 99",
+        "c": "371 900",
+        "d": "None of these"
+      },
+      "correct_option": "a",
+      "answer": "11 4 90"
+    },
+    {
+      "id": "decimal-fractions-109",
+      "chapter": "Decimal Fractions",
+      "question_number": 109,
+      "question": "2.8 768 is equal to (C.P.O., 2006)",
+      "options": {
+        "a": "878 2 999",
+        "b": "9 2 10",
+        "c": "292 2 333",
+        "d": "4394 2 4995"
+      },
+      "correct_option": "c",
+      "answer": "292 2 333"
+    },
+    {
+      "id": "decimal-fractions-110",
+      "chapter": "Decimal Fractions",
+      "question_number": 110,
+      "question": "The value of (0.2 + 0.3 + 0. 32) is (S.S.C., 2005)",
+      "options": {
+        "a": "0.77",
+        "b": "0.82",
+        "c": "0.86",
+        "d": "0.87"
+      },
+      "correct_option": "d",
+      "answer": "0.87"
+    },
+    {
+      "id": "decimal-fractions-111",
+      "chapter": "Decimal Fractions",
+      "question_number": 111,
+      "question": "0.142857 ÷ 0.285714 is equal to (S.S.C., 2007)",
+      "options": {
+        "a": "1 2",
+        "b": "1 3",
+        "c": "2",
+        "d": "10"
+      },
+      "correct_option": "a",
+      "answer": "1 2"
+    },
+    {
+      "id": "decimal-fractions-112",
+      "chapter": "Decimal Fractions",
+      "question_number": 112,
+      "question": "3.87 – 2.59 =?",
+      "options": {
+        "a": "1.20",
+        "b": "1.2",
+        "c": "1.27",
+        "d": "1.28"
+      },
+      "correct_option": "d",
+      "answer": "1.28"
+    },
+    {
+      "id": "decimal-fractions-113",
+      "chapter": "Decimal Fractions",
+      "question_number": 113,
+      "question": "The simplification of 3.36 – 2.05 + 1.33 equals",
+      "options": {
+        "a": "2.60",
+        "b": "2.64",
+        "c": "2.61",
+        "d": "2.64"
+      },
+      "correct_option": "d",
+      "answer": "2.64"
+    },
+    {
+      "id": "decimal-fractions-114",
+      "chapter": "Decimal Fractions",
+      "question_number": 114,
+      "question": "(0.09 × 7.3) is equal to: (S.S.C., 2003)",
+      "options": {
+        "a": ".6",
+        "b": ".657",
+        "c": ".67",
+        "d": ".657"
+      },
+      "correct_option": "a",
+      "answer": ".6"
+    },
+    {
+      "id": "decimal-fractions-115",
+      "chapter": "Decimal Fractions",
+      "question_number": 115,
+      "question": "(0.3467 + 0.1333) is equal to (Hotel Management, 2002)",
+      "options": {
+        "a": "0.48",
+        "b": "0.48",
+        "c": "0.4801",
+        "d": "0.48"
+      },
+      "correct_option": "c",
+      "answer": "0.4801"
+    },
+    {
+      "id": "decimal-fractions-116",
+      "chapter": "Decimal Fractions",
+      "question_number": 116,
+      "question": "(8.31 + 0.6 + 0.002) is equal to (S.S.C., 2005)",
+      "options": {
+        "a": "8.912",
+        "b": "8.912",
+        "c": "8.979",
+        "d": "8.979"
+      },
+      "correct_option": "d",
+      "answer": "8.979"
+    },
+    {
+      "id": "decimal-fractions-117",
+      "chapter": "Decimal Fractions",
+      "question_number": 117,
+      "question": "The sum of 2.75 and 3.78 is",
+      "options": {
+        "a": "1.03",
+        "b": "1.53",
+        "c": "4.53",
+        "d": "5.53"
+      },
+      "correct_option": "c",
+      "answer": "4.53"
+    },
+    {
+      "id": "decimal-fractions-118",
+      "chapter": "Decimal Fractions",
+      "question_number": 118,
+      "question": "If 547.527 0.0082 = x, then the value of 547527 82 is x",
+      "options": {
+        "b": "10x",
+        "a": "10",
+        "c": "100x",
+        "d": "None of these"
+      },
+      "correct_option": "a",
+      "answer": "10"
+    },
+    {
+      "id": "decimal-fractions-119",
+      "chapter": "Decimal Fractions",
+      "question_number": 119,
+      "question": "If 2994 ÷ 14.5 = 172, then 29.94 ÷ 1.45 =?",
+      "options": {
+        "a": "0.172",
+        "b": "1.72",
+        "c": "17.2",
+        "d": "172"
+      },
+      "correct_option": "c",
+      "answer": "17.2"
+    },
+    {
+      "id": "decimal-fractions-120",
+      "chapter": "Decimal Fractions",
+      "question_number": 120,
+      "question": "If 213 × 16 = 3408, then 1.6 × 21.3 is equal to",
+      "options": {
+        "a": "0.3408",
+        "b": "3.408",
+        "c": "34.08",
+        "d": "340.8"
+      },
+      "correct_option": "c",
+      "answer": "34.08"
+    },
+    {
+      "id": "decimal-fractions-121",
+      "chapter": "Decimal Fractions",
+      "question_number": 121,
+      "question": "If 1 6.198 = 0.16134, then the value of 1 0.0006198 is",
+      "options": {
+        "a": "0.016134",
+        "b": "0.16134",
+        "c": "1613.4",
+        "d": "16134"
+      },
+      "correct_option": "c",
+      "answer": "1613.4"
+    },
+    {
+      "id": "decimal-fractions-122",
+      "chapter": "Decimal Fractions",
+      "question_number": 122,
+      "question": "When 52416 is divided by 312, the quotient is 168. What will be the quotient when 52.416 is divided by 0.0168?",
+      "options": {
+        "a": "3.12",
+        "b": "312",
+        "c": "3120",
+        "d": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "3120"
+    },
+    {
+      "id": "decimal-fractions-123",
+      "chapter": "Decimal Fractions",
+      "question_number": 123,
+      "question": "Given 168 × 32 = 5376, then 5.376 ÷ 16.8 is equal to",
+      "options": {
+        "a": "0.032",
+        "b": "0.32",
+        "c": "3.2",
+        "d": "32"
+      },
+      "correct_option": "b",
+      "answer": "0.32"
+    },
+    {
+      "id": "decimal-fractions-124",
+      "chapter": "Decimal Fractions",
+      "question_number": 124,
+      "question": "54.327 × 357.2 × 0.0057 is the same as",
+      "options": {
+        "a": "5.4327 × 3.572 × 5.7",
+        "b": "5.4327 × 3.572 × 0.57",
+        "c": "54327 × 3572 × 0.0000057",
+        "d": "None of these"
+      },
+      "correct_option": "a",
+      "answer": "5.4327 × 3.572 × 5.7"
+    },
+    {
+      "id": "decimal-fractions-125",
+      "chapter": "Decimal Fractions",
+      "question_number": 125,
+      "question": "5.3472 324.23 3.489 5.42 × × is the same as",
+      "options": {
+        "a": "53472 3.2423 3.489 54.2 × ×",
+        "b": "53472 32423 3489 542 × ×",
+        "c": "534.72 324.23 34.89 5.42 × ×",
+        "d": "53472 3242.3 3489 542 × ×"
+      },
+      "correct_option": "d",
+      "answer": "53472 3242.3 3489 542 × ×"
+    },
+    {
+      "id": "decimal-fractions-126",
+      "chapter": "Decimal Fractions",
+      "question_number": 126,
+      "question": "96.54 89.63 965.4 896.3 ? 96.54 89.63 9.654 8.963 − − ÷ = + +",
+      "options": {
+        "a": "10– 2",
+        "b": "10– 1",
+        "c": "10",
+        "d": "None of these"
+      },
+      "correct_option": "a",
+      "answer": "10– 2"
+    },
+    {
+      "id": "decimal-fractions-127",
+      "chapter": "Decimal Fractions",
+      "question_number": 127,
+      "question": "If 13 + 23 + ..... + 93 = 2025, then the value of (0.11)3 + (0.22)3 + ..... + (0.99)3 is close to:",
+      "options": {
+        "a": "0.2695",
+        "b": "0.3695",
+        "c": "2.695",
+        "d": "3.695"
+      },
+      "correct_option": "c",
+      "answer": "2.695"
+    },
+    {
+      "id": "decimal-fractions-128",
+      "chapter": "Decimal Fractions",
+      "question_number": 128,
+      "question": "The value of 1 1 1 4 4 5 4 5 6 + + × × × correct to 4 decimal places is",
+      "options": {
+        "a": "0.3075",
+        "b": "0.3082",
+        "c": "0.3083",
+        "d": "0.3085"
+      },
+      "correct_option": "c",
+      "answer": "0.3083"
+    },
+    {
+      "id": "decimal-fractions-129",
+      "chapter": "Decimal Fractions",
+      "question_number": 129,
+      "question": "Find the value of the following expression upto four places of decimals.   + + + +   × × × × × × × × × ×   1 1 1 1 1 1 2 1 2 4 1 2 4 8 1 2 4 8 16",
+      "options": {
+        "a": "1.6414",
+        "b": "1.6415",
+        "c": "1.6416",
+        "d": "1.6428"
+      },
+      "correct_option": "c",
+      "answer": "1.6416"
+    },
+    {
+      "id": "decimal-fractions-130",
+      "chapter": "Decimal Fractions",
+      "question_number": 130,
+      "question": "The sum of the first 20 terms of the series + + + × × × 1 1 1 ..... is 5 6 6 7 7 8",
+      "options": {
+        "a": "0.16",
+        "b": "1.6",
+        "c": "16",
+        "d": "None of these"
+      },
+      "correct_option": "a",
+      "answer": "0.16"
+    },
+    {
+      "id": "decimal-fractions-131",
+      "chapter": "Decimal Fractions",
+      "question_number": 131,
+      "question": "The last digit in the decimal representation of 2000 1 5       is (Hotel Management, 2010)",
+      "options": {
+        "a": "2",
+        "b": "4",
+        "c": "5",
+        "d": "6"
+      },
+      "correct_option": "d",
+      "answer": "6"
+    },
+    {
+      "id": "decimal-fractions-132",
+      "chapter": "Decimal Fractions",
+      "question_number": 132,
+      "question": "Which of the following is equal to 1?",
+      "options": {
+        "a": "( ) ( )",
+        "b": "( ) ( ) 2 2 2 0.11 2 2 1.1 1.1 0.1 × 11 0.01 ×",
+        "c": "( ) ( ) ( )",
+        "d": "( ) 2 2 2 2 0.011 2 0.11 11 0.01 × 1.1 0.01 ×"
+      },
+      "correct_option": "c",
+      "answer": "( ) ( ) ( )"
+    },
+    {
+      "id": "decimal-fractions-133",
+      "chapter": "Decimal Fractions",
+      "question_number": 133,
+      "question": "The expression + + + + +  3 5 7 17 19 4 36 144 5184 8100 is equal to (A.A.O. Exam, 2010)",
+      "options": {
+        "a": "0.9",
+        "b": "0.95",
+        "c": "0.99",
+        "d": "1.91"
+      },
+      "correct_option": "c",
+      "answer": "0.99"
+    },
+    {
+      "id": "decimal-fractions-134",
+      "chapter": "Decimal Fractions",
+      "question_number": 134,
+      "question": "If 1.5x = 0.04y, then the value of y x y x   −   +   is (N.M.A.T. 2006; M.B.A. 2007; S.S.C. 2010)",
+      "options": {
+        "a": "730 77",
+        "b": "73 77",
+        "c": "7.3 77",
+        "d": "None of these             − + − +         + +            "
+      },
+      "correct_option": "b",
+      "answer": "73 77"
+    },
+    {
+      "id": "decimal-fractions-135",
+      "chapter": "Decimal Fractions",
+      "question_number": 135,
+      "question": "The value of 1 1 35.7 3 2 1 1 3 2 3 2 is",
+      "options": {
+        "a": "30",
+        "b": "34.8",
+        "c": "36.6",
+        "d": "41.4"
+      },
+      "correct_option": "a",
+      "answer": "30"
+    },
+    {
+      "id": "decimal-fractions-136",
+      "chapter": "Decimal Fractions",
+      "question_number": 136,
+      "question": "( )( )( ) ( )( )( ) 0.1667 0.8333 0.3333 0.2222 0.6667 0.1250 is approximately equal to",
+      "options": {
+        "a": "2",
+        "b": "2.40",
+        "c": "2.43",
+        "d": "2.50"
+      },
+      "correct_option": "d",
+      "answer": "2.50"
+    },
+    {
+      "id": "decimal-fractions-137",
+      "chapter": "Decimal Fractions",
+      "question_number": 137,
+      "question": "3.5 1.4 ? 0.7",
+      "options": {
+        "a": "0.7",
+        "b": "2.4",
+        "c": "3.5",
+        "d": "7.1",
+        "e": "None of these × = (Bank Recruitment, 2007)"
+      },
+      "correct_option": "e",
+      "answer": "None of these × = (Bank Recruitment, 2007)"
+    },
+    {
+      "id": "decimal-fractions-138",
+      "chapter": "Decimal Fractions",
+      "question_number": 138,
+      "question": "1.6 3.2 ? 0.08",
+      "options": {
+        "a": "0.8",
+        "b": "6.4",
+        "c": "8",
+        "d": "64",
+        "e": "None of these"
+      },
+      "correct_option": "d",
+      "answer": "64"
+    },
+    {
+      "id": "decimal-fractions-139",
+      "chapter": "Decimal Fractions",
+      "question_number": 139,
+      "question": "4.41 0.16 2.1 1.6 0.21 × × × is simplified to (S.S.C., 2010)",
+      "options": {
+        "a": "1",
+        "b": "0.1",
+        "c": "0.01",
+        "d": "10"
+      },
+      "correct_option": "a",
+      "answer": "1"
+    },
+    {
+      "id": "decimal-fractions-140",
+      "chapter": "Decimal Fractions",
+      "question_number": 140,
+      "question": ".625 .0729 28.9 ? .0081 .025 1.7 × × = × × (I.I.F.T. 2005)",
+      "options": {
+        "a": "382.5",
+        "b": "3625",
+        "c": "3725",
+        "d": "3825",
+        "e": "None of these"
+      },
+      "correct_option": "d",
+      "answer": "3825"
+    },
+    {
+      "id": "decimal-fractions-141",
+      "chapter": "Decimal Fractions",
+      "question_number": 141,
+      "question": "The value of 3.6 0.48 2.50 0.12 0.09 0.5 × × × × is",
+      "options": {
+        "a": "80",
+        "b": "800",
+        "c": "8000",
+        "d": "80000"
+      },
+      "correct_option": "b",
+      "answer": "800"
+    },
+    {
+      "id": "decimal-fractions-142",
+      "chapter": "Decimal Fractions",
+      "question_number": 142,
+      "question": "0.0203 2.92 ? 0.0073 14.5 0.7 × = × ×",
+      "options": {
+        "a": "0.8",
+        "b": "1.45",
+        "c": "2.40",
+        "d": "3.25"
+      },
+      "correct_option": "a",
+      "answer": "0.8"
+    },
+    {
+      "id": "decimal-fractions-143",
+      "chapter": "Decimal Fractions",
+      "question_number": 143,
+      "question": "× × × 3.157 4126 3.198 The value of is closest to 63.972 2835.121",
+      "options": {
+        "a": "0.002",
+        "b": "0.02",
+        "c": "0.2",
+        "d": "2"
+      },
+      "correct_option": "c",
+      "answer": "0.2"
+    },
+    {
+      "id": "decimal-fractions-144",
+      "chapter": "Decimal Fractions",
+      "question_number": 144,
+      "question": "The value of 489.1375 0.0483 1.956 0.0873 92.581 99.749 × × × × is closet to",
+      "options": {
+        "a": "0.006",
+        "b": "0.06",
+        "c": "0.6",
+        "d": "6"
+      },
+      "correct_option": "b",
+      "answer": "0.06"
+    },
+    {
+      "id": "decimal-fractions-145",
+      "chapter": "Decimal Fractions",
+      "question_number": 145,
+      "question": "× × × × 241.6 0.3814 6.842 The value of is close to 0.4618 38.25 73.65",
+      "options": {
+        "a": "0.2",
+        "b": "0.4",
+        "c": "0.6",
+        "d": "1"
+      },
+      "correct_option": "b",
+      "answer": "0.4"
+    },
+    {
+      "id": "decimal-fractions-146",
+      "chapter": "Decimal Fractions",
+      "question_number": 146,
+      "question": "(0.2 × 0.2 + 0.01) (0.1 × 0.1 + 0.02)– 1 is equal to (Section Officers’, 2003)",
+      "options": {
+        "a": "5 3",
+        "b": "9 5",
+        "c": "41 4",
+        "d": "41 12"
+      },
+      "correct_option": "a",
+      "answer": "5 3"
+    },
+    {
+      "id": "decimal-fractions-147",
+      "chapter": "Decimal Fractions",
+      "question_number": 147,
+      "question": "5 1.6 2 1.4 ? 1.3 × − × =",
+      "options": {
+        "a": "0.4",
+        "b": "1.2",
+        "c": "1.4",
+        "d": "4"
+      },
+      "correct_option": "d",
+      "answer": "4"
+    },
+    {
+      "id": "decimal-fractions-148",
+      "chapter": "Decimal Fractions",
+      "question_number": 148,
+      "question": "The value of (4.7 × 13.26 + 4.7 × 9.43 + 4.7 × 77.31) is: (IGNOU, 2003)",
+      "options": {
+        "a": "0.47",
+        "b": "47",
+        "c": "470",
+        "d": "4700"
+      },
+      "correct_option": "c",
+      "answer": "470"
+    },
+    {
+      "id": "decimal-fractions-149",
+      "chapter": "Decimal Fractions",
+      "question_number": 149,
+      "question": "0.2 0.2 0.2 0.02 Simplify : . 0.044 × + ×",
+      "options": {
+        "a": "0.004",
+        "b": "0.4",
+        "c": "1",
+        "d": "2"
+      },
+      "correct_option": "c",
+      "answer": "1"
+    },
+    {
+      "id": "decimal-fractions-150",
+      "chapter": "Decimal Fractions",
+      "question_number": 150,
+      "question": "  × + ×   × − ×   8.6 5.3 8.6 4.7 The value of is 4.3 9.7 4.3 8.7",
+      "options": {
+        "a": "3.3",
+        "b": "6.847",
+        "c": "13.9",
+        "d": "20"
+      },
+      "correct_option": "d",
+      "answer": "20"
+    },
+    {
+      "id": "decimal-fractions-151",
+      "chapter": "Decimal Fractions",
+      "question_number": 151,
+      "question": "  × + ×   × + ×   .896 .763 .896 .237 The value of is .7 .064 .7 .936",
+      "options": {
+        "a": ".976",
+        "b": "9.76",
+        "c": "1.28",
+        "d": "12.8"
+      },
+      "correct_option": "c",
+      "answer": "1.28"
+    },
+    {
+      "id": "decimal-fractions-152",
+      "chapter": "Decimal Fractions",
+      "question_number": 152,
+      "question": "The value of (1.25)3 – 2.25 (1.25)2 + 3.75 (0.75)2 – (0.75)3 is",
+      "options": {
+        "a": "1",
+        "b": "1 2",
+        "c": "1 4",
+        "d": "1 8"
+      },
+      "correct_option": "d",
+      "answer": "1 8"
+    },
+    {
+      "id": "decimal-fractions-153",
+      "chapter": "Decimal Fractions",
+      "question_number": 153,
+      "question": "(78.95)2 – (43.35)2 =? (S.B.I.P.O., 2008)",
+      "options": {
+        "a": "4148",
+        "b": "4235.78",
+        "c": "4305",
+        "d": "4353.88",
+        "e": "None of these"
+      },
+      "correct_option": "d",
+      "answer": "4353.88"
+    },
+    {
+      "id": "decimal-fractions-154",
+      "chapter": "Decimal Fractions",
+      "question_number": 154,
+      "question": "The value of ( ) ( ) 2 2 75.8 55.8 20 − is",
+      "options": {
+        "a": "20",
+        "b": "40",
+        "c": "121.6",
+        "d": "131.6"
+      },
+      "correct_option": "d",
+      "answer": "131.6"
+    },
+    {
+      "id": "decimal-fractions-155",
+      "chapter": "Decimal Fractions",
+      "question_number": 155,
+      "question": "( ) ( ) 2 2 3.63 2.37 3.63 2.37 − + is simplified to (C.P.O., 2006)",
+      "options": {
+        "a": "1.26",
+        "b": "1.36",
+        "c": "2.26",
+        "d": "6"
+      },
+      "correct_option": "a",
+      "answer": "1.26"
+    },
+    {
+      "id": "decimal-fractions-156",
+      "chapter": "Decimal Fractions",
+      "question_number": 156,
+      "question": "( ) ( ) − = 2 2 36.54 3.46 40 ?",
+      "options": {
+        "a": "3.308",
+        "b": "4",
+        "c": "33.08",
+        "d": "330.8"
+      },
+      "correct_option": "c",
+      "answer": "33.08"
+    },
+    {
+      "id": "decimal-fractions-157",
+      "chapter": "Decimal Fractions",
+      "question_number": 157,
+      "question": "The value of ( ) ( ) 2 2 67.542 32.458 75.458 40.374 − − is",
+      "options": {
+        "a": "1",
+        "b": "10",
+        "c": "100",
+        "d": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "100"
+    },
+    {
+      "id": "decimal-fractions-158",
+      "chapter": "Decimal Fractions",
+      "question_number": 158,
+      "question": "1.49 14.9 0.51 5.1 14.9 5.1 × − ×       − is equal to (S.S.C., 2004)",
+      "options": {
+        "a": "0.20",
+        "b": "2.00",
+        "c": "20",
+        "d": "22"
+      },
+      "correct_option": "b",
+      "answer": "2.00"
+    },
+    {
+      "id": "decimal-fractions-159",
+      "chapter": "Decimal Fractions",
+      "question_number": 159,
+      "question": "4.2 4.2 1.9 1.9 ? 2.3 6.1 × − × = ×",
+      "options": {
+        "a": "0.5",
+        "b": "1",
+        "c": "1.9",
+        "d": "4.2 × + × ⋅ − ( ) ( ) 2 2 5.32 56 5.32 44"
+      },
+      "correct_option": "b",
+      "answer": "1"
+    },
+    {
+      "id": "decimal-fractions-160",
+      "chapter": "Decimal Fractions",
+      "question_number": 160,
+      "question": "Simplify: 7.66 2.34",
+      "options": {
+        "a": "7.2",
+        "b": "8.5",
+        "c": "10",
+        "d": "12"
+      },
+      "correct_option": "c",
+      "answer": "10"
+    },
+    {
+      "id": "decimal-fractions-161",
+      "chapter": "Decimal Fractions",
+      "question_number": 161,
+      "question": "( ) ( ) ( ) ( ) 4 4 − 2 2 0.6 0.5 is equal to + 0.6 0.5",
+      "options": {
+        "a": "0.1",
+        "b": "0.11",
+        "c": "1.1",
+        "d": "11"
+      },
+      "correct_option": "b",
+      "answer": "0.11"
+    },
+    {
+      "id": "decimal-fractions-162",
+      "chapter": "Decimal Fractions",
+      "question_number": 162,
+      "question": "(7.5 × 7.5 + 37.5 + 2.5 × 2.5) is equal to",
+      "options": {
+        "a": "30",
+        "b": "60",
+        "c": "80",
+        "d": "100"
+      },
+      "correct_option": "d",
+      "answer": "100"
+    },
+    {
+      "id": "decimal-fractions-163",
+      "chapter": "Decimal Fractions",
+      "question_number": 163,
+      "question": "The simplification of 0.2 0.2 0.02 0.02 0.4 0.02 0.36 × + × − × gives",
+      "options": {
+        "a": "0.009",
+        "b": "0.09",
+        "c": "0.9",
+        "d": "9"
+      },
+      "correct_option": "b",
+      "answer": "0.09"
+    },
+    {
+      "id": "decimal-fractions-164",
+      "chapter": "Decimal Fractions",
+      "question_number": 164,
+      "question": "(99.75)2 – 2250.0625 =? (Bank P.O., 2008)",
+      "options": {
+        "a": "6545.625",
+        "b": "7700",
+        "c": "8875",
+        "d": "9900.625",
+        "e": "None of these"
+      },
+      "correct_option": "b",
+      "answer": "7700"
+    },
+    {
+      "id": "decimal-fractions-165",
+      "chapter": "Decimal Fractions",
+      "question_number": 165,
+      "question": "(55.25)2 – 637.5625 =? (Bank P.O., 2008)",
+      "options": {
+        "a": "25.25",
+        "b": "625",
+        "c": "1375",
+        "d": "2415",
+        "e": "None of these"
+      },
+      "correct_option": "d",
+      "answer": "2415"
+    },
+    {
+      "id": "decimal-fractions-166",
+      "chapter": "Decimal Fractions",
+      "question_number": 166,
+      "question": "3.25 3.20 – 3.20 3.05 0.064 × × is equal to (S.S.C., 2010)",
+      "options": {
+        "a": "1",
+        "b": "1 2",
+        "c": "1 10",
+        "d": "10"
+      },
+      "correct_option": "d",
+      "answer": "10"
+    },
+    {
+      "id": "decimal-fractions-167",
+      "chapter": "Decimal Fractions",
+      "question_number": 167,
+      "question": "The value of (.98)3 + (.02)3 + 3 × .98 × .02 – 1 is (S.S.C., 2005)",
+      "options": {
+        "a": "0",
+        "b": "1",
+        "c": "1.09",
+        "d": "1.98"
+      },
+      "correct_option": "a",
+      "answer": "0"
+    },
+    {
+      "id": "decimal-fractions-168",
+      "chapter": "Decimal Fractions",
+      "question_number": 168,
+      "question": "The expression (11.98 × 11.98 + 11.98 × x + 0.02 × 0.02) will be a perfect square for x equal to:",
+      "options": {
+        "a": "0.02",
+        "b": "0.2",
+        "c": "0.04",
+        "d": "0.4"
+      },
+      "correct_option": "c",
+      "answer": "0.04"
+    },
+    {
+      "id": "decimal-fractions-169",
+      "chapter": "Decimal Fractions",
+      "question_number": 169,
+      "question": "− + + × + ×",
+      "options": {
+        "a": "0.5",
+        "b": "2",
+        "c": "2.199",
+        "d": "3.195 2 2 (0.137 0.098) (0.137 0.098) The value of is 0.137 0.098"
+      },
+      "correct_option": "b",
+      "answer": "2"
+    },
+    {
+      "id": "decimal-fractions-170",
+      "chapter": "Decimal Fractions",
+      "question_number": 170,
+      "question": "+ − − ×",
+      "options": {
+        "a": "0.039",
+        "b": "0.235",
+        "c": "0.25",
+        "d": "4"
+      },
+      "correct_option": "d",
+      "answer": "4"
+    },
+    {
+      "id": "decimal-fractions-171",
+      "chapter": "Decimal Fractions",
+      "question_number": 171,
+      "question": "The value of   × × + × ×   × − × + ×   0.051 0.051 0.051 0.041 0.041 0.041 0.051 0.051 0.051 0.041 0.041 0.041 is (S.S.C., 2003)",
+      "options": {
+        "a": "0.00092",
+        "b": "0.0092",
+        "c": "0.092",
+        "d": "0.92"
+      },
+      "correct_option": "c",
+      "answer": "0.092"
+    },
+    {
+      "id": "decimal-fractions-172",
+      "chapter": "Decimal Fractions",
+      "question_number": 172,
+      "question": "The value of 5.71 5.71 5.71 2.79 2.79 2.79 5.71 5.71 5.71 2.79 2.79 2.79 × × − × × × + × + × is (S.S.C., 2005)",
+      "options": {
+        "a": "2.82",
+        "b": "2.92",
+        "c": "8.5",
+        "d": "8.6"
+      },
+      "correct_option": "b",
+      "answer": "2.92"
+    },
+    {
+      "id": "decimal-fractions-173",
+      "chapter": "Decimal Fractions",
+      "question_number": 173,
+      "question": "The value of 0.943 0.943 0.943 0.057 0.057 0.057 0.943 0.943 0.943 0.057 0.057 0.057 × − × + ×       × × + × × is (M.B.A., 2005)",
+      "options": {
+        "a": "0.32",
+        "b": "0.886",
+        "c": "1.1286",
+        "d": "None of these"
+      },
+      "correct_option": "d",
+      "answer": "None of these"
+    },
+    {
+      "id": "decimal-fractions-174",
+      "chapter": "Decimal Fractions",
+      "question_number": 174,
+      "question": "  +   × + −   0.125 0.027 The value of is 0.5 0.5 0.09 0.15 (S.S.C., 2010)",
+      "options": {
+        "a": "0.08",
+        "b": "0.2",
+        "c": "0.8",
+        "d": "1   × × +   × − +   : (S.S.C., 2004)"
+      },
+      "correct_option": "c",
+      "answer": "0.8"
+    },
+    {
+      "id": "decimal-fractions-175",
+      "chapter": "Decimal Fractions",
+      "question_number": 175,
+      "question": "10.3 10.3 10.3 1 is equal to : 10.3 10.3 10.3 1",
+      "options": {
+        "a": "9.3",
+        "b": "10.3",
+        "c": "11.3",
+        "d": "12.3   +   −     3 2 8 (3.75) 1 is equal to : (7.5) 6.5 : (S.S.C., 2003)"
+      },
+      "correct_option": "c",
+      "answer": "11.3"
+    },
+    {
+      "id": "decimal-fractions-176",
+      "chapter": "Decimal Fractions",
+      "question_number": 176,
+      "question": "",
+      "options": {
+        "a": "9 5",
+        "b": "2.75",
+        "c": "4.75",
+        "d": "8.5   × × + × ×   × × + × ×  "
+      },
+      "correct_option": "d",
+      "answer": "8.5   × × + × ×   × × + × ×  "
+    },
+    {
+      "id": "decimal-fractions-177",
+      "chapter": "Decimal Fractions",
+      "question_number": 177,
+      "question": "The value of 0.1 0.1 0.1 0.02 0.02 0.02 0.2 0.2 0.2 0.04 0.04 0.04 is (Hotel Management 2003; S.S.C., 2005)",
+      "options": {
+        "a": "0.0125",
+        "b": "0.125",
+        "c": "0.25",
+        "d": "0.5"
+      },
+      "correct_option": "b",
+      "answer": "0.125"
+    },
+    {
+      "id": "decimal-fractions-178",
+      "chapter": "Decimal Fractions",
+      "question_number": 178,
+      "question": "( ) ( ) 3 + = − + 2 0.013 0.000000343 ? 0.013 0.000091 0.000049 (I.I.F.T., 2005)",
+      "options": {
+        "a": "0.002",
+        "b": "0.020",
+        "c": "0.021",
+        "d": "0.023",
+        "e": "None of these 3"
+      },
+      "correct_option": "b",
+      "answer": "0.020"
+    },
+    {
+      "id": "decimal-fractions-179",
+      "chapter": "Decimal Fractions",
+      "question_number": 179,
+      "question": "− 2 (2.3) .027 The value of is (2.3) .69 .09 (R.R.B., 2005) + +",
+      "options": {
+        "a": "0",
+        "b": "1.6",
+        "c": "2",
+        "d": "3.4 2 2 2"
+      },
+      "correct_option": "c",
+      "answer": "2"
+    },
+    {
+      "id": "decimal-fractions-180",
+      "chapter": "Decimal Fractions",
+      "question_number": 180,
+      "question": "+ + 2 2 2 (0.06) (0.47) (0.079) The value of is (0.006) (0.047) (0.0079) + + (N.M.A.T. 2006; G.B.O. 2007)",
+      "options": {
+        "a": "0.1",
+        "b": "10",
+        "c": "100",
+        "d": "1000 ( ) ( )( ) ( ) ( )( ) 2 2 − − + − − − − 4.53 3.07 3.07 2.15"
+      },
+      "correct_option": "c",
+      "answer": "100"
+    },
+    {
+      "id": "decimal-fractions-181",
+      "chapter": "Decimal Fractions",
+      "question_number": 181,
+      "question": "3.07 2.15 2.15 4.53 2.15 4.53 4.53 3.07 ( ) ( )( ) 2 − + − − 2.15 4.53 4.53 3.07 3.07 2.15 is simplified to (C.P.O., 2004)",
+      "options": {
+        "a": "0",
+        "b": "1",
+        "c": "2",
+        "d": "3"
+      },
+      "correct_option": "d",
+      "answer": "3"
+    },
+    {
+      "id": "decimal-fractions-182",
+      "chapter": "Decimal Fractions",
+      "question_number": 182,
+      "question": "The fraction equivalent to 2 % 5 is [Indian Railways Gr. ‘D’ Exam, 2014]",
+      "options": {
+        "a": "1 40",
+        "b": "1 125",
+        "c": "1 250",
+        "d": "1 500"
+      },
+      "correct_option": "c",
+      "answer": "1 250"
+    },
+    {
+      "id": "decimal-fractions-183",
+      "chapter": "Decimal Fractions",
+      "question_number": 183,
+      "question": "The vulgar fraction of 0.3939 is [SSC—CHSL (10+2) Exam, 2015]",
+      "options": {
+        "a": "15 33",
+        "b": "11 39",
+        "c": "17 39",
+        "d": "13 33"
+      },
+      "correct_option": "d",
+      "answer": "13 33"
+    },
+    {
+      "id": "decimal-fractions-184",
+      "chapter": "Decimal Fractions",
+      "question_number": 184,
+      "question": "Solve ( ) 2 2 2 41.99 18.04 ? 13.11 138.99 − ÷ = − [IBPS—Bank Spl. Officers (IT) Exam, 2015]",
+      "options": {
+        "a": "48",
+        "b": "12",
+        "c": "72",
+        "d": "84",
+        "e": "128"
+      },
+      "correct_option": "a",
+      "answer": "48"
+    },
+    {
+      "id": "decimal-fractions-185",
+      "chapter": "Decimal Fractions",
+      "question_number": 185,
+      "question": "Solve 3 5 of 4 7 of 5 12 of 1015 = ? [United India Insurance Co. Ltd. (UIICL) Assistant (Online) Exam, 2015]",
+      "options": {
+        "a": "220",
+        "b": "340",
+        "c": "240",
+        "d": "145",
+        "e": "190"
+      },
+      "correct_option": "d",
+      "answer": "145"
+    },
+    {
+      "id": "decimal-fractions-186",
+      "chapter": "Decimal Fractions",
+      "question_number": 186,
+      "question": "Solve 1 6 3 1 1 3 ? 8 7 5 + + = [United India Insurance Co. Ltd. (UIICL) Assistant (Online) Exam, 2015]",
+      "options": {
+        "a": "121 8 140",
+        "b": "163 6 280",
+        "c": "197 9 280",
+        "d": "117 7 140",
+        "e": "None of these     + − = +    "
+      },
+      "correct_option": "b",
+      "answer": "163 6 280"
+    },
+    {
+      "id": "decimal-fractions-187",
+      "chapter": "Decimal Fractions",
+      "question_number": 187,
+      "question": "( )1/3 ? 1.5 1 3.5 7 2 2 1 1 5 6 15 4 30 [IDBI Bank Executive Officers Exam, 2015]",
+      "options": {
+        "a": "2",
+        "b": "8",
+        "c": "512",
+        "d": "324",
+        "e": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "512"
+    },
+    {
+      "id": "decimal-fractions-188",
+      "chapter": "Decimal Fractions",
+      "question_number": 188,
+      "question": "Solve 323.46 + 23.04 – 43.17 – ? = 303 [NICL—AAO Exam, 2015]",
+      "options": {
+        "a": "0.33",
+        "b": "1.33",
+        "c": "1.23",
+        "d": "0.21",
+        "e": "0.51"
+      },
+      "correct_option": "a",
+      "answer": "0.33"
+    },
+    {
+      "id": "decimal-fractions-189",
+      "chapter": "Decimal Fractions",
+      "question_number": 189,
+      "question": "Solve 1 2 1 1 2 3 ? 2 7 2 + = + [NICL—AAO Exam, 2015]",
+      "options": {
+        "a": "2/3",
+        "b": "2/7",
+        "c": "5/8",
+        "d": "7/2",
+        "e": "1/7"
+      },
+      "correct_option": "b",
+      "answer": "2/7"
+    },
+    {
+      "id": "decimal-fractions-190",
+      "chapter": "Decimal Fractions",
+      "question_number": 190,
+      "question": "Solve 48.2 × 2.5 × 2.2 + ? = 270 [NICL—AAO Exam, 2015]",
+      "options": {
+        "a": "6.5",
+        "b": "2.8",
+        "c": "4.9",
+        "d": "3.4",
+        "e": "1.2"
+      },
+      "correct_option": "c",
+      "answer": "4.9"
+    },
+    {
+      "id": "decimal-fractions-191",
+      "chapter": "Decimal Fractions",
+      "question_number": 191,
+      "question": "Solve 2 1 2 4 3 1 ? 3 2 3 + − = [NICL—AAO Exam, 2015]",
+      "options": {
+        "a": "1 2 5",
+        "b": "5 2 3",
+        "c": "3 1 4",
+        "d": "1 1 2",
+        "e": "1 6 2"
+      },
+      "correct_option": "e",
+      "answer": "1 6 2"
+    },
+    {
+      "id": "decimal-fractions-192",
+      "chapter": "Decimal Fractions",
+      "question_number": 192,
+      "question": "Solve: 17292/33 ÷ 8 = ? [NICL—AAO Exam, 2015]",
+      "options": {
+        "a": "23.5",
+        "b": "53.5",
+        "c": "65.5",
+        "d": "33.5",
+        "e": "45.5"
+      },
+      "correct_option": "c",
+      "answer": "65.5"
+    },
+    {
+      "id": "decimal-fractions-193",
+      "chapter": "Decimal Fractions",
+      "question_number": 193,
+      "question": "Solve 1599 ÷ 39.99 + 4 2449 120.05 ? 5 × − = [IBPS—BANK PO/MT (Pre.) Exam, 2015]",
+      "options": {
+        "a": "1680",
+        "b": "1940",
+        "c": "1640",
+        "d": "1880",
+        "e": "1780"
+      },
+      "correct_option": "d",
+      "answer": "1880"
+    },
+    {
+      "id": "decimal-fractions-194",
+      "chapter": "Decimal Fractions",
+      "question_number": 194,
+      "question": "Solve 1576 ÷ 45.02 + 23.99 × 255 = ? [IBPS—BANK PO/MT (Pre.) Exam, 2015]",
+      "options": {
+        "a": "340",
+        "b": "420",
+        "c": "380",
+        "d": "460",
+        "e": "360"
+      },
+      "correct_option": "b",
+      "answer": "420"
+    },
+    {
+      "id": "decimal-fractions-195",
+      "chapter": "Decimal Fractions",
+      "question_number": 195,
+      "question": "Solve 3899 ÷ 11.99 – 2379 ÷ 13.97 = ? [IBPS—BANK PO/MT (Pre.) Exam, 2015]",
+      "options": {
+        "a": "125",
+        "b": "250",
+        "c": "155",
+        "d": "135",
+        "e": "225"
+      },
+      "correct_option": "c",
+      "answer": "155"
+    },
+    {
+      "id": "decimal-fractions-196",
+      "chapter": "Decimal Fractions",
+      "question_number": 196,
+      "question": "Solve 2 1 1 2 4 1 ? 9 18 2 + − = [IBPS—RRB Office Assistant (Online) Exam, 2015]",
+      "options": {
+        "a": "5 4 9",
+        "b": "7 4 9",
+        "c": "8 5 9",
+        "d": "1 6 2",
+        "e": "2 5 3"
+      },
+      "correct_option": "b",
+      "answer": "7 4 9"
+    },
+    {
+      "id": "decimal-fractions-197",
+      "chapter": "Decimal Fractions",
+      "question_number": 197,
+      "question": "Solve 2 294 14 5 11 8 5 1.7 ? ÷ × + = ÷ + [IBPS—RRB Office Assistant (Online) Exam, 2015]",
+      "options": {
+        "a": "8",
+        "b": "6",
+        "c": "12",
+        "d": "5",
+        "e": "10"
+      },
+      "correct_option": "a",
+      "answer": "8"
+    },
+    {
+      "id": "decimal-fractions-198",
+      "chapter": "Decimal Fractions",
+      "question_number": 198,
+      "question": "Solve 2.5 × 4.8 + 7.2 × 1.5 – 1.2 × 14 = ? [IBPS—RRB Office Assistant (Online) Exam, 2015]",
+      "options": {
+        "a": "1.2",
+        "b": "6.5",
+        "c": "4",
+        "d": "4.8",
+        "e": "6"
+      },
+      "correct_option": "e",
+      "answer": "6"
+    },
+    {
+      "id": "decimal-fractions-199",
+      "chapter": "Decimal Fractions",
+      "question_number": 199,
+      "question": "Solve 197 6.99 626.96 ? × + = [IBPS—Bank PO/PT Exam, 2015]",
+      "options": {
+        "a": "885",
+        "b": "725",
+        "c": "825",
+        "d": "650",
+        "e": "675"
+      },
+      "correct_option": "b",
+      "answer": "725"
+    },
+    {
+      "id": "decimal-fractions-200",
+      "chapter": "Decimal Fractions",
+      "question_number": 200,
+      "question": "Which of the following fractions is the largest? 3 7 5 7 , , , 2 3 4 2 [ESIC—UDC Exam, 2016]",
+      "options": {
+        "a": "7 3",
+        "b": "5 4",
+        "c": "7 2",
+        "d": "3 2"
+      },
+      "correct_option": "c",
+      "answer": "7 2"
+    },
+    {
+      "id": "decimal-fractions-201",
+      "chapter": "Decimal Fractions",
+      "question_number": 201,
+      "question": "Solve ? 329 529 ? = [SBI Jr. Associates (Pre.) Exam, 2016]",
+      "options": {
+        "a": "404",
+        "b": "408",
+        "c": "410",
+        "d": "414",
+        "e": "416"
+      },
+      "correct_option": "e",
+      "answer": "416"
+    },
+    {
+      "id": "decimal-fractions-202",
+      "chapter": "Decimal Fractions",
+      "question_number": 202,
+      "question": "The numerator of a fraction is decreased by 25% and the denominator is increased by 250%. If the resultant fraction is 6 5 , what is the original fraction? [SBI Jr. Associates (Pre.) Exam, 2016]",
+      "options": {
+        "a": "22 5",
+        "b": "24 5",
+        "c": "27 6",
+        "d": "28 5",
+        "e": "30 11     + − = +       1 3 ? 21.5 21 13.5 17 5 6 15 4 30"
+      },
+      "correct_option": "d",
+      "answer": "28 5"
+    },
+    {
+      "id": "decimal-fractions-203",
+      "chapter": "Decimal Fractions",
+      "question_number": 203,
+      "question": "Solve ( ) [IBPS—Bank Sp. Officer (Marketing) Exam, 2016]",
+      "options": {
+        "a": "2",
+        "b": "8",
+        "c": "512",
+        "d": "324",
+        "e": "None of these 2 18 455 61 ? 4 19 799       × ÷ =            "
+      },
+      "correct_option": "e",
+      "answer": "None of these 2 18 455 61 ? 4 19 799       × ÷ =            "
+    },
+    {
+      "id": "decimal-fractions-204",
+      "chapter": "Decimal Fractions",
+      "question_number": 204,
+      "question": "Solve [IBPS—Bank Sp. Officer (Marketing) Exam, 2016]",
+      "options": {
+        "a": "6320",
+        "b": "6400",
+        "c": "6350",
+        "d": "6430",
+        "e": "6490"
+      },
+      "correct_option": "c",
+      "answer": "6350"
+    },
+    {
+      "id": "decimal-fractions-205",
+      "chapter": "Decimal Fractions",
+      "question_number": 205,
+      "question": "5 9 of a number is equal to twenty five percent of 1 second number. Second number is equal to of 4 third number. The value of third number is 2960. What is 30% of first number ? [DMRC—Customer Relationship Assistant (CRA) Exam, 2016]",
+      "options": {
+        "a": "99.9",
+        "b": "88.8",
+        "c": "77.7",
+        "d": "None of these"
+      },
+      "correct_option": "a",
+      "answer": "99.9"
+    },
+    {
+      "id": "decimal-fractions-206",
+      "chapter": "Decimal Fractions",
+      "question_number": 206,
+      "question": "Solve { } 1 1 1 1 1 1 1 7 2 1 1 ? 2 4 4 2 2 3 6     − + − − − =         [UPSSSC—Lower Subordinate (Pre.) Exam, 2016]",
+      "options": {
+        "a": "2 9",
+        "b": "1 4 2",
+        "c": "1 9 2",
+        "d": "77 1 228"
+      },
+      "correct_option": "b",
+      "answer": "1 4 2"
     }
   ]
 }
