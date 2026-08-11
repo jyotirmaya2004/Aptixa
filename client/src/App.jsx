@@ -44,6 +44,13 @@ export default function App() {
     document.documentElement.setAttribute('data-font-size', fontSize);
   }, [theme, accent, fontSize]);
 
+  const DEFAULT_CATEGORIES = [
+    { id: 'dsa', title: 'DSA Placement Hub', description: '525 High-Frequency LeetCode Questions with Python Solutions', questionCount: 525, icon: 'Code2' },
+    { id: 'quantitative', title: 'Quantitative Aptitude', description: 'Comprehensive Problem Sets with Step-by-Step Solutions', questionCount: 40, icon: 'Zap' },
+    { id: 'logical', title: 'Logical Reasoning', description: 'Analytical Puzzles, Coding-Decoding & Pattern Series', questionCount: 30, icon: 'CheckCircle' },
+    { id: 'verbal', title: 'Verbal Ability', description: 'Grammar Rules, Vocabulary & Reading Comprehension', questionCount: 30, icon: 'Clock' }
+  ];
+
   const loadData = async () => {
     try {
       setLoading(true);
@@ -53,7 +60,14 @@ export default function App() {
       setStats(st);
       setLoading(false);
     } catch (err) {
-      setError('Cannot reach the Express backend at localhost:5000. Please ensure backend server is active.');
+      console.warn('Backend server unconfigured or offline. Running in local Vercel mode.');
+      setCategories(DEFAULT_CATEGORIES);
+      setStats({
+        totalAttempts: 0,
+        averageScore: 0,
+        recentAttempts: []
+      });
+      setError('');
       setLoading(false);
     }
   };
