@@ -14,119 +14,65 @@ import LeetCode500Section from './components/LeetCode500Section';
 import { fetchCategories, fetchQuestions, submitQuizAttempt, fetchStats } from './utils/api';
 import { DSA_500_PROBLEMS } from './data/dsa500Data';
 import { SANDBOX_DATABASE } from './data/sandboxData';
-import { Zap, CheckCircle, Clock, ChevronRight, RefreshCw, ShieldOff, Sliders, Lightbulb, BookOpen, Sparkles, Code2 } from 'lucide-react';
+import {
+  Zap, CheckCircle, Clock, ChevronRight, RefreshCw,
+  ShieldOff, Lightbulb, BookOpen, Sparkles, Code2
+} from 'lucide-react';
 
-export default function App() {
-  // Appearance & Customization State
-  const [theme, setTheme] = useState('dark');
-  const [accent, setAccent] = useState('blue');
-  const [fontSize, setFontSize] = useState('medium');
-  const [showPreferences, setShowPreferences] = useState(false);
-
-  // App Navigation & Data State
-  const [currentTab, setCurrentTab] = useState('categories');
-  const [categories, setCategories] = useState([]);
-  const [stats, setStats] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
-
-  // Active Quiz Config & Execution State
-  const [configCategory, setConfigCategory] = useState(null);
-  const [configDefaultMode, setConfigDefaultMode] = useState('exam');
-  const [activeQuiz, setActiveQuiz] = useState(null);
-  const [quizResult, setQuizResult] = useState(null);
-
-  // Admin Auth State
-  const [adminAuthed, setAdminAuthed] = useState(false);
-
-  // Sync Preferences to Document
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-    document.documentElement.setAttribute('data-accent', accent);
-    document.documentElement.setAttribute('data-font-size', fontSize);
-  }, [theme, accent, fontSize]);
-
-  const DEFAULT_CATEGORIES = [
-    { id: 'dsa', title: 'DSA Placement Hub', description: '525 High-Frequency LeetCode Questions with Python Solutions', questionCount: 525, icon: 'Code2', topics: ['Arrays', 'Two Pointers', 'Sliding Window', 'Binary Search', 'Linked List', 'Trees', 'DP', 'Graphs'] },
-    { id: 'quantitative', title: 'Quantitative Aptitude', description: 'Comprehensive Problem Sets with Step-by-Step Solutions', questionCount: 40, icon: 'Zap', topics: ['Number System', 'HCF & LCM', 'Percentages', 'Profit & Loss', 'Time & Work'] },
-    { id: 'logical', title: 'Logical Reasoning', description: 'Analytical Puzzles, Coding-Decoding & Pattern Series', questionCount: 30, icon: 'CheckCircle', topics: ['Coding-Decoding', 'Blood Relations', 'Seating Arrangement', 'Syllogism'] },
-    { id: 'verbal', title: 'Verbal Ability', description: 'Grammar Rules, Vocabulary & Reading Comprehension', questionCount: 30, icon: 'Clock', topics: ['Reading Comprehension', 'Sentence Correction', 'Synonyms', 'Antonyms'] }
-  ];
-
-  const loadData = async () => {
-    try {
-      setLoading(true);
-      setError('');
-      const [cats, st] = await Promise.all([fetchCategories(), fetchStats()]);
-      setCategories(cats);
-      setStats(st);
-      setLoading(false);
-    } catch (err) {
-      console.warn('Backend server unconfigured or offline. Running in local Vercel mode.');
-      setCategories(DEFAULT_CATEGORIES);
-      setStats({
-        totalAttempts: 0,
-        averageScore: 0,
-        recentAttempts: []
-      });
-      setError('');
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => { loadData(); }, []);
-
-  // Open Quiz Parameter Configuration Modal
-  const handleOpenQuizConfig = (category, defaultMode = 'exam') => {
-    setConfigCategory(category);
-    setConfigDefaultMode(defaultMode);
-  };
-
-function getStaticQuestions(categoryId, config) {
+// ── Helper: build quiz questions from static client data ──────────────────────
+// QuizRunner expects: { id, question, options: string[], correctOption: number,
+//                       topic, difficulty, explanation, hint? }
+function buildStaticQuestions(categoryId, config) {
   let list = [];
-  if (categoryId === 'dsa') {
-    list = DSA_500_PROBLEMS.map((item, idx) => ({
-      id: item.id || `dsa-${idx}`,
-      question: `${item.title} — ${item.problem ? item.problem.slice(0, 180) : item.title}...`,
-      options: {
-        a: `Optimal Complexity: ${item.timeComplexity || 'O(N)'}`,
-        b: `Brute Force: O(N²)`,
-        c: `Logarithmic: O(log N)`,
-        d: `Constant: O(1)`
-      },
-      correct_option: 'a',
-      explanation: `Python Solution Code:\n${item.solutionPython || 'See DSA Hub for complete code'}`
-    }));
-  } else {
-    const categoryFilterMap = {
-      quantitative: 'quantitative',
-      logical: 'logical',
-      verbal: 'verbal'
-    };
-    const targetCat = categoryFilterMap[categoryId] || 'quantitative';
-    const filtered = SANDBOX_DATABASE.filter(q => q.category === targetCat);
-    list = filtered.map((q, idx) => ({
-      id: q.id || `${targetCat}-${idx}`,
-      question: `${q.title}: ${q.description || 'Solve the following problem using standard formulas.'}`,
-      options: {
-        a: q.formula || 'Formula Option A',
-        b: 'Option B',
-        c: 'Option C',
-        d: 'Option D'
-      },
-      correct_option: 'a',
-      explanation: q.shortcutTip || q.description || 'Standard solution steps.'
-    }));
-  }
 
-  if (!list.length) {
-    list = SANDBOX_DATABASE.slice(0, 10).map((q, idx) => ({
-      id: `gen-${idx}`,
-      question: `${q.title}: ${q.description}`,
-      options: { a: q.formula || 'Option A', b: 'Option B', c: 'Option C', d: 'Option D' },
-      correct_option: 'a',
-      explanation: q.shortcutTip || 'Standard solution'
-    }));
+  if (categoryId === 'dsa') {
+    list = DSA_500_PROBLEMS.map((item, idx) => {
+      const correct = item.timeComplexity || 'O(N)';
+      return {
+        id: item.id || `dsa-${idx}`,
+        question: `${item.title}: What is the optimal time complexity for this problem?`,
+        options: [
+          `${correct} — Optimal solution`,
+          'O(N²) — Brute force nested loops',
+          'O(log N) — Binary search / divide & conquer',
+          'O(1) — Constant space trick',
+        ],
+        correctOption: 0,
+        topic: item.category || 'DSA',
+        difficulty: item.difficulty || 'Medium',
+        explanation: item.solutionPython
+          ? `Optimal approach:\n${item.solutionPython.slice(0, 400)}`
+          : `The optimal time complexity is ${correct}. See the DSA Hub for full code.`,
+      };
+    });
+  } else {
+    const targetCat =
+      categoryId === 'quantitative' ? 'quantitative'
+      : categoryId === 'logical' ? 'logical'
+      : categoryId === 'verbal' ? 'verbal'
+      : 'quantitative';
+
+    const filtered = SANDBOX_DATABASE.filter(q => q.category === targetCat);
+    const source = filtered.length ? filtered : SANDBOX_DATABASE;
+
+    list = source.map((q, idx) => {
+      const correctText = q.formula || q.shortcutTip || 'Standard formula approach';
+      return {
+        id: q.id || `${targetCat}-${idx}`,
+        question: `${q.title}: ${q.description || 'Choose the correct approach for solving this problem.'}`,
+        options: [
+          correctText.slice(0, 120),
+          'Inverse ratio method',
+          'Simple arithmetic mean',
+          'Logarithmic approximation',
+        ],
+        correctOption: 0,
+        topic: q.topic || targetCat,
+        difficulty: q.importance === 'Critical' ? 'Hard' : q.importance === 'High' ? 'Medium' : 'Easy',
+        explanation: q.shortcutTip || q.description || 'Standard placement exam approach.',
+        hint: q.formula || undefined,
+      };
+    });
   }
 
   if (config?.shuffle !== false) {
@@ -136,95 +82,190 @@ function getStaticQuestions(categoryId, config) {
   return list.slice(0, config?.limit || 10);
 }
 
-// Launch Customized Quiz
-const handleStartQuiz = async (categoryId, config) => {
-  try {
-    setLoading(true);
-    setConfigCategory(null); // Close modal
+// ─────────────────────────────────────────────────────────────────────────────
 
-    let qs = [];
+export default function App() {
+  // Appearance & Customization State
+  const [theme, setTheme]           = useState('dark');
+  const [accent, setAccent]         = useState('blue');
+  const [fontSize, setFontSize]     = useState('medium');
+  const [showPreferences, setShowPreferences] = useState(false);
+
+  // App Navigation & Data State
+  const [currentTab, setCurrentTab] = useState('categories');
+  const [categories, setCategories] = useState([]);
+  const [stats, setStats]           = useState(null);
+  const [loading, setLoading]       = useState(true);
+  const [error, setError]           = useState('');
+
+  // Active Quiz Config & Execution State
+  const [configCategory, setConfigCategory]       = useState(null);
+  const [configDefaultMode, setConfigDefaultMode] = useState('exam');
+  const [activeQuiz, setActiveQuiz]               = useState(null);
+  const [quizResult, setQuizResult]               = useState(null);
+
+  // Sync Preferences to Document
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    document.documentElement.setAttribute('data-accent', accent);
+    document.documentElement.setAttribute('data-font-size', fontSize);
+  }, [theme, accent, fontSize]);
+
+  // Static fallback categories (no backend needed)
+  const DEFAULT_CATEGORIES = [
+    {
+      id: 'quantitative',
+      title: 'Quantitative Aptitude',
+      description: 'Comprehensive Problem Sets with Step-by-Step Solutions',
+      questionCount: SANDBOX_DATABASE.filter(q => q.category === 'quantitative').length,
+      icon: 'Zap',
+      topics: ['Number System', 'HCF & LCM', 'Percentages', 'Profit & Loss', 'Time & Work'],
+    },
+    {
+      id: 'logical',
+      title: 'Logical Reasoning',
+      description: 'Analytical Puzzles, Coding-Decoding & Pattern Series',
+      questionCount: SANDBOX_DATABASE.filter(q => q.category === 'logical').length,
+      icon: 'CheckCircle',
+      topics: ['Coding-Decoding', 'Blood Relations', 'Seating Arrangement', 'Syllogism'],
+    },
+    {
+      id: 'verbal',
+      title: 'Verbal Ability',
+      description: 'Grammar Rules, Vocabulary & Reading Comprehension',
+      questionCount: SANDBOX_DATABASE.filter(q => q.category === 'verbal').length || 30,
+      icon: 'Clock',
+      topics: ['Reading Comprehension', 'Sentence Correction', 'Synonyms', 'Antonyms'],
+    },
+    {
+      id: 'dsa',
+      title: 'DSA Placement Hub',
+      description: `${DSA_500_PROBLEMS.length} High-Frequency LeetCode Questions with Python Solutions`,
+      questionCount: DSA_500_PROBLEMS.length,
+      icon: 'Code2',
+      topics: ['Arrays', 'Two Pointers', 'Sliding Window', 'Binary Search', 'Linked List', 'Trees', 'DP', 'Graphs'],
+    },
+  ];
+
+  // ── Data Loading ─────────────────────────────────────────────────────────────
+  const loadData = async () => {
     try {
-      qs = await fetchQuestions({
-        category: categoryId,
-        limit: config.limit || 10,
-        difficulty: config.difficulty || 'all',
-        shuffle: config.shuffle !== false
-      });
-    } catch (e) {
-      console.warn('Backend unconfigured/offline. Launching quiz with local client questions.');
-      qs = getStaticQuestions(categoryId, config);
+      setLoading(true);
+      setError('');
+      const [cats, st] = await Promise.all([fetchCategories(), fetchStats()]);
+      setCategories(cats);
+      setStats(st);
+    } catch (err) {
+      console.warn('Backend offline/unconfigured — running in standalone client mode.');
+      setCategories(DEFAULT_CATEGORIES);
+      setStats({ totalAttempts: 0, averageScore: 0, recentAttempts: [] });
+      setError('');
+    } finally {
+      setLoading(false);
     }
+  };
 
-    if (!qs?.length) {
-      qs = getStaticQuestions(categoryId, config);
-    }
+  useEffect(() => { loadData(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-    setActiveQuiz({
-      categoryId,
-      mode: config.mode || 'exam',
-      timerPerQuestion: config.timerPerQuestion || 90,
-      questions: qs
-    });
+  // ── Quiz Config Modal ─────────────────────────────────────────────────────────
+  const handleOpenQuizConfig = (category, defaultMode = 'exam') => {
+    setConfigCategory(category);
+    setConfigDefaultMode(defaultMode);
+  };
 
-    setCurrentTab('quiz');
-    setLoading(false);
-  } catch (err) {
-    alert('Failed to launch quiz: ' + err.message);
-    setLoading(false);
-  }
-};
-
-const handleCompleteQuiz = async ({ userAnswers, timeSpentSeconds, mode }) => {
-  if (!activeQuiz) return;
-  try {
-    setLoading(true);
-    let res;
+  // ── Launch Customized Quiz ────────────────────────────────────────────────────
+  const handleStartQuiz = async (categoryId, config) => {
     try {
-      res = await submitQuizAttempt({
-        category: activeQuiz.categoryId,
-        mode,
-        totalQuestions: activeQuiz.questions.length,
-        userAnswers,
-        timeSpentSeconds
+      setLoading(true);
+      setConfigCategory(null);
+
+      let qs = [];
+      try {
+        qs = await fetchQuestions({
+          category: categoryId,
+          limit: config.limit || 10,
+          difficulty: config.difficulty || 'all',
+          shuffle: config.shuffle !== false,
+        });
+      } catch (_) {
+        // backend unavailable — use local data
+        qs = [];
+      }
+
+      // If backend returned nothing or failed, use static client data
+      if (!qs || !qs.length) {
+        qs = buildStaticQuestions(categoryId, config);
+      }
+
+      setActiveQuiz({
+        categoryId,
+        mode: config.mode || 'exam',
+        timerPerQuestion: config.timerPerQuestion || 90,
+        questions: qs,
       });
-    } catch (e) {
-      console.warn('Backend unconfigured. Evaluating score locally.');
-      let score = 0;
-      activeQuiz.questions.forEach(q => {
-        if (userAnswers[q.id]?.toLowerCase() === q.correct_option?.toLowerCase()) {
-          score++;
-        }
-      });
-      res = {
-        score,
-        totalQuestions: activeQuiz.questions.length,
-        percentage: Math.round((score / activeQuiz.questions.length) * 100),
-        timeSpentSeconds
-      };
+      setCurrentTab('quiz');
+    } catch (err) {
+      alert('Failed to launch quiz: ' + err.message);
+    } finally {
+      setLoading(false);
     }
+  };
 
-    setQuizResult({ result: res, questions: activeQuiz.questions });
-    setCurrentTab('result');
-    loadData();
-    setLoading(false);
-  } catch (err) {
-    alert('Submit failed: ' + err.message);
-    setLoading(false);
-  }
-};
+  // ── Complete Quiz & Score ─────────────────────────────────────────────────────
+  const handleCompleteQuiz = async ({ userAnswers, timeSpentSeconds, mode }) => {
+    if (!activeQuiz) return;
+    setLoading(true);
+    try {
+      let res;
+      try {
+        res = await submitQuizAttempt({
+          category: activeQuiz.categoryId,
+          mode,
+          totalQuestions: activeQuiz.questions.length,
+          userAnswers,
+          timeSpentSeconds,
+        });
+      } catch (_) {
+        // Score locally
+        let score = 0;
+        const breakdown = activeQuiz.questions.map(q => {
+          const selectedOpt = userAnswers[q.id];
+          const isCorrect   = selectedOpt === q.correctOption;
+          if (isCorrect) score++;
+          return { questionId: q.id, selectedOpt, isCorrect };
+        });
+        res = {
+          score,
+          totalQuestions: activeQuiz.questions.length,
+          percentage: Math.round((score / activeQuiz.questions.length) * 100),
+          timeSpentSeconds,
+          mode,
+          breakdown,
+        };
+      }
 
-  const getCategoryTitle = (id) => categories.find(c => c.id === id)?.title || 'Aptitude Practice';
+      setQuizResult({ result: res, questions: activeQuiz.questions });
+      setCurrentTab('result');
+    } catch (err) {
+      alert('Submit failed: ' + err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const getCategoryTitle = (id) =>
+    categories.find(c => c.id === id)?.title || 'Aptitude Practice';
 
   const handleSetTab = (tab) => {
-    if (tab !== 'admin') setAdminAuthed(false);
     if (tab === 'categories') setActiveQuiz(null);
     setCurrentTab(tab);
   };
 
+  // ── Render ────────────────────────────────────────────────────────────────────
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      
-      {/* Top Responsive Sticky Header */}
+
+      {/* Sticky Responsive Header */}
       <Header
         currentTab={currentTab}
         setCurrentTab={handleSetTab}
@@ -234,68 +275,94 @@ const handleCompleteQuiz = async ({ userAnswers, timeSpentSeconds, mode }) => {
         onOpenPreferences={() => setShowPreferences(true)}
       />
 
-      {/* Main Responsive Body */}
+      {/* Main Content */}
       <main style={{ flexGrow: 1, paddingBottom: '60px' }}>
 
         {/* Loading Spinner */}
         {loading && (
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '300px', gap: '14px' }}>
-            <RefreshCw size={30} color="var(--accent-primary)" style={{ animation: 'spin 1s linear infinite' }} />
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Loading APTIXA Platform...</p>
+          <div style={{
+            display: 'flex', flexDirection: 'column',
+            alignItems: 'center', justifyContent: 'center',
+            minHeight: '60vh', gap: '14px'
+          }}>
+            <RefreshCw size={32} color="var(--accent-primary)"
+              style={{ animation: 'spin 1s linear infinite' }} />
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+              Loading APTIXA…
+            </p>
             <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
           </div>
         )}
 
-        {/* Error Notification */}
+        {/* Error Banner */}
         {!loading && error && (
-          <div style={{ maxWidth: '680px', margin: '48px auto', padding: '24px', background: 'var(--danger-bg)', border: '1px solid var(--danger-border)', borderRadius: 'var(--radius-md)', textAlign: 'center' }}>
+          <div style={{
+            maxWidth: '680px', margin: '48px auto 0', padding: '24px',
+            background: 'var(--danger-bg)', border: '1px solid var(--danger-border)',
+            borderRadius: 'var(--radius-md)', textAlign: 'center'
+          }}>
             <ShieldOff size={30} color="var(--danger)" style={{ marginBottom: '10px' }} />
             <p style={{ color: 'var(--danger)', fontWeight: '600', marginBottom: '14px' }}>{error}</p>
-            <button className="btn btn-outline" onClick={loadData}><RefreshCw size={15} /> Retry</button>
+            <button className="btn btn-outline" onClick={loadData}>
+              <RefreshCw size={15} /> Retry
+            </button>
           </div>
         )}
 
-        {/* ── View 1: Assessment Domains ── */}
+        {/* ── Home: Assessment Domains ── */}
         {!loading && !error && currentTab === 'categories' && (
-          <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '32px 16px' }}>
+          <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '24px 16px' }}>
 
-            {/* Hero Container */}
-            <div className="glass-card hero-container" style={{ padding: '36px 32px', marginBottom: '32px' }}>
-              <div style={{ maxWidth: '780px' }}>
-                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '3px 10px', borderRadius: 'var(--radius-xs)', background: 'var(--info-bg)', border: '1px solid rgba(59,130,246,0.25)', fontSize: '0.78rem', fontWeight: '700', color: 'var(--info)', marginBottom: '14px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-                  <Zap size={12} /> APTIXA Assessment Engine
+            {/* Hero */}
+            <div className="glass-card hero-container"
+              style={{ padding: '32px 24px', marginBottom: '28px' }}>
+              <div style={{ maxWidth: '760px' }}>
+                <div style={{
+                  display: 'inline-flex', alignItems: 'center', gap: '6px',
+                  padding: '3px 10px', borderRadius: 'var(--radius-xs)',
+                  background: 'var(--info-bg)', border: '1px solid rgba(59,130,246,0.25)',
+                  fontSize: '0.75rem', fontWeight: '700', color: 'var(--info)',
+                  marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px'
+                }}>
+                  <Zap size={11} /> APTIXA Assessment Engine
                 </div>
-                <h2 style={{ fontSize: '2rem', marginBottom: '12px', fontWeight: '800', letterSpacing: '-0.5px' }}>
+                <h2 style={{ fontSize: 'clamp(1.4rem, 4vw, 2rem)', marginBottom: '10px', fontWeight: '800', letterSpacing: '-0.5px' }}>
                   Master Placement &amp; Competitive Exams
                 </h2>
-                <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: '1.65', marginBottom: '22px' }}>
-                  Standardized assessment portal covering Quantitative Aptitude, Logical Reasoning, Verbal Ability, Data Interpretation, and CS/Technical Core. Practice from top reference books or customize mock exams.
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: '1.65', marginBottom: '20px' }}>
+                  Standardized assessment portal covering Quantitative Aptitude, Logical Reasoning,
+                  Verbal Ability and DSA. Practice from top reference books or take customised mock exams.
                 </p>
-                
-                <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center' }}>
+                <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', alignItems: 'center' }}>
                   <button className="btn btn-primary" onClick={() => setCurrentTab('sandbox')}>
-                    <Sparkles size={16} /> 220 Live Interactive Solvers
+                    <Sparkles size={15} /> Live Solvers
                   </button>
                   <button className="btn btn-outline" onClick={() => setCurrentTab('leetcode500')}>
-                    <Code2 size={16} /> 500 DSA Solvers
+                    <Code2 size={15} /> DSA Hub
                   </button>
                   <button className="btn btn-outline" onClick={() => setCurrentTab('books')}>
-                    <BookOpen size={16} /> Explore Books
+                    <BookOpen size={15} /> Books
                   </button>
                   <button className="btn btn-outline" onClick={() => setCurrentTab('tips')}>
-                    <Lightbulb size={16} /> Formulas &amp; Exam Tips
+                    <Lightbulb size={15} /> Formulas
                   </button>
                 </div>
-
               </div>
             </div>
 
-            {/* Responsive Domain Grid */}
-            <h3 style={{ fontSize: '1.05rem', fontWeight: '700', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.6px', marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              Select Exam Domain
-              <ChevronRight size={16} color="var(--text-muted)" />
+            {/* Domain Cards Grid */}
+            <h3 style={{
+              fontSize: '0.95rem', fontWeight: '700', color: 'var(--text-secondary)',
+              textTransform: 'uppercase', letterSpacing: '0.6px',
+              marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px'
+            }}>
+              Select Exam Domain <ChevronRight size={15} color="var(--text-muted)" />
             </h3>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '20px' }}>
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(min(280px, 100%), 1fr))',
+              gap: '16px'
+            }}>
               {categories.map(cat => (
                 <CategoryCard key={cat.id} category={cat} onOpenConfig={handleOpenQuizConfig} />
               ))}
@@ -303,27 +370,22 @@ const handleCompleteQuiz = async ({ userAnswers, timeSpentSeconds, mode }) => {
           </div>
         )}
 
-        {/* ── View 2: 500 LeetCode DSA Preparation ── */}
-        {!loading && currentTab === 'leetcode500' && (
-          <LeetCode500Section />
-        )}
+        {/* ── DSA Hub ── */}
+        {!loading && currentTab === 'leetcode500' && <LeetCode500Section />}
 
-        {/* ── View 3: Live Interactive Sandbox Hub ── */}
-        {!loading && currentTab === 'sandbox' && (
-          <InteractiveSandbox />
-        )}
+        {/* ── Interactive Sandbox ── */}
+        {!loading && currentTab === 'sandbox' && <InteractiveSandbox />}
 
-        {/* ── View 3: Popular Books Repository ── */}
-        {!loading && currentTab === 'books' && (
-          <BooksSection />
-        )}
+        {/* ── Books Repository ── */}
+        {!loading && currentTab === 'books' && <BooksSection />}
 
-        {/* ── View 3: Exam Tips & Formulas ── */}
-        {!loading && currentTab === 'tips' && (
-          <TipsAndFormulas />
-        )}
+        {/* ── Tips & Formulas ── */}
+        {!loading && currentTab === 'tips' && <TipsAndFormulas />}
 
-        {/* ── View 4: Interactive Quiz Runner ── */}
+        {/* ── Performance Stats ── */}
+        {!loading && currentTab === 'stats' && <PerformanceStats stats={stats} />}
+
+        {/* ── Quiz Runner ── */}
         {!loading && currentTab === 'quiz' && activeQuiz && (
           <QuizRunner
             questions={activeQuiz.questions}
@@ -335,7 +397,7 @@ const handleCompleteQuiz = async ({ userAnswers, timeSpentSeconds, mode }) => {
           />
         )}
 
-        {/* ── View 5: Diagnostic Result Scorecard ── */}
+        {/* ── Quiz Result Scorecard ── */}
         {!loading && currentTab === 'result' && quizResult && (
           <QuizResult
             result={quizResult.result}
@@ -343,20 +405,15 @@ const handleCompleteQuiz = async ({ userAnswers, timeSpentSeconds, mode }) => {
             onRetake={() => handleStartQuiz(activeQuiz.categoryId, {
               mode: activeQuiz.mode,
               limit: activeQuiz.questions.length,
-              timerPerQuestion: activeQuiz.timerPerQuestion
+              timerPerQuestion: activeQuiz.timerPerQuestion,
             })}
             onBackHome={() => setCurrentTab('categories')}
           />
         )}
 
-        {/* ── View 6: Analytics Audit Dashboard ── */}
-        {!loading && currentTab === 'stats' && (
-          <PerformanceStats stats={stats} />
-        )}
-
       </main>
 
-      {/* Quiz Parameter Configuration Modal */}
+      {/* Quiz Config Modal */}
       {configCategory && (
         <QuizConfigModal
           category={configCategory}
@@ -366,19 +423,15 @@ const handleCompleteQuiz = async ({ userAnswers, timeSpentSeconds, mode }) => {
         />
       )}
 
-      {/* Theme & Platform Customization Preferences Modal */}
+      {/* Theme Customizer Modal */}
       {showPreferences && (
         <ThemeCustomizerModal
-          theme={theme}
-          setTheme={setTheme}
-          accent={accent}
-          setAccent={setAccent}
-          fontSize={fontSize}
-          setFontSize={setFontSize}
+          theme={theme}      setTheme={setTheme}
+          accent={accent}    setAccent={setAccent}
+          fontSize={fontSize} setFontSize={setFontSize}
           onClose={() => setShowPreferences(false)}
         />
       )}
-
     </div>
   );
 }
