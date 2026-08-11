@@ -62,6 +62,14 @@
         "question_count": 133,
         "description": "Number representation, consecutive numbers, digits and place values, two-digit/three-digit reversing, fractions and reciprocals.",
         "file": "rs_agrawal/problems_on_numbers.json"
+      },
+      {
+        "id": "ch-problems-on-ages",
+        "chapter_number": 8,
+        "title": "8. Problems on Ages",
+        "question_count": 57,
+        "description": "Age ratios, present, past and future ages, age differences, average age, and age-based algebraic equations.",
+        "file": "rs_agrawal/problems_on_ages.json"
       }
     ]
   },

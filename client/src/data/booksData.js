@@ -5,8 +5,8 @@ export const STATIC_BOOKS = [
     author: "R.S. Aggarwal",
     category: "quantitative",
     coverColor: "#2563eb",
-    chapterCount: 7,
-    totalQuestions: 1514,
+    chapterCount: 8,
+    totalQuestions: 1571,
     description: "The gold standard textbook for Quantitative Aptitude in Bank PO, SSC, CAT, GATE, Placement & Railway exams.",
     chapters: [
       {
@@ -57,6 +57,13 @@ export const STATIC_BOOKS = [
         title: "7. Problems on Numbers",
         question_count: 133,
         description: "Number representation, consecutive numbers, digits and place values, two-digit/three-digit reversing, fractions and reciprocals."
+      },
+      {
+        id: "ch-problems-on-ages",
+        chapter_number: 8,
+        title: "8. Problems on Ages",
+        question_count: 57,
+        description: "Age ratios, present, past and future ages, age differences, average age, and age-based algebraic equations."
       }
     ]
   }
