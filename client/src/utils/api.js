@@ -1,12 +1,26 @@
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const getApiBase = () => {
+  if (import.meta.env.VITE_API_URL) {
+    return import.meta.env.VITE_API_URL;
+  }
+  // Only connect to localhost backend when developing locally
+  if (typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
+    return 'http://localhost:5000/api';
+  }
+  // On Vercel / Production host without VITE_API_URL, return null to skip HTTP network calls
+  return null;
+};
+
+const API_BASE = getApiBase();
 
 export const fetchCategories = async () => {
+  if (!API_BASE) throw new Error('No API server configured for production host');
   const res = await fetch(`${API_BASE}/categories`);
   if (!res.ok) throw new Error('Failed to fetch categories');
   return res.json();
 };
 
 export const fetchQuestions = async (filters = {}) => {
+  if (!API_BASE) throw new Error('No API server configured for production host');
   const params = new URLSearchParams();
   if (filters.category) params.append('category', filters.category);
   if (filters.difficulty) params.append('difficulty', filters.difficulty);
@@ -20,6 +34,7 @@ export const fetchQuestions = async (filters = {}) => {
 };
 
 export const submitQuizAttempt = async (attemptData) => {
+  if (!API_BASE) throw new Error('No API server configured for production host');
   const res = await fetch(`${API_BASE}/attempts`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -30,12 +45,14 @@ export const submitQuizAttempt = async (attemptData) => {
 };
 
 export const fetchStats = async () => {
+  if (!API_BASE) throw new Error('No API server configured for production host');
   const res = await fetch(`${API_BASE}/attempts/stats`);
   if (!res.ok) throw new Error('Failed to fetch stats');
   return res.json();
 };
 
 export const createQuestion = async (questionData) => {
+  if (!API_BASE) throw new Error('No API server configured for production host');
   const res = await fetch(`${API_BASE}/questions`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -46,6 +63,7 @@ export const createQuestion = async (questionData) => {
 };
 
 export const deleteQuestion = async (questionId) => {
+  if (!API_BASE) throw new Error('No API server configured for production host');
   const res = await fetch(`${API_BASE}/questions/${questionId}`, {
     method: 'DELETE'
   });
@@ -55,18 +73,21 @@ export const deleteQuestion = async (questionId) => {
 
 // Books API
 export const fetchBooks = async () => {
+  if (!API_BASE) throw new Error('No API server configured for production host');
   const res = await fetch(`${API_BASE}/books`);
   if (!res.ok) throw new Error('Failed to fetch books');
   return res.json();
 };
 
 export const fetchBookChapter = async (bookId, chapterId) => {
+  if (!API_BASE) throw new Error('No API server configured for production host');
   const res = await fetch(`${API_BASE}/books/${bookId}/chapters/${chapterId}`);
   if (!res.ok) throw new Error('Failed to fetch chapter');
   return res.json();
 };
 
 export const uploadBookChapterJSON = async (jsonData) => {
+  if (!API_BASE) throw new Error('No API server configured for production host');
   const res = await fetch(`${API_BASE}/books/upload`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -80,6 +101,7 @@ export const uploadBookChapterJSON = async (jsonData) => {
 };
 
 export const deleteBook = async (bookId) => {
+  if (!API_BASE) throw new Error('No API server configured for production host');
   const res = await fetch(`${API_BASE}/books/${bookId}`, {
     method: 'DELETE'
   });
@@ -88,6 +110,7 @@ export const deleteBook = async (bookId) => {
 };
 
 export const deleteChapter = async (bookId, chapterId) => {
+  if (!API_BASE) throw new Error('No API server configured for production host');
   const res = await fetch(`${API_BASE}/books/${bookId}/chapters/${chapterId}`, {
     method: 'DELETE'
   });
