@@ -77,10 +77,9 @@ export default function Header({
             src="/logo.png"
             alt="APTIXA Logo"
             style={{
-              width: '36px', height: '36px',
+              width: '46px', height: '46px',
               objectFit: 'contain',
-              borderRadius: 'var(--radius-xs)',
-              filter: 'drop-shadow(0 2px 6px rgba(37,99,235,0.3))'
+              filter: 'drop-shadow(0 2px 8px rgba(37,99,235,0.4))'
             }}
           />
           <div>
@@ -93,7 +92,7 @@ export default function Header({
               <span className="gradient-text">APTIXA</span>
             </span>
             <div style={{ fontSize: '0.66rem', color: 'var(--text-muted)', fontWeight: '600', letterSpacing: '0.3px', marginTop: '2px' }}>
-              Placement Assessment Portal
+              Placement & Skill Hub
             </div>
           </div>
         </div>
