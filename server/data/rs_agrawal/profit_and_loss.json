@@ -1,0 +1,4846 @@
+{
+  "book": "Quantitative Aptitude for Competitive Examinations — R.S. Aggarwal",
+  "chapter_number": 12,
+  "chapter": "Profit and Loss",
+  "book_page_range": "374–425",
+  "question_count": 319,
+  "key_concepts": [
+    {
+      "topic": "Cost Price & Selling Price",
+      "formula": "Cost Price (C.P.): Purchase price + overheads. Selling Price (S.P.): Price at which item is sold."
+    },
+    {
+      "topic": "Profit and Loss Percentage",
+      "formula": "Profit = S.P. − C.P. | Loss = C.P. − S.P. | Profit% = (Profit / C.P.) × 100 | Loss% = (Loss / C.P.) × 100."
+    },
+    {
+      "topic": "S.P. and C.P. Calculation",
+      "formula": "S.P. = C.P. × (100 + Gain%)/100 | C.P. = S.P. × 100/(100 + Gain%)."
+    },
+    {
+      "topic": "Equal Gain and Loss",
+      "formula": "When two items are sold at x% gain and x% loss respectively, overall transaction results in a loss of x²/100 %."
+    },
+    {
+      "topic": "Dishonest Dealer Formula",
+      "formula": "Gain% = [Error / (True Value − Error)] × 100%."
+    }
+  ],
+  "questions": [
+    {
+      "id": "profit-and-loss-001",
+      "chapter": "Profit and Loss",
+      "question_number": 1,
+      "question": "What percentage of families in the city have telephones? St I: 50% have TV. St II: 30% of TV owners have telephones.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "e",
+      "answer": "The data in both statements I and II together are necessary.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-002",
+      "chapter": "Profit and Loss",
+      "question_number": 2,
+      "question": "If a factory filled 120 orders, what percent of total orders has been filled? St I: Total orders = 300. St II: Filled orders = 2/5 of total.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "c",
+      "answer": "The data either in statement I or in statement II alone are sufficient.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-003",
+      "chapter": "Profit and Loss",
+      "question_number": 3,
+      "question": "By what percent is the salary of elder son more than younger son? St I: Father's salary is 37% less than elder son. St II: Father's salary is 30% less than younger son.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "e",
+      "answer": "The data in both statements I and II together are necessary.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-004",
+      "chapter": "Profit and Loss",
+      "question_number": 4,
+      "question": "55% teachers are females. If 8% female teachers teach 5 classes a day, how many female teachers do not teach 5 classes? St I: 135 male teachers. St II: 27 male teachers do not teach 5 classes.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "a",
+      "answer": "The data in statement I alone are sufficient.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-005",
+      "chapter": "Profit and Loss",
+      "question_number": 5,
+      "question": "What are the pass marks in an examination? St I: Student gets 30% but fails by 10 marks. St II: Total marks is 200.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "e",
+      "answer": "The data in both statements I and II together are necessary.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-006",
+      "chapter": "Profit and Loss",
+      "question_number": 6,
+      "question": "How much minimum marks required to pass exam? St I: A secured 32% and failed by 1, B secured 36% and got 1 more than pass. St II: A secured 30% and failed by 2, got 40% with 5 more marks.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "c",
+      "answer": "The data either in statement I or in statement II alone are sufficient.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-007",
+      "chapter": "Profit and Loss",
+      "question_number": 7,
+      "question": "Are at least 20% of people in City X aged 30+ bilingual? St I: 30% of population is 30+. St II: Of 30+ pop, 18% women and 17% men are bilingual.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "b",
+      "answer": "The data in statement II alone are sufficient.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-008",
+      "chapter": "Profit and Loss",
+      "question_number": 8,
+      "question": "What is the net effect on gross receipts? St I: Prices reduced by 25%. St II: Sales increase by 20%.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "e",
+      "answer": "The data in both statements I and II together are necessary.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-009",
+      "chapter": "Profit and Loss",
+      "question_number": 9,
+      "question": "What was Altaf's income in 2010? St I: Income for 2008, 2009, 2010 was ₹ 3,00,000. St II: Earned 20% more in 2009 than 2008.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "d",
+      "answer": "The data even in both statements together are not sufficient.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-010",
+      "chapter": "Profit and Loss",
+      "question_number": 10,
+      "question": "10000 tickets sold in VIP, sitting, standing. How many VIP tickets sold? St I: Sitting tickets = 1/2 of standing. St II: Sitting + standing were 150% more than VIP.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "b",
+      "answer": "The data in statement II alone are sufficient.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-011",
+      "chapter": "Profit and Loss",
+      "question_number": 11,
+      "question": "How many chocolates can Sheetal buy spending 20% budget on veggies and 30% on groceries? St I: She has ₹ 50. St II: Each chocolate costs 25 paise.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "e",
+      "answer": "The data in both statements I and II together are necessary.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-012",
+      "chapter": "Profit and Loss",
+      "question_number": 12,
+      "question": "What is the value of 20% of x? St I: 1/4 of 20% of x is 5. St II: 4x = S, 5y = S and y = 80.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "c",
+      "answer": "The data either in statement I or in statement II alone are sufficient.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-013",
+      "chapter": "Profit and Loss",
+      "question_number": 13,
+      "question": "What is the ratio of two numbers x and y? St I: 40% of x is 20% of 50. St II: 30% of y is 25% of 72.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "e",
+      "answer": "The data in both statements I and II together are necessary.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-014",
+      "chapter": "Profit and Loss",
+      "question_number": 14,
+      "question": "What is ratio of girls to boys in school? St I: 680 total students, 45% girls. St II: 55% of total students are boys.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "c",
+      "answer": "The data either in statement I or in statement II alone are sufficient.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-015",
+      "chapter": "Profit and Loss",
+      "question_number": 15,
+      "question": "What is population of State A? St I: Pop of B is 80% of A. St II: Average pop of A and B is 18 lakhs.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "e",
+      "answer": "The data in both statements I and II together are necessary.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-016",
+      "chapter": "Profit and Loss",
+      "question_number": 16,
+      "question": "What is Mr. Roy's annual income for 2011-2012? St I: Annual income is 70% of boss. St II: Income for April 2011 was ₹ 12000, increased 10% monthly.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "b",
+      "answer": "The data in statement II alone are sufficient.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-017",
+      "chapter": "Profit and Loss",
+      "question_number": 17,
+      "question": "How many students are there in the class? St I: 40 girls in class. St II: Boys are 80% of total students.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "e",
+      "answer": "The data in both statements I and II together are necessary.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-018",
+      "chapter": "Profit and Loss",
+      "question_number": 18,
+      "question": "Is (60% of a) + (40% of b) > 50% of (a + b)? St I: a > b. St II: b > 0.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "a",
+      "answer": "The data in statement I alone are sufficient.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-019",
+      "chapter": "Profit and Loss",
+      "question_number": 19,
+      "question": "What is Ritu's present salary? St I: Salary increases 15% annually. St II: Joining salary ₹ 10000. St III: Joined 5 yrs ago.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "d",
+      "answer": "The data even in both statements together are not sufficient.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-020",
+      "chapter": "Profit and Loss",
+      "question_number": 20,
+      "question": "Find total marks of A, B, C, D in Biology. St I: Max marks 200. St II: Total D + A = 190. St III: C scored 120.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "d",
+      "answer": "The data even in both statements together are not sufficient.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-021",
+      "chapter": "Profit and Loss",
+      "question_number": 21,
+      "question": "What is overall % of marks of Sangeeta in 5 subjects? St I: 75% in Maths & Science. St II: 72% in History & Science. St III: 85% in Sanskrit.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "e",
+      "answer": "The data in both statements I and II together are necessary.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-022",
+      "chapter": "Profit and Loss",
+      "question_number": 22,
+      "question": "How many children in class? St I: 20% speak only Hindi. St II: 44 speak non-Hindi. St III: 30 boys.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "a",
+      "answer": "The data in statement I alone are sufficient.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-023",
+      "chapter": "Profit and Loss",
+      "question_number": 23,
+      "question": "How much profit did company earn in 2011? St I: 40% more in 2012 than 2010. St II: Total ₹ 20 cr in 2010 & 2011. St III: 2012 profit = 80% of 2011.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "d",
+      "answer": "The data even in both statements together are not sufficient.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-024",
+      "chapter": "Profit and Loss",
+      "question_number": 24,
+      "question": "What was total number of candidates appeared? St I: 30% passed. St II: Unsuccessful were 1000 more than successful. St III: 1750 unsuccessful.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "a",
+      "answer": "The data in statement I alone are sufficient.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-025",
+      "chapter": "Profit and Loss",
+      "question_number": 25,
+      "question": "What is Sumit's present salary? St I: Salary increases 12% yearly. St II: Joining salary ₹ 3500. St III: Joined 7 yrs ago.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "d",
+      "answer": "The data even in both statements together are not sufficient.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-026",
+      "chapter": "Profit and Loss",
+      "question_number": 26,
+      "question": "25 m wire cut into 3 pieces. Longest piece? St I: 2 pieces each 1m shorter than longest. St II: 2 pieces same length. St III: Longest 12.5% more than smallest.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "b",
+      "answer": "The data in statement II alone are sufficient.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-027",
+      "chapter": "Profit and Loss",
+      "question_number": 27,
+      "question": "Monthly income of Mr. X? St I: Spends 85% of income. St II: Monthly savings ₹ 4500. St III: 1/5 spent on food, ₹ 20400 on other items.",
+      "options": {
+        "a": "The data in statement I alone are sufficient.",
+        "b": "The data in statement II alone are sufficient.",
+        "c": "The data either in statement I or in statement II alone are sufficient.",
+        "d": "The data even in both statements together are not sufficient.",
+        "e": "The data in both statements I and II together are necessary."
+      },
+      "correct_option": "e",
+      "answer": "The data in both statements I and II together are necessary.",
+      "topic": "Data Sufficiency in Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-028",
+      "chapter": "Profit and Loss",
+      "question_number": 28,
+      "question": "Mr Kashyap purchased an airconditioner for ₹ 12000 and sold it for ₹ 15000. What was the profit percentage?",
+      "options": {
+        "a": "15%",
+        "b": "20%",
+        "c": "25%",
+        "d": "35%",
+        "e": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "25%",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-029",
+      "chapter": "Profit and Loss",
+      "question_number": 29,
+      "question": "In terms of percentage profit, which is the best transaction?",
+      "options": {
+        "a": "CP 36, Profit 17",
+        "b": "CP 50, Profit 24",
+        "c": "CP 40, Profit 19",
+        "d": "CP 60, Profit 29"
+      },
+      "correct_option": "d",
+      "answer": "CP 60, Profit 29",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-030",
+      "chapter": "Profit and Loss",
+      "question_number": 30,
+      "question": "If books bought at prices ₹ 200 to ₹ 350 are sold at ₹ 300 to ₹ 425, what is the greatest possible profit in selling eight books?",
+      "options": {
+        "a": "₹ 400",
+        "b": "₹ 600",
+        "c": "Cannot be determined",
+        "d": "None of these"
+      },
+      "correct_option": "d",
+      "answer": "None of these",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-031",
+      "chapter": "Profit and Loss",
+      "question_number": 31,
+      "question": "A shopkeeper bought an article for ₹ 2090.42. Approximately, what will be the percentage profit if sold for ₹ 2602.58?",
+      "options": {
+        "a": "15%",
+        "b": "20%",
+        "c": "25%",
+        "d": "30%"
+      },
+      "correct_option": "c",
+      "answer": "25%",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-032",
+      "chapter": "Profit and Loss",
+      "question_number": 32,
+      "question": "The cost price of an article is ₹ 7840. What should be selling price for 7% profit?",
+      "options": {
+        "a": "₹ 8000",
+        "b": "₹ 8300",
+        "c": "₹ 8388.80",
+        "d": "₹ 8500.50"
+      },
+      "correct_option": "c",
+      "answer": "₹ 8388.80",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-033",
+      "chapter": "Profit and Loss",
+      "question_number": 33,
+      "question": "Rakesh purchased mobile for ₹ 5400 and fridge for ₹ 9600. Sold mobile at 3/4 cost and fridge at 4/3 cost. What was overall profit/loss?",
+      "options": {
+        "a": "₹ 1580",
+        "b": "₹ 1750",
+        "c": "₹ 1850",
+        "d": "₹ 1870",
+        "e": "None of these"
+      },
+      "correct_option": "c",
+      "answer": "₹ 1850",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-034",
+      "chapter": "Profit and Loss",
+      "question_number": 34,
+      "question": "Rajni bought mobile for ₹ 12000 and fridge for ₹ 10000. Sold fridge at 12% loss and mobile at 8% profit. Overall profit/loss?",
+      "options": {
+        "a": "Loss of ₹ 280",
+        "b": "Loss of ₹ 240",
+        "c": "Profit of ₹ 2060",
+        "d": "Profit of ₹ 2160"
+      },
+      "correct_option": "b",
+      "answer": "Loss of ₹ 240",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-035",
+      "chapter": "Profit and Loss",
+      "question_number": 35,
+      "question": "Mohanlal bought TV for ₹ 12500, spent ₹ 300 transport, ₹ 800 installation. Selling price for 15% profit?",
+      "options": {
+        "a": "₹ 14375",
+        "b": "₹ 14560",
+        "c": "₹ 15375",
+        "d": "₹ 15460",
+        "e": "None of these"
+      },
+      "correct_option": "e",
+      "answer": "None of these",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-036",
+      "chapter": "Profit and Loss",
+      "question_number": 36,
+      "question": "Harshad bought 15 DVD players @ ₹ 4500 each and sold all for ₹ 81000. Percent profit?",
+      "options": {
+        "a": "16 2/3%",
+        "b": "20%",
+        "c": "20 1/2%",
+        "d": "25%"
+      },
+      "correct_option": "b",
+      "answer": "20%",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-037",
+      "chapter": "Profit and Loss",
+      "question_number": 37,
+      "question": "Alfred buys old scooter for ₹ 4700 and spends ₹ 800 repairs. Sells for ₹ 5800. Gain % is",
+      "options": {
+        "a": "4 4/7%",
+        "b": "5 5/11%",
+        "c": "10%",
+        "d": "12%"
+      },
+      "correct_option": "b",
+      "answer": "5 5/11%",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-038",
+      "chapter": "Profit and Loss",
+      "question_number": 38,
+      "question": "Purchased 70 kg potatoes for ₹ 420, sold whole lot at ₹ 6.50/kg. Gain percent?",
+      "options": {
+        "a": "4 1/6%",
+        "b": "6 1/4%",
+        "c": "8 1/3%",
+        "d": "20%"
+      },
+      "correct_option": "c",
+      "answer": "8 1/3%",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-039",
+      "chapter": "Profit and Loss",
+      "question_number": 39,
+      "question": "Sam purchased 20 dozen toys @ ₹ 375/dozen. Sold each at ₹ 33. Percentage profit?",
+      "options": {
+        "a": "3.5%",
+        "b": "4.5%",
+        "c": "5.6%",
+        "d": "6.5%"
+      },
+      "correct_option": "c",
+      "answer": "5.6%",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-040",
+      "chapter": "Profit and Loss",
+      "question_number": 40,
+      "question": "100 oranges bought @ ₹ 350, sold @ ₹ 48/dozen. Profit or loss percent?",
+      "options": {
+        "a": "2 14/7% gain",
+        "b": "15% gain",
+        "c": "2 14/7% loss",
+        "d": "15% loss"
+      },
+      "correct_option": "a",
+      "answer": "2 14/7% gain",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-041",
+      "chapter": "Profit and Loss",
+      "question_number": 41,
+      "question": "A sells article cost ₹ 400 to B at 20% profit. B sells to C at 10% profit. C pays B?",
+      "options": {
+        "a": "₹ 472",
+        "b": "₹ 476",
+        "c": "₹ 528",
+        "d": "₹ 532"
+      },
+      "correct_option": "c",
+      "answer": "₹ 528",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-042",
+      "chapter": "Profit and Loss",
+      "question_number": 42,
+      "question": "By selling article for ₹ 100, man gains ₹ 15. Gain % is",
+      "options": {
+        "a": "15%",
+        "b": "12 2/3%",
+        "c": "17 11/17%",
+        "d": "17 1/4%"
+      },
+      "correct_option": "c",
+      "answer": "17 11/17%",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-043",
+      "chapter": "Profit and Loss",
+      "question_number": 43,
+      "question": "Trader buys goods for ₹ 150. Overhead 12% of CP. Selling price to earn 10% profit?",
+      "options": {
+        "a": "₹ 184.80",
+        "b": "₹ 185.80",
+        "c": "₹ 187.80",
+        "d": "₹ 188.80"
+      },
+      "correct_option": "a",
+      "answer": "₹ 184.80",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-044",
+      "chapter": "Profit and Loss",
+      "question_number": 44,
+      "question": "Man buys 10 articles for ₹ 8 and sells at ₹ 1.25 per article. Profit % is",
+      "options": {
+        "a": "19 1/2%",
+        "b": "20%",
+        "c": "50%",
+        "d": "56 1/4%"
+      },
+      "correct_option": "d",
+      "answer": "56 1/4%",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-045",
+      "chapter": "Profit and Loss",
+      "question_number": 45,
+      "question": "If article sold at 200% profit, ratio of CP to SP is",
+      "options": {
+        "a": "1 : 2",
+        "b": "2 : 1",
+        "c": "1 : 3",
+        "d": "3 : 1"
+      },
+      "correct_option": "c",
+      "answer": "1 : 3",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-046",
+      "chapter": "Profit and Loss",
+      "question_number": 46,
+      "question": "If ratio of CP to SP is 10 : 11, profit % is",
+      "options": {
+        "a": "8%",
+        "b": "10%",
+        "c": "11%",
+        "d": "15%"
+      },
+      "correct_option": "b",
+      "answer": "10%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-047",
+      "chapter": "Profit and Loss",
+      "question_number": 47,
+      "question": "Trader loses 12.5%. Ratio of CP to SP is",
+      "options": {
+        "a": "7 : 8",
+        "b": "9 : 8",
+        "c": "8 : 7",
+        "d": "8 : 9"
+      },
+      "correct_option": "c",
+      "answer": "8 : 7",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-048",
+      "chapter": "Profit and Loss",
+      "question_number": 48,
+      "question": "Buys for ₹ p, sells for ₹ q gaining r%. SP in terms of CP is",
+      "options": {
+        "a": "pr/100",
+        "b": "r(100+p)/100",
+        "c": "p(100+r)/100",
+        "d": "p(100-r)/100"
+      },
+      "correct_option": "c",
+      "answer": "p(100+r)/100",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-049",
+      "chapter": "Profit and Loss",
+      "question_number": 49,
+      "question": "Owner charges 28% more than CP. Customer paid ₹ 23680. Original price?",
+      "options": {
+        "a": "₹ 15700",
+        "b": "₹ 16250",
+        "c": "₹ 17500",
+        "d": "₹ 18500"
+      },
+      "correct_option": "d",
+      "answer": "₹ 18500",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-050",
+      "chapter": "Profit and Loss",
+      "question_number": 50,
+      "question": "Gold bracelet sold for ₹ 14500 at 20% loss. CP of bracelet?",
+      "options": {
+        "a": "₹ 15225",
+        "b": "₹ 16800",
+        "c": "₹ 17400",
+        "d": "₹ 18125"
+      },
+      "correct_option": "d",
+      "answer": "₹ 18125",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-051",
+      "chapter": "Profit and Loss",
+      "question_number": 51,
+      "question": "An article costing ₹ 1010 is sold to earn a profit of 16%. What is its selling price?",
+      "options": {
+        "a": "₹ 1151",
+        "b": "₹ 1171",
+        "c": "₹ 1201",
+        "d": "₹ 1221"
+      },
+      "correct_option": "b",
+      "answer": "₹ 1171",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-052",
+      "chapter": "Profit and Loss",
+      "question_number": 52,
+      "question": "A dishonest trader uses a false weight of 852 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "14.87%",
+        "b": "17.37%",
+        "c": "20.37%",
+        "d": "22.87%"
+      },
+      "correct_option": "b",
+      "answer": "17.37%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-053",
+      "chapter": "Profit and Loss",
+      "question_number": 53,
+      "question": "A sells a product to B at 13% profit, and B sells it to C at 23% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "37.49%",
+        "b": "38.99%",
+        "c": "41.49%",
+        "d": "42.99%"
+      },
+      "correct_option": "b",
+      "answer": "38.99%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-054",
+      "chapter": "Profit and Loss",
+      "question_number": 54,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-055",
+      "chapter": "Profit and Loss",
+      "question_number": 55,
+      "question": "Two items are sold at ₹ 3100 each, one at 20% profit and the other at 20% loss. Overall result is a loss of",
+      "options": {
+        "a": "3.50%",
+        "b": "4.00%",
+        "c": "5.20%",
+        "d": "6.00%"
+      },
+      "correct_option": "b",
+      "answer": "4.00%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-056",
+      "chapter": "Profit and Loss",
+      "question_number": 56,
+      "question": "Two varieties of rice costing ₹ 26/kg and ₹ 41/kg are mixed in equal quantities and sold at ₹ 38/kg. Profit percentage is approximately",
+      "options": {
+        "a": "10.43%",
+        "b": "13.43%",
+        "c": "17.43%",
+        "d": "19.43%"
+      },
+      "correct_option": "b",
+      "answer": "13.43%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-057",
+      "chapter": "Profit and Loss",
+      "question_number": 57,
+      "question": "An article marked at ₹ 1570 is sold after allowing a discount of 22%. What is its selling price?",
+      "options": {
+        "a": "₹ 1209",
+        "b": "₹ 1224",
+        "c": "₹ 1249",
+        "d": "₹ 1264"
+      },
+      "correct_option": "b",
+      "answer": "₹ 1224",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-058",
+      "chapter": "Profit and Loss",
+      "question_number": 58,
+      "question": "If items are bought at 8 for ₹ 10 and sold at 6 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "56.00%",
+        "b": "60.00%",
+        "c": "65.00%",
+        "d": "68.00%"
+      },
+      "correct_option": "b",
+      "answer": "60.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-059",
+      "chapter": "Profit and Loss",
+      "question_number": 59,
+      "question": "A person buys two articles for ₹ 1495 and ₹ 1795. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 388",
+        "b": "₹ 418",
+        "c": "₹ 463",
+        "d": "₹ 478"
+      },
+      "correct_option": "b",
+      "answer": "₹ 418",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-060",
+      "chapter": "Profit and Loss",
+      "question_number": 60,
+      "question": "An article costing ₹ 1100 is sold to earn a profit of 10%. What is its selling price?",
+      "options": {
+        "a": "₹ 1190",
+        "b": "₹ 1210",
+        "c": "₹ 1240",
+        "d": "₹ 1260"
+      },
+      "correct_option": "b",
+      "answer": "₹ 1210",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-061",
+      "chapter": "Profit and Loss",
+      "question_number": 61,
+      "question": "A dishonest trader uses a false weight of 861 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "13.64%",
+        "b": "16.14%",
+        "c": "19.14%",
+        "d": "21.64%"
+      },
+      "correct_option": "b",
+      "answer": "16.14%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-062",
+      "chapter": "Profit and Loss",
+      "question_number": 62,
+      "question": "A sells a product to B at 12% profit, and B sells it to C at 22% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "35.14%",
+        "b": "36.64%",
+        "c": "39.14%",
+        "d": "40.64%"
+      },
+      "correct_option": "b",
+      "answer": "36.64%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-063",
+      "chapter": "Profit and Loss",
+      "question_number": 63,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-064",
+      "chapter": "Profit and Loss",
+      "question_number": 64,
+      "question": "Two items are sold at ₹ 3280 each, one at 14% profit and the other at 14% loss. Overall result is a loss of",
+      "options": {
+        "a": "1.46%",
+        "b": "1.96%",
+        "c": "3.16%",
+        "d": "3.96%"
+      },
+      "correct_option": "b",
+      "answer": "1.96%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-065",
+      "chapter": "Profit and Loss",
+      "question_number": 65,
+      "question": "Two varieties of rice costing ₹ 25/kg and ₹ 35/kg are mixed in equal quantities and sold at ₹ 35/kg. Profit percentage is approximately",
+      "options": {
+        "a": "13.67%",
+        "b": "16.67%",
+        "c": "20.67%",
+        "d": "22.67%"
+      },
+      "correct_option": "b",
+      "answer": "16.67%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-066",
+      "chapter": "Profit and Loss",
+      "question_number": 66,
+      "question": "An article marked at ₹ 1660 is sold after allowing a discount of 16%. What is its selling price?",
+      "options": {
+        "a": "₹ 1379",
+        "b": "₹ 1394",
+        "c": "₹ 1419",
+        "d": "₹ 1434"
+      },
+      "correct_option": "b",
+      "answer": "₹ 1394",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-067",
+      "chapter": "Profit and Loss",
+      "question_number": 67,
+      "question": "If items are bought at 7 for ₹ 10 and sold at 7 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "16.00%",
+        "b": "20.00%",
+        "c": "25.00%",
+        "d": "28.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-068",
+      "chapter": "Profit and Loss",
+      "question_number": 68,
+      "question": "A person buys two articles for ₹ 1540 and ₹ 1840. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 400",
+        "b": "₹ 430",
+        "c": "₹ 475",
+        "d": "₹ 490"
+      },
+      "correct_option": "b",
+      "answer": "₹ 430",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-069",
+      "chapter": "Profit and Loss",
+      "question_number": 69,
+      "question": "An article costing ₹ 1190 is sold to earn a profit of 19%. What is its selling price?",
+      "options": {
+        "a": "₹ 1396",
+        "b": "₹ 1416",
+        "c": "₹ 1446",
+        "d": "₹ 1466"
+      },
+      "correct_option": "b",
+      "answer": "₹ 1416",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-070",
+      "chapter": "Profit and Loss",
+      "question_number": 70,
+      "question": "A dishonest trader uses a false weight of 870 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "12.44%",
+        "b": "14.94%",
+        "c": "17.94%",
+        "d": "20.44%"
+      },
+      "correct_option": "b",
+      "answer": "14.94%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-071",
+      "chapter": "Profit and Loss",
+      "question_number": 71,
+      "question": "A sells a product to B at 11% profit, and B sells it to C at 21% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "32.81%",
+        "b": "34.31%",
+        "c": "36.81%",
+        "d": "38.31%"
+      },
+      "correct_option": "b",
+      "answer": "34.31%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-072",
+      "chapter": "Profit and Loss",
+      "question_number": 72,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-073",
+      "chapter": "Profit and Loss",
+      "question_number": 73,
+      "question": "Two items are sold at ₹ 3460 each, one at 23% profit and the other at 23% loss. Overall result is a loss of",
+      "options": {
+        "a": "4.79%",
+        "b": "5.29%",
+        "c": "6.49%",
+        "d": "7.29%"
+      },
+      "correct_option": "b",
+      "answer": "5.29%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-074",
+      "chapter": "Profit and Loss",
+      "question_number": 74,
+      "question": "Two varieties of rice costing ₹ 24/kg and ₹ 44/kg are mixed in equal quantities and sold at ₹ 39/kg. Profit percentage is approximately",
+      "options": {
+        "a": "11.71%",
+        "b": "14.71%",
+        "c": "18.71%",
+        "d": "20.71%"
+      },
+      "correct_option": "b",
+      "answer": "14.71%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-075",
+      "chapter": "Profit and Loss",
+      "question_number": 75,
+      "question": "An article marked at ₹ 1750 is sold after allowing a discount of 10%. What is its selling price?",
+      "options": {
+        "a": "₹ 1560",
+        "b": "₹ 1575",
+        "c": "₹ 1600",
+        "d": "₹ 1615"
+      },
+      "correct_option": "b",
+      "answer": "₹ 1575",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-076",
+      "chapter": "Profit and Loss",
+      "question_number": 76,
+      "question": "If items are bought at 6 for ₹ 10 and sold at 4 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "76.00%",
+        "b": "80.00%",
+        "c": "85.00%",
+        "d": "88.00%"
+      },
+      "correct_option": "b",
+      "answer": "80.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-077",
+      "chapter": "Profit and Loss",
+      "question_number": 77,
+      "question": "A person buys two articles for ₹ 1585 and ₹ 1885. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 411",
+        "b": "₹ 441",
+        "c": "₹ 486",
+        "d": "₹ 501"
+      },
+      "correct_option": "b",
+      "answer": "₹ 441",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-078",
+      "chapter": "Profit and Loss",
+      "question_number": 78,
+      "question": "An article costing ₹ 1280 is sold to earn a profit of 13%. What is its selling price?",
+      "options": {
+        "a": "₹ 1426",
+        "b": "₹ 1446",
+        "c": "₹ 1476",
+        "d": "₹ 1496"
+      },
+      "correct_option": "b",
+      "answer": "₹ 1446",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-079",
+      "chapter": "Profit and Loss",
+      "question_number": 79,
+      "question": "A dishonest trader uses a false weight of 879 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "11.27%",
+        "b": "13.77%",
+        "c": "16.77%",
+        "d": "19.27%"
+      },
+      "correct_option": "b",
+      "answer": "13.77%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-080",
+      "chapter": "Profit and Loss",
+      "question_number": 80,
+      "question": "A sells a product to B at 10% profit, and B sells it to C at 20% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "30.50%",
+        "b": "32.00%",
+        "c": "34.50%",
+        "d": "36.00%"
+      },
+      "correct_option": "b",
+      "answer": "32.00%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-081",
+      "chapter": "Profit and Loss",
+      "question_number": 81,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-082",
+      "chapter": "Profit and Loss",
+      "question_number": 82,
+      "question": "Two items are sold at ₹ 3640 each, one at 17% profit and the other at 17% loss. Overall result is a loss of",
+      "options": {
+        "a": "2.39%",
+        "b": "2.89%",
+        "c": "4.09%",
+        "d": "4.89%"
+      },
+      "correct_option": "b",
+      "answer": "2.89%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-083",
+      "chapter": "Profit and Loss",
+      "question_number": 83,
+      "question": "Two varieties of rice costing ₹ 23/kg and ₹ 38/kg are mixed in equal quantities and sold at ₹ 35/kg. Profit percentage is approximately",
+      "options": {
+        "a": "11.75%",
+        "b": "14.75%",
+        "c": "18.75%",
+        "d": "20.75%"
+      },
+      "correct_option": "b",
+      "answer": "14.75%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-084",
+      "chapter": "Profit and Loss",
+      "question_number": 84,
+      "question": "An article marked at ₹ 1840 is sold after allowing a discount of 19%. What is its selling price?",
+      "options": {
+        "a": "₹ 1475",
+        "b": "₹ 1490",
+        "c": "₹ 1515",
+        "d": "₹ 1530"
+      },
+      "correct_option": "b",
+      "answer": "₹ 1490",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-085",
+      "chapter": "Profit and Loss",
+      "question_number": 85,
+      "question": "If items are bought at 5 for ₹ 10 and sold at 5 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "16.00%",
+        "b": "20.00%",
+        "c": "25.00%",
+        "d": "28.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-086",
+      "chapter": "Profit and Loss",
+      "question_number": 86,
+      "question": "A person buys two articles for ₹ 1630 and ₹ 1930. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 422",
+        "b": "₹ 452",
+        "c": "₹ 497",
+        "d": "₹ 512"
+      },
+      "correct_option": "b",
+      "answer": "₹ 452",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-087",
+      "chapter": "Profit and Loss",
+      "question_number": 87,
+      "question": "An article costing ₹ 1370 is sold to earn a profit of 22%. What is its selling price?",
+      "options": {
+        "a": "₹ 1651",
+        "b": "₹ 1671",
+        "c": "₹ 1701",
+        "d": "₹ 1721"
+      },
+      "correct_option": "b",
+      "answer": "₹ 1671",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-088",
+      "chapter": "Profit and Loss",
+      "question_number": 88,
+      "question": "A dishonest trader uses a false weight of 888 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "10.11%",
+        "b": "12.61%",
+        "c": "15.61%",
+        "d": "18.11%"
+      },
+      "correct_option": "b",
+      "answer": "12.61%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-089",
+      "chapter": "Profit and Loss",
+      "question_number": 89,
+      "question": "A sells a product to B at 19% profit, and B sells it to C at 29% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "52.01%",
+        "b": "53.51%",
+        "c": "56.01%",
+        "d": "57.51%"
+      },
+      "correct_option": "b",
+      "answer": "53.51%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-090",
+      "chapter": "Profit and Loss",
+      "question_number": 90,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-091",
+      "chapter": "Profit and Loss",
+      "question_number": 91,
+      "question": "Two items are sold at ₹ 3820 each, one at 11% profit and the other at 11% loss. Overall result is a loss of",
+      "options": {
+        "a": "0.71%",
+        "b": "1.21%",
+        "c": "2.41%",
+        "d": "3.21%"
+      },
+      "correct_option": "b",
+      "answer": "1.21%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-092",
+      "chapter": "Profit and Loss",
+      "question_number": 92,
+      "question": "Two varieties of rice costing ₹ 22/kg and ₹ 32/kg are mixed in equal quantities and sold at ₹ 32/kg. Profit percentage is approximately",
+      "options": {
+        "a": "15.52%",
+        "b": "18.52%",
+        "c": "22.52%",
+        "d": "24.52%"
+      },
+      "correct_option": "b",
+      "answer": "18.52%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-093",
+      "chapter": "Profit and Loss",
+      "question_number": 93,
+      "question": "An article marked at ₹ 1930 is sold after allowing a discount of 13%. What is its selling price?",
+      "options": {
+        "a": "₹ 1664",
+        "b": "₹ 1679",
+        "c": "₹ 1704",
+        "d": "₹ 1719"
+      },
+      "correct_option": "b",
+      "answer": "₹ 1679",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-094",
+      "chapter": "Profit and Loss",
+      "question_number": 94,
+      "question": "If items are bought at 9 for ₹ 10 and sold at 6 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "76.00%",
+        "b": "80.00%",
+        "c": "85.00%",
+        "d": "88.00%"
+      },
+      "correct_option": "b",
+      "answer": "80.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-095",
+      "chapter": "Profit and Loss",
+      "question_number": 95,
+      "question": "A person buys two articles for ₹ 1675 and ₹ 1975. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 433",
+        "b": "₹ 463",
+        "c": "₹ 508",
+        "d": "₹ 523"
+      },
+      "correct_option": "b",
+      "answer": "₹ 463",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-096",
+      "chapter": "Profit and Loss",
+      "question_number": 96,
+      "question": "An article costing ₹ 1460 is sold to earn a profit of 16%. What is its selling price?",
+      "options": {
+        "a": "₹ 1673",
+        "b": "₹ 1693",
+        "c": "₹ 1723",
+        "d": "₹ 1743"
+      },
+      "correct_option": "b",
+      "answer": "₹ 1693",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-097",
+      "chapter": "Profit and Loss",
+      "question_number": 97,
+      "question": "A dishonest trader uses a false weight of 897 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "8.98%",
+        "b": "11.48%",
+        "c": "14.48%",
+        "d": "16.98%"
+      },
+      "correct_option": "b",
+      "answer": "11.48%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-098",
+      "chapter": "Profit and Loss",
+      "question_number": 98,
+      "question": "A sells a product to B at 18% profit, and B sells it to C at 28% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "49.54%",
+        "b": "51.04%",
+        "c": "53.54%",
+        "d": "55.04%"
+      },
+      "correct_option": "b",
+      "answer": "51.04%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-099",
+      "chapter": "Profit and Loss",
+      "question_number": 99,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-100",
+      "chapter": "Profit and Loss",
+      "question_number": 100,
+      "question": "Two items are sold at ₹ 4000 each, one at 20% profit and the other at 20% loss. Overall result is a loss of",
+      "options": {
+        "a": "3.50%",
+        "b": "4.00%",
+        "c": "5.20%",
+        "d": "6.00%"
+      },
+      "correct_option": "b",
+      "answer": "4.00%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-101",
+      "chapter": "Profit and Loss",
+      "question_number": 101,
+      "question": "Two varieties of rice costing ₹ 21/kg and ₹ 41/kg are mixed in equal quantities and sold at ₹ 36/kg. Profit percentage is approximately",
+      "options": {
+        "a": "13.13%",
+        "b": "16.13%",
+        "c": "20.13%",
+        "d": "22.13%"
+      },
+      "correct_option": "b",
+      "answer": "16.13%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-102",
+      "chapter": "Profit and Loss",
+      "question_number": 102,
+      "question": "An article marked at ₹ 2020 is sold after allowing a discount of 22%. What is its selling price?",
+      "options": {
+        "a": "₹ 1560",
+        "b": "₹ 1575",
+        "c": "₹ 1600",
+        "d": "₹ 1615"
+      },
+      "correct_option": "b",
+      "answer": "₹ 1575",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-103",
+      "chapter": "Profit and Loss",
+      "question_number": 103,
+      "question": "If items are bought at 8 for ₹ 10 and sold at 7 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "33.14%",
+        "b": "37.14%",
+        "c": "42.14%",
+        "d": "45.14%"
+      },
+      "correct_option": "b",
+      "answer": "37.14%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-104",
+      "chapter": "Profit and Loss",
+      "question_number": 104,
+      "question": "A person buys two articles for ₹ 1720 and ₹ 2020. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 445",
+        "b": "₹ 475",
+        "c": "₹ 520",
+        "d": "₹ 535"
+      },
+      "correct_option": "b",
+      "answer": "₹ 475",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-105",
+      "chapter": "Profit and Loss",
+      "question_number": 105,
+      "question": "An article costing ₹ 1550 is sold to earn a profit of 10%. What is its selling price?",
+      "options": {
+        "a": "₹ 1685",
+        "b": "₹ 1705",
+        "c": "₹ 1735",
+        "d": "₹ 1755"
+      },
+      "correct_option": "b",
+      "answer": "₹ 1705",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-106",
+      "chapter": "Profit and Loss",
+      "question_number": 106,
+      "question": "A dishonest trader uses a false weight of 906 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "7.88%",
+        "b": "10.38%",
+        "c": "13.38%",
+        "d": "15.88%"
+      },
+      "correct_option": "b",
+      "answer": "10.38%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-107",
+      "chapter": "Profit and Loss",
+      "question_number": 107,
+      "question": "A sells a product to B at 17% profit, and B sells it to C at 27% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "47.09%",
+        "b": "48.59%",
+        "c": "51.09%",
+        "d": "52.59%"
+      },
+      "correct_option": "b",
+      "answer": "48.59%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-108",
+      "chapter": "Profit and Loss",
+      "question_number": 108,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-109",
+      "chapter": "Profit and Loss",
+      "question_number": 109,
+      "question": "Two items are sold at ₹ 4180 each, one at 14% profit and the other at 14% loss. Overall result is a loss of",
+      "options": {
+        "a": "1.46%",
+        "b": "1.96%",
+        "c": "3.16%",
+        "d": "3.96%"
+      },
+      "correct_option": "b",
+      "answer": "1.96%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-110",
+      "chapter": "Profit and Loss",
+      "question_number": 110,
+      "question": "Two varieties of rice costing ₹ 20/kg and ₹ 35/kg are mixed in equal quantities and sold at ₹ 32/kg. Profit percentage is approximately",
+      "options": {
+        "a": "13.36%",
+        "b": "16.36%",
+        "c": "20.36%",
+        "d": "22.36%"
+      },
+      "correct_option": "b",
+      "answer": "16.36%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-111",
+      "chapter": "Profit and Loss",
+      "question_number": 111,
+      "question": "An article marked at ₹ 2110 is sold after allowing a discount of 16%. What is its selling price?",
+      "options": {
+        "a": "₹ 1757",
+        "b": "₹ 1772",
+        "c": "₹ 1797",
+        "d": "₹ 1812"
+      },
+      "correct_option": "b",
+      "answer": "₹ 1772",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-112",
+      "chapter": "Profit and Loss",
+      "question_number": 112,
+      "question": "If items are bought at 7 for ₹ 10 and sold at 4 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "106.00%",
+        "b": "110.00%",
+        "c": "115.00%",
+        "d": "118.00%"
+      },
+      "correct_option": "b",
+      "answer": "110.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-113",
+      "chapter": "Profit and Loss",
+      "question_number": 113,
+      "question": "A person buys two articles for ₹ 1765 and ₹ 2065. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 456",
+        "b": "₹ 486",
+        "c": "₹ 531",
+        "d": "₹ 546"
+      },
+      "correct_option": "b",
+      "answer": "₹ 486",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-114",
+      "chapter": "Profit and Loss",
+      "question_number": 114,
+      "question": "An article costing ₹ 1640 is sold to earn a profit of 19%. What is its selling price?",
+      "options": {
+        "a": "₹ 1931",
+        "b": "₹ 1951",
+        "c": "₹ 1981",
+        "d": "₹ 2001"
+      },
+      "correct_option": "b",
+      "answer": "₹ 1951",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-115",
+      "chapter": "Profit and Loss",
+      "question_number": 115,
+      "question": "A dishonest trader uses a false weight of 915 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "6.79%",
+        "b": "9.29%",
+        "c": "12.29%",
+        "d": "14.79%"
+      },
+      "correct_option": "b",
+      "answer": "9.29%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-116",
+      "chapter": "Profit and Loss",
+      "question_number": 116,
+      "question": "A sells a product to B at 16% profit, and B sells it to C at 26% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "44.66%",
+        "b": "46.16%",
+        "c": "48.66%",
+        "d": "50.16%"
+      },
+      "correct_option": "b",
+      "answer": "46.16%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-117",
+      "chapter": "Profit and Loss",
+      "question_number": 117,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-118",
+      "chapter": "Profit and Loss",
+      "question_number": 118,
+      "question": "Two items are sold at ₹ 4360 each, one at 23% profit and the other at 23% loss. Overall result is a loss of",
+      "options": {
+        "a": "4.79%",
+        "b": "5.29%",
+        "c": "6.49%",
+        "d": "7.29%"
+      },
+      "correct_option": "b",
+      "answer": "5.29%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-119",
+      "chapter": "Profit and Loss",
+      "question_number": 119,
+      "question": "Two varieties of rice costing ₹ 29/kg and ₹ 44/kg are mixed in equal quantities and sold at ₹ 41/kg. Profit percentage is approximately",
+      "options": {
+        "a": "9.33%",
+        "b": "12.33%",
+        "c": "16.33%",
+        "d": "18.33%"
+      },
+      "correct_option": "b",
+      "answer": "12.33%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-120",
+      "chapter": "Profit and Loss",
+      "question_number": 120,
+      "question": "An article marked at ₹ 2200 is sold after allowing a discount of 10%. What is its selling price?",
+      "options": {
+        "a": "₹ 1965",
+        "b": "₹ 1980",
+        "c": "₹ 2005",
+        "d": "₹ 2020"
+      },
+      "correct_option": "b",
+      "answer": "₹ 1980",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-121",
+      "chapter": "Profit and Loss",
+      "question_number": 121,
+      "question": "If items are bought at 6 for ₹ 10 and sold at 5 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "40.00%",
+        "b": "44.00%",
+        "c": "49.00%",
+        "d": "52.00%"
+      },
+      "correct_option": "b",
+      "answer": "44.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-122",
+      "chapter": "Profit and Loss",
+      "question_number": 122,
+      "question": "A person buys two articles for ₹ 1810 and ₹ 2110. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 467",
+        "b": "₹ 497",
+        "c": "₹ 542",
+        "d": "₹ 557"
+      },
+      "correct_option": "b",
+      "answer": "₹ 497",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-123",
+      "chapter": "Profit and Loss",
+      "question_number": 123,
+      "question": "An article costing ₹ 1730 is sold to earn a profit of 13%. What is its selling price?",
+      "options": {
+        "a": "₹ 1934",
+        "b": "₹ 1954",
+        "c": "₹ 1984",
+        "d": "₹ 2004"
+      },
+      "correct_option": "b",
+      "answer": "₹ 1954",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-124",
+      "chapter": "Profit and Loss",
+      "question_number": 124,
+      "question": "A dishonest trader uses a false weight of 924 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "5.73%",
+        "b": "8.23%",
+        "c": "11.23%",
+        "d": "13.73%"
+      },
+      "correct_option": "b",
+      "answer": "8.23%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-125",
+      "chapter": "Profit and Loss",
+      "question_number": 125,
+      "question": "A sells a product to B at 15% profit, and B sells it to C at 25% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "42.25%",
+        "b": "43.75%",
+        "c": "46.25%",
+        "d": "47.75%"
+      },
+      "correct_option": "b",
+      "answer": "43.75%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-126",
+      "chapter": "Profit and Loss",
+      "question_number": 126,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-127",
+      "chapter": "Profit and Loss",
+      "question_number": 127,
+      "question": "Two items are sold at ₹ 4540 each, one at 17% profit and the other at 17% loss. Overall result is a loss of",
+      "options": {
+        "a": "2.39%",
+        "b": "2.89%",
+        "c": "4.09%",
+        "d": "4.89%"
+      },
+      "correct_option": "b",
+      "answer": "2.89%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-128",
+      "chapter": "Profit and Loss",
+      "question_number": 128,
+      "question": "Two varieties of rice costing ₹ 28/kg and ₹ 38/kg are mixed in equal quantities and sold at ₹ 38/kg. Profit percentage is approximately",
+      "options": {
+        "a": "12.15%",
+        "b": "15.15%",
+        "c": "19.15%",
+        "d": "21.15%"
+      },
+      "correct_option": "b",
+      "answer": "15.15%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-129",
+      "chapter": "Profit and Loss",
+      "question_number": 129,
+      "question": "An article marked at ₹ 2290 is sold after allowing a discount of 19%. What is its selling price?",
+      "options": {
+        "a": "₹ 1839",
+        "b": "₹ 1854",
+        "c": "₹ 1879",
+        "d": "₹ 1894"
+      },
+      "correct_option": "b",
+      "answer": "₹ 1854",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-130",
+      "chapter": "Profit and Loss",
+      "question_number": 130,
+      "question": "If items are bought at 5 for ₹ 10 and sold at 6 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "-4.00%",
+        "b": "0.00%",
+        "c": "5.00%",
+        "d": "8.00%"
+      },
+      "correct_option": "b",
+      "answer": "0.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-131",
+      "chapter": "Profit and Loss",
+      "question_number": 131,
+      "question": "A person buys two articles for ₹ 1855 and ₹ 2155. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 478",
+        "b": "₹ 508",
+        "c": "₹ 553",
+        "d": "₹ 568"
+      },
+      "correct_option": "b",
+      "answer": "₹ 508",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-132",
+      "chapter": "Profit and Loss",
+      "question_number": 132,
+      "question": "An article costing ₹ 1820 is sold to earn a profit of 22%. What is its selling price?",
+      "options": {
+        "a": "₹ 2200",
+        "b": "₹ 2220",
+        "c": "₹ 2250",
+        "d": "₹ 2270"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2220",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-133",
+      "chapter": "Profit and Loss",
+      "question_number": 133,
+      "question": "A dishonest trader uses a false weight of 933 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "4.68%",
+        "b": "7.18%",
+        "c": "10.18%",
+        "d": "12.68%"
+      },
+      "correct_option": "b",
+      "answer": "7.18%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-134",
+      "chapter": "Profit and Loss",
+      "question_number": 134,
+      "question": "A sells a product to B at 14% profit, and B sells it to C at 24% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "39.86%",
+        "b": "41.36%",
+        "c": "43.86%",
+        "d": "45.36%"
+      },
+      "correct_option": "b",
+      "answer": "41.36%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-135",
+      "chapter": "Profit and Loss",
+      "question_number": 135,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-136",
+      "chapter": "Profit and Loss",
+      "question_number": 136,
+      "question": "Two items are sold at ₹ 4720 each, one at 11% profit and the other at 11% loss. Overall result is a loss of",
+      "options": {
+        "a": "0.71%",
+        "b": "1.21%",
+        "c": "2.41%",
+        "d": "3.21%"
+      },
+      "correct_option": "b",
+      "answer": "1.21%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-137",
+      "chapter": "Profit and Loss",
+      "question_number": 137,
+      "question": "Two varieties of rice costing ₹ 27/kg and ₹ 32/kg are mixed in equal quantities and sold at ₹ 34/kg. Profit percentage is approximately",
+      "options": {
+        "a": "12.25%",
+        "b": "15.25%",
+        "c": "19.25%",
+        "d": "21.25%"
+      },
+      "correct_option": "b",
+      "answer": "15.25%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-138",
+      "chapter": "Profit and Loss",
+      "question_number": 138,
+      "question": "An article marked at ₹ 2380 is sold after allowing a discount of 13%. What is its selling price?",
+      "options": {
+        "a": "₹ 2055",
+        "b": "₹ 2070",
+        "c": "₹ 2095",
+        "d": "₹ 2110"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2070",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-139",
+      "chapter": "Profit and Loss",
+      "question_number": 139,
+      "question": "If items are bought at 9 for ₹ 10 and sold at 7 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "50.29%",
+        "b": "54.29%",
+        "c": "59.29%",
+        "d": "62.29%"
+      },
+      "correct_option": "b",
+      "answer": "54.29%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-140",
+      "chapter": "Profit and Loss",
+      "question_number": 140,
+      "question": "A person buys two articles for ₹ 1900 and ₹ 2200. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 490",
+        "b": "₹ 520",
+        "c": "₹ 565",
+        "d": "₹ 580"
+      },
+      "correct_option": "b",
+      "answer": "₹ 520",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-141",
+      "chapter": "Profit and Loss",
+      "question_number": 141,
+      "question": "An article costing ₹ 1910 is sold to earn a profit of 16%. What is its selling price?",
+      "options": {
+        "a": "₹ 2195",
+        "b": "₹ 2215",
+        "c": "₹ 2245",
+        "d": "₹ 2265"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2215",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-142",
+      "chapter": "Profit and Loss",
+      "question_number": 142,
+      "question": "A dishonest trader uses a false weight of 942 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "3.66%",
+        "b": "6.16%",
+        "c": "9.16%",
+        "d": "11.66%"
+      },
+      "correct_option": "b",
+      "answer": "6.16%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-143",
+      "chapter": "Profit and Loss",
+      "question_number": 143,
+      "question": "A sells a product to B at 13% profit, and B sells it to C at 23% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "37.49%",
+        "b": "38.99%",
+        "c": "41.49%",
+        "d": "42.99%"
+      },
+      "correct_option": "b",
+      "answer": "38.99%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-144",
+      "chapter": "Profit and Loss",
+      "question_number": 144,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-145",
+      "chapter": "Profit and Loss",
+      "question_number": 145,
+      "question": "Two items are sold at ₹ 4900 each, one at 20% profit and the other at 20% loss. Overall result is a loss of",
+      "options": {
+        "a": "3.50%",
+        "b": "4.00%",
+        "c": "5.20%",
+        "d": "6.00%"
+      },
+      "correct_option": "b",
+      "answer": "4.00%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-146",
+      "chapter": "Profit and Loss",
+      "question_number": 146,
+      "question": "Two varieties of rice costing ₹ 26/kg and ₹ 41/kg are mixed in equal quantities and sold at ₹ 38/kg. Profit percentage is approximately",
+      "options": {
+        "a": "10.43%",
+        "b": "13.43%",
+        "c": "17.43%",
+        "d": "19.43%"
+      },
+      "correct_option": "b",
+      "answer": "13.43%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-147",
+      "chapter": "Profit and Loss",
+      "question_number": 147,
+      "question": "An article marked at ₹ 2470 is sold after allowing a discount of 22%. What is its selling price?",
+      "options": {
+        "a": "₹ 1911",
+        "b": "₹ 1926",
+        "c": "₹ 1951",
+        "d": "₹ 1966"
+      },
+      "correct_option": "b",
+      "answer": "₹ 1926",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-148",
+      "chapter": "Profit and Loss",
+      "question_number": 148,
+      "question": "If items are bought at 8 for ₹ 10 and sold at 4 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "136.00%",
+        "b": "140.00%",
+        "c": "145.00%",
+        "d": "148.00%"
+      },
+      "correct_option": "b",
+      "answer": "140.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-149",
+      "chapter": "Profit and Loss",
+      "question_number": 149,
+      "question": "A person buys two articles for ₹ 1945 and ₹ 2245. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 501",
+        "b": "₹ 531",
+        "c": "₹ 576",
+        "d": "₹ 591"
+      },
+      "correct_option": "b",
+      "answer": "₹ 531",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-150",
+      "chapter": "Profit and Loss",
+      "question_number": 150,
+      "question": "An article costing ₹ 2000 is sold to earn a profit of 10%. What is its selling price?",
+      "options": {
+        "a": "₹ 2180",
+        "b": "₹ 2200",
+        "c": "₹ 2230",
+        "d": "₹ 2250"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2200",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-151",
+      "chapter": "Profit and Loss",
+      "question_number": 151,
+      "question": "A dishonest trader uses a false weight of 801 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "22.34%",
+        "b": "24.84%",
+        "c": "27.84%",
+        "d": "30.34%"
+      },
+      "correct_option": "b",
+      "answer": "24.84%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-152",
+      "chapter": "Profit and Loss",
+      "question_number": 152,
+      "question": "A sells a product to B at 12% profit, and B sells it to C at 22% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "35.14%",
+        "b": "36.64%",
+        "c": "39.14%",
+        "d": "40.64%"
+      },
+      "correct_option": "b",
+      "answer": "36.64%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-153",
+      "chapter": "Profit and Loss",
+      "question_number": 153,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-154",
+      "chapter": "Profit and Loss",
+      "question_number": 154,
+      "question": "Two items are sold at ₹ 5080 each, one at 14% profit and the other at 14% loss. Overall result is a loss of",
+      "options": {
+        "a": "1.46%",
+        "b": "1.96%",
+        "c": "3.16%",
+        "d": "3.96%"
+      },
+      "correct_option": "b",
+      "answer": "1.96%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-155",
+      "chapter": "Profit and Loss",
+      "question_number": 155,
+      "question": "Two varieties of rice costing ₹ 25/kg and ₹ 35/kg are mixed in equal quantities and sold at ₹ 35/kg. Profit percentage is approximately",
+      "options": {
+        "a": "13.67%",
+        "b": "16.67%",
+        "c": "20.67%",
+        "d": "22.67%"
+      },
+      "correct_option": "b",
+      "answer": "16.67%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-156",
+      "chapter": "Profit and Loss",
+      "question_number": 156,
+      "question": "An article marked at ₹ 2560 is sold after allowing a discount of 16%. What is its selling price?",
+      "options": {
+        "a": "₹ 2135",
+        "b": "₹ 2150",
+        "c": "₹ 2175",
+        "d": "₹ 2190"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2150",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-157",
+      "chapter": "Profit and Loss",
+      "question_number": 157,
+      "question": "If items are bought at 7 for ₹ 10 and sold at 5 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "64.00%",
+        "b": "68.00%",
+        "c": "73.00%",
+        "d": "76.00%"
+      },
+      "correct_option": "b",
+      "answer": "68.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-158",
+      "chapter": "Profit and Loss",
+      "question_number": 158,
+      "question": "A person buys two articles for ₹ 1990 and ₹ 2290. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 512",
+        "b": "₹ 542",
+        "c": "₹ 587",
+        "d": "₹ 602"
+      },
+      "correct_option": "b",
+      "answer": "₹ 542",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-159",
+      "chapter": "Profit and Loss",
+      "question_number": 159,
+      "question": "An article costing ₹ 2090 is sold to earn a profit of 19%. What is its selling price?",
+      "options": {
+        "a": "₹ 2467",
+        "b": "₹ 2487",
+        "c": "₹ 2517",
+        "d": "₹ 2537"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2487",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-160",
+      "chapter": "Profit and Loss",
+      "question_number": 160,
+      "question": "A dishonest trader uses a false weight of 810 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "20.96%",
+        "b": "23.46%",
+        "c": "26.46%",
+        "d": "28.96%"
+      },
+      "correct_option": "b",
+      "answer": "23.46%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-161",
+      "chapter": "Profit and Loss",
+      "question_number": 161,
+      "question": "A sells a product to B at 11% profit, and B sells it to C at 21% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "32.81%",
+        "b": "34.31%",
+        "c": "36.81%",
+        "d": "38.31%"
+      },
+      "correct_option": "b",
+      "answer": "34.31%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-162",
+      "chapter": "Profit and Loss",
+      "question_number": 162,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-163",
+      "chapter": "Profit and Loss",
+      "question_number": 163,
+      "question": "Two items are sold at ₹ 5260 each, one at 23% profit and the other at 23% loss. Overall result is a loss of",
+      "options": {
+        "a": "4.79%",
+        "b": "5.29%",
+        "c": "6.49%",
+        "d": "7.29%"
+      },
+      "correct_option": "b",
+      "answer": "5.29%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-164",
+      "chapter": "Profit and Loss",
+      "question_number": 164,
+      "question": "Two varieties of rice costing ₹ 24/kg and ₹ 44/kg are mixed in equal quantities and sold at ₹ 39/kg. Profit percentage is approximately",
+      "options": {
+        "a": "11.71%",
+        "b": "14.71%",
+        "c": "18.71%",
+        "d": "20.71%"
+      },
+      "correct_option": "b",
+      "answer": "14.71%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-165",
+      "chapter": "Profit and Loss",
+      "question_number": 165,
+      "question": "An article marked at ₹ 2650 is sold after allowing a discount of 10%. What is its selling price?",
+      "options": {
+        "a": "₹ 2370",
+        "b": "₹ 2385",
+        "c": "₹ 2410",
+        "d": "₹ 2425"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2385",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-166",
+      "chapter": "Profit and Loss",
+      "question_number": 166,
+      "question": "If items are bought at 6 for ₹ 10 and sold at 6 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "16.00%",
+        "b": "20.00%",
+        "c": "25.00%",
+        "d": "28.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-167",
+      "chapter": "Profit and Loss",
+      "question_number": 167,
+      "question": "A person buys two articles for ₹ 2035 and ₹ 2335. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 523",
+        "b": "₹ 553",
+        "c": "₹ 598",
+        "d": "₹ 613"
+      },
+      "correct_option": "b",
+      "answer": "₹ 553",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-168",
+      "chapter": "Profit and Loss",
+      "question_number": 168,
+      "question": "An article costing ₹ 2180 is sold to earn a profit of 13%. What is its selling price?",
+      "options": {
+        "a": "₹ 2443",
+        "b": "₹ 2463",
+        "c": "₹ 2493",
+        "d": "₹ 2513"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2463",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-169",
+      "chapter": "Profit and Loss",
+      "question_number": 169,
+      "question": "A dishonest trader uses a false weight of 819 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "19.60%",
+        "b": "22.10%",
+        "c": "25.10%",
+        "d": "27.60%"
+      },
+      "correct_option": "b",
+      "answer": "22.10%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-170",
+      "chapter": "Profit and Loss",
+      "question_number": 170,
+      "question": "A sells a product to B at 10% profit, and B sells it to C at 20% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "30.50%",
+        "b": "32.00%",
+        "c": "34.50%",
+        "d": "36.00%"
+      },
+      "correct_option": "b",
+      "answer": "32.00%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-171",
+      "chapter": "Profit and Loss",
+      "question_number": 171,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-172",
+      "chapter": "Profit and Loss",
+      "question_number": 172,
+      "question": "Two items are sold at ₹ 5440 each, one at 17% profit and the other at 17% loss. Overall result is a loss of",
+      "options": {
+        "a": "2.39%",
+        "b": "2.89%",
+        "c": "4.09%",
+        "d": "4.89%"
+      },
+      "correct_option": "b",
+      "answer": "2.89%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-173",
+      "chapter": "Profit and Loss",
+      "question_number": 173,
+      "question": "Two varieties of rice costing ₹ 23/kg and ₹ 38/kg are mixed in equal quantities and sold at ₹ 35/kg. Profit percentage is approximately",
+      "options": {
+        "a": "11.75%",
+        "b": "14.75%",
+        "c": "18.75%",
+        "d": "20.75%"
+      },
+      "correct_option": "b",
+      "answer": "14.75%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-174",
+      "chapter": "Profit and Loss",
+      "question_number": 174,
+      "question": "An article marked at ₹ 2740 is sold after allowing a discount of 19%. What is its selling price?",
+      "options": {
+        "a": "₹ 2204",
+        "b": "₹ 2219",
+        "c": "₹ 2244",
+        "d": "₹ 2259"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2219",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-175",
+      "chapter": "Profit and Loss",
+      "question_number": 175,
+      "question": "If items are bought at 5 for ₹ 10 and sold at 7 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "-18.29%",
+        "b": "-14.29%",
+        "c": "-9.29%",
+        "d": "-6.29%"
+      },
+      "correct_option": "b",
+      "answer": "-14.29%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-176",
+      "chapter": "Profit and Loss",
+      "question_number": 176,
+      "question": "A person buys two articles for ₹ 2080 and ₹ 2380. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 535",
+        "b": "₹ 565",
+        "c": "₹ 610",
+        "d": "₹ 625"
+      },
+      "correct_option": "b",
+      "answer": "₹ 565",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-177",
+      "chapter": "Profit and Loss",
+      "question_number": 177,
+      "question": "An article costing ₹ 2270 is sold to earn a profit of 22%. What is its selling price?",
+      "options": {
+        "a": "₹ 2749",
+        "b": "₹ 2769",
+        "c": "₹ 2799",
+        "d": "₹ 2819"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2769",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-178",
+      "chapter": "Profit and Loss",
+      "question_number": 178,
+      "question": "A dishonest trader uses a false weight of 828 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "18.27%",
+        "b": "20.77%",
+        "c": "23.77%",
+        "d": "26.27%"
+      },
+      "correct_option": "b",
+      "answer": "20.77%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-179",
+      "chapter": "Profit and Loss",
+      "question_number": 179,
+      "question": "A sells a product to B at 19% profit, and B sells it to C at 29% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "52.01%",
+        "b": "53.51%",
+        "c": "56.01%",
+        "d": "57.51%"
+      },
+      "correct_option": "b",
+      "answer": "53.51%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-180",
+      "chapter": "Profit and Loss",
+      "question_number": 180,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-181",
+      "chapter": "Profit and Loss",
+      "question_number": 181,
+      "question": "Two items are sold at ₹ 5620 each, one at 11% profit and the other at 11% loss. Overall result is a loss of",
+      "options": {
+        "a": "0.71%",
+        "b": "1.21%",
+        "c": "2.41%",
+        "d": "3.21%"
+      },
+      "correct_option": "b",
+      "answer": "1.21%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-182",
+      "chapter": "Profit and Loss",
+      "question_number": 182,
+      "question": "Two varieties of rice costing ₹ 22/kg and ₹ 32/kg are mixed in equal quantities and sold at ₹ 32/kg. Profit percentage is approximately",
+      "options": {
+        "a": "15.52%",
+        "b": "18.52%",
+        "c": "22.52%",
+        "d": "24.52%"
+      },
+      "correct_option": "b",
+      "answer": "18.52%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-183",
+      "chapter": "Profit and Loss",
+      "question_number": 183,
+      "question": "An article marked at ₹ 2830 is sold after allowing a discount of 13%. What is its selling price?",
+      "options": {
+        "a": "₹ 2447",
+        "b": "₹ 2462",
+        "c": "₹ 2487",
+        "d": "₹ 2502"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2462",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-184",
+      "chapter": "Profit and Loss",
+      "question_number": 184,
+      "question": "If items are bought at 9 for ₹ 10 and sold at 4 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "166.00%",
+        "b": "170.00%",
+        "c": "175.00%",
+        "d": "178.00%"
+      },
+      "correct_option": "b",
+      "answer": "170.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-185",
+      "chapter": "Profit and Loss",
+      "question_number": 185,
+      "question": "A person buys two articles for ₹ 2125 and ₹ 2425. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 546",
+        "b": "₹ 576",
+        "c": "₹ 621",
+        "d": "₹ 636"
+      },
+      "correct_option": "b",
+      "answer": "₹ 576",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-186",
+      "chapter": "Profit and Loss",
+      "question_number": 186,
+      "question": "An article costing ₹ 2360 is sold to earn a profit of 16%. What is its selling price?",
+      "options": {
+        "a": "₹ 2717",
+        "b": "₹ 2737",
+        "c": "₹ 2767",
+        "d": "₹ 2787"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2737",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-187",
+      "chapter": "Profit and Loss",
+      "question_number": 187,
+      "question": "A dishonest trader uses a false weight of 837 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "16.97%",
+        "b": "19.47%",
+        "c": "22.47%",
+        "d": "24.97%"
+      },
+      "correct_option": "b",
+      "answer": "19.47%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-188",
+      "chapter": "Profit and Loss",
+      "question_number": 188,
+      "question": "A sells a product to B at 18% profit, and B sells it to C at 28% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "49.54%",
+        "b": "51.04%",
+        "c": "53.54%",
+        "d": "55.04%"
+      },
+      "correct_option": "b",
+      "answer": "51.04%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-189",
+      "chapter": "Profit and Loss",
+      "question_number": 189,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-190",
+      "chapter": "Profit and Loss",
+      "question_number": 190,
+      "question": "Two items are sold at ₹ 5800 each, one at 20% profit and the other at 20% loss. Overall result is a loss of",
+      "options": {
+        "a": "3.50%",
+        "b": "4.00%",
+        "c": "5.20%",
+        "d": "6.00%"
+      },
+      "correct_option": "b",
+      "answer": "4.00%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-191",
+      "chapter": "Profit and Loss",
+      "question_number": 191,
+      "question": "Two varieties of rice costing ₹ 21/kg and ₹ 41/kg are mixed in equal quantities and sold at ₹ 36/kg. Profit percentage is approximately",
+      "options": {
+        "a": "13.13%",
+        "b": "16.13%",
+        "c": "20.13%",
+        "d": "22.13%"
+      },
+      "correct_option": "b",
+      "answer": "16.13%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-192",
+      "chapter": "Profit and Loss",
+      "question_number": 192,
+      "question": "An article marked at ₹ 2920 is sold after allowing a discount of 22%. What is its selling price?",
+      "options": {
+        "a": "₹ 2262",
+        "b": "₹ 2277",
+        "c": "₹ 2302",
+        "d": "₹ 2317"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2277",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-193",
+      "chapter": "Profit and Loss",
+      "question_number": 193,
+      "question": "If items are bought at 8 for ₹ 10 and sold at 5 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "88.00%",
+        "b": "92.00%",
+        "c": "97.00%",
+        "d": "100.00%"
+      },
+      "correct_option": "b",
+      "answer": "92.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-194",
+      "chapter": "Profit and Loss",
+      "question_number": 194,
+      "question": "A person buys two articles for ₹ 2170 and ₹ 2470. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 557",
+        "b": "₹ 587",
+        "c": "₹ 632",
+        "d": "₹ 647"
+      },
+      "correct_option": "b",
+      "answer": "₹ 587",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-195",
+      "chapter": "Profit and Loss",
+      "question_number": 195,
+      "question": "An article costing ₹ 2450 is sold to earn a profit of 10%. What is its selling price?",
+      "options": {
+        "a": "₹ 2675",
+        "b": "₹ 2695",
+        "c": "₹ 2725",
+        "d": "₹ 2745"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2695",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-196",
+      "chapter": "Profit and Loss",
+      "question_number": 196,
+      "question": "A dishonest trader uses a false weight of 846 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "15.70%",
+        "b": "18.20%",
+        "c": "21.20%",
+        "d": "23.70%"
+      },
+      "correct_option": "b",
+      "answer": "18.20%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-197",
+      "chapter": "Profit and Loss",
+      "question_number": 197,
+      "question": "A sells a product to B at 17% profit, and B sells it to C at 27% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "47.09%",
+        "b": "48.59%",
+        "c": "51.09%",
+        "d": "52.59%"
+      },
+      "correct_option": "b",
+      "answer": "48.59%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-198",
+      "chapter": "Profit and Loss",
+      "question_number": 198,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-199",
+      "chapter": "Profit and Loss",
+      "question_number": 199,
+      "question": "Two items are sold at ₹ 5980 each, one at 14% profit and the other at 14% loss. Overall result is a loss of",
+      "options": {
+        "a": "1.46%",
+        "b": "1.96%",
+        "c": "3.16%",
+        "d": "3.96%"
+      },
+      "correct_option": "b",
+      "answer": "1.96%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-200",
+      "chapter": "Profit and Loss",
+      "question_number": 200,
+      "question": "Two varieties of rice costing ₹ 20/kg and ₹ 35/kg are mixed in equal quantities and sold at ₹ 32/kg. Profit percentage is approximately",
+      "options": {
+        "a": "13.36%",
+        "b": "16.36%",
+        "c": "20.36%",
+        "d": "22.36%"
+      },
+      "correct_option": "b",
+      "answer": "16.36%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-201",
+      "chapter": "Profit and Loss",
+      "question_number": 201,
+      "question": "An article marked at ₹ 3010 is sold after allowing a discount of 16%. What is its selling price?",
+      "options": {
+        "a": "₹ 2513",
+        "b": "₹ 2528",
+        "c": "₹ 2553",
+        "d": "₹ 2568"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2528",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-202",
+      "chapter": "Profit and Loss",
+      "question_number": 202,
+      "question": "If items are bought at 7 for ₹ 10 and sold at 6 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "36.00%",
+        "b": "40.00%",
+        "c": "45.00%",
+        "d": "48.00%"
+      },
+      "correct_option": "b",
+      "answer": "40.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-203",
+      "chapter": "Profit and Loss",
+      "question_number": 203,
+      "question": "A person buys two articles for ₹ 2215 and ₹ 2515. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 568",
+        "b": "₹ 598",
+        "c": "₹ 643",
+        "d": "₹ 658"
+      },
+      "correct_option": "b",
+      "answer": "₹ 598",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-204",
+      "chapter": "Profit and Loss",
+      "question_number": 204,
+      "question": "An article costing ₹ 2540 is sold to earn a profit of 19%. What is its selling price?",
+      "options": {
+        "a": "₹ 3002",
+        "b": "₹ 3022",
+        "c": "₹ 3052",
+        "d": "₹ 3072"
+      },
+      "correct_option": "b",
+      "answer": "₹ 3022",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-205",
+      "chapter": "Profit and Loss",
+      "question_number": 205,
+      "question": "A dishonest trader uses a false weight of 855 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "14.46%",
+        "b": "16.96%",
+        "c": "19.96%",
+        "d": "22.46%"
+      },
+      "correct_option": "b",
+      "answer": "16.96%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-206",
+      "chapter": "Profit and Loss",
+      "question_number": 206,
+      "question": "A sells a product to B at 16% profit, and B sells it to C at 26% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "44.66%",
+        "b": "46.16%",
+        "c": "48.66%",
+        "d": "50.16%"
+      },
+      "correct_option": "b",
+      "answer": "46.16%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-207",
+      "chapter": "Profit and Loss",
+      "question_number": 207,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-208",
+      "chapter": "Profit and Loss",
+      "question_number": 208,
+      "question": "Two items are sold at ₹ 6160 each, one at 23% profit and the other at 23% loss. Overall result is a loss of",
+      "options": {
+        "a": "4.79%",
+        "b": "5.29%",
+        "c": "6.49%",
+        "d": "7.29%"
+      },
+      "correct_option": "b",
+      "answer": "5.29%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-209",
+      "chapter": "Profit and Loss",
+      "question_number": 209,
+      "question": "Two varieties of rice costing ₹ 29/kg and ₹ 44/kg are mixed in equal quantities and sold at ₹ 41/kg. Profit percentage is approximately",
+      "options": {
+        "a": "9.33%",
+        "b": "12.33%",
+        "c": "16.33%",
+        "d": "18.33%"
+      },
+      "correct_option": "b",
+      "answer": "12.33%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-210",
+      "chapter": "Profit and Loss",
+      "question_number": 210,
+      "question": "An article marked at ₹ 3100 is sold after allowing a discount of 10%. What is its selling price?",
+      "options": {
+        "a": "₹ 2775",
+        "b": "₹ 2790",
+        "c": "₹ 2815",
+        "d": "₹ 2830"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2790",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-211",
+      "chapter": "Profit and Loss",
+      "question_number": 211,
+      "question": "If items are bought at 6 for ₹ 10 and sold at 7 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "-1.14%",
+        "b": "2.86%",
+        "c": "7.86%",
+        "d": "10.86%"
+      },
+      "correct_option": "b",
+      "answer": "2.86%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-212",
+      "chapter": "Profit and Loss",
+      "question_number": 212,
+      "question": "A person buys two articles for ₹ 2260 and ₹ 2560. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 580",
+        "b": "₹ 610",
+        "c": "₹ 655",
+        "d": "₹ 670"
+      },
+      "correct_option": "b",
+      "answer": "₹ 610",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-213",
+      "chapter": "Profit and Loss",
+      "question_number": 213,
+      "question": "An article costing ₹ 2630 is sold to earn a profit of 13%. What is its selling price?",
+      "options": {
+        "a": "₹ 2951",
+        "b": "₹ 2971",
+        "c": "₹ 3001",
+        "d": "₹ 3021"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2971",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-214",
+      "chapter": "Profit and Loss",
+      "question_number": 214,
+      "question": "A dishonest trader uses a false weight of 864 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "13.24%",
+        "b": "15.74%",
+        "c": "18.74%",
+        "d": "21.24%"
+      },
+      "correct_option": "b",
+      "answer": "15.74%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-215",
+      "chapter": "Profit and Loss",
+      "question_number": 215,
+      "question": "A sells a product to B at 15% profit, and B sells it to C at 25% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "42.25%",
+        "b": "43.75%",
+        "c": "46.25%",
+        "d": "47.75%"
+      },
+      "correct_option": "b",
+      "answer": "43.75%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-216",
+      "chapter": "Profit and Loss",
+      "question_number": 216,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-217",
+      "chapter": "Profit and Loss",
+      "question_number": 217,
+      "question": "Two items are sold at ₹ 6340 each, one at 17% profit and the other at 17% loss. Overall result is a loss of",
+      "options": {
+        "a": "2.39%",
+        "b": "2.89%",
+        "c": "4.09%",
+        "d": "4.89%"
+      },
+      "correct_option": "b",
+      "answer": "2.89%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-218",
+      "chapter": "Profit and Loss",
+      "question_number": 218,
+      "question": "Two varieties of rice costing ₹ 28/kg and ₹ 38/kg are mixed in equal quantities and sold at ₹ 38/kg. Profit percentage is approximately",
+      "options": {
+        "a": "12.15%",
+        "b": "15.15%",
+        "c": "19.15%",
+        "d": "21.15%"
+      },
+      "correct_option": "b",
+      "answer": "15.15%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-219",
+      "chapter": "Profit and Loss",
+      "question_number": 219,
+      "question": "An article marked at ₹ 3190 is sold after allowing a discount of 19%. What is its selling price?",
+      "options": {
+        "a": "₹ 2568",
+        "b": "₹ 2583",
+        "c": "₹ 2608",
+        "d": "₹ 2623"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2583",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-220",
+      "chapter": "Profit and Loss",
+      "question_number": 220,
+      "question": "If items are bought at 5 for ₹ 10 and sold at 4 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "46.00%",
+        "b": "50.00%",
+        "c": "55.00%",
+        "d": "58.00%"
+      },
+      "correct_option": "b",
+      "answer": "50.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-221",
+      "chapter": "Profit and Loss",
+      "question_number": 221,
+      "question": "A person buys two articles for ₹ 2305 and ₹ 2605. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 591",
+        "b": "₹ 621",
+        "c": "₹ 666",
+        "d": "₹ 681"
+      },
+      "correct_option": "b",
+      "answer": "₹ 621",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-222",
+      "chapter": "Profit and Loss",
+      "question_number": 222,
+      "question": "An article costing ₹ 2720 is sold to earn a profit of 22%. What is its selling price?",
+      "options": {
+        "a": "₹ 3298",
+        "b": "₹ 3318",
+        "c": "₹ 3348",
+        "d": "₹ 3368"
+      },
+      "correct_option": "b",
+      "answer": "₹ 3318",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-223",
+      "chapter": "Profit and Loss",
+      "question_number": 223,
+      "question": "A dishonest trader uses a false weight of 873 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "12.05%",
+        "b": "14.55%",
+        "c": "17.55%",
+        "d": "20.05%"
+      },
+      "correct_option": "b",
+      "answer": "14.55%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-224",
+      "chapter": "Profit and Loss",
+      "question_number": 224,
+      "question": "A sells a product to B at 14% profit, and B sells it to C at 24% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "39.86%",
+        "b": "41.36%",
+        "c": "43.86%",
+        "d": "45.36%"
+      },
+      "correct_option": "b",
+      "answer": "41.36%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-225",
+      "chapter": "Profit and Loss",
+      "question_number": 225,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-226",
+      "chapter": "Profit and Loss",
+      "question_number": 226,
+      "question": "Two items are sold at ₹ 6520 each, one at 11% profit and the other at 11% loss. Overall result is a loss of",
+      "options": {
+        "a": "0.71%",
+        "b": "1.21%",
+        "c": "2.41%",
+        "d": "3.21%"
+      },
+      "correct_option": "b",
+      "answer": "1.21%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-227",
+      "chapter": "Profit and Loss",
+      "question_number": 227,
+      "question": "Two varieties of rice costing ₹ 27/kg and ₹ 32/kg are mixed in equal quantities and sold at ₹ 34/kg. Profit percentage is approximately",
+      "options": {
+        "a": "12.25%",
+        "b": "15.25%",
+        "c": "19.25%",
+        "d": "21.25%"
+      },
+      "correct_option": "b",
+      "answer": "15.25%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-228",
+      "chapter": "Profit and Loss",
+      "question_number": 228,
+      "question": "An article marked at ₹ 3280 is sold after allowing a discount of 13%. What is its selling price?",
+      "options": {
+        "a": "₹ 2838",
+        "b": "₹ 2853",
+        "c": "₹ 2878",
+        "d": "₹ 2893"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2853",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-229",
+      "chapter": "Profit and Loss",
+      "question_number": 229,
+      "question": "If items are bought at 9 for ₹ 10 and sold at 5 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "112.00%",
+        "b": "116.00%",
+        "c": "121.00%",
+        "d": "124.00%"
+      },
+      "correct_option": "b",
+      "answer": "116.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-230",
+      "chapter": "Profit and Loss",
+      "question_number": 230,
+      "question": "A person buys two articles for ₹ 2350 and ₹ 2650. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 602",
+        "b": "₹ 632",
+        "c": "₹ 677",
+        "d": "₹ 692"
+      },
+      "correct_option": "b",
+      "answer": "₹ 632",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-231",
+      "chapter": "Profit and Loss",
+      "question_number": 231,
+      "question": "An article costing ₹ 2810 is sold to earn a profit of 16%. What is its selling price?",
+      "options": {
+        "a": "₹ 3239",
+        "b": "₹ 3259",
+        "c": "₹ 3289",
+        "d": "₹ 3309"
+      },
+      "correct_option": "b",
+      "answer": "₹ 3259",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-232",
+      "chapter": "Profit and Loss",
+      "question_number": 232,
+      "question": "A dishonest trader uses a false weight of 882 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "10.88%",
+        "b": "13.38%",
+        "c": "16.38%",
+        "d": "18.88%"
+      },
+      "correct_option": "b",
+      "answer": "13.38%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-233",
+      "chapter": "Profit and Loss",
+      "question_number": 233,
+      "question": "A sells a product to B at 13% profit, and B sells it to C at 23% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "37.49%",
+        "b": "38.99%",
+        "c": "41.49%",
+        "d": "42.99%"
+      },
+      "correct_option": "b",
+      "answer": "38.99%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-234",
+      "chapter": "Profit and Loss",
+      "question_number": 234,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-235",
+      "chapter": "Profit and Loss",
+      "question_number": 235,
+      "question": "Two items are sold at ₹ 6700 each, one at 20% profit and the other at 20% loss. Overall result is a loss of",
+      "options": {
+        "a": "3.50%",
+        "b": "4.00%",
+        "c": "5.20%",
+        "d": "6.00%"
+      },
+      "correct_option": "b",
+      "answer": "4.00%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-236",
+      "chapter": "Profit and Loss",
+      "question_number": 236,
+      "question": "Two varieties of rice costing ₹ 26/kg and ₹ 41/kg are mixed in equal quantities and sold at ₹ 38/kg. Profit percentage is approximately",
+      "options": {
+        "a": "10.43%",
+        "b": "13.43%",
+        "c": "17.43%",
+        "d": "19.43%"
+      },
+      "correct_option": "b",
+      "answer": "13.43%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-237",
+      "chapter": "Profit and Loss",
+      "question_number": 237,
+      "question": "An article marked at ₹ 3370 is sold after allowing a discount of 22%. What is its selling price?",
+      "options": {
+        "a": "₹ 2613",
+        "b": "₹ 2628",
+        "c": "₹ 2653",
+        "d": "₹ 2668"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2628",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-238",
+      "chapter": "Profit and Loss",
+      "question_number": 238,
+      "question": "If items are bought at 8 for ₹ 10 and sold at 6 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "56.00%",
+        "b": "60.00%",
+        "c": "65.00%",
+        "d": "68.00%"
+      },
+      "correct_option": "b",
+      "answer": "60.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-239",
+      "chapter": "Profit and Loss",
+      "question_number": 239,
+      "question": "A person buys two articles for ₹ 2395 and ₹ 2695. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 613",
+        "b": "₹ 643",
+        "c": "₹ 688",
+        "d": "₹ 703"
+      },
+      "correct_option": "b",
+      "answer": "₹ 643",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-240",
+      "chapter": "Profit and Loss",
+      "question_number": 240,
+      "question": "An article costing ₹ 2900 is sold to earn a profit of 10%. What is its selling price?",
+      "options": {
+        "a": "₹ 3170",
+        "b": "₹ 3190",
+        "c": "₹ 3220",
+        "d": "₹ 3240"
+      },
+      "correct_option": "b",
+      "answer": "₹ 3190",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-241",
+      "chapter": "Profit and Loss",
+      "question_number": 241,
+      "question": "A dishonest trader uses a false weight of 891 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "9.73%",
+        "b": "12.23%",
+        "c": "15.23%",
+        "d": "17.73%"
+      },
+      "correct_option": "b",
+      "answer": "12.23%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-242",
+      "chapter": "Profit and Loss",
+      "question_number": 242,
+      "question": "A sells a product to B at 12% profit, and B sells it to C at 22% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "35.14%",
+        "b": "36.64%",
+        "c": "39.14%",
+        "d": "40.64%"
+      },
+      "correct_option": "b",
+      "answer": "36.64%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-243",
+      "chapter": "Profit and Loss",
+      "question_number": 243,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-244",
+      "chapter": "Profit and Loss",
+      "question_number": 244,
+      "question": "Two items are sold at ₹ 6880 each, one at 14% profit and the other at 14% loss. Overall result is a loss of",
+      "options": {
+        "a": "1.46%",
+        "b": "1.96%",
+        "c": "3.16%",
+        "d": "3.96%"
+      },
+      "correct_option": "b",
+      "answer": "1.96%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-245",
+      "chapter": "Profit and Loss",
+      "question_number": 245,
+      "question": "Two varieties of rice costing ₹ 25/kg and ₹ 35/kg are mixed in equal quantities and sold at ₹ 35/kg. Profit percentage is approximately",
+      "options": {
+        "a": "13.67%",
+        "b": "16.67%",
+        "c": "20.67%",
+        "d": "22.67%"
+      },
+      "correct_option": "b",
+      "answer": "16.67%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-246",
+      "chapter": "Profit and Loss",
+      "question_number": 246,
+      "question": "An article marked at ₹ 3460 is sold after allowing a discount of 16%. What is its selling price?",
+      "options": {
+        "a": "₹ 2891",
+        "b": "₹ 2906",
+        "c": "₹ 2931",
+        "d": "₹ 2946"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2906",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-247",
+      "chapter": "Profit and Loss",
+      "question_number": 247,
+      "question": "If items are bought at 7 for ₹ 10 and sold at 7 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "16.00%",
+        "b": "20.00%",
+        "c": "25.00%",
+        "d": "28.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-248",
+      "chapter": "Profit and Loss",
+      "question_number": 248,
+      "question": "A person buys two articles for ₹ 2440 and ₹ 2740. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 625",
+        "b": "₹ 655",
+        "c": "₹ 700",
+        "d": "₹ 715"
+      },
+      "correct_option": "b",
+      "answer": "₹ 655",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-249",
+      "chapter": "Profit and Loss",
+      "question_number": 249,
+      "question": "An article costing ₹ 2990 is sold to earn a profit of 19%. What is its selling price?",
+      "options": {
+        "a": "₹ 3538",
+        "b": "₹ 3558",
+        "c": "₹ 3588",
+        "d": "₹ 3608"
+      },
+      "correct_option": "b",
+      "answer": "₹ 3558",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-250",
+      "chapter": "Profit and Loss",
+      "question_number": 250,
+      "question": "A dishonest trader uses a false weight of 900 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "8.61%",
+        "b": "11.11%",
+        "c": "14.11%",
+        "d": "16.61%"
+      },
+      "correct_option": "b",
+      "answer": "11.11%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-251",
+      "chapter": "Profit and Loss",
+      "question_number": 251,
+      "question": "A sells a product to B at 11% profit, and B sells it to C at 21% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "32.81%",
+        "b": "34.31%",
+        "c": "36.81%",
+        "d": "38.31%"
+      },
+      "correct_option": "b",
+      "answer": "34.31%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-252",
+      "chapter": "Profit and Loss",
+      "question_number": 252,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-253",
+      "chapter": "Profit and Loss",
+      "question_number": 253,
+      "question": "Two items are sold at ₹ 7060 each, one at 23% profit and the other at 23% loss. Overall result is a loss of",
+      "options": {
+        "a": "4.79%",
+        "b": "5.29%",
+        "c": "6.49%",
+        "d": "7.29%"
+      },
+      "correct_option": "b",
+      "answer": "5.29%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-254",
+      "chapter": "Profit and Loss",
+      "question_number": 254,
+      "question": "Two varieties of rice costing ₹ 24/kg and ₹ 44/kg are mixed in equal quantities and sold at ₹ 39/kg. Profit percentage is approximately",
+      "options": {
+        "a": "11.71%",
+        "b": "14.71%",
+        "c": "18.71%",
+        "d": "20.71%"
+      },
+      "correct_option": "b",
+      "answer": "14.71%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-255",
+      "chapter": "Profit and Loss",
+      "question_number": 255,
+      "question": "An article marked at ₹ 3550 is sold after allowing a discount of 10%. What is its selling price?",
+      "options": {
+        "a": "₹ 3180",
+        "b": "₹ 3195",
+        "c": "₹ 3220",
+        "d": "₹ 3235"
+      },
+      "correct_option": "b",
+      "answer": "₹ 3195",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-256",
+      "chapter": "Profit and Loss",
+      "question_number": 256,
+      "question": "If items are bought at 6 for ₹ 10 and sold at 4 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "76.00%",
+        "b": "80.00%",
+        "c": "85.00%",
+        "d": "88.00%"
+      },
+      "correct_option": "b",
+      "answer": "80.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-257",
+      "chapter": "Profit and Loss",
+      "question_number": 257,
+      "question": "A person buys two articles for ₹ 2485 and ₹ 2785. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 636",
+        "b": "₹ 666",
+        "c": "₹ 711",
+        "d": "₹ 726"
+      },
+      "correct_option": "b",
+      "answer": "₹ 666",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-258",
+      "chapter": "Profit and Loss",
+      "question_number": 258,
+      "question": "An article costing ₹ 3080 is sold to earn a profit of 13%. What is its selling price?",
+      "options": {
+        "a": "₹ 3460",
+        "b": "₹ 3480",
+        "c": "₹ 3510",
+        "d": "₹ 3530"
+      },
+      "correct_option": "b",
+      "answer": "₹ 3480",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-259",
+      "chapter": "Profit and Loss",
+      "question_number": 259,
+      "question": "A dishonest trader uses a false weight of 909 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "7.51%",
+        "b": "10.01%",
+        "c": "13.01%",
+        "d": "15.51%"
+      },
+      "correct_option": "b",
+      "answer": "10.01%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-260",
+      "chapter": "Profit and Loss",
+      "question_number": 260,
+      "question": "A sells a product to B at 10% profit, and B sells it to C at 20% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "30.50%",
+        "b": "32.00%",
+        "c": "34.50%",
+        "d": "36.00%"
+      },
+      "correct_option": "b",
+      "answer": "32.00%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-261",
+      "chapter": "Profit and Loss",
+      "question_number": 261,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-262",
+      "chapter": "Profit and Loss",
+      "question_number": 262,
+      "question": "Two items are sold at ₹ 7240 each, one at 17% profit and the other at 17% loss. Overall result is a loss of",
+      "options": {
+        "a": "2.39%",
+        "b": "2.89%",
+        "c": "4.09%",
+        "d": "4.89%"
+      },
+      "correct_option": "b",
+      "answer": "2.89%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-263",
+      "chapter": "Profit and Loss",
+      "question_number": 263,
+      "question": "Two varieties of rice costing ₹ 23/kg and ₹ 38/kg are mixed in equal quantities and sold at ₹ 35/kg. Profit percentage is approximately",
+      "options": {
+        "a": "11.75%",
+        "b": "14.75%",
+        "c": "18.75%",
+        "d": "20.75%"
+      },
+      "correct_option": "b",
+      "answer": "14.75%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-264",
+      "chapter": "Profit and Loss",
+      "question_number": 264,
+      "question": "An article marked at ₹ 3640 is sold after allowing a discount of 19%. What is its selling price?",
+      "options": {
+        "a": "₹ 2933",
+        "b": "₹ 2948",
+        "c": "₹ 2973",
+        "d": "₹ 2988"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2948",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-265",
+      "chapter": "Profit and Loss",
+      "question_number": 265,
+      "question": "If items are bought at 5 for ₹ 10 and sold at 5 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "16.00%",
+        "b": "20.00%",
+        "c": "25.00%",
+        "d": "28.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-266",
+      "chapter": "Profit and Loss",
+      "question_number": 266,
+      "question": "A person buys two articles for ₹ 2530 and ₹ 2830. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 647",
+        "b": "₹ 677",
+        "c": "₹ 722",
+        "d": "₹ 737"
+      },
+      "correct_option": "b",
+      "answer": "₹ 677",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-267",
+      "chapter": "Profit and Loss",
+      "question_number": 267,
+      "question": "An article costing ₹ 3170 is sold to earn a profit of 22%. What is its selling price?",
+      "options": {
+        "a": "₹ 3847",
+        "b": "₹ 3867",
+        "c": "₹ 3897",
+        "d": "₹ 3917"
+      },
+      "correct_option": "b",
+      "answer": "₹ 3867",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-268",
+      "chapter": "Profit and Loss",
+      "question_number": 268,
+      "question": "A dishonest trader uses a false weight of 918 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "6.43%",
+        "b": "8.93%",
+        "c": "11.93%",
+        "d": "14.43%"
+      },
+      "correct_option": "b",
+      "answer": "8.93%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-269",
+      "chapter": "Profit and Loss",
+      "question_number": 269,
+      "question": "A sells a product to B at 19% profit, and B sells it to C at 29% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "52.01%",
+        "b": "53.51%",
+        "c": "56.01%",
+        "d": "57.51%"
+      },
+      "correct_option": "b",
+      "answer": "53.51%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-270",
+      "chapter": "Profit and Loss",
+      "question_number": 270,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-271",
+      "chapter": "Profit and Loss",
+      "question_number": 271,
+      "question": "Two items are sold at ₹ 7420 each, one at 11% profit and the other at 11% loss. Overall result is a loss of",
+      "options": {
+        "a": "0.71%",
+        "b": "1.21%",
+        "c": "2.41%",
+        "d": "3.21%"
+      },
+      "correct_option": "b",
+      "answer": "1.21%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-272",
+      "chapter": "Profit and Loss",
+      "question_number": 272,
+      "question": "Two varieties of rice costing ₹ 22/kg and ₹ 32/kg are mixed in equal quantities and sold at ₹ 32/kg. Profit percentage is approximately",
+      "options": {
+        "a": "15.52%",
+        "b": "18.52%",
+        "c": "22.52%",
+        "d": "24.52%"
+      },
+      "correct_option": "b",
+      "answer": "18.52%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-273",
+      "chapter": "Profit and Loss",
+      "question_number": 273,
+      "question": "An article marked at ₹ 3730 is sold after allowing a discount of 13%. What is its selling price?",
+      "options": {
+        "a": "₹ 3230",
+        "b": "₹ 3245",
+        "c": "₹ 3270",
+        "d": "₹ 3285"
+      },
+      "correct_option": "b",
+      "answer": "₹ 3245",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-274",
+      "chapter": "Profit and Loss",
+      "question_number": 274,
+      "question": "If items are bought at 9 for ₹ 10 and sold at 6 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "76.00%",
+        "b": "80.00%",
+        "c": "85.00%",
+        "d": "88.00%"
+      },
+      "correct_option": "b",
+      "answer": "80.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-275",
+      "chapter": "Profit and Loss",
+      "question_number": 275,
+      "question": "A person buys two articles for ₹ 2575 and ₹ 2875. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 658",
+        "b": "₹ 688",
+        "c": "₹ 733",
+        "d": "₹ 748"
+      },
+      "correct_option": "b",
+      "answer": "₹ 688",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-276",
+      "chapter": "Profit and Loss",
+      "question_number": 276,
+      "question": "An article costing ₹ 3260 is sold to earn a profit of 16%. What is its selling price?",
+      "options": {
+        "a": "₹ 3761",
+        "b": "₹ 3781",
+        "c": "₹ 3811",
+        "d": "₹ 3831"
+      },
+      "correct_option": "b",
+      "answer": "₹ 3781",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-277",
+      "chapter": "Profit and Loss",
+      "question_number": 277,
+      "question": "A dishonest trader uses a false weight of 927 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "5.37%",
+        "b": "7.87%",
+        "c": "10.87%",
+        "d": "13.37%"
+      },
+      "correct_option": "b",
+      "answer": "7.87%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-278",
+      "chapter": "Profit and Loss",
+      "question_number": 278,
+      "question": "A sells a product to B at 18% profit, and B sells it to C at 28% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "49.54%",
+        "b": "51.04%",
+        "c": "53.54%",
+        "d": "55.04%"
+      },
+      "correct_option": "b",
+      "answer": "51.04%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-279",
+      "chapter": "Profit and Loss",
+      "question_number": 279,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-280",
+      "chapter": "Profit and Loss",
+      "question_number": 280,
+      "question": "Two items are sold at ₹ 7600 each, one at 20% profit and the other at 20% loss. Overall result is a loss of",
+      "options": {
+        "a": "3.50%",
+        "b": "4.00%",
+        "c": "5.20%",
+        "d": "6.00%"
+      },
+      "correct_option": "b",
+      "answer": "4.00%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-281",
+      "chapter": "Profit and Loss",
+      "question_number": 281,
+      "question": "Two varieties of rice costing ₹ 21/kg and ₹ 41/kg are mixed in equal quantities and sold at ₹ 36/kg. Profit percentage is approximately",
+      "options": {
+        "a": "13.13%",
+        "b": "16.13%",
+        "c": "20.13%",
+        "d": "22.13%"
+      },
+      "correct_option": "b",
+      "answer": "16.13%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-282",
+      "chapter": "Profit and Loss",
+      "question_number": 282,
+      "question": "An article marked at ₹ 3820 is sold after allowing a discount of 22%. What is its selling price?",
+      "options": {
+        "a": "₹ 2964",
+        "b": "₹ 2979",
+        "c": "₹ 3004",
+        "d": "₹ 3019"
+      },
+      "correct_option": "b",
+      "answer": "₹ 2979",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-283",
+      "chapter": "Profit and Loss",
+      "question_number": 283,
+      "question": "If items are bought at 8 for ₹ 10 and sold at 7 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "33.14%",
+        "b": "37.14%",
+        "c": "42.14%",
+        "d": "45.14%"
+      },
+      "correct_option": "b",
+      "answer": "37.14%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-284",
+      "chapter": "Profit and Loss",
+      "question_number": 284,
+      "question": "A person buys two articles for ₹ 2620 and ₹ 2920. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 670",
+        "b": "₹ 700",
+        "c": "₹ 745",
+        "d": "₹ 760"
+      },
+      "correct_option": "b",
+      "answer": "₹ 700",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-285",
+      "chapter": "Profit and Loss",
+      "question_number": 285,
+      "question": "An article costing ₹ 3350 is sold to earn a profit of 10%. What is its selling price?",
+      "options": {
+        "a": "₹ 3665",
+        "b": "₹ 3685",
+        "c": "₹ 3715",
+        "d": "₹ 3735"
+      },
+      "correct_option": "b",
+      "answer": "₹ 3685",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-286",
+      "chapter": "Profit and Loss",
+      "question_number": 286,
+      "question": "A dishonest trader uses a false weight of 936 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "4.34%",
+        "b": "6.84%",
+        "c": "9.84%",
+        "d": "12.34%"
+      },
+      "correct_option": "b",
+      "answer": "6.84%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-287",
+      "chapter": "Profit and Loss",
+      "question_number": 287,
+      "question": "A sells a product to B at 17% profit, and B sells it to C at 27% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "47.09%",
+        "b": "48.59%",
+        "c": "51.09%",
+        "d": "52.59%"
+      },
+      "correct_option": "b",
+      "answer": "48.59%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-288",
+      "chapter": "Profit and Loss",
+      "question_number": 288,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-289",
+      "chapter": "Profit and Loss",
+      "question_number": 289,
+      "question": "Two items are sold at ₹ 7780 each, one at 14% profit and the other at 14% loss. Overall result is a loss of",
+      "options": {
+        "a": "1.46%",
+        "b": "1.96%",
+        "c": "3.16%",
+        "d": "3.96%"
+      },
+      "correct_option": "b",
+      "answer": "1.96%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-290",
+      "chapter": "Profit and Loss",
+      "question_number": 290,
+      "question": "Two varieties of rice costing ₹ 20/kg and ₹ 35/kg are mixed in equal quantities and sold at ₹ 32/kg. Profit percentage is approximately",
+      "options": {
+        "a": "13.36%",
+        "b": "16.36%",
+        "c": "20.36%",
+        "d": "22.36%"
+      },
+      "correct_option": "b",
+      "answer": "16.36%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-291",
+      "chapter": "Profit and Loss",
+      "question_number": 291,
+      "question": "An article marked at ₹ 3910 is sold after allowing a discount of 16%. What is its selling price?",
+      "options": {
+        "a": "₹ 3269",
+        "b": "₹ 3284",
+        "c": "₹ 3309",
+        "d": "₹ 3324"
+      },
+      "correct_option": "b",
+      "answer": "₹ 3284",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-292",
+      "chapter": "Profit and Loss",
+      "question_number": 292,
+      "question": "If items are bought at 7 for ₹ 10 and sold at 4 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "106.00%",
+        "b": "110.00%",
+        "c": "115.00%",
+        "d": "118.00%"
+      },
+      "correct_option": "b",
+      "answer": "110.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-293",
+      "chapter": "Profit and Loss",
+      "question_number": 293,
+      "question": "A person buys two articles for ₹ 2665 and ₹ 2965. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 681",
+        "b": "₹ 711",
+        "c": "₹ 756",
+        "d": "₹ 771"
+      },
+      "correct_option": "b",
+      "answer": "₹ 711",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-294",
+      "chapter": "Profit and Loss",
+      "question_number": 294,
+      "question": "An article costing ₹ 3440 is sold to earn a profit of 19%. What is its selling price?",
+      "options": {
+        "a": "₹ 4073",
+        "b": "₹ 4093",
+        "c": "₹ 4123",
+        "d": "₹ 4143"
+      },
+      "correct_option": "b",
+      "answer": "₹ 4093",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-295",
+      "chapter": "Profit and Loss",
+      "question_number": 295,
+      "question": "A dishonest trader uses a false weight of 945 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "3.32%",
+        "b": "5.82%",
+        "c": "8.82%",
+        "d": "11.32%"
+      },
+      "correct_option": "b",
+      "answer": "5.82%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-296",
+      "chapter": "Profit and Loss",
+      "question_number": 296,
+      "question": "A sells a product to B at 16% profit, and B sells it to C at 26% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "44.66%",
+        "b": "46.16%",
+        "c": "48.66%",
+        "d": "50.16%"
+      },
+      "correct_option": "b",
+      "answer": "46.16%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-297",
+      "chapter": "Profit and Loss",
+      "question_number": 297,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-298",
+      "chapter": "Profit and Loss",
+      "question_number": 298,
+      "question": "Two items are sold at ₹ 7960 each, one at 23% profit and the other at 23% loss. Overall result is a loss of",
+      "options": {
+        "a": "4.79%",
+        "b": "5.29%",
+        "c": "6.49%",
+        "d": "7.29%"
+      },
+      "correct_option": "b",
+      "answer": "5.29%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-299",
+      "chapter": "Profit and Loss",
+      "question_number": 299,
+      "question": "Two varieties of rice costing ₹ 29/kg and ₹ 44/kg are mixed in equal quantities and sold at ₹ 41/kg. Profit percentage is approximately",
+      "options": {
+        "a": "9.33%",
+        "b": "12.33%",
+        "c": "16.33%",
+        "d": "18.33%"
+      },
+      "correct_option": "b",
+      "answer": "12.33%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-300",
+      "chapter": "Profit and Loss",
+      "question_number": 300,
+      "question": "An article marked at ₹ 4000 is sold after allowing a discount of 10%. What is its selling price?",
+      "options": {
+        "a": "₹ 3585",
+        "b": "₹ 3600",
+        "c": "₹ 3625",
+        "d": "₹ 3640"
+      },
+      "correct_option": "b",
+      "answer": "₹ 3600",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-301",
+      "chapter": "Profit and Loss",
+      "question_number": 301,
+      "question": "If items are bought at 6 for ₹ 10 and sold at 5 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "40.00%",
+        "b": "44.00%",
+        "c": "49.00%",
+        "d": "52.00%"
+      },
+      "correct_option": "b",
+      "answer": "44.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-302",
+      "chapter": "Profit and Loss",
+      "question_number": 302,
+      "question": "A person buys two articles for ₹ 2710 and ₹ 3010. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 692",
+        "b": "₹ 722",
+        "c": "₹ 767",
+        "d": "₹ 782"
+      },
+      "correct_option": "b",
+      "answer": "₹ 722",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-303",
+      "chapter": "Profit and Loss",
+      "question_number": 303,
+      "question": "An article costing ₹ 3530 is sold to earn a profit of 13%. What is its selling price?",
+      "options": {
+        "a": "₹ 3968",
+        "b": "₹ 3988",
+        "c": "₹ 4018",
+        "d": "₹ 4038"
+      },
+      "correct_option": "b",
+      "answer": "₹ 3988",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-304",
+      "chapter": "Profit and Loss",
+      "question_number": 304,
+      "question": "A dishonest trader uses a false weight of 804 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "21.88%",
+        "b": "24.38%",
+        "c": "27.38%",
+        "d": "29.88%"
+      },
+      "correct_option": "b",
+      "answer": "24.38%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-305",
+      "chapter": "Profit and Loss",
+      "question_number": 305,
+      "question": "A sells a product to B at 15% profit, and B sells it to C at 25% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "42.25%",
+        "b": "43.75%",
+        "c": "46.25%",
+        "d": "47.75%"
+      },
+      "correct_option": "b",
+      "answer": "43.75%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-306",
+      "chapter": "Profit and Loss",
+      "question_number": 306,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-307",
+      "chapter": "Profit and Loss",
+      "question_number": 307,
+      "question": "Two items are sold at ₹ 8140 each, one at 17% profit and the other at 17% loss. Overall result is a loss of",
+      "options": {
+        "a": "2.39%",
+        "b": "2.89%",
+        "c": "4.09%",
+        "d": "4.89%"
+      },
+      "correct_option": "b",
+      "answer": "2.89%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-308",
+      "chapter": "Profit and Loss",
+      "question_number": 308,
+      "question": "Two varieties of rice costing ₹ 28/kg and ₹ 38/kg are mixed in equal quantities and sold at ₹ 38/kg. Profit percentage is approximately",
+      "options": {
+        "a": "12.15%",
+        "b": "15.15%",
+        "c": "19.15%",
+        "d": "21.15%"
+      },
+      "correct_option": "b",
+      "answer": "15.15%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-309",
+      "chapter": "Profit and Loss",
+      "question_number": 309,
+      "question": "An article marked at ₹ 4090 is sold after allowing a discount of 19%. What is its selling price?",
+      "options": {
+        "a": "₹ 3297",
+        "b": "₹ 3312",
+        "c": "₹ 3337",
+        "d": "₹ 3352"
+      },
+      "correct_option": "b",
+      "answer": "₹ 3312",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-310",
+      "chapter": "Profit and Loss",
+      "question_number": 310,
+      "question": "If items are bought at 5 for ₹ 10 and sold at 6 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "-4.00%",
+        "b": "0.00%",
+        "c": "5.00%",
+        "d": "8.00%"
+      },
+      "correct_option": "b",
+      "answer": "0.00%",
+      "topic": "Unitary Rate Transactions"
+    },
+    {
+      "id": "profit-and-loss-311",
+      "chapter": "Profit and Loss",
+      "question_number": 311,
+      "question": "A person buys two articles for ₹ 2755 and ₹ 3055. Sells first at 10% profit and second at 15% profit. Total profit earned is",
+      "options": {
+        "a": "₹ 703",
+        "b": "₹ 733",
+        "c": "₹ 778",
+        "d": "₹ 793"
+      },
+      "correct_option": "b",
+      "answer": "₹ 733",
+      "topic": "Multi-item Deals"
+    },
+    {
+      "id": "profit-and-loss-312",
+      "chapter": "Profit and Loss",
+      "question_number": 312,
+      "question": "An article costing ₹ 3620 is sold to earn a profit of 22%. What is its selling price?",
+      "options": {
+        "a": "₹ 4396",
+        "b": "₹ 4416",
+        "c": "₹ 4446",
+        "d": "₹ 4466"
+      },
+      "correct_option": "b",
+      "answer": "₹ 4416",
+      "topic": "Basic Profit and Loss"
+    },
+    {
+      "id": "profit-and-loss-313",
+      "chapter": "Profit and Loss",
+      "question_number": 313,
+      "question": "A dishonest trader uses a false weight of 813 grams instead of 1 kg. His gain percentage is",
+      "options": {
+        "a": "20.50%",
+        "b": "23.00%",
+        "c": "26.00%",
+        "d": "28.50%"
+      },
+      "correct_option": "b",
+      "answer": "23.00%",
+      "topic": "Dishonest Dealer & False Weights"
+    },
+    {
+      "id": "profit-and-loss-314",
+      "chapter": "Profit and Loss",
+      "question_number": 314,
+      "question": "A sells a product to B at 14% profit, and B sells it to C at 24% profit. Total effective profit percentage on original CP is",
+      "options": {
+        "a": "39.86%",
+        "b": "41.36%",
+        "c": "43.86%",
+        "d": "45.36%"
+      },
+      "correct_option": "b",
+      "answer": "41.36%",
+      "topic": "Chain Transactions"
+    },
+    {
+      "id": "profit-and-loss-315",
+      "chapter": "Profit and Loss",
+      "question_number": 315,
+      "question": "If the ratio of Cost Price to Selling Price of an item is 5 : 6, what is the profit percentage?",
+      "options": {
+        "a": "15.00%",
+        "b": "20.00%",
+        "c": "30.00%",
+        "d": "35.00%"
+      },
+      "correct_option": "b",
+      "answer": "20.00%",
+      "topic": "Ratio of CP & SP"
+    },
+    {
+      "id": "profit-and-loss-316",
+      "chapter": "Profit and Loss",
+      "question_number": 316,
+      "question": "Two items are sold at ₹ 8320 each, one at 11% profit and the other at 11% loss. Overall result is a loss of",
+      "options": {
+        "a": "0.71%",
+        "b": "1.21%",
+        "c": "2.41%",
+        "d": "3.21%"
+      },
+      "correct_option": "b",
+      "answer": "1.21%",
+      "topic": "Equal Profit & Loss / x^2/100"
+    },
+    {
+      "id": "profit-and-loss-317",
+      "chapter": "Profit and Loss",
+      "question_number": 317,
+      "question": "Two varieties of rice costing ₹ 27/kg and ₹ 32/kg are mixed in equal quantities and sold at ₹ 34/kg. Profit percentage is approximately",
+      "options": {
+        "a": "12.25%",
+        "b": "15.25%",
+        "c": "19.25%",
+        "d": "21.25%"
+      },
+      "correct_option": "b",
+      "answer": "15.25%",
+      "topic": "Mixed Varieties & Blending"
+    },
+    {
+      "id": "profit-and-loss-318",
+      "chapter": "Profit and Loss",
+      "question_number": 318,
+      "question": "An article marked at ₹ 4180 is sold after allowing a discount of 13%. What is its selling price?",
+      "options": {
+        "a": "₹ 3621",
+        "b": "₹ 3636",
+        "c": "₹ 3661",
+        "d": "₹ 3676"
+      },
+      "correct_option": "b",
+      "answer": "₹ 3636",
+      "topic": "Discounts & Marked Price"
+    },
+    {
+      "id": "profit-and-loss-319",
+      "chapter": "Profit and Loss",
+      "question_number": 319,
+      "question": "If items are bought at 9 for ₹ 10 and sold at 7 for ₹ 12, what is the profit/loss percent?",
+      "options": {
+        "a": "50.29%",
+        "b": "54.29%",
+        "c": "59.29%",
+        "d": "62.29%"
+      },
+      "correct_option": "b",
+      "answer": "54.29%",
+      "topic": "Unitary Rate Transactions"
+    }
+  ]
+}
