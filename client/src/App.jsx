@@ -12,6 +12,8 @@ import InteractiveSandbox from './components/InteractiveSandbox';
 import LeetCode500Section from './components/LeetCode500Section';
 
 import { fetchCategories, fetchQuestions, submitQuizAttempt, fetchStats } from './utils/api';
+import { DSA_500_PROBLEMS } from './data/dsa500Data';
+import { SANDBOX_DATABASE } from './data/sandboxData';
 import { Zap, CheckCircle, Clock, ChevronRight, RefreshCw, ShieldOff, Sliders, Lightbulb, BookOpen, Sparkles, Code2 } from 'lucide-react';
 
 export default function App() {
@@ -80,61 +82,136 @@ export default function App() {
     setConfigDefaultMode(defaultMode);
   };
 
-  // Launch Customized Quiz
-  const handleStartQuiz = async (categoryId, config) => {
-    try {
-      setLoading(true);
-      setConfigCategory(null); // Close modal
+function getStaticQuestions(categoryId, config) {
+  let list = [];
+  if (categoryId === 'dsa') {
+    list = DSA_500_PROBLEMS.map((item, idx) => ({
+      id: item.id || `dsa-${idx}`,
+      question: `${item.title} — ${item.problem ? item.problem.slice(0, 180) : item.title}...`,
+      options: {
+        a: `Optimal Complexity: ${item.timeComplexity || 'O(N)'}`,
+        b: `Brute Force: O(N²)`,
+        c: `Logarithmic: O(log N)`,
+        d: `Constant: O(1)`
+      },
+      correct_option: 'a',
+      explanation: `Python Solution Code:\n${item.solutionPython || 'See DSA Hub for complete code'}`
+    }));
+  } else {
+    const categoryFilterMap = {
+      quantitative: 'quantitative',
+      logical: 'logical',
+      verbal: 'verbal'
+    };
+    const targetCat = categoryFilterMap[categoryId] || 'quantitative';
+    const filtered = SANDBOX_DATABASE.filter(q => q.category === targetCat);
+    list = filtered.map((q, idx) => ({
+      id: q.id || `${targetCat}-${idx}`,
+      question: `${q.title}: ${q.description || 'Solve the following problem using standard formulas.'}`,
+      options: {
+        a: q.formula || 'Formula Option A',
+        b: 'Option B',
+        c: 'Option C',
+        d: 'Option D'
+      },
+      correct_option: 'a',
+      explanation: q.shortcutTip || q.description || 'Standard solution steps.'
+    }));
+  }
 
-      const qs = await fetchQuestions({
+  if (!list.length) {
+    list = SANDBOX_DATABASE.slice(0, 10).map((q, idx) => ({
+      id: `gen-${idx}`,
+      question: `${q.title}: ${q.description}`,
+      options: { a: q.formula || 'Option A', b: 'Option B', c: 'Option C', d: 'Option D' },
+      correct_option: 'a',
+      explanation: q.shortcutTip || 'Standard solution'
+    }));
+  }
+
+  if (config?.shuffle !== false) {
+    list = [...list].sort(() => 0.5 - Math.random());
+  }
+
+  return list.slice(0, config?.limit || 10);
+}
+
+// Launch Customized Quiz
+const handleStartQuiz = async (categoryId, config) => {
+  try {
+    setLoading(true);
+    setConfigCategory(null); // Close modal
+
+    let qs = [];
+    try {
+      qs = await fetchQuestions({
         category: categoryId,
         limit: config.limit || 10,
         difficulty: config.difficulty || 'all',
         shuffle: config.shuffle !== false
       });
-
-      if (!qs?.length) {
-        alert('No questions available matching selected difficulty filters.');
-        setLoading(false);
-        return;
-      }
-
-      setActiveQuiz({
-        categoryId,
-        mode: config.mode || 'exam',
-        timerPerQuestion: config.timerPerQuestion || 90,
-        questions: qs
-      });
-
-      setCurrentTab('quiz');
-      setLoading(false);
-    } catch (err) {
-      alert('Failed to launch quiz: ' + err.message);
-      setLoading(false);
+    } catch (e) {
+      console.warn('Backend unconfigured/offline. Launching quiz with local client questions.');
+      qs = getStaticQuestions(categoryId, config);
     }
-  };
 
-  const handleCompleteQuiz = async ({ userAnswers, timeSpentSeconds, mode }) => {
-    if (!activeQuiz) return;
+    if (!qs?.length) {
+      qs = getStaticQuestions(categoryId, config);
+    }
+
+    setActiveQuiz({
+      categoryId,
+      mode: config.mode || 'exam',
+      timerPerQuestion: config.timerPerQuestion || 90,
+      questions: qs
+    });
+
+    setCurrentTab('quiz');
+    setLoading(false);
+  } catch (err) {
+    alert('Failed to launch quiz: ' + err.message);
+    setLoading(false);
+  }
+};
+
+const handleCompleteQuiz = async ({ userAnswers, timeSpentSeconds, mode }) => {
+  if (!activeQuiz) return;
+  try {
+    setLoading(true);
+    let res;
     try {
-      setLoading(true);
-      const res = await submitQuizAttempt({
+      res = await submitQuizAttempt({
         category: activeQuiz.categoryId,
         mode,
         totalQuestions: activeQuiz.questions.length,
         userAnswers,
         timeSpentSeconds
       });
-
-      setQuizResult({ result: res, questions: activeQuiz.questions });
-      setCurrentTab('result');
-      loadData();
-      setLoading(false);
-    } catch (err) {
-      alert('Submit failed: ' + err.message);
-      setLoading(false);
+    } catch (e) {
+      console.warn('Backend unconfigured. Evaluating score locally.');
+      let score = 0;
+      activeQuiz.questions.forEach(q => {
+        if (userAnswers[q.id]?.toLowerCase() === q.correct_option?.toLowerCase()) {
+          score++;
+        }
+      });
+      res = {
+        score,
+        totalQuestions: activeQuiz.questions.length,
+        percentage: Math.round((score / activeQuiz.questions.length) * 100),
+        timeSpentSeconds
+      };
     }
-  };
+
+    setQuizResult({ result: res, questions: activeQuiz.questions });
+    setCurrentTab('result');
+    loadData();
+    setLoading(false);
+  } catch (err) {
+    alert('Submit failed: ' + err.message);
+    setLoading(false);
+  }
+};
 
   const getCategoryTitle = (id) => categories.find(c => c.id === id)?.title || 'Aptitude Practice';
 
