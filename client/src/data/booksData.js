@@ -5,8 +5,8 @@ export const STATIC_BOOKS = [
     author: "R.S. Aggarwal",
     category: "quantitative",
     coverColor: "#2563eb",
-    chapterCount: 11,
-    totalQuestions: 2162,
+    chapterCount: 12,
+    totalQuestions: 2481,
     description: "The gold standard textbook for Quantitative Aptitude in Bank PO, SSC, CAT, GATE, Placement & Railway exams.",
     chapters: [
       {
@@ -96,6 +96,14 @@ export const STATIC_BOOKS = [
         question_count: 390,
         description: "Percentage definitions, core conversion formulas, percentage increase/decrease, successive changes, commodity price neutrality, population growth & depreciation, demographic breakdowns, mixture percentages, and data sufficiency.",
         file: "rs_agrawal/percentage.json"
+      },
+      {
+        id: "ch-profit-and-loss",
+        chapter_number: 12,
+        title: "12. Profit and Loss",
+        question_count: 319,
+        description: "Cost price, selling price, profit/loss percentages, chain transactions, ratio of CP & SP, equal profit and loss (x²/100), dishonest dealer & false weights, mixed varieties, discounts & marked price, and data sufficiency.",
+        file: "rs_agrawal/profit_and_loss.json"
       }
     ]
   }
