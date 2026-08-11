@@ -54,6 +54,14 @@
         "question_count": 177,
         "description": "Arithmetic mean, weighted average, consecutive series, age/salary problems, speed averages, cricket run rates, and data sufficiency.",
         "file": "rs_agrawal/average.json"
+      },
+      {
+        "id": "ch-problems-on-numbers",
+        "chapter_number": 7,
+        "title": "7. Problems on Numbers",
+        "question_count": 133,
+        "description": "Number representation, consecutive numbers, digits and place values, two-digit/three-digit reversing, fractions and reciprocals.",
+        "file": "rs_agrawal/problems_on_numbers.json"
       }
     ]
   },

@@ -5,8 +5,8 @@ export const STATIC_BOOKS = [
     author: "R.S. Aggarwal",
     category: "quantitative",
     coverColor: "#2563eb",
-    chapterCount: 6,
-    totalQuestions: 1381,
+    chapterCount: 7,
+    totalQuestions: 1514,
     description: "The gold standard textbook for Quantitative Aptitude in Bank PO, SSC, CAT, GATE, Placement & Railway exams.",
     chapters: [
       {
@@ -50,6 +50,13 @@ export const STATIC_BOOKS = [
         title: "6. Average",
         question_count: 177,
         description: "Arithmetic mean, weighted average, consecutive series, age/salary problems, speed averages, cricket run rates, and data sufficiency."
+      },
+      {
+        id: "ch-problems-on-numbers",
+        chapter_number: 7,
+        title: "7. Problems on Numbers",
+        question_count: 133,
+        description: "Number representation, consecutive numbers, digits and place values, two-digit/three-digit reversing, fractions and reciprocals."
       }
     ]
   }
