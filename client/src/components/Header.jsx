@@ -73,15 +73,16 @@ export default function Header({
           onClick={() => handleTabClick('categories')}
           style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer', flexShrink: 0 }}
         >
-          <div style={{
-            background: 'linear-gradient(135deg, var(--accent-primary) 0%, #9333ea 100%)',
-            width: '34px', height: '34px',
-            borderRadius: 'var(--radius-sm)',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            boxShadow: 'var(--shadow-blue)', transition: 'transform 0.2s ease'
-          }}>
-            <Zap size={18} color="#fff" />
-          </div>
+          <img
+            src="/logo.png"
+            alt="APTIXA Logo"
+            style={{
+              width: '36px', height: '36px',
+              objectFit: 'contain',
+              borderRadius: 'var(--radius-xs)',
+              filter: 'drop-shadow(0 2px 6px rgba(37,99,235,0.3))'
+            }}
+          />
           <div>
             <span style={{
               fontFamily: 'var(--font-heading)',

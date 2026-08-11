@@ -327,7 +327,7 @@ export default function App() {
                   fontSize: '0.75rem', fontWeight: '700', color: 'var(--info)',
                   marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px'
                 }}>
-                  <Zap size={11} /> APTIXA Assessment Engine
+                  <img src="/logo.png" alt="APTIXA" style={{ width: '14px', height: '14px', objectFit: 'contain' }} /> APTIXA Assessment Engine
                 </div>
                 <h2 style={{ fontSize: 'clamp(1.4rem, 4vw, 2rem)', marginBottom: '10px', fontWeight: '800', letterSpacing: '-0.5px' }}>
                   Master Placement &amp; Competitive Exams
