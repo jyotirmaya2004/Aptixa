@@ -5,8 +5,8 @@ export const STATIC_BOOKS = [
     author: "R.S. Aggarwal",
     category: "quantitative",
     coverColor: "#2563eb",
-    chapterCount: 4,
-    totalQuestions: 1494,
+    chapterCount: 5,
+    totalQuestions: 1204,
     description: "The gold standard textbook for Quantitative Aptitude in Bank PO, SSC, CAT, GATE, Placement & Railway exams.",
     chapters: [
       {
@@ -36,6 +36,13 @@ export const STATIC_BOOKS = [
         title: "4. Simplification",
         question_count: 298,
         description: "BODMAS rule, Modulus, Vinculum, algebraic identities, and numerical simplification problems."
+      },
+      {
+        id: "ch-square-roots-cube-roots",
+        chapter_number: 5,
+        title: "5. Square Roots and Cube Roots",
+        question_count: 188,
+        description: "Square roots, cube roots, prime factorization, long division, radical multiplication/division, and perfect square/cube problems."
       }
     ]
   }
