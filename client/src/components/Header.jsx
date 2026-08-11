@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { 
   Sun, Moon, BarChart3, Grid, ShieldCheck, Zap, Palette, Lightbulb, 
-  BookOpen, Menu, X, ChevronRight, Sparkles, Code2, Search, Command, Flame
+  BookOpen, Menu, X, ChevronRight, Sparkles, Code2, Search, Command, Flame,
+  Download
 } from 'lucide-react';
 import HeaderSearchModal from './HeaderSearchModal';
 import HeaderStatsPopover from './HeaderStatsPopover';
@@ -18,6 +19,7 @@ export default function Header({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchModalOpen, setSearchModalOpen] = useState(false);
   const [statsPopoverOpen, setStatsPopoverOpen] = useState(false);
+  const [deferredPrompt, setDeferredPrompt] = useState(null);
 
   const tabs = [
     { id: 'categories',  label: 'Assessment Domains', icon: Grid },
@@ -28,7 +30,7 @@ export default function Header({
     { id: 'stats',       label: 'Analytics',           icon: BarChart3 },
   ];
 
-  // Hotkey listener for Ctrl+K or Cmd+K
+  // Hotkey listener & PWA beforeinstallprompt listener
   useEffect(() => {
     const handleKeyDown = (e) => {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
@@ -36,9 +38,32 @@ export default function Header({
         setSearchModalOpen(prev => !prev);
       }
     };
+
+    const handleBeforeInstall = (e) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+    };
+
     window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    window.addEventListener('beforeinstallprompt', handleBeforeInstall);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('beforeinstallprompt', handleBeforeInstall);
+    };
   }, []);
+
+  const handleInstallApp = async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      const choiceResult = await deferredPrompt.userChoice;
+      if (choiceResult.outcome === 'accepted') {
+        setDeferredPrompt(null);
+      }
+    } else {
+      alert('To install APTIXA as an app:\n\n1. Open Google Chrome menu (⋮)\n2. Tap "Add to Home screen" or "Install App"');
+    }
+  };
 
   const handleTabClick = (tabId) => {
     setCurrentTab(tabId);
@@ -92,7 +117,7 @@ export default function Header({
               <span className="gradient-text">APTIXA</span>
             </span>
             <div style={{ fontSize: '0.66rem', color: 'var(--text-muted)', fontWeight: '600', letterSpacing: '0.3px', marginTop: '2px' }}>
-              Placement & Skill Hub
+              Placement &amp; Skill Hub
             </div>
           </div>
         </div>
@@ -152,6 +177,24 @@ export default function Header({
         {/* Right Header Actions */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
           
+          {/* Chrome Mobile / Desktop Install Shortcut Button */}
+          <button
+            className="btn btn-primary btn-sm"
+            onClick={handleInstallApp}
+            title="Install APTIXA App & Shortcut"
+            style={{
+              padding: '6px 10px',
+              fontSize: '0.78rem',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '5px',
+              fontWeight: '700'
+            }}
+          >
+            <Download size={13} />
+            <span className="desktop-only">Install App</span>
+          </button>
+
           {/* Interactive Stats Dropdown Pill */}
           {stats && (
             <button
@@ -246,6 +289,25 @@ export default function Header({
                 <ChevronRight size={16} opacity={0.6} />
               </button>
             ))}
+
+            {/* Mobile Install App Button */}
+            <button
+              onClick={handleInstallApp}
+              style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                padding: '12px 16px', borderRadius: 'var(--radius-sm)',
+                background: 'var(--info-bg)', color: 'var(--info)',
+                border: '1px solid rgba(59,130,246,0.3)',
+                fontWeight: '700', fontSize: '0.92rem',
+                cursor: 'pointer', textAlign: 'left', marginTop: '4px'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <Download size={18} />
+                <span>Install APTIXA Android Shortcut</span>
+              </div>
+              <ChevronRight size={16} opacity={0.6} />
+            </button>
           </div>
         </div>
       )}

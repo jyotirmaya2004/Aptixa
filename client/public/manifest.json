@@ -1,0 +1,30 @@
+{
+  "short_name": "APTIXA",
+  "name": "APTIXA — Placement & Skill Hub",
+  "description": "APTIXA - Comprehensive Placement, Aptitude & DSA Skill Development Portal",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "sizes": "64x64 32x32 24x24 16x16"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/"
+}
