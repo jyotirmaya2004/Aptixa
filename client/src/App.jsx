@@ -46,33 +46,69 @@ function buildStaticQuestions(categoryId, config) {
       };
     });
   } else {
-    const targetCat =
-      categoryId === 'quantitative' ? 'quantitative'
-      : categoryId === 'logical' ? 'logical'
-      : categoryId === 'verbal' ? 'verbal'
-      : 'quantitative';
+    // 1. Pull questions from extracted Aptitude Gold JSON store
+    const goldTopics = externalQuestionsPayload?.topics || {};
+    let extractedQuestions = [];
 
-    const filtered = SANDBOX_DATABASE.filter(q => q.category === targetCat);
-    const source = filtered.length ? filtered : SANDBOX_DATABASE;
+    if (categoryId === 'logical') {
+      extractedQuestions = [
+        ...(goldTopics.permutation?.questions || []),
+        ...(goldTopics.calendar?.questions || []),
+        ...(goldTopics.age?.questions || []),
+        ...(goldTopics.random?.questions || [])
+      ];
+    } else if (categoryId === 'quantitative') {
+      extractedQuestions = [
+        ...(goldTopics.profit?.questions || []),
+        ...(goldTopics.mixture?.questions || []),
+        ...(goldTopics.pipes?.questions || []),
+        ...(goldTopics.speed?.questions || []),
+        ...(goldTopics.simple_interest?.questions || [])
+      ];
+    } else if (categoryId.startsWith('gold-')) {
+      const topicKey = categoryId.replace('gold-', '');
+      extractedQuestions = goldTopics[topicKey]?.questions || goldTopics.random?.questions || [];
+    }
 
-    list = source.map((q, idx) => {
-      const correctText = q.formula || q.shortcutTip || 'Standard formula approach';
-      return {
-        id: q.id || `${targetCat}-${idx}`,
-        question: `${q.title}: ${q.description || 'Choose the correct approach for solving this problem.'}`,
-        options: [
-          correctText.slice(0, 120),
-          'Inverse ratio method',
-          'Simple arithmetic mean',
-          'Logarithmic approximation',
-        ],
-        correctOption: 0,
-        topic: q.topic || targetCat,
-        difficulty: q.importance === 'Critical' ? 'Hard' : q.importance === 'High' ? 'Medium' : 'Easy',
-        explanation: q.shortcutTip || q.description || 'Standard placement exam approach.',
-        hint: q.formula || undefined,
-      };
-    });
+    if (extractedQuestions.length > 0) {
+      list = extractedQuestions.map((q, idx) => ({
+        id: q.id || `ext-${idx}`,
+        question: q.question,
+        options: q.options || ['Option A', 'Option B', 'Option C', 'Option D'],
+        correctOption: q.correctOption ?? 0,
+        explanation: q.explanation || 'Step-by-step reasoning solution.',
+        difficulty: q.difficulty || 'Medium',
+        topic: q.topic || categoryId,
+        isLive: false
+      }));
+    } else {
+      const targetCat = categoryId === 'quantitative' ? 'quantitative'
+        : categoryId === 'logical' ? 'logical'
+        : categoryId === 'verbal' ? 'verbal'
+        : 'quantitative';
+
+      const filtered = SANDBOX_DATABASE.filter(q => q.category === targetCat);
+      const source = filtered.length ? filtered : SANDBOX_DATABASE;
+
+      list = source.map((q, idx) => {
+        const correctText = q.formula || q.shortcutTip || 'Standard formula approach';
+        return {
+          id: q.id || `${targetCat}-${idx}`,
+          question: `${q.title}: ${q.description || 'Choose the correct approach for solving this problem.'}`,
+          options: [
+            correctText.slice(0, 120),
+            'Inverse ratio method',
+            'Simple arithmetic mean',
+            'Logarithmic approximation',
+          ],
+          correctOption: 0,
+          topic: q.topic || targetCat,
+          difficulty: q.importance === 'Critical' ? 'Hard' : q.importance === 'High' ? 'Medium' : 'Easy',
+          explanation: q.shortcutTip || q.description || 'Standard placement exam approach.',
+          hint: q.formula || undefined,
+        };
+      });
+    }
   }
 
   if (config?.shuffle !== false) {

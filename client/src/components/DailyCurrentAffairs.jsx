@@ -90,82 +90,6 @@ export default function DailyCurrentAffairs() {
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '24px 16px 60px' }}>
       
-      {/* ── Top Header Banner ────────────────────────────────────────────────── */}
-      <div style={{
-        background: 'linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 100%)',
-        borderRadius: 'var(--radius-lg)',
-        border: '1px solid var(--border-color)',
-        padding: '28px 24px',
-        marginBottom: '28px',
-        boxShadow: 'var(--shadow-md)',
-        position: 'relative',
-        overflow: 'hidden'
-      }}>
-        <div style={{
-          position: 'absolute', top: '-40px', right: '-40px', width: '180px', height: '180px',
-          background: 'var(--accent-primary)', opacity: 0.06, borderRadius: '50%', filter: 'blur(30px)', pointerEvents: 'none'
-        }} />
-
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '16px' }}>
-          <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
-              <span style={{
-                padding: '4px 10px', background: 'rgba(59, 130, 246, 0.12)', color: 'var(--accent-primary)',
-                borderRadius: 'var(--radius-xs)', fontSize: '0.78rem', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '6px'
-              }}>
-                <Calendar size={14} /> {formattedDateStr}
-              </span>
-              <span style={{
-                padding: '4px 10px', background: 'rgba(16, 185, 129, 0.12)', color: '#10b981',
-                borderRadius: 'var(--radius-xs)', fontSize: '0.78rem', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '6px'
-              }}>
-                <ShieldCheck size={14} /> Powered by NewsAPI.org
-              </span>
-            </div>
-
-            <h1 style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--text-primary)', margin: 0, letterSpacing: '-0.02em', display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <Newspaper color="var(--accent-primary)" size={30} /> Daily Current Affairs
-            </h1>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', marginTop: '6px', marginBottom: 0 }}>
-              Curated daily news & general awareness digest for placement interviews and competitive exams. Automatically refreshed daily and cached locally.
-            </p>
-          </div>
-
-          <button
-            onClick={() => loadCurrentAffairs(true)}
-            disabled={loading}
-            style={{
-              padding: '10px 18px',
-              background: 'var(--accent-primary)',
-              color: '#ffffff',
-              border: 'none',
-              borderRadius: 'var(--radius-md)',
-              fontWeight: 600,
-              fontSize: '0.88rem',
-              cursor: loading ? 'not-allowed' : 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '8px',
-              boxShadow: '0 4px 12px rgba(59, 130, 246, 0.25)',
-              transition: 'all 0.2s ease'
-            }}
-          >
-            <RefreshCw size={16} className={loading ? 'spin' : ''} />
-            {loading ? 'Refreshing API...' : 'Force Refresh News'}
-          </button>
-        </div>
-
-        {data && (
-          <div style={{ marginTop: '18px', paddingTop: '14px', borderTop: '1px solid var(--border-color)', display: 'flex', gap: '16px', flexWrap: 'wrap', fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-            <span><strong>Date Stamp:</strong> {data.lastFetchedDate}</span>
-            <span>•</span>
-            <span><strong>Articles Loaded:</strong> {data.totalArticles || 0}</span>
-            <span>•</span>
-            <span><strong>Cache Status:</strong> {data.isSameDayCache ? 'Cached for Today' : 'Live Fetched Today'}</span>
-          </div>
-        )}
-      </div>
-
       {/* ── Controls: Search & Category Tabs ─────────────────────────────────── */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '14px', marginBottom: '24px' }}>
         
@@ -193,7 +117,7 @@ export default function DailyCurrentAffairs() {
           ))}
         </div>
 
-        {/* Search & Bookmarks filter */}
+        {/* Search, Saved & Refresh Actions */}
         <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flex: '1', justifyContent: 'flex-end', minWidth: '280px' }}>
           <div style={{
             display: 'flex', alignItems: 'center', gap: '8px', background: 'var(--bg-secondary)',
@@ -231,6 +155,29 @@ export default function DailyCurrentAffairs() {
           >
             {showBookmarksOnly ? <BookmarkCheck size={16} /> : <Bookmark size={16} />}
             Saved ({bookmarks.length})
+          </button>
+
+          <button
+            onClick={() => loadCurrentAffairs(true)}
+            disabled={loading}
+            title="Refresh news from API"
+            style={{
+              padding: '7px 12px',
+              borderRadius: 'var(--radius-md)',
+              fontSize: '0.85rem',
+              fontWeight: 600,
+              border: '1px solid var(--border-color)',
+              background: 'var(--bg-secondary)',
+              color: 'var(--text-secondary)',
+              cursor: loading ? 'not-allowed' : 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              whiteSpace: 'nowrap'
+            }}
+          >
+            <RefreshCw size={15} className={loading ? 'spin' : ''} />
+            {loading ? 'Updating...' : 'Refresh'}
           </button>
         </div>
       </div>
