@@ -452,48 +452,8 @@ export default function App() {
             {currentTab === 'categories' && (
               <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '32px 16px' }}>
                 
-                {/* Hero Banner */}
-                <div className="glass-card" style={{
-                  padding: '36px 32px', marginBottom: '36px',
-                  background: 'linear-gradient(135deg, rgba(37,99,235,0.12) 0%, rgba(124,58,237,0.08) 100%)',
-                  border: '1px solid var(--border-color)', position: 'relative', overflow: 'hidden'
-                }}>
-                  <div style={{ maxWidth: '720px' }}>
-                    <div style={{
-                      display: 'inline-flex', alignItems: 'center', gap: '6px',
-                      padding: '4px 12px', borderRadius: 'var(--radius-xs)',
-                      background: 'var(--accent-bg)', border: '1px solid var(--accent-border)',
-                      fontSize: '0.78rem', fontWeight: '700', color: 'var(--accent-primary)',
-                      marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px'
-                    }}>
-                      <Sparkles size={13} /> Aptitude &amp; Skill Hub
-                    </div>
-                    <h1 style={{ fontSize: '2.1rem', lineHeight: '1.2', marginBottom: '12px', fontWeight: '800' }}>
-                      Master Aptitude &amp; DSA Solvers
-                    </h1>
-                    <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', lineHeight: '1.6', marginBottom: '24px' }}>
-                      Practice with full-length timed tests, analyze domain accuracy metrics, and explore 500+ LeetCode problems with Python solutions.
-                    </p>
-                    <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-                      <button
-                        className="btn btn-primary"
-                        onClick={() => handleSetTab('leetcode500')}
-                        style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
-                      >
-                        <Code2 size={18} /> Explore DSA 500 Hub
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
                 {/* Section 1: Core Assessment Domains */}
-                <div style={{ marginBottom: '40px' }}>
-                  <h2 style={{ fontSize: '1.25rem', marginBottom: '8px', fontWeight: '700', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <BookOpen size={20} color="var(--accent-primary)" /> Core Placement Assessment Domains
-                  </h2>
-                  <p style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginBottom: '18px' }}>
-                    Primary aptitude and technical evaluation modules for placement preparation.
-                  </p>
+                <div style={{ marginBottom: '32px' }}>
                   <div style={{
                     display: 'grid',
                     gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
@@ -510,14 +470,8 @@ export default function App() {
                   </div>
                 </div>
 
-                {/* Section 2: Aptitude Gold API Topics */}
+                {/* Section 2: Aptitude Gold Topics Cards Grid */}
                 <div>
-                  <h2 style={{ fontSize: '1.25rem', marginBottom: '8px', fontWeight: '700', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <Sparkles size={20} color="#f59e0b" /> Aptitude Gold API Topics (Live &amp; Offline Cached)
-                  </h2>
-                  <p style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginBottom: '18px' }}>
-                    Topic-wise aptitude questions sourced dynamically from the Aptitude Gold API engine.
-                  </p>
                   <div style={{
                     display: 'grid',
                     gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
