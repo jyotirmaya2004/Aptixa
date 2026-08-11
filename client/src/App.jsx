@@ -45,10 +45,10 @@ export default function App() {
   }, [theme, accent, fontSize]);
 
   const DEFAULT_CATEGORIES = [
-    { id: 'dsa', title: 'DSA Placement Hub', description: '525 High-Frequency LeetCode Questions with Python Solutions', questionCount: 525, icon: 'Code2' },
-    { id: 'quantitative', title: 'Quantitative Aptitude', description: 'Comprehensive Problem Sets with Step-by-Step Solutions', questionCount: 40, icon: 'Zap' },
-    { id: 'logical', title: 'Logical Reasoning', description: 'Analytical Puzzles, Coding-Decoding & Pattern Series', questionCount: 30, icon: 'CheckCircle' },
-    { id: 'verbal', title: 'Verbal Ability', description: 'Grammar Rules, Vocabulary & Reading Comprehension', questionCount: 30, icon: 'Clock' }
+    { id: 'dsa', title: 'DSA Placement Hub', description: '525 High-Frequency LeetCode Questions with Python Solutions', questionCount: 525, icon: 'Code2', topics: ['Arrays', 'Two Pointers', 'Sliding Window', 'Binary Search', 'Linked List', 'Trees', 'DP', 'Graphs'] },
+    { id: 'quantitative', title: 'Quantitative Aptitude', description: 'Comprehensive Problem Sets with Step-by-Step Solutions', questionCount: 40, icon: 'Zap', topics: ['Number System', 'HCF & LCM', 'Percentages', 'Profit & Loss', 'Time & Work'] },
+    { id: 'logical', title: 'Logical Reasoning', description: 'Analytical Puzzles, Coding-Decoding & Pattern Series', questionCount: 30, icon: 'CheckCircle', topics: ['Coding-Decoding', 'Blood Relations', 'Seating Arrangement', 'Syllogism'] },
+    { id: 'verbal', title: 'Verbal Ability', description: 'Grammar Rules, Vocabulary & Reading Comprehension', questionCount: 30, icon: 'Clock', topics: ['Reading Comprehension', 'Sentence Correction', 'Synonyms', 'Antonyms'] }
   ];
 
   const loadData = async () => {

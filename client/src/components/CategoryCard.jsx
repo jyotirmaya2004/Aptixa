@@ -46,7 +46,7 @@ export default function CategoryCard({ category, onOpenConfig }) {
 
         {/* Topic chips */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px', marginBottom: '20px' }}>
-          {category.topics.slice(0, 4).map((t, i) => (
+          {(category.topics || []).slice(0, 4).map((t, i) => (
             <span key={i} style={{
               fontSize: '0.72rem', padding: '2px 8px',
               borderRadius: 'var(--radius-xs)',
@@ -57,9 +57,9 @@ export default function CategoryCard({ category, onOpenConfig }) {
               {t}
             </span>
           ))}
-          {category.topics.length > 4 && (
+          {(category.topics || []).length > 4 && (
             <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)', alignSelf: 'center' }}>
-              +{category.topics.length - 4}
+              +{(category.topics || []).length - 4}
             </span>
           )}
         </div>
