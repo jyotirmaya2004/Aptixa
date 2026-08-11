@@ -86,6 +86,14 @@
         "question_count": 92,
         "description": "Definition of logarithm, laws of logarithms, base change formula, common logarithms, characteristic and mantissa, logarithmic equations.",
         "file": "rs_agrawal/logarithms.json"
+      },
+      {
+        "id": "ch-percentage",
+        "chapter_number": 11,
+        "title": "11. Percentage",
+        "question_count": 390,
+        "description": "Percentage definitions, core conversion formulas, percentage increase/decrease, successive changes, commodity price neutrality, population growth & depreciation, demographic breakdowns, mixture percentages, and data sufficiency.",
+        "file": "rs_agrawal/percentage.json"
       }
     ]
   },

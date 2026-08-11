@@ -5,8 +5,8 @@ export const STATIC_BOOKS = [
     author: "R.S. Aggarwal",
     category: "quantitative",
     coverColor: "#2563eb",
-    chapterCount: 10,
-    totalQuestions: 1772,
+    chapterCount: 11,
+    totalQuestions: 2162,
     description: "The gold standard textbook for Quantitative Aptitude in Bank PO, SSC, CAT, GATE, Placement & Railway exams.",
     chapters: [
       {
@@ -88,6 +88,14 @@ export const STATIC_BOOKS = [
         question_count: 92,
         description: "Definition of logarithm, laws of logarithms, base change formula, common logarithms, characteristic and mantissa, logarithmic equations.",
         file: "rs_agrawal/logarithms.json"
+      },
+      {
+        id: "ch-percentage",
+        chapter_number: 11,
+        title: "11. Percentage",
+        question_count: 390,
+        description: "Percentage definitions, core conversion formulas, percentage increase/decrease, successive changes, commodity price neutrality, population growth & depreciation, demographic breakdowns, mixture percentages, and data sufficiency.",
+        file: "rs_agrawal/percentage.json"
       }
     ]
   }
