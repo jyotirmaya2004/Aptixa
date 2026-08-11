@@ -85,10 +85,10 @@ function buildStaticQuestions(categoryId, config) {
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function App() {
-  // Appearance & Customization State
-  const [theme, setTheme]           = useState('dark');
-  const [accent, setAccent]         = useState('blue');
-  const [fontSize, setFontSize]     = useState('medium');
+  // Appearance & Customization State — persisted in localStorage
+  const [theme, setTheme]       = useState(() => localStorage.getItem('aptixa-theme')    || 'dark');
+  const [accent, setAccent]     = useState(() => localStorage.getItem('aptixa-accent')   || 'blue');
+  const [fontSize, setFontSize] = useState(() => localStorage.getItem('aptixa-font-size') || 'medium');
   const [showPreferences, setShowPreferences] = useState(false);
 
   // App Navigation & Data State
@@ -104,11 +104,14 @@ export default function App() {
   const [activeQuiz, setActiveQuiz]               = useState(null);
   const [quizResult, setQuizResult]               = useState(null);
 
-  // Sync Preferences to Document
+  // Sync Preferences to Document + persist to localStorage
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
     document.documentElement.setAttribute('data-accent', accent);
     document.documentElement.setAttribute('data-font-size', fontSize);
+    localStorage.setItem('aptixa-theme', theme);
+    localStorage.setItem('aptixa-accent', accent);
+    localStorage.setItem('aptixa-font-size', fontSize);
   }, [theme, accent, fontSize]);
 
   // Static fallback categories (no backend needed)

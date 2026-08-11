@@ -26,7 +26,11 @@ export default function ThemeCustomizerModal({
 
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content glass-card" style={{ padding: '28px', maxWidth: '480px' }} onClick={e => e.stopPropagation()}>
+      <div
+        className="modal-content glass-card"
+        style={{ padding: '22px' }}
+        onClick={e => e.stopPropagation()}
+      >
         
         {/* Header */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px', paddingBottom: '14px', borderBottom: '1px solid var(--border-color)' }}>
@@ -96,7 +100,7 @@ export default function ThemeCustomizerModal({
             <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: '700', color: 'var(--text-secondary)', marginBottom: '8px' }}>
               Quiz Problem Typography Size
             </label>
-            <div style={{ display: 'flex', gap: '8px' }}>
+            <div className="theme-modal-fontsize-row" style={{ display: 'flex', gap: '8px' }}>
               {fontSizes.map(item => (
                 <button
                   key={item.id}

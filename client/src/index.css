@@ -407,6 +407,40 @@ input:focus, select:focus, textarea:focus {
   backdrop-filter: blur(8px);
 }
 
+/* ── Accent Color Swatch Picker ── */
+.color-swatch {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  flex-shrink: 0;
+}
+.color-swatch:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.25);
+}
+.color-swatch.active {
+  border-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.4);
+  transform: scale(1.1);
+}
+
+/* ── Prevent any element from ever overflowing the viewport ── */
+* { max-width: 100%; }
+img, video, canvas, svg { max-width: 100%; height: auto; }
+pre { overflow-x: auto; white-space: pre-wrap; word-break: break-all; }
+code { word-break: break-all; }
+
+/* ── ThemeCustomizerModal responsive ── */
+@media (max-width: 480px) {
+  .color-swatch { width: 30px; height: 30px; }
+  .theme-modal-fontsize-row { flex-direction: column; }
+  .theme-modal-fontsize-row button { width: 100%; }
+}
+
+
 /* ==========================================
    GLOBAL MOBILE-FIRST RESPONSIVE DESIGN SYSTEM
    ========================================== */
