@@ -30,6 +30,14 @@
         "question_count": 206,
         "description": "Objective problems on recurring decimals, simplification, and fractional operations.",
         "file": "rs_agrawal/decimal_fraction.json"
+      },
+      {
+        "id": "ch-simplification",
+        "chapter_number": 4,
+        "title": "4. Simplification",
+        "question_count": 298,
+        "description": "BODMAS rule, Modulus, Vinculum, algebraic identities, and numerical simplification problems.",
+        "file": "rs_agrawal/simplification.json"
       }
     ]
   },

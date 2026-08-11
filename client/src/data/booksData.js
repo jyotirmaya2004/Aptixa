@@ -5,8 +5,8 @@ export const STATIC_BOOKS = [
     author: "R.S. Aggarwal",
     category: "quantitative",
     coverColor: "#2563eb",
-    chapterCount: 3,
-    totalQuestions: 1200,
+    chapterCount: 4,
+    totalQuestions: 1494,
     description: "The gold standard textbook for Quantitative Aptitude in Bank PO, SSC, CAT, GATE, Placement & Railway exams.",
     chapters: [
       {
@@ -29,6 +29,13 @@ export const STATIC_BOOKS = [
         title: "3. Decimal Fractions",
         question_count: 206,
         description: "Objective problems on Decimal Fractions."
+      },
+      {
+        id: "ch-simplification",
+        chapter_number: 4,
+        title: "4. Simplification",
+        question_count: 298,
+        description: "BODMAS rule, Modulus, Vinculum, algebraic identities, and numerical simplification problems."
       }
     ]
   }
