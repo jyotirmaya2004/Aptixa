@@ -56,11 +56,11 @@ export default function LeetCode500Section() {
     return lines.map((line, lineIdx) => {
       if (line.trim().startsWith('#')) {
         return (
-          <div key={lineIdx} style={{ display: 'flex', lineHeight: '1.6' }}>
-            <span style={{ width: '36px', display: 'inline-block', userSelect: 'none', color: '#6272a4', textAlign: 'right', paddingRight: '14px', fontSize: '0.76rem' }}>
+          <div key={lineIdx} style={{ display: 'flex', lineHeight: '1.6', minWidth: 0, width: '100%' }}>
+            <span style={{ width: '30px', flexShrink: 0, userSelect: 'none', color: '#6272a4', textAlign: 'right', paddingRight: '8px', fontSize: '0.75rem' }}>
               {lineIdx + 1}
             </span>
-            <span style={{ color: '#6272a4', fontStyle: 'italic' }}>{line}</span>
+            <span style={{ color: '#6272a4', fontStyle: 'italic', flex: 1, minWidth: 0, whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>{line}</span>
           </div>
         );
       }
@@ -102,11 +102,11 @@ export default function LeetCode500Section() {
       }
 
       return (
-        <div key={lineIdx} style={{ display: 'flex', lineHeight: '1.6' }}>
-          <span style={{ width: '36px', display: 'inline-block', userSelect: 'none', color: '#6272a4', textAlign: 'right', paddingRight: '14px', fontSize: '0.76rem' }}>
+        <div key={lineIdx} style={{ display: 'flex', lineHeight: '1.6', minWidth: 0, width: '100%' }}>
+          <span style={{ width: '30px', flexShrink: 0, userSelect: 'none', color: '#6272a4', textAlign: 'right', paddingRight: '8px', fontSize: '0.75rem' }}>
             {lineIdx + 1}
           </span>
-          <span style={{ whiteSpace: 'pre' }}>{elements}</span>
+          <span style={{ flex: 1, minWidth: 0, whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>{elements}</span>
         </div>
       );
     });
@@ -152,7 +152,7 @@ export default function LeetCode500Section() {
                 }}>
                   {num}
                 </span>
-                <div style={{ flex: 1, lineHeight: '1.55' }}>
+                <div style={{ flex: 1, minWidth: 0, lineHeight: '1.55', wordBreak: 'break-word', overflowWrap: 'break-word' }}>
                   {parts.length > 1 ? (
                     <>
                       <strong style={{ color: 'var(--text-primary)', fontWeight: '700' }}>{parts[0].trim()}:</strong>{' '}
@@ -358,7 +358,8 @@ export default function LeetCode500Section() {
             {/* Description */}
             <div style={{
               padding: '14px 16px', background: 'var(--bg-secondary)', borderRadius: 'var(--radius-xs)',
-              border: '1px solid var(--border-color)', fontSize: '0.9rem', lineHeight: '1.6', color: 'var(--text-secondary)', marginBottom: '16px'
+              border: '1px solid var(--border-color)', fontSize: '0.9rem', lineHeight: '1.6', color: 'var(--text-secondary)', marginBottom: '16px',
+              wordBreak: 'break-word', overflowWrap: 'break-word'
             }}>
               {selectedProblem.description}
             </div>
@@ -369,17 +370,18 @@ export default function LeetCode500Section() {
                 {selectedProblem.examples.map((ex, exIdx) => (
                   <div key={exIdx} style={{
                     padding: '12px 16px', background: 'var(--bg-secondary)',
-                    borderRadius: 'var(--radius-xs)', border: '1px solid var(--border-color)', fontSize: '0.86rem'
+                    borderRadius: 'var(--radius-xs)', border: '1px solid var(--border-color)', fontSize: '0.86rem',
+                    wordBreak: 'break-word', overflowWrap: 'break-word'
                   }}>
                     <div style={{ fontWeight: '800', color: 'var(--accent-primary)', fontSize: '0.78rem', marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
                       Example {exIdx + 1}:
                     </div>
-                    <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.83rem', display: 'grid', gap: '4px' }}>
-                      <div><strong style={{ color: 'var(--text-primary)' }}>Input:</strong> <span className="dsa-example-input">{ex.input}</span></div>
-                      <div><strong style={{ color: 'var(--text-primary)' }}>Output:</strong> <span className="dsa-example-output">{ex.output}</span></div>
+                    <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.83rem', display: 'grid', gap: '4px', wordBreak: 'break-word', overflowWrap: 'break-word' }}>
+                      <div style={{ wordBreak: 'break-word' }}><strong style={{ color: 'var(--text-primary)' }}>Input:</strong> <span className="dsa-example-input" style={{ wordBreak: 'break-word' }}>{ex.input}</span></div>
+                      <div style={{ wordBreak: 'break-word' }}><strong style={{ color: 'var(--text-primary)' }}>Output:</strong> <span className="dsa-example-output" style={{ wordBreak: 'break-word' }}>{ex.output}</span></div>
                     </div>
                     {ex.explanation && (
-                      <div style={{ color: 'var(--text-secondary)', fontSize: '0.82rem', marginTop: '6px', lineHeight: '1.4' }}>
+                      <div style={{ color: 'var(--text-secondary)', fontSize: '0.82rem', marginTop: '6px', lineHeight: '1.4', wordBreak: 'break-word', overflowWrap: 'break-word' }}>
                         <strong style={{ color: 'var(--text-primary)' }}>Explanation:</strong> {ex.explanation}
                       </div>
                     )}
