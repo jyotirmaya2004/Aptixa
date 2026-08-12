@@ -6,11 +6,31 @@ const path = require('path');
 const questionsPath = path.join(__dirname, '../data/questions.json');
 
 const getQuestions = () => {
-  return JSON.parse(fs.readFileSync(questionsPath, 'utf8'));
+  try {
+    const tmpPath = path.join('/tmp', 'questions.json');
+    if (fs.existsSync(tmpPath)) {
+      return JSON.parse(fs.readFileSync(tmpPath, 'utf8'));
+    }
+    if (fs.existsSync(questionsPath)) {
+      return JSON.parse(fs.readFileSync(questionsPath, 'utf8'));
+    }
+  } catch (err) {
+    console.warn('Error reading questions file:', err);
+  }
+  return [];
 };
 
 const saveQuestions = (questions) => {
-  fs.writeFileSync(questionsPath, JSON.stringify(questions, null, 2), 'utf8');
+  try {
+    fs.writeFileSync(questionsPath, JSON.stringify(questions, null, 2), 'utf8');
+  } catch (err) {
+    try {
+      const tmpPath = path.join('/tmp', 'questions.json');
+      fs.writeFileSync(tmpPath, JSON.stringify(questions, null, 2), 'utf8');
+    } catch (tmpErr) {
+      console.warn('Could not save questions to /tmp:', tmpErr);
+    }
+  }
 };
 
 // GET /api/questions - query questions with filtering and shuffle
@@ -20,18 +40,20 @@ router.get('/', (req, res) => {
     const { category, difficulty, search, limit, shuffle } = req.query;
 
     if (category && category !== 'all') {
-      questions = questions.filter(q => q.category.toLowerCase() === category.toLowerCase());
+      questions = questions.filter(q => q && q.category && q.category.toLowerCase() === category.toLowerCase());
     }
 
     if (difficulty && difficulty !== 'all') {
-      questions = questions.filter(q => q.difficulty.toLowerCase() === difficulty.toLowerCase());
+      questions = questions.filter(q => q && q.difficulty && q.difficulty.toLowerCase() === difficulty.toLowerCase());
     }
 
     if (search && search.trim() !== '') {
       const qLower = search.toLowerCase();
       questions = questions.filter(q => 
-        q.question.toLowerCase().includes(qLower) || 
-        q.topic.toLowerCase().includes(qLower)
+        q && (
+          (q.question && q.question.toLowerCase().includes(qLower)) || 
+          (q.topic && q.topic.toLowerCase().includes(qLower))
+        )
       );
     }
 

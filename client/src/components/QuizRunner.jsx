@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {
   Clock, Flag, CheckCircle2, XCircle, ArrowLeft, ArrowRight,
-  Send, Bookmark, Lightbulb, ChevronDown, ChevronUp, AlertCircle, HelpCircle, X
+  Send, Bookmark, Lightbulb, ChevronDown, ChevronUp, AlertCircle, HelpCircle, X, SkipForward
 } from 'lucide-react';
 import QuestionPalette from './QuestionPalette';
 import { formatTime, getTimerColor } from '../utils/timer';
@@ -282,7 +282,7 @@ export default function QuizRunner({
           )}
 
           {/* Navigation Controls */}
-          <div className="quiz-nav-controls" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '20px' }}>
+          <div className="quiz-nav-controls" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '20px', flexWrap: 'wrap', gap: '8px' }}>
             <button
               className="btn btn-outline"
               disabled={currentIndex === 0}
@@ -291,7 +291,7 @@ export default function QuizRunner({
               <ArrowLeft size={15} /> Previous
             </button>
 
-            <div style={{ display: 'flex', gap: '8px' }}>
+            <div style={{ display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' }}>
               {hasAnswered && (
                 <button className="btn btn-outline btn-sm" onClick={() => {
                   const n = { ...userAnswers }; delete n[q.id]; setUserAnswers(n);
@@ -299,6 +299,27 @@ export default function QuizRunner({
                   Clear
                 </button>
               )}
+
+              <button
+                className="btn btn-outline btn-warning"
+                onClick={() => {
+                  if (currentIndex < questions.length - 1) {
+                    setCurrentIndex(p => p + 1);
+                  } else {
+                    const firstUnanswered = questions.findIndex(item => userAnswers[item.id] === undefined);
+                    if (firstUnanswered !== -1 && firstUnanswered !== currentIndex) {
+                      setCurrentIndex(firstUnanswered);
+                    } else {
+                      setShowSubmitModal(true);
+                    }
+                  }
+                }}
+                style={{ gap: '4px', borderColor: 'var(--warning-border)', color: 'var(--warning)', fontWeight: '600' }}
+                title="Skip this question for now"
+              >
+                Skip <SkipForward size={15} />
+              </button>
+
               {currentIndex < questions.length - 1 ? (
                 <button className="btn btn-primary" onClick={() => setCurrentIndex(p => p + 1)}>
                   Next <ArrowRight size={15} />

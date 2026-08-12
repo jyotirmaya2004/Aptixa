@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { 
   BookOpen, Layers, CheckCircle2, XCircle, Search, ArrowLeft, 
   ChevronRight, ChevronLeft, Bookmark, FileText, Sparkles, RefreshCw, 
-  HelpCircle, Eye, Zap, AlertCircle, Award, BarChart3, CheckSquare, Send, RotateCcw, ListFilter
+  HelpCircle, Eye, Zap, AlertCircle, Award, BarChart3, CheckSquare, Send, RotateCcw, ListFilter, SkipForward
 } from 'lucide-react';
 import { fetchBooks, fetchBookChapter } from '../utils/api';
 import { STATIC_BOOKS } from '../data/booksData';
@@ -375,8 +375,28 @@ export default function BooksSection({ onOpenQuizWithQuestions }) {
                 </button>
               </div>
 
-              {/* NEXT QUESTION & SUBMIT TEST BUTTONS */}
-              <div style={{ display: 'flex', gap: '6px' }}>
+              {/* SKIP, NEXT QUESTION & SUBMIT TEST BUTTONS */}
+              <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
+                <button
+                  className="btn btn-outline btn-warning btn-sm"
+                  onClick={() => {
+                    if (currentQIndex < questions.length - 1) {
+                      setCurrentQIndex(i => i + 1);
+                    } else {
+                      const firstUnanswered = questions.findIndex(item => selectedAnswers[item.id] === undefined);
+                      if (firstUnanswered !== -1 && firstUnanswered !== currentQIndex) {
+                        setCurrentQIndex(firstUnanswered);
+                      } else {
+                        handleSubmitChapterTest();
+                      }
+                    }
+                  }}
+                  style={{ gap: '3px', padding: '5px 10px', fontSize: '0.78rem', borderColor: 'var(--warning-border)', color: 'var(--warning)', fontWeight: '600' }}
+                  title="Skip to next or unanswered question"
+                >
+                  Skip <SkipForward size={14} />
+                </button>
+
                 <button
                   className="btn btn-primary btn-sm"
                   disabled={currentQIndex === questions.length - 1}

@@ -30,26 +30,43 @@ function deduplicateChapters(chapters) {
 
 // Helper to read books JSON
 function getBooks() {
-  if (!fs.existsSync(BOOKS_FILE)) {
-    fs.writeFileSync(BOOKS_FILE, '[]', 'utf8');
-  }
-  const data = fs.readFileSync(BOOKS_FILE, 'utf8');
-  const books = JSON.parse(data || '[]');
-  
-  // Clean up any duplicate chapters across all books
-  books.forEach(b => {
-    b.chapters = deduplicateChapters(b.chapters);
-  });
+  try {
+    const tmpBooks = path.join('/tmp', 'books.json');
+    let data = null;
+    if (fs.existsSync(tmpBooks)) {
+      data = fs.readFileSync(tmpBooks, 'utf8');
+    } else if (fs.existsSync(BOOKS_FILE)) {
+      data = fs.readFileSync(BOOKS_FILE, 'utf8');
+    }
+    const books = JSON.parse(data || '[]');
+    
+    // Clean up any duplicate chapters across all books
+    books.forEach(b => {
+      if (b) b.chapters = deduplicateChapters(b.chapters);
+    });
 
-  return books;
+    return books;
+  } catch (e) {
+    console.warn('Error reading books:', e);
+    return [];
+  }
 }
 
 // Helper to save books JSON
 function saveBooks(books) {
   books.forEach(b => {
-    b.chapters = deduplicateChapters(b.chapters);
+    if (b) b.chapters = deduplicateChapters(b.chapters);
   });
-  fs.writeFileSync(BOOKS_FILE, JSON.stringify(books, null, 2), 'utf8');
+  try {
+    fs.writeFileSync(BOOKS_FILE, JSON.stringify(books, null, 2), 'utf8');
+  } catch (e) {
+    try {
+      const tmpBooks = path.join('/tmp', 'books.json');
+      fs.writeFileSync(tmpBooks, JSON.stringify(books, null, 2), 'utf8');
+    } catch (tmpErr) {
+      console.warn('Could not save books to /tmp:', tmpErr);
+    }
+  }
 }
 
 // Helper to resolve and load questions for a chapter from its referenced JSON file

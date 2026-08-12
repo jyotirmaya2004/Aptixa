@@ -140,7 +140,7 @@
       "Neither I nor II follows"
     ],
     "correctOption": 0,
-    "hint": "Cats \u2282 Dogs \u2282 Birds. Is Cats \u2282 Birds true? Is Birds \u2282 Cats true?",
+    "hint": "Cats ⊂ Dogs ⊂ Birds. Is Cats ⊂ Birds true? Is Birds ⊂ Cats true?",
     "explanation": "Since Cats are subset of Dogs, and Dogs are subset of Birds, Cats are entirely inside Birds. Hence 'All cats are birds' (I) is TRUE. However, Birds are a larger set, so 'All birds are cats' (II) is NOT necessarily true."
   },
   {
@@ -349,7 +349,7 @@
     ],
     "correctOption": 2,
     "hint": "Apply fundamental properties of Number System to solve. Answer is 50000.",
-    "explanation": "R.S. Aggarwal Chapter 1 (Q1) Solution:\nPlace value of 5 in 3254710 = (5 \u00d7 10000) = 50000."
+    "explanation": "R.S. Aggarwal Chapter 1 (Q1) Solution:\nPlace value of 5 in 3254710 = (5 × 10000) = 50000."
   },
   {
     "id": "number-system-002",
@@ -397,7 +397,7 @@
     ],
     "correctOption": 3,
     "hint": "Apply fundamental properties of Number System to solve. Answer is 6970.",
-    "explanation": "R.S. Aggarwal Chapter 1 (Q4) Solution:\nDifference between the place values of 7 and 3 in 527435 = (7000 \u2013 30) = 6970."
+    "explanation": "R.S. Aggarwal Chapter 1 (Q4) Solution:\nDifference between the place values of 7 and 3 in 527435 = (7000 – 30) = 6970."
   },
   {
     "id": "number-system-005",
@@ -414,7 +414,7 @@
     ],
     "correctOption": 2,
     "hint": "Apply fundamental properties of Number System to solve. Answer is 69993.",
-    "explanation": "R.S. Aggarwal Chapter 1 (Q5) Solution:\nDifference between the local value and face value of 7 in 32675149 = (70000 \u2013 7) = 69993."
+    "explanation": "R.S. Aggarwal Chapter 1 (Q5) Solution:\nDifference between the local value and face value of 7 in 32675149 = (70000 – 7) = 69993."
   },
   {
     "id": "number-system-006",
@@ -446,7 +446,7 @@
     ],
     "correctOption": 2,
     "hint": "Apply fundamental properties of Number System to solve. Answer is 9001.",
-    "explanation": "R.S. Aggarwal Chapter 1 (Q7) Solution:\nRequired difference = (10000 \u2013 999) = 9001."
+    "explanation": "R.S. Aggarwal Chapter 1 (Q7) Solution:\nRequired difference = (10000 – 999) = 9001."
   },
   {
     "id": "number-system-008",
@@ -542,7 +542,7 @@
     ],
     "correctOption": 3,
     "hint": "Apply fundamental properties of Number System to solve. Answer is an irrational number.",
-    "explanation": "R.S. Aggarwal Chapter 1 (Q13) Solution:\n\u03c0 is an irrational number."
+    "explanation": "R.S. Aggarwal Chapter 1 (Q13) Solution:\nπ is an irrational number."
   },
   {
     "id": "number-system-014",
@@ -558,7 +558,7 @@
     ],
     "correctOption": 2,
     "hint": "Apply fundamental properties of Number System to solve. Answer is irrational number.",
-    "explanation": "R.S. Aggarwal Chapter 1 (Q14) Solution:\n\u221a2 is a non-terminating and non-repeating decimal, hence an irrational number."
+    "explanation": "R.S. Aggarwal Chapter 1 (Q14) Solution:\n√2 is a non-terminating and non-repeating decimal, hence an irrational number."
   },
   {
     "id": "number-system-015",
@@ -574,7 +574,7 @@
     ],
     "correctOption": 3,
     "hint": "Apply fundamental properties of Number System to solve. Answer is an infinite non-recurring decimal.",
-    "explanation": "R.S. Aggarwal Chapter 1 (Q15) Solution:\n\u221a3 is an infinite non-recurring decimal."
+    "explanation": "R.S. Aggarwal Chapter 1 (Q15) Solution:\n√3 is an infinite non-recurring decimal."
   },
   {
     "id": "number-system-016",
@@ -638,7 +638,7 @@
     ],
     "correctOption": 2,
     "hint": "Apply fundamental properties of Number System to solve. Answer is 285.",
-    "explanation": "R.S. Aggarwal Chapter 1 (Q19) Solution:\nSum of squares = n(n+1)(2n+1)/6 for n=9: (9 \u00d7 10 \u00d7 19) / 6 = 285."
+    "explanation": "R.S. Aggarwal Chapter 1 (Q19) Solution:\nSum of squares = n(n+1)(2n+1)/6 for n=9: (9 × 10 × 19) / 6 = 285."
   },
   {
     "id": "number-system-020",
@@ -654,7 +654,7 @@
     ],
     "correctOption": 3,
     "hint": "Apply fundamental properties of Number System to solve. Answer is 88.",
-    "explanation": "R.S. Aggarwal Chapter 1 (Q20) Solution:\n(n + 7) = 88 \u21d2 n = 81, which is outside 20 < n < 80. So n+7 cannot be 88."
+    "explanation": "R.S. Aggarwal Chapter 1 (Q20) Solution:\n(n + 7) = 88 ⇒ n = 81, which is outside 20 < n < 80. So n+7 cannot be 88."
   },
   {
     "id": "number-system-021",
@@ -693,9 +693,9 @@
     "category": "quantitative",
     "topic": "Number System",
     "difficulty": "Medium",
-    "question": "2 \u2013 2 + 2 \u2013 2 + .......... 101 terms =? (P.C.S., 2008)",
+    "question": "2 – 2 + 2 – 2 + .......... 101 terms =? (P.C.S., 2008)",
     "options": [
-      "\u2013 2",
+      "– 2",
       "0",
       "2",
       "None of these"
@@ -750,7 +750,7 @@
     ],
     "correctOption": 3,
     "hint": "Apply fundamental properties of Number System to solve. Answer is 103x + 102y + 10z + w.",
-    "explanation": "R.S. Aggarwal Chapter 1 (Q26) Solution:\nFor digits x, y, z, w from left: number = 1000x + 100y + 10z + w = 10\u00b3x + 10\u00b2y + 10z + w."
+    "explanation": "R.S. Aggarwal Chapter 1 (Q26) Solution:\nFor digits x, y, z, w from left: number = 1000x + 100y + 10z + w = 10³x + 10²y + 10z + w."
   },
   {
     "id": "number-system-027",
@@ -782,22 +782,22 @@
     ],
     "correctOption": 2,
     "hint": "Apply fundamental properties of Number System to solve. Answer is I and II only.",
-    "explanation": "R.S. Aggarwal Chapter 1 (Q28) Solution:\nIf n\u00b3 is odd, n is odd, so n\u00b2 is also odd. Statements I and II are true."
+    "explanation": "R.S. Aggarwal Chapter 1 (Q28) Solution:\nIf n³ is odd, n is odd, so n² is also odd. Statements I and II are true."
   },
   {
     "id": "number-system-029",
     "category": "quantitative",
     "topic": "Number System",
     "difficulty": "Medium",
-    "question": "If (n \u2013 1) is an odd number, what are the two other odd numbers nearest to it?",
+    "question": "If (n – 1) is an odd number, what are the two other odd numbers nearest to it?",
     "options": [
-      "n, n \u2013 1",
-      "n, n \u2013 2",
-      "n \u2013 3, n + 1",
-      "n \u2013 3, n + 5"
+      "n, n – 1",
+      "n, n – 2",
+      "n – 3, n + 1",
+      "n – 3, n + 5"
     ],
     "correctOption": 2,
-    "hint": "Apply fundamental properties of Number System to solve. Answer is n \u2013 3, n + 1.",
+    "hint": "Apply fundamental properties of Number System to solve. Answer is n – 3, n + 1.",
     "explanation": "R.S. Aggarwal Chapter 1 (Q29) Solution:\nConsecutive odd numbers differ by 2. If (n - 1) is odd, nearest odds are (n - 1) - 2 = n - 3 and (n - 1) + 2 = n + 1."
   },
   {
@@ -820,14 +820,17 @@
     "id": "number-system-031",
     "question": "If x is an odd integer, then which of the following is true?",
     "options": [
-      "5x \u2013 2 is even",
-      "5x\u00b2 + 2 is odd",
-      "5x\u00b2 + 3 is odd",
+      "5x – 2 is even",
+      "5x² + 2 is odd",
+      "5x² + 3 is odd",
       "None of these"
     ],
     "correctOption": 1,
-    "hint": "For x odd: x\u00b2 is odd, 5x\u00b2 is odd, 5x\u00b2 + 2 (odd + even) = odd.",
-    "explanation": "x odd => 5x\u00b2 is odd => 5x\u00b2 + 2 is odd."
+    "hint": "For x odd: x² is odd, 5x² is odd, 5x² + 2 (odd + even) = odd.",
+    "explanation": "x odd => 5x² is odd => 5x² + 2 is odd.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-032",
@@ -835,12 +838,15 @@
     "options": [
       "a = 0 and b = 0",
       "a = 0 or b = 0 or both",
-      "a = 0 and b \u2260 0",
-      "b = 0 and a \u2260 0"
+      "a = 0 and b ≠ 0",
+      "b = 0 and a ≠ 0"
     ],
     "correctOption": 1,
     "hint": "Zero product property: if ab = 0, at least one factor must be 0.",
-    "explanation": "ab = 0 implies either a = 0, b = 0, or both are 0."
+    "explanation": "ab = 0 implies either a = 0, b = 0, or both are 0.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-033",
@@ -853,11 +859,14 @@
     ],
     "correctOption": 3,
     "hint": "Increasing: A < B < C < D. Decreasing: D > B > E => E < B.",
-    "explanation": "Since E < B and A < B, the relative order of A and E is unknown. So A, E, C need not be ordered."
+    "explanation": "Since E < B and A < B, the relative order of A and E is unknown. So A, E, C need not be ordered.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-034",
-    "question": "If m, n, o, p and q are integers, then m (n + o) (p \u2013 q) must be even when which of the following is even?",
+    "question": "If m, n, o, p and q are integers, then m (n + o) (p – q) must be even when which of the following is even?",
     "options": [
       "m",
       "p",
@@ -866,24 +875,30 @@
     ],
     "correctOption": 0,
     "hint": "If m is even, the product of m with any integers is automatically even.",
-    "explanation": "An even number multiplied by any integer yields an even product. If m is even, the whole expression is even."
+    "explanation": "An even number multiplied by any integer yields an even product. If m is even, the whole expression is even.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-035",
     "question": "If n is a negative number, then which of the following is the least?",
     "options": [
       "0",
-      "\u2013 n",
+      "– n",
       "2n",
-      "n\u00b2"
+      "n²"
     ],
     "correctOption": 2,
-    "hint": "For n negative: -n is positive, n\u00b2 is positive, 0 is zero, 2n is negative and smaller than n.",
-    "explanation": "If n = -2: 0=0, -n=2, 2n=-4, n\u00b2=4. Least value is 2n (-4)."
+    "hint": "For n negative: -n is positive, n² is positive, 0 is zero, 2n is negative and smaller than n.",
+    "explanation": "If n = -2: 0=0, -n=2, 2n=-4, n²=4. Least value is 2n (-4).",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-036",
-    "question": "If x \u2013 y = 8, then which of the following must be true? I. Both x and y are positive. II. If x is positive, y must be positive. III. If x is negative, y must be negative.",
+    "question": "If x – y = 8, then which of the following must be true? I. Both x and y are positive. II. If x is positive, y must be positive. III. If x is negative, y must be negative.",
     "options": [
       "I only",
       "II only",
@@ -892,11 +907,14 @@
     ],
     "correctOption": 3,
     "hint": "y = x - 8. If x is negative (e.g. -2), y = -2 - 8 = -10 (also negative).",
-    "explanation": "If x < 0, then y = x - 8 < -8 < 0. Thus if x is negative, y MUST be negative."
+    "explanation": "If x < 0, then y = x - 8 < -8 < 0. Thus if x is negative, y MUST be negative.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-037",
-    "question": "If x and y are negative, then which of the following statements is/are always true? I. x + y is positive. II. xy is positive. III. x \u2013 y is positive.",
+    "question": "If x and y are negative, then which of the following statements is/are always true? I. x + y is positive. II. xy is positive. III. x – y is positive.",
     "options": [
       "I only",
       "II only",
@@ -904,8 +922,11 @@
       "I and III only"
     ],
     "correctOption": 1,
-    "hint": "Negative \u00d7 Negative = Positive.",
-    "explanation": "x, y negative => x + y is negative, xy is positive. Statement II is always true."
+    "hint": "Negative × Negative = Positive.",
+    "explanation": "x, y negative => x + y is negative, xy is positive. Statement II is always true.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-038",
@@ -917,8 +938,11 @@
       "None of these"
     ],
     "correctOption": 2,
-    "hint": "Product of 4 consecutive integers + 1 is always a perfect square and odd. E.g., 1*2*3*4 + 1 = 25 = 5\u00b2.",
-    "explanation": "k(k+1)(k+2)(k+3) + 1 = (k\u00b2 + 3k + 1)\u00b2, which is always an odd perfect square."
+    "hint": "Product of 4 consecutive integers + 1 is always a perfect square and odd. E.g., 1*2*3*4 + 1 = 25 = 5².",
+    "explanation": "k(k+1)(k+2)(k+3) + 1 = (k² + 3k + 1)², which is always an odd perfect square.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-040",
@@ -931,7 +955,10 @@
     ],
     "correctOption": 3,
     "hint": "Sum of rational and irrational is always irrational. If x = 0, xy = 0 (rational).",
-    "explanation": "x + y is always irrational. If x = 0, xy = 0 (rational), otherwise xy is irrational."
+    "explanation": "x + y is always irrational. If x = 0, xy = 0 (rational), otherwise xy is irrational.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-041",
@@ -943,8 +970,11 @@
       "product of two numbers"
     ],
     "correctOption": 0,
-    "hint": "(n + 1)\u00b2 - n\u00b2 = n\u00b2 + 2n + 1 - n\u00b2 = 2n + 1 = (n + 1) + n.",
-    "explanation": "Difference of squares = (n+1)\u00b2 - n\u00b2 = (n+1+n)(n+1-n) = (n+1) + n."
+    "hint": "(n + 1)² - n² = n² + 2n + 1 - n² = 2n + 1 = (n + 1) + n.",
+    "explanation": "Difference of squares = (n+1)² - n² = (n+1+n)(n+1-n) = (n+1) + n.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-058",
@@ -957,7 +987,10 @@
     ],
     "correctOption": 2,
     "hint": "Prime numbers start at 2 (1 is neither prime nor composite).",
-    "explanation": "2 is the smallest prime number and the only even prime number."
+    "explanation": "2 is the smallest prime number and the only even prime number.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-060",
@@ -970,7 +1003,10 @@
     ],
     "correctOption": 1,
     "hint": "Primes < 50: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47.",
-    "explanation": "Count of prime numbers between 0 and 50 is exactly 15."
+    "explanation": "Count of prime numbers between 0 and 50 is exactly 15.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-062",
@@ -983,7 +1019,10 @@
     ],
     "correctOption": 3,
     "hint": "First 4 primes: 2, 3, 5, 7. Sum = 2 + 3 + 5 + 7.",
-    "explanation": "2 + 3 + 5 + 7 = 17."
+    "explanation": "2 + 3 + 5 + 7 = 17.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-063",
@@ -996,7 +1035,10 @@
     ],
     "correctOption": 2,
     "hint": "Primes up to 20: 2, 3, 5, 7, 11, 13, 17, 19.",
-    "explanation": "2 + 3 + 5 + 7 + 11 + 13 + 17 + 19 = 77."
+    "explanation": "2 + 3 + 5 + 7 + 11 + 13 + 17 + 19 = 77.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-066",
@@ -1008,8 +1050,11 @@
       "43"
     ],
     "correctOption": 0,
-    "hint": "21 = 3 \u00d7 7 (composite).",
-    "explanation": "21 is divisible by 3 and 7, so it is composite."
+    "hint": "21 = 3 × 7 (composite).",
+    "explanation": "21 is divisible by 3 and 7, so it is composite.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-071",
@@ -1022,11 +1067,14 @@
     ],
     "correctOption": 0,
     "hint": "Check 100 (even), 101 (prime).",
-    "explanation": "101 is not divisible by 2, 3, 5, 7. It is the smallest 3-digit prime."
+    "explanation": "101 is not divisible by 2, 3, 5, 7. It is the smallest 3-digit prime.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-189",
-    "question": "The unit's digit of 13\u00b2\u2070\u2070\u00b3 is (A.A.O. Exam, 2010)",
+    "question": "The unit's digit of 13²⁰⁰³ is (A.A.O. Exam, 2010)",
     "options": [
       "1",
       "3",
@@ -1034,8 +1082,11 @@
       "9"
     ],
     "correctOption": 2,
-    "hint": "Cyclicity of 3 is 4: 3\u00b9=3, 3\u00b2=9, 3\u00b3=27(7), 3\u2074=81(1). Find 2003 mod 4 = 3.",
-    "explanation": "2003 mod 4 = 3. Unit digit of 3\u00b3 is 7."
+    "hint": "Cyclicity of 3 is 4: 3¹=3, 3²=9, 3³=27(7), 3⁴=81(1). Find 2003 mod 4 = 3.",
+    "explanation": "2003 mod 4 = 3. Unit digit of 3³ is 7.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-211",
@@ -1048,11 +1099,14 @@
     ],
     "correctOption": 3,
     "hint": "Standard divisibility rule for 11.",
-    "explanation": "Divisibility rule of 11 requires (Sum of odd-position digits - Sum of even-position digits) to be 0 or a multiple of 11."
+    "explanation": "Divisibility rule of 11 requires (Sum of odd-position digits - Sum of even-position digits) to be 0 or a multiple of 11.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-240",
-    "question": "If n be any natural number then by which largest number (n\u00b3 \u2013 n) is always divisible? (S.S.C., 2010)",
+    "question": "If n be any natural number then by which largest number (n³ – n) is always divisible? (S.S.C., 2010)",
     "options": [
       "3",
       "6",
@@ -1060,21 +1114,27 @@
       "18"
     ],
     "correctOption": 1,
-    "hint": "n\u00b3 - n = (n-1)n(n+1), product of 3 consecutive integers.",
-    "explanation": "Product of 3 consecutive integers is always divisible by 3! = 6."
+    "hint": "n³ - n = (n-1)n(n+1), product of 3 consecutive integers.",
+    "explanation": "Product of 3 consecutive integers is always divisible by 3! = 6.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-256",
-    "question": "A 4\u2013digit number is formed by repeating a 2\u2013digit number such as 2525, 3232 etc. Any number of this form is exactly divisible by (S.S.C., 2005, 2010)",
+    "question": "A 4–digit number is formed by repeating a 2–digit number such as 2525, 3232 etc. Any number of this form is exactly divisible by (S.S.C., 2005, 2010)",
     "options": [
       "7",
       "11",
       "13",
-      "Smallest 3\u2013digit prime number"
+      "Smallest 3–digit prime number"
     ],
     "correctOption": 3,
-    "hint": "xyxy = 101 \u00d7 xy. 101 is the smallest 3-digit prime number.",
-    "explanation": "A number abab = 100a + 10b + a + b = 101(10a + b) = 101 \u00d7 ab. 101 is the smallest 3-digit prime."
+    "hint": "xyxy = 101 × xy. 101 is the smallest 3-digit prime number.",
+    "explanation": "A number abab = 100a + 10b + a + b = 101(10a + b) = 101 × ab. 101 is the smallest 3-digit prime.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   },
   {
     "id": "number-system-257",
@@ -1086,7 +1146,10 @@
       "1001"
     ],
     "correctOption": 3,
-    "hint": "abcabc = 1001 \u00d7 abc. Note that 1001 = 7 \u00d7 11 \u00d7 13.",
-    "explanation": "abcabc = 100000a + 10000b + 1000c + 100a + 10b + c = 1001(100a + 10b + c) = 1001 \u00d7 abc."
+    "hint": "abcabc = 1001 × abc. Note that 1001 = 7 × 11 × 13.",
+    "explanation": "abcabc = 100000a + 10000b + 1000c + 100a + 10b + c = 1001(100a + 10b + c) = 1001 × abc.",
+    "category": "quantitative",
+    "difficulty": "Medium",
+    "topic": "Number System"
   }
 ]
