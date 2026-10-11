@@ -1,0 +1,31 @@
+# Markdown: ignore all except README.md
+*.md
+!README.md
+!/README.md
+
+# Dependencies and builds
+node_modules/
+.next/
+out/
+build/
+dist/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+
+# Env and secrets
+.env
+.env.*
+!.env.example
+
+# Logs, OS, editor
+*.log
+npm-debug.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Deployment
+.vercel
