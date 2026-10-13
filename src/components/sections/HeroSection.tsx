@@ -3,6 +3,7 @@
 import React, { useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { SlidersHorizontal } from 'lucide-react';
 import { gsap, useGSAP } from '@/lib/gsap';
 
 export function HeroSection() {
@@ -68,17 +69,23 @@ export function HeroSection() {
 
             {/* Description */}
             <p className="hero-fade font-sans text-sm sm:text-base text-[#5E6282] leading-[1.8] max-w-lg">
-              Standardized campus recruitment portal engineered for quantitative problem-solving, logical formulations, and verbal speed. Verified question sets derived from authoritative competitive curricula.
+              Standardized campus placement assessments. High-yield quantitative, reasoning, and verbal practice.
             </p>
 
-            {/* Dual CTAs */}
-            {/* CTA */}
-            <div className="hero-fade pt-2 sm:pt-4">
+            {/* Action CTAs */}
+            <div className="hero-fade pt-2 sm:pt-4 flex flex-wrap items-center gap-3 sm:gap-4">
               <Link
                 href="/quiz/quantitative?mode=test"
-                className="inline-flex items-center justify-center px-8 sm:px-9 py-3.5 sm:py-4 rounded-[12px] bg-[#F1A501] hover:bg-[#E09600] text-white font-sans text-sm sm:text-base font-semibold shadow-[0_10px_25px_rgba(241,165,1,0.22)] hover:shadow-[0_14px_30px_rgba(241,165,1,0.3)] hover:-translate-y-0.5 transition-all duration-200 text-center"
+                className="inline-flex items-center justify-center px-7 sm:px-8 py-3.5 sm:py-4 rounded-[12px] bg-[#F1A501] hover:bg-[#E09600] text-white font-sans text-sm sm:text-base font-semibold shadow-[0_10px_25px_rgba(241,165,1,0.22)] hover:shadow-[0_14px_30px_rgba(241,165,1,0.3)] hover:-translate-y-0.5 transition-all duration-200 text-center"
               >
                 Start Assessment
+              </Link>
+              <Link
+                href="/practice"
+                className="inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 sm:py-4 rounded-[12px] bg-white hover:bg-slate-50 text-[#181E4B] font-sans text-sm sm:text-base font-semibold border border-slate-200 shadow-2xs hover:-translate-y-0.5 transition-all duration-200 text-center"
+              >
+                <SlidersHorizontal size={15} className="text-[#DF6951]" aria-hidden="true" />
+                <span>Customize Test</span>
               </Link>
             </div>
           </div>

@@ -33,12 +33,12 @@ export function CategorySection({ categories }: CategorySectionProps) {
     <section className="py-20 lg:py-28 bg-transparent relative">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <div className="text-center max-w-2xl mx-auto mb-14 space-y-2">
           <span className="block font-sans text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-[#DF6951]">
-            CATEGORY
+            TRACKS
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#181E4B]">
-            We Offer Best Assessment Tracks
+            Assessment Tracks
           </h2>
         </div>
 

@@ -76,19 +76,19 @@ export function ResultsClient({ sessionId, questions }: ResultsClientProps) {
   return (
     <div className="flex-1 flex flex-col">
       <main className="flex-1 mx-auto max-w-5xl w-full px-6 py-10 lg:px-8">
-        {/* Header Breadcrumb & Status */}
-        <div className="mb-10 max-w-3xl">
-          <div className="flex items-center gap-3 mb-3">
+        {/* Header Status */}
+        <div className="mb-8 max-w-3xl">
+          <div className="flex items-center gap-2.5 mb-2">
             <span className="font-sans text-xs font-bold uppercase tracking-[0.14em] text-[#DF6951]">
-              Performance Evaluation
+              RESULTS
             </span>
-            <span className="font-sans text-xs font-bold uppercase tracking-wider bg-[#F1A501]/10 text-[#F1A501] px-3 py-1 rounded-full">
-              {mode === 'test' ? 'Proctored Standard' : 'Diagnostic Practice'}
+            <span className="font-sans text-xs font-bold uppercase tracking-wider bg-[#F1A501]/10 text-[#F1A501] px-2.5 py-0.5 rounded-full">
+              {mode === 'test' ? 'Proctored Test' : 'Practice'}
             </span>
           </div>
 
-          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#181E4B]">
-            Assessment Results & Diagnostic Review
+          <h1 className="font-serif text-3xl sm:text-4xl font-bold tracking-tight text-[#181E4B]">
+            Assessment Performance
           </h1>
         </div>
 

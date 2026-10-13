@@ -16,7 +16,7 @@ export function NavBar() {
     { href: '/', label: 'Assessments' },
     { href: '/books', label: 'Textbooks' },
     { href: '/current-affairs', label: 'Current Affairs' },
-    { href: '/practice', label: 'Practice' },
+    { href: '/practice', label: 'Customize Test' },
   ];
 
   const isLinkActive = (href: string) => {

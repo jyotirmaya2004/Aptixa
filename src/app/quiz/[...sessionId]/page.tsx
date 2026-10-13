@@ -3,6 +3,8 @@ import { QuizWorkspaceClient } from './QuizWorkspaceClient';
 import type { Metadata } from 'next';
 import type { QuizMode } from '@/types';
 
+export const dynamic = 'force-dynamic';
+
 interface QuizPageProps {
   params: Promise<{ sessionId: string[] }>;
   searchParams: Promise<{

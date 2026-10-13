@@ -93,15 +93,15 @@ export function PracticeCustomizerClient({ books }: PracticeCustomizerClientProp
   return (
     <div className="mx-auto max-w-7xl w-full px-6 py-8 sm:py-12 lg:px-12">
       {/* Studio Header */}
-      <div className="max-w-3xl mb-12">
+      <div className="max-w-3xl mb-10">
         <span className="font-sans text-xs font-bold uppercase tracking-[0.2em] text-[#DF6951] block mb-2">
-          Practice Studio
+          CUSTOMIZE
         </span>
-        <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#181E4B] mb-4">
-          Customize Your Practice Session
+        <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#181E4B] mb-3">
+          Customize Your Test
         </h1>
         <p className="font-sans text-base text-[#5E6282] leading-relaxed">
-          Configure curriculum topics, question counts, difficulty ratings, and examination timing to match your placement readiness goals.
+          Configure question count, topics, difficulty, and timing. Questions are randomly generated on each session.
         </p>
       </div>
 

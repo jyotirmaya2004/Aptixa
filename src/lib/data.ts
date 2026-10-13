@@ -143,7 +143,21 @@ export async function getAttempts(): Promise<Attempt[]> {
 }
 
 /**
- * Aggregate questions for an exam or practice session by topic/category
+ * Fisher-Yates array shuffle for true randomized question delivery
+ */
+export function shuffleArray<T>(array: T[]): T[] {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = arr[i]!;
+    arr[i] = arr[j]!;
+    arr[j] = temp;
+  }
+  return arr;
+}
+
+/**
+ * Aggregate and randomly select questions for an exam or practice session
  */
 export async function getExamSessionQuestions(
   categoryOrChapter: string,
@@ -153,27 +167,47 @@ export async function getExamSessionQuestions(
   const normalized = normalizeDataPath(categoryOrChapter);
   let questions: Question[] = [];
 
-  // Check if it's a chapter file reference
+  // Check if it's a specific chapter file reference
   if (normalized.endsWith('.json')) {
     questions = await getChapterQuestions(normalized);
-  } else if (normalized === 'mixed' || normalized === 'all') {
-    questions = await getQuestions();
   } else if (normalized === 'quantitative' || normalized === 'rs-aggarwal-quant') {
-    questions = await getQuestions('quantitative');
-    if (questions.length === 0) {
-      questions = await getChapterQuestions('rs_agrawal/numbersystem.json');
-    }
+    // Rich quantitative pool from questions.json and major R.S. Aggarwal topics
+    const [baseQuestions, pQuestions, plQuestions, twQuestions, rpQuestions, avgQuestions] =
+      await Promise.all([
+        getQuestions('quantitative'),
+        getChapterQuestions('rs_agrawal/percentage.json'),
+        getChapterQuestions('rs_agrawal/profit_and_loss.json'),
+        getChapterQuestions('rs_agrawal/time_and_work.json'),
+        getChapterQuestions('rs_agrawal/ratio_and_proportion.json'),
+        getChapterQuestions('rs_agrawal/average.json'),
+      ]);
+    questions = [
+      ...baseQuestions,
+      ...pQuestions,
+      ...plQuestions,
+      ...twQuestions,
+      ...rpQuestions,
+      ...avgQuestions,
+    ];
   } else if (
     normalized === 'logical' ||
     normalized === 'reasoning' ||
     normalized === 'arun-sharma-lr'
   ) {
-    questions = await getQuestions('logical');
-    if (questions.length === 0) {
-      questions = await getChapterQuestions('arun_sharma/blood_relations.json');
-    }
+    const [baseQuestions, lrQuestions] = await Promise.all([
+      getQuestions('logical'),
+      getChapterQuestions('arun_sharma/blood_relations.json'),
+    ]);
+    questions = [...baseQuestions, ...lrQuestions];
+  } else if (normalized === 'mixed' || normalized === 'all') {
+    const [allQuestions, pQuestions, lrQuestions] = await Promise.all([
+      getQuestions(),
+      getChapterQuestions('rs_agrawal/percentage.json'),
+      getChapterQuestions('arun_sharma/blood_relations.json'),
+    ]);
+    questions = [...allQuestions, ...pQuestions, ...lrQuestions];
   } else {
-    // Otherwise, pull from standard questions
+    // Fallback to standard questions for category
     questions = await getQuestions(normalized);
     if (questions.length === 0) {
       questions = await getChapterQuestions('rs_agrawal/average.json');
@@ -190,5 +224,9 @@ export async function getExamSessionQuestions(
     }
   }
 
-  return questions.slice(0, limit);
+  // Shuffle questions randomly using Fisher-Yates
+  const shuffled = shuffleArray(questions);
+
+  return shuffled.slice(0, limit);
 }
+

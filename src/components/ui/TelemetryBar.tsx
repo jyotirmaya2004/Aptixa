@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import type { QuizMode } from '@/types';
 import { ModeSwitcher } from './ModeSwitcher';
-import { Clock, CheckSquare, Flag, ArrowLeft, LayoutGrid } from 'lucide-react';
+import { Clock, ArrowLeft, SlidersHorizontal } from 'lucide-react';
 
 export interface TelemetryBarProps {
   title: string;
@@ -16,10 +16,9 @@ export interface TelemetryBarProps {
   totalTimeSeconds?: number;
   answeredCount: number;
   totalQuestions: number;
-  markedCount: number;
+  markedCount?: number;
   onSubmit: () => void;
   isSubmitted?: boolean;
-  onOpenPalette?: () => void;
 }
 
 export function TelemetryBar({
@@ -29,106 +28,87 @@ export function TelemetryBar({
   timeRemainingSeconds = 0,
   answeredCount,
   totalQuestions,
-  markedCount,
   onSubmit,
   isSubmitted = false,
-  onOpenPalette,
 }: TelemetryBarProps) {
-  // Format MM:SS
   const minutes = Math.floor(timeRemainingSeconds / 60);
   const seconds = timeRemainingSeconds % 60;
   const timeFormatted = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
   const isTimeCritical = mode === 'test' && timeRemainingSeconds < 300 && timeRemainingSeconds > 0;
 
   return (
-    <header className="shrink-0 z-30 w-full h-16 sm:h-18 bg-white/90 backdrop-blur-md border-b border-black/[0.05] shadow-[0_2px_15px_rgba(0,0,0,0.02)] px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-3">
-      {/* Left: Back & Title */}
-      <div className="flex items-center gap-2.5 sm:gap-3.5 min-w-0">
+    <header className="shrink-0 z-30 w-full h-16 bg-white/95 backdrop-blur-md border-b border-black/[0.04] px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-3">
+      {/* Left: Home Return & Title */}
+      <div className="flex items-center gap-3 min-w-0">
         <Link
           href="/"
           className="flex items-center gap-2 group shrink-0"
           title="Return to Dashboard"
         >
-          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white hover:bg-slate-50 border border-black/[0.08] text-[#181E4B] transition-all shadow-2xs group-hover:scale-105">
+          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-50 hover:bg-slate-100 text-[#181E4B] transition-colors">
             <ArrowLeft size={16} aria-hidden="true" />
           </div>
           <Image
             src="/images/logo.png"
             alt="Aptixa"
-            width={28}
-            height={28}
-            className="h-7 w-auto object-contain hidden sm:block transition-transform group-hover:scale-105"
+            width={26}
+            height={26}
+            className="h-6 w-auto object-contain hidden sm:block"
           />
         </Link>
-        <div className="min-w-0 truncate">
-          <h1 className="font-serif text-sm sm:text-base lg:text-lg font-bold text-[#181E4B] truncate">
-            {title}
-          </h1>
-        </div>
+        <h1 className="font-serif text-sm sm:text-base font-bold text-[#181E4B] truncate">
+          {title}
+        </h1>
       </div>
 
       {/* Center: Mode Switcher */}
-      <div className="hidden lg:flex items-center justify-center">
+      <div className="hidden md:flex items-center justify-center">
         <ModeSwitcher mode={mode} onChange={onModeChange} disabled={isSubmitted} />
       </div>
 
-      {/* Right: Telemetry metrics & Submit CTA */}
-      <div className="flex items-center gap-2 sm:gap-4 shrink-0">
-        {/* Mobile Matrix Trigger */}
-        {onOpenPalette && (
-          <button
-            type="button"
-            onClick={onOpenPalette}
-            className="lg:hidden flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#181E4B]/5 hover:bg-[#181E4B]/10 text-[#181E4B] font-sans text-xs font-bold transition-all cursor-pointer"
-            aria-label="Open Question Matrix Palette"
-          >
-            <LayoutGrid size={14} className="text-[#DF6951]" aria-hidden="true" />
-            <span className="tabular-nums">{answeredCount}/{totalQuestions}</span>
-          </button>
-        )}
+      {/* Right: Customize, Answered Progress, Timer & Submit */}
+      <div className="flex items-center gap-3 sm:gap-4 shrink-0">
+        {/* Customize Test Link */}
+        <Link
+          href="/practice"
+          className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-slate-500 hover:text-[#181E4B] hover:bg-slate-100 font-sans text-xs font-semibold transition-colors"
+          title="Customize question count, difficulty & timing"
+        >
+          <SlidersHorizontal size={13} className="text-[#DF6951]" aria-hidden="true" />
+          <span>Customize</span>
+        </Link>
 
-        {/* Progress counter (Desktop) */}
-        <div className="hidden sm:flex items-center gap-1.5 font-sans text-xs font-bold bg-[#F8F9FF] text-[#181E4B] px-3.5 py-1.5 rounded-full border border-black/[0.05]">
-          <CheckSquare size={14} className="text-[#DF6951]" aria-hidden="true" />
-          <span>
-            <strong>{answeredCount}</strong> / {totalQuestions}
-          </span>
-        </div>
+        {/* Simple Progress Counter */}
+        <span className="font-sans text-xs font-semibold text-slate-500 tabular-nums">
+          {answeredCount} / {totalQuestions} answered
+        </span>
 
-        {/* Marked count */}
-        {markedCount > 0 && (
-          <div className="hidden sm:flex items-center gap-1.5 font-sans text-xs font-bold bg-[#FFF1DA] text-[#F1A501] px-3 py-1.5 rounded-full border border-[#F1A501]/30">
-            <Flag size={13} aria-hidden="true" />
-            <span>{markedCount}</span>
-          </div>
-        )}
-
-        {/* Live Timer (if test mode or active timer) */}
+        {/* Live Timer (Test Mode) */}
         {mode === 'test' && !isSubmitted && (
           <div
             className={cn(
-              'flex items-center gap-1.5 px-3.5 py-1.5 rounded-full font-sans font-bold tabular-nums text-xs sm:text-sm border',
+              'flex items-center gap-1.5 px-3 py-1 rounded-full font-sans font-bold tabular-nums text-xs border',
               isTimeCritical
-                ? 'bg-red-50 border-red-300 text-red-600 animate-pulse'
-                : 'bg-[#FFF1DA] border-[#F1A501]/30 text-[#F1A501]'
+                ? 'bg-red-50 border-red-200 text-red-600 animate-pulse'
+                : 'bg-amber-50 border-amber-200 text-amber-700'
             )}
           >
-            <Clock size={14} className={isTimeCritical ? 'text-red-600' : 'text-[#F1A501]'} aria-hidden="true" />
+            <Clock size={12} aria-hidden="true" />
             <span>{timeFormatted}</span>
           </div>
         )}
 
-        {/* Submit Button */}
+        {/* Submit Action */}
         {!isSubmitted ? (
           <button
             type="button"
             onClick={onSubmit}
-            className="inline-flex items-center px-5 py-2 rounded-full bg-[#F1A501] hover:bg-[#d99100] text-white font-sans text-xs font-bold uppercase tracking-wider shadow-[0_6px_16px_rgba(241,165,1,0.25)] transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F1A501]"
+            className="px-4 sm:px-5 py-1.5 sm:py-2 rounded-full bg-[#181E4B] hover:bg-[#0F172A] text-white font-sans text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer"
           >
-            Submit Test
+            Submit
           </button>
         ) : (
-          <span className="font-sans text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 px-3.5 py-1.5 border border-emerald-200 rounded-full">
+          <span className="font-sans text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
             Submitted
           </span>
         )}
