@@ -26,21 +26,10 @@ export default async function BooksPage({ searchParams }: BooksPageProps) {
   return (
     <div className="flex-1 flex flex-col">
       <main className="flex-1 mx-auto max-w-7xl w-full px-6 py-10 lg:px-12">
-        {/* Page Header */}
-        <div className="mb-12 max-w-2xl">
-          <span className="font-sans text-xs font-bold uppercase tracking-wider text-[#DF6951] mb-2 block">
-            Academic Curricula & Standards
-          </span>
-          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#181E4B]">
-            Prescribed Textbooks
-          </h1>
-          <p className="font-sans text-sm sm:text-base text-[#5E6282] mt-3 leading-relaxed">
-            Select a textbook folder to explore its structured chapter index, launch focused practice drills, and attempt timed examinations.
-          </p>
-        </div>
+        <h1 className="sr-only">Prescribed Textbooks</h1>
 
         {/* 2-Folder Structure Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl pt-2 sm:pt-4">
           {books.map((book) => {
             const isQuant = book.category === 'quantitative';
             const totalMCQs = book.chapters.reduce((acc, ch) => acc + (ch.question_count || 0), 0);

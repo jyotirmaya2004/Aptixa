@@ -38,12 +38,6 @@ export default async function BookDetailPage({ params }: BookDetailPageProps) {
     notFound();
   }
 
-  const isQuant = book.category === 'quantitative';
-  const totalMCQs = book.chapters.reduce(
-    (acc, ch) => acc + (ch.question_count || 0),
-    0
-  );
-
   // Arrange chapters by their natural chapter number
   const sortedChapters = [...book.chapters].sort(
     (a, b) => a.chapter_number - b.chapter_number
@@ -53,7 +47,7 @@ export default async function BookDetailPage({ params }: BookDetailPageProps) {
     <div className="flex-1 flex flex-col">
       <main className="flex-1 mx-auto max-w-7xl w-full px-6 py-10 lg:px-12">
         {/* Return to Books Navigation */}
-        <div className="mb-8">
+        <div className="mb-6 flex items-center justify-between">
           <Link
             href="/books"
             className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500 hover:text-[#DF6951] transition-colors group"
@@ -65,20 +59,12 @@ export default async function BookDetailPage({ params }: BookDetailPageProps) {
             />
             <span>All Textbooks</span>
           </Link>
+          <span className="font-sans text-xs font-bold uppercase tracking-wider text-[#181E4B]">
+            {book.author}
+          </span>
         </div>
 
-        {/* Editorial Book Header */}
-        <div className="mb-10 max-w-3xl">
-          <span className="font-sans text-xs font-bold uppercase tracking-wider text-[#DF6951] mb-2 block">
-            {isQuant ? 'Quantitative Aptitude Track' : 'Logical Reasoning Track'}
-          </span>
-          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#181E4B]">
-            {book.title}
-          </h1>
-          <p className="font-sans text-sm sm:text-base text-[#5E6282] mt-3 leading-relaxed">
-            Prescribed by <strong className="text-[#181E4B] font-semibold">{book.author}</strong> • {book.chapters.length} Standard Chapters • {totalMCQs.toLocaleString()} Verified Practice Problems
-          </p>
-        </div>
+        <h1 className="sr-only">{book.title}</h1>
 
         {/* Clean Chapter List (No messy boxes, No serial number square boxes) */}
         <div className="space-y-3.5">
