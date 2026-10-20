@@ -135,12 +135,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/books?book=rs-aggarwal-quant" className="hover:text-white transition-colors">
+                <Link href="/books/rs-aggarwal-quant" className="hover:text-white transition-colors">
                   R.S. Aggarwal Quant
                 </Link>
               </li>
               <li>
-                <Link href="/books?book=arun-sharma-lr" className="hover:text-white transition-colors">
+                <Link href="/books/arun-sharma-lr" className="hover:text-white transition-colors">
                   Arun Sharma Reasoning
                 </Link>
               </li>

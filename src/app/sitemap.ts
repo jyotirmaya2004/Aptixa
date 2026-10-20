@@ -18,9 +18,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/books`,
-      lastModified: new Date('2026-10-13'),
+      lastModified: new Date('2026-10-20'),
       changeFrequency: 'weekly',
       priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/books/rs-aggarwal-quant`,
+      lastModified: new Date('2026-10-20'),
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/books/arun-sharma-lr`,
+      lastModified: new Date('2026-10-20'),
+      changeFrequency: 'weekly',
+      priority: 0.85,
     },
     {
       url: `${baseUrl}/current-affairs`,
