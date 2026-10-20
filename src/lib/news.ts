@@ -26,6 +26,7 @@ const NewsDataResponseSchema = z.object({
   status: z.string(),
   totalResults: z.number().optional(),
   results: z.array(NewsDataRawArticleSchema).default([]),
+  nextPage: z.union([z.string(), z.number()]).nullable().optional(),
 });
 
 /**
@@ -58,14 +59,22 @@ function normalizeNewsDataArticle(raw: z.infer<typeof NewsDataRawArticleSchema>)
   };
 }
 
+export interface FetchCurrentAffairsResult {
+  data: CurrentAffairs;
+  isLive: boolean;
+  nextPage: string | null;
+  hasMore: boolean;
+}
+
 /**
- * Fetches live, on-demand Current Affairs directly from NewsData.io.
+ * Fetches live, on-demand Current Affairs directly from NewsData.io (10 articles per request).
  * Never persists or stores the articles to disk or database.
  * Executes on each user request with cache: 'no-store'.
  */
 export async function fetchLiveCurrentAffairs(
-  categoryQuery?: string
-): Promise<{ data: CurrentAffairs; isLive: boolean }> {
+  pageCursor?: string,
+  pageNumber: number = 1
+): Promise<FetchCurrentAffairsResult> {
   const apiKey = process.env.NEWSDATA_API_KEY || env.NEWSDATA_API_KEY;
 
   if (apiKey) {
@@ -75,8 +84,8 @@ export async function fetchLiveCurrentAffairs(
       url.searchParams.set('country', 'in');
       url.searchParams.set('language', 'en');
 
-      if (categoryQuery && categoryQuery !== 'all') {
-        url.searchParams.set('category', categoryQuery);
+      if (pageCursor) {
+        url.searchParams.set('page', pageCursor);
       }
 
       // Live on-demand fetch: never cached, never stored
@@ -94,6 +103,7 @@ export async function fetchLiveCurrentAffairs(
 
         if (parsed.success && parsed.data.results.length > 0) {
           const articles = parsed.data.results.map(normalizeNewsDataArticle);
+          const nextPageStr = parsed.data.nextPage ? String(parsed.data.nextPage) : null;
 
           const now = new Date();
           const formattedDate = now.toLocaleDateString('en-IN', {
@@ -106,10 +116,12 @@ export async function fetchLiveCurrentAffairs(
             data: {
               lastFetchedDate: formattedDate,
               lastFetchedTimestamp: now.toISOString(),
-              totalArticles: articles.length,
+              totalArticles: parsed.data.totalResults || articles.length,
               articles,
             },
             isLive: true,
+            nextPage: nextPageStr,
+            hasMore: Boolean(nextPageStr),
           };
         }
       }
@@ -118,12 +130,27 @@ export async function fetchLiveCurrentAffairs(
     }
   }
 
-  // Graceful fallback to local reference dataset (read-only, no writing)
+  // Graceful fallback to local reference dataset (read-only, 10 articles per page)
   try {
     const fallbackRaw = await readJsonFile<unknown>('dailyCurrentAffairs.json');
+    const parsed = CurrentAffairsSchema.parse(fallbackRaw);
+    const allArticles = parsed.articles;
+    const PAGE_SIZE = 10;
+    const startIndex = (pageNumber - 1) * PAGE_SIZE;
+    const paginatedArticles = allArticles.slice(startIndex, startIndex + PAGE_SIZE);
+    const hasMore = startIndex + PAGE_SIZE < allArticles.length;
+    const nextPage = hasMore ? String(pageNumber + 1) : null;
+
     return {
-      data: CurrentAffairsSchema.parse(fallbackRaw),
+      data: {
+        lastFetchedDate: parsed.lastFetchedDate,
+        lastFetchedTimestamp: parsed.lastFetchedTimestamp,
+        totalArticles: allArticles.length,
+        articles: paginatedArticles,
+      },
       isLive: false,
+      nextPage,
+      hasMore,
     };
   } catch {
     return {
@@ -133,6 +160,8 @@ export async function fetchLiveCurrentAffairs(
         articles: [],
       },
       isLive: false,
+      nextPage: null,
+      hasMore: false,
     };
   }
 }

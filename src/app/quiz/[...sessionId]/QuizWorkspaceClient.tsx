@@ -11,7 +11,6 @@ import {
   ArrowLeft,
   ArrowRight,
   Flag,
-  RotateCcw,
   AlertTriangle,
 } from 'lucide-react';
 
@@ -46,7 +45,6 @@ export function QuizWorkspaceClient({
     isSubmitted,
     stats,
     selectOption,
-    clearAnswer,
     toggleMarkForReview,
     nextQuestion,
     prevQuestion,
@@ -145,12 +143,6 @@ export function QuizWorkspaceClient({
         return;
       }
 
-      // Clear selection: Backspace or Delete
-      if (key === 'Backspace' || key === 'Delete') {
-        e.preventDefault();
-        clearAnswer();
-        return;
-      }
 
       if (key === 'Escape') {
         setShowSubmitModal(false);
@@ -168,7 +160,6 @@ export function QuizWorkspaceClient({
     nextQuestion,
     prevQuestion,
     toggleMarkForReview,
-    clearAnswer,
   ]);
 
   // Touch Swipe Gesture Detection for Mobile
@@ -298,7 +289,7 @@ export function QuizWorkspaceClient({
 
           {/* Bottom Action Controls */}
           <div className="shrink-0 px-6 sm:px-8 py-3.5 sm:py-4 border-t border-slate-100 bg-white flex items-center justify-between gap-3">
-            {/* Left Actions: Review flag & Clear */}
+            {/* Left Actions: Review flag */}
             <div className="flex items-center gap-2">
               <button
                 type="button"
@@ -313,17 +304,6 @@ export function QuizWorkspaceClient({
                 <Flag size={13} aria-hidden="true" />
                 <span>{isMarked ? 'Unmark' : 'Review Later'}</span>
               </button>
-
-              {selectedAnswer !== undefined && selectedAnswer !== null && !isSubmitted && (
-                <button
-                  type="button"
-                  onClick={clearAnswer}
-                  className="inline-flex items-center gap-1 px-3 py-2 font-sans text-xs font-semibold text-slate-400 hover:text-[#DF6951] transition-colors cursor-pointer"
-                >
-                  <RotateCcw size={12} aria-hidden="true" />
-                  <span>Clear</span>
-                </button>
-              )}
             </div>
 
             {/* Right Actions: Prev & Next/Submit */}

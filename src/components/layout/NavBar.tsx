@@ -13,7 +13,6 @@ export function NavBar() {
   const headerRef = useRef<HTMLElement>(null);
 
   const navLinks = [
-    { href: '/', label: 'Assessments' },
     { href: '/books', label: 'Textbooks' },
     { href: '/current-affairs', label: 'Current Affairs' },
     { href: '/practice', label: 'Customize Test' },
@@ -132,34 +131,26 @@ export function NavBar() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden relative z-40 bg-white px-6 py-6 space-y-4 shadow-xl border-b border-black/[0.05] animate-in fade-in slide-in-from-top-4 duration-200">
-          <div className="space-y-3">
+        <div className="md:hidden relative z-40 bg-white px-6 py-5 shadow-xl border-b border-black/[0.05] animate-in fade-in slide-in-from-top-4 duration-200">
+          <div className="space-y-1">
             {navLinks.map((link) => {
-              const isActive = pathname === link.href;
+              const isActive = isLinkActive(link.href);
               return (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className={cn(
-                    'block py-2 font-sans text-base font-semibold transition-colors',
-                    isActive ? 'text-[#DF6951]' : 'text-[#212832]'
+                    'block px-3 py-2.5 rounded-lg font-sans text-base font-semibold transition-colors',
+                    isActive
+                      ? 'text-[#DF6951] bg-[#DF6951]/5'
+                      : 'text-[#212832] hover:text-[#DF6951] hover:bg-slate-50'
                   )}
                 >
                   {link.label}
                 </Link>
               );
             })}
-          </div>
-
-          <div className="pt-4 flex flex-col gap-3">
-            <Link
-              href="/quiz/quantitative?mode=test"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block text-center py-2.5 rounded-[10px] bg-[#181E4B] text-white font-sans text-sm font-semibold"
-            >
-              Proctored Test
-            </Link>
           </div>
         </div>
       )}
