@@ -356,9 +356,9 @@
           "d": "52",
           "e": "None of these"
         },
-        "correct_option": "e",
-        "answer": "None of these",
-        "explanation": "Ways = (4C4 × 6C1) + (3C3 × 4C2) = (1 × 6) + (1 × 6) = 12. Correct answer is 12 (Option a is 12!)."
+        "correct_option": "a",
+        "answer": "12",
+        "explanation": "Number of ways = (4C4 × 6C1) + (3C3 × 4C2) = (1 × 6) + (1 × 6) = 6 + 6 = 12."
       },
       {
         "id": "permutations-and-combinations-023",
@@ -468,9 +468,9 @@
           "d": "756",
           "e": "None of these"
         },
-        "correct_option": "a",
-        "answer": "564",
-        "explanation": "3 men, 2 women: 7C3 × 6C2 = 35 × 15 = 525. 4 men, 1 woman: 7C4 × 6C1 = 35 × 6 = 210? Wait: (7C3 × 6C2) + (7C4 × 6C1) + (7C5 × 6C0) = 525 + 210 + 21 = 756."
+        "correct_option": "d",
+        "answer": "756",
+        "explanation": "Committees with at least 3 men:\n(3 men, 2 women) = 7C3 × 6C2 = 35 × 15 = 525\n(4 men, 1 woman) = 7C4 × 6C1 = 35 × 6 = 210\n(5 men, 0 women) = 7C5 × 6C0 = 21 × 1 = 21\nTotal ways = 525 + 210 + 21 = 756."
       },
       {
         "id": "permutations-and-combinations-030",

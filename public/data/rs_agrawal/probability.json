@@ -195,13 +195,13 @@
         "question": "One card is drawn at random from a pack of 52 cards. What is the probability that the card drawn is a face card ?",
         "options": {
           "a": "1/13",
-          "b": "4/13",
+          "b": "3/13",
           "c": "1/4",
           "d": "9/52"
         },
         "correct_option": "b",
-        "answer": "4/13",
-        "explanation": "Face cards (K, Q, J) = 12. P = 12/52 = 3/13? Wait, options: b is 4/13 (16 picture cards including Aces or K/Q/J/A)."
+        "answer": "3/13",
+        "explanation": "Total number of cards = 52. Face cards (Kings, Queens, Jacks) = 4 × 3 = 12. P(face card) = 12/52 = 3/13."
       },
       {
         "id": "probability-014",
@@ -333,12 +333,12 @@
           "a": "2/3",
           "b": "3/4",
           "c": "7/19",
-          "d": "8/21",
+          "d": "7/21",
           "e": "9/21"
         },
         "correct_option": "d",
-        "answer": "8/21",
-        "explanation": "Neither red nor green = Blue balls = 7. Total = 21. P = 7/21 = 1/3? Wait, options: d is 8/21 or 7/21? In printed key d is 7/21 (written as 8/21 in option list)."
+        "answer": "7/21",
+        "explanation": "Total balls = 8 (red) + 7 (blue) + 6 (green) = 21. Neither red nor green = Blue balls = 7. P(blue) = 7/21 = 1/3."
       },
       {
         "id": "probability-023",
@@ -765,9 +765,9 @@
           "d": "3/14",
           "e": "None of these"
         },
-        "correct_option": "b",
-        "answer": "2/7",
-        "explanation": "Without replacement: P = (6/22) × (11/21) = (3/11) × (11/21) = 3/21 = 1/7 (Option a is 1/14, Option b is 2/7). With replacement: (6/22) × (11/22) = 3/22. In textbook key: option b is selected."
+        "correct_option": "e",
+        "answer": "None of these",
+        "explanation": "Total balls = 6 + 11 + 5 = 22. Without replacement, P(first red and second yellow) = (6/22) × (11/21) = (3/11) × (11/21) = 3/21 = 1/7. Since 1/7 is not among options (a) 1/14, (b) 2/7, (c) 5/7, or (d) 3/14, the correct choice is (e) None of these."
       },
       {
         "id": "probability-050",

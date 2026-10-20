@@ -172,7 +172,7 @@
         "id": "races-games-skill-011",
         "chapter": "Races and Games of Skill",
         "question_number": 11,
-        "question": "A runs 2 1/3 times as fast as B. If A gives B a start of 80 m, how far must the winning post be so that A and B might reach it at the same time?",
+        "question": "A runs 1 2/3 times as fast as B. If A gives B a start of 80 m, how far must the winning post be so that A and B might reach it at the same time?",
         "options": {
           "a": "200 m",
           "b": "300 m",
@@ -181,7 +181,7 @@
         },
         "correct_option": "a",
         "answer": "200 m",
-        "explanation": "Ratio of speeds of A and B = 7/3 : 1 = 7 : 3. In a race of 7 m, A gains 4 m. 80 m gained in (7 / 4) × 80 = 140 m? Wait, 2 1/3 = 7/3. Or 1 2/3 = 5/3. If 2 1/3: A:B = 7:3, 80 gained in (7/4)*80=140. With 5:3, (5/2)*80 = 200 m.",
+        "explanation": "Speed ratio of A to B = 1 2/3 : 1 = 5/3 : 1 = 5 : 3. Let distance to winning post be y. Since both reach simultaneously: y / (y - 80) = 5 / 3 ⇒ 3y = 5y - 400 ⇒ 2y = 400 ⇒ y = 200 m.",
         "extraction_status": "complete"
       },
       {

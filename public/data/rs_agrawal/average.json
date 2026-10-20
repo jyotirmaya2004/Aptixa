@@ -2410,7 +2410,7 @@
       "id": "average-165",
       "chapter": "Average",
       "question_number": 165,
-      "question": "What will be the total marks of Subodh in physics?",
+      "question": "How many more marks did Subodh get in Physics than in Chemistry?",
       "options": {
         "a": "Statement I alone is sufficient",
         "b": "Statement II alone is sufficient",
@@ -2425,7 +2425,7 @@
       },
       "correct_option": "e",
       "answer": "9 marks",
-      "solution_note": "Both statements are needed."
+      "solution_note": "From I: H + G + C = 3 × 75 = 225. From II: H + G + P = 3 × 78 = 234. Subtracting gives P - C = 234 - 225 = 9 marks. Both statements together are necessary."
     },
     {
       "id": "average-166",

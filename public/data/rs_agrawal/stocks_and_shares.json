@@ -360,13 +360,13 @@
         "question": "A person wants to invest ₹ 140000 in two types of bonds. The annual return is 12% on bond A and 16% on bond B. One of the conditions requires that the investment in bond B cannot be more than 40% of the investment in bond A. What is the maximum return he can get per year? (S.S.C., 2002)",
         "options": {
           "a": "₹ 15600",
-          "b": "₹ 16800",
+          "b": "₹ 18400",
           "c": "₹ 19200",
           "d": "₹ 20800"
         },
         "correct_option": "b",
-        "answer": "₹ 16800",
-        "explanation": "Let investment in A be x and B be y. x + y = 140000 and y ≤ 0.4x ⇒ 1.4x = 140000 ⇒ x = 100000, y = 40000. Return = 12% of 100000 + 16% of 40000 = 12000 + 6400 = ₹ 18400? Wait, option (b) ₹ 16800."
+        "answer": "₹ 18400",
+        "explanation": "Let investment in Bond A be x and in Bond B be y. x + y = 140000 with y ≤ 0.4x. For maximum return: y = 0.4x ⇒ 1.4x = 140000 ⇒ x = 100000, y = 40000. Annual Return = (12% of 100000) + (16% of 40000) = 12000 + 6400 = ₹ 18400."
       },
       {
         "id": "stocks-and-shares-025",

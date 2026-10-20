@@ -55,12 +55,12 @@
       "question": "The place value of 9 in 0.06945 is (L.I.C.A.D.O., 2008)",
       "options": {
         "a": "9",
-        "b": "9 10",
-        "c": "9 100",
-        "d": "9 1000"
+        "b": "9/10",
+        "c": "9/100",
+        "d": "9/1000"
       },
       "correct_option": "d",
-      "answer": "9 1000"
+      "answer": "9/1000"
     },
     {
       "id": "decimal-fractions-005",
@@ -122,16 +122,16 @@
       "id": "decimal-fractions-009",
       "chapter": "Decimal Fractions",
       "question_number": 9,
-      "question": "Out of the fractions 3 4 5 6 7 , , , , , 7 11 9 13 12 which is the second largest? (Bank Recruitment, 2010)",
+      "question": "Out of the fractions 3/7, 4/11, 5/9, 6/13, and 7/12, which is the second largest? (Bank Recruitment, 2010)",
       "options": {
-        "a": "3 7",
-        "b": "4 11",
-        "c": "5 9",
-        "d": "6 13",
-        "e": "7 12"
+        "a": "3/7",
+        "b": "4/11",
+        "c": "5/9",
+        "d": "6/13",
+        "e": "7/12"
       },
       "correct_option": "c",
-      "answer": "5 9"
+      "answer": "5/9"
     },
     {
       "id": "decimal-fractions-010",
@@ -166,15 +166,15 @@
       "id": "decimal-fractions-012",
       "chapter": "Decimal Fractions",
       "question_number": 12,
-      "question": "What is the difference between the biggest and the smallest fraction among 2 3 , , 3 4 4 5 and ? 5 6 (S.S.C., 2006)",
+      "question": "What is the difference between the biggest and the smallest fraction among 2/3, 3/4, 4/5, and 5/6? (S.S.C., 2006)",
       "options": {
-        "a": "1 6",
-        "b": "1 12",
-        "c": "1 20",
-        "d": "1 30"
+        "a": "1/6",
+        "b": "1/12",
+        "c": "1/20",
+        "d": "1/30"
       },
       "correct_option": "a",
-      "answer": "1 6"
+      "answer": "1/6"
     },
     {
       "id": "decimal-fractions-013",
@@ -182,13 +182,13 @@
       "question_number": 13,
       "question": "The least among the following fractions is (S.S.C., 2010)",
       "options": {
-        "a": "15 16",
-        "b": "19 20",
-        "c": "24 25",
-        "d": "34 35"
+        "a": "15/16",
+        "b": "19/20",
+        "c": "24/25",
+        "d": "34/35"
       },
       "correct_option": "a",
-      "answer": "15 16"
+      "answer": "15/16"
     },
     {
       "id": "decimal-fractions-014",
@@ -196,14 +196,14 @@
       "question_number": 14,
       "question": "Out of the fractions 9 3 6 4 7 , , , and , 31 17 23 11 25 which is the largest? (Bank Recruitment, 2010)",
       "options": {
-        "a": "9 31",
-        "b": "3 17",
-        "c": "6 23",
-        "d": "4 11",
+        "a": "9/31",
+        "b": "3/17",
+        "c": "6/23",
+        "d": "4/11",
         "e": "None of these"
       },
       "correct_option": "d",
-      "answer": "4 11"
+      "answer": "4/11"
     },
     {
       "id": "decimal-fractions-015",
@@ -211,14 +211,14 @@
       "question_number": 15,
       "question": "If the fractions 2 3 4 5 6 , , , and 5 8 9 13 11 are arranged in ascending order of their values, which one will be the fourth? (S.B.I.P.O., 2008)",
       "options": {
-        "a": "2 5",
-        "b": "3 8",
-        "c": "4 9",
-        "d": "5 13",
+        "a": "2/5",
+        "b": "3/8",
+        "c": "4/9",
+        "d": "5/13",
         "e": "None of these"
       },
       "correct_option": "c",
-      "answer": "4 9"
+      "answer": "4/9"
     },
     {
       "id": "decimal-fractions-016",
@@ -240,13 +240,13 @@
       "question_number": 17,
       "question": "Which of the following fractions is the smallest?",
       "options": {
-        "a": "13 16",
-        "b": "15 19",
-        "c": "17 21",
-        "d": "7 8"
+        "a": "13/16",
+        "b": "15/19",
+        "c": "17/21",
+        "d": "7/8"
       },
       "correct_option": "b",
-      "answer": "15 19"
+      "answer": "15/19"
     },
     {
       "id": "decimal-fractions-018",
@@ -254,13 +254,13 @@
       "question_number": 18,
       "question": "Which of the following fractions is greater than 3 4 and less than 5 6 ?",
       "options": {
-        "a": "1 2",
-        "b": "2 3",
-        "c": "4 5",
-        "d": "9 10"
+        "a": "1/2",
+        "b": "2/3",
+        "c": "4/5",
+        "d": "9/10"
       },
       "correct_option": "c",
-      "answer": "4 5"
+      "answer": "4/5"
     },
     {
       "id": "decimal-fractions-019",
@@ -268,13 +268,13 @@
       "question_number": 19,
       "question": "Which of the following fractions is less than 7 8 and greater than 1 3 ?",
       "options": {
-        "a": "1 4",
-        "b": "23 24",
-        "c": "11 12",
-        "d": "17 24"
+        "a": "1/4",
+        "b": "23/24",
+        "c": "11/12",
+        "d": "17/24"
       },
       "correct_option": "d",
-      "answer": "17 24"
+      "answer": "17/24"
     },
     {
       "id": "decimal-fractions-020",
@@ -282,13 +282,13 @@
       "question_number": 20,
       "question": "Which of the following numbers does not lie between 4 7 and ? 5 13",
       "options": {
-        "a": "1 2",
-        "b": "2 3",
-        "c": "3 4",
-        "d": "5 7"
+        "a": "1/2",
+        "b": "2/3",
+        "c": "3/4",
+        "d": "5/7"
       },
       "correct_option": "a",
-      "answer": "1 2"
+      "answer": "1/2"
     },
     {
       "id": "decimal-fractions-021",
@@ -310,13 +310,13 @@
       "question_number": 22,
       "question": "Which of the following fractions lies between 2 3 and ? 3 5 (C.P.O., 2006)",
       "options": {
-        "a": "2 5",
-        "b": "1 3",
-        "c": "1 15",
-        "d": "31 50"
+        "a": "2/5",
+        "b": "1/3",
+        "c": "1/15",
+        "d": "31/50"
       },
       "correct_option": "d",
-      "answer": "31 50"
+      "answer": "31/50"
     },
     {
       "id": "decimal-fractions-023",
@@ -324,13 +324,13 @@
       "question_number": 23,
       "question": "Which of the following fractions is less than 1 ? 5 (R.R.B., 2006)",
       "options": {
-        "a": "8 35",
-        "b": "8 37",
-        "c": "8 39",
-        "d": "2 11"
+        "a": "8/35",
+        "b": "8/37",
+        "c": "8/39",
+        "d": "2/11"
       },
       "correct_option": "d",
-      "answer": "2 11"
+      "answer": "2/11"
     },
     {
       "id": "decimal-fractions-024",
@@ -338,13 +338,13 @@
       "question_number": 24,
       "question": "Which of the following fractions is nearest to 2 ? 5 (R.R.B., 2006)",
       "options": {
-        "a": "4 5",
-        "b": "21 50",
-        "c": "20001 50000",
-        "d": "200001 500000"
+        "a": "4/5",
+        "b": "21/50",
+        "c": "20001/50000",
+        "d": "200001/500000"
       },
       "correct_option": "d",
-      "answer": "200001 500000"
+      "answer": "200001/500000"
     },
     {
       "id": "decimal-fractions-025",
@@ -714,8 +714,8 @@
       "question_number": 50,
       "question": "(0.1 × 0.01 × 0.001 × 107) is equal to (S.S.C., 2010)",
       "options": {
-        "a": "1 10",
-        "b": "1 100",
+        "a": "1/10",
+        "b": "1/100",
         "c": "10",
         "d": "100"
       },
@@ -871,13 +871,13 @@
       "question_number": 61,
       "question": "Which is the closest approximation to the following product? 0.3333 × 0.25 × 0.499 × 0.125 × 24",
       "options": {
-        "a": "1 8",
-        "b": "3 4",
-        "c": "3 8",
-        "d": "2 5"
+        "a": "1/8",
+        "b": "3/4",
+        "c": "3/8",
+        "d": "2/5"
       },
       "correct_option": "a",
-      "answer": "1 8"
+      "answer": "1/8"
     },
     {
       "id": "decimal-fractions-062",
@@ -1029,8 +1029,8 @@
       "question_number": 72,
       "question": "1 0.04 is equal to",
       "options": {
-        "a": "1 40",
-        "b": "2 5",
+        "a": "1/40",
+        "b": "2/5",
         "c": "2.5",
         "d": "25"
       },
@@ -1420,13 +1420,13 @@
       "question_number": 99,
       "question": "The number 0.121212 …… in the form p q is equal to (S.S.C., 2010)",
       "options": {
-        "a": "2 11",
-        "b": "4 11",
-        "c": "2 33",
-        "d": "4 33"
+        "a": "2/11",
+        "b": "4/11",
+        "c": "2/33",
+        "d": "4/33"
       },
       "correct_option": "d",
-      "answer": "4 33"
+      "answer": "4/33"
     },
     {
       "id": "decimal-fractions-100",
@@ -1434,13 +1434,13 @@
       "question_number": 100,
       "question": "The rational number for the recurring decimal 0.125125 ….. is",
       "options": {
-        "a": "63 487",
-        "b": "119 993",
-        "c": "125 999",
+        "a": "63/487",
+        "b": "119/993",
+        "c": "125/999",
         "d": "None of these"
       },
       "correct_option": "c",
-      "answer": "125 999"
+      "answer": "125/999"
     },
     {
       "id": "decimal-fractions-101",
@@ -1448,13 +1448,13 @@
       "question_number": 101,
       "question": "When 0.47 is converted into a fraction, the result is (Section Officers’, 2003)",
       "options": {
-        "a": "46 90",
-        "b": "46 99",
-        "c": "47 90",
-        "d": "47 99"
+        "a": "46/90",
+        "b": "46/99",
+        "c": "47/90",
+        "d": "47/99"
       },
       "correct_option": "d",
-      "answer": "47 99"
+      "answer": "47/99"
     },
     {
       "id": "decimal-fractions-102",
@@ -1462,13 +1462,13 @@
       "question_number": 102,
       "question": "0.36 expressed in the form p q equals",
       "options": {
-        "a": "4 11",
-        "b": "4 13",
-        "c": "35 90",
-        "d": "35 99"
+        "a": "4/11",
+        "b": "4/13",
+        "c": "35/90",
+        "d": "35/99"
       },
       "correct_option": "a",
-      "answer": "4 11"
+      "answer": "4/11"
     },
     {
       "id": "decimal-fractions-103",
@@ -1490,13 +1490,13 @@
       "question_number": 104,
       "question": "1.27 in the form p q is equal to (S.S.C., 2010)",
       "options": {
-        "a": "127 100",
-        "b": "14 11",
-        "c": "73 100",
-        "d": "11 14"
+        "a": "127/100",
+        "b": "14/11",
+        "c": "73/100",
+        "d": "11/14"
       },
       "correct_option": "b",
-      "answer": "14 11"
+      "answer": "14/11"
     },
     {
       "id": "decimal-fractions-105",
@@ -1504,13 +1504,13 @@
       "question_number": 105,
       "question": "0.423 is equivalent to the fraction (C.P.O., 2005)",
       "options": {
-        "a": "94 99",
-        "b": "49 99",
-        "c": "491 990",
-        "d": "419 990"
+        "a": "94/99",
+        "b": "49/99",
+        "c": "491/990",
+        "d": "419/990"
       },
       "correct_option": "d",
-      "answer": "419 990"
+      "answer": "419/990"
     },
     {
       "id": "decimal-fractions-106",
@@ -1518,13 +1518,13 @@
       "question_number": 106,
       "question": "Express 0.2956 in the form p q (vulgar fraction) (R.R.B., 2005)",
       "options": {
-        "a": "2956 1000",
-        "b": "2956 10000",
-        "c": "2927 9900",
+        "a": "2956/1000",
+        "b": "2956/10000",
+        "c": "2927/9900",
         "d": "None of these"
       },
       "correct_option": "c",
-      "answer": "2927 9900"
+      "answer": "2927/9900"
     },
     {
       "id": "decimal-fractions-107",
@@ -1544,29 +1544,29 @@
       "id": "decimal-fractions-108",
       "chapter": "Decimal Fractions",
       "question_number": 108,
-      "question": "The value of 4.12 is",
+      "question": "The value of 4.12̅ is",
       "options": {
-        "a": "11 4 90",
-        "b": "11 4 99",
-        "c": "371 900",
+        "a": "4 11/90",
+        "b": "4 11/99",
+        "c": "371/900",
         "d": "None of these"
       },
       "correct_option": "a",
-      "answer": "11 4 90"
+      "answer": "4 11/90"
     },
     {
       "id": "decimal-fractions-109",
       "chapter": "Decimal Fractions",
       "question_number": 109,
-      "question": "2.8 768 is equal to (C.P.O., 2006)",
+      "question": "2.8768̅ is equal to (C.P.O., 2006)",
       "options": {
-        "a": "878 2 999",
-        "b": "9 2 10",
-        "c": "292 2 333",
-        "d": "4394 2 4995"
+        "a": "2 878/999",
+        "b": "2 9/10",
+        "c": "2 292/333",
+        "d": "2 4394/4995"
       },
       "correct_option": "c",
-      "answer": "292 2 333"
+      "answer": "2 292/333"
     },
     {
       "id": "decimal-fractions-110",
@@ -1588,13 +1588,13 @@
       "question_number": 111,
       "question": "0.142857 ÷ 0.285714 is equal to (S.S.C., 2007)",
       "options": {
-        "a": "1 2",
-        "b": "1 3",
+        "a": "1/2",
+        "b": "1/3",
         "c": "2",
         "d": "10"
       },
       "correct_option": "a",
-      "answer": "1 2"
+      "answer": "1/2"
     },
     {
       "id": "decimal-fractions-112",
@@ -2081,13 +2081,13 @@
       "question_number": 146,
       "question": "(0.2 × 0.2 + 0.01) (0.1 × 0.1 + 0.02)– 1 is equal to (Section Officers’, 2003)",
       "options": {
-        "a": "5 3",
-        "b": "9 5",
-        "c": "41 4",
-        "d": "41 12"
+        "a": "5/3",
+        "b": "9/5",
+        "c": "41/4",
+        "d": "41/12"
       },
       "correct_option": "a",
-      "answer": "5 3"
+      "answer": "5/3"
     },
     {
       "id": "decimal-fractions-147",
@@ -2166,12 +2166,12 @@
       "question": "The value of (1.25)3 – 2.25 (1.25)2 + 3.75 (0.75)2 – (0.75)3 is",
       "options": {
         "a": "1",
-        "b": "1 2",
-        "c": "1 4",
-        "d": "1 8"
+        "b": "1/2",
+        "c": "1/4",
+        "d": "1/8"
       },
       "correct_option": "d",
-      "answer": "1 8"
+      "answer": "1/8"
     },
     {
       "id": "decimal-fractions-153",
@@ -2365,8 +2365,8 @@
       "question": "3.25 3.20 – 3.20 3.05 0.064 × × is equal to (S.S.C., 2010)",
       "options": {
         "a": "1",
-        "b": "1 2",
-        "c": "1 10",
+        "b": "1/2",
+        "c": "1/10",
         "d": "10"
       },
       "correct_option": "d",
@@ -2589,13 +2589,13 @@
       "question_number": 182,
       "question": "The fraction equivalent to 2 % 5 is [Indian Railways Gr. ‘D’ Exam, 2014]",
       "options": {
-        "a": "1 40",
-        "b": "1 125",
-        "c": "1 250",
-        "d": "1 500"
+        "a": "1/40",
+        "b": "1/125",
+        "c": "1/250",
+        "d": "1/500"
       },
       "correct_option": "c",
-      "answer": "1 250"
+      "answer": "1/250"
     },
     {
       "id": "decimal-fractions-183",
@@ -2603,13 +2603,13 @@
       "question_number": 183,
       "question": "The vulgar fraction of 0.3939 is [SSC—CHSL (10+2) Exam, 2015]",
       "options": {
-        "a": "15 33",
-        "b": "11 39",
-        "c": "17 39",
-        "d": "13 33"
+        "a": "15/33",
+        "b": "11/39",
+        "c": "17/39",
+        "d": "13/33"
       },
       "correct_option": "d",
-      "answer": "13 33"
+      "answer": "13/33"
     },
     {
       "id": "decimal-fractions-184",
@@ -2630,7 +2630,7 @@
       "id": "decimal-fractions-185",
       "chapter": "Decimal Fractions",
       "question_number": 185,
-      "question": "Solve 3 5 of 4 7 of 5 12 of 1015 = ? [United India Insurance Co. Ltd. (UIICL) Assistant (Online) Exam, 2015]",
+      "question": "Solve: 3/5 of 4/7 of 5/12 of 1015 = ? [UIICL Assistant Exam, 2015]",
       "options": {
         "a": "220",
         "b": "340",
@@ -2654,7 +2654,7 @@
         "e": "None of these"
       },
       "correct_option": "b",
-      "answer": "163 6 280"
+      "answer": "6 163/280"
     },
     {
       "id": "decimal-fractions-187",
@@ -2722,14 +2722,14 @@
       "question_number": 191,
       "question": "Solve 2 1 2 4 3 1 ? 3 2 3 + − = [NICL—AAO Exam, 2015]",
       "options": {
-        "a": "1 2 5",
-        "b": "5 2 3",
-        "c": "3 1 4",
-        "d": "1 1 2",
-        "e": "1 6 2"
+        "a": "2 1/5",
+        "b": "2 5/3",
+        "c": "1 3/4",
+        "d": "1 1/2",
+        "e": "6 1/2"
       },
       "correct_option": "e",
-      "answer": "1 6 2"
+      "answer": "6 1/2"
     },
     {
       "id": "decimal-fractions-192",
@@ -2797,14 +2797,14 @@
       "question_number": 196,
       "question": "Solve 2 1 1 2 4 1 ? 9 18 2 + − = [IBPS—RRB Office Assistant (Online) Exam, 2015]",
       "options": {
-        "a": "5 4 9",
-        "b": "7 4 9",
-        "c": "8 5 9",
-        "d": "1 6 2",
-        "e": "2 5 3"
+        "a": "4 5/9",
+        "b": "4 7/9",
+        "c": "5 8/9",
+        "d": "6 1/2",
+        "e": "5 2/3"
       },
       "correct_option": "b",
-      "answer": "7 4 9"
+      "answer": "4 7/9"
     },
     {
       "id": "decimal-fractions-197",
@@ -2855,15 +2855,15 @@
       "id": "decimal-fractions-200",
       "chapter": "Decimal Fractions",
       "question_number": 200,
-      "question": "Which of the following fractions is the largest? 3 7 5 7 , , , 2 3 4 2 [ESIC—UDC Exam, 2016]",
+      "question": "Which of the following fractions is the largest? 3/2, 7/3, 5/4, 7/2 [ESIC—UDC Exam, 2016]",
       "options": {
-        "a": "7 3",
-        "b": "5 4",
-        "c": "7 2",
-        "d": "3 2"
+        "a": "7/3",
+        "b": "5/4",
+        "c": "7/2",
+        "d": "3/2"
       },
       "correct_option": "c",
-      "answer": "7 2"
+      "answer": "7/2"
     },
     {
       "id": "decimal-fractions-201",
@@ -2884,16 +2884,16 @@
       "id": "decimal-fractions-202",
       "chapter": "Decimal Fractions",
       "question_number": 202,
-      "question": "The numerator of a fraction is decreased by 25% and the denominator is increased by 250%. If the resultant fraction is 6 5 , what is the original fraction? [SBI Jr. Associates (Pre.) Exam, 2016]",
+      "question": "The numerator of a fraction is decreased by 25% and the denominator is increased by 250%. If the resultant fraction is 6/5, what is the original fraction? [SBI Jr. Associates Exam, 2016]",
       "options": {
-        "a": "22 5",
-        "b": "24 5",
-        "c": "27 6",
-        "d": "28 5",
+        "a": "22/5",
+        "b": "24/5",
+        "c": "27/6",
+        "d": "28/5",
         "e": "30/11"
       },
       "correct_option": "d",
-      "answer": "28 5"
+      "answer": "28/5"
     },
     {
       "id": "decimal-fractions-203",
@@ -2951,7 +2951,7 @@
         "d": "1 77/228"
       },
       "correct_option": "b",
-      "answer": "1 4 2"
+      "answer": "4 1/2"
     }
   ]
 }
