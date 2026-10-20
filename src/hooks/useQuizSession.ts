@@ -1,16 +1,43 @@
 'use client';
 
 import { useState, useEffect, useCallback, useMemo } from 'react';
-import type { Question, QuizMode, QuestionStatus } from '@/types';
+import type { Question, QuestionStatus } from '@/types';
 import { calculateExamScore } from '@/lib/scoring';
 
-function loadFromStorage(cleanKey: string, rawKey?: string) {
+function purgeLegacyLocalStorage() {
+  if (typeof window === 'undefined') return;
+  try {
+    for (let i = localStorage.length - 1; i >= 0; i--) {
+      const k = localStorage.key(i);
+      if (k && k.startsWith('aptixa_session_')) {
+        localStorage.removeItem(k);
+      }
+    }
+  } catch {
+    // Ignore storage errors in restricted environments
+  }
+}
+
+function loadFromSessionStorage(cleanKey: string, rawKey?: string) {
   if (typeof window === 'undefined') return null;
   try {
+    purgeLegacyLocalStorage();
+
     const raw =
-      localStorage.getItem(cleanKey) ||
-      (rawKey ? localStorage.getItem(rawKey) : null);
-    return raw ? JSON.parse(raw) : null;
+      sessionStorage.getItem(cleanKey) ||
+      (rawKey ? sessionStorage.getItem(rawKey) : null);
+
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+
+    // If an assessment was previously completed, discard to ensure a clean slate upon reopening
+    if (parsed && parsed.isSubmitted) {
+      sessionStorage.removeItem(cleanKey);
+      if (rawKey) sessionStorage.removeItem(rawKey);
+      return null;
+    }
+
+    return parsed;
   } catch {
     return null;
   }
@@ -19,7 +46,6 @@ function loadFromStorage(cleanKey: string, rawKey?: string) {
 export function useQuizSession(
   sessionId: string,
   initialQuestions: Question[],
-  initialMode: QuizMode = 'quiz',
   category = 'General Aptitude',
   topic = 'Placement Examination',
   customInitialTimeSeconds?: number
@@ -29,7 +55,7 @@ export function useQuizSession(
     if (typeof customInitialTimeSeconds === 'number' && customInitialTimeSeconds > 0) {
       return customInitialTimeSeconds;
     }
-    return totalQuestions * 60; // default 60 seconds per question
+    return totalQuestions * 60;
   }, [totalQuestions, customInitialTimeSeconds]);
 
   const cleanSessionId = useMemo(() => {
@@ -49,51 +75,42 @@ export function useQuizSession(
   const storageKey = `aptixa_session_${cleanSessionId}`;
   const rawStorageKey = `aptixa_session_${sessionId}`;
 
-  const [mode, setMode] = useState<QuizMode>(() => {
-    return (
-      loadFromStorage(storageKey, rawStorageKey)?.mode || initialMode
-    );
-  });
+  const mode = 'quiz' as const;
 
   const [currentIndex, setCurrentIndex] = useState<number>(() => {
-    const saved = loadFromStorage(storageKey, rawStorageKey)?.currentIndex;
+    const saved = loadFromSessionStorage(storageKey, rawStorageKey)?.currentIndex;
     return typeof saved === 'number' && saved >= 0 && saved < totalQuestions ? saved : 0;
   });
 
   const [answers, setAnswers] = useState<Record<string, number | null>>(() => {
-    return loadFromStorage(storageKey, rawStorageKey)?.answers || {};
+    return loadFromSessionStorage(storageKey, rawStorageKey)?.answers || {};
   });
 
   const [marked, setMarked] = useState<Record<string, boolean>>(() => {
-    return loadFromStorage(storageKey, rawStorageKey)?.marked || {};
+    return loadFromSessionStorage(storageKey, rawStorageKey)?.marked || {};
   });
 
   const [visited, setVisited] = useState<Record<string, boolean>>(() => {
-    const v = loadFromStorage(storageKey, rawStorageKey)?.visited || {};
+    const v = loadFromSessionStorage(storageKey, rawStorageKey)?.visited || {};
     const firstQId = initialQuestions[0]?.id;
     if (firstQId) v[firstQId] = true;
     return v;
   });
 
-  const [timeRemaining, setTimeRemaining] = useState<number>(() => {
-    const saved = loadFromStorage(storageKey, rawStorageKey)?.timeRemaining;
-    return typeof saved === 'number' ? saved : initialTime;
-  });
+  const [timeRemaining] = useState<number>(initialTime);
 
-  const [isSubmitted, setIsSubmitted] = useState<boolean>(() => {
-    return loadFromStorage(storageKey, rawStorageKey)?.isSubmitted ?? false;
-  });
+  const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
 
-  // Save to localStorage on state changes
+  // Save active progress to sessionStorage (automatically cleaned when reopening app)
   useEffect(() => {
     try {
-      localStorage.setItem(
+      sessionStorage.setItem(
         storageKey,
         JSON.stringify({
           sessionId,
           category,
           topic,
-          mode,
+          mode: 'quiz',
           currentIndex,
           answers,
           marked,
@@ -104,27 +121,9 @@ export function useQuizSession(
         })
       );
     } catch {
-      // Ignore localStorage write failures in restricted environments
+      // Ignore sessionStorage write failures
     }
-  }, [storageKey, sessionId, category, topic, mode, currentIndex, answers, marked, visited, timeRemaining, isSubmitted]);
-
-  // Countdown timer for test mode
-  useEffect(() => {
-    if (mode !== 'test' || isSubmitted) return;
-
-    const timer = setInterval(() => {
-      setTimeRemaining((prev) => {
-        if (prev <= 1) {
-          clearInterval(timer);
-          setIsSubmitted(true);
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, [mode, isSubmitted]);
+  }, [storageKey, sessionId, category, topic, currentIndex, answers, marked, visited, timeRemaining, isSubmitted]);
 
   const selectOption = useCallback(
     (optionIndex: number) => {
@@ -198,9 +197,28 @@ export function useQuizSession(
 
   const submitExam = useCallback(() => {
     setIsSubmitted(true);
-  }, []);
+    try {
+      sessionStorage.setItem(
+        storageKey,
+        JSON.stringify({
+          sessionId,
+          category,
+          topic,
+          mode: 'quiz',
+          currentIndex,
+          answers,
+          marked,
+          visited,
+          timeRemaining,
+          isSubmitted: true,
+          updatedAt: new Date().toISOString(),
+        })
+      );
+    } catch {
+      // Ignore storage errors
+    }
+  }, [storageKey, sessionId, category, topic, currentIndex, answers, marked, visited, timeRemaining]);
 
-  // Compute question statuses for the palette matrix
   const getQuestionStatus = useCallback(
     (index: number): QuestionStatus => {
       const q = initialQuestions[index];
@@ -219,18 +237,17 @@ export function useQuizSession(
     [answers, marked, visited, initialQuestions]
   );
 
-  // Score computation
   const stats = useMemo(() => {
-    const breakdown = calculateExamScore(initialQuestions, answers, mode);
+    const breakdown = calculateExamScore(initialQuestions, answers);
     return {
       ...breakdown,
       markedCount: Object.values(marked).filter(Boolean).length,
     };
-  }, [answers, marked, initialQuestions, mode]);
+  }, [answers, marked, initialQuestions]);
 
   return {
     mode,
-    setMode,
+    setMode: () => {},
     currentIndex,
     currentQuestion: initialQuestions[currentIndex] || null,
     totalQuestions,

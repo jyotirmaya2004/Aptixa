@@ -6,7 +6,7 @@ import { useQuizSession } from '@/hooks/useQuizSession';
 import { cn } from '@/lib/utils';
 import { TelemetryBar } from '@/components/ui/TelemetryBar';
 import { OptionCard } from '@/components/ui/OptionCard';
-import type { Question, QuizMode } from '@/types';
+import type { Question } from '@/types';
 import {
   ArrowLeft,
   ArrowRight,
@@ -17,7 +17,6 @@ import {
 export interface QuizWorkspaceClientProps {
   sessionId: string;
   initialQuestions: Question[];
-  initialMode?: QuizMode;
   title: string;
   customInitialTimeSeconds?: number;
 }
@@ -25,7 +24,6 @@ export interface QuizWorkspaceClientProps {
 export function QuizWorkspaceClient({
   sessionId,
   initialQuestions,
-  initialMode = 'quiz',
   title,
   customInitialTimeSeconds,
 }: QuizWorkspaceClientProps) {
@@ -33,15 +31,11 @@ export function QuizWorkspaceClient({
   const [showSubmitModal, setShowSubmitModal] = useState(false);
 
   const {
-    mode,
-    setMode,
     currentIndex,
     currentQuestion,
     totalQuestions,
     answers,
     marked,
-    timeRemaining,
-    totalTime,
     isSubmitted,
     stats,
     selectOption,
@@ -52,7 +46,6 @@ export function QuizWorkspaceClient({
   } = useQuizSession(
     sessionId,
     initialQuestions,
-    initialMode,
     'General Aptitude',
     title,
     customInitialTimeSeconds
@@ -78,12 +71,6 @@ export function QuizWorkspaceClient({
     router.push(`/results/${cleanId}`);
   }, [cleanId, submitExam, router]);
 
-  // When timer expires in proctored test mode, automatically route to performance report
-  useEffect(() => {
-    if (isSubmitted && mode === 'test' && timeRemaining === 0) {
-      router.push(`/results/${cleanId}`);
-    }
-  }, [isSubmitted, mode, timeRemaining, cleanId, router]);
 
   // Keyboard navigation for convenient answering without displaying distracting guides
   useEffect(() => {
@@ -225,10 +212,6 @@ export function QuizWorkspaceClient({
       {/* Top Header Bar */}
       <TelemetryBar
         title={title}
-        mode={mode}
-        onModeChange={setMode}
-        timeRemainingSeconds={timeRemaining}
-        totalTimeSeconds={totalTime}
         answeredCount={stats.answeredCount}
         totalQuestions={totalQuestions}
         onSubmit={() => setShowSubmitModal(true)}

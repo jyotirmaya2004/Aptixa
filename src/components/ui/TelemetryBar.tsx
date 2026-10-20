@@ -3,39 +3,23 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { cn } from '@/lib/utils';
-import type { QuizMode } from '@/types';
-import { ModeSwitcher } from './ModeSwitcher';
-import { Clock, ArrowLeft, SlidersHorizontal } from 'lucide-react';
+import { ArrowLeft, SlidersHorizontal } from 'lucide-react';
 
 export interface TelemetryBarProps {
   title: string;
-  mode: QuizMode;
-  onModeChange: (mode: QuizMode) => void;
-  timeRemainingSeconds?: number;
-  totalTimeSeconds?: number;
   answeredCount: number;
   totalQuestions: number;
-  markedCount?: number;
   onSubmit: () => void;
   isSubmitted?: boolean;
 }
 
 export function TelemetryBar({
   title,
-  mode,
-  onModeChange,
-  timeRemainingSeconds = 0,
   answeredCount,
   totalQuestions,
   onSubmit,
   isSubmitted = false,
 }: TelemetryBarProps) {
-  const minutes = Math.floor(timeRemainingSeconds / 60);
-  const seconds = timeRemainingSeconds % 60;
-  const timeFormatted = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-  const isTimeCritical = mode === 'test' && timeRemainingSeconds < 300 && timeRemainingSeconds > 0;
-
   return (
     <header className="shrink-0 z-30 w-full h-16 bg-white/95 backdrop-blur-md border-b border-black/[0.04] px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-3">
       {/* Left: Home Return & Title */}
@@ -61,42 +45,22 @@ export function TelemetryBar({
         </h1>
       </div>
 
-      {/* Center: Mode Switcher */}
-      <div className="hidden md:flex items-center justify-center">
-        <ModeSwitcher mode={mode} onChange={onModeChange} disabled={isSubmitted} />
-      </div>
-
-      {/* Right: Customize, Answered Progress, Timer & Submit */}
+      {/* Right: Customize, Answered Progress & Submit */}
       <div className="flex items-center gap-3 sm:gap-4 shrink-0">
         {/* Customize Test Link */}
         <Link
           href="/practice"
           className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-slate-500 hover:text-[#181E4B] hover:bg-slate-100 font-sans text-xs font-semibold transition-colors"
-          title="Customize question count, difficulty & timing"
+          title="Customize question count, topics & timing"
         >
           <SlidersHorizontal size={13} className="text-[#DF6951]" aria-hidden="true" />
           <span>Customize</span>
         </Link>
 
-        {/* Simple Progress Counter */}
+        {/* Progress Counter */}
         <span className="font-sans text-xs font-semibold text-slate-500 tabular-nums">
           {answeredCount} / {totalQuestions} answered
         </span>
-
-        {/* Live Timer (Test Mode) */}
-        {mode === 'test' && !isSubmitted && (
-          <div
-            className={cn(
-              'flex items-center gap-1.5 px-3 py-1 rounded-full font-sans font-bold tabular-nums text-xs border',
-              isTimeCritical
-                ? 'bg-red-50 border-red-200 text-red-600 animate-pulse'
-                : 'bg-amber-50 border-amber-200 text-amber-700'
-            )}
-          >
-            <Clock size={12} aria-hidden="true" />
-            <span>{timeFormatted}</span>
-          </div>
-        )}
 
         {/* Submit Action */}
         {!isSubmitted ? (

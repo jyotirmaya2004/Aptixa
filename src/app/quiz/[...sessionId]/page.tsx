@@ -1,7 +1,6 @@
 import { getExamSessionQuestions, normalizeDataPath } from '@/lib/data';
 import { QuizWorkspaceClient } from './QuizWorkspaceClient';
 import type { Metadata } from 'next';
-import type { QuizMode } from '@/types';
 
 export const dynamic = 'force-dynamic';
 
@@ -28,7 +27,6 @@ export async function generateMetadata({ params }: QuizPageProps): Promise<Metad
 export default async function QuizPage({ params, searchParams }: QuizPageProps) {
   const { sessionId } = await params;
   const {
-    mode: queryMode,
     count: queryCount,
     difficulty: queryDifficulty,
     time: queryTime,
@@ -36,7 +34,6 @@ export default async function QuizPage({ params, searchParams }: QuizPageProps) 
 
   const rawId = Array.isArray(sessionId) ? sessionId.join('/') : (sessionId || '');
   const cleanSessionId = normalizeDataPath(rawId);
-  const initialMode: QuizMode = queryMode === 'test' ? 'test' : 'quiz';
 
   const limit = queryCount
     ? Math.min(Math.max(parseInt(queryCount, 10) || 30, 5), 100)
@@ -62,7 +59,6 @@ export default async function QuizPage({ params, searchParams }: QuizPageProps) 
     <QuizWorkspaceClient
       sessionId={cleanSessionId}
       initialQuestions={questions}
-      initialMode={initialMode}
       title={displayTitle}
       customInitialTimeSeconds={customInitialTimeSeconds}
     />

@@ -10,9 +10,8 @@ export type {
 } from '@/lib/schema';
 
 /**
- * Examination Modes
- * 'quiz' = Diagnostic Practice (immediate step explanations, hint support, no negative marks)
- * 'test' = Proctored Simulation (+3 correct / -0.75 wrong, countdown clock, solutions revealed after submission)
+ * Examination Mode
+ * 'quiz' = Self-Paced Practice Assessment
  */
 export type QuizMode = 'quiz' | 'test';
 

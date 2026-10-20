@@ -101,23 +101,18 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/quiz/quantitative?mode=quiz" className="hover:text-white transition-colors">
+                <Link href="/quiz/quantitative" className="hover:text-white transition-colors">
                   Quantitative Aptitude
                 </Link>
               </li>
               <li>
-                <Link href="/quiz/logical?mode=quiz" className="hover:text-white transition-colors">
+                <Link href="/quiz/logical" className="hover:text-white transition-colors">
                   Logical Reasoning
                 </Link>
               </li>
               <li>
-                <Link href="/quiz/verbal?mode=quiz" className="hover:text-white transition-colors">
+                <Link href="/quiz/verbal" className="hover:text-white transition-colors">
                   Verbal Ability
-                </Link>
-              </li>
-              <li>
-                <Link href="/quiz/quantitative?mode=test" className="hover:text-white transition-colors">
-                  Proctored Test
                 </Link>
               </li>
             </ul>

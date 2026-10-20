@@ -19,7 +19,7 @@ interface SavedSession {
   sessionId: string;
   category: string;
   topic: string;
-  mode: 'quiz' | 'test';
+  mode: 'quiz';
   answers: Record<string, number | null>;
   timeRemaining: number;
   updatedAt: string;
@@ -51,10 +51,16 @@ export function ResultsClient({ sessionId, questions }: ResultsClientProps) {
       const key1 = `aptixa_session_${cleanSessionId}`;
       const key2 = `aptixa_session_${sessionId}`;
       const key3 = `aptixa_session_${encodeURIComponent(cleanSessionId)}`;
+
+      // Purge any legacy localStorage data
+      [key1, key2, key3].forEach((k) => {
+        if (localStorage.getItem(k)) localStorage.removeItem(k);
+      });
+
       const saved =
-        localStorage.getItem(key1) ||
-        localStorage.getItem(key2) ||
-        localStorage.getItem(key3);
+        sessionStorage.getItem(key1) ||
+        sessionStorage.getItem(key2) ||
+        sessionStorage.getItem(key3);
       return saved ? JSON.parse(saved) : null;
     } catch {
       return null;
@@ -62,7 +68,6 @@ export function ResultsClient({ sessionId, questions }: ResultsClientProps) {
   });
 
   const answers = session?.answers || {};
-  const mode = session?.mode || 'quiz';
 
   const {
     correctCount: correct,
@@ -71,7 +76,7 @@ export function ResultsClient({ sessionId, questions }: ResultsClientProps) {
     score,
     maxScore,
     percentage,
-  } = calculateExamScore(questions, answers, mode);
+  } = calculateExamScore(questions, answers);
 
   return (
     <div className="flex-1 flex flex-col">
@@ -82,8 +87,8 @@ export function ResultsClient({ sessionId, questions }: ResultsClientProps) {
             <span className="font-sans text-xs font-bold uppercase tracking-[0.14em] text-[#DF6951]">
               RESULTS
             </span>
-            <span className="font-sans text-xs font-bold uppercase tracking-wider bg-[#F1A501]/10 text-[#F1A501] px-2.5 py-0.5 rounded-full">
-              {mode === 'test' ? 'Proctored Test' : 'Practice'}
+            <span className="font-sans text-xs font-bold uppercase tracking-wider bg-[#DF6951]/10 text-[#DF6951] px-2.5 py-0.5 rounded-full">
+              Practice Assessment
             </span>
           </div>
 
@@ -150,11 +155,11 @@ export function ResultsClient({ sessionId, questions }: ResultsClientProps) {
           {/* Action CTAs */}
           <div className="mt-10 pt-4 flex flex-wrap items-center justify-between gap-4">
             <Link
-              href={`/quiz/${encodeURIComponent(cleanSessionId)}?mode=${mode}`}
+              href={`/quiz/${encodeURIComponent(cleanSessionId)}`}
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-[#F1A501] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#d99100] transition-all shadow-[0_6px_16px_rgba(241,165,1,0.25)]"
             >
               <RotateCcw size={14} aria-hidden="true" />
-              <span>Retake Examination</span>
+              <span>Retake Assessment</span>
             </Link>
 
             <div className="flex items-center gap-3">
@@ -206,11 +211,11 @@ export function ResultsClient({ sessionId, questions }: ResultsClientProps) {
 
                     {isCorrect ? (
                       <span className="bg-emerald-50 text-emerald-800 border border-emerald-200 font-bold text-xs uppercase px-3 py-1 rounded-full">
-                        Correct (+{mode === 'test' ? '3.0' : '1.0'})
+                        Correct (+1.0)
                       </span>
                     ) : isWrong ? (
                       <span className="bg-rose-50 text-rose-800 border border-rose-200 font-bold text-xs uppercase px-3 py-1 rounded-full">
-                        Incorrect ({mode === 'test' ? '-0.75' : '0.0'})
+                        Incorrect
                       </span>
                     ) : (
                       <span className="bg-[#F8F9FF] text-[#5E6282] border border-black/[0.04] font-semibold text-xs uppercase px-3 py-1 rounded-full">

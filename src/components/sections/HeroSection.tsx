@@ -75,7 +75,7 @@ export function HeroSection() {
             {/* Action CTAs */}
             <div className="hero-fade pt-2 sm:pt-4 flex flex-wrap items-center gap-3 sm:gap-4">
               <Link
-                href="/quiz/quantitative?mode=test"
+                href="/quiz/quantitative"
                 className="inline-flex items-center justify-center px-7 sm:px-8 py-3.5 sm:py-4 rounded-[12px] bg-[#F1A501] hover:bg-[#E09600] text-white font-sans text-sm sm:text-base font-semibold shadow-[0_10px_25px_rgba(241,165,1,0.22)] hover:shadow-[0_14px_30px_rgba(241,165,1,0.3)] hover:-translate-y-0.5 transition-all duration-200 text-center"
               >
                 Start Assessment

@@ -98,14 +98,6 @@ export function NavBar() {
             })}
           </nav>
 
-          <div className="flex items-center gap-6 lg:gap-8">
-            <Link
-              href="/quiz/quantitative?mode=test"
-              className="inline-flex items-center justify-center px-5 py-2.5 rounded-[12px] bg-[#181E4B] hover:bg-[#0F172A] text-white font-sans text-sm font-semibold transition-all duration-200 whitespace-nowrap shadow-sm"
-            >
-              Proctored Test
-            </Link>
-          </div>
         </div>
 
         {/* Mobile Menu Button */}

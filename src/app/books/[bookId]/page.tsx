@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { getBooks, getBookById } from '@/lib/data';
 import { Footer } from '@/components/layout/Footer';
 import type { Metadata } from 'next';
-import { ArrowLeft, ArrowRight, Clock } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 interface BookDetailPageProps {
   params: Promise<{ bookId: string }>;
@@ -114,19 +114,11 @@ export default async function BookDetailPage({ params }: BookDetailPageProps) {
                 {/* Right: Actions */}
                 <div className="flex items-center gap-2.5 shrink-0 pt-2 md:pt-0">
                   <Link
-                    href={`/quiz/${ch.file}?mode=quiz`}
-                    className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-full border border-slate-200 bg-white hover:bg-slate-50 text-[#181E4B] font-sans text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer"
+                    href={`/quiz/${ch.file}`}
+                    className="inline-flex items-center justify-center gap-1.5 px-5 py-2 rounded-full bg-[#181E4B] hover:bg-[#0F172A] text-white font-sans text-xs font-bold uppercase tracking-wider shadow-xs transition-colors cursor-pointer"
                   >
-                    <span>Practice</span>
+                    <span>Practice Chapter</span>
                     <ArrowRight size={13} aria-hidden="true" />
-                  </Link>
-
-                  <Link
-                    href={`/quiz/${ch.file}?mode=test`}
-                    className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-full bg-[#181E4B] hover:bg-[#0F172A] text-white font-sans text-xs font-bold uppercase tracking-wider shadow-xs transition-colors cursor-pointer"
-                  >
-                    <Clock size={12} aria-hidden="true" />
-                    <span>Timed Test</span>
                   </Link>
                 </div>
               </div>

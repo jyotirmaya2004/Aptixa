@@ -4,8 +4,6 @@ import React, { useState, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import type { Book, Category } from '@/types';
 import {
-  BookOpen,
-  ShieldCheck,
   Sparkles,
   ArrowRight,
   Check,
@@ -46,8 +44,6 @@ export function PracticeCustomizerClient({ books }: PracticeCustomizerClientProp
   // Difficulty: 'All', 'Easy', 'Medium', 'Hard'
   const [difficulty, setDifficulty] = useState<string>('All');
 
-  // Mode: 'quiz' | 'test'
-  const [mode, setMode] = useState<'quiz' | 'test'>('quiz');
 
   // Pacing / Time: 'standard' (1 min/Q), 'sprint' (45s/Q), 'extended' (2 min/Q), 'untimed'
   const [pacing, setPacing] = useState<'standard' | 'sprint' | 'extended' | 'untimed'>('standard');
@@ -77,7 +73,6 @@ export function PracticeCustomizerClient({ books }: PracticeCustomizerClientProp
   // Handle launch
   const handleLaunchQuiz = () => {
     const params = new URLSearchParams();
-    params.set('mode', mode);
     params.set('count', String(questionCount));
     if (difficulty !== 'All') {
       params.set('difficulty', difficulty);
@@ -319,65 +314,18 @@ export function PracticeCustomizerClient({ books }: PracticeCustomizerClientProp
             </div>
           </section>
 
-          {/* Section 3: Assessment Mode & Timing */}
+          {/* Section 3: Assessment Pacing & Duration */}
           <section className="rounded-[28px] bg-white p-7 sm:p-9 shadow-[0_20px_50px_rgba(0,0,0,0.04)] border border-black/[0.04]">
             <div className="flex items-center gap-2.5 mb-6">
               <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#DF6951]/10 text-[#DF6951] font-bold text-xs">
                 3
               </span>
               <h2 className="font-serif text-xl font-bold text-[#181E4B]">
-                Assessment Mode & Pacing
+                Pacing & Session Duration
               </h2>
             </div>
 
             <div className="space-y-6">
-              {/* Mode Selection */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <button
-                  type="button"
-                  onClick={() => setMode('quiz')}
-                  className={cn(
-                    'p-5 rounded-[20px] border text-left transition-all duration-200 cursor-pointer',
-                    mode === 'quiz'
-                      ? 'border-[#DF6951] bg-[#FFF8EE] ring-2 ring-[#DF6951]/15'
-                      : 'border-black/[0.06] bg-white hover:border-[#DF6951]'
-                  )}
-                >
-                  <div className="flex items-center gap-2 text-[#DF6951] mb-2 font-bold text-xs uppercase tracking-wider">
-                    <BookOpen size={16} />
-                    <span>Practice Quiz Mode</span>
-                  </div>
-                  <h4 className="font-serif text-lg font-bold text-[#181E4B] mb-1">
-                    Self-Paced Practice
-                  </h4>
-                  <p className="font-sans text-xs text-[#5E6282] leading-relaxed">
-                    Distraction-free question practice with zero negative marking penalty. Comprehensive performance review upon completion.
-                  </p>
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() => setMode('test')}
-                  className={cn(
-                    'p-5 rounded-[20px] border text-left transition-all duration-200 cursor-pointer',
-                    mode === 'test'
-                      ? 'border-[#F1A501] bg-[#FFF8EE] ring-2 ring-[#F1A501]/15'
-                      : 'border-black/[0.06] bg-white hover:border-[#F1A501]'
-                  )}
-                >
-                  <div className="flex items-center gap-2 text-[#F1A501] mb-2 font-bold text-xs uppercase tracking-wider">
-                    <ShieldCheck size={16} />
-                    <span>Proctored Test Mode</span>
-                  </div>
-                  <h4 className="font-serif text-lg font-bold text-[#181E4B] mb-1">
-                    Authentic Examination Pressure
-                  </h4>
-                  <p className="font-sans text-xs text-[#5E6282] leading-relaxed">
-                    Live timer countdown with strict +3.0 / -0.75 negative scoring. Full diagnostic review upon completion.
-                  </p>
-                </button>
-              </div>
-
               {/* Timing & Pacing Selection */}
               <div>
                 <span className="block font-sans text-xs font-bold uppercase tracking-wider text-[#5E6282] mb-3">
@@ -454,12 +402,6 @@ export function PracticeCustomizerClient({ books }: PracticeCustomizerClientProp
                 </span>
               </div>
 
-              <div className="flex items-center justify-between p-2.5 rounded-[12px] bg-[#F8F9FF]">
-                <span className="font-sans text-xs font-semibold text-[#5E6282]">Mode</span>
-                <span className="font-bold text-[#F1A501] uppercase text-xs">
-                  {mode === 'test' ? 'Proctored Standard' : 'Practice Quiz'}
-                </span>
-              </div>
 
               <div className="flex items-center justify-between p-2.5 rounded-[12px] bg-[#F8F9FF]">
                 <span className="font-sans text-xs font-semibold text-[#5E6282]">Session Duration</span>

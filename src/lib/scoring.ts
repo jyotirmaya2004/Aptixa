@@ -1,4 +1,4 @@
-import type { Question, QuizMode } from '@/types';
+import type { Question } from '@/types';
 
 export interface ScoreBreakdown {
   totalQuestions: number;
@@ -12,14 +12,12 @@ export interface ScoreBreakdown {
 }
 
 /**
- * Calculates candidate scores based on standardized competitive examination schemes:
- * - Diagnostic Quiz Mode: +1.0 per correct answer, 0 penalty for incorrect, maxScore = totalQuestions.
- * - Proctored Test Mode: +3.0 per correct answer, -0.75 penalty per incorrect answer, 0 for unattempted, maxScore = totalQuestions * 3.
+ * Calculates candidate scores based on standardized placement assessment:
+ * +1.0 per correct answer, 0 penalty for incorrect, maxScore = totalQuestions.
  */
 export function calculateExamScore(
   questions: Question[],
-  answers: Record<string, number | null>,
-  mode: QuizMode = 'quiz'
+  answers: Record<string, number | null>
 ): ScoreBreakdown {
   const totalQuestions = questions.length;
   let correctCount = 0;
@@ -39,17 +37,9 @@ export function calculateExamScore(
   }
 
   const unansweredCount = totalQuestions - answeredCount;
-
-  let score = 0;
-  if (mode === 'test') {
-    score = correctCount * 3.0 - wrongCount * 0.75;
-  } else {
-    score = correctCount * 1.0;
-  }
-
-  const maxScore = mode === 'test' ? totalQuestions * 3.0 : totalQuestions * 1.0;
-  const rawPercentage = maxScore > 0 ? (score / maxScore) * 100 : 0;
-  const percentage = Math.max(0, Math.round(rawPercentage));
+  const score = correctCount * 1.0;
+  const maxScore = totalQuestions * 1.0;
+  const percentage = maxScore > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0;
 
   return {
     totalQuestions,

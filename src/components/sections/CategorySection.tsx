@@ -66,20 +66,13 @@ export function CategorySection({ categories }: CategorySectionProps) {
                     </p>
                   </div>
 
-                  <div className="pt-2 flex items-center justify-center gap-3">
+                  <div className="pt-2 flex items-center justify-center">
                     <Link
-                      href={`/quiz/${cat.id}?mode=quiz`}
+                      href={`/quiz/${cat.id}`}
                       className="inline-flex items-center gap-1 font-sans text-xs font-bold uppercase tracking-[0.06em] text-[#DF6951] hover:text-[#c4533d] transition-colors"
                     >
-                      <span>Practice</span>
+                      <span>Start Practice</span>
                       <ArrowUpRight size={13} aria-hidden="true" />
-                    </Link>
-                    <span className="text-slate-300">•</span>
-                    <Link
-                      href={`/quiz/${cat.id}?mode=test`}
-                      className="font-sans text-xs font-bold uppercase tracking-[0.06em] text-[#181E4B] hover:text-[#DF6951] transition-colors"
-                    >
-                      Timed Test
                     </Link>
                   </div>
                 </div>
