@@ -12,6 +12,7 @@ import {
   ArrowRight,
   Flag,
   AlertTriangle,
+  X,
 } from 'lucide-react';
 
 export interface QuizWorkspaceClientProps {
@@ -29,6 +30,7 @@ export function QuizWorkspaceClient({
 }: QuizWorkspaceClientProps) {
   const router = useRouter();
   const [showSubmitModal, setShowSubmitModal] = useState(false);
+  const [showMatrix, setShowMatrix] = useState(false);
 
   const {
     currentIndex,
@@ -40,9 +42,11 @@ export function QuizWorkspaceClient({
     stats,
     selectOption,
     toggleMarkForReview,
+    goToQuestion,
     nextQuestion,
     prevQuestion,
     submitExam,
+    getQuestionStatus,
   } = useQuizSession(
     sessionId,
     initialQuestions,
@@ -132,6 +136,7 @@ export function QuizWorkspaceClient({
 
 
       if (key === 'Escape') {
+        setShowMatrix(false);
         setShowSubmitModal(false);
       }
     };
@@ -184,7 +189,7 @@ export function QuizWorkspaceClient({
   if (totalQuestions === 0 || !currentQuestion) {
     return (
       <div className="fixed inset-0 w-full h-[100dvh] flex items-center justify-center p-6 bg-[#F8F9FF]">
-        <div className="max-w-md w-full p-8 rounded-[24px] bg-white border border-slate-200/80 text-center space-y-4">
+        <div className="max-w-md w-full p-8 rounded-[24px] bg-white text-center space-y-4 shadow-sm">
           <div className="flex h-12 w-12 mx-auto items-center justify-center rounded-full bg-amber-50 text-amber-600">
             <AlertTriangle size={24} />
           </div>
@@ -209,21 +214,22 @@ export function QuizWorkspaceClient({
 
   return (
     <div className="fixed inset-0 w-full h-[100dvh] max-h-[100dvh] overflow-hidden flex flex-col bg-[#F8F9FF]">
-      {/* Top Header Bar */}
+      {/* Top Header Bar with Matrix Trigger */}
       <TelemetryBar
         title={title}
         answeredCount={stats.answeredCount}
         totalQuestions={totalQuestions}
         onSubmit={() => setShowSubmitModal(true)}
+        onToggleMatrix={() => setShowMatrix((prev) => !prev)}
         isSubmitted={isSubmitted}
       />
 
       {/* Main Reading Arena: Centered, clean, single-surface layout */}
       <main className="flex-1 min-h-0 w-full max-w-3xl mx-auto px-4 sm:px-6 py-3 sm:py-6 flex flex-col overflow-hidden">
-        <div className="flex-1 min-h-0 flex flex-col rounded-[22px] sm:rounded-[26px] bg-white border border-slate-200/70 shadow-[0_4px_24px_rgba(0,0,0,0.02)] overflow-hidden">
+        <div className="flex-1 min-h-0 flex flex-col rounded-[22px] sm:rounded-[26px] bg-white shadow-[0_4px_24px_rgba(0,0,0,0.03)] overflow-hidden">
           
           {/* Question Header */}
-          <div className="shrink-0 px-6 sm:px-8 pt-5 pb-3 flex items-center justify-between border-b border-slate-100">
+          <div className="shrink-0 px-6 sm:px-8 pt-5 pb-3 flex items-center justify-between">
             <span className="font-sans text-xs font-bold uppercase tracking-wider text-[#DF6951]">
               Question {currentIndex + 1} of {totalQuestions}
             </span>
@@ -271,7 +277,7 @@ export function QuizWorkspaceClient({
           </div>
 
           {/* Bottom Action Controls */}
-          <div className="shrink-0 px-6 sm:px-8 py-3.5 sm:py-4 border-t border-slate-100 bg-white flex items-center justify-between gap-3">
+          <div className="shrink-0 px-6 sm:px-8 py-3.5 sm:py-4 bg-white flex items-center justify-between gap-3">
             {/* Left Actions: Review flag */}
             <div className="flex items-center gap-2">
               <button
@@ -323,6 +329,122 @@ export function QuizWorkspaceClient({
           </div>
         </div>
       </main>
+
+      {/* Question Matrix Modal */}
+      {showMatrix && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="matrix-modal-title"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-[#181E4B]/60 backdrop-blur-xs p-4 animate-in fade-in duration-150"
+        >
+          <div className="max-w-2xl w-full rounded-[24px] bg-white p-6 sm:p-8 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200 max-h-[90vh] flex flex-col">
+            {/* Header */}
+            <div className="flex items-center justify-between shrink-0">
+              <div>
+                <h3 id="matrix-modal-title" className="font-serif text-2xl font-bold text-[#181E4B]">
+                  Question Matrix
+                </h3>
+                <p className="font-sans text-xs text-[#5E6282] mt-0.5">
+                  Select any question to jump directly
+                </p>
+              </div>
+
+              <button
+                type="button"
+                onClick={() => setShowMatrix(false)}
+                className="h-8 w-8 flex items-center justify-center rounded-full hover:bg-slate-100 text-slate-500 hover:text-[#181E4B] transition-colors cursor-pointer"
+                aria-label="Close question matrix"
+              >
+                <X size={18} aria-hidden="true" />
+              </button>
+            </div>
+
+            {/* Status Legend Pills */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 font-sans text-xs shrink-0">
+              <div className="flex items-center gap-2 p-2.5 rounded-xl bg-emerald-50 text-emerald-800">
+                <span className="h-2.5 w-2.5 rounded-full bg-emerald-600 shrink-0" aria-hidden="true" />
+                <span className="font-medium">Attempted:</span>
+                <strong className="ml-auto tabular-nums">{stats.answeredCount}</strong>
+              </div>
+
+              <div className="flex items-center gap-2 p-2.5 rounded-xl bg-amber-50 text-amber-900">
+                <span className="h-2.5 w-2.5 rounded-full bg-amber-500 shrink-0" aria-hidden="true" />
+                <span className="font-medium">Skipped:</span>
+                <strong className="ml-auto tabular-nums">{stats.skippedCount}</strong>
+              </div>
+
+              <div className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-100 text-slate-700">
+                <span className="h-2.5 w-2.5 rounded-full bg-slate-400 shrink-0" aria-hidden="true" />
+                <span className="font-medium">Not Attended:</span>
+                <strong className="ml-auto tabular-nums">{stats.unvisitedCount}</strong>
+              </div>
+
+              <div className="flex items-center gap-2 p-2.5 rounded-xl bg-[#FFF1DA] text-[#DF6951]">
+                <span className="h-2.5 w-2.5 rounded-full bg-[#DF6951] shrink-0" aria-hidden="true" />
+                <span className="font-medium">Review Later:</span>
+                <strong className="ml-auto tabular-nums">{stats.markedCount}</strong>
+              </div>
+            </div>
+
+            {/* Matrix Questions Grid */}
+            <div className="flex-1 min-h-0 overflow-y-auto custom-scrollbar p-1">
+              <div className="grid grid-cols-5 sm:grid-cols-8 md:grid-cols-10 gap-2">
+                {Array.from({ length: totalQuestions }).map((_, idx) => {
+                  const status = getQuestionStatus(idx);
+                  const isCurrent = idx === currentIndex;
+
+                  let cellClasses = 'bg-slate-100 text-slate-600 hover:bg-slate-200'; // unvisited / not attended
+
+                  if (status === 'answered') {
+                    cellClasses = 'bg-emerald-600 text-white hover:bg-emerald-700';
+                  } else if (status === 'marked-answered') {
+                    cellClasses = 'bg-emerald-600 text-white ring-2 ring-[#DF6951] ring-offset-1';
+                  } else if (status === 'unanswered') {
+                    cellClasses = 'bg-amber-100 text-amber-900 hover:bg-amber-200 border border-amber-300 font-bold';
+                  } else if (status === 'marked') {
+                    cellClasses = 'bg-[#FFF1DA] text-[#DF6951] border border-[#DF6951]/40 hover:bg-[#ffe6c2] font-bold';
+                  }
+
+                  return (
+                    <button
+                      key={`matrix-q-${idx}`}
+                      type="button"
+                      onClick={() => {
+                        goToQuestion(idx);
+                        setShowMatrix(false);
+                      }}
+                      className={cn(
+                        'h-9 rounded-lg font-sans text-xs font-bold transition-all cursor-pointer flex items-center justify-center',
+                        cellClasses,
+                        isCurrent && 'ring-2 ring-[#181E4B] ring-offset-2'
+                      )}
+                      title={`Question ${idx + 1} (${status})`}
+                      aria-label={`Jump to Question ${idx + 1}, status ${status}`}
+                    >
+                      {idx + 1}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Footer */}
+            <div className="flex items-center justify-between pt-2 shrink-0">
+              <span className="font-sans text-xs text-slate-400">
+                {totalQuestions} Total Questions
+              </span>
+              <button
+                type="button"
+                onClick={() => setShowMatrix(false)}
+                className="px-5 py-2 rounded-full bg-[#181E4B] hover:bg-[#0F172A] text-white font-sans text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer"
+              >
+                Close Matrix
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Confirmation Modal */}
       {showSubmitModal && (

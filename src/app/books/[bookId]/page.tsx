@@ -66,24 +66,24 @@ export default async function BookDetailPage({ params }: BookDetailPageProps) {
 
         <h1 className="sr-only">{book.title}</h1>
 
-        {/* Clean Chapter List (No messy boxes, No serial number square boxes) */}
-        <div className="space-y-3.5">
+        {/* Clean Chapter List (No rigid box structures) */}
+        <div className="max-w-4xl mx-auto space-y-2">
           {sortedChapters.map((ch) => {
             const cleanTitle = ch.title.replace(/^\d+\.\s*/, '');
 
             return (
               <div
                 key={ch.id}
-                className="group rounded-[18px] bg-white border border-black/[0.05] p-5 sm:p-6 shadow-[0_2px_12px_rgba(0,0,0,0.02)] hover:shadow-[0_12px_30px_rgba(24,30,75,0.06)] hover:border-[#181E4B]/20 transition-all duration-200 flex flex-col md:flex-row md:items-center justify-between gap-4"
+                className="group flex flex-col sm:flex-row sm:items-center justify-between gap-3 py-4 px-4 sm:px-6 hover:bg-white/80 rounded-xl transition-all duration-150"
               >
                 {/* Left: Chapter Details */}
-                <div className="min-w-0 space-y-1">
+                <div className="min-w-0 space-y-0.5">
                   <div className="flex items-center gap-2">
                     <span className="font-sans text-[0.6875rem] font-bold uppercase tracking-wider text-[#DF6951]">
                       Chapter {ch.chapter_number}
                     </span>
                     <span className="text-slate-300">•</span>
-                    <span className="font-sans text-xs font-semibold text-slate-500">
+                    <span className="font-sans text-xs font-semibold text-slate-400">
                       {ch.question_count} MCQs
                     </span>
                   </div>
@@ -98,13 +98,13 @@ export default async function BookDetailPage({ params }: BookDetailPageProps) {
                 </div>
 
                 {/* Right: Actions */}
-                <div className="flex items-center gap-2.5 shrink-0 pt-2 md:pt-0">
+                <div className="flex items-center shrink-0 pt-1 sm:pt-0">
                   <Link
                     href={`/quiz/${ch.file}`}
-                    className="inline-flex items-center justify-center gap-1.5 px-5 py-2 rounded-full bg-[#181E4B] hover:bg-[#0F172A] text-white font-sans text-xs font-bold uppercase tracking-wider shadow-xs transition-colors cursor-pointer"
+                    className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#181E4B] hover:bg-[#DF6951] text-white font-sans text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer"
                   >
-                    <span>Practice Chapter</span>
-                    <ArrowRight size={13} aria-hidden="true" />
+                    <span>Practice</span>
+                    <ArrowRight size={12} aria-hidden="true" />
                   </Link>
                 </div>
               </div>

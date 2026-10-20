@@ -4,8 +4,9 @@ import { useState, useEffect, useCallback, useMemo } from 'react';
 import type { Question, QuestionStatus } from '@/types';
 import { calculateExamScore } from '@/lib/scoring';
 
+let legacyPurged = false;
 function purgeLegacyLocalStorage() {
-  if (typeof window === 'undefined') return;
+  if (typeof window === 'undefined' || legacyPurged) return;
   try {
     for (let i = localStorage.length - 1; i >= 0; i--) {
       const k = localStorage.key(i);
@@ -13,6 +14,7 @@ function purgeLegacyLocalStorage() {
         localStorage.removeItem(k);
       }
     }
+    legacyPurged = true;
   } catch {
     // Ignore storage errors in restricted environments
   }
@@ -239,11 +241,21 @@ export function useQuizSession(
 
   const stats = useMemo(() => {
     const breakdown = calculateExamScore(initialQuestions, answers);
+    const attemptedCount = breakdown.answeredCount;
+    const visitedIds = Object.keys(visited).filter((k) => visited[k]);
+    const skippedCount = visitedIds.filter(
+      (id) => answers[id] === undefined || answers[id] === null
+    ).length;
+    const unvisitedCount = Math.max(0, totalQuestions - visitedIds.length);
+
     return {
       ...breakdown,
+      attemptedCount,
+      skippedCount,
+      unvisitedCount,
       markedCount: Object.values(marked).filter(Boolean).length,
     };
-  }, [answers, marked, initialQuestions]);
+  }, [answers, marked, visited, initialQuestions, totalQuestions]);
 
   return {
     mode,

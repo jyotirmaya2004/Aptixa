@@ -3,13 +3,14 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowLeft, SlidersHorizontal } from 'lucide-react';
+import { ArrowLeft, SlidersHorizontal, LayoutGrid } from 'lucide-react';
 
 export interface TelemetryBarProps {
   title: string;
   answeredCount: number;
   totalQuestions: number;
   onSubmit: () => void;
+  onToggleMatrix?: () => void;
   isSubmitted?: boolean;
 }
 
@@ -18,6 +19,7 @@ export function TelemetryBar({
   answeredCount,
   totalQuestions,
   onSubmit,
+  onToggleMatrix,
   isSubmitted = false,
 }: TelemetryBarProps) {
   return (
@@ -56,6 +58,20 @@ export function TelemetryBar({
           <SlidersHorizontal size={13} className="text-[#DF6951]" aria-hidden="true" />
           <span>Customize</span>
         </Link>
+
+        {/* Matrix Button */}
+        {onToggleMatrix && (
+          <button
+            type="button"
+            onClick={onToggleMatrix}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[#181E4B] hover:bg-slate-100 font-sans text-xs font-semibold transition-colors cursor-pointer"
+            title="Question Matrix (Attempted, Skipped, Not Attended)"
+            aria-label="Toggle Question Matrix"
+          >
+            <LayoutGrid size={15} className="text-[#DF6951]" aria-hidden="true" />
+            <span className="hidden sm:inline">Matrix</span>
+          </button>
+        )}
 
         {/* Progress Counter */}
         <span className="font-sans text-xs font-semibold text-slate-500 tabular-nums">
