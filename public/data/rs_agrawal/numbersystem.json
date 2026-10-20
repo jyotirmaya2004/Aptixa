@@ -203,7 +203,7 @@
       "id": "number-system-013",
       "chapter": "Number System",
       "question_number": 13,
-      "question": "The number p is (R.R.B., 2005)",
+      "question": "The number π is (R.R.B., 2005)",
       "options": {
         "a": "a fraction",
         "b": "a recurring decimal",
@@ -219,7 +219,7 @@
       "id": "number-system-014",
       "chapter": "Number System",
       "question_number": 14,
-      "question": "2 is a/an",
+      "question": "√2 is a/an",
       "options": {
         "a": "rational number",
         "b": "natural number",
@@ -235,7 +235,7 @@
       "id": "number-system-015",
       "chapter": "Number System",
       "question_number": 15,
-      "question": "The number 3 is",
+      "question": "The number √3 is",
       "options": {
         "a": "a finite decimal",
         "b": "an infinite recurring decimal",
@@ -416,10 +416,10 @@
         "a": "xyzw",
         "b": "wzyx",
         "c": "x + 10y + 100z + 1000w",
-        "d": "103x + 102y + 10z + w"
+        "d": "10³x + 10²y + 10z + w"
       },
       "correct_option": "d",
-      "answer": "103x + 102y + 10z + w",
+      "answer": "10³x + 10²y + 10z + w",
       "book_page": 15,
       "pdf_page": 24
     },
@@ -443,7 +443,7 @@
       "id": "number-system-028",
       "chapter": "Number System",
       "question_number": 28,
-      "question": "For the integer n, if n3 is odd, then which of the following statements are true? I. n is odd. II. n2 is odd. III. n2 is even.",
+      "question": "For the integer n, if n³ is odd, then which of the following statements are true? I. n is odd II. n² is odd III. n² is even",
       "options": {
         "a": "I only",
         "b": "II only",
@@ -560,7 +560,7 @@
         "a": "0",
         "b": "– n",
         "c": "2n",
-        "d": "n2"
+        "d": "n²"
       },
       "correct_option": "c",
       "answer": "2n",
@@ -702,7 +702,7 @@
       "question": "If 0 < x < 1, which of the following is greatest? (Campus Recruitment, 2007)",
       "options": {
         "a": "x",
-        "b": "x2",
+        "b": "x²",
         "c": "1 x",
         "d": "2 1 x"
       },
@@ -719,7 +719,7 @@
       "options": {
         "a": "1 is less than 1 p",
         "b": "1 is a positive integer p",
-        "c": "p2 is less than p",
+        "c": "p² is less than p",
         "d": "2 – is a positive number p p"
       },
       "correct_option": "d",
@@ -731,7 +731,7 @@
       "id": "number-system-046",
       "chapter": "Number System",
       "question_number": 46,
-      "question": "If x is a real number, then x2 + x + 1 is",
+      "question": "If x is a real number, then x² + x + 1 is",
       "options": {
         "a": "less than 3 4",
         "b": "zero for at least one value of x",
@@ -1264,7 +1264,7 @@
       "id": "number-system-079",
       "chapter": "Number System",
       "question_number": 79,
-      "question": "What is the first value of n for which n2 + n + 41 is not a prime?",
+      "question": "What is the first value of n for which n² + n + 41 is not a prime?",
       "options": {
         "a": "1",
         "b": "10",
@@ -2130,7 +2130,7 @@
       "id": "number-system-131",
       "chapter": "Number System",
       "question_number": 131,
-      "question": "If a and b be positive integers such that a2 – b2 = 19, then the value of a is (S.S.C., 2010)",
+      "question": "If a and b be positive integers such that a² – b² = 19, then the value of a is",
       "options": {
         "a": "9",
         "b": "10",
@@ -2316,7 +2316,7 @@
         "a": "ab (a + b)",
         "b": "(a + b + c)2",
         "c": "– abc",
-        "d": "a2 + b2 + c2"
+        "d": "a² + b² + c²"
       },
       "correct_option": "c",
       "answer": "– abc",
@@ -2327,7 +2327,7 @@
       "id": "number-system-143",
       "chapter": "Number System",
       "question_number": 143,
-      "question": "If a = 7, b = 5, c = 3, then the value of a2 + b2 + c2 – ab – bc – ca is",
+      "question": "If a = 7, b = 5, c = 3, then the value of a² + b² + c² – ab – bc – ca is",
       "options": {
         "a": "– 12",
         "b": "0",
@@ -2800,7 +2800,7 @@
       "id": "number-system-172",
       "chapter": "Number System",
       "question_number": 172,
-      "question": "If x + y = 15 and xy = 56, then what is the value of x2 + y2? (L.I.C.A.D.O., 2007)",
+      "question": "If x + y = 15 and xy = 56, then what is the value of x² + y²?",
       "options": {
         "a": "110",
         "b": "113",
@@ -3541,7 +3541,7 @@
       "options": {
         "a": "m + n is divisible by 10",
         "b": "m – n is divisible by 5",
-        "c": "m2 – n2 is divisible by 25",
+        "c": "m² – n² is divisible by 25",
         "d": "None of these"
       },
       "correct_option": "a",
@@ -3890,7 +3890,7 @@
       "id": "number-system-240",
       "chapter": "Number System",
       "question_number": 240,
-      "question": "If n be any natural number then by which largest number (n3 – n) is always divisible? (S.S.C., 2010)",
+      "question": "If n be any natural number then by which largest number (n³ – n) is always divisible?",
       "options": {
         "a": "3",
         "b": "6",
@@ -4002,7 +4002,7 @@
       "id": "number-system-247",
       "chapter": "Number System",
       "question_number": 247,
-      "question": "If n is a whole number greater than 1, then n2 (n2 – 1) is always divisible by",
+      "question": "If n is a whole number greater than 1, then n² (n² – 1) is always divisible by",
       "options": {
         "a": "8",
         "b": "10",
@@ -4018,7 +4018,7 @@
       "id": "number-system-248",
       "chapter": "Number System",
       "question_number": 248,
-      "question": "If n is any odd number greater than 1, then n (n2 – 1) is",
+      "question": "If n is any odd number greater than 1, then n (n² – 1) is",
       "options": {
         "a": "divisible by 24 always",
         "b": "divisible by 48 always",
@@ -4114,7 +4114,7 @@
       "id": "number-system-254",
       "chapter": "Number System",
       "question_number": 254,
-      "question": "If p is a prime number greater than 3, then (p2 – 1) is always divisible by",
+      "question": "If p is a prime number greater than 3, then (p² – 1) is always divisible by",
       "options": {
         "a": "6 but not 12",
         "b": "12 but not 24",
@@ -5674,7 +5674,7 @@
       "id": "number-system-351",
       "chapter": "Number System",
       "question_number": 351,
-      "question": "If a2 + b2 + c2 = 1, what is the maximum value of abc?",
+      "question": "If a² + b² + c² = 1, what is the maximum value of abc?",
       "options": {
         "a": "1 3",
         "b": "1 3 3",
@@ -5818,7 +5818,7 @@
       "id": "number-system-360",
       "chapter": "Number System",
       "question_number": 360,
-      "question": "If a + b + c = 6 and ab + bc + ca = 10 then the value of a3 + b3 + c3 – 3abc is [SSC—CHSL (10 + 2) Exam, 2015]",
+      "question": "If a + b + c = 6 and ab + bc + ca = 10 then the value of a³ + b³ + c³ – 3abc is",
       "options": {
         "a": "36",
         "b": "48",
@@ -5917,7 +5917,7 @@
       "id": "number-system-366",
       "chapter": "Number System",
       "question_number": 366,
-      "question": "If p3 – q3 = (p – q) (p – q)2 – xpq, then find the value of x [SSC—CHSL (10 + 2) Exam, 2015]",
+      "question": "If p³ – q³ = (p – q) (p – q)² – xpq, then find the value of x",
       "options": {
         "a": "1",
         "b": "–3",

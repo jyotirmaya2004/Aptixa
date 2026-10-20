@@ -11,9 +11,9 @@
       "2/3",
       "1/3"
     ],
-    "correctOption": 1,
+    "correctOption": 0,
     "hint": "Calculate 1 day work of A (1/12) and B (1/18) together, then multiply by 4 and subtract from 1.",
-    "explanation": "Step 1: 1 day work of A = 1/12.\nStep 2: 1 day work of B = 1/18.\nStep 3: Work done by (A + B) in 1 day = 1/12 + 1/18 = (3 + 2)/36 = 5/36.\nStep 4: Work done in 4 days = 4 * (5/36) = 20/36 = 5/9.\nStep 5: Remaining work = 1 - 5/9 = 4/9... wait, 1 - 5/9 = 4/9, so 4/9 is left unfinished."
+    "explanation": "Step 1: 1 day work of A = 1/12.\nStep 2: 1 day work of B = 1/18.\nStep 3: Work done by (A + B) in 1 day = 1/12 + 1/18 = (3 + 2)/36 = 5/36.\nStep 4: Work done in 4 days = 4 * (5/36) = 20/36 = 5/9.\nStep 5: Remaining unfinished work = 1 - 5/9 = 4/9."
   },
   {
     "id": "q2",
@@ -533,7 +533,7 @@
     "category": "quantitative",
     "topic": "Number System",
     "difficulty": "Easy",
-    "question": "The number p is (R.R.B., 2005)",
+    "question": "The number π is (R.R.B., 2005)",
     "options": [
       "a fraction",
       "a recurring decimal",
@@ -549,7 +549,7 @@
     "category": "quantitative",
     "topic": "Number System",
     "difficulty": "Easy",
-    "question": "2 is a/an",
+    "question": "√2 is a/an",
     "options": [
       "rational number",
       "natural number",
@@ -565,7 +565,7 @@
     "category": "quantitative",
     "topic": "Number System",
     "difficulty": "Easy",
-    "question": "The number 3 is",
+    "question": "The number √3 is",
     "options": [
       "a finite decimal",
       "an infinite recurring decimal",
@@ -746,10 +746,10 @@
       "xyzw",
       "wzyx",
       "x + 10y + 100z + 1000w",
-      "103x + 102y + 10z + w"
+      "10³x + 10²y + 10z + w"
     ],
     "correctOption": 3,
-    "hint": "Apply fundamental properties of Number System to solve. Answer is 103x + 102y + 10z + w.",
+    "hint": "Apply fundamental properties of Number System to solve. Answer is 10³x + 10²y + 10z + w.",
     "explanation": "R.S. Aggarwal Chapter 1 (Q26) Solution:\nFor digits x, y, z, w from left: number = 1000x + 100y + 10z + w = 10³x + 10²y + 10z + w."
   },
   {
@@ -773,7 +773,7 @@
     "category": "quantitative",
     "topic": "Number System",
     "difficulty": "Medium",
-    "question": "For the integer n, if n3 is odd, then which of the following statements are true? I. n is odd. II. n2 is odd. III. n2 is even.",
+    "question": "For the integer n, if n³ is odd, then which of the following statements are true? I. n is odd. II. n² is odd. III. n² is even.",
     "options": [
       "I only",
       "II only",

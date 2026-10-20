@@ -15,6 +15,8 @@ import {
   X,
 } from 'lucide-react';
 
+import { MathRenderer } from '@/components/ui/MathRenderer';
+
 export interface QuizWorkspaceClientProps {
   sessionId: string;
   initialQuestions: Question[];
@@ -250,7 +252,7 @@ export function QuizWorkspaceClient({
           >
             {/* Question Stem */}
             <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#181E4B] leading-relaxed tracking-tight mb-6 sm:mb-8">
-              {currentQuestion.question}
+              <MathRenderer text={currentQuestion.question} />
             </h2>
 
             {/* Clean Choices Stack */}

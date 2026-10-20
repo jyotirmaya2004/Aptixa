@@ -5,6 +5,8 @@ import { cn } from '@/lib/utils';
 import { ChevronDown, HelpCircle, CheckCircle2 } from 'lucide-react';
 import { gsap, useGSAP } from '@/lib/gsap';
 
+import { MathRenderer } from '@/components/ui/MathRenderer';
+
 export interface SolutionDrawerProps {
   explanation?: string;
   hint?: string;
@@ -88,7 +90,7 @@ export function SolutionDrawer({
                 Correct Key:
               </span>
               <span className="font-sans text-sm sm:text-base font-semibold text-emerald-950">
-                {correctAnswerText}
+                <MathRenderer text={correctAnswerText} />
               </span>
             </div>
           )}
@@ -99,7 +101,7 @@ export function SolutionDrawer({
                 Step-by-Step Derivation
               </h4>
               <div className="p-5 rounded-[14px] bg-white border border-black/[0.04] font-sans text-sm sm:text-base leading-relaxed text-[#181E4B] whitespace-pre-line shadow-2xs">
-                {explanation}
+                <MathRenderer text={explanation} />
               </div>
             </div>
           )}
@@ -109,7 +111,7 @@ export function SolutionDrawer({
               <HelpCircle size={18} className="text-[#F1A501] shrink-0 mt-0.5" aria-hidden="true" />
               <div className="text-xs sm:text-sm leading-relaxed">
                 <strong className="uppercase font-bold tracking-wider mr-1.5 text-[#DF6951]">Principle / Diagnostic Tip:</strong>
-                {hint}
+                <MathRenderer text={hint} />
               </div>
             </div>
           )}

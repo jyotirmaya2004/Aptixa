@@ -4,6 +4,8 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 import { Check, X } from 'lucide-react';
 
+import { MathRenderer } from '@/components/ui/MathRenderer';
+
 export interface OptionCardProps {
   index: number;
   text: string;
@@ -72,7 +74,7 @@ export function OptionCard({
       </div>
 
       <div className="flex-1 font-sans text-base sm:text-lg leading-relaxed pt-0.5">
-        {text}
+        <MathRenderer text={text} />
       </div>
     </button>
   );

@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { Footer } from '@/components/layout/Footer';
 import { SolutionDrawer } from '@/components/ui/SolutionDrawer';
+import { MathRenderer } from '@/components/ui/MathRenderer';
 import type { Question } from '@/types';
 import { calculateExamScore } from '@/lib/scoring';
 import {
@@ -225,7 +226,7 @@ export function ResultsClient({ sessionId, questions }: ResultsClientProps) {
                   </div>
 
                   <p className="font-serif text-xl font-bold text-[#181E4B] leading-relaxed mb-6">
-                    {q.question}
+                    <MathRenderer text={q.question} />
                   </p>
 
                   {/* Options List */}
@@ -249,7 +250,9 @@ export function ResultsClient({ sessionId, questions }: ResultsClientProps) {
                           <span className="font-bold text-xs uppercase w-5 shrink-0 pt-0.5">
                             {String.fromCharCode(65 + optIdx)}.
                           </span>
-                          <span className="flex-1">{opt}</span>
+                          <span className="flex-1">
+                            <MathRenderer text={opt} />
+                          </span>
                           {isCandidateChosen && (
                             <span className="text-[0.6875rem] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-white border border-black/10 text-[#181E4B]">
                               Your Selection
